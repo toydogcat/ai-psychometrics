@@ -19,14 +19,14 @@ export function getMappedCredentials(username, password) {
   
   if (cleanUser === 'guest' && password === 'test') {
     return {
-      email: 'guest@ai-psychometrics.org',
+      email: 'guest@gmail.com',
       password: 'Toby_Kitty_Secure_2026!' // A secure standard password matching strength rules
     };
   }
   
   // Normal mapping
   return {
-    email: cleanUser.includes('@') ? cleanUser : `${cleanUser}@example.com`,
+    email: cleanUser.includes('@') ? cleanUser : `${cleanUser}@gmail.com`,
     password: password.length >= 6 ? password : `${password}123456`
   };
 }
@@ -44,7 +44,7 @@ export const StorageEngine = {
           id: user.id,
           email: user.email,
           username: user.email.split('@')[0],
-          isGuest: user.email === 'guest@ai-psychometrics.org'
+          isGuest: user.email === 'guest@gmail.com'
         };
       }
     }
@@ -87,7 +87,7 @@ export const StorageEngine = {
         id: user.id,
         email: user.email,
         username: user.email.split('@')[0],
-        isGuest: user.email === 'guest@ai-psychometrics.org'
+        isGuest: user.email === 'guest@gmail.com'
       };
     } else {
       // Sandbox mode mock login
