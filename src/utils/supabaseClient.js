@@ -65,21 +65,35 @@ export const StorageEngine = {
         password: credentials.password
       });
 
-      // 2. If user does not exist (sign-in failed), automatically sign up to create this guest/test account
-      if (error && error.message.includes('Invalid login credentials')) {
-        const { data: signUpData, error: signUpError } = await supabase.auth.signUp({
-          email: credentials.email,
-          password: credentials.password
-        });
-        
-        if (!signUpError) {
+      // 2. Handle failures gracefully
+      if (error) {
+        if (error.message.includes('Invalid login credentials')) {
+          // Try to automatically sign up in case the user doesn't exist
+          const { data: signUpData, error: signUpError } = await supabase.auth.signUp({
+            email: credentials.email,
+            password: credentials.password
+          });
+          
+          if (signUpError) {
+            throw new Error(`自動建立測試帳號失敗: ${signUpError.message}`);
+          }
+          
+          // Handle Supabase Anti-Enumeration: If user is null, it means email exists but password was wrong
+          if (!signUpData || !signUpData.user) {
+            throw new Error('登入失敗：密碼不正確！如果您是在 Supabase 後台手動建立此帳號，請確保設定的密碼為 "Toby_Kitty_Secure_2026!"。');
+          }
+          
           data = signUpData;
-          error = null;
+        } else if (error.message.includes('Email not confirmed')) {
+          throw new Error('登入失敗：該帳號尚未通過驗證。請前往 Supabase 的 Users 頁面，點擊該帳號右側的更多按鈕，選擇 "Confirm user" 來確認信箱。');
         } else {
-          throw new Error(`自動建立測試帳號失敗: ${signUpError.message}`);
+          throw error;
         }
-      } else if (error) {
-        throw error;
+      }
+
+      // 3. Final null check safety
+      if (!data || !data.user) {
+        throw new Error('登入失敗：無法取得使用者資訊，請確認帳號狀態。');
       }
 
       const user = data.user;
