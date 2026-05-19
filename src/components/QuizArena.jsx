@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, Send, AlertTriangle, HelpCircle } from 'luci
 import { calculateCTT, calculateIRT2PL, calculateCDM } from '../utils/psychometricsEngine';
 import { StorageEngine } from '../utils/supabaseClient';
 
-export default function QuizArena({ weekId, onQuizSubmitted, onBackToDashboard }) {
+export default function QuizArena({ quizFileName, weekId, user, onComplete, onBackToDashboard }) {
   const [quizData, setQuizData] = useState(null);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [answers, setAnswers] = useState({}); // Stores user answers: { Q1: "B", Q11: ["A", "B"], Q21: "PEP 8" }
@@ -12,11 +12,11 @@ export default function QuizArena({ weekId, onQuizSubmitted, onBackToDashboard }
 
   useEffect(() => {
     loadQuiz();
-  }, [weekId]);
+  }, [quizFileName]);
 
   const loadQuiz = async () => {
     try {
-      const response = await fetch(`${import.meta.env.BASE_URL || '/'}data/python_week1.json`);
+      const response = await fetch(`${import.meta.env.BASE_URL || '/'}data/${quizFileName || 'python_week1.json'}`);
       const data = await response.json();
       setQuizData(data);
       
@@ -35,7 +35,7 @@ export default function QuizArena({ weekId, onQuizSubmitted, onBackToDashboard }
 
   if (loading) {
     return (
-      <div style={{ display: 'flex', minHeight: '80vh', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)' }}>
+      <div style={{ display: 'flex', minHeight: '60vh', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)' }}>
         載入課程題庫與 Q-矩陣中...
       </div>
     );
@@ -43,10 +43,12 @@ export default function QuizArena({ weekId, onQuizSubmitted, onBackToDashboard }
 
   if (!quizData) {
     return (
-      <div style={{ display: 'flex', minHeight: '80vh', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>
+      <div style={{ display: 'flex', minHeight: '60vh', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>
         <AlertTriangle style={{ color: '#fbbf24', width: '48px', height: '48px' }} />
-        <span>無法載入題庫，請確認 /public/data/python_week1.json 檔案是否存在。</span>
-        <button onClick={onBackToDashboard} className="btn-premium">返回控制台</button>
+        <span>無法載入題庫，請確認 /public/data/{quizFileName || 'python_week1.json'} 檔案是否存在。</span>
+        {onBackToDashboard && (
+          <button onClick={onBackToDashboard} className="btn-premium">返回控制台</button>
+        )}
       </div>
     );
   }
@@ -120,22 +122,14 @@ export default function QuizArena({ weekId, onQuizSubmitted, onBackToDashboard }
       });
 
       // 2. Generate 15 virtual students as background cohort reference for advanced CTT/IRT calculations
-      // This allows calculating reliable Cronbach Alpha / KR-20 and running Newton-Raphson on IRT 2PL
       const cohortMatrix = [];
-      
-      // We will place current student at Index 0
       cohortMatrix.push(responseVector);
 
-      // Generate 15 distinct virtual student response vectors with varying abilities
       for (let i = 0; i < 15; i++) {
         const virtualVector = [];
-        // Define ability theta for this virtual student (distributed normally roughly)
         const vAbility = -2.0 + (i * 0.28); // ranging from -2.0 to +2.2
         
         questions.forEach(q => {
-          // Probabilistic response based on question diff (IRT 2PL emulation)
-          // High ability = higher probability of correct answer
-          // We assign arbitrary difficulties based on question IDs for cohort consistency
           const qIdNum = parseInt(q.id.replace('Q', ''));
           const qDiff = (qIdNum % 5) - 2; // difficulty between -2 and +2
           const qDisc = 1.0 + (qIdNum % 3) * 0.3; // discrimination between 1.0 and 1.6
@@ -158,23 +152,26 @@ export default function QuizArena({ weekId, onQuizSubmitted, onBackToDashboard }
       const irtResults = calculateIRT2PL(cohortMatrix, itemNames);
       const cdmResults = calculateCDM(cohortMatrix, itemNames, qMatrix, attributeNames);
 
+      // Extract capability values safely
+      const theta = irtResults.studentDetails?.[0]?.theta ?? 0;
+
       // 5. Build standard report object
       const resultPayload = {
-        courseId: 'python',
-        weekId: weekId,
         score: score,
         totalQuestions: questions.length,
         responseVector: responseVector,
+        rawAnswers: answers,
+        theta: theta,
         cttMetrics: cttResults,
         irtMetrics: irtResults,
-        cdmMetrics: cdmResults
+        cdmMetrics: cdmResults,
+        created_at: new Date().toISOString()
       };
 
-      // 6. Save through StorageEngine (writes to Cloud or Local Sandbox automatically)
-      const savedReport = await StorageEngine.saveResult(resultPayload);
-      
-      // 7. Success callback
-      onQuizSubmitted(savedReport);
+      // 6. Success callback to let parent save
+      if (onComplete) {
+        await onComplete(resultPayload);
+      }
     } catch (err) {
       console.error('Quiz submission error:', err);
       alert('測驗提交失敗: ' + err.message);

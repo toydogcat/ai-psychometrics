@@ -1,0 +1,167 @@
+[
+  {
+    "id": "python-basic-advanced",
+    "title": "Python 基礎與進階編程",
+    "description": "融合現代化工具鏈 (uv) 與 Python 核心生態，適合從零開始的學習者，並包含 18 週完整的自我診斷測驗與心理計量診斷。",
+    "category": "Python開發",
+    "tags": ["推薦", "零基礎", "現代工具鏈"],
+    "totalWeeks": 18,
+    "totalQuestions": 540,
+    "syllabus": [
+      {
+        "week": 1,
+        "title": "Python 環境生態與現代化工具鏈",
+        "topics": ["直譯器原理", "Colab雲端開發", "Anaconda生態", "uv極速管理", "f-string互動", "PEP 8縮進"],
+        "mdPath": "week1.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 2,
+        "title": "第 2 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week2.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 3,
+        "title": "第 3 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week3.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 4,
+        "title": "第 4 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week4.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 5,
+        "title": "第 5 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week5.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 6,
+        "title": "第 6 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week6.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 7,
+        "title": "第 7 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week7.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 8,
+        "title": "第 8 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week8.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 9,
+        "title": "第 9 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week9.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 10,
+        "title": "第 10 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week10.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 11,
+        "title": "第 11 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week11.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 12,
+        "title": "第 12 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week12.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 13,
+        "title": "第 13 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week13.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 14,
+        "title": "第 14 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week14.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 15,
+        "title": "第 15 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week15.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 16,
+        "title": "第 16 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week16.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 17,
+        "title": "第 17 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week17.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 18,
+        "title": "第 18 週 Python 核心觀念進階",
+        "topics": ["變數型態", "流程控制", "函式設計", "模組套件"],
+        "mdPath": "week18.md",
+        "quizPath": "python_week1.json",
+        "estimatedMinutes": 30
+      }
+    ]
+  },
+  {
+    "id": "intro-psychometrics",
+    "title": "心理計量學與測驗理論基礎",
+    "description": "學習古典測驗理論 (CTT)、項目反應理論 (IRT) 及認知診斷模型 (CDM)，理解現代教育測驗背後的數學之美與 Python 計算實作。",
+    "category": "心理計量",
+    "tags": ["即將開放", "進階理論", "跨學門"],
+    "totalWeeks": 8,
+    "totalQuestions": 120,
+    "syllabus": []
+  }
+]

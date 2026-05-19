@@ -1,52 +1,60 @@
 import React, { useEffect, useState } from 'react';
 import { StorageEngine } from '../utils/supabaseClient';
-import { Award, BookOpen, Clock, LogOut, Play, User, Calendar, Brain } from 'lucide-react';
+import { Award, BookOpen, Clock, LogOut, Play, User, Calendar, Brain, ArrowRight, BookOpenText } from 'lucide-react';
 
-export default function Dashboard({ user, onLogout, onSelectWeek, onSelectHistory }) {
+export default function Dashboard({ user, onLogout, onSelectCourse, onSelectHistory }) {
+  const [courses, setCourses] = useState([]);
   const [history, setHistory] = useState([]);
+  const [loadingCourses, setLoadingCourses] = useState(false);
   const [loadingHistory, setLoadingHistory] = useState(false);
+  const [progressMap, setProgressMap] = useState({});
 
   useEffect(() => {
-    loadHistory();
+    loadCoursesAndProgress();
   }, []);
 
-  const loadHistory = async () => {
+  const loadCoursesAndProgress = async () => {
+    setLoadingCourses(true);
     setLoadingHistory(true);
     try {
-      const data = await StorageEngine.getHistory();
-      setHistory(data);
+      // 1. Fetch courses catalog
+      const basePath = import.meta.env.BASE_URL || '/';
+      const coursesRes = await fetch(`${basePath}courses/courses.json`);
+      if (!coursesRes.ok) throw new Error('Failed to load courses database');
+      const coursesData = await coursesRes.json();
+      setCourses(coursesData);
+
+      // 2. Fetch history and compute progress percentages
+      const historyData = await StorageEngine.getQuizResults(user?.id);
+      setHistory(historyData);
+
+      const prog = {};
+      historyData.forEach(item => {
+        if (!prog[item.course_id]) {
+          prog[item.course_id] = new Set();
+        }
+        prog[item.course_id].add(item.week);
+      });
+
+      // Convert Sets to completion counts
+      const finalProgress = {};
+      Object.keys(prog).forEach(cId => {
+        finalProgress[cId] = prog[cId].size;
+      });
+      setProgressMap(finalProgress);
+
     } catch (err) {
-      console.error('Failed to load quiz history:', err);
+      console.error('Failed to initialize Course Lobby:', err);
     } finally {
+      setLoadingCourses(false);
       setLoadingHistory(false);
     }
   };
 
-  // Generate 18 weeks list for Python Course
-  const weeks = Array.from({ length: 18 }, (_, i) => {
-    const wNum = i + 1;
-    return {
-      id: `week${wNum}`,
-      num: wNum,
-      title: wNum === 1 
-        ? "Python 環境生態與現代化工具鏈" 
-        : wNum === 9 
-        ? "期中綜合學力評量 (W1-W8)" 
-        : wNum === 18 
-        ? "期末專題學力評量 (W1-W17)"
-        : `第 ${wNum} 週 Python 核心觀念進階`,
-      isActive: wNum === 1,
-      duration: "30 題 / 30 分鐘",
-      kps: wNum === 1 
-        ? ["直譯器原理", "Colab雲端開發", "Anaconda生態", "uv極速管理", "f-string互動", "PEP 8縮進"]
-        : ["變數型態", "流程控制", "函式設計", "模組套件", "物件導向", "資料分析"]
-    };
-  });
-
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '40px 24px', minHeight: '100vh' }}>
       
-      {/* Header bar */}
+      {/* 🚀 Welcome Top Banner */}
       <div className="glass-container" style={{ padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px', gap: '20px', flexWrap: 'wrap' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div style={{ width: '48px', height: '48px', borderRadius: '16px', background: 'rgba(99, 102, 241, 0.15)', display: 'flex', alignItems: 'center', justifyItems: 'center', justifyContent: 'center' }}>
@@ -63,8 +71,8 @@ export default function Dashboard({ user, onLogout, onSelectWeek, onSelectHistor
         </div>
 
         <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-          <button onClick={loadHistory} className="btn-secondary" style={{ padding: '10px 20px', fontSize: '14px' }}>
-            重新整理歷史記錄
+          <button onClick={loadCoursesAndProgress} className="btn-secondary" style={{ padding: '10px 20px', fontSize: '14px' }}>
+            重新整理進度與歷史
           </button>
           <button onClick={onLogout} className="btn-secondary" style={{ padding: '10px 20px', fontSize: '14px', borderColor: 'rgba(239, 68, 68, 0.2)', color: '#fca5a5' }}>
             <LogOut style={{ width: '16px', height: '16px' }} /> 登出
@@ -72,102 +80,155 @@ export default function Dashboard({ user, onLogout, onSelectWeek, onSelectHistor
         </div>
       </div>
 
-      {/* Main Grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '40px' }} className="grid-layout">
+      {/* 🏛️ Main Lobby Split Layout */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '40px' }} className="grid-layout">
         
-        {/* Left Section: Course List */}
-        <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+        {/* Left Hand Side: Dynamic Multi-Course Catalog */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <BookOpen style={{ color: 'var(--text-neon-cyan)', width: '24px', height: '24px' }} />
-            <h2 style={{ fontSize: '22px', fontWeight: '700' }}>精選線上課程：Python 基礎與心理計量學</h2>
+            <h2 style={{ fontSize: '22px', fontWeight: '700' }}>專屬智慧學習殿堂</h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '24px' }}>
-            {weeks.map((wk) => (
-              <div 
-                key={wk.id} 
-                className="glass-container" 
-                style={{ 
-                  padding: '28px', 
-                  opacity: wk.isActive ? 1 : 0.65, 
-                  border: wk.isActive ? '1px solid rgba(99,102,241,0.3)' : '1px solid var(--glass-border)',
-                  position: 'relative',
-                  overflow: 'hidden'
-                }}
-              >
-                {!wk.isActive && (
-                  <div style={{ position: 'absolute', top: '12px', right: '12px', fontSize: '11px', background: 'rgba(255,255,255,0.06)', color: 'var(--text-muted)', padding: '2px 8px', borderRadius: '20px', border: '1px solid var(--glass-border)' }}>
-                    即將開放
-                  </div>
-                )}
-                {wk.isActive && (
-                  <div style={{ position: 'absolute', top: '12px', right: '12px', fontSize: '11px', background: 'rgba(16,185,129,0.15)', color: '#34d399', padding: '2px 8px', borderRadius: '20px', border: '1px solid rgba(16,185,129,0.3)' }}>
-                    熱烈開放中
-                  </div>
-                )}
+          {loadingCourses ? (
+            <div style={{ padding: '60px 0', textAlign: 'center', color: 'var(--text-muted)' }}>
+              正在連線課程資料庫...
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              {courses.map((course) => {
+                const completedCount = progressMap[course.id] || 0;
+                const totalWeeks = course.syllabus?.length || course.totalWeeks || 8;
+                const percent = Math.round((completedCount / totalWeeks) * 100);
+                const isUnderDevelopment = !course.syllabus || course.syllabus.length === 0;
 
-                <span style={{ fontSize: '13px', color: 'var(--text-neon-cyan)', fontWeight: '600', textTransform: 'uppercase', display: 'block', marginBottom: '8px' }}>
-                  WEEK {wk.num}
-                </span>
-                
-                <h4 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '12px', lineHeight: '1.4' }}>
-                  {wk.title}
-                </h4>
-
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-muted)', fontSize: '13px', marginBottom: '16px' }}>
-                  <Clock style={{ width: '14px', height: '14px' }} />
-                  <span>{wk.duration}</span>
-                </div>
-
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '24px' }}>
-                  {wk.kps.map((kp, idx) => (
-                    <span key={idx} style={{ fontSize: '11px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.06)', padding: '2px 6px', borderRadius: '6px', color: 'var(--text-muted)' }}>
-                      {kp}
-                    </span>
-                  ))}
-                </div>
-
-                {wk.isActive ? (
-                  <button 
-                    onClick={() => onSelectWeek(wk.id)} 
-                    className="btn-premium" 
-                    style={{ width: '100%', justifyContent: 'center' }}
+                return (
+                  <div 
+                    key={course.id} 
+                    className="glass-container" 
+                    style={{ 
+                      padding: '32px', 
+                      border: isUnderDevelopment ? '1px solid var(--glass-border)' : '1px solid rgba(139, 92, 246, 0.25)',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '16px',
+                      opacity: isUnderDevelopment ? 0.6 : 1,
+                      position: 'relative'
+                    }}
                   >
-                    <Play style={{ width: '16px', height: '16px', fill: 'white' }} /> 開始學習與測驗
-                  </button>
-                ) : (
-                  <button 
-                    className="btn-secondary" 
-                    style={{ width: '100%', justifyContent: 'center', cursor: 'not-allowed', color: 'var(--text-muted)' }}
-                    disabled
-                  >
-                    未解鎖 (W2~W18 待導入)
-                  </button>
-                )}
+                    {/* Badge Category */}
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <span style={{ fontSize: '11px', fontWeight: 'bold', background: 'rgba(99, 102, 241, 0.1)', color: 'var(--text-neon-cyan)', border: '1px solid rgba(99,102,241,0.2)', padding: '3px 10px', borderRadius: '20px' }}>
+                        {course.category}
+                      </span>
+                      <div style={{ display: 'flex', gap: '6px' }}>
+                        {course.tags?.map((tag, tIdx) => (
+                          <span key={tIdx} style={{ fontSize: '10px', background: tag === '推薦' ? 'rgba(236,72,153,0.1)' : 'rgba(255,255,255,0.05)', color: tag === '推薦' ? '#f472b6' : 'var(--text-muted)', border: '1px solid rgba(255,255,255,0.08)', padding: '2px 8px', borderRadius: '20px' }}>
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Title and Intro */}
+                    <div>
+                      <h3 style={{ fontSize: '20px', fontWeight: '800', marginBottom: '8px', color: '#fff' }}>{course.title}</h3>
+                      <p style={{ fontSize: '13.5px', color: 'var(--text-muted)', lineHeight: '1.6' }}>{course.description}</p>
+                    </div>
+
+                    {/* Stats summary */}
+                    <div style={{ display: 'flex', gap: '20px', fontSize: '12px', color: 'var(--text-muted)', margin: '4px 0' }}>
+                      <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <Clock style={{ width: '13px', height: '13px' }} /> {totalWeeks} 週課程教材
+                      </span>
+                      <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <Brain style={{ width: '13px', height: '13px' }} /> {course.totalQuestions || 240} 道心理計量測驗
+                      </span>
+                    </div>
+
+                    {/* Progress indicator */}
+                    {!isUnderDevelopment && (
+                      <div style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.04)', padding: '14px 20px', borderRadius: '18px' }}>
+                        <div style={{ display: 'flex', justifyItems: 'center', justifyContent: 'space-between', marginBottom: '8px', fontSize: '12px' }}>
+                          <span style={{ color: 'var(--text-muted)', fontWeight: '600' }}>學習與評估進度</span>
+                          <span style={{ color: 'var(--text-neon-cyan)', fontWeight: 'bold' }}>{completedCount} / {totalWeeks} 週 ({percent}%)</span>
+                        </div>
+                        <div style={{ width: '100%', bg: '#05070e', height: '6px', borderRadius: '3px', overflow: 'hidden', background: 'rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.05)' }}>
+                          <div style={{ width: `${percent}%`, height: '100%', background: 'linear-gradient(to right, #ec4899, #6366f1)', borderRadius: '3px', transition: 'width 0.4s' }}></div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Action button */}
+                    {isUnderDevelopment ? (
+                      <button 
+                        className="btn-secondary"
+                        style={{ width: '100%', justifyContent: 'center', cursor: 'not-allowed', color: 'var(--text-muted)' }} 
+                        disabled
+                      >
+                        教材編製中，敬請期待...
+                      </button>
+                    ) : (
+                      <button 
+                        onClick={() => onSelectCourse(course)}
+                        className="btn-premium"
+                        style={{ width: '100%', justifyContent: 'center', display: 'flex', alignItems: 'center', gap: '8px' }}
+                      >
+                        <span>進入學習教室</span>
+                        <ArrowRight style={{ width: '16px', height: '16px' }} />
+                      </button>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          {/* 💡 Theory Introduction Panel */}
+          <div className="glass-container" style={{ padding: '28px', border: '1px solid rgba(236,72,153,0.15)' }}>
+            <h4 style={{ fontSize: '15px', fontWeight: '700', marginBottom: '14px', display: 'flex', alignItems: 'center', gap: '8px', color: '#f472b6' }}>
+              <BookOpenText style={{ width: '16px', height: '16px' }} />
+              <span>AI 心理計量學（Psychometrics）核心科普</span>
+            </h4>
+            <p style={{ fontSize: '12.5px', color: 'var(--text-muted)', lineHeight: '1.6', marginBottom: '16px' }}>
+              本學習評量系統並非傳統的「答對幾題給幾分」系統，而是深度結合心理計量學三大經典演算法，為您提供大廠級的教育診斷報告：
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px' }} className="theory-grid">
+              <div style={{ background: 'rgba(0,0,0,0.2)', padding: '12px', border: '1px solid rgba(255,255,255,0.03)', borderRadius: '12px' }}>
+                <strong style={{ fontSize: '12.5px', color: 'var(--text-neon-cyan)', display: 'block', marginBottom: '4px' }}>1. 經典測驗理論 (CTT)</strong>
+                <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>計算試卷信度（Cronbach Alpha）、難度與區辨度，確保試題的科學有效性。</span>
               </div>
-            ))}
+              <div style={{ background: 'rgba(0,0,0,0.2)', padding: '12px', border: '1px solid rgba(255,255,255,0.03)', borderRadius: '12px' }}>
+                <strong style={{ fontSize: '12.5px', color: 'var(--text-neon-purple)', display: 'block', marginBottom: '4px' }}>2. 項目反應理論 (IRT)</strong>
+                <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>透過極大似然估計（Newton-Raphson）算出您的潛在能力值 (Theta)，擺脫題目難易度影響。</span>
+              </div>
+              <div style={{ background: 'rgba(0,0,0,0.2)', padding: '12px', border: '1px solid rgba(255,255,255,0.03)', borderRadius: '12px' }}>
+                <strong style={{ fontSize: '12.5px', color: '#f472b6', display: 'block', marginBottom: '4px' }}>3. 認知診斷模型 (CDM)</strong>
+                <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>利用 DINA 機率關聯模型，精準評測出您在各微觀知識點的掌握度（覆蓋面積）。</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Right Section: History Records */}
-        <div className="glass-container" style={{ padding: '32px' }}>
+        {/* Right Hand Side: Unified Test Logs & Diagnostics */}
+        <div className="glass-container" style={{ padding: '32px', height: 'fit-content' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px', justifyContent: 'space-between' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <Brain style={{ color: 'var(--text-neon-purple)', width: '24px', height: '24px' }} />
-              <h2 style={{ fontSize: '20px', fontWeight: '700' }}>心理計量學診斷歷史紀錄</h2>
+              <h2 style={{ fontSize: '20px', fontWeight: '700' }}>歷程診斷追蹤紀錄</h2>
             </div>
             <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>共 {history.length} 筆</span>
           </div>
 
           {loadingHistory ? (
             <div style={{ padding: '40px 0', textAlign: 'center', color: 'var(--text-muted)' }}>
-              讀取歷史測驗中...
+              正在調取歷史診斷檔案...
             </div>
           ) : history.length === 0 ? (
-            <div className="glass-card" style={{ padding: '40px', textAlign: 'center', color: 'var(--text-muted)' }}>
+            <div className="glass-card" style={{ padding: '40px', textAlign: 'center', color: 'var(--text-muted)', borderStyle: 'dashed' }}>
               <Award style={{ width: '48px', height: '48px', margin: '0 auto 16px', opacity: 0.3 }} />
-              <p style={{ fontSize: '15px' }}>目前尚無測驗紀錄。</p>
-              <p style={{ fontSize: '12px', marginTop: '6px' }}>完成第一個 Python 測驗後，三大模型的心理診斷結果會立刻記錄在這裡！</p>
+              <p style={{ fontSize: '14px' }}>目前尚無診斷紀錄。</p>
+              <p style={{ fontSize: '11.5px', marginTop: '6px' }}>進入教室並完成第一週的自我評量，三大模型的數據回饋與診斷記錄將會永久安全存檔在此！</p>
             </div>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -181,34 +242,37 @@ export default function Dashboard({ user, onLogout, onSelectWeek, onSelectHistor
                     alignItems: 'center',
                     cursor: 'pointer',
                     flexWrap: 'wrap',
-                    gap: '16px'
+                    gap: '12px',
+                    padding: '16px 20px',
+                    transition: 'all 0.2s',
+                    border: '1px solid rgba(255,255,255,0.04)'
                   }}
                   onClick={() => onSelectHistory(record)}
                 >
-                  <div>
-                    <h5 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '4px' }}>
-                      Python 第 1 週 測驗評量
+                  <div style={{ flex: 1, minWidth: '160px' }}>
+                    <h5 style={{ fontSize: '14.5px', fontWeight: '600', marginBottom: '4px', color: '#fff' }}>
+                      {record.course_id === 'python-basic-advanced' ? 'Python 編程' : '線上課程'} - 第 {record.week} 週
                     </h5>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '12px', color: 'var(--text-muted)' }}>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', fontSize: '11px', color: 'var(--text-muted)' }}>
                       <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-                        <Calendar style={{ width: '12px', height: '12px' }} /> 
-                        {new Date(record.created_at).toLocaleString()}
+                        <Calendar style={{ width: '11px', height: '11px' }} /> 
+                        {new Date(record.created_at).toLocaleDateString()}
                       </span>
                       <span>•</span>
-                      <span>能力值 (Theta): <strong className="purple-neon-text">{(record.irt_metrics?.studentDetails?.[0]?.theta ?? 0).toFixed(2)}</strong></span>
+                      <span>能力值 (θ): <strong className="purple-neon-text">{(record.report?.theta ?? record.irt_metrics?.studentDetails?.[0]?.theta ?? 0).toFixed(2)}</strong></span>
                     </div>
                   </div>
 
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <div style={{ textAlign: 'right' }}>
-                      <span style={{ fontSize: '20px', fontWeight: '800', color: 'var(--text-neon-cyan)' }}>
+                      <span style={{ fontSize: '18px', fontWeight: '800', color: 'var(--text-neon-cyan)' }}>
                         {record.score}
                       </span>
-                      <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}> / {record.total_questions} 題</span>
+                      <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}> 題答對</span>
                     </div>
                     
-                    <button className="btn-secondary" style={{ padding: '8px 16px', fontSize: '13px', borderColor: 'rgba(168,85,247,0.2)' }}>
-                      查看診斷報告
+                    <button className="btn-secondary" style={{ padding: '6px 12px', fontSize: '12px', borderColor: 'rgba(168,85,247,0.2)' }}>
+                      看報告
                     </button>
                   </div>
                 </div>
@@ -220,8 +284,11 @@ export default function Dashboard({ user, onLogout, onSelectWeek, onSelectHistor
       </div>
 
       <style>{`
-        @media (max-width: 900px) {
+        @media (max-width: 960px) {
           .grid-layout {
+            grid-template-columns: 1fr !important;
+          }
+          .theory-grid {
             grid-template-columns: 1fr !important;
           }
         }
