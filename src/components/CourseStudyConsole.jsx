@@ -46,7 +46,6 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
       const results = await StorageEngine.getQuizResults(user?.id);
       const progressMap = {};
       results.forEach(res => {
-        // Match by week number and course_id
         if (res.course_id === course.id) {
           progressMap[res.week] = res;
         }
@@ -65,7 +64,6 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
   const handleQuizComplete = async (reportData) => {
     setCurrentQuizReport(reportData);
     
-    // Save to progress locally and trigger reload from backend
     if (user) {
       try {
         await StorageEngine.saveQuizResult({
@@ -83,42 +81,40 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
     }
   };
 
-  // Determine active view on Quiz Tab
   const savedReport = courseProgress[activeWeek]?.report;
   const showReport = currentQuizReport || savedReport;
 
-  // Calculate overall completed weeks
   const completedWeeksCount = Object.keys(courseProgress).length;
   const progressPercent = Math.round((completedWeeksCount / course.syllabus.length) * 100) || 0;
 
   return (
-    <div className="min-h-screen bg-[#070913] text-slate-100 flex flex-col">
+    <div className="min-h-screen bg-[#060814] text-slate-100 flex flex-col font-sans">
       {/* 🚀 Portal Top Navbar */}
-      <header className="sticky top-0 z-40 bg-[#090d1f]/85 border-b border-slate-800/80 backdrop-blur-xl px-6 py-4 flex items-center justify-between">
+      <header className="sticky top-0 z-40 bg-[#090b16]/80 border-b border-slate-800/70 backdrop-blur-md px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <button
             onClick={onBackToLobby}
-            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-300 transition duration-200"
+            className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-slate-900/60 border border-slate-800/80 hover:bg-slate-800/80 text-slate-300 transition duration-200 hover:scale-[1.02] active:scale-[0.98]"
           >
             <ChevronLeft className="w-4 h-4" />
-            <span>返回課程大廳</span>
+            <span className="text-xs font-semibold">返回大廳</span>
           </button>
           <div className="h-5 w-px bg-slate-800"></div>
           <div>
-            <h2 className="text-lg font-bold bg-gradient-to-r from-pink-400 to-indigo-400 bg-clip-text text-transparent">{course.title}</h2>
-            <p className="text-xs text-slate-400">目前週次：第 {activeWeek} 週 / 共 {course.syllabus.length} 週</p>
+            <h2 className="text-base md:text-lg font-bold bg-gradient-to-r from-pink-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">{course.title}</h2>
+            <p className="text-[10px] text-slate-400 tracking-wider">第 {activeWeek} 週 / 共 {course.syllabus.length} 週</p>
           </div>
         </div>
 
         {/* Dynamic Progress Indicator */}
         <div className="flex items-center gap-4 select-none">
-          <div className="text-right hidden sm:block">
-            <p className="text-xs text-slate-400">課程總進度</p>
-            <p className="text-sm font-extrabold text-indigo-400">{completedWeeksCount} / {course.syllabus.length} 單元已評估 ({progressPercent}%)</p>
+          <div className="text-right hidden md:block">
+            <p className="text-[10px] text-slate-400 uppercase tracking-widest">COURSE PROGRESS</p>
+            <p className="text-xs font-extrabold text-indigo-400">{completedWeeksCount} / {course.syllabus.length} 單元已評估 ({progressPercent}%)</p>
           </div>
-          <div className="w-32 bg-slate-950 h-2.5 rounded-full border border-slate-800 overflow-hidden">
+          <div className="w-28 bg-slate-950 h-2 rounded-full border border-slate-800/60 overflow-hidden">
             <div 
-              className="bg-gradient-to-r from-pink-500 to-indigo-500 h-full rounded-full transition-all duration-500" 
+              className="bg-gradient-to-r from-pink-500 via-indigo-500 to-cyan-500 h-full rounded-full transition-all duration-500" 
               style={{ width: `${progressPercent}%` }}
             ></div>
           </div>
@@ -128,18 +124,19 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
       {/* 🏛️ Main Workspace Layout */}
       <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
         {/* Left Visual Syllabus Planner (Sidebar) */}
-        <aside className="w-full md:w-80 border-r border-slate-800/80 bg-[#090d1f]/40 p-5 flex flex-col gap-4 shrink-0 overflow-y-auto max-h-[40vh] md:max-h-[calc(100vh-73px)]">
-          <div className="pb-3 border-b border-slate-800">
-            <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+        <aside className="w-full md:w-84 border-r border-slate-800/60 bg-[#090b16]/30 p-5 flex flex-col gap-4 shrink-0 overflow-y-auto max-h-[35vh] md:max-h-[calc(100vh-73px)] scrollbar-thin">
+          <div className="pb-3 border-b border-slate-800/50">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-300">
               <BookOpen className="w-3.5 h-3.5 text-pink-400" />
               <span>課程大綱及進度規劃</span>
-            </h3>
+            </div>
           </div>
 
-          <div className="flex-1 space-y-2">
+          <div className="flex-1 space-y-2.5">
             {course.syllabus.map((syll) => {
               const isCompleted = !!courseProgress[syll.week];
               const isActive = activeWeek === syll.week;
+              const weekNumStr = syll.week < 10 ? `0${syll.week}` : `${syll.week}`;
               
               return (
                 <button
@@ -147,27 +144,27 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
                   onClick={() => setActiveWeek(syll.week)}
                   className={`w-full text-left p-3.5 rounded-2xl flex items-center justify-between border transition duration-200 group active:scale-[0.98] ${
                     isActive 
-                      ? 'bg-gradient-to-r from-indigo-950/70 to-pink-950/20 border-pink-500/80 shadow-lg shadow-pink-950/10' 
-                      : 'bg-slate-900/35 border-slate-800/80 hover:bg-slate-900/60 hover:border-slate-700'
+                      ? 'bg-gradient-to-r from-indigo-950/40 via-pink-950/10 to-pink-950/5 border-pink-500/80 shadow-[0_0_15px_rgba(236,72,153,0.08)]' 
+                      : 'bg-slate-900/15 border-slate-800/50 hover:bg-slate-900/40 hover:border-slate-700'
                   }`}
                 >
-                  <div className="flex flex-col gap-1 pr-2">
-                    <span className={`text-[10px] font-bold tracking-widest ${isActive ? 'text-pink-400' : 'text-indigo-400'}`}>
-                      WEEK {syll.week}
+                  <div className="flex flex-col gap-1 pr-2 overflow-hidden">
+                    <span className={`text-[9px] font-bold tracking-widest font-mono ${isActive ? 'text-pink-400' : 'text-indigo-400'}`}>
+                      WEEK {weekNumStr}
                     </span>
-                    <span className={`text-sm font-semibold truncate max-w-[180px] ${isActive ? 'text-white' : 'text-slate-300 group-hover:text-white'}`}>
+                    <span className={`text-xs font-semibold truncate max-w-[190px] ${isActive ? 'text-white' : 'text-slate-300 group-hover:text-white'}`}>
                       {syll.title.replace(/^第\s*\d+\s*週\s*-?/, '')}
                     </span>
                   </div>
 
-                  <div className="shrink-0">
+                  <div className="shrink-0 pl-1">
                     {isCompleted ? (
-                      <div className="w-6 h-6 rounded-full bg-emerald-500/20 border border-emerald-500/50 flex items-center justify-center" title="已完成心理計量評估">
-                        <Check className="w-3.5 h-3.5 text-emerald-400" />
+                      <div className="w-5 h-5 rounded-full bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center shadow-[0_0_10px_rgba(16,185,129,0.15)]" title="已完成心理計量評估">
+                        <Check className="w-3 h-3 text-emerald-400" />
                       </div>
                     ) : (
-                      <div className="w-6 h-6 rounded-full bg-slate-950 border border-slate-800 flex items-center justify-center text-[10px] text-slate-500">
-                        {syll.week}
+                      <div className="w-5 h-5 rounded-full bg-slate-950/60 border border-slate-800 flex items-center justify-center text-[9px] text-slate-500 font-mono">
+                        {weekNumStr}
                       </div>
                     )}
                   </div>
@@ -178,9 +175,9 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
         </aside>
 
         {/* Center Canvas */}
-        <main className="flex-1 flex flex-col bg-[#05070e] p-6 md:p-8 overflow-y-auto max-h-[calc(100vh-73px)]">
+        <main className="flex-1 flex flex-col bg-[#05060e] p-6 md:p-8 overflow-y-auto max-h-[calc(100vh-73px)]">
           {/* Workspace Tabs */}
-          <div className="flex border-b border-slate-800/80 mb-6">
+          <div className="flex border-b border-slate-800/60 mb-6">
             <button
               onClick={() => setActiveTab('reading')}
               className={`pb-3.5 px-6 font-bold text-sm border-b-2 transition duration-200 flex items-center gap-2 ${
@@ -222,20 +219,20 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
                     <MarkdownViewer rawText={markdownText} />
                     
                     {/* Bottom Guide to Assessment */}
-                    <div className="max-w-4xl p-6 rounded-3xl bg-gradient-to-r from-indigo-950/40 via-[#0a0f28]/60 to-pink-950/20 border border-slate-800/80 backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-4 mt-4 shadow-xl">
+                    <div className="max-w-4xl p-6 rounded-3xl bg-gradient-to-r from-indigo-950/30 via-[#090b1c]/50 to-pink-950/15 border border-slate-800/80 backdrop-blur-md flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 shadow-xl">
                       <div>
-                        <h4 className="text-lg font-bold text-white">本週單元研讀完畢！</h4>
-                        <p className="text-sm text-slate-400">現在可以使用我們的 AI 心理計量模型檢測您本週的學習吸收力。</p>
+                        <h4 className="text-base font-bold text-white">本週單元研讀完畢！</h4>
+                        <p className="text-xs text-slate-400 mt-1">現在可以使用我們的 AI 心理計量模型檢測您本週的學習吸收力。</p>
                       </div>
                       <button
                         onClick={() => {
                           setActiveTab('quiz');
                           window.scrollTo({ top: 0, behavior: 'smooth' });
                         }}
-                        className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-indigo-500 hover:from-pink-600 hover:to-indigo-600 text-white text-sm font-extrabold transition shadow-lg hover:shadow-indigo-500/25 active:scale-95 whitespace-nowrap"
+                        className="flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-indigo-500 hover:from-pink-600 hover:to-indigo-600 text-white text-xs font-extrabold transition shadow-lg hover:shadow-indigo-500/25 active:scale-95 whitespace-nowrap"
                       >
                         <span>開始自我挑戰評量</span>
-                        <ArrowRight className="w-4 h-4 animate-bounce-x" />
+                        <ArrowRight className="w-4 h-4" />
                       </button>
                     </div>
                   </>
@@ -246,17 +243,16 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
                 {showReport ? (
                   // Review Mode: Show Diagnostic Report
                   <div className="flex flex-col gap-4">
-                    <div className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/35 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-md">
+                    <div className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-md">
                       <div>
-                        <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">DIAGNOSTIC ARCHIVED</span>
+                        <span className="text-[9px] font-bold text-emerald-400 uppercase tracking-widest">DIAGNOSTIC ARCHIVED</span>
                         <h4 className="text-sm font-bold text-white">您已於雲端完成本週自我診斷！</h4>
-                        <p className="text-xs text-slate-400">以下為您的 CTT 經典測驗、IRT 項目反應特徵 S 曲線、以及 CDM 認知診斷模型數據分析。</p>
+                        <p className="text-xs text-slate-400 mt-0.5">以下為您的 CTT 經典測驗、IRT 項目反應特徵 S 曲線、以及 CDM 認知診斷模型數據分析。</p>
                       </div>
                       <button
                         onClick={() => {
                           if (window.confirm('重新測驗將會覆蓋您目前的診斷存檔，確定要重新測驗嗎？')) {
                             setCurrentQuizReport(null);
-                            // Temporarily delete local progress trigger for active week to launch test
                             const progressCopy = { ...courseProgress };
                             delete progressCopy[activeWeek];
                             setCourseProgress(progressCopy);
