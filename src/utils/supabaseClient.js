@@ -124,42 +124,133 @@ export const StorageEngine = {
     localStorage.removeItem('psy_local_user');
   },
 
-  // Save Quiz Result
+  // Save Quiz Result (Legacy fallback wrapper)
   saveResult: async (resultData) => {
+    return StorageEngine.saveQuizResult({
+      userId: null,
+      courseId: resultData.courseId,
+      week: resultData.weekId,
+      score: resultData.score,
+      answers: resultData.responseVector,
+      report: resultData.cdm_metrics || resultData
+    });
+  },
+
+  // 1. Get Quiz Results (Extended wrapper for active dashboards)
+  getQuizResults: async (userId) => {
+    const history = await StorageEngine.getHistory();
+    return history.map(item => ({
+      ...item,
+      week: item.week_id || item.week,
+      report: item.cdm_metrics || item.report
+    }));
+  },
+
+  // 2. Save Quiz Result (Adaptive Mastery Enhanced!)
+  saveQuizResult: async ({ userId, courseId, week, score, answers, report, masteredQuestions = [], attemptsCount = 1 }) => {
     const user = await StorageEngine.getCurrentUser();
     if (!user) throw new Error('請先登入以保存測驗診斷結果');
 
     const formattedResult = {
       user_id: user.id,
-      course_id: resultData.courseId,
-      week_id: resultData.weekId,
-      score: resultData.score,
-      total_questions: resultData.totalQuestions,
-      response_vector: resultData.responseVector,
-      ctt_metrics: resultData.cttMetrics,
-      irt_metrics: resultData.irtMetrics,
-      cdm_metrics: resultData.cdmMetrics,
+      course_id: courseId,
+      week_id: week,
+      score: score,
+      total_questions: report?.totalQuestions || 10,
+      response_vector: answers || [],
+      ctt_metrics: report?.ctt || report || null,
+      irt_metrics: report?.irt || report || null,
+      cdm_metrics: report || null,
+      mastered_questions: masteredQuestions,
+      attempts_count: attemptsCount,
       created_at: new Date().toISOString()
     };
 
     if (isCloudMode && supabase && user.id !== 'sandbox-guest-id') {
-      const { data, error } = await supabase
+      // Check if there is an existing record to merge attempts and masteries
+      const { data: existing } = await supabase
         .from('quiz_results')
-        .insert([formattedResult])
-        .select();
+        .select('*')
+        .eq('user_id', user.id)
+        .eq('course_id', courseId)
+        .eq('week_id', week)
+        .maybeSingle();
+
+      if (existing) {
+        const mergedMastered = Array.from(new Set([...(existing.mastered_questions || []), ...masteredQuestions]));
+        const mergedAttempts = (existing.attempts_count || 0) + 1;
+        formattedResult.mastered_questions = mergedMastered;
+        formattedResult.attempts_count = mergedAttempts;
+        formattedResult.id = existing.id; // Preserve primary key
+
+        const { data, error } = await supabase
+          .from('quiz_results')
+          .upsert([formattedResult])
+          .select();
+        if (error) throw error;
+        return data[0];
+      } else {
+        const { data, error } = await supabase
+          .from('quiz_results')
+          .insert([formattedResult])
+          .select();
+        if (error) throw error;
+        return data[0];
+      }
+    } else {
+      // Sandbox local storage
+      const history = StorageEngine.getLocalHistory();
+      const existingIdx = history.findIndex(item => 
+        item.user_id === user.id && 
+        item.course_id === courseId && 
+        (item.week_id === week || item.week === week)
+      );
+
+      if (existingIdx !== -1) {
+        const existing = history[existingIdx];
+        const mergedMastered = Array.from(new Set([...(existing.mastered_questions || []), ...masteredQuestions]));
+        const mergedAttempts = (existing.attempts_count || 0) + 1;
+        
+        history[existingIdx] = {
+          ...existing,
+          ...formattedResult,
+          mastered_questions: mergedMastered,
+          attempts_count: mergedAttempts
+        };
+      } else {
+        history.unshift({
+          id: `local-res-${Date.now()}`,
+          ...formattedResult
+        });
+      }
+      localStorage.setItem('psy_local_results', JSON.stringify(history));
+      return history[existingIdx !== -1 ? existingIdx : 0];
+    }
+  },
+
+  // 3. Reset Week Mastery
+  resetWeekMastery: async (userId, courseId, week) => {
+    const user = await StorageEngine.getCurrentUser();
+    if (!user) throw new Error('請先登入以重置掌握狀態');
+
+    if (isCloudMode && supabase && user.id !== 'sandbox-guest-id') {
+      const { error } = await supabase
+        .from('quiz_results')
+        .delete()
+        .eq('user_id', user.id)
+        .eq('course_id', courseId)
+        .eq('week_id', week);
 
       if (error) throw error;
-      return data[0];
     } else {
-      // Sandbox storage
-      const history = StorageEngine.getLocalHistory();
-      const newResult = {
-        id: `local-res-${Date.now()}`,
-        ...formattedResult
-      };
-      history.unshift(newResult);
+      // Local sandbox reset
+      let history = StorageEngine.getLocalHistory();
+      history = history.filter(item => 
+        !(item.user_id === user.id && 
+          item.course_id === courseId && 
+          (item.week_id === week || item.week === week))
+      );
       localStorage.setItem('psy_local_results', JSON.stringify(history));
-      return newResult;
     }
   },
 

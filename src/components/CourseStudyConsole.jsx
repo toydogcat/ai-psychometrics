@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, Award, CheckCircle, ChevronLeft, ArrowRight, Check } from 'lucide-react';
+import { BookOpen, Award, CheckCircle, ChevronLeft, ArrowRight, Check, RefreshCw, Star } from 'lucide-react';
 import MarkdownViewer from './MarkdownViewer';
 import QuizArena from './QuizArena';
 import PsychometricsReport from './PsychometricsReport';
@@ -64,26 +64,44 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
   const handleQuizComplete = async (reportData) => {
     setCurrentQuizReport(reportData);
     
-    if (user) {
+    try {
+      await StorageEngine.saveQuizResult({
+        userId: user?.id,
+        courseId: course.id,
+        week: activeWeek,
+        score: reportData.score,
+        answers: reportData.rawAnswers,
+        report: reportData,
+        masteredQuestions: reportData.masteredQuestions,
+        attemptsCount: reportData.attemptsCount
+      });
+      await loadUserProgress();
+    } catch (err) {
+      console.error('Failed to auto-save to cloud:', err);
+    }
+  };
+
+  const handleResetMastery = async () => {
+    if (window.confirm('確定要清除本週所有已掌握的題目並重新開始嗎？')) {
       try {
-        await StorageEngine.saveQuizResult({
-          userId: user.id,
-          courseId: course.id,
-          week: activeWeek,
-          score: reportData.score,
-          answers: reportData.rawAnswers,
-          report: reportData
-        });
+        await StorageEngine.resetWeekMastery(user?.id, course.id, activeWeek);
+        setCurrentQuizReport(null);
         await loadUserProgress();
       } catch (err) {
-        console.error('Failed to auto-save to cloud:', err);
+        console.error('Failed to reset week mastery:', err);
       }
     }
   };
 
-  const savedReport = courseProgress[activeWeek]?.report;
+  const savedRecord = courseProgress[activeWeek];
+  const savedReport = savedRecord?.report;
   const showReport = currentQuizReport || savedReport;
 
+  // Adaptive progress calculations
+  const masteredList = savedRecord?.mastered_questions || currentQuizReport?.masteredQuestions || [];
+  const attemptsCount = savedRecord?.attempts_count || currentQuizReport?.attemptsCount || 0;
+  
+  // Calculate completed weeks count (where week is 100% mastered or has at least one complete attempt)
   const completedWeeksCount = Object.keys(courseProgress).length;
   const progressPercent = Math.round((completedWeeksCount / course.syllabus.length) * 100) || 0;
 
@@ -159,7 +177,7 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
 
                   <div className="shrink-0 pl-1">
                     {isCompleted ? (
-                      <div className="w-5 h-5 rounded-full bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center shadow-[0_0_10px_rgba(16,185,129,0.15)]" title="已完成心理計量評估">
+                      <div className="w-5 h-5 rounded-full bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center shadow-[0_0_10px_rgba(16,185,129,0.15)]" title="已進行過評估">
                         <Check className="w-3 h-3 text-emerald-400" />
                       </div>
                     ) : (
@@ -241,40 +259,74 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
             ) : (
               <div className="flex flex-col gap-6">
                 {showReport ? (
-                  // Review Mode: Show Diagnostic Report
+                  // Review Mode: Show Diagnostic Report with Mastery Dashboard
                   <div className="flex flex-col gap-4">
-                    <div className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-md">
-                      <div>
-                        <span className="text-[9px] font-bold text-emerald-400 uppercase tracking-widest">DIAGNOSTIC ARCHIVED</span>
-                        <h4 className="text-sm font-bold text-white">您已於雲端完成本週自我診斷！</h4>
-                        <p className="text-xs text-slate-400 mt-0.5">以下為您的 CTT 經典測驗、IRT 項目反應特徵 S 曲線、以及 CDM 認知診斷模型數據分析。</p>
+                    {/* 🏆 High-End Adaptive Mastery Dashboard */}
+                    <div className="p-5 rounded-2xl bg-gradient-to-r from-indigo-950/30 via-slate-900/40 to-pink-950/15 border border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 shadow-lg select-none">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 border border-indigo-500/20">
+                          <Star className="w-5 h-5 text-yellow-400 animate-spin-slow" />
+                        </div>
+                        <div>
+                          <span className="text-[9px] font-bold text-pink-400 uppercase tracking-widest">ADAPTIVE STUDY DASHBOARD</span>
+                          <h4 className="text-sm font-bold text-white">
+                            本週考點掌握進度：{masteredList.length} / {showReport.totalQuestionsInPool || 15} 題 ({Math.round((masteredList.length / (showReport.totalQuestionsInPool || 15)) * 100)}%)
+                          </h4>
+                          <p className="text-xs text-slate-400 mt-0.5">您已累計嘗試了 {attemptsCount} 次微診斷測驗。做對題目已被完美移出題庫。</p>
+                        </div>
                       </div>
-                      <button
-                        onClick={() => {
-                          if (window.confirm('重新測驗將會覆蓋您目前的診斷存檔，確定要重新測驗嗎？')) {
-                            setCurrentQuizReport(null);
-                            const progressCopy = { ...courseProgress };
-                            delete progressCopy[activeWeek];
-                            setCourseProgress(progressCopy);
-                          }
-                        }}
-                        className="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-bold text-slate-300 hover:bg-slate-800 hover:text-white transition active:scale-95 shrink-0"
-                      >
-                        重新開始測驗 ⚡
-                      </button>
+
+                      <div className="flex items-center gap-3 w-full md:w-auto shrink-0">
+                        {masteredList.length < (showReport.totalQuestionsInPool || 15) ? (
+                          <button
+                            onClick={() => {
+                              // Reset active report to trigger re-entering QuizArena with filtered remaining questions!
+                              setCurrentQuizReport(null);
+                              // Temporary wipe from map to render QuizArena
+                              const progressCopy = { ...courseProgress };
+                              if (progressCopy[activeWeek]) {
+                                progressCopy[activeWeek] = {
+                                  ...progressCopy[activeWeek],
+                                  report: null // Temporarily clear active report
+                                };
+                              }
+                              setCourseProgress(progressCopy);
+                            }}
+                            className="px-4 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-indigo-500 hover:from-pink-600 hover:to-indigo-600 text-xs font-extrabold text-white transition active:scale-95 shadow-md shrink-0 flex items-center gap-1.5"
+                          >
+                            <span>攻克剩餘 {(showReport.totalQuestionsInPool || 15) - masteredList.length} 題錯題 ⚡</span>
+                          </button>
+                        ) : (
+                          <div className="px-3.5 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs font-bold flex items-center gap-1 shrink-0">
+                            <Check className="w-3.5 h-3.5" />
+                            <span>100% 掌握大師徽章</span>
+                          </div>
+                        )}
+
+                        <button
+                          onClick={handleResetMastery}
+                          className="px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-[10px] font-bold text-slate-400 hover:text-white transition active:scale-95 shrink-0 flex items-center gap-1"
+                        >
+                          <RefreshCw className="w-3 h-3" />
+                          <span>重設掌握</span>
+                        </button>
+                      </div>
                     </div>
                     
                     <PsychometricsReport 
-                      reportData={currentQuizReport || savedReport} 
-                      userAbility={currentQuizReport?.theta || savedReport?.theta || 0}
+                      reportData={showReport} 
+                      userAbility={showReport.theta || 0}
                     />
                   </div>
                 ) : (
                   // Quizzing Mode
                   <QuizArena 
+                    courseId={course.id}
+                    weekId={activeWeek}
                     quizFileName={activeWeekInfo.quizPath} 
                     user={user}
                     onComplete={handleQuizComplete}
+                    onBackToDashboard={() => setActiveTab('reading')}
                   />
                 )}
               </div>
