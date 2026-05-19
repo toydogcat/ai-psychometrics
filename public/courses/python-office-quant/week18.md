@@ -1,170 +1,116 @@
-# 第 18 週：期末綜合測驗 (Final Comprehensive Exam)
+# 第 18 週 - 期末綜合評量複習與自動化/量化實戰全景指南 (Final quantitative evaluation & Automation Roadmap)
 
-本週為期末綜合測驗，包含 50 題單選題、50 題多選題及 50 題填充題，共計 150 題。測驗範圍涵蓋第 10 週至第 17 週之核心知識點（NumPy、Pandas 進階、數據視覺化、量化交易初步、回測與風險評估）。
-
----
-
-## 一、 單選題 (Single Choice, SC) - 共 50 題
-
-1. **Q1**: NumPy 中用於獲取數組維度的屬性是？ (A) `size` (B) `shape` (C) `dim` (D) `length`
-2. **Q2**: 對於形狀為 (10, 5) 的數組，`arr.sum(axis=1)` 返回的形狀是？ (A) (10,) (B) (5,) (C) (10, 1) (D) (50,)
-3. **Q3**: NumPy 中計算兩個數組內積的函數是？ (A) `np.multiply()` (B) `np.dot()` (C) `np.inner()` (D) `np.cross()`
-4. **Q4**: `np.linspace(0, 10, 5)` 生成的數組最後一個元素是？ (A) 8 (B) 9 (C) 10 (D) 11
-5. **Q5**: NumPy 的廣播機制要求兩個數組在某個維度上的長度相等或其中一個為？ (A) 0 (B) 1 (C) 2 (D) 無限制
-6. **Q6**: 將 (4, 4) 的數組展平為一維數組的方法是？ (A) `reshape(1, 16)` (B) `flatten()` (C) `transpose()` (D) `resize()`
-7. **Q7**: Pandas 中將數據根據某個欄位進行左連接的函數是？ (A) `pd.concat` (B) `df.merge(..., how='left')` (C) `df.join` (D) `pd.append`
-8. **Q8**: `df.apply(lambda x: x.max())` 預設作用於？ (A) 每一行 (B) 每一列 (C) 整個 DataFrame (D) 索引
-9. **Q9**: 將數值欄位按區間分組（如 0-60, 60-100）應使用？ (A) `pd.cut()` (B) `pd.qcut()` (C) `df.groupby()` (D) `df.pivot()`
-10. **Q10**: 處理重複數據的方法是？ (A) `df.dropna()` (B) `df.drop_duplicates()` (C) `df.fillna()` (D) `df.replace()`
-11. **Q11**: Pandas 中將字串欄位轉為 datetime 類型的函數是？ (A) `pd.to_time()` (B) `pd.to_datetime()` (C) `df.as_type('date')` (D) `np.datetime64()`
-12. **Q12**: `df.resample('M').mean()` 代表？ (A) 按週採樣 (B) 按月採樣 (C) 按年採樣 (D) 按日採樣
-13. **Q13**: GroupBy 對象中，若要同時計算總和與平均值，應使用？ (A) `sum_mean()` (B) `agg(['sum', 'mean'])` (C) `apply()` (D) `transform()`
-14. **Q14**: `pivot_table` 的四要素中，決定行標籤的是？ (A) `values` (B) `index` (C) `columns` (D) `aggfunc`
-15. **Q15**: 計算 5 日移動平均線的寫法是？ (A) `rolling(5).mean()` (B) `expanding(5).mean()` (C) `shift(5).mean()` (D) `diff(5).mean()`
-16. **Q16**: Matplotlib 中創建子圖佈局的推薦函數是？ (A) `plt.figure()` (B) `plt.subplots()` (C) `plt.plot()` (D) `plt.grid()`
-17. **Q17**: Seaborn 中展示分類數據分佈（如箱線圖）的函數是？ (A) `sns.lineplot()` (B) `sns.boxplot()` (C) `sns.heatmap()` (D) `sns.scatterplot()`
-18. **Q18**: 解決 Matplotlib 中文顯示亂碼通常需要修改？ (A) `rcParams['font.sans-serif']` (B) `plt.title(font='Chinese')` (C) `sys.encoding` (D) `os.environ`
-19. **Q19**: 在熱力圖 (Heatmap) 中，最適合展示的是？ (A) 時間序列 (B) 相關係數矩陣 (C) 數據分佈 (D) 離群值
-20. **Q20**: `plt.legend()` 的作用是？ (A) 顯示網格 (B) 顯示圖例 (C) 設置標題 (D) 保存圖片
-21. **Q21**: yfinance 下載數據時，`period='max'` 代表？ (A) 下載最大可能的歷史數據 (B) 下載最近一個月的數據 (C) 下載今天數據 (D) 下載前五天數據
-22. **Q22**: 金融數據中的 `Adj Close` 通常已經處理了？ (A) 手續費 (B) 通貨膨脹 (C) 分紅與拆股 (D) 匯率波動
-23. **Q23**: 計算簡單收益率 (Simple Return) 的 Pandas 函數是？ (A) `diff()` (B) `pct_change()` (C) `std()` (D) `cumsum()`
-24. **Q24**: Tushare 獲取數據前通常需要先進行？ (A) 付費 (B) 設置 Token 認證 (C) 安裝 Chrome 驅動 (D) 導入 Matplotlib
-25. **Q25**: 雙均線策略中，5日均線「由下往上」穿過 20日均線稱為？ (A) 死亡交叉 (B) 支撐位 (C) 黃金交叉 (D) 超賣
-26. **Q26**: RSI 指標超過 80 通常被視為？ (A) 超買 (Overbought) (B) 超賣 (Oversold) (C) 趨勢反轉 (D) 信號無效
-27. **Q27**: 布林帶 (Bollinger Bands) 的寬度由股價的什麼決定？ (A) 平均值 (B) 標準差 (C) 最大值 (D) 成交量
-28. **Q28**: 向量化回測中，計算策略收益的關鍵是將持倉序列向下？ (A) `shift(1)` (B) `diff()` (C) `cumsum()` (D) `dropna()`
-29. **Q29**: 回測中的「未來函數」通常是指？ (A) 代碼寫錯 (B) 使用了當下無法獲得的未來數據 (C) 預測未來的函數 (D) 運行太慢的函數
-30. **Q30**: 萬分之三的手續費，在代碼中應表示為？ (A) 0.03 (B) 0.003 (C) 0.0003 (D) 0.00003
-31. **Q31**: 夏普比率 (Sharpe Ratio) 的分子是？ (A) 總收益 (B) 超額收益 (策略收益 - 無風險利率) (C) 波動率 (D) 最大回撤
-32. **Q32**: 最大回撤 (MDD) 衡量的是策略的？ (A) 穩定性 (B) 盈利能力 (C) 極端壓力/虧損風險 (D) 勝率
-33. **Q33**: 年化波動率通常需要日標準差乘以？ (A) 252 (B) sqrt(252) (C) 365 (D) sqrt(365)
-34. **Q34**: 卡瑪比率 (Calmar Ratio) 定義為？ (A) 收益/波動 (B) 收益/最大回撤 (C) 勝率/盈虧比 (D) 累計收益/手續費
-35. **Q35**: 策略勝率為 50%，盈虧比為 2:1，長期期望收益為？ (A) 正數 (B) 負數 (C) 零 (D) 無法計算
-36. **Q36**: NumPy 中 `np.nan` 的資料類型是？ (A) `int` (B) `float` (C) `object` (D) `bool`
-37. **Q37**: `df.info()` 主要用於查看？ (A) 數據的前五行 (B) 統計摘要 (C) 每欄的類型與缺失值 (D) 欄位名稱
-38. **Q38**: Matplotlib 中設置 X 軸標籤的函數是？ (A) `plt.xlabel()` (B) `plt.title()` (C) `plt.xticks()` (D) `plt.label()`
-39. **Q39**: 向量化回測中，計算交易成本的公式通常包含？ (A) `pos.sum()` (B) `pos.diff().abs()` (C) `pos.mean()` (D) `pos.count()`
-40. **Q40**: 下列哪個庫專門用於獲取中國 A 股數據？ (A) yfinance (B) Tushare (C) Pandas (D) Seaborn
-41. **Q41**: `df.groupby('A')['B'].mean()` 的結果是？ (A) A 欄的平均值 (B) B 欄的平均值 (C) 按 A 分組後 B 欄的平均值 (D) A 與 B 的平均值
-42. **Q42**: 指數移動平均 (EMA) 相比 SMA 的優點是？ (A) 計算更快 (B) 反應更靈敏 (C) 更平滑 (D) 不會產生信號
-43. **Q43**: 策略回測中，Benchmark 設為 0 通常代表？ (A) 買入持有 (B) 不賺不賠 (C) 與市場同步 (D) 無意義
-44. **Q44**: 累積收益曲線 (Equity Curve) 是對收益率序列進行？ (A) `cumsum()` (B) `cumprod()` (C) `mean()` (D) `std()`
-45. **Q45**: 績效指標中，只考慮下行風險的比例是？ (A) Sharpe (B) Sortino (C) Calmar (D) Win Rate
-46. **Q46**: `np.where(arr > 0, 1, 0)` 的作用是？ (A) 刪除小於 0 的元素 (B) 將大於 0 的轉為 1，其餘轉為 0 (C) 尋找正數的索引 (D) 報錯
-47. **Q47**: `df.resample('D')` 中的 'D' 代表？ (A) 月 (B) 日 (C) 週 (D) 小時
-48. **Q48**: 量化交易中，Position 為 -1 代表？ (A) 持倉 (B) 做空 (C) 平倉 (D) 錯誤
-49. **Q49**: 夏普比率大於 2 通常代表策略？ (A) 表現極佳 (B) 非常平庸 (C) 必然虧損 (D) 風險太高
-50. **Q50**: Pandas 中處理缺失值填充的函數是？ (A) `dropna` (B) `fillna` (C) `replace` (D) `isnull`
+本單元為期末大考評綜合知識點梳理，旨在協助學習者在進行「辦公自動化與金融量化應用自我診斷評量」前，系統化總結全學期的實戰技術版圖，並指引期末評估後的專業量化分析師進階發展路徑。
 
 ---
 
-## 二、 多選題 (Multiple Choice, MC) - 共 50 題
+## 🏛️ 自動化與量化應用實戰地圖 (Technical Portfolio Map)
 
-51. **Q51**: 關於 NumPy Array 的特點，正確的是？ (A) 元素類型必須一致 (B) 支持向量化運算 (C) 比 Python List 慢 (D) 內存連續存儲
-52. **Q52**: 下列哪些是 NumPy 生成隨機數的函數？ (A) `np.random.rand()` (B) `np.random.randn()` (C) `np.random.randint()` (D) `np.random.seed()`
-53. **Q53**: Pandas 合併數據的方法包括？ (A) `merge()` (B) `concat()` (C) `join()` (D) `append()`
-54. **Q54**: 數據清洗的常見操作有？ (A) 填充缺失值 (B) 刪除重複行 (C) 數據類型轉換 (D) 異常值過濾
-55. **Q55**: `df.groupby()` 之後可以接哪些聚合函數？ (A) `sum()` (B) `count()` (C) `mean()` (D) `agg()`
-56. **Q56**: 關於 Pandas 時間序列，正確的有？ (A) 支持 `DatetimeIndex` (B) 可以方便地進行降採樣 (C) 支持時間偏移量 (D) 只能按天採樣
-57. **Q57**: 哪些圖表適合展示數據的相關性？ (A) 散點圖 (Scatter) (B) 熱力圖 (Heatmap) (C) 餅圖 (Pie) (D) 柱狀圖 (Bar)
-58. **Q58**: Matplotlib 圖表組成部分包括？ (A) Figure (B) Axes (C) Legend (D) Grid
-59. **Q59**: 金融歷史數據的常見欄位有？ (A) Open (B) High (C) Volume (D) Adj Close
-60. **Q60**: 技術指標按功能可分為？ (A) 趨勢指標 (B) 震盪指標 (C) 成交量指標 (D) 隨機指標
-61. **Q61**: 向量化回測的假設前提包含？ (A) 無限流動性 (B) 固定手續費 (C) 忽略滑點 (D) 無任何成本
-62. **Q62**: 預防未來函數的方法包括？ (A) 使用 `shift(1)` (B) 嚴格使用收盤後的信號 (C) 使用樣本外測試 (D) 隨機擾動數據
-63. **Q63**: 績效評估的三大維度通常是？ (A) 收益 (B) 風險 (C) 交易頻率 (D) 代碼長度
-64. **Q64**: 關於最大回撤 (MDD)，正確的有？ (A) 衡量最壞情況 (B) 數值越小風險越低 (C) 是投資者承受力的底線 (D) 與勝率直接相關
-65. **Q65**: 提高策略夏普比率的方法有？ (A) 提升收益 (B) 降低波動 (C) 增加交易成本 (D) 加入止損邏輯
-66. **Q66**: NumPy 的廣播機制適用於？ (A) 標量與數組 (B) 維度不同的數組 (符合規則) (C) 任意兩個數組 (D) 維度完全相同的數組
-67. **Q67**: Pandas `apply()` 的缺點包括？ (A) 相比向量化運算速度慢 (B) 無法處理複雜邏輯 (C) 本質是 Python 循環 (D) 代碼更難讀
-68. **Q68**: `df.resample()` 支持的採樣頻率包括？ (A) 'D' (B) 'W' (C) 'M' (D) 'Y'
-69. **Q69**: Seaborn 相比 Matplotlib 的優勢？ (A) 內置統計模型 (B) 默認樣式更美觀 (C) 語法更簡潔 (D) 支持交互式
-70. **Q70**: 常見的技術策略類型？ (A) 趨勢跟隨 (B) 均值回歸 (C) 套利策略 (D) 基本面策略
-71. ****Q71**: 關於收益率，正確的有？ (A) 簡單收益率不具時間累加性 (B) 對數收益率具有累加性 (C) `pct_change()` 計算的是簡單收益率 (D) 收益率一定是正數
-72. **Q72**: 向量化回測中，計算交易成本需要？ (A) 持倉變動序列 (B) 費率 (C) 收盤價 (D) 成交量
-73. **Q73**: 過擬合的特徵包括？ (A) 樣本內表現完美 (B) 樣本外表現極差 (C) 參數極多 (D) 邏輯極簡
-74. **Q74**: 風險評估指標包含？ (A) 下行偏差 (B) 波動率 (C) 最大回撤 (D) 夏普比率
-75. **Q75**: Pandas 處理字串的 `.str` 方法支持？ (A) `contains()` (B) `split()` (C) `replace()` (D) `upper()`
-76. **Q76**: NumPy `reshape` 操作會？ (A) 改變數據內容 (B) 改變數組維度 (C) 不改變數據總量 (D) 創建新的視圖或副本
-77. **Q77**: Pandas 填充缺失值的策略有？ (A) 填 0 (B) 填平均值 (C) 前向填充 (ffill) (D) 後向填充 (bfill)
-78. **Q78**: 下列哪些是量化交易的優點？ (A) 克服人性弱點 (B) 執行速度快 (C) 紀律性強 (D) 100% 賺錢
-79. **Q79**: yfinance 獲取的數據對象通常包含？ (A) `history()` (B) `info` (C) `dividends` (D) `actions`
-80. **Q80**: 如何觀察策略的穩定性？ (A) 繪製 Equity Curve (B) 觀察回撤時間 (C) 比較年度收益 (D) 查看代碼註釋
-81. **Q81**: 關於布林帶，正確的有？ (A) 中軌是均線 (B) 帶寬隨波動率變化 (C) 帶寬縮小代表行情可能爆發 (D) 只適用於股票
-82. **Q82**: 哪些庫可以實現金融數據視覺化？ (A) Matplotlib (B) Plotly (C) Seaborn (D) NumPy
-83. **Q83**: 策略回測中的「存活者偏差」是指？ (A) 只回測目前還存在的股票 (B) 忽視了已退市的股票 (C) 導致回測收益虛高 (D) 與回測無關
-84. **Q84**: Pandas `pd.to_datetime()` 支援的輸入類型？ (A) 字串 (B) 列表 (C) Series (D) 整數時間戳
-85. **Q85**: 績效指標中，年化收益率受到哪些因素影響？ (A) 總收益 (B) 持有時間 (C) 交易次數 (D) 無風險利率
-86. **Q86**: NumPy `axis` 參數的理解？ (A) axis=0 代表行 (B) axis=1 代表列 (C) 聚合時 axis 指定的是「被消除」的維度 (D) 與維度數量有關
-87. **Q87**: Pandas `df.query()` 的優點？ (A) 語法類似 SQL (B) 代碼更簡潔 (C) 速度最快 (D) 支持複雜布林邏輯
-88. **Q88**: 回測報告中應包含的風險指標有？ (A) 最大回撤 (B) 夏普比率 (C) 年化波動率 (D) 總手續費
-89. **Q89**: 關於 Tushare，描述正確的有？ (A) 需註冊獲取 Token (B) 支持 A 股、期貨等 (C) 數據全面 (D) 完全免費無限制
-90. **Q90**: 趨勢策略在哪些行情下表現不佳？ (A) 單邊上漲 (B) 橫盤震盪 (C) 劇烈波動但無方向 (D) 單邊下跌
-91. **Q91**: 關於 `np.where` 與 `df.loc` 賦值，正確的有？ (A) `np.where` 更適合簡單二值化 (B) `df.loc` 更適合多條件複雜賦值 (C) 兩者都支持向量化 (D) `df.loc` 速度更快
-92. **Q92**: 資料分析的三劍客通常指？ (A) NumPy (B) Pandas (C) Matplotlib (D) Flask
-93. **Q93**: 哪些因素會增加交易成本？ (A) 頻繁換手 (B) 交易量巨大導致衝擊成本 (C) 高佣金 (D) 長期持有
-94. **Q94**: 關於 RSI 指標，正確的有？ (A) 反映強弱 (B) 取值 0-100 (C) 超過 70 為強勢 (D) 低於 30 為弱勢
-95. **Q95**: 預防過擬合的手段？ (A) 增加回測時間長度 (B) 減少策略參數 (C) 進行隨機化測試 (D) 使用更多指標
-96. **Q96**: 關於年化因子，正確的有？ (A) 每日到年化用 252 (B) 每月到年化用 12 (C) 每小時到年化需考慮日交易小時 (D) 它是固定不變的常數
-97. **Q97**: Pandas 處理 CSV 時，`encoding` 常選？ (A) 'utf-8' (B) 'gbk' (C) 'cp950' (D) 'binary'
-98. **Q98**: 量化回測中，滑點 (Slippage) 產生的原因？ (A) 市場流動性不足 (B) 下單延遲 (C) 買賣價差 (D) 軟體 Bug
-99. **Q99**: 下列哪些函數屬於 `pd.Series` 的統計方法？ (A) `mean()` (B) `std()` (C) `quantile()` (D) `median()`
-100. **Q100**: 量化交易的生命週期包括？ (A) 策略研發 (B) 回測驗證 (C) 風險評估 (D) 實盤交易
+```mermaid
+graph TD
+    A["自動化與量化交易技術棧"] --> B["1. 辦公自動化 (Pandas, docx, pptx, SMTP)"]
+    A --> C["2. 數據獲取與爬蟲 (Requests, Selenium, API)"]
+    A --> D["3. 金融數據分析與技術指標 (yfinance, RSI, MACD)"]
+    A --> E["4. 量化策略回測與機器學習 (Sharpe, Scikit-learn)"]
+    A --> F["5. 蒙地卡羅配置與雲端 DevOps (LineNotify, Crontab)"]
+```
 
 ---
 
-## 三、 填充題 (Fill-in-the-blank, Fill) - 共 50 題
+## 💡 核心技術要點回顧 (Core Practice Review)
 
-101. NumPy 中數組的元素總個數可以通過屬性 __________ 獲取。
-102. `np.zeros((3, 4))` 創建的是一個全為 __________ 的矩陣。
-103. `arr.T` 是對數組進行 __________ 運算（行列互換）。
-104. NumPy 中將數組保存為本地檔案的函數是 `np.__________()`。
-105. Pandas 中代表二維數據結構的對象名稱是 __________。
-106. 獲取 DataFrame 的最後 5 行數據應調用 `df.________()`。
-107. 將 DataFrame 索引重設為預設數字索引的方法是 __________。
-108. Pandas 中合併多個 Series 對象的函數是 `pd.________()`。
-109. `df.isnull().________()` 可以檢查數據中是否存在空值。
-110. `pd.date_range(start='20230101', periods=10, freq='____')` 可生成 10 個工作日。
-111. GroupBy 運算的流程通常描述為：拆分、__________、合併。
-112. 繪製 Matplotlib 圖表後，必須呼叫 `plt.________()` 才能看到圖形。
-113. Seaborn 的 `________map()` 函數常用於展示相關係數。
-114. 設置圖表 X 軸範圍的函數是 `plt.________()`。
-115. 在 yfinance 中，獲取 Apple 公司數據的 Ticker 代號是 '________'。
-116. Tushare 的資料接口認證碼稱為 __________。
-117. 金融數據中，`High - Low` 的差值代表當日的 __________。
-118. 指數移動平均線的英文縮寫是 __________。
-119. 雙均線策略中，短期均線跌破長期均線稱為 __________ 交叉。
-120. 向量化回測中，`Strategy_Returns = Position.________(1) * Returns`。
-121. 計算交易成本時，我們關注的是持倉序列的 __________ (Absolute Diff)。
-122. 夏普比率 = (年化收益 - 無風險利率) / __________。
-123. 策略從 1 跌到 0.8，其最大回撤是 __________%。
-124. 年化波動率等於日波動率乘以 252 的 __________。
-125. 卡瑪比率是年化收益與 __________ 的比值。
-126. 盈虧比 = 平均獲利 / 平均 __________。
-127. NumPy 數組的數據類型屬性是 __________。
-128. `np.arange(0, 10, 2)` 生成的數組長度是 __________。
-129. `df.columns = ['a', 'b']` 的作用是修改 __________。
-130. `pd.concat([df1, df2], axis=1)` 執行的是 __________ 合併。
-131. `df.sort_values(by='col', ascending=________)` 執行降序排列。
-132. 將 CSV 寫入磁碟的函數是 `to_________()`。
-133. Matplotlib 設置畫布大小的參數是 `figsize=(____, ____)`。
-134. Seaborn 中設置繪圖風格的函數是 `sns.set_________()`。
-135. yfinance 下載歷史數據的函數是 `________.download()`。
-136. `df['close'].diff()` 計算的是今日價格與 __________ 價格的差。
-137. 策略中 Signal 取值為 1 且 Position 保持為 1 代表 __________。
-138. 萬分之一的手續費率寫成小數是 __________。
-139. 夏普比率衡量的是每承擔一單位風險所能獲得的 __________。
-140. 計算 MDD 需要用到累積最大值函數 `__________()`。
-141. 無風險利率在台灣通常參考 __________ 利率。
-142. `df.resample('W')` 代表按 __________ 頻率重採樣。
-143. 量化策略在歷史數據上表現極佳但在未來失敗，稱為 __________。
-144. `pd.pivot_table()` 中計算方式參數名是 __________。
-145. Matplotlib 中保存圖形的函數是 `plt.__________()`。
-146. `df.dropna(axis=1)` 代表刪除包含空值的 __________。
-147. `np.where` 第一個參數是 __________。
-148. RSI 值在 __________ 以下通常被認為進入超賣區。
-149. 為了避免未來函數，回測時的成交價通常取隔日的 __________。
-150. 量化交易的核心是用 __________ 代替主觀判斷。
+### 一、 辦公自動化與批次處理精要 (Office Automation)
+1. **Pandas 資料清洗與計算**：
+   * 採用 `loc` 進行**標籤索引**，`iloc` 進行**整數位置索引**，布林篩選常用於過濾滿足特定條件的資料列。
+   * 處理缺失值時，使用 `.dropna()` 刪除含有空值的行或列，`.fillna()` 對空值進行特定填補。
+2. **多文檔批次產生**：
+   * 使用 `python-docx` 進行 Word 文檔渲染與段落文字替換。
+   * 使用 `python-pptx` 商務幻燈片批次套版與圖表嵌入。
+   * 使用 `PyPDF2` 或類似工具進行 PDF 批量合併與加密。
+3. **郵件與系統處理**：
+   * `smtplib` 用於同步發送電子郵件，`imaplib` 用於讀取收件匣。
+   * `os` 與 `shutil` 模組可用於文件批量複製、重命名、及路徑合併。
+
+```python
+# Pandas 資料處理範例
+import pandas as pd
+
+# 讀取 CSV 並填補缺失值
+df = pd.read_csv("financial_data.csv")
+df["Close"] = df["Close"].fillna(method="ffill") # 前向填補
+
+# 篩選收盤價大於均線的資料列
+bull_market = df.loc[df["Close"] > df["MA_20"]]
+```
 
 ---
+
+### 二、 數據抓取與 API 對接 (Web Scraping & API Integration)
+1. **靜態網頁解析**：使用 `requests` 發送 HTTP 請求，並藉由 `BeautifulSoup` 的 CSS 選擇器或 XPath 精準解析 HTML 節點。
+2. **動態網頁交互**：對於經 JavaScript 非同步渲染的網頁，採用 `Selenium` 控網模擬真人點擊、滾動頁面、以及繞過基本反爬防禦。
+3. **API 接口讀取**：最穩定高效的資料來源。利用 `requests` 讀取 RESTful API，並使用 `json()` 方法直接將回傳資料包裝為 Python 字典。
+
+```python
+# Requests API 讀取範例
+import requests
+
+url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+response = requests.get(url)
+if response.status_code == 200:
+    data = response.json()
+    btc_price = data["bitcoin"]["usd"]
+    print(f"BTC 當前價格: {btc_price} USD")
+```
+
+---
+
+### 三、 金融時間序列與指標算法 (Quantitative Financial Metrics)
+1. **數據獲取**：採用 `yfinance` 連接全球金融資料庫，獲取歷史 OHLCV 價格。
+2. **收益率與移動平均**：
+   * 每日收益率計算：`df['Return'] = df['Close'].pct_change()`。
+   * 移動平均線 (MA)：`df['MA_20'] = df['Close'].rolling(window=20).mean()`。
+3. **技術指標實作**：
+   * **RSI (相對強弱指標)**：衡量價格超買或超賣的動量指標。
+   * **MACD (指數平滑異同移動平均線)**：快線 (EMA 12) 與慢線 (EMA 26) 的差值，以及訊號線 (EMA 9) 的黃金交叉與死亡交叉。
+   * **布林通道 (Bollinger Bands)**：以移動平均線為中心，上下各加減兩個標準差的波動率通道。
+
+---
+
+### 四、 策略回測框架與機器學習應用 (Backtesting & Machine Learning)
+1. **雙均線回測框架**：
+   * **訊號生成**：當短期均線向上突破長期均線時發送買入訊號（黃金交叉，`Signal = 1`），反之發送賣出或放空訊號（死亡交叉，`Signal = -1`）。
+   * **部位管理與最大回撤 (Max Drawdown)**：記錄淨值曲線，計算歷史峰值至谷底的最大跌幅，以評估策略極端風險。
+   * **夏普比率 (Sharpe Ratio)**：衡量承受每單位總風險所能獲得的超額回報：$Sharpe = \frac{E(R_p) - R_f}{\sigma_p}$。
+2. **機器學習預測**：使用 `scikit-learn` 的線性回歸、隨機森林等演算法進行資產價格預測，並使用特徵重要性 (Feature Importance) 篩選高影響力因子。
+
+```python
+# 雙均線回測邏輯範例
+import numpy as np
+
+# 生成買賣訊號
+df["Signal"] = 0
+df["Signal"] = np.where(df["MA_5"] > df["MA_20"], 1, -1)
+df["Position"] = df["Signal"].shift(1) # 避開前瞻偏差
+df["Strategy_Return"] = df["Position"] * df["Return"]
+```
+
+---
+
+### 五、 蒙地卡羅優化與雲端部署 (Portfolio Optimization & DevOps)
+1. **蒙地卡羅模擬 (Monte Carlo Simulation)**：通過大量隨機漫步路徑模擬資產未來走勢，或隨機生成投資組合權重以尋找「馬可維茲均值-變異數有效邊界 (Efficient Frontier)」上的最優配置。
+2. **量化部署與 DevOps**：
+   * 利用 Linux 的 `cron` 定時任務排程，每日自動執行策略。
+   * 當發生異常或送出交易訊號時，調用 `LineNotify` API 即時推送警報至手機。
+
+---
+
+## 🎯 啟動期末診斷與大師大考評
+
+恭喜您完成了整學期自動化辦公與量化應用的全部研讀！現在，請切換至上方的 **「⚡ 自我診斷評量」** 分頁。
+
+**自適應期末考評引擎已準備就緒**：
+1. 系統將隨機抽取本學期最實用的自動化與量化進階考點。
+2. 做對的題目將會被自動移出，您可以透過錯題消滅挑戰，逐步將所有弱點消滅！
+3. 評量提交後，系統將精準反饋您的心理計量評量指標與 CDM 各項能力雷達圖，為您解鎖**期末金牌大師榮譽勳章**！
+
+祝您順利通關，成為頂尖的 Python 自動化與量化專家！

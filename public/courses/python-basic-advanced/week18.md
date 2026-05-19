@@ -1,420 +1,149 @@
-# 課程一：第 18 週 - 期末綜合測驗 (Final Comprehensive Exam)
+# 第 18 週 - 期末綜合複習與 Python 進階實戰航海圖 (Final Comprehensive Revision & Advanced Roadmap)
 
-本週為期末綜合測驗，包含 50 題單選題、50 題多選題及 50 題填充題，共計 150 題。測驗範圍主要針對第 10 週至第 17 週之核心知識點（OOP、進階函式、系統操作、正規表示式、檔案處理與錯誤處理）。
-
----
-
-## 一、 單選題 (Single Choice) - 共 50 題
-
-1. **Q1**: Python 類別中，負責分配記憶體並回傳實例物件的「真正」建構子是？
-   - (A) `__init__` (B) `__new__` (C) `__call__` (D) `__create__`
-   - *答案*: B (KP.G)
-2. **Q2**: 執行 `obj.attr = value` 時，若該屬性不存在且類別定義了此方法，則會被攔截？
-   - (A) `__getattr__` (B) `__setattr__` (C) `__getattribute__` (D) `__dir__`
-   - *答案*: B (KP.G)
-3. **Q3**: 關於 `@property`，下列哪種描述最準確？
-   - (A) 它將方法轉換為常數 (B) 它將類別方法轉換為實體方法 (C) 它將方法調用偽裝成屬性存取 (D) 它會自動將屬性變為私有
-   - *答案*: C (KP.G)
-4. **Q4**: 若 `class B(A): pass`，且 `a = A(); b = B()`，則 `isinstance(b, A)` 的結果是？
-   - (A) True (B) False (C) 報錯 (D) None
-   - *答案*: A (KP.G)
-5. **Q5**: 在 MRO 搜尋順序中，若 `class C(A, B): pass`，則優先權順序為？
-   - (A) C -> B -> A (B) C -> A -> B (C) A -> B -> C (D) B -> A -> C
-   - *答案*: B (KP.G)
-6. **Q6**: `super()` 函式在 Python 3 中預設會查找哪個屬性來決定下一個呼叫目標？
-   - (A) `__class__` (B) `__mro__` (C) `__bases__` (D) `__dict__`
-   - *答案*: B (KP.G)
-7. **Q7**: 鴨子型別 (Duck Typing) 導致 Python 程式碼更傾向於？
-   - (A) 事前型別檢查 (B) 執行時行為檢查 (C) 強制繼承 (D) 靜態連結
-   - *答案*: B (KP.G)
-8. **Q8**: 哪一個裝飾器最適合用來實作類別的「替代構造函式」(Alternative Constructor)？
-   - (A) `@property` (B) `@staticmethod` (C) `@classmethod` (D) `@init`
-   - *答案*: C (KP.G)
-9. **Q9**: 執行 `c = Counter(); c()` 時，會觸發類別中的哪一個方法？
-   - (A) `__init__` (B) `__str__` (C) `__call__` (D) `__invoke__`
-   - *答案*: C (KP.G)
-10. **Q10**: 閉包 (Closure) 捕捉的外部變數，其生命週期會延續到何時？
-    - (A) 外部函式執行結束 (B) 內部函式被刪除 (C) 程式結束 (D) 每次呼叫後重置
-    - *答案*: B (KP.H)
-11. **Q11**: 在裝飾器內部定義的 `wrapper` 函式中，`func(*args, **kwargs)` 的作用是？
-    - (A) 定義新函式 (B) 將參數解包並呼叫原始函式 (C) 將參數打包為字典 (D) 報錯
-    - *答案*: B (KP.H)
-12. **Q12**: `@functools.wraps(f)` 應該裝飾在？
-    - (A) 裝飾器最外層函式 (B) 裝飾器內部的包裝函式 (C) 被裝飾的目標函式 (D) 類別定義上
-    - *答案*: B (KP.H)
-13. **Q13**: 帶參數的裝飾器 `@decorator(params)`，其第一層函式接收的是？
-    - (A) 目標函式 (B) 裝飾器參數 (C) 目標函式的參數 (D) self
-    - *答案*: B (KP.H)
-14. **Q14**: 疊代器協定中，`__iter__` 方法必須回傳？
-    - (A) 第一個元素 (B) 疊代器物件本身 (C) 整個列表 (D) None
-    - *答案*: B (KP.I)
-15. **Q15**: 呼叫 `next(it)` 本質上是呼叫物件的哪一個方法？
-    - (A) `__iter__` (B) `__next__` (C) `__getitem__` (D) `__call__`
-    - *答案*: B (KP.I)
-16. **Q16**: `yield` 關鍵字在函式中的作用是？
-    - (A) 結束函式並回傳值 (B) 暫停執行並回傳值，保留狀態 (C) 拋出一個異常 (D) 加速迴圈執行
-    - *答案*: B (KP.I)
-17. **Q17**: 產生器表達式 `(x**2 for x in range(10))` 的回傳值是？
-    - (A) 一個列表 (B) 一個元組 (C) 一個產生器物件 (D) 一個整數
-    - *答案*: C (KP.I)
-18. **Q18**: 延遲計算 (Lazy Evaluation) 的核心優勢在於？
-    - (A) 節省 CPU 運算量 (B) 降低記憶體峰值佔用 (C) 提高程式碼可讀性 (D) 支援多執行緒
-    - *答案*: B (KP.I)
-19. **Q19**: `sys.argv[0]` 在腳本執行時通常代表？
-    - (A) 第一個使用者參數 (B) Python 直譯器路徑 (C) 腳本檔案名稱 (D) 目前工作目錄
-    - *答案*: C (KP.J)
-20. **Q20**: `os.path.join("C:", "Users", "Docs")` 在 Windows 下的結果是？
-    - (A) `C:/Users/Docs` (B) `C:\\Users\\Docs` (C) `C:UsersDocs` (D) `C:.Users.Docs`
-    - *答案*: B (KP.J)
-21. **Q21**: 想要列出某個目錄下所有的檔案與資料夾（不含子目錄內容），應使用？
-    - (A) `os.walk()` (B) `os.listdir()` (C) `os.getcwd()` (D) `os.path.exists()`
-    - *答案*: B (KP.J)
-22. **Q22**: `os.environ.get("DATABASE_URL")` 若環境變數不存在，預設會？
-    - (A) 拋出 KeyError (B) 回傳 None (C) 拋出 FileNotFoundError (D) 終止程式
-    - *答案*: B (KP.J)
-23. **Q23**: 正規表示式中，`\d+?` 中的問號代表什麼意思？
-    - (A) 匹配 0 或 1 次 (B) 非貪婪模式 (C) 匹配問號字元 (D) 錯誤語法
-    - *答案*: B (KP.K)
-24. **Q24**: `re.search(r'^abc', '123abc')` 的結果是？
-    - (A) 匹配到 abc (B) None (C) 匹配到 123 (D) 報錯
-    - *答案*: B (KP.K)
-25. **Q25**: 想要獲取 Regex 中所有捕獲群組的內容作為元組，應呼叫匹配物件的？
-    - (A) `group()` (B) `groups()` (C) `groupdict()` (D) `span()`
-    - *答案*: B (KP.K)
-26. **Q26**: Regex 旗標 `re.IGNORECASE` 的簡寫是？
-    - (A) `re.I` (B) `re.G` (C) `re.C` (D) `re.CASE`
-    - *答案*: A (KP.K)
-27. **Q27**: `re.sub(r'\s+', '-', 'A  B C')` 的結果是？
-    - (A) `'A-B C'` (B) `'A--B-C'` (C) `'A-B-C'` (D) `'ABC'`
-    - *答案*: C (KP.K)
-28. **Q28**: 上下文管理器 (Context Manager) 進入 `with` 區塊時會呼叫的方法是？
-    - (A) `__init__` (B) `__enter__` (C) `__exit__` (D) `__start__`
-    - *答案*: B (KP.L)
-29. **Q29**: JSON 格式中的「陣列」(Array) 在 Python 中預設轉換為？
-    - (A) `tuple` (B) `list` (C) `set` (D) `array`
-    - *答案*: B (KP.L)
-30. **Q30**: `json.load(f)` 中的 `f` 應該是？
-    - (A) JSON 字串 (B) 檔案路徑字串 (C) 開啟的檔案物件 (D) 字典
-    - *答案*: C (KP.L)
-31. **Q31**: CSV 模組中，`DictWriter` 的 `writerow()` 參數應該是？
-    - (A) 列表 (B) 元組 (C) 字典 (D) 字串
-    - *答案*: C (KP.L)
-32. **Q32**: 開啟檔案模式 `'x'` 代表什麼意思？
-    - (A) 讀寫模式 (B) 二進位模式 (C) 排他性建立（若檔案已存在則報錯） (D) 執行模式
-    - *答案*: C (KP.L)
-33. **Q33**: `f.tell()` 回傳的是？
-    - (A) 檔案總長度 (B) 目前指標位置（位元組數） (C) 檔案名稱 (D) 檔案剩餘空間
-    - *答案*: B (KP.L)
-34. **Q34**: 捕捉所有未預期例外的最底層例外類別（不建議直接捕捉，但它是大多數例外的基類）是？
-    - (A) `BaseException` (B) `Exception` (C) `StandardError` (D) `RuntimeError`
-    - *答案*: B (KP.M)
-35. **Q35**: `try...except...finally` 結構中，哪一部分用於釋放無論成功與否都必須釋放的資源？
-    - (A) `else` (B) `except` (C) `finally` (D) `try`
-    - *答案*: C (KP.M)
-36. **Q36**: `raise ValueError("Invalid") from e` 這種寫法稱為？
-    - (A) 異常傳遞 (B) 異常鏈 (Exception Chaining) (C) 異常吞沒 (D) 異常遞迴
-    - *答案*: B (KP.M)
-37. **Q37**: 日誌等級中，比 `WARNING` 低一階的是？
-    - (A) `DEBUG` (B) `INFO` (C) `ERROR` (D) `NOTSET`
-    - *答案*: B (KP.M)
-38. **Q38**: 日誌系統中，負責決定日誌輸出目的地的組件是？
-    - (A) Logger (B) Handler (C) Formatter (D) Filter
-    - *答案*: B (KP.M)
-39. **Q39**: `assert x > 0, "Error"`，若 `x` 為 -1，會拋出？
-    - (A) `ValueError` (B) `AssertionError` (C) `RuntimeError` (D) `LogicError`
-    - *答案*: B (KP.M)
-40. **Q40**: 類別中的 `@staticmethod` 與 `@classmethod` 的共同點是？
-    - (A) 都不需要 `self` 參數 (B) 都可以存取實體屬性 (C) 都必須透過 `cls` 存取類別 (D) 都不能透過實例呼叫
-    - *答案*: A (KP.G)
-41. **Q41**: `nonlocal` 關鍵字不能用於哪種作用域？
-    - (A) 巢狀函式的內部 (B) 全域作用域 (C) 類別內部方法 (D) 閉包
-    - *答案*: B (KP.H)
-42. **Q42**: 產生器中的 `StopIteration` 異常通常是由誰拋出的？
-    - (A) 程式碼中的 `return` 或執行完畢 (B) 程式碼中的 `yield` (C) 外部的 `next()` (D) 作業系統
-    - *答案*: A (KP.I)
-43. **Q43**: 想要獲取目前 Python 直譯器的模組搜尋路徑清單，應查看？
-    - (A) `os.environ['PATH']` (B) `sys.path` (C) `sys.modules` (D) `os.getcwd()`
-    - *答案*: B (KP.J)
-44. **Q44**: Regex 中的 `\b` 代表什麼？
-    - (A) 退格字元 (B) 單字邊界 (C) 二進位資料 (D) 空白字元
-    - *答案*: B (KP.K)
-45. **Q45**: 哪種檔案模式適合讀取圖片檔案？
-    - (A) `'rt'` (B) `'rb'` (C) `'wb'` (D) `'at'`
-    - *答案*: B (KP.L)
-46. **Q46**: 在 `logging.basicConfig()` 中，`level=logging.DEBUG` 的作用是？
-    - (A) 只顯示 DEBUG 日誌 (B) 顯示 DEBUG 及其以上等級的所有日誌 (C) 隱藏 DEBUG 日誌 (D) 開啟除錯模式
-    - *答案*: B (KP.M)
-47. **Q47**: 關於 Python 的私有屬性 `__attr`，下列描述正確的是？
-    - (A) 它是真正私有的，無法從外部存取 (B) 它是透過名稱改寫 (Name Mangling) 實作的 (C) 它與 `_attr` 沒有區別 (D) 它是 Java 風格的私有化
-    - *答案*: B (KP.G)
-48. **Q48**: 想要將 Python 的 `datetime` 物件轉為 JSON，預設會？
-    - (A) 自動轉為字串 (B) 拋出 TypeError (C) 轉為時間戳數字 (D) 忽略該欄位
-    - *答案*: B (KP.L)
-49. **Q49**: `re.findall(r'(\d+)', '12-34')` 的回傳值是？
-    - (A) `['12', '34']` (B) `('12', '34')` (C) `[MatchObj, MatchObj]` (D) `'1234'`
-    - *答案*: A (KP.K)
-50. **Q50**: 下列哪一個不是魔術方法 (Magic Method)？
-    - (A) `__init__` (B) `__str__` (C) `__main__` (D) `__call__`
-    - *答案*: C (KP.G)
+本單元為期末大考評綜合複習講義，旨在協助學習者在進行「期末自我診斷大考評」前，系統化回顧全學期的進階技術要點，並指明期末評估後的進階學習發展路徑。
 
 ---
 
-## 二、 多選題 (Multiple Choice) - 共 50 題
+## 🏛️ 全學期 Python 技術棧版圖 (Full-Stack Technology Map)
 
-1. **Q51**: 物件導向程式設計 (OOP) 的核心特性包括？
-   - (A) 封裝 (B) 繼承 (C) 多型 (D) 遞迴
-   - *答案*: A, B, C (KP.G)
-2. **Q52**: 哪些行為會導致 `self` 參數被自動傳遞？
-   - (A) `obj.method()` (B) `ClassName.method(obj)` (C) `method(obj)` (D) `self.method()` (在類別內部)
-   - *答案*: A, B, D (KP.G)
-3. **Q53**: 關於類別屬性 (Class Attributes) 與實體屬性 (Instance Attributes)，正確的是？
-   - (A) 類別屬性為所有實例共享 (B) 實體屬性在 `__init__` 中定義 (C) 修改實例的類別屬性會影響其他實例 (D) 類別屬性可以透過 `ClassName.attr` 存取
-   - *答案*: A, B, D (KP.G)
-4. **Q54**: 哪些情況下 MRO 會發揮作用？
-   - (A) 單一繼承 (B) 多重繼承 (C) 菱形繼承 (D) 使用 `super()`
-   - *答案*: B, C, D (KP.G)
-5. **Q55**: 關於 `super()`，正確的敘述有？
-   - (A) 它總是呼叫直接父類別 (B) 它遵循 MRO 順序 (C) 它能確保父類別方法只被呼叫一次 (D) 呼叫時不需要顯式傳遞 `self`
-   - *答案*: B, C, D (KP.G)
-6. **Q56**: 哪些方法可以用於檢查物件的類型？
-   - (A) `type(obj)` (B) `isinstance(obj, Class)` (C) `issubclass(Class1, Class2)` (D) `obj.__class__`
-   - *答案*: A, B, D (KP.G)
-7. **Q57**: 閉包 (Closure) 的形成條件包括？
-   - (A) 巢狀函式 (B) 內部函式引用外部變數 (C) 外部函式回傳內部函式 (D) 外部變數必須是全域變數
-   - *答案*: A, B, C (KP.H)
-8. **Q58**: 裝飾器可以應用於？
-   - (A) 函式 (B) 類別方法 (C) 類別本身 (D) 變數賦值
-   - *答案*: A, B, C (KP.H)
-9. **Q59**: `functools.wraps` 的優點有哪些？
-   - (A) 保留 `__name__` (B) 保留 `__doc__` (C) 提升執行效率 (D) 保留 `__annotations__`
-   - *答案*: A, B, D (KP.H)
-10. **Q60**: 哪些是有效的裝飾器寫法？
-    - (A) `@my_decorator` (B) `@my_decorator(arg)` (C) `@@my_decorator` (D) `@my_dec1 @my_dec2`
-    - *答案*: A, B, D (KP.H)
-11. **Q61**: 疊代器協定包含哪兩個方法？
-    - (A) `__iter__` (B) `__next__` (C) `__len__` (D) `__getitem__`
-    - *答案*: A, B (KP.I)
-12. **Q62**: 關於產生器 (Generator)，哪些是正確的？
-    - (A) 它是疊代器的一種 (B) 使用 `yield` 定義 (C) 執行效率比列表快 (D) 節省記憶體
-    - *答案*: A, B, D (KP.I)
-13. **Q63**: 哪些操作會消耗 (Exhaust) 產生器？
-    - (A) `for` 迴圈 (B) `list(gen)` (C) `next(gen)` (D) `isinstance(gen, Iterator)`
-    - *答案*: A, B, C (KP.I)
-14. **Q64**: 關於 `yield from`，正確的是？
-    - (A) 用於委派產生器 (B) 簡化巢狀迴圈產出 (C) 只能用於 Python 3.3+ (D) 取代了 `yield`
-    - *答案*: A, B, C (KP.I)
-15. **Q65**: 哪些是延遲求值 (Lazy Evaluation) 的應用？
-    - (A) `range()` (B) `zip()` (C) `enumerate()` (D) `list()`
-    - *答案*: A, B, C (KP.I)
-16. **Q66**: `sys` 模組可以獲取哪些資訊？
-    - (A) 系統平台 `sys.platform` (B) 命令列參數 `sys.argv` (C) 檔案列表 `sys.listdir` (D) 預設編碼 `sys.getdefaultencoding()`
-    - *答案*: A, B, D (KP.J)
-17. **Q67**: `os.path` 模組中的檢查函式有哪些？
-    - (A) `exists()` (B) `isfile()` (C) `isdir()` (D) `islink()`
-    - *答案*: A, B, C, D (KP.J)
-18. **Q68**: 如何獲取檔案的元數據 (Metadata)？
-    - (A) `os.stat()` (B) `os.path.getsize()` (C) `os.path.getmtime()` (D) `os.inspect()`
-    - *答案*: A, B, C (KP.J)
-19. **Q69**: 哪些方法可以執行系統命令？
-    - (A) `os.system()` (B) `subprocess.run()` (C) `os.popen()` (D) `sys.call()`
-    - *答案*: A, B, C (KP.J)
-20. **Q70**: 關於路徑處理，哪些實踐是推薦的？
-    - (A) 使用 `os.path.join` (B) 使用 `pathlib.Path` (C) 使用硬編碼的斜線 (D) 使用絕對路徑
-    - *答案*: A, B, D (KP.J)
-21. **Q71**: Regex 中的字元類別簡寫，哪些正確？
-    - (A) `\d` (數字) (B) `\w` (英數字下劃線) (C) `\s` (空白) (D) `\D` (非數字)
-    - *答案*: A, B, C, D (KP.K)
-22. **Q72**: 正規表示式的量詞包括？
-    - (A) `*` (0+) (B) `+` (1+) (C) `?` (0 或 1) (D) `{n,m}` (n 到 m 次)
-    - *答案*: A, B, C, D (KP.K)
-23. **Q73**: 哪些符號用於錨定位置？
-    - (A) `^` (行首) (B) `$` (行尾) (C) `\b` (單字邊界) (D) `.` (任意字元)
-    - *答案*: A, B, C (KP.K)
-24. **Q74**: 關於捕獲群組 (Groups)，哪些正確？
-    - (A) 使用 `()` 定義 (B) 支援命名群組 `(?P<name>...)` (C) 支援非捕獲群組 `(?:...)` (D) 捕獲群組會增加回傳結果的複雜度
-    - *答案*: A, B, C, D (KP.K)
-25. **Q75**: `re` 模組常用的搜尋函式有哪些？
-    - (A) `match()` (B) `search()` (C) `findall()` (D) `finditer()`
-    - *答案*: A, B, C, D (KP.K)
-26. **Q76**: 上下文管理器 (Context Manager) 的優點？
-    - (A) 自動關閉資源 (B) 即使報錯也能清理 (C) 語法簡潔 (D) 提高讀取速度
-    - *答案*: A, B, C (KP.L)
-27. **Q77**: `json` 模組支援的轉換型別？
-    - (A) `dict` -> Object (B) `list` -> Array (C) `int` -> Number (D) `set` -> Set (JSON 不支援)
-    - *答案*: A, B, C (KP.L)
-28. **Q78**: 關於 CSV 檔案處理，哪些正確？
-    - (A) 可以使用 `csv.reader` (B) 可以使用 `csv.DictReader` (C) 預設分隔符是逗號 (D) 支援二進位模式讀寫
-    - *答案*: A, B, C (KP.L)
-29. **Q79**: 開啟檔案的常用模式？
-    - (A) `'r'` (讀) (B) `'w'` (覆蓋寫) (C) `'a'` (追加寫) (D) `'r+'` (讀寫)
-    - *答案*: A, B, C, D (KP.L)
-30. **Q80**: 哪些屬於二進位檔案操作？
-    - (A) 讀取 PNG 圖片 (B) 儲存加密數據 (C) 寫入 UTF-8 文字 (這是文字操作) (D) 使用 `'rb'` 模式
-    - *答案*: A, B, D (KP.L)
-31. **Q81**: `try...except` 區塊的最佳實踐？
-    - (A) 捕捉具體的異常 (B) 保持 try 區塊精簡 (C) 始終使用 `except Exception:` (不推薦) (D) 結合 `logging` 紀錄錯誤
-    - *答案*: A, B, D (KP.M)
-32. **Q82**: `logging` 模組的日誌等級包含？
-    - (A) `DEBUG` (B) `INFO` (C) `WARNING` (D) `FATAL` (等同 CRITICAL)
-    - *答案*: A, B, C, D (KP.M)
-33. **Q83**: 關於 `finally` 區塊，正確的是？
-    - (A) 無論是否發生例外都會執行 (B) 通常用於關閉檔案 (C) 可以單獨與 try 搭配（不含 except） (D) 如果 try 中有 return，finally 不會執行 (錯，仍會執行)
-    - *答案*: A, B, C (KP.M)
-34. **Q84**: 哪些是 Python 內建的常見異常？
-    - (A) `ValueError` (B) `TypeError` (C) `KeyError` (D) `SyntaxError`
-   - *答案*: A, B, C, D (KP.M)
-35. **Q85**: 關於自定義異常 (Custom Exceptions)，正確的是？
-    - (A) 必須繼承自 `Exception` 或其子類 (B) 應該提供有意義的名稱 (C) 必須實作 `__init__` (非必須，但常用) (D) 提升了錯誤處理的語義性
-    - *答案*: A, B, D (KP.M)
-36. **Q86**: `@property.setter` 可以用來？
-    - (A) 驗證輸入資料 (B) 計算衍生屬性 (C) 唯讀屬性保護 (D) 隱藏內部實作
-    - *答案*: A, B, D (KP.G)
-37. **Q87**: 關於 `nonlocal` 的錯誤敘述？
-    - (A) 它可以用於全域變數 (B) 它搜尋的是外部非全域作用域 (C) 它可以用於修改自由變數 (D) 它只能在類別中使用
-    - *答案*: A, D (KP.H)
-38. **Q88**: 哪些物件是可疊代的 (Iterable)？
-    - (A) `range` 物件 (B) 字串 (C) 字典 (D) 產生器物件
-    - *答案*: A, B, C, D (KP.I)
-39. **Q89**: `os.path.splittext(path)` 會將路徑分成？
-    - (A) 目錄 (B) 檔名 (C) 副檔名 (D) 檔案路徑（不含副檔名）
-    - *答案*: C, D (KP.J)
-40. **Q90**: Regex 中的「貪婪」與「非貪婪」？
-    - (A) `*` 是貪婪的 (B) `*?` 是非貪婪的 (C) 非貪婪模式匹配最短字串 (D) 貪婪模式匹配最長字串
-    - *答案*: A, B, C, D (KP.K)
-41. **Q91**: JSON 與 Python 之間的對應關係，哪些正確？
-    - (A) `true` -> `True` (B) `false` -> `False` (C) `null` -> `None` (D) `"string"` -> `"string"`
-    - *答案*: A, B, C, D (KP.L)
-42. **Q92**: `logging.Formatter` 支援的格式化欄位？
-    - (A) `%(name)s` (B) `%(levelname)s` (C) `%(message)s` (D) `%(asctime)s`
-    - *答案*: A, B, C, D (KP.M)
-43. **Q93**: 關於屬性封裝，哪些是 Pythonic 的做法？
-    - (A) 使用單底線 `_attr` 表示內部使用 (B) 使用 `@property` 進行存取 (C) 使用 `get_attr()` 方法 (不推薦) (D) 儘量保持公有，需要驗證時再改為 `@property`
-    - *答案*: A, B, D (KP.G)
-44. **Q94**: 裝飾器的實際運算過程，哪些正確？
-    - (A) 它在函式呼叫時才執行 (不對，定義時執行) (B) 它可以用來紀錄函式執行時間 (C) 它是高階函式的應用 (D) 它會改變函式的識別符（若不用 wraps）
-    - *答案*: B, C, D (KP.H)
-45. **Q95**: 產生器與疊代器的區別？
-    - (A) 產生器是疊代器的子集 (B) 產生器使用 `yield` (C) 疊代器必須實作類別 (D) 產生器會自動管理狀態
-    - *答案*: A, B, D (KP.I)
-46. **Q96**: 環境變數的用途包括？
-    - (A) 儲存 API 金鑰 (B) 區分開發與生產環境 (C) 設定資料庫連線字串 (D) 提高程式執行速度 (無關)
-    - *答案*: A, B, C (KP.J)
-47. **Q97**: `re.match` 與 `re.search` 的區別？
-    - (A) `match` 只從字串開頭開始 (B) `search` 搜尋整個字串 (C) 兩者都回傳匹配物件 (D) `match` 速度比較快 (通常是)
-    - *答案*: A, B, C, D (KP.K)
-48. **Q98**: 二進位讀寫 (`rb/wb`) 常用於？
-    - (A) 讀取設定檔 (通常是文字) (B) 下載網路圖片 (C) 操作加密金鑰 (D) 讀取 PDF 文件
-    - *答案*: B, C, D (KP.L)
-49. **Q99**: 例外處理中 `else` 區塊的價值？
-    - (A) 區分「受保護」與「正常」代碼 (B) 確保只有在成功時執行後續邏輯 (C) 提高程式碼可讀性 (D) 捕捉 `finally` 中的錯誤
-    - *答案*: A, B, C (KP.M)
-50. **Q100**: 哪些魔術方法與運算子有關？
-    - (A) `__add__` (+) (B) `__sub__` (-) (C) `__mul__` (*) (D) `__eq__` (==)
-    - *答案*: A, B, C, D (KP.G)
+```mermaid
+graph TD
+    A["Python 全棧開發版圖"] --> B["1. 語法與容器基礎 (Week 1-8)"]
+    A --> C["2. 物件導向編程 OOP (Week 10-12)"]
+    A --> D["3. 異常、文件與上下文 (Week 13-14)"]
+    A --> E["4. 高階並發編程 (Week 15-16)"]
+    A --> F["5. 網路編程與 Web 框架 (Week 17)"]
+```
 
 ---
 
-## 三、 填充題 (Fill-in-the-blank) - 共 50 題
+## 💡 進階技術要點回顧 (Advanced Concepts Review)
 
-1. **Q101**: 類別中定義實例方法的首個參數約定名稱為 __________。
-   - *答案*: self (KP.G)
-2. **Q102**: 想要讓類別屬性變為私有，應在名稱前加上 __________ 底線。
-   - *答案*: 雙 (或 __) (KP.G)
-3. **Q103**: Python 3 中所有類別預設都繼承自 __________ 類別。
-   - *答案*: object (KP.G)
-4. **Q104**: 檢查物件 `obj` 是否為 `str` 類型的函式是 `isinstance(obj, __________)`。
-   - *答案*: str (KP.G)
-5. **Q105**: 物件的初始化方法名稱是 __________。
-   - *答案*: __init__ (KP.G)
-6. **Q106**: 裝飾器 `@property` 建立的是 __________ (Getter) 方法。
-   - *答案*: 讀取 (或 Getter) (KP.G)
-7. **Q107**: 閉包中被內部函式引用但未定義的變數稱為 __________ 變數。
-   - *答案*: 自由 (Free) (KP.H)
-8. **Q108**: 內部函式修改外部局部變數需聲明 __________ 關鍵字。
-   - *答案*: nonlocal (KP.H)
-9. **Q109**: 裝飾器的語法糖符號是 __________。
-   - *答案*: @ (KP.H)
-10. **Q110**: 保留原始函式元數據的裝飾器是 `functools.__________`。
-    - *答案*: wraps (KP.H)
-11. **Q111**: 疊代器必須實作 `__iter__` 與 `__________` 方法。
-    - *答案*: __next__ (KP.I)
-12. **Q112**: 產生器函式使用 __________ 關鍵字產出資料。
-    - *答案*: yield (KP.I)
-13. **Q113**: 產生器表達式使用的是 __________ 括號。
-    - *答案*: 圓 (或 ()) (KP.I)
-14. **Q114**: 當疊代器耗盡時會拋出 __________ 異常。
-    - *答案*: StopIteration (KP.I)
-15. **Q115**: 疊代器的一種特殊形式，不需要實作類別即可建立的是 __________。
-    - *答案*: 產生器 (Generator) (KP.I)
-16. **Q116**: 獲取命令列參數的串列是 `sys.__________`。
-    - *答案*: argv (KP.J)
-17. **Q117**: 跨平台路徑拼接應使用 `os.path.__________`。
-    - *答案*: join (KP.J)
-18. **Q118**: 獲取目前的執行路徑（絕對路徑）可以使用 `os.__________()`。
-    - *答案*: getcwd (KP.J)
-19. **Q119**: 環境變數儲存在 `os.__________` 物件中。
-    - *答案*: environ (KP.J)
-20. **Q120**: `os.path.__________` 用於檢查路徑是否為一個檔案。
-    - *答案*: isfile (KP.J)
-21. **Q121**: Regex 中匹配任意單一字元的符號是 __________。
-    - *答案*: . (點) (KP.K)
-22. **Q122**: 匹配數字 0-9 的 Regex 簡寫是 __________。
-    - *答案*: \d (KP.K)
-23. **Q123**: 匹配 1 次或多次的量詞是 __________。
-    - *答案*: + (KP.K)
-24. **Q124**: `re.__________` 函式從字串開頭嘗試匹配。
-    - *答案*: match (KP.K)
-25. **Q125**: Regex 中用於分組的括號是 __________。
-    - *答案*: 圓 (或 ()) (KP.K)
-26. **Q126**: 上下文管理器配合使用的關鍵字是 __________。
-    - *答案*: with (KP.L)
-27. **Q127**: 將 Python 物件轉為 JSON 字串的函式是 `json.__________`。
-    - *答案*: dumps (KP.L)
-28. **Q128**: CSV 檔案預設的分隔符號是 __________。
-    - *答案*: 逗號 (或 ,) (KP.L)
-29. **Q129**: 開啟檔案進行追加寫入的模式字元是 __________。
-    - *答案*: a (KP.L)
-30. **Q130**: `f.__________` 方法可以獲取目前檔案指標的位置。
-    - *答案*: tell (KP.L)
-31. **Q131**: 捕捉例外的語句區塊是 __________。
-    - *答案*: try (KP.M)
-32. **Q132**: 手動拋出例外的關鍵字是 __________。
-    - *答案*: raise (KP.M)
-33. **Q133**: 日誌等級中權重最高的是 __________。
-    - *答案*: CRITICAL (或 FATAL) (KP.M)
-34. **Q134**: 例外處理中，即使發生錯誤也一定會執行的區塊是 __________。
-    - *答案*: finally (KP.M)
-35. **Q135**: 偵測程式狀態是否符合預期，若不符合則報錯的關鍵字是 __________。
-    - *答案*: assert (KP.M)
-36. **Q136**: Python 的多型基礎是基於 __________ (Duck) Typing。
-    - *答案*: 鴨子 (Duck) (KP.G)
-37. **Q137**: 帶參數的裝飾器本質上是嵌套了 __________ 層函式。
-    - *答案*: 三 (KP.H)
-38. **Q138**: 想要將產生器轉為列表，可以使用 __________ 函式。
-    - *答案*: list (KP.I)
-39. **Q139**: `sys.__________` 可以讓程式立即退出。
-    - *答案*: exit (KP.J)
-40. **Q140**: Regex 中匹配行首的錨點符號是 __________。
-    - *答案*: ^ (KP.K)
-41. **Q141**: `with open('a.txt', 'r', encoding='__________')` 是讀取中文檔案的標準做法。
-    - *答案*: utf-8 (KP.L)
-42. **Q142**: 日誌紀錄中常用的預設配置函式是 `logging.__________`。
-    - *答案*: basicConfig (KP.M)
-43. **Q143**: 子類別呼叫父類別方法使用的內建函式是 __________。
-    - *答案*: super (KP.G)
-44. **Q144**: `__name__` 屬性在腳本直接執行時的值為 __________。
-    - *答案*: "__main__" (KP.J)
-45. **Q145**: `re.__________` 函式用於全域替換字串內容。
-    - *答案*: sub (KP.K)
-46. **Q146**: CSV 檔案若包含標題列，推薦使用 `csv.__________` 進行讀取。
-    - *答案*: DictReader (KP.L)
-47. **Q147**: `ValueError` 和 `TypeError` 都是繼承自 __________ 類別。
-    - *答案*: Exception (KP.M)
-48. **Q148**: 裝飾器語法 `@dec` 相當於執行了 `func = __________(func)`。
-    - *答案*: dec (KP.H)
-49. **Q149**: `range(1000000)` 不會佔用大量記憶體是因為它使用了 __________ 計算。
-    - *答案*: 延遲 (Lazy) (KP.I)
-50. **Q150**: 物件的字串表現形式（對使用者友善）可以透過定義 `__________` 方法來實現。
-    - *答案*: __str__ (KP.G)
+### 一、 物件導向編程精要 (Object-Oriented Programming)
+1. **封裝、繼承與多型**：
+   * **封裝 (Encapsulation)**：使用單底線 `_` (約定俗成的 protected) 與雙底線 `__` (自動名稱改寫，實現 private) 來保護類別內部狀態。
+   * **繼承 (Inheritance)**：支援多重繼承。Python 使用 **C3 線性化算法** 計算 **MRO (Method Resolution Order)** 方法解析順序，可透過 `ClassName.__mro__` 進行查看，以完美解決「鑽石繼承」問題。
+   * **多型 (Polymorphism)**：Python 支援「鴨子型別 (Duck Typing)」，只要物件表現出該介面的行為，即可被當作該型別處理。
+2. **魔術方法 (Magic Methods)**：
+   * `__init__` 用於初始化實例，而 `__new__` 才是真正的實例構造器。
+   * `__str__` 回傳適合人類閱讀的字串，`__repr__` 回傳適合開發者偵錯的正式字串（通常滿足 `eval(repr(obj)) == obj`）。
+   * `__call__` 使實例物件能夠像函式一樣被直接調用。
+
+```python
+# 鑽石繼承與魔術方法範例
+class Base:
+    def greet(self):
+        print("Base")
+
+class A(Base):
+    def greet(self):
+        print("A")
+        super().greet()
+
+class B(Base):
+    def greet(self):
+        print("B")
+        super().greet()
+
+class C(A, B):
+    pass
+
+c = C()
+c.greet()  # 輸出順序符合 MRO: C -> A -> B -> Base
+print(C.__mro__)
+```
 
 ---
+
+### 二、 異常處理與上下文管理器 (Exceptions & Context Managers)
+1. **異常捕捉機制**：採用 `try-except-else-finally` 結構。
+   * `else` 區塊在 `try` 區塊無任何異常發生時執行。
+   * `finally` 區塊不論是否發生異常，均**必定會執行**，常用於資源釋放。
+2. **上下文管理器與 `with` 語句**：
+   * `with` 語句用於簡化資源管理（如檔案讀寫、資料庫連線、安全鎖）。
+   * 任何實作了 `__enter__`（進入時執行）與 `__exit__`（退出時執行，且能處理異常）魔術方法的類別，均為合法的上下文管理器。
+
+```python
+# 自訂上下文管理器範例
+class ResourceManager:
+    def __enter__(self):
+        print("資源已鎖定")
+        return self
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        print("資源已安全釋放")
+        return True # 阻止異常向上拋出
+
+with ResourceManager():
+    print("正在處理商務邏輯...")
+```
+
+---
+
+### 三、 高階並發編程 (Concurrency & Parallelism)
+1. **多執行緒 (Threading) 與 GIL**：
+   * CPython 包含 **GIL (Global Interpreter Lock，全域直譯器鎖)**，限制同一時刻只有一個執行緒執行 Python 位元組碼。
+   * 因此，多執行緒在 **I/O 密集型任務**（如網頁爬蟲、資料庫讀寫）中能有效提升效率，但在 **CPU 密集型任務**（如複雜數學計算）中無法實現真正的多核加速。
+2. **多進程 (Multiprocessing)**：
+   * 通過建立獨立的 Python 直譯器進程，避開 GIL 限制，能實現真正的多核心並行計算，適合 CPU 密集型任務。
+3. **非同步協程 (Asyncio)**：
+   * 基於單執行緒的**事件循環 (Event Loop)** 機制，使用 `async def` 定義協程，`await` 掛起 non-blocking I/O 任務，是極高發網路伺服器（如 FastAPI）的核心基石。
+
+```python
+# Asyncio 協程非同步範例
+import asyncio
+
+async def fetch_data(id):
+    print(f"任務 {id} 開始讀取...")
+    await asyncio.sleep(1) # 模擬 Non-blocking I/O
+    print(f"任務 {id} 讀取完畢")
+    return {"data": id}
+
+async def main():
+    results = await asyncio.gather(fetch_data(1), fetch_data(2))
+    print("所有任務完成:", results)
+
+# 在非同步環境下執行: asyncio.run(main())
+```
+
+---
+
+### 四、 網路編程與現代 Web 框架 (Networking & FastAPI)
+1. **Socket 套接字**：網路通訊的底層接口。`TCP` 提供連線導向、可靠的資料流傳輸；`UDP` 提供無連線、快速但不可靠的封包傳輸。
+2. **FastAPI 與 Requests**：
+   * `requests` 用於發送同步 HTTP 請求，簡單直觀。
+   * `FastAPI` 是現代化、極致快速的 Web 框架，基於 Python 型別提示 (Type Hints) 和 Pydantic 資料驗證，原生支援非同步 (async/await)，並能自動生成互動式 OpenAPI 文件。
+
+---
+
+## 🧭 Python 進階實戰航海圖 (Next Step Roadmap)
+
+當您順利通過期末評估後，您的 Python 學習旅程將通往更廣闊的專業領域。以下是為您規劃的**黃金學習發展路徑**：
+
+```mermaid
+graph TD
+    A["期末大考評通過"] --> B["領域一：辦公自動化與量化交易"]
+    A --> C["領域二：現代 Web 後端架構"]
+    A --> D["領域三：資料科學與生成式 AI"]
+
+    B --> B1["Pandas 資料清洗與財務分析"]
+    B --> B2["向量化策略回測與自動化下單"]
+
+    C --> C1["FastAPI 非同步 API 設計"]
+    C --> C2["Docker 容器化與 PostgreSQL 資料庫"]
+
+    D --> D1["NumPy / PyTorch 深度學習基礎"]
+    D --> D2["LLM 應用開發與 LangChain/RAG"]
+```
+
+---
+
+## 🎯 啟動期末診斷與大師考評
+
+恭喜您完成了整學期 Python 基礎與進階編程的全部研讀！現在，請切換至上方的 **「⚡ 自我診斷評量」** 分頁。
+
+**10 題自適應期末考評引擎**正等待著您：
+1. 系統將隨機抽取本學期最具代表性的進階考點。
+2. 透過項目反應理論 (IRT) 與認知診斷模型 (CDM)，我們將為您評估出您的全學期能力值 $\theta$ 與各維度掌握度。
+3. 答對題目會被立刻消滅，剩餘的盲點可反覆進行錯題消滅挑戰，直至 100% 解鎖**期末金牌大師榮譽勳章**！
+
+祝您考試順利，展現您卓越的編程實力！
