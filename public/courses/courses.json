@@ -155,6 +155,161 @@
     ]
   },
   {
+    "id": "python-office-quant",
+    "title": "Python 自動化辦公與量化應用",
+    "description": "融合 Excel、Word、PDF 自動化處理，並延伸至基礎量化分析、爬蟲與數據可視化，讓 Python 成為您最強大的生產力武器。",
+    "category": "自動化與量化",
+    "tags": ["熱門", "辦公自動化", "量化分析"],
+    "totalWeeks": 18,
+    "totalQuestions": 540,
+    "syllabus": [
+      {
+        "week": 1,
+        "title": "第 1 週 Excel 與 CSV 自動化處理 (Pandas 核心應用)",
+        "topics": ["Pandas結構", "資料讀寫", "標籤loc", "位置iloc", "布林篩選", "缺失值清理"],
+        "mdPath": "week1.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 2,
+        "title": "第 2 週 Word 與 PDF 文檔自動生成",
+        "topics": ["Python-docx", "PDF生成", "模板渲染", "批量打印"],
+        "mdPath": "week2.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 3,
+        "title": "第 3 週 PowerPoint 簡報自動化設計",
+        "topics": ["Python-pptx", "幻燈片生成", "圖表嵌入", "商務模板"],
+        "mdPath": "week3.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 4,
+        "title": "第 4 週 Email 郵件群發與自動化回覆",
+        "topics": ["SMTP發送", "IMAP讀取", "HTML格式", "附件批量"],
+        "mdPath": "week4.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 5,
+        "title": "第 5 週 系統文件與資料夾批次處理",
+        "topics": ["Os模組", "Shutil拷貝", "Glob搜尋", "批量重命名"],
+        "mdPath": "week5.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 6,
+        "title": "第 6 週 網路爬蟲基礎與靜態網頁解析",
+        "topics": ["Requests請求", "BeautifulSoup", "HTML節點", "防爬應對"],
+        "mdPath": "week6.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 7,
+        "title": "第 7 週 動態網頁爬蟲與 API 資料獲取",
+        "topics": ["Selenium控網", "JSON解析", "RESTful-API", "動態加載"],
+        "mdPath": "week7.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 8,
+        "title": "第 8 週 數據可視化進階 (Matplotlib & Seaborn)",
+        "topics": ["折線散點圖", "直方條形圖", "熱力圖", "美化定制"],
+        "mdPath": "week8.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 9,
+        "title": "第 9 週 金融數據加載與基礎時間序列",
+        "topics": ["Yfinance資料", "時間戳轉換", "移動平均線", "報酬率計算"],
+        "mdPath": "week9.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 10,
+        "title": "第 10 週 技術指標算法實作與圖表繪製",
+        "topics": ["RSI指標", "MACD算法", "布林通道", "繪圖整合"],
+        "mdPath": "week10.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 11,
+        "title": "第 11 週 雙均線量化回測框架構建",
+        "topics": ["訊號生成", "部位管理", "回測引擎", "回撤計算"],
+        "mdPath": "week11.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 12,
+        "title": "第 12 週 機器學習基礎在量化預估的應用",
+        "topics": ["Scikit-learn", "線性回歸", "特徵工程", "隨機森林"],
+        "mdPath": "week12.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 13,
+        "title": "第 13 週 量化策略評價指標深度解析",
+        "topics": ["夏普比率", "索提諾比率", "最大回撤", "勝率分析"],
+        "mdPath": "week13.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 14,
+        "title": "第 14 週 多因子策略與特徵重要性篩選",
+        "topics": ["因子計算", "單因子測試", "多因子疊加", "IC/IR分析"],
+        "mdPath": "week14.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 15,
+        "title": "第 15 週 蒙地卡羅模擬與資產配置優化",
+        "topics": ["隨機漫步", "馬可維茲均值", "有效邊界", "風險平價"],
+        "mdPath": "week15.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 16,
+        "title": "第 16 週 API 自動化下單與模擬交易對接",
+        "topics": ["交易接口", "訂單發送", "回報監聽", "風險風控"],
+        "mdPath": "week16.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 17,
+        "title": "第 17 週 量化實戰案例與策略上線部署",
+        "topics": ["雲端部署", "排程工作", "LineNotify通知", "監控面板"],
+        "mdPath": "week17.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      },
+      {
+        "week": 18,
+        "title": "第 18 週 課程期末量化策略綜合大考評",
+        "topics": ["綜合實戰", "策略優化", "心理診斷", "期末總結"],
+        "mdPath": "week18.md",
+        "quizPath": "quant_week1.json",
+        "estimatedMinutes": 30
+      }
+    ]
+  },
+  {
     "id": "intro-psychometrics",
     "title": "心理計量學與測驗理論基礎",
     "description": "學習古典測驗理論 (CTT)、項目反應理論 (IRT) 及認知診斷模型 (CDM)，理解現代教育測驗背後的數學之美與 Python 計算實作。",
