@@ -1,7 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import { Copy, Check, List } from 'lucide-react';
 
+const fontSizes = {
+  small: {
+    body: 'text-xs md:text-xs.5',
+    li: 'text-xs',
+    code: 'text-[11.5px]',
+    h1: 'text-xl md:text-2xl',
+    h2: 'text-base md:text-lg',
+    h3: 'text-xs md:text-sm'
+  },
+  medium: {
+    body: 'text-sm md:text-[14.5px]',
+    li: 'text-sm',
+    code: 'text-[13px]',
+    h1: 'text-2xl md:text-3xl',
+    h2: 'text-lg md:text-xl',
+    h3: 'text-sm md:text-base'
+  },
+  large: {
+    body: 'text-base md:text-[16.5px]',
+    li: 'text-base',
+    code: 'text-[15px]',
+    h1: 'text-3xl md:text-4xl',
+    h2: 'text-xl md:text-2xl',
+    h3: 'text-base md:text-lg'
+  },
+  xlarge: {
+    body: 'text-lg md:text-[18.5px]',
+    li: 'text-lg',
+    code: 'text-[17px]',
+    h1: 'text-4xl md:text-5xl',
+    h2: 'text-2xl md:text-3xl',
+    h3: 'text-lg md:text-xl'
+  }
+};
+
 export default function MarkdownViewer({ rawText }) {
+  const [fontSize, setFontSize] = useState('medium');
   const [copiedIndex, setCopiedIndex] = useState(null);
   const [headings, setHeadings] = useState([]);
 
@@ -147,6 +183,7 @@ export default function MarkdownViewer({ rawText }) {
   };
 
   const parseMarkdown = () => {
+    const sizes = fontSizes[fontSize] || fontSizes.medium;
     const blocks = [];
     const lines = rawText.split('\n');
     let currentBlock = [];
@@ -202,7 +239,7 @@ export default function MarkdownViewer({ rawText }) {
                 }
 
                 return (
-                  <li key={lIdx} className="flex items-start leading-relaxed text-sm text-slate-300">
+                  <li key={lIdx} className={`flex items-start leading-relaxed md:leading-loose ${sizes.li} text-slate-300 tracking-wide`}>
                     <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 mr-3.5 shrink-0 mt-2 shadow-[0_0_6px_rgba(236,72,153,0.45)]"></span>
                     <div className="flex-1 select-text">
                       {liParts.length > 0 ? liParts : liText}
@@ -214,7 +251,7 @@ export default function MarkdownViewer({ rawText }) {
           );
         }
 
-        return <p key={pIdx} className="leading-relaxed text-slate-300 text-sm md:text-sm.5 mb-5 select-text">{parts.length > 0 ? parts : para}</p>;
+        return <p key={pIdx} className={`leading-relaxed md:leading-loose text-slate-300 ${sizes.body} mb-6 select-text tracking-wide`}>{parts.length > 0 ? parts : para}</p>;
       });
 
       return <div key={key} className="mb-4">{parsedParagraphs}</div>;
@@ -265,7 +302,7 @@ export default function MarkdownViewer({ rawText }) {
                   )}
                 </button>
               </div>
-              <div className="p-4 overflow-x-auto text-[13px] w-full table select-text custom-scrollbar font-mono leading-6">
+              <div className={`p-4 overflow-x-auto ${sizes.code} w-full table select-text custom-scrollbar font-mono leading-6`}>
                 {highlightPython(codeString)}
               </div>
             </div>
@@ -293,20 +330,20 @@ export default function MarkdownViewer({ rawText }) {
 
           if (depth === 1) {
             blocks.push(
-              <h1 key={`h-${blockCounter++}`} className="text-2xl md:text-3xl font-extrabold text-white mt-8 mb-6 border-b border-indigo-900/20 pb-4 bg-gradient-to-r from-pink-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent select-text tracking-tight">
+              <h1 key={`h-${blockCounter++}`} className={`font-extrabold text-white mt-10 mb-6 border-b border-indigo-900/20 pb-4 bg-gradient-to-r from-pink-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent select-text tracking-tight ${sizes.h1}`}>
                 {text}
               </h1>
             );
           } else if (depth === 2) {
             blocks.push(
-              <h2 id={id} key={`h-${blockCounter++}`} className="text-lg md:text-xl font-extrabold text-white mt-12 mb-6 flex items-center gap-3.5 scroll-mt-24 select-text">
+              <h2 id={id} key={`h-${blockCounter++}`} className={`font-extrabold text-white mt-12 mb-6 flex items-center gap-3.5 scroll-mt-24 select-text ${sizes.h2}`}>
                 <span className="w-1 h-6 rounded-full bg-gradient-to-b from-pink-500 to-indigo-500 shrink-0 shadow-[0_0_10px_rgba(236,72,153,0.5)]"></span>
                 <span className="bg-gradient-to-r from-indigo-200 to-slate-100 bg-clip-text text-transparent">{text}</span>
               </h2>
             );
           } else {
             blocks.push(
-              <h3 id={id} key={`h-${blockCounter++}`} className="text-sm md:text-base font-extrabold text-slate-100 mt-8 mb-4 flex items-center gap-2 scroll-mt-24 select-text">
+              <h3 id={id} key={`h-${blockCounter++}`} className={`font-extrabold text-slate-100 mt-8 mb-4 flex items-center gap-2 scroll-mt-24 select-text ${sizes.h3}`}>
                 <span className="w-1.5 h-1.5 rounded-full bg-pink-500/80 inline-block shadow-[0_0_6px_rgba(236,72,153,0.3)]"></span>
                 <span>{text}</span>
               </h3>
@@ -340,9 +377,66 @@ export default function MarkdownViewer({ rawText }) {
   };
 
   return (
-    <div className="flex gap-8 relative flex-col lg:flex-row items-start">
+    <div className="flex gap-8 relative flex-col lg:flex-row items-start w-full">
       {/* Markdown Content Frame */}
       <div className="flex-1 max-w-4xl w-full bg-[#090b16]/25 border border-slate-800/60 p-6 md:p-10 rounded-3xl backdrop-blur-md text-slate-100 shadow-xl overflow-hidden select-text">
+        {/* Font Control Bar */}
+        <div className="flex items-center justify-between pb-6 mb-8 border-b border-slate-800/40 select-none">
+          <div className="flex items-center gap-2.5">
+            <span className="w-2 h-2 rounded-full bg-pink-500 animate-pulse shadow-[0_0_8px_rgba(236,72,153,0.5)]"></span>
+            <span className="text-xs font-bold text-slate-400 tracking-wider">📚 研讀講義視窗</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="text-[11px] text-slate-500 font-semibold tracking-wide">調整字型大小：</span>
+            <div className="flex items-center bg-slate-950/70 border border-white/5 p-1 rounded-xl shadow-inner select-none shrink-0">
+              <button
+                onClick={() => setFontSize('small')}
+                className={`px-3 py-1 text-[10px] rounded-lg transition duration-200 active:scale-95 font-bold ${
+                  fontSize === 'small'
+                    ? 'bg-gradient-to-r from-pink-500 to-indigo-500 text-white shadow-md shadow-pink-500/20'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                }`}
+                title="小字型"
+              >
+                A-
+              </button>
+              <button
+                onClick={() => setFontSize('medium')}
+                className={`px-3 py-1 text-[10px] rounded-lg transition duration-200 active:scale-95 font-bold ${
+                  fontSize === 'medium'
+                    ? 'bg-gradient-to-r from-pink-500 to-indigo-500 text-white shadow-md shadow-pink-500/20'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                }`}
+                title="一般字型 (預設)"
+              >
+                A
+              </button>
+              <button
+                onClick={() => setFontSize('large')}
+                className={`px-3 py-1 text-[10px] rounded-lg transition duration-200 active:scale-95 font-bold ${
+                  fontSize === 'large'
+                    ? 'bg-gradient-to-r from-pink-500 to-indigo-500 text-white shadow-md shadow-pink-500/20'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                }`}
+                title="大字型"
+              >
+                A+
+              </button>
+              <button
+                onClick={() => setFontSize('xlarge')}
+                className={`px-3 py-1 text-[10px] rounded-lg transition duration-200 active:scale-95 font-bold ${
+                  fontSize === 'xlarge'
+                    ? 'bg-gradient-to-r from-pink-500 to-indigo-500 text-white shadow-md shadow-pink-500/20'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
+                }`}
+                title="特大字型"
+              >
+                A++
+              </button>
+            </div>
+          </div>
+        </div>
+
         {parseMarkdown()}
       </div>
 
