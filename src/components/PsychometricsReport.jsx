@@ -26,12 +26,14 @@ ChartJS.register(
   Title
 );
 
-export default function PsychometricsReport({ report, onBackToDashboard }) {
+export default function PsychometricsReport({ report, reportData, onBackToDashboard }) {
   const [selectedItemId, setSelectedItemId] = useState('Q1');
 
-  if (!report) return null;
+  const actualReport = report || reportData;
 
-  const { cttMetrics, irtMetrics, cdmMetrics, score, totalQuestions, responseVector } = report;
+  if (!actualReport) return null;
+
+  const { cttMetrics, irtMetrics, cdmMetrics, score, totalQuestions, responseVector } = actualReport;
 
   // 1. CDM Radar Chart data (Compare Personal Mastery vs Cohort Average)
   const studentCdm = cdmMetrics?.studentProfiles?.[0] || { profile: [0, 0, 0, 0, 0, 0] };
@@ -186,9 +188,11 @@ export default function PsychometricsReport({ report, onBackToDashboard }) {
       
       {/* Upper Navigation Back Button */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px' }}>
-        <button onClick={onBackToDashboard} className="btn-secondary" style={{ padding: '10px 20px', fontSize: '14px' }}>
-          <ArrowLeft style={{ width: '16px', height: '16px' }} /> 返回控制台
-        </button>
+        {onBackToDashboard ? (
+          <button onClick={onBackToDashboard} className="btn-secondary" style={{ padding: '10px 20px', fontSize: '14px' }}>
+            <ArrowLeft style={{ width: '16px', height: '16px' }} /> 返回控制台
+          </button>
+        ) : <div />}
         <span className="mode-badge cloud" style={{ padding: '8px 16px', background: 'rgba(99,102,241,0.15)', color: 'var(--text-neon-cyan)', borderColor: 'rgba(99,102,241,0.3)' }}>
           <Shield style={{ width: '14px', height: '14px' }} /> 心理計量學 Diagnostic Suite v1.2
         </span>

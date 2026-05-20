@@ -223,9 +223,14 @@ export default function MarkdownViewer({ rawText }) {
           }
         }
 
-        // Find next special marker
-        const nextCode = text.indexOf('`', index);
-        const nextBold = text.indexOf('**', index);
+        // Find next special marker (strictly after current index if we are on a failed marker)
+        let searchStart = index;
+        if (text[index] === '`' || text.startsWith('**', index)) {
+          searchStart = index + 1;
+        }
+
+        const nextCode = text.indexOf('`', searchStart);
+        const nextBold = text.indexOf('**', searchStart);
 
         let nextSpecial = -1;
         if (nextCode !== -1 && nextBold !== -1) {
