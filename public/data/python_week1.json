@@ -537,7 +537,7 @@
       "type": "fill",
       "title": "將輸入內容轉化為浮點數應使用 __________ 函數。",
       "answer": "float",
-      "kp": "",
+      "kp": "KP1.5",
       "q_vector": [
         0,
         0,
@@ -567,7 +567,7 @@
       "type": "fill",
       "title": "Python 這種不需要編譯成二進位制文件即可執行的語言稱為 __________ 語言。",
       "answer": "直譯式",
-      "kp": "或 Interpreted",
+      "kp": "KP1.1",
       "q_vector": [
         1,
         0,

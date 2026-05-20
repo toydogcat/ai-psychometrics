@@ -8,6 +8,8 @@ export default function Dashboard({ user, onLogout, onSelectCourse, onSelectHist
   const [loadingCourses, setLoadingCourses] = useState(false);
   const [loadingHistory, setLoadingHistory] = useState(false);
   const [progressMap, setProgressMap] = useState({});
+  const [coursesMap, setCoursesMap] = useState({}); // id -> title lookup for history display
+
 
   useEffect(() => {
     loadCoursesAndProgress();
@@ -23,6 +25,12 @@ export default function Dashboard({ user, onLogout, onSelectCourse, onSelectHist
       if (!coursesRes.ok) throw new Error('Failed to load courses database');
       const coursesData = await coursesRes.json();
       setCourses(coursesData);
+
+      // Build id -> title lookup map for history display
+      const cMap = {};
+      coursesData.forEach(c => { cMap[c.id] = c.title; });
+      setCoursesMap(cMap);
+
 
       // 2. Fetch history and compute progress percentages
       const historyData = await StorageEngine.getQuizResults(user?.id);
@@ -251,7 +259,7 @@ export default function Dashboard({ user, onLogout, onSelectCourse, onSelectHist
                 >
                   <div style={{ flex: 1, minWidth: '160px' }}>
                     <h5 style={{ fontSize: '14.5px', fontWeight: '600', marginBottom: '4px', color: '#fff' }}>
-                      {record.course_id === 'python-basic-advanced' ? 'Python 編程' : '線上課程'} - 第 {record.week} 週
+                      {coursesMap[record.course_id] || record.course_id} - 第 {record.week} 週
                     </h5>
                     <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', fontSize: '11px', color: 'var(--text-muted)' }}>
                       <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
