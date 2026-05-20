@@ -184,144 +184,133 @@ export default function MarkdownViewer({ rawText }) {
 
   const parseMarkdown = () => {
     const sizes = fontSizes[fontSize] || fontSizes.medium;
-    const blocks = [];
-    const lines = rawText.split('\n');
-    let currentBlock = [];
-    let isCode = false;
-    let codeLanguage = '';
-    let headingCount = 0;
 
-    const flushNormalText = (key) => {
-      if (currentBlock.length === 0) return null;
-      const content = currentBlock.join('\n').trim();
-      currentBlock = [];
-      if (!content) return null;
+    // Helper to parse inline elements: bold (**bold**) and inline code (`code`)
+    const parseInlineStyles = (text) => {
+      if (!text) return '';
 
-      const parsedParagraphs = content.split('\n\n').map((para, pIdx) => {
-        const parts = [];
-        const boldRegex = /\*\*(.*?)\*\*/g;
-        let match;
-        let lastIdx = 0;
+      const tokens = [];
+      let index = 0;
 
-        while ((match = boldRegex.exec(para)) !== null) {
-          if (match.index > lastIdx) {
-            parts.push(para.substring(lastIdx, match.index));
+      while (index < text.length) {
+        // 1. Inline code: `code`
+        if (text[index] === '`') {
+          const nextBacktick = text.indexOf('`', index + 1);
+          if (nextBacktick !== -1) {
+            const codeText = text.substring(index + 1, nextBacktick);
+            tokens.push(
+              <code key={`code-${index}`} className={`px-1.5 py-0.5 rounded bg-slate-950/70 border border-white/5 text-pink-400 font-mono ${sizes.code} mx-0.5 shadow-inner`}>
+                {codeText}
+              </code>
+            );
+            index = nextBacktick + 1;
+            continue;
           }
-          parts.push(<strong key={match.index} className="text-pink-400 font-extrabold">{match[1]}</strong>);
-          lastIdx = boldRegex.lastIndex;
-        }
-        if (lastIdx < para.length) {
-          parts.push(para.substring(lastIdx));
         }
 
-        const isList = para.trim().startsWith('*') || para.trim().startsWith('-');
-        if (isList) {
-          const listLines = para.split('\n');
-          return (
-            <ul key={pIdx} className="space-y-3.5 my-5 pl-1 flex flex-col list-none">
-              {listLines.map((li, lIdx) => {
-                const liText = li.replace(/^[\*\-]\s+/, '').trim();
-                if (!liText) return null;
-
-                const liParts = [];
-                const liBoldRegex = /\*\*(.*?)\*\*/g;
-                let liMatch;
-                let liLastIdx = 0;
-                while ((liMatch = liBoldRegex.exec(liText)) !== null) {
-                  if (liMatch.index > liLastIdx) {
-                    liParts.push(liText.substring(liLastIdx, liMatch.index));
-                  }
-                  liParts.push(<strong key={liMatch.index} className="text-pink-400 font-extrabold">{liMatch[1]}</strong>);
-                  liLastIdx = liBoldRegex.lastIndex;
-                }
-                if (liLastIdx < liText.length) {
-                  liParts.push(liText.substring(liLastIdx));
-                }
-
-                return (
-                  <li key={lIdx} className={`flex items-start leading-relaxed md:leading-loose ${sizes.li} text-slate-300 tracking-wide`}>
-                    <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 mr-3.5 shrink-0 mt-2 shadow-[0_0_6px_rgba(236,72,153,0.45)]"></span>
-                    <div className="flex-1 select-text">
-                      {liParts.length > 0 ? liParts : liText}
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          );
+        // 2. Bold: **bold**
+        if (text.startsWith('**', index)) {
+          const nextBold = text.indexOf('**', index + 2);
+          if (nextBold !== -1) {
+            const boldText = text.substring(index + 2, nextBold);
+            tokens.push(
+              <strong key={`bold-${index}`} className="text-pink-400 font-extrabold">
+                {parseInlineStyles(boldText)}
+              </strong>
+            );
+            index = nextBold + 2;
+            continue;
+          }
         }
 
-        return <p key={pIdx} className={`leading-relaxed md:leading-loose text-slate-300 ${sizes.body} mb-6 select-text tracking-wide`}>{parts.length > 0 ? parts : para}</p>;
-      });
+        // Find next special marker
+        const nextCode = text.indexOf('`', index);
+        const nextBold = text.indexOf('**', index);
 
-      return <div key={key} className="mb-4">{parsedParagraphs}</div>;
+        let nextSpecial = -1;
+        if (nextCode !== -1 && nextBold !== -1) {
+          nextSpecial = Math.min(nextCode, nextBold);
+        } else if (nextCode !== -1) {
+          nextSpecial = nextCode;
+        } else if (nextBold !== -1) {
+          nextSpecial = nextBold;
+        }
+
+        if (nextSpecial === -1) {
+          tokens.push(text.substring(index));
+          break;
+        } else {
+          tokens.push(text.substring(index, nextSpecial));
+          index = nextSpecial;
+        }
+      }
+
+      return tokens;
     };
 
+    const blocks = [];
+    const lines = rawText.split('\n');
+    let headingCount = 0;
     let blockCounter = 0;
 
-    for (let idx = 0; idx < lines.length; idx++) {
+    let idx = 0;
+    while (idx < lines.length) {
       const line = lines[idx];
+      const trimmed = line.trim();
 
-      if (line.trim().startsWith('```')) {
-        if (!isCode) {
-          const flushed = flushNormalText(`block-${blockCounter++}`);
-          if (flushed) blocks.push(flushed);
-          
-          isCode = true;
-          codeLanguage = line.replace('```', '').trim() || 'python';
-        } else {
-          const codeString = currentBlock.join('\n');
-          const currentCounter = blockCounter++;
-          const workspaceTitle = codeLanguage.toUpperCase() === 'PYTHON' ? 'PYTHON CODE WORKSPACE' : 'BASH SHELL ENVIRONMENT';
-          blocks.push(
-            <div key={`code-${currentCounter}`} className="relative my-6 rounded-2xl border border-white/5 bg-[#04060f] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.45)] backdrop-blur-md">
-              <div className="flex items-center justify-between px-5 py-3 bg-[#070914]/80 border-b border-white/5 text-xs text-slate-400 font-mono select-none">
-                <div className="flex items-center gap-4">
-                  {/* macOS visual chrome circles */}
-                  <div className="flex gap-1.5 select-none shrink-0">
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f56] inline-block shadow-[0_0_6px_rgba(255,95,86,0.25)]"></span>
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] inline-block shadow-[0_0_6px_rgba(255,189,46,0.25)]"></span>
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#27c93f] inline-block shadow-[0_0_6px_rgba(39,201,63,0.25)]"></span>
-                  </div>
-                  <span className="tracking-widest font-mono text-[9px] text-slate-500 uppercase font-extrabold">{workspaceTitle}</span>
-                </div>
-                <button
-                  onClick={() => handleCopy(codeString, currentCounter)}
-                  className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/50 hover:bg-slate-800 text-slate-300 hover:text-white border border-white/5 transition active:scale-95 text-[10px] font-semibold"
-                >
-                  {copiedIndex === currentCounter ? (
-                    <>
-                      <Check className="w-3 h-3 text-emerald-400" />
-                      <span className="text-emerald-400 font-semibold">已複製！</span>
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="w-3 h-3" />
-                      <span>複製程式碼</span>
-                    </>
-                  )}
-                </button>
-              </div>
-              <div className={`p-4 overflow-x-auto ${sizes.code} w-full table select-text custom-scrollbar font-mono leading-6`}>
-                {highlightPython(codeString)}
-              </div>
-            </div>
-          );
-          currentBlock = [];
-          isCode = false;
+      // 1. Code block
+      if (trimmed.startsWith('```')) {
+        const codeLanguage = trimmed.replace('```', '').trim() || 'python';
+        let codeLines = [];
+        idx++;
+        while (idx < lines.length && !lines[idx].trim().startsWith('```')) {
+          codeLines.push(lines[idx]);
+          idx++;
         }
+        idx++; // skip closing ```
+
+        const codeString = codeLines.join('\n');
+        const currentCounter = blockCounter++;
+        const workspaceTitle = codeLanguage.toUpperCase() === 'PYTHON' ? 'PYTHON CODE WORKSPACE' : 'BASH SHELL ENVIRONMENT';
+
+        blocks.push(
+          <div key={`code-${currentCounter}`} className="relative my-6 rounded-2xl border border-white/5 bg-[#04060f] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.45)] backdrop-blur-md">
+            <div className="flex items-center justify-between px-5 py-3 bg-[#070914]/80 border-b border-white/5 text-xs text-slate-400 font-mono select-none">
+              <div className="flex items-center gap-4">
+                <div className="flex gap-1.5 select-none shrink-0">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f56] inline-block shadow-[0_0_6px_rgba(255,95,86,0.25)]"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] inline-block shadow-[0_0_6px_rgba(255,189,46,0.25)]"></span>
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#27c93f] inline-block shadow-[0_0_6px_rgba(39,201,63,0.25)]"></span>
+                </div>
+                <span className="tracking-widest font-mono text-[9px] text-slate-500 uppercase font-extrabold">{workspaceTitle}</span>
+              </div>
+              <button
+                onClick={() => handleCopy(codeString, currentCounter)}
+                className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/50 hover:bg-slate-800 text-slate-300 hover:text-white border border-white/5 transition active:scale-95 text-[10px] font-semibold"
+              >
+                {copiedIndex === currentCounter ? (
+                  <>
+                    <Check className="w-3 h-3 text-emerald-400" />
+                    <span className="text-emerald-400 font-semibold">已複製！</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-3 h-3" />
+                    <span>複製程式碼</span>
+                  </>
+                )}
+              </button>
+            </div>
+            <div className={`p-4 overflow-x-auto ${sizes.code} w-full table select-text custom-scrollbar font-mono leading-6`}>
+              {highlightPython(codeString)}
+            </div>
+          </div>
+        );
         continue;
       }
 
-      if (isCode) {
-        currentBlock.push(line);
-        continue;
-      }
-
-      if (line.trim().startsWith('#') && !isCode) {
-        const flushed = flushNormalText(`block-${blockCounter++}`);
-        if (flushed) blocks.push(flushed);
-
+      // 2. Heading
+      if (trimmed.startsWith('#')) {
         const hMatch = line.match(/^(#{1,3})\s+(.*)$/);
         if (hMatch) {
           const depth = hMatch[1].length;
@@ -350,21 +339,139 @@ export default function MarkdownViewer({ rawText }) {
             );
           }
         }
+        idx++;
         continue;
       }
 
-      if (line.trim() === '---' && !isCode) {
-        const flushed = flushNormalText(`block-${blockCounter++}`);
-        if (flushed) blocks.push(flushed);
+      // 3. Horizontal rule
+      if (trimmed === '---') {
         blocks.push(<hr key={`hr-${blockCounter++}`} className="my-8 border-slate-800/50" />);
+        idx++;
         continue;
       }
 
-      currentBlock.push(line);
-    }
+      // 4. Empty line
+      if (trimmed === '') {
+        idx++;
+        continue;
+      }
 
-    const flushed = flushNormalText(`block-${blockCounter++}`);
-    if (flushed) blocks.push(flushed);
+      // 5. Lists (unordered or ordered)
+      const listMatch = line.match(/^(\s*)([\*\-\+])\s+(.*)$/);
+      const orderedMatch = line.match(/^(\s*)(\d+)\.\s+(.*)$/);
+
+      if (listMatch || orderedMatch) {
+        let listItems = [];
+
+        // Read consecutive list items
+        while (idx < lines.length) {
+          const curLine = lines[idx];
+          const curTrimmed = curLine.trim();
+
+          if (curTrimmed === '') {
+            // Check if next non-empty line is a list item to continue grouping
+            let nextListIdx = idx + 1;
+            while (nextListIdx < lines.length && lines[nextListIdx].trim() === '') {
+              nextListIdx++;
+            }
+            if (nextListIdx < lines.length && (lines[nextListIdx].match(/^(\s*)([\*\-\+])\s+(.*)$/) || lines[nextListIdx].match(/^(\s*)(\d+)\.\s+(.*)$/))) {
+              idx = nextListIdx;
+              continue;
+            } else {
+              break;
+            }
+          }
+
+          const curListMatch = curLine.match(/^(\s*)([\*\-\+])\s+(.*)$/);
+          const curOrderedMatch = curLine.match(/^(\s*)(\d+)\.\s+(.*)$/);
+
+          if (curListMatch) {
+            const indent = curListMatch[1].length;
+            const content = curListMatch[3];
+            listItems.push({
+              type: 'unordered',
+              indent,
+              content
+            });
+            idx++;
+          } else if (curOrderedMatch) {
+            const indent = curOrderedMatch[1].length;
+            const num = curOrderedMatch[2];
+            const content = curOrderedMatch[3];
+            listItems.push({
+              type: 'ordered',
+              indent,
+              num,
+              content
+            });
+            idx++;
+          } else {
+            break;
+          }
+        }
+
+        const currentCounter = blockCounter++;
+        blocks.push(
+          <ul key={`list-${currentCounter}`} className="space-y-3.5 my-5 pl-1 flex flex-col list-none">
+            {listItems.map((item, lIdx) => {
+              const paddingLeftVal = item.indent * 6; // Proportional indent: 6px per space of indent
+
+              return (
+                <li
+                  key={lIdx}
+                  className={`flex items-start leading-relaxed md:leading-loose ${sizes.li} text-slate-300 tracking-wide`}
+                  style={{ paddingLeft: `${paddingLeftVal}px` }}
+                >
+                  {item.type === 'unordered' ? (
+                    item.indent > 0 ? (
+                      // Nested bullet: slightly smaller, elegant hollow or bordered dot
+                      <span className="w-1.5 h-1.5 rounded-full border border-pink-400 mr-3.5 shrink-0 mt-2.5 shadow-[0_0_4px_rgba(236,72,153,0.3)]"></span>
+                    ) : (
+                      // Top-level bullet: classic pink gradient dot
+                      <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 mr-3.5 shrink-0 mt-2 shadow-[0_0_6px_rgba(236,72,153,0.45)]"></span>
+                    )
+                  ) : (
+                    // Ordered bullet: styled pink/gradient number
+                    <span className="font-mono text-pink-400 font-bold mr-3 shrink-0 min-w-[1.25rem] text-left text-xs.5 md:text-sm mt-0.5">{item.num}.</span>
+                  )}
+                  <div className="flex-1 select-text">
+                    {parseInlineStyles(item.content)}
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        );
+        continue;
+      }
+
+      // 6. Regular paragraph (including multiple lines separated by single newlines)
+      let paragraphLines = [];
+      while (idx < lines.length) {
+        const curLine = lines[idx];
+        const curTrimmed = curLine.trim();
+
+        // Break paragraph on heading, horizontal rule, code block, list item, or blank line
+        if (curTrimmed.startsWith('#') || curTrimmed.startsWith('```') || curTrimmed === '---' || curTrimmed === '') {
+          break;
+        }
+        if (curLine.match(/^(\s*)([\*\-\+])\s+(.*)$/) || curLine.match(/^(\s*)(\d+)\.\s+(.*)$/)) {
+          break;
+        }
+
+        paragraphLines.push(curLine);
+        idx++;
+      }
+
+      if (paragraphLines.length > 0) {
+        const paraText = paragraphLines.join('\n');
+        blocks.push(
+          <p key={`p-${blockCounter++}`} className={`leading-relaxed md:leading-loose text-slate-300 ${sizes.body} mb-6 select-text tracking-wide`}>
+            {parseInlineStyles(paraText)}
+          </p>
+        );
+      }
+    }
 
     return blocks;
   };
