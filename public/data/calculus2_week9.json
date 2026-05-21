@@ -1,0 +1,448 @@
+{
+  "course": "calculus2",
+  "week": "week9",
+  "title": "第 9 週 - 期中評量 (Midterm Exam)",
+  "knowledge_points": {},
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "若 $f(x) = x^5 + 2x^3 + x - 1$，則 $(f^{-1})'(-1)$ 的值為：\n   (A) 1 (B) 0 (C) 1/5 (D) 1/9",
+      "options": {
+        "A": "1 (B) 0 (C) 1/5 (D) 1/9"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "計算 $\\int_1^e \\frac{\\ln x}{x} dx$：\n   (A) 1/2 (B) 1 (C) $e$ (D) $e^2/2$",
+      "options": {
+        "A": "1/2 (B) 1 (C) $e$ (D) $e^2/2$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "$\\frac{d}{dx} (\\tan^{-1}(e^x))$ 為：\n   (A) $\\frac{e^x}{1+x^2}$ (B) $\\frac{e^x}{1+e^{2x}}$ (C) $\\frac{1}{1+e^{2x}}$ (D) $\\frac{e^x}{\\sqrt{1-e^{2x}}}$",
+      "options": {
+        "A": "$\\frac{e^x}{1+x^2}$ (B) $\\frac{e^x}{1+e^{2x}}$ (C) $\\frac{1}{1+e^{2x}}$ (D) $\\frac{e^x}{\\sqrt{1-e^{2x}}}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "使用分部積分計算 $\\int x \\cos x dx$，令 $u = x$，則 $v$ 為：\n   (A) $\\cos x$ (B) $-\\sin x$ (C) $\\sin x$ (D) $x^2/2$",
+      "options": {
+        "A": "$\\cos x$ (B) $-\\sin x$ (C) $\\sin x$ (D) $x^2/2$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "積分 $\\int \\frac{1}{x^2 \\sqrt{x^2-4}} dx$ 適合使用下列哪種代換？\n   (A) $x = 2\\sin\\theta$ (B) $x = 2\\tan\\theta$ (C) $x = 2\\sec\\theta$ (D) $u = x^2-4$",
+      "options": {
+        "A": "$x = 2\\sin\\theta$ (B) $x = 2\\tan\\theta$ (C) $x = 2\\sec\\theta$ (D) $u = x^2-4$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "有理函數 $\\frac{x+1}{(x-1)(x^2+1)}$ 的部分分式拆解形式為：\n   (A) $\\frac{A}{x-1} + \\frac{B}{x^2+1}$ (B) $\\frac{A}{x-1} + \\frac{Bx+C}{x^2+1}$ (C) $\\frac{A}{x-1} + \\frac{B}{x+1} + \\frac{C}{x-1}$ (D) $\\frac{Ax+B}{x-1} + \\frac{C}{x^2+1}$",
+      "options": {
+        "A": "$\\frac{A}{x-1} + \\frac{B}{x^2+1}$ (B) $\\frac{A}{x-1} + \\frac{Bx+C}{x^2+1}$ (C) $\\frac{A}{x-1} + \\frac{B}{x+1} + \\frac{C}{x-1}$ (D) $\\frac{Ax+B}{x-1} + \\frac{C}{x^2+1}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "辛普森法 $S_n$ 的誤差項與子區間數 $n$ 的幾次方成反比？\n   (A) $n$ (B) $n^2$ (C) $n^3$ (D) $n^4$",
+      "options": {
+        "A": "$n$ (B) $n^2$ (C) $n^3$ (D) $n^4$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "下列何種瑕積分收斂？\n   (A) $\\int_1^\\infty \\frac{1}{\\sqrt{x}} dx$ (B) $\\int_0^1 \\frac{1}{x} dx$ (C) $\\int_1^\\infty \\frac{1}{x^2} dx$ (D) $\\int_0^\\infty e^x dx$",
+      "options": {
+        "A": "$\\int_1^\\infty \\frac{1}{\\sqrt{x}} dx$ (B) $\\int_0^1 \\frac{1}{x} dx$ (C) $\\int_1^\\infty \\frac{1}{x^2} dx$ (D) $\\int_0^\\infty e^x dx$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "區域 $0 \\le y \\le \\sqrt{x}$ 在 $[0, 1]$ 繞 $x$-軸旋轉的體積為：\n   (A) $\\pi$ (B) $\\pi/2$ (C) $2\\pi/3$ (D) $\\pi/4$",
+      "options": {
+        "A": "$\\pi$ (B) $\\pi/2$ (C) $2\\pi/3$ (D) $\\pi/4$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "弧長公式 $L = \\int_a^b \\sqrt{1 + (f'(x))^2} dx$ 的幾何基礎是：\n    (A) 圓面積 (B) 畢氏定理 (C) 相似三角形 (D) 槓桿原理",
+      "options": {
+        "A": "圓面積 (B) 畢氏定理 (C) 相似三角形 (D) 槓桿原理"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "single",
+      "title": "函數 $f(x) = x^2$ 在 $[1, 3]$ 的平均值為：\n    (A) 4 (B) 13/3 (C) 9/2 (D) 5",
+      "options": {
+        "A": "4 (B) 13/3 (C) 9/2 (D) 5"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "single",
+      "title": "將一物體在變力 $F(x) = \\frac{1}{x^2}$ 下從 $x=1$ 移動到 $x=\\infty$ 所做的總功為：\n    (A) 1 (B) 0 (C) $\\infty$ (D) 2",
+      "options": {
+        "A": "1 (B) 0 (C) $\\infty$ (D) 2"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "single",
+      "title": "浸沒在液體中的垂直平面所受的流體壓力與下列何者無關？\n    (A) 液體密度 (B) 重力加速度 (C) 平面的水平寬度 (D) 大氣壓力",
+      "options": {
+        "A": "液體密度 (B) 重力加速度 (C) 平面的水平寬度 (D) 大氣壓力"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "single",
+      "title": "半徑為 $r$ 的球體表面積公式為：\n    (A) $\\pi r^2$ (B) $2\\pi r^2$ (C) $4\\pi r^2$ (D) $\\frac{4}{3}\\pi r^3$",
+      "options": {
+        "A": "$\\pi r^2$ (B) $2\\pi r^2$ (C) $4\\pi r^2$ (D) $\\frac{4}{3}\\pi r^3$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "single",
+      "title": "區域對 $y$-軸的矩 $M_y = \\int x f(x) dx$ 定義了形心的：\n    (A) $x$-座標 (B) $y$-座標 (C) 面積 (D) 密度",
+      "options": {
+        "A": "$x$-座標 (B) $y$-座標 (C) 面積 (D) 密度"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "$\\int_0^1 \\frac{1}{x^p} dx$ 收斂的條件是：\n    (A) $p > 1$ (B) $p = 1$ (C) $p < 1$ (D) $p \\ge 1$",
+      "options": {
+        "A": "$p > 1$ (B) $p = 1$ (C) $p < 1$ (D) $p \\ge 1$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "下列何者為 $\\int \\frac{1}{1+x^2} dx$ 的值？\n    (A) $\\ln(1+x^2)$ (B) $\\tan^{-1} x$ (C) $\\sin^{-1} x$ (D) $\\sec^{-1} x$",
+      "options": {
+        "A": "$\\ln(1+x^2)$ (B) $\\tan^{-1} x$ (C) $\\sin^{-1} x$ (D) $\\sec^{-1} x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "剝殼法計算繞 $y$-軸旋轉體積時，半徑為：\n    (A) $y$ (B) $x$ (C) $f(x)$ (D) $2\\pi x$",
+      "options": {
+        "A": "$y$ (B) $x$ (C) $f(x)$ (D) $2\\pi x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "消費者剩餘在圖形上代表：\n    (A) 供給曲線下方的面積 (B) 需求曲線上方、價格線下方的面積 (C) 需求曲線下方、價格線面上的面積 (D) 矩形 $P \\times Q$ 的面積",
+      "options": {
+        "A": "供給曲線下方的面積 (B) 需求曲線上方、價格線下方的面積 (C) 需求曲線下方、價格線面上的面積 (D) 矩形 $P \\times Q$ 的面積"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "若 $\\int_a^\\infty f(x) dx$ 收斂，且 $0 \\le g(x) \\le f(x)$，則 $\\int_a^\\infty g(x) dx$：\n    (A) 收斂 (B) 發散 (C) 不一定 (D) 趨於 1",
+      "options": {
+        "A": "收斂 (B) 發散 (C) 不一定 (D) 趨於 1"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "multiple",
+      "title": "$\\int x e^x dx = $ \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "multiple",
+      "title": "若 $\\tan \\theta = x/3$，則 $\\sin \\theta$ 以 $x$ 表示為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "multiple",
+      "title": "瑕積分 $\\int_1^\\infty \\frac{1}{x \\ln x} dx$ 的結果為 \\_\\_\\_\\_\\_\\_（若發散請寫發散）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "multiple",
+      "title": "利用梯形法 $T_2$ 估計 $\\int_0^2 x^2 dx$ 的值為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "multiple",
+      "title": "曲線 $y = \\frac{2}{3}x^{3/2}$ 在 $[0, 3]$ 的弧長為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "multiple",
+      "title": "一均質細棒長度 4，其一端在原點。若密度為常數，則其重心位置在 $x = $ \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "multiple",
+      "title": "帕普斯定理提到，旋轉體體積等於區域面積乘以 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "multiple",
+      "title": "$y = \\cosh x$ 的導函數為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "multiple",
+      "title": "$\\int \\frac{dx}{x^2-a^2} = $ \\_\\_\\_\\_\\_\\_（以對數形式表示）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "multiple",
+      "title": "計算表面積時，繞 $y$-軸旋轉的積分核為 $2\\pi x \\sqrt{1+(\\_\\_\\_\\_\\_\\_)^2}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q31",
+      "type": "fill",
+      "title": "計算 $\\int e^x \\sin x dx$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q32",
+      "type": "fill",
+      "title": "計算 $\\int \\frac{3x-1}{(x-2)(x+3)} dx$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q33",
+      "type": "fill",
+      "title": "求由 $y = \\sin x$ ($0 \\le x \\le \\pi$) 與 $x$-軸圍成區域繞 $x$-軸旋轉的體積。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q34",
+      "type": "fill",
+      "title": "證明 $\\int_0^\\infty e^{-x} dx = 1$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q35",
+      "type": "fill",
+      "title": "求 $y = x^3$ 在 $[0, 1]$ 上的形心座標 $(\\bar{x}, \\bar{y})$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q36",
+      "type": "fill",
+      "title": "一水桶高 1 m，底面積 0.5 m²。若裝滿水，求將水全部抽乾至桶口頂部所需的功。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q37",
+      "type": "fill",
+      "title": "利用三角代換計算 $\\int \\sqrt{4-x^2} dx$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q38",
+      "type": "fill",
+      "title": "判斷 $\\int_1^\\infty \\frac{2+\\sin x}{x^2} dx$ 的收斂性並說明理由。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q39",
+      "type": "fill",
+      "title": "求 $y = \\sqrt{1-x^2}$ 在 $[0, 1]$ 的平均值。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q40",
+      "type": "fill",
+      "title": "證明辛普森法則對於 $f(x) = x^3$ 是精確的。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

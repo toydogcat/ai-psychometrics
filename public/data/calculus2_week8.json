@@ -1,0 +1,310 @@
+{
+  "course": "calculus2",
+  "week": "week8",
+  "title": "第 8 週 - 期中總複習與綜合解題",
+  "knowledge_points": {
+    "KP8.5": "建立「觀察 $\\to$ 分類 $\\to$ 執行」的解題流程。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "計算 $\\int \\ln x dx$ 最適合的方法是： (A) 代換法 (B) 分部積分 (C) 部分分式 (D) 三角代換",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "$\\int_0^\\infty e^{-x^2} dx$ 是： (A) 第一型瑕積分 (B) 第二型瑕積分 (C) 非瑕積分 (D) 多項式積分",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "繞 $y$-軸旋轉的體積，若使用圓盤法，積分變數為： (A) $x$ (B) $y$ (C) $z$ (D) $r$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "辛普森法則對於幾次多項式能得到精確值？ (A) 1次 (B) 2次 (C) 3次 (D) 以上皆是",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "下列何種積分必發散？ (A) $\\int_1^\\infty \\frac{1}{x^{1.1}} dx$ (B) $\\int_0^1 \\frac{1}{x^{0.5}} dx$ (C) $\\int_1^\\infty \\frac{1}{x} dx$ (D) $\\int_0^\\infty e^{-x} dx$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "求弧長時，被積函數通常包含： (A) $f(x)^2$ (B) $\\sqrt{1+f'(x)^2}$ (C) $2\\pi f(x)$ (D) $x f(x)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "一彈簧 $k=10$，從 $x=1$ 拉到 $x=2$ 的功為： (A) 5 (B) 10 (C) 15 (D) 20",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "區域 $0 \\le y \\le f(x)$ 對 $x$-軸的矩 $M_x$ 定義為： (A) $\\int x f(x) dx$ (B) $\\int \\frac{1}{2}f(x)^2 dx$ (C) $\\int f(x) dx$ (D) $\\int y dx$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "若 $\\int_1^\\infty f(x) dx$ 收斂，則 $\\lim_{x \\to \\infty} f(x)$ 通常為： (A) 1 (B) $\\infty$ (C) 0 (D) 不一定",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "$\\int \\frac{1}{x^2+2x+2} dx$ 應使用： (A) 部分分式 (B) 完成平方後代換 (C) 分部積分 (D) 數值積分",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "single",
+      "title": "$\\int \\sin^{-1} x dx$ 的分部積分設定中，$u = $ \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "single",
+      "title": "梯形法 $T_n$ 的誤差項與 $n$ 的 \\_\\_\\_\\_\\_\\_ 次方成反比。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "single",
+      "title": "$\\int_0^1 \\frac{1}{x^2} dx$ \\_\\_\\_\\_\\_\\_（收斂/發散）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "single",
+      "title": "繞 $x$-軸旋轉的剝殼法體積公式為 $V = $ \\_\\_\\_\\_\\_\\_（對 $y$ 積分）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "single",
+      "title": "$y = x$ 在 $[0, 1]$ 繞 $x$-軸旋轉的表面積為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "均質半圓板 $x^2+y^2 \\le r^2, y \\ge 0$ 的形心 $\\bar{y} = $ \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "$\\int \\frac{1}{x^2-1} dx$ 拆解為部分分式後為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "若 $f(x)$ 恆正且遞增，則左端點法 $L_n$ 會 \\_\\_\\_\\_\\_\\_（高估/低估）積分值。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "功的單位「牛頓-米」又稱為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "$\\int_{-\\infty}^\\infty x dx$ 的值為 \\_\\_\\_\\_\\_\\_（若不存在請註明）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "multiple",
+      "title": "計算 $\\int x^2 e^x dx$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "multiple",
+      "title": "計算 $\\int_0^1 \\frac{1}{\\sqrt{1-x^2}} dx$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "multiple",
+      "title": "求 $y = x^2$ 與 $y = 2x$ 圍成區域繞 $x$-軸旋轉的體積。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "multiple",
+      "title": "利用辛普森法 $S_4$ 估計 $\\int_0^2 \\frac{1}{1+x} dx$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "multiple",
+      "title": "判斷 $\\int_2^\\infty \\frac{x+1}{\\sqrt{x^4-1}} dx$ 的收斂性。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "multiple",
+      "title": "求 $y = \\frac{1}{3}(x^2+2)^{3/2}$ 在 $0 \\le x \\le 1$ 的弧長。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "multiple",
+      "title": "求 $y = \\sin x$ 在 $[0, \\pi]$ 繞 $x$-軸旋轉的表面積（列式）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "multiple",
+      "title": "一邊長 2 m 的正方形薄板垂直置於水中，頂邊與水面齊平。求其受力。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "multiple",
+      "title": "求 $y = \\sqrt{x}, y=0, x=4$ 所圍區域的重心。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "multiple",
+      "title": "證明 $\\int_1^\\infty \\frac{\\ln x}{x^2} dx$ 收斂並求其值。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

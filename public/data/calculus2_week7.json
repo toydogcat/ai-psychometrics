@@ -1,0 +1,314 @@
+{
+  "course": "calculus2",
+  "week": "week7",
+  "title": "第 7 週 - 積分應用 II：表面積與物理應用",
+  "knowledge_points": {
+    "KP7.1": "表面積公式包含 $2\\pi y$ 與 $ds$。",
+    "KP7.2": "功是力對位移的積分。",
+    "KP7.3": "流體壓力取決於深度與受力面積。",
+    "KP7.4": "重心是區域質量的加權平均位置。",
+    "KP7.5": "消費者剩餘反映了市場定價下的消費者獲益。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "表面積公式 $2\\pi \\int y ds$ 中，$ds$ 代表： (A) 弧長元素 (B) 體積元素 (C) 密度元素 (D) 功元素",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "彈簧從平衡位置拉長 $x$ 所受的力為 $kx$，這被稱為： (A) 牛頓定律 (B) 虎克定律 (C) 歐姆定律 (D) 巴斯卡定律",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "功的國際單位 (SI) 為： (A) 牛頓 (N) (B) 瓦特 (W) (C) 焦耳 (J) (D) 帕斯卡 (Pa)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "流體壓力 (Pressure) 的公式 $P = \\rho g d$ 中，$d$ 是： (A) 直徑 (B) 密度 (C) 深度 (D) 位移",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "若一薄板對稱於 $y$-軸，則其形心的 \\_\\_\\_\\_\\_\\_ 座標必為 0。 (A) $x$ (B) $y$ (C) $z$ (D) 原點",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "計算形心 $(\\bar{x}, \\bar{y})$ 時，分母通常是區域的： (A) 寬度 (B) 周長 (C) 面積 (D) 二階矩",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "機率密度函數 $f(x)$ 必須滿足 $f(x) \\ge 0$ 且全區域積分為： (A) 0 (B) 1 (C) $\\pi$ (D) $\\infty$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "在經濟學中，需求曲線下、市價線以上的區域面積稱為： (A) 生產者剩餘 (B) 市場平衡 (C) 消費者剩餘 (D) 邊際利潤",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "繞 $y$-軸旋轉的表面積公式，半徑應改為： (A) $x$ (B) $y$ (C) $f'(x)$ (D) $\\sqrt{x}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "一根長度為 $L$ 的均質細棒，其重心位於： (A) $L/4$ (B) $L/2$ (C) $L$ (D) $2L/3$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "表面積公式繞 $x$-軸：$S = \\int 2\\pi y \\sqrt{1 + (\\_\\_\\_\\_\\_\\_)^2} dx$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "將 1000 kg 水抽到 10 m 高處做的功約為 \\_\\_\\_\\_\\_\\_ J。（取 $g=9.8$）",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "$y = x^2$ 在 $[0, 1]$ 繞 $y$-軸旋轉的表面積式子（對 $x$ 積分）為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "浸沒在水中的矩形垂直板，受力與其中心深度 \\_\\_\\_\\_\\_\\_（成正比/反比）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "形心公式中，$M_y$ 代表區域對 \\_\\_\\_\\_\\_\\_ 軸的矩。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "若機率分佈為 $f(x) = 0.5e^{-0.5x}$ ($x \\ge 0$)，其期望值為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "帕普斯定理 (Pappus's Theorem) 聯繫了旋轉體體積與區域的 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "單位面積的壓力稱為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "欲計算一三角形板（底 $b$ 高 $h$）的重心，其 $\\bar{y}$ 距離底邊為 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "消費者剩餘 $\\int_0^Q [P(q) - P^*] dq$ 中，$P^*$ 代表 \\_\\_\\_\\_\\_\\_。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "證明半徑為 $r$ 的球面表面積為 $4\\pi r^2$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "一個圓柱形水井深 20 m，半徑 1 m，盛滿水。求將所有水抽乾所需的功。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "求 $y = \\sqrt{4-x^2}$ 在 $[-1, 1]$ 繞 $x$-軸旋轉的表面積。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "一個等腰三角形板，底邊 4 m 在水面，頂點向下深 3 m。求其所受流體壓力。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "求 $y = x^2$ 與 $y = \\sqrt{x}$ 圍成區域的形心。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "證明帕普斯第一定理：旋轉體表面積等於生成曲線長度乘以其形心旋轉路徑長。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "已知 PDF $f(x) = C x^2$ 在 $[0, 3]$，求常數 $C$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "求 $y = e^x$ 在 $[0, 1]$ 的形心（列式即可）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "有一變力 $F(x) = 3x^2 + 2x$ (N)，求將物體從 $x=1$ 移動到 $x=3$ 的功。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "說明為何形心不一定位於物體內部（舉一例）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

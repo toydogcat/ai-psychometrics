@@ -1,0 +1,678 @@
+{
+  "course": "calculus1",
+  "week": "week3",
+  "title": "Week 3 Review",
+  "knowledge_points": {},
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "無論 $x$ 取何值（$x \\neq 0$），正弦函數的值域始終在 $[-1, 1]$ 之間，即 $-1 \\le \\sin(\\frac{1}{x}) \\le 1$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "將不等式各項同乘 $x^2$（因為 $x^2 \\ge 0$，不等號方向不變）：\n   $-x^2 \\le x^2 \\sin(\\frac{1}{x}) \\le x^2$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "分別計算左右兩端函數當 $x \\to 0$ 的極限：\n   $\\lim_{x \\to 0} (-x^2) = 0$\n   $\\lim_{x \\to 0} (x^2) = 0$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "因為左右極限皆為 0，根據夾擠定理，推得 $\\lim_{x \\to 0} x^2 \\sin(\\frac{1}{x}) = 0$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "將原式改寫，人為構造出 $\\frac{\\sin \\theta}{\\theta}$ 的形式。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "$\\lim_{x \\to 0} \\frac{\\sin 4x}{\\sin 6x} = \\lim_{x \\to 0} \\left( \\frac{\\sin 4x}{4x} \\cdot 4x \\cdot \\frac{6x}{\\sin 6x} \\cdot \\frac{1}{6x} \\right)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "重新組合：$\\lim_{x \\to 0} \\left( \\frac{\\sin 4x}{4x} \\cdot \\frac{6x}{\\sin 6x} \\cdot \\frac{4x}{6x} \\right)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "由於當 $x \\to 0$ 時，$4x \\to 0$ 且 $6x \\to 0$，我們有：\n   $\\lim_{x \\to 0} \\frac{\\sin 4x}{4x} = 1$ 以及 $\\lim_{x \\to 0} \\frac{6x}{\\sin 6x} = 1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "且 $\\frac{4x}{6x} = \\frac{4}{6} = \\frac{2}{3}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "故極限值為 $1 \\cdot 1 \\cdot \\frac{2}{3} = \\frac{2}{3}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "$f(a)$ 有定義（點存在）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "$\\lim_{x \\to a} f(x)$ 存在（左右極限相等）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "$\\lim_{x \\to a} f(x) = f(a)$（極限值等於函數值）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "函數在 $x \\neq 1$ 處皆為有理函數且分母不為零，因此必定連續。重點在檢查 $x=1$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "計算 $x \\to 1$ 的極限：\n   $\\lim_{x \\to 1} \\frac{x^2 - 1}{x - 1} = \\lim_{x \\to 1} \\frac{(x-1)(x+1)}{x-1} = \\lim_{x \\to 1} (x+1) = 2$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "為了讓 $f(x)$ 在 $x=1$ 連續，必須滿足 $\\lim_{x \\to 1} f(x) = f(1)$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "因為 $f(1) = c$，故 $c = 2$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "令 $f(x) = x^3 - x - 1$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "因為 $f(x)$ 是多項式函數，故在所有實數上（包含區間 $[1, 2]$）皆連續。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "計算端點函數值：\n   $f(1) = 1^3 - 1 - 1 = -1 < 0$\n   $f(2) = 2^3 - 2 - 1 = 5 > 0$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "因為 $f(1) < 0 < f(2)$，且 $f(x)$ 連續。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "根據中間值定理 (IVT)，必存在 $c \\in (1, 2)$，使得 $f(c) = 0$。證明完畢。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "代入 $x=0$，得 $0/0$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "分子有理化：同乘 $\\frac{\\sqrt{1+x} + 1}{\\sqrt{1+x} + 1}$。\n   原式 $= \\lim_{x \\to 0} \\frac{(\\sqrt{1+x} - 1)(\\sqrt{1+x} + 1)}{x(\\sqrt{1+x} + 1)}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "化簡分子：$1+x - 1 = x$。\n   原式 $= \\lim_{x \\to 0} \\frac{x}{x(\\sqrt{1+x} + 1)}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "消去 $x$：\n   $= \\lim_{x \\to 0} \\frac{1}{\\sqrt{1+x} + 1}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "代入 $x=0$，極限值為 $\\frac{1}{\\sqrt{1} + 1} = \\frac{1}{2}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "下列哪一個定理可以幫助我們計算 $\\lim_{x \\to 0} x^4 \\cos(\\frac{2}{x})$？",
+      "options": {
+        "A": "中間值定理",
+        "B": "夾擠定理",
+        "C": "極大值定理",
+        "D": "羅爾定理"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "計算 $\\lim_{x \\to 0} \\frac{\\sin 5x}{x}$：",
+      "options": {
+        "A": "1",
+        "B": "5",
+        "C": "$1/5$",
+        "D": "0"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "函數在 $x=a$ 連續的嚴格定義包含三個條件，下列何者**不**是其中之一？",
+      "options": {
+        "A": "$f(a)$ 有定義",
+        "B": "$\\lim_{x \\to a} f(x)$ 存在",
+        "C": "$\\lim_{x \\to a} f(x) = 0$",
+        "D": "$\\lim_{x \\to a} f(x) = f(a)$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "中間值定理 (IVT) 的前提條件之一是：",
+      "options": {
+        "A": "函數必須可微。",
+        "B": "函數在閉區間必須連續。",
+        "C": "函數必須是遞增的。",
+        "D": "函數圖形必須對稱。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "計算 $\\lim_{x \\to 0} \\frac{1 - \\cos x}{x}$：",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "$\\infty$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "若 $f(x)$ 滿足 $3x \\le f(x) \\le x^3 + 2$ (當 $0 \\le x \\le 2$ 時)，則 $\\lim_{x \\to 1} f(x) = $？",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "無法確定"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "若 $f(x) = \\frac{x^2 - 9}{x - 3}$ ($x \\neq 3$)，要讓 $f(x)$ 在 $x=3$ 連續，應定義 $f(3) =$？",
+      "options": {
+        "A": "0",
+        "B": "3",
+        "C": "6",
+        "D": "9"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "下列哪一個函數在 $x=0$ 處連續？",
+      "options": {
+        "A": "$1/x$",
+        "B": "$\\frac{\\sin x}{x}$",
+        "C": "$\\cos x$",
+        "D": "$\\ln x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "判斷多項式 $P(x) = x^4 + x - 3$ 在區間 $[1, 2]$ 內是否有根？",
+      "options": {
+        "A": "有，因為 $P(1) < 0$ 且 $P(2) > 0$",
+        "B": "沒有，因為它是偶次多項式",
+        "C": "有，因為它在區間內有極大值",
+        "D": "無法判斷"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "計算 $\\lim_{\\theta \\to 0} \\frac{\\tan \\theta}{\\theta}$：",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "$\\pi$",
+        "D": "不存在"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "夾擠定理的應用條件為 $f(x) \\le g(x) \\le h(x)$。下列哪些函數常被用作 $f(x)$ 或 $h(x)$ 來夾擠含有三角函數的極限？",
+      "options": {
+        "A": "$|x|$",
+        "B": "$-|x|$",
+        "C": "$x^2$",
+        "D": "$\\ln x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "關於 $\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$，下列推論哪些是正確的？",
+      "options": {
+        "A": "$\\lim_{x \\to 0} \\frac{x}{\\sin x} = 1$",
+        "B": "$\\lim_{x \\to 0} \\frac{\\sin 3x}{3x} = 1$",
+        "C": "$\\lim_{x \\to 0} \\frac{\\sin ax}{bx} = \\frac{a}{b}$",
+        "D": "$\\lim_{x \\to 0} \\sin x = 1$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "若函數 $f(x)$ 在 $x=c$ 不連續，可能的原因包括：",
+      "options": {
+        "A": "$\\lim_{x \\to c} f(x)$ 不存在。",
+        "B": "$f(c)$ 沒有定義。",
+        "C": "極限存在且有定義，但兩者不相等。",
+        "D": "函數是多項式。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "利用 IVT 可以證明哪些方程式在特定區間有解？",
+      "options": {
+        "A": "$x^5 - x - 1 = 0$ 在 $(1, 2)$ 內",
+        "B": "$\\cos x = x$ 在 $(0, \\pi/2)$ 內",
+        "C": "$e^x = 0$ 在任意區間內",
+        "D": "$\\ln x = 0$ 在 $(0.5, 1.5)$ 內"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "對於有理函數 $R(x) = P(x)/Q(x)$ ($P, Q$ 為多項式)，下列敘述哪些正確？",
+      "options": {
+        "A": "$R(x)$ 在其定義域內連續。",
+        "B": "只要 $Q(a) = 0$，$R(x)$ 在 $x=a$ 必有垂直漸近線。",
+        "C": "若 $P(a) = 0$ 且 $Q(a) = 0$，極限可能存在。",
+        "D": "多項式函數本身處處連續。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "下列哪些極限值為 0？",
+      "options": {
+        "A": "$\\lim_{x \\to 0} x \\cos(\\frac{1}{x})$",
+        "B": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{x}$",
+        "C": "$\\lim_{x \\to \\infty} \\frac{\\sin x}{x}$",
+        "D": "$\\lim_{x \\to 0} \\frac{\\sin x}{x}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "若要使用夾擠定理求 $\\lim_{x \\to 0} x^2 \\sin(\\frac{1}{x})$，可以選擇的夾擠邊界為：",
+      "options": {
+        "A": "$-x^2$",
+        "B": "$x^2$",
+        "C": "$-1$",
+        "D": "$1$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "下列關於連續性的敘述，哪些是正確的？",
+      "options": {
+        "A": "連續函數的和必定是連續函數。",
+        "B": "連續函數的乘積必定是連續函數。",
+        "C": "連續函數的商必定是連續函數 (分母不為零處)。",
+        "D": "絕對值函數 $y=|x|$ 在 $x=0$ 是連續的。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "設 $f(x) = \\frac{x^2 - x - 2}{x - 2}$ ($x \\neq 2$)，若令 $f(x)$ 處處連續，則 $f(2)$ 的值應該是：",
+      "options": {
+        "A": "3",
+        "B": "0",
+        "C": "$\\lim_{x \\to 2} f(x)$",
+        "D": "無法讓它連續"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "中間值定理保證了：",
+      "options": {
+        "A": "若 $f$ 在 $[a, b]$ 連續，且 $f(a) < N < f(b)$，則必定存在 $c \\in (a, b)$ 使 $f(c) = N$。",
+        "B": "該 $c$ 值是唯一的。",
+        "C": "$c$ 點可以精確求出解析解。",
+        "D": "若圖形不中斷地從一點連接到另一點，必穿過兩點間的任何水平線。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "$\\lim_{x \\to 0} \\frac{\\sin(7x)}{x} = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "若 $-x^2 \\le f(x) \\le x^2$，則 $\\lim_{x \\to 0} f(x) = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "多項式 $f(x) = x^3 - 3x + 1$ 在區間 $[0, 1]$ 端點的乘積 $f(0)f(1) = \\underline{\\hspace{1cm}}$ (請填數值)，由此可知區間內有根。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "為了使函數 $f(x) = \\begin{cases} 2x+1 & x \\le 1 \\\\ 3x-c & x > 1 \\end{cases}$ 連續，$c$ 必須為 $\\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "$\\lim_{x \\to 0} \\frac{\\tan 2x}{x} = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "如果 $\\lim_{x \\to 3} f(x) = 5$ 且 $f(x)$ 在 $x=3$ 連續，則 $f(3) = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "$\\lim_{x \\to 0} x^4 \\sin(\\frac{1}{x}) = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "利用極限 $\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$，求 $\\lim_{x \\to 0} \\frac{\\sin 4x}{\\sin 5x} = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "$\\lim_{x \\to 0} \\frac{1-\\cos^2 x}{x^2} = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "IVT 全名為 Intermediate Value $\\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

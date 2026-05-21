@@ -1,0 +1,324 @@
+{
+  "course": "calculus1",
+  "week": "week14",
+  "title": "第 14 週 - 定積分的定義與性質",
+  "knowledge_points": {
+    "KP14.1": "理解長方形逼近法是求解曲線面積的基礎。",
+    "KP14.2": "熟練構造左、右與中點黎曼和的 $\\Sigma$ 表達式。",
+    "KP14.3": "掌握定積分作為黎曼和極限的定義及其可積條件。",
+    "KP14.4": "理解定積分代表淨面積，並靈活運用積分的線性與區間加法性質。",
+    "KP14.5": "學會使用比較定理來估計定積分的上下界。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "在 Google Colab 中執行以下代碼。\n    ```python\n    import numpy as np\n    import matplotlib.pyplot as plt",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "使用右端點法近似 $f(x)=x$ 在 $[0, 2]$ 上的面積，若 $n=2$，結果為？\n   - (A) 1 (B) 2 (C) 3 (D) 4",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "定積分 $\\int_1^5 f(x) dx$ 中，若將區間分成 $n$ 等分，則 $\\Delta x$ 為？\n   - (A) $5/n$ (B) $4/n$ (C) $1/n$ (D) $6/n$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "若 $f$ 在 $[a, b]$ 上連續且恆正，則 $\\int_a^b f(x) dx$ 必定？\n   - (A) 大於 0 (B) 等於 0 (C) 小於 0 (D) 不一定",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "$\\int_2^5 3 dx = $？\n   - (A) 3 (B) 6 (C) 9 (D) 15",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "黎曼和中，哪種方法通常對連續函數的近似效果最好？\n   - (A) 左端點法 (B) 右端點法 (C) 中點法 (D) 隨機採樣",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "若 $\\int_1^3 f(x) dx = 4$ 且 $\\int_1^3 g(x) dx = 2$，則 $\\int_1^3 [2f(x) - g(x)] dx = $？\n   - (A) 2 (B) 6 (C) 8 (D) 10",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "定積分 $\\int_a^b f(x) dx$ 的幾何意義是？\n   - (A) 總面積 (B) 淨面積 (C) 切線斜率 (D) 曲線弧長",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "下列何種函數在閉區間內保證可積？\n   - (A) 任何函數 (B) 有窮個間斷點的函數 (C) 連續函數 (D) 只有多項式",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "$\\int_b^a f(x) dx$ 等於？\n   - (A) $\\int_a^b f(x) dx$ (B) $-\\int_a^b f(x) dx$ (C) $0$ (D) 無法確定",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "比較定理中，若 $f(x) \\le g(x)$，則？\n    - (A) $\\int f \\ge \\int g$ (B) $\\int f \\le \\int g$ (C) $\\int f = \\int g$ (D) 導數 $f' \\le g'$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "關於黎曼和，下列敘述正確的有？\n    - (A) 樣本點可以任意選取 (B) $n$ 越大通常越準確 (C) 左端點法永遠低估面積 (D) 極限存在時稱為定積分",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "定積分的性質包括？\n    - (A) $\\int_a^b f + \\int_b^c f = \\int_a^c f$ (B) $\\int_a^b kf = k \\int_a^b f$ (C) $\\int_a^b f \\cdot g = \\int_a^b f \\cdot \\int_a^b g$ (D) $\\int_a^a f = 0$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "下列哪些情況會導致 $\\int_a^b f(x) dx = 0$？\n    - (A) $a=b$ (B) $f(x)=0$ (C) $f$ 為奇函數且區間關於原點對稱 (D) $f$ 為偶函數",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "關於估計定理，若 $f(x) = \\sin x$ 於 $[0, \\pi/2]$，則？\n    - (A) $\\int f \\ge 0$ (B) $\\int f \\le \\pi/2$ (C) $\\int f \\ge \\pi/2$ (D) $\\int f \\le 1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "哪些因素會影響黎曼和的數值？\n    - (A) 分割數量 $n$ (B) 樣本點的選擇 (C) 積分區間 $[a, b]$ (D) 變數的名稱（如 $x$ 改為 $t$）",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "定積分 $\\int_a^b f(x) dx$ 中，符號 $dx$ 的意義包含？\n    - (A) 代表微小的寬度 $\\Delta x$ 的極限 (B) 指出積分變數 (C) 是一個獨立的乘數 (D) 僅是裝飾，無意義",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "對於遞增函數 $f(x)$ 於 $[a, b]$：\n    - (A) $L_n$ 是下和 (B) $R_n$ 是上和 (C) $M_n$ 介於 $L_n$ 與 $R_n$ 之間 (D) 真實值必等於 $M_n$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "若 $f(x)$ 在 $[a, b]$ 上可積，則？\n    - (A) $f$ 必須是有界的 (B) $f$ 可以有有限個跳躍間斷 (C) $f$ 必須是單調的 (D) $f$ 必須連續",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "利用性質 $\\int_0^1 (x^2 + 1) dx$ 可以拆解為？\n    - (A) $\\int_0^1 x^2 dx + \\int_0^1 1 dx$ (B) $2 \\int_0^1 x dx$ (C) $\\int_0^{0.5} (x^2+1) dx + \\int_{0.5}^1 (x^2+1) dx$ (D) $\\int_1^0 -(x^2+1) dx$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "關於帶正負號的面積，若 $f(x)$ 在半個區間正、半個區間負且對稱，則？\n    - (A) 總面積為 0 (B) 淨面積為 0 (C) 定積分為 0 (D) 絕對值的積分為 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "將區間 $[0, 3]$ 分成 $n$ 等分，第 $i$ 個右端點 $x_i = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "定積分的符號 $\\int$ 最初是由字母 __________ 拉長而來。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "若 $\\int_0^5 f(x) dx = 10$，則 $\\int_5^0 2f(x) dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "估計 $\\int_1^4 \\sqrt{x} dx$ 的最小值（利用估計定理）為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "函數 $f(x) = x^3$ 在 $[-2, 2]$ 上的定積分值為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "$\\lim_{n \\to \\infty} \\sum_{i=1}^n \\frac{1}{n} \\sin(\\frac{i}{n})$ 對應的定積分為 $\\int_0^1$ __________ $dx$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "若 $\\int_1^2 f(x) dx = 3, \\int_2^4 f(x) dx = 5$，則 $\\int_1^4 f(x) dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "定積分 $\\int_a^b c dx$ 的公式解為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "在黎曼和中，當樣本點取為區間中點時，稱為 __________ 法則。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "若 $f(x) \\ge 0$ 且 $\\int_a^b f(x) dx = 0$，則在 $f$ 連續的前提下，$f(x)$ 必為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

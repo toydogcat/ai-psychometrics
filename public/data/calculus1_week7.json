@@ -1,0 +1,448 @@
+{
+  "course": "calculus1",
+  "week": "week7",
+  "title": "Week 7 Review",
+  "knowledge_points": {},
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "兩邊取 $\\ln$：$\\ln y = \\ln(f(x))$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "利用對數律化簡。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "對 $x$ 隱微分：$\\frac{1}{y}y' = \\dots$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "求解 $y'$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "$\\ln y = \\ln(x^x) = x \\ln x$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "對 $x$ 微分：$\\frac{1}{y}y' = 1 \\cdot \\ln x + x \\cdot \\frac{1}{x} = \\ln x + 1$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "$y' = y(\\ln x + 1) = x^x(\\ln x + 1)$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "隱函數微分時，對 $y^2$ 對 $x$ 微分的結果為何？\n   (A) $2y$  (B) $2y \\frac{dy}{dx}$  (C) $2x$  (D) $0$",
+      "options": {
+        "A": "$2y$  (B) $2y \\frac{dy}{dx}$  (C) $2x$  (D) $0$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "$\\frac{d}{dx} (\\ln x) =$ ?\n   (A) $e^x$  (B) $\\frac{1}{x}$  (C) $\\ln x$  (D) $x$",
+      "options": {
+        "A": "$e^x$  (B) $\\frac{1}{x}$  (C) $\\ln x$  (D) $x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "反正弦函數 $\\sin^{-1} x$ 的導數為？\n   (A) $\\frac{1}{1+x^2}$  (B) $\\frac{1}{\\sqrt{1-x^2}}$  (C) $-\\frac{1}{\\sqrt{1-x^2}}$  (D) $\\frac{1}{x}$",
+      "options": {
+        "A": "$\\frac{1}{1+x^2}$  (B) $\\frac{1}{\\sqrt{1-x^2}}$  (C) $-\\frac{1}{\\sqrt{1-x^2}}$  (D) $\\frac{1}{x}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "$\\frac{d}{dx} (\\tan^{-1} x) =$ ?\n   (A) $\\frac{1}{1+x^2}$  (B) $\\frac{1}{1-x^2}$  (C) $\\sec^2 x$  (D) $\\frac{1}{\\sqrt{1+x^2}}$",
+      "options": {
+        "A": "$\\frac{1}{1+x^2}$  (B) $\\frac{1}{1-x^2}$  (C) $\\sec^2 x$  (D) $\\frac{1}{\\sqrt{1+x^2}}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "計算 $\\frac{d}{dx} (\\ln(3x))$。\n   (A) $\\frac{3}{x}$  (B) $\\frac{1}{x}$  (C) $\\frac{1}{3x}$  (D) $3\\ln x$",
+      "options": {
+        "A": "$\\frac{3}{x}$  (B) $\\frac{1}{x}$  (C) $\\frac{1}{3x}$  (D) $3\\ln x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "若 $y = x^x$，則求 $y'$ 最佳的方法是？\n   (A) 冪次法則  (B) 指數法則  (C) 對數微分法  (D) 商法則",
+      "options": {
+        "A": "冪次法則  (B) 指數法則  (C) 對數微分法  (D) 商法則"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "對於方程式 $xy = 1$，求 $\\frac{dy}{dx}$。\n   (A) $-\\frac{y}{x}$  (B) $-\\frac{x}{y}$  (C) $\\frac{1}{x}$  (D) $-x^{-2}$",
+      "options": {
+        "A": "$-\\frac{y}{x}$  (B) $-\\frac{x}{y}$  (C) $\\frac{1}{x}$  (D) $-x^{-2}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "$\\frac{d}{dx} (\\log_{10} x) =$ ?\n   (A) $\\frac{1}{x}$  (B) $\\frac{1}{x \\ln 10}$  (C) $\\frac{\\ln 10}{x}$  (D) $10^x$",
+      "options": {
+        "A": "$\\frac{1}{x}$  (B) $\\frac{1}{x \\ln 10}$  (C) $\\frac{\\ln 10}{x}$  (D) $10^x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "已知 $y = \\ln(x^2)$，則 $y' =$ ?\n   (A) $\\frac{2}{x}$  (B) $\\frac{1}{x^2}$  (C) $\\frac{2}{x^2}$  (D) $2x$",
+      "options": {
+        "A": "$\\frac{2}{x}$  (B) $\\frac{1}{x^2}$  (C) $\\frac{2}{x^2}$  (D) $2x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "計算 $f(x) = \\sin^{-1}(2x)$ 的導數。\n    (A) $\\frac{2}{\\sqrt{1-4x^2}}$  (B) $\\frac{1}{\\sqrt{1-2x^2}}$  (C) $\\frac{2}{\\sqrt{1-x^2}}$  (D) $\\frac{4x}{\\sqrt{1-4x^2}}$",
+      "options": {
+        "A": "$\\frac{2}{\\sqrt{1-4x^2}}$  (B) $\\frac{1}{\\sqrt{1-2x^2}}$  (C) $\\frac{2}{\\sqrt{1-x^2}}$  (D) $\\frac{4x}{\\sqrt{1-4x^2}}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "關於隱函數微分法，下列哪些正確？\n    (A) 適用於 $y$ 無法寫為 $x$ 的明確函數時\n    (B) 需對等式兩邊同時對 $x$ 微分\n    (C) 對含 $y$ 的項求導時必須使用連鎖律，乘上 $\\frac{dy}{dx}$\n    (D) $x$ 與 $y$ 不能同時出現在同一項中",
+      "options": {
+        "A": "適用於 $y$ 無法寫為 $x$ 的明確函數時",
+        "B": "需對等式兩邊同時對 $x$ 微分",
+        "C": "對含 $y$ 的項求導時必須使用連鎖律，乘上 $\\frac{dy}{dx}$",
+        "D": "$x$ 與 $y$ 不能同時出現在同一項中"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "關於對數微分法，下列哪些情況適用？\n    (A) 函數包含變數在底數與指數，例如 $x^x$\n    (B) 函數為複雜的分式與乘積，例如 $\\frac{\\sqrt{x}(x+1)^2}{(x-2)^3}$\n    (C) 任何常數函數\n    (D) 多項式加減",
+      "options": {
+        "A": "函數包含變數在底數與指數，例如 $x^x$",
+        "B": "函數為複雜的分式與乘積，例如 $\\frac{\\sqrt{x}(x+1)^2}{(x-2)^3}$",
+        "C": "任何常數函數",
+        "D": "多項式加減"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "下列反三角函數的導數哪些正確？\n    (A) $(\\sin^{-1} x)' = \\frac{1}{\\sqrt{1-x^2}}$\n    (B) $(\\cos^{-1} x)' = -\\frac{1}{\\sqrt{1-x^2}}$\n    (C) $(\\tan^{-1} x)' = \\frac{1}{1+x^2}$\n    (D) $(\\sec^{-1} x)' = \\frac{1}{x\\sqrt{x^2-1}}$",
+      "options": {
+        "A": "$(\\sin^{-1} x)' = \\frac{1}{\\sqrt{1-x^2}}$",
+        "B": "$(\\cos^{-1} x)' = -\\frac{1}{\\sqrt{1-x^2}}$",
+        "C": "$(\\tan^{-1} x)' = \\frac{1}{1+x^2}$",
+        "D": "$(\\sec^{-1} x)' = \\frac{1}{x\\sqrt{x^2-1}}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "若 $x^2 + y^2 = 1$，則：\n    (A) 這是一個單一函數\n    (B) 隱函數微分得 $2x + 2yy' = 0$\n    (C) 在 $(0,1)$ 處斜率為 0\n    (D) 二階導數 $y'' = -\\frac{1}{y^3}$",
+      "options": {
+        "A": "這是一個單一函數",
+        "B": "隱函數微分得 $2x + 2yy' = 0$",
+        "C": "在 $(0,1)$ 處斜率為 0",
+        "D": "二階導數 $y'' = -\\frac{1}{y^3}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "關於 $\\ln |x|$ 的導數，下列何者正確？\n    (A) 當 $x > 0$ 時為 $\\frac{1}{x}$\n    (B) 當 $x < 0$ 時為 $\\frac{1}{x}$\n    (C) $(\\ln |x|)' = \\frac{1}{x}$ 對所有 $x \\neq 0$ 成立\n    (D) 在 $x=0$ 處可微",
+      "options": {
+        "A": "當 $x > 0$ 時為 $\\frac{1}{x}$",
+        "B": "當 $x < 0$ 時為 $\\frac{1}{x}$",
+        "C": "$(\\ln |x|)' = \\frac{1}{x}$ 對所有 $x \\neq 0$ 成立",
+        "D": "在 $x=0$ 處可微"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "已知 $\\ln y = x^2$，下列哪些正確？\n    (A) $y = e^{x^2}$\n    (B) $\\frac{y'}{y} = 2x$\n    (C) $y' = 2x e^{x^2}$\n    (D) 此題不需要使用連鎖律",
+      "options": {
+        "A": "$y = e^{x^2}$",
+        "B": "$\\frac{y'}{y} = 2x$",
+        "C": "$y' = 2x e^{x^2}$",
+        "D": "此題不需要使用連鎖律"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "使用對數微分法求 $y = (\\sin x)^x$ 時，第一步 $\\ln y$ 為何？\n    (A) $x \\ln(\\sin x)$\n    (B) $\\sin x \\ln x$\n    (C) $x \\sin x$\n    (D) $x + \\ln(\\sin x)$",
+      "options": {
+        "A": "$x \\ln(\\sin x)$",
+        "B": "$\\sin x \\ln x$",
+        "C": "$x \\sin x$",
+        "D": "$x + \\ln(\\sin x)$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "對於 $y = \\log_2(x^2+1)$，其導數包含哪些項？\n    (A) $\\frac{1}{x^2+1}$\n    (B) $2x$\n    (C) $\\ln 2$ 在分母\n    (D) $\\ln 2$ 在分子",
+      "options": {
+        "A": "$\\frac{1}{x^2+1}$",
+        "B": "$2x$",
+        "C": "$\\ln 2$ 在分母",
+        "D": "$\\ln 2$ 在分子"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "隱函數求切線時，若算得 $\\frac{dy}{dx}$ 分母為零，代表什麼？\n    (A) 該點可能為垂直切線\n    (B) 該點的斜率不存在\n    (C) 函數在該點不連續\n    (D) 該圖形沒有切線",
+      "options": {
+        "A": "該點可能為垂直切線",
+        "B": "該點的斜率不存在",
+        "C": "函數在該點不連續",
+        "D": "該圖形沒有切線"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "下列哪些組合可以消去（在合適的定義域內）？\n    (A) $\\sin(\\sin^{-1} x) = x$\n    (B) $\\ln(e^x) = x$\n    (C) $e^{\\ln x} = x$\n    (D) $\\tan^{-1}(\\tan x) = x$",
+      "options": {
+        "A": "$\\sin(\\sin^{-1} x) = x$",
+        "B": "$\\ln(e^x) = x$",
+        "C": "$e^{\\ln x} = x$",
+        "D": "$\\tan^{-1}(\\tan x) = x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(\\tan^{-1} x) = \\underline{\\frac{1}{1+x^2}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "若 $x y = 2$，則 $\\frac{dy}{dx} = \\underline{-\\frac{y}{x}}$（或 $-\\frac{2}{x^2}$）。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(\\ln x) = \\underline{\\frac{1}{x}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(\\sin^{-1} x) = \\underline{\\frac{1}{\\sqrt{1-x^2}}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "函數 $y = \\ln(5x)$ 的導數為 $\\underline{\\frac{1}{x}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "若 $y = x^{\\sin x}$，取自然對數後得 $\\ln y = \\underline{\\sin x \\ln x}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "對 $y^3$ 關於 $x$ 微分，結果為 $\\underline{3y^2 y'}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(\\ln(x^4)) = \\underline{\\frac{4}{x}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "方程式 $x^2 + y^2 = 1$ 的 $y'$ 隱函數表示為 $\\underline{-\\frac{x}{y}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "反餘弦函數的導數 $\\frac{d}{dx}(\\cos^{-1} x) = \\underline{-\\frac{1}{\\sqrt{1-x^2}}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

@@ -391,40 +391,61 @@ export default function PsychometricsReport({ report, reportData, onBackToDashbo
               {cttMetrics?.itemDetails?.map((item, idx) => {
                 const isCorrect = responseVector[idx] === 1;
                 const irtParam = irtMetrics?.itemDetails?.find(x => x.item === item.item) || { a: 1.0, b: 0.0 };
+                const questionData = actualReport.activeQuestions ? actualReport.activeQuestions[idx] : null;
                 
                 return (
-                  <tr key={item.item} style={{ borderBottom: '1px solid rgba(255,255,255,0.02)', background: selectedItemId === item.item ? 'rgba(255,255,255,0.02)' : 'transparent' }}>
-                    <td style={{ padding: '12px 16px', fontWeight: '600' }}>{item.item}</td>
-                    <td style={{ padding: '12px 16px' }}>
-                      {isCorrect ? (
-                        <span style={{ color: '#10b981', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                          <CheckCircle style={{ width: '14px', height: '14px' }} /> 答對
+                  <React.Fragment key={item.item}>
+                    <tr style={{ borderBottom: isCorrect || !questionData ? '1px solid rgba(255,255,255,0.02)' : 'none', background: selectedItemId === item.item ? 'rgba(255,255,255,0.02)' : 'transparent' }}>
+                      <td style={{ padding: '12px 16px', fontWeight: '600' }}>{item.item}</td>
+                      <td style={{ padding: '12px 16px' }}>
+                        {isCorrect ? (
+                          <span style={{ color: '#10b981', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                            <CheckCircle style={{ width: '14px', height: '14px' }} /> 答對
+                          </span>
+                        ) : (
+                          <span style={{ color: '#ef4444', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                            <XCircle style={{ width: '14px', height: '14px' }} /> 答錯
+                          </span>
+                        )}
+                      </td>
+                      <td style={{ padding: '12px 16px' }}>
+                        {item.difficulty.toFixed(2)} 
+                        <span style={{ fontSize: '11px', color: 'var(--text-muted)', marginLeft: '4px' }}>
+                          ({item.difficulty >= 0.7 ? '易' : item.difficulty >= 0.4 ? '中' : '難'})
                         </span>
-                      ) : (
-                        <span style={{ color: '#ef4444', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                          <XCircle style={{ width: '14px', height: '14px' }} /> 答錯
+                      </td>
+                      <td style={{ padding: '12px 16px' }}>{item.discrimination.toFixed(2)}</td>
+                      <td style={{ padding: '12px 16px' }}>
+                        <span style={{ 
+                          color: item.verdict.includes('優良') ? '#10b981' : item.verdict.includes('良好') ? '#34d399' : item.verdict.includes('尚可') ? '#fbbf24' : '#ef4444',
+                          fontWeight: '500'
+                        }}>
+                          {item.verdict}
                         </span>
-                      )}
-                    </td>
-                    <td style={{ padding: '12px 16px' }}>
-                      {item.difficulty.toFixed(2)} 
-                      <span style={{ fontSize: '11px', color: 'var(--text-muted)', marginLeft: '4px' }}>
-                        ({item.difficulty >= 0.7 ? '易' : item.difficulty >= 0.4 ? '中' : '難'})
-                      </span>
-                    </td>
-                    <td style={{ padding: '12px 16px' }}>{item.discrimination.toFixed(2)}</td>
-                    <td style={{ padding: '12px 16px' }}>
-                      <span style={{ 
-                        color: item.verdict.includes('優良') ? '#10b981' : item.verdict.includes('良好') ? '#34d399' : item.verdict.includes('尚可') ? '#fbbf24' : '#ef4444',
-                        fontWeight: '500'
-                      }}>
-                        {item.verdict}
-                      </span>
-                    </td>
-                    <td style={{ padding: '12px 16px', fontFamily: 'var(--font-mono)', fontSize: '12px' }}>
-                      a={irtParam.a.toFixed(2)} / b={irtParam.b.toFixed(2)}
-                    </td>
-                  </tr>
+                      </td>
+                      <td style={{ padding: '12px 16px', fontFamily: 'var(--font-mono)', fontSize: '12px' }}>
+                        a={irtParam.a.toFixed(2)} / b={irtParam.b.toFixed(2)}
+                      </td>
+                    </tr>
+                    {!isCorrect && questionData && (
+                      <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.02)', background: 'rgba(239, 68, 68, 0.05)' }}>
+                        <td colSpan="6" style={{ padding: '16px', fontSize: '13px' }}>
+                          <div style={{ marginBottom: '8px' }}>
+                            <strong style={{ color: '#f87171' }}>題目：</strong> <span style={{ color: '#e5e7eb', whiteSpace: 'pre-wrap' }}>{questionData.title}</span>
+                          </div>
+                          <div style={{ marginBottom: '8px' }}>
+                            <strong style={{ color: '#f87171' }}>正確答案：</strong> <span style={{ color: '#e5e7eb', fontFamily: 'var(--font-mono)' }}>{Array.isArray(questionData.answer) ? questionData.answer.join(', ') : questionData.answer}</span>
+                          </div>
+                          {questionData.explanation && (
+                            <div style={{ background: 'rgba(0,0,0,0.2)', padding: '12px', borderRadius: '8px', borderLeft: '3px solid #f87171' }}>
+                              <strong style={{ color: '#f87171', display: 'block', marginBottom: '4px' }}>詳細解析：</strong>
+                              <span style={{ color: '#d1d5db', whiteSpace: 'pre-wrap', lineHeight: '1.5' }}>{questionData.explanation}</span>
+                            </div>
+                          )}
+                        </td>
+                      </tr>
+                    )}
+                  </React.Fragment>
                 );
               })}
             </tbody>

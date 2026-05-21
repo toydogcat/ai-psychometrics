@@ -1,0 +1,418 @@
+{
+  "course": "calculus1",
+  "week": "week6",
+  "title": "Week 6 Review",
+  "knowledge_points": {},
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "**乘積法則**：$\\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)$\n   *證明想法*：增加並減去 $f(x+h)g(x)$ 項，利用極限分配。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "**商法則**：$\\frac{d}{dx}[\\frac{f(x)}{g(x)}] = \\frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}$\n   *證明想法*：可由乘積法則與連鎖律推導，或由極限直接證明。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "$\\frac{d}{dx}(\\sin x) = \\cos x$\n   *證明*：利用 $\\lim_{h \\to 0} \\frac{\\sin h}{h} = 1$ 與 $\\lim_{h \\to 0} \\frac{\\cos h - 1}{h} = 0$，\n   $\\sin(x+h) - \\sin x = \\sin x \\cos h + \\cos x \\sin h - \\sin x$。取極限得 $\\cos x$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "$\\frac{d}{dx}(\\cos x) = -\\sin x$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "$\\frac{d}{dx}(\\sin x) =$ ?\n   (A) $\\cos x$  (B) $-\\cos x$  (C) $\\sin x$  (D) $-\\sin x$",
+      "options": {
+        "A": "$\\cos x$  (B) $-\\cos x$  (C) $\\sin x$  (D) $-\\sin x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "乘積法則 $\\frac{d}{dx}(fg)$ 等於？\n   (A) $f'g'$  (B) $f'g + fg'$  (C) $f'g - fg'$  (D) $\\frac{f'g-fg'}{g^2}$",
+      "options": {
+        "A": "$f'g'$  (B) $f'g + fg'$  (C) $f'g - fg'$  (D) $\\frac{f'g-fg'}{g^2}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "$\\frac{d}{dx}(\\tan x) =$ ?\n   (A) $\\cot x$  (B) $\\sec^2 x$  (C) $-\\csc^2 x$  (D) $\\sec x \\tan x$",
+      "options": {
+        "A": "$\\cot x$  (B) $\\sec^2 x$  (C) $-\\csc^2 x$  (D) $\\sec x \\tan x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "若 $y = \\cos(3x)$，則 $y'$ 為何？\n   (A) $-\\sin(3x)$  (B) $3\\sin(3x)$  (C) $-3\\sin(3x)$  (D) $\\sin(3x)$",
+      "options": {
+        "A": "$-\\sin(3x)$  (B) $3\\sin(3x)$  (C) $-3\\sin(3x)$  (D) $\\sin(3x)$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "連鎖律公式為 $\\frac{dy}{dx} =$ ?\n   (A) $\\frac{dy}{du} + \\frac{du}{dx}$  (B) $\\frac{dy}{du} \\cdot \\frac{du}{dx}$  (C) $\\frac{dy}{du} / \\frac{du}{dx}$  (D) $\\frac{du}{dy}$",
+      "options": {
+        "A": "$\\frac{dy}{du} + \\frac{du}{dx}$  (B) $\\frac{dy}{du} \\cdot \\frac{du}{dx}$  (C) $\\frac{dy}{du} / \\frac{du}{dx}$  (D) $\\frac{du}{dy}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "$\\frac{d}{dx}(\\sec x) =$ ?\n   (A) $\\sec^2 x$  (B) $\\tan^2 x$  (C) $\\sec x \\tan x$  (D) $-\\csc x \\cot x$",
+      "options": {
+        "A": "$\\sec^2 x$  (B) $\\tan^2 x$  (C) $\\sec x \\tan x$  (D) $-\\csc x \\cot x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "求 $f(x) = e^{2x}$ 的導數。\n   (A) $e^{2x}$  (B) $2e^{2x}$  (C) $e^x$  (D) $2xe^{2x}$",
+      "options": {
+        "A": "$e^{2x}$  (B) $2e^{2x}$  (C) $e^x$  (D) $2xe^{2x}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "$\\frac{d}{dx}(x \\cos x) =$ ?\n   (A) $\\cos x - x \\sin x$  (B) $-\\sin x$  (C) $1 - \\sin x$  (D) $\\cos x + x \\sin x$",
+      "options": {
+        "A": "$\\cos x - x \\sin x$  (B) $-\\sin x$  (C) $1 - \\sin x$  (D) $\\cos x + x \\sin x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "求 $\\frac{d}{dx}(\\sin^2 x)$。\n   (A) $\\cos^2 x$  (B) $2\\sin x$  (C) $2\\sin x \\cos x$  (D) $-\\cos^2 x$",
+      "options": {
+        "A": "$\\cos^2 x$  (B) $2\\sin x$  (C) $2\\sin x \\cos x$  (D) $-\\cos^2 x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "商法則中分母為？\n    (A) $g(x)$  (B) $g'(x)$  (C) $[g(x)]^2$  (D) $f(x)$",
+      "options": {
+        "A": "$g(x)$  (B) $g'(x)$  (C) $[g(x)]^2$  (D) $f(x)$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "關於基本三角函數的導數，下列哪些正確？\n    (A) $(\\sin x)' = \\cos x$\n    (B) $(\\cos x)' = -\\sin x$\n    (C) $(\\tan x)' = \\sec^2 x$\n    (D) $(\\cot x)' = \\csc^2 x$",
+      "options": {
+        "A": "$(\\sin x)' = \\cos x$",
+        "B": "$(\\cos x)' = -\\sin x$",
+        "C": "$(\\tan x)' = \\sec^2 x$",
+        "D": "$(\\cot x)' = \\csc^2 x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "關於連鎖律，下列敘述哪些正確？\n    (A) 用於處理合成函數的微分\n    (B) 由外而內逐層微分並相乘\n    (C) $(f(g(x)))' = f'(g'(x))$\n    (D) $(f(g(x)))' = f'(g(x))g'(x)$",
+      "options": {
+        "A": "用於處理合成函數的微分",
+        "B": "由外而內逐層微分並相乘",
+        "C": "$(f(g(x)))' = f'(g'(x))$",
+        "D": "$(f(g(x)))' = f'(g(x))g'(x)$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "若 $y = e^{f(x)}$，則：\n    (A) $y' = e^{f(x)} \\cdot f'(x)$\n    (B) $y' = e^{f'(x)}$\n    (C) 這是連鎖律的應用\n    (D) 若 $f(x)=x$，則回退到 $y'=e^x$",
+      "options": {
+        "A": "$y' = e^{f(x)} \\cdot f'(x)$",
+        "B": "$y' = e^{f'(x)}$",
+        "C": "這是連鎖律的應用",
+        "D": "若 $f(x)=x$，則回退到 $y'=e^x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "關於 $\\sec x$ 與 $\\csc x$ 的微分，哪些正確？\n    (A) $(\\sec x)' = \\sec x \\tan x$\n    (B) $(\\csc x)' = -\\csc x \\cot x$\n    (C) 它們都可以用商法則從 $\\cos x$ 和 $\\sin x$ 推導出來\n    (D) $(\\sec x)' = \\tan^2 x$",
+      "options": {
+        "A": "$(\\sec x)' = \\sec x \\tan x$",
+        "B": "$(\\csc x)' = -\\csc x \\cot x$",
+        "C": "它們都可以用商法則從 $\\cos x$ 和 $\\sin x$ 推導出來",
+        "D": "$(\\sec x)' = \\tan^2 x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "考慮函數 $h(x) = \\frac{\\sin x}{x}$：\n    (A) 其導數須使用商法則\n    (B) $h'(x) = \\frac{x \\cos x - \\sin x}{x^2}$\n    (C) $h(x)$ 在 $x=0$ 處有定義\n    (D) 當 $x \\to 0$ 時，極限為 1",
+      "options": {
+        "A": "其導數須使用商法則",
+        "B": "$h'(x) = \\frac{x \\cos x - \\sin x}{x^2}$",
+        "C": "$h(x)$ 在 $x=0$ 處有定義",
+        "D": "當 $x \\to 0$ 時，極限為 1"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "下列哪些函数的导数包含 $\\cos x$ 作为因子？\n    (A) $\\sin x$\n    (B) $\\sin^2 x$\n    (C) $\\sin(\\sin x)$\n    (D) $x \\sin x$",
+      "options": {
+        "A": "$\\sin x$",
+        "B": "$\\sin^2 x$",
+        "C": "$\\sin(\\sin x)$",
+        "D": "$x \\sin x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "若 $f(x) = \\sqrt{1+x^2}$，則：\n    (A) $f(x) = (1+x^2)^{1/2}$\n    (B) $f'(x) = \\frac{1}{2}(1+x^2)^{-1/2} \\cdot 2x$\n    (C) $f'(x) = \\frac{x}{\\sqrt{1+x^2}}$\n    (D) 需要用到連鎖律",
+      "options": {
+        "A": "$f(x) = (1+x^2)^{1/2}$",
+        "B": "$f'(x) = \\frac{1}{2}(1+x^2)^{-1/2} \\cdot 2x$",
+        "C": "$f'(x) = \\frac{x}{\\sqrt{1+x^2}}$",
+        "D": "需要用到連鎖律"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "對於商法則 $[\\frac{f}{g}]'$，分子部分是：\n    (A) $f'g - fg'$\n    (B) 與乘積法則的項相同，但符號為負\n    (C) $f'g' - fg$\n    (D) $f g' - f' g$",
+      "options": {
+        "A": "$f'g - fg'$",
+        "B": "與乘積法則的項相同，但符號為負",
+        "C": "$f'g' - fg$",
+        "D": "$f g' - f' g$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "哪些函數的二階導數是其本身的相反數（即 $f'' = -f$）？\n    (A) $\\sin x$\n    (B) $\\cos x$\n    (C) $e^x$\n    (D) $\\tan x$",
+      "options": {
+        "A": "$\\sin x$",
+        "B": "$\\cos x$",
+        "C": "$e^x$",
+        "D": "$\\tan x$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "計算 $\\frac{d}{dx}(\\sin(e^x))$ 時：\n    (A) 外函數是 $\\sin u$\n    (B) 內函數是 $e^x$\n    (C) 結果為 $\\cos(e^x) \\cdot e^x$\n    (D) 結果為 $e^{\\cos x}$",
+      "options": {
+        "A": "外函數是 $\\sin u$",
+        "B": "內函數是 $e^x$",
+        "C": "結果為 $\\cos(e^x) \\cdot e^x$",
+        "D": "結果為 $e^{\\cos x}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(\\cos x) = \\underline{-\\sin x}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "連鎖律中，若 $y = u^3$ 且 $u = x^2+1$，則 $\\frac{dy}{dx} = \\underline{3(x^2+1)^2 \\cdot 2x}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(e^{-x}) = \\underline{-e^{-x}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(x \\sin x) = \\underline{\\sin x + x\\cos x}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "函數 $y = \\tan(5x)$ 的導數為 $\\underline{5\\sec^2(5x)}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(\\sqrt{x^2+1}) = \\underline{\\frac{x}{\\sqrt{x^2+1}}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "$(\\cot x)' = \\underline{-\\csc^2 x}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "商法則的分母是 $\\underline{[g(x)]^2}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(\\cos^3 x) = \\underline{-3\\cos^2 x \\sin x}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "若 $f(x) = \\sin(\\cos x)$，則 $f'(x) = \\underline{-\\cos(\\cos x) \\sin x}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

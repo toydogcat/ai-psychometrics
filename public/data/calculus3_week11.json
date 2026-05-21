@@ -1,0 +1,354 @@
+{
+  "course": "calculus3",
+  "week": "week11",
+  "title": "第 11 週 - 三重積分 (Triple Integrals)",
+  "knowledge_points": {
+    "KP11.1": "理解三重積分的黎曼和定義與富比尼定理。",
+    "KP11.2": "學會如何決定一般區域的積分限，特別是「投影法」。",
+    "KP11.3": "使用三重積分求得立體幾何的體積。",
+    "KP11.4": "掌握三維物體的質量與質心公式。",
+    "KP11.5": "理解對不同坐標軸的慣性矩定義。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "計算三重積分時，若 $f(x,y,z)=1$，其物理意義為？\n   (A) 質量 (B) 密度 (C) 體積 (D) 表面積",
+      "options": {
+        "A": "質量 (B) 密度 (C) 體積 (D) 表面積"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "關於富比尼定理，下列何者正確？\n   (A) 積分順序不影響結果 (B) 只能用於矩形區域 (C) 必須先對 $x$ 積分 (D) 被積函數必須是常數",
+      "options": {
+        "A": "積分順序不影響結果 (B) 只能用於矩形區域 (C) 必須先對 $x$ 積分 (D) 被積函數必須是常數"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "四面體區域 $x,y,z \\ge 0, x+y+z \\le 1$ 的體積為？\n   (A) $1/2$ (B) $1/3$ (C) $1/6$ (D) $1/24$",
+      "options": {
+        "A": "$1/2$ (B) $1/3$ (C) $1/6$ (D) $1/24$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "質心座標 $\\bar{x}$ 的公式中，分子是？\n   (A) $M_{xy}$ (B) $M_{xz}$ (C) $M_{yz}$ (D) $m$",
+      "options": {
+        "A": "$M_{xy}$ (B) $M_{xz}$ (C) $M_{yz}$ (D) $m$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "慣性矩 $I_z$ 衡量物體繞著哪個軸轉動的難易度？\n   (A) $x$ 軸 (B) $y$ 軸 (C) $z$ 軸 (D) 原點",
+      "options": {
+        "A": "$x$ 軸 (B) $y$ 軸 (C) $z$ 軸 (D) 原點"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "若密度 $\\rho(x,y,z)$ 增加一倍，則質心位置如何變化？\n   (A) 跟著加倍 (B) 減半 (C) 不變 (D) 移向原點",
+      "options": {
+        "A": "跟著加倍 (B) 減半 (C) 不變 (D) 移向原點"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "計算 $\\iiint_B x \\, dV$，其中 $B$ 為中心在原點的球體，結果為？\n   (A) 球體體積 (B) $0$ (C) $4\\pi/3$ (D) $1$",
+      "options": {
+        "A": "球體體積 (B) $0$ (C) $4\\pi/3$ (D) $1$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "在三重積分中，$dV$ 通常寫作？\n   (A) $dx dy$ (B) $dx dy dz$ (C) $r dr d\\theta$ (D) $dA dz$",
+      "options": {
+        "A": "$dx dy$ (B) $dx dy dz$ (C) $r dr d\\theta$ (D) $dA dz$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "下列何者是第 I 型空間區域的特徵？\n   (A) 夾在兩個平面之間 (B) 夾在兩個函數表面 $z=u(x,y)$ 之間 (C) $x,y,z$ 範圍皆為常數 (D) 是一個圓柱",
+      "options": {
+        "A": "夾在兩個平面之間 (B) 夾在兩個函數表面 $z=u(x,y)$ 之間 (C) $x,y,z$ 範圍皆為常數 (D) 是一個圓柱"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "立方體 $[0, a]^3$ 對 $z$ 軸的慣性矩 $I_z$（$\\rho=1$）為？\n    (A) $a^5/3$ (B) $2a^5/3$ (C) $a^4$ (D) $a^5$",
+      "options": {
+        "A": "$a^5/3$ (B) $2a^5/3$ (C) $a^4$ (D) $a^5$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "三重積分可以用來計算哪些物理量？\n    (A) 質量 (B) 質心 (C) 電荷總量 (D) 平均溫度",
+      "options": {
+        "A": "質量 (B) 質心 (C) 電荷總量 (D) 平均溫度"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "改變積分順序（如從 $dz dy dx$ 改為 $dx dy dz$）時：\n    (A) 結果絕對不變 (B) 積分限通常需要重新計算 (C) 有助於簡化計算 (D) 只限於常數限",
+      "options": {
+        "A": "結果絕對不變 (B) 積分限通常需要重新計算 (C) 有助於簡化計算 (D) 只限於常數限"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "關於質心 $(\\bar{x}, \\bar{y}, \\bar{z})$，哪些敘述正確？\n    (A) 它是物體的幾何中心 (B) 若物體均勻，則僅與形狀有關 (C) 質心一定在物體內部 (D) 對稱軸上必有質心",
+      "options": {
+        "A": "它是物體的幾何中心 (B) 若物體均勻，則僅與形狀有關 (C) 質心一定在物體內部 (D) 對稱軸上必有質心"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "對於由 $z=x^2+y^2$ 與 $z=4$ 圍成的區域，積分順序首選可能是：\n    (A) 先對 $z$ 積分 (B) 先對 $x,y$ 積分 (C) 轉為極座標處理 $xy$ 部分 (D) 使用分部積分",
+      "options": {
+        "A": "先對 $z$ 積分 (B) 先對 $x,y$ 積分 (C) 轉為極座標處理 $xy$ 部分 (D) 使用分部積分"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "下列哪些函數的三重積分在對稱球體上必為 0？\n    (A) $f(x,y,z) = x$ (B) $f(x,y,z) = x^2$ (C) $f(x,y,z) = xyz$ (D) $f(x,y,z) = \\sin z$",
+      "options": {
+        "A": "$f(x,y,z) = x$ (B) $f(x,y,z) = x^2$ (C) $f(x,y,z) = xyz$ (D) $f(x,y,z) = \\sin z$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "關於 $I_x = \\iiint (y^2+z^2)\\rho \\, dV$，這代表：\n    (A) 對 $yz$ 平面的矩 (B) 到 $x$ 軸距離平方的加權和 (C) 對 $x$ 軸的慣性矩 (D) 體積",
+      "options": {
+        "A": "對 $yz$ 平面的矩 (B) 到 $x$ 軸距離平方的加權和 (C) 對 $x$ 軸的慣性矩 (D) 體積"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "設 $E$ 為單位立方體，則：\n    (A) $\\iiint_E x \\, dV = 1/2$ (B) $\\iiint_E (x+y+z) \\, dV = 3/2$ (C) 體積為 1 (D) 質心在 $(1,1,1)$",
+      "options": {
+        "A": "$\\iiint_E x \\, dV = 1/2$ (B) $\\iiint_E (x+y+z) \\, dV = 3/2$ (C) 體積為 1 (D) 質心在 $(1,1,1)$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "若一物體對某平面對稱且密度分佈亦對稱，則：\n    (A) 質心必在該平面上 (B) 該平面的矩為 0 (C) 質量為 0 (D) 體積為 0",
+      "options": {
+        "A": "質心必在該平面上 (B) 該平面的矩為 0 (C) 質量為 0 (D) 體積為 0"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "在計算三重積分時，何時需要考慮雅可比行列式？\n    (A) 直角座標換柱座標 (B) 直角座標換球座標 (C) 任何座標變換 (D) 只有二重積分才需要",
+      "options": {
+        "A": "直角座標換柱座標 (B) 直角座標換球座標 (C) 任何座標變換 (D) 只有二重積分才需要"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "下列哪些是常見的三維積分區域類型？\n    (A) 四面體 (B) 球體 (C) 圓柱 (D) 拋物面截體",
+      "options": {
+        "A": "四面體 (B) 球體 (C) 圓柱 (D) 拋物面截體"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "若 $E = [0, 1] \\times [0, 2] \\times [0, 3]$，則 $\\iiint_E 1 \\, dV = \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "對稱性原理：若 $f(x,y,z)$ 是關於 $x$ 的奇函數，且區域 $E$ 對 $yz$ 平面對稱，則積分值為 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "密度均勻的物體，其質量 $m = \\rho \\times \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "$M_{xy} = \\iiint_E \\underline{\\quad\\quad} \\rho \\, dV$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "單位球 $x^2+y^2+z^2 \\le 1$ 的體積為 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "三重積分中，若先對 $z$ 積分，則 $z$ 的限通常是 $\\underline{\\quad\\quad}$ 的函數。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "慣性矩 $I_y = \\iiint ( \\underline{\\quad\\quad} ) \\rho \\, dV$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "一個區域的平均密度公式為 $\\bar{\\rho} = \\frac{m}{\\underline{\\quad\\quad}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "四面體 $x+y+z \\le 1 (x,y,z \\ge 0)$ 的質心 $\\bar{z} = \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "富比尼定理適用於 $f$ 在區域上是 $\\underline{\\quad\\quad}$ 函數的情況。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

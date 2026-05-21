@@ -1,0 +1,314 @@
+{
+  "course": "calculus3",
+  "week": "week1",
+  "title": "第 1 週 - 空間幾何與向量基礎 (Vectors and the Geometry of Space)",
+  "knowledge_points": {
+    "KP1.1": "3D 坐標系、距離公式與球體方程式。",
+    "KP1.2": "向量代數運算、長度計算與單位向量。",
+    "KP1.3": "內積的代數與幾何定義（夾角計算與正交判定）。",
+    "KP1.4": "外積的計算（行列式法）與其幾何意義（面積與垂直性）。",
+    "KP1.5": "純量三重積與平行六面體體積。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "點 $(1, -2, 5)$ 到 $xy$ 平面的距離是多少？\n   - (A) 1 (B) 2 (C) 5 (D) $\\sqrt{30}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "若 $\\mathbf{a} \\cdot \\mathbf{b} = 0$，則兩向量的關係為？\n   - (A) 平行 (B) 垂直 (C) 相等 (D) 反向",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "下列哪項運算的結果是「純量 (Scalar)」？\n   - (A) $\\mathbf{a} + \\mathbf{b}$ (B) $\\mathbf{a} \\times \\mathbf{b}$ (C) $\\mathbf{a} \\cdot \\mathbf{b}$ (D) $k \\mathbf{a}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "外積 $\\mathbf{i} \\times \\mathbf{j}$ 等於？\n   - (A) $\\mathbf{k}$ (B) $-\\mathbf{k}$ (C) $0$ (D) $1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "以 $(0, 0, 0)$ 為球心，半徑為 2 的球體方程式？\n   - (A) $x+y+z=4$ (B) $x^2+y^2+z^2=2$ (C) $x^2+y^2+z^2=4$ (D) $x^2+y^2+z^2=8$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "若 $|\\mathbf{a}| = 2, |\\mathbf{b}| = 3$，夾角為 $60^\\circ$，則 $\\mathbf{a} \\cdot \\mathbf{b} =$？\n   - (A) 3 (B) $3\\sqrt{3}$ (C) 6 (D) 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "向量 $\\mathbf{a} = \\langle 1, 2, 2 \\rangle$ 的長度為？\n   - (A) 3 (B) 5 (C) 9 (D) $\\sqrt{5}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "下列何者可以判定三向量 $\\mathbf{a, b, c}$ 共面？\n   - (A) $\\mathbf{a} \\cdot \\mathbf{b} = 0$ (B) $\\mathbf{a} \\times \\mathbf{b} = \\mathbf{c}$ (C) $\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c}) = 0$ (D) $\\mathbf{a} + \\mathbf{b} = \\mathbf{c}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "$\\mathbf{a} \\times \\mathbf{a}$ 的結果為？\n   - (A) $|\\mathbf{a}|^2$ (B) $\\mathbf{0}$ (C) $1$ (D) $\\mathbf{a}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "向量 $\\langle 2, -1, 3 \\rangle$ 的反方向向量為？\n    - (A) $\\langle -2, 1, -3 \\rangle$ (B) $\\langle 2, 1, 3 \\rangle$ (C) $\\langle 1/2, -1, 1/3 \\rangle$ (D) $\\langle 3, -1, 2 \\rangle$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "關於向量運算性質，哪些正確？\n    - (A) $\\mathbf{a} \\cdot \\mathbf{b} = \\mathbf{b} \\cdot \\mathbf{a}$ (B) $\\mathbf{a} \\times \\mathbf{b} = \\mathbf{b} \\times \\mathbf{a}$ (C) $\\mathbf{a} \\times \\mathbf{b} = -(\\mathbf{b} \\times \\mathbf{a})$ (D) $\\mathbf{a} \\cdot (\\mathbf{b} + \\mathbf{c}) = \\mathbf{a} \\cdot \\mathbf{b} + \\mathbf{a} \\cdot \\mathbf{c}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "下列哪些點位於球體 $x^2 + y^2 + z^2 \\le 9$ 內部或表面？\n    - (A) $(1, 1, 1)$ (B) $(3, 0, 0)$ (C) $(2, 2, 2)$ (D) $(0, 4, 0)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "關於外積 $\\mathbf{c} = \\mathbf{a} \\times \\mathbf{b}$，哪些描述正確？\n    - (A) $\\mathbf{c} \\perp \\mathbf{a}$ (B) $\\mathbf{c} \\perp \\mathbf{b}$ (C) $|\\mathbf{c}|$ 是面積 (D) $\\mathbf{c}$ 是標量",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "若 $\\mathbf{a}$ 為單位向量，則：\n    - (A) $|\\mathbf{a}| = 1$ (B) $\\mathbf{a} \\cdot \\mathbf{a} = 1$ (C) $\\mathbf{a} \\times \\mathbf{a} = \\mathbf{0}$ (D) $\\mathbf{a}$ 的方向任意",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "三維空間中，方程式 $z = 3$ 可能表示：\n    - (A) 一個點 (B) 一條直線 (C) 一個平面 (D) 所有 $z$ 坐標為 3 的點的集合",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "向量 $\\mathbf{a} = \\langle 2, 4 \\rangle$ 與 $\\mathbf{b} = \\langle -2, 1 \\rangle$ 是：\n    - (A) 垂直的 (B) 內積為 0 (C) 平行的 (D) 反向的",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "哪些運算可以用來求兩向量間的夾角？\n    - (A) 內積 (B) 外積 (C) 向量加法 (D) 純量倍數",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "關於右手定則，下列哪些組成的序對滿足右手系？\n    - (A) $(\\mathbf{i, j, k})$ (B) $(\\mathbf{j, k, i})$ (C) $(\\mathbf{k, i, j})$ (D) $(\\mathbf{j, i, k})$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "若 $\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c}) = 12$，則由這三向量構成的平行六面體體積可能為？\n    - (A) 12 (B) -12 (C) 24 (D) 以上皆非",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "空間中兩點 $P(1, 0, 0)$ 與 $Q(0, 1, 0)$，其：\n    - (A) 距離為 $\\sqrt{2}$ (B) 中點為 $(0.5, 0.5, 0)$ (C) 向量 $\\vec{PQ} = \\langle -1, 1, 0 \\rangle$ (D) 向量 $\\vec{QP} = \\langle 1, -1, 0 \\rangle$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "點 $(2, 3, 4)$ 到 $z$ 軸的距離為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "向量 $\\mathbf{a} = \\langle 2, -1, 2 \\rangle$ 的單位向量為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "若 $\\mathbf{a} = \\langle 1, 0, 1 \\rangle, \\mathbf{b} = \\langle 0, 1, 1 \\rangle$，則 $\\mathbf{a} \\cdot \\mathbf{b} =$ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "$|\\mathbf{i} - 2\\mathbf{j} + 2\\mathbf{k}| =$ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "若 $\\mathbf{a} \\times \\mathbf{b} = \\langle 3, 4, 12 \\rangle$，則由 $\\mathbf{a, b}$ 構成的平行四邊形面積為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "兩向量 $\\mathbf{a} = \\langle 1, 1, 0 \\rangle$ 與 $\\mathbf{b} = \\langle 0, 1, 1 \\rangle$ 的夾角為 __________ 度。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "方程式 $x^2 + y^2 + z^2 - 2x + 4y = 0$ 代表的球心坐標為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "向量 $\\langle 1, 2, 3 \\rangle$ 與 $\\langle 2, 4, 6 \\rangle$ 的關係為 __________ (填平行或垂直)。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "$(\\mathbf{i} \\times \\mathbf{j}) \\cdot \\mathbf{k} =$ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "空間中點 $(x, y, z)$ 到原點的距離公式為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

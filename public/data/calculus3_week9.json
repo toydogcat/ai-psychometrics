@@ -1,0 +1,408 @@
+{
+  "course": "calculus3",
+  "week": "week9",
+  "title": "第 9 週 - 期中考試 (Midterm Exam)",
+  "knowledge_points": {},
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "參數曲線 $x = \\cos t, y = \\sin t$ 的形狀是？\n   - (A) 拋物線 (B) 橢圓 (C) 圓 (D) 雙曲線",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "極座標點 $(r, \\theta) = (2, \\pi)$ 在直角座標中是？\n   - (A) $(2, 0)$ (B) $(-2, 0)$ (C) $(0, 2)$ (D) $(0, -2)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "若向量函數 $\\mathbf{r}(t) = \\langle t, t^2, t^3 \\rangle$，則 $\\mathbf{r}'(1) = $？\n   - (A) $\\langle 1, 1, 1 \\rangle$ (B) $\\langle 1, 2, 3 \\rangle$ (C) $\\langle 0, 1, 2 \\rangle$ (D) $\\langle 1, 2, 0 \\rangle$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "質點速率 $v(t)$ 等於位置向量導數的？\n   - (A) 長度 (B) 方向 (C) 點積 (D) 分量之和",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "曲率 $\\kappa$ 衡量曲線的？\n   - (A) 速度 (B) 彎曲程度 (C) 長度 (D) 扭轉程度",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "加速度向量 $\\mathbf{a}$ 恆指向運動軌跡的哪一側？\n   - (A) 凸側 (B) 凹側 (C) 切線方向 (D) 副法線方向",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "函數 $f(x, y) = xy$ 的梯度向量在 $(1, 2)$ 為？\n   - (A) $\\langle 1, 2 \\rangle$ (B) $\\langle 2, 1 \\rangle$ (C) $\\langle 1, 1 \\rangle$ (D) $\\langle 2, 2 \\rangle$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "梯度向量 $\\nabla f(P)$ 的方向是函數在 $P$ 點？\n   - (A) 增加最快 (B) 減少最快 (C) 不變 (D) 垂直於 $z$ 軸",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "二階測試中若 $D < 0$，該點是？\n   - (A) 極大 (B) 極小 (C) 鞍點 (D) 連續點",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "拉格朗日乘數法的核心方程是？\n    - (A) $\\nabla f \\cdot \\nabla g = 0$ (B) $\\nabla f = \\lambda \\nabla g$ (C) $f = g$ (D) $\\nabla f + \\nabla g = 0$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "single",
+      "title": "$\\iint_R dA$ 等於區域 $R$ 的？\n    - (A) 體積 (B) 面積 (C) 質心 (D) 密度",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "single",
+      "title": "極座標積分中，$x^2+y^2$ 代換為？\n    - (A) $r$ (B) $r^2$ (C) $\\theta$ (D) $2r$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "single",
+      "title": "變更積分順序 $\\int_0^1 \\int_0^x dy dx$ 的結果是？\n    - (A) $1/2$ (B) $1$ (C) $1/3$ (D) $2$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "single",
+      "title": "單位法向量 $\\mathbf{N}$ 與單位切向量 $\\mathbf{T}$ 的夾角是？\n    - (A) $0^\\circ$ (B) $45^\\circ$ (C) $90^\\circ$ (D) $180^\\circ$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "single",
+      "title": "富比尼定理適用於 $f$ 在矩形上？\n    - (A) 恆正 (B) 連續 (C) 為多項式 (D) 為常數",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "關於極座標與直角座標的轉換，正確的有？\n    - (A) $x^2+y^2=r^2$ (B) $x=r\\cos\\theta$ (C) $y=r\\sin\\theta$ (D) $\\tan\\theta = y/x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "向量函數 $\\mathbf{r}(t)$ 的微積分性質包括：\n    - (A) $[\\mathbf{u} \\cdot \\mathbf{v}]' = \\mathbf{u}' \\cdot \\mathbf{v} + \\mathbf{u} \\cdot \\mathbf{v}'$\n    - (B) $[\\mathbf{u} \\times \\mathbf{v}]' = \\mathbf{u}' \\times \\mathbf{v} + \\mathbf{u} \\times \\mathbf{v}'$\n    - (C) $[\\mathbf{r}(f(t))]' = \\mathbf{r}'(f(t))f'(t)$\n    - (D) 導數方向必垂直於原向量",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "關於 TNB 標架，哪些敘述是正確的？\n    - (A) 三者皆為單位向量 (B) 兩兩相互垂直 (C) $\\mathbf{B} = \\mathbf{T} \\times \\mathbf{N}$ (D) 是右手的直角基底",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "加速度分解 $\\mathbf{a} = a_T \\mathbf{T} + a_N \\mathbf{N}$ 中：\n    - (A) $a_T = v'$ (B) $a_N = \\kappa v^2$ (C) $a_N$ 永遠大於等於 0 (D) $a_T$ 可能為負",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "梯度 $\\nabla f(x, y)$ 的性質有：\n    - (A) 垂直於等值線 (B) 模長代表最大變化率 (C) 指向坡度最陡的方向 (D) 在極值點必為 $\\mathbf{0}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "multiple",
+      "title": "哪些函數在 $(0, 0)$ 有臨界點？\n    - (A) $f = x^2+y^2$ (B) $f = x^2-y^2$ (C) $f = xy$ (D) $f = x+y$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "multiple",
+      "title": "拉格朗日法中，$\\lambda$ 的意義可能包括：\n    - (A) 影子價格 (B) 效用的邊際變動 (C) 約束力的強度 (D) 函數的平均值",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "multiple",
+      "title": "雙重積分的性質包括：\n    - (A) 線性 (B) 區域可加性 (C) 單調性 (D) 積分順序在矩形上可交換",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "multiple",
+      "title": "適合使用極座標積分的區域有：\n    - (A) 心形線 $r = 1+\\cos\\theta$ 內部 (B) 單位圓內部 (C) 長方形 (D) 兩圓圍成的圓環",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "multiple",
+      "title": "關於絕對極值，敘述正確的有：\n    - (A) 在閉區域上必存在 (B) 可能在邊界取得 (C) 可能在內部臨界點取得 (D) 必在頂點取得",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "multiple",
+      "title": "空間中的平面方程式可以用哪些量決定？\n    - (A) 平面上的一點 (B) 平面的法向量 (C) 平面上的兩條不平行向量 (D) 平面上的三個點",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "multiple",
+      "title": "哪些因素會改變曲線的曲率 $\\kappa$？\n    - (A) 曲線的形狀 (B) 參數化的速度 (C) 座標系的旋轉 (D) 曲線的縮放",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "multiple",
+      "title": "關於連鎖律，下列哪些正確？\n    - (A) $\\frac{dz}{dt} = \\frac{\\partial z}{\\partial x} \\frac{dx}{dt} + \\frac{\\partial z}{\\partial y} \\frac{dy}{dt}$\n    - (B) 梯度與曲線切向量的點積為方向導數\n    - (C) 多元函數複合後仍可微\n    - (D) 不適用於隱函數",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "multiple",
+      "title": "雙重積分 $\\iint_D f dA$ 當 $f$ 為負時：\n    - (A) 代表體積的負值 (B) 代表面積 (C) 可能與正部分抵消 (D) 積分結果為負",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "multiple",
+      "title": "學習微積分（下）的主要目標包括：\n    - (A) 理解多維空間的變化 (B) 掌握最佳化工具 (C) 學會計算複雜形狀的體積 (D) 訓練邏輯推導能力",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q31",
+      "type": "fill",
+      "title": "極座標下，點 $(r, \\theta)$ 與 $(-r, \\theta + \\pi)$ 代表 __________ 的位置。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q32",
+      "type": "fill",
+      "title": "向量函數 $\\mathbf{r}(t)$ 的弧長參數常用符號 __________ 表示。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q33",
+      "type": "fill",
+      "title": "若 $|\\mathbf{r}(t)|$ 為常數，則 $\\mathbf{r}(t)$ 與 $\\mathbf{r}'(t)$ 必 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q34",
+      "type": "fill",
+      "title": "$f(x, y)$ 在點 $P$ 沿向量 $\\mathbf{v}$ 的方向導數公式為 $D_{\\mathbf{u}}f = \\nabla f \\cdot $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q35",
+      "type": "fill",
+      "title": "鞍點的 Hessian 行列式 $D$ 的正負號為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q36",
+      "type": "fill",
+      "title": "極座標積分中的面積元素 $dA = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q37",
+      "type": "fill",
+      "title": "$x^2 + y^2 = 9$ 在極座標下的方程式為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q38",
+      "type": "fill",
+      "title": "兩個約束條件下的拉格朗日法方程式為 $\\nabla f = \\lambda \\nabla g + $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q39",
+      "type": "fill",
+      "title": "計算 $\\int_0^1 \\int_0^2 dy dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q40",
+      "type": "fill",
+      "title": "拋體運動在忽略阻力時，軌跡是一個 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

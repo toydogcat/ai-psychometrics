@@ -1,0 +1,314 @@
+{
+  "course": "calculus3",
+  "week": "week17",
+  "title": "第 17 週 - Stokes 定理與 Divergence 定理 (Stokes' & Divergence Theorems)",
+  "knowledge_points": {
+    "KP17.1": "理解 Stokes 定理的陳述與方向規定。",
+    "KP17.2": "掌握利用 Stokes 定理將線積分轉為面積分（或反之）。",
+    "KP17.3": "理解散度定理的陳述與物理背景。",
+    "KP17.4": "學會利用散度定理簡化閉曲面的通量計算。",
+    "KP17.5": "建立所有積分定理的統一框架（廣義 Stokes 定理）。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "Stokes 定理聯繫了線積分與？ (A) 面積分 (B) 體積分 (C) 二重積分 (D) 梯度積分",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "散度定理中的曲面 $S$ 必須是？ (A) 開曲面 (B) 閉曲面 (C) 平面 (D) 無限曲面",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "在 Stokes 定理中，若曲面 $S$ 在 $xy$ 平面，則線積分等於 $\\iint_S (\\text{curl } \\mathbf{F}) \\cdot \\underline{\\quad\\quad} dA$？ (A) $\\mathbf{i}$ (B) $\\mathbf{j}$ (C) $\\mathbf{k}$ (D) $\\mathbf{n}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "散度定理將面積分轉換為？ (A) 線積分 (B) 體積分 (C) 旋度積分 (D) 面積分",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "若 $\\text{div } \\mathbf{F} = 0$，則穿過任何閉曲面的淨通量為？ (A) 1 (B) $4\\pi$ (C) 0 (D) $\\mathbf{F}$ 的大小",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "Stokes 定理中，邊界曲線 $C$ 的方向與曲面法向量 $\\mathbf{n}$ 遵循？ (A) 左手定則 (B) 右手定則 (C) 順時針定則 (D) 無特定定則",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "計算 $\\mathbf{F} = \\langle x, 0, 0 \\rangle$ 穿過單位球面的通量，利用散度定理被積函數為？ (A) $x$ (B) $1$ (C) $3$ (D) $x+y+z$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "若 $\\mathbf{F} = \\text{curl } \\mathbf{A}$，則穿過閉曲面 $S$ 的通量 $\\iint_S \\mathbf{F} \\cdot d\\mathbf{S}$ 必為？ (A) $0$ (B) $\\oint \\mathbf{A} \\cdot d\\mathbf{r}$ (C) 區域體積 (D) 1",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "下列哪位數學家與散度定理齊名？ (A) Newton (B) Gauss (C) Leibniz (D) Cauchy",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "Stokes 定理是哪個定理在 3D 的推廣？ (A) FTC (B) Green 定理 (C) 均值定理 (D) 泰勒定理",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "下列哪些關於 Stokes 定理的敘述是正確的？ (A) $S$ 可以是任何以 $C$ 為邊界的曲面 (B) $\\text{curl } \\mathbf{F}$ 是核心被積函數 (C) 適用於非閉合曲線 (D) 需要曲面是定向的",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "散度定理可以用於： (A) 求閉曲面的通量 (B) 求區域體積（若 $\\text{div } \\mathbf{F}=1$） (C) 簡化複雜的面積分 (D) 求線積分",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "若 $\\text{div } \\mathbf{F} = 3$，區域 $V$ 的體積為 10，則穿過 $V$ 表面的淨通量為？ (A) 30 (B) $\\iiint 3 dV$ (C) 10 (D) 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "關於廣義 Stokes 定理，哪些正確？ (A) $\\int_{\\partial \\Omega} \\omega = \\int_{\\Omega} d\\omega$ (B) 它是所有積分定理的統一形式 (C) $\\partial \\Omega$ 代表邊界 (D) 僅適用於 2D",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "哪些情況下 $\\oint_C \\mathbf{F} \\cdot d\\mathbf{r} = 0$？ (A) $\\mathbf{F}$ 為保守場 (B) $\\text{curl } \\mathbf{F} = \\mathbf{0}$ (C) $C$ 在一個 $\\text{curl } \\mathbf{F} \\perp \\mathbf{n}$ 的面上 (D) $C$ 是點",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "散度定理的前提包括： (A) $S$ 是分段光滑閉曲面 (B) $\\mathbf{F}$ 具連續偏導數 (C) 法向量向外 (D) 區域必須是球體",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "Stokes 定理與 Green 定理的關係： (A) Green 是 Stokes 的平面特例 (B) 兩者都涉及邊界積分 (C) 都涉及旋度 (D) 兩者完全無關",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "若穿過閉曲面的通量為 0，則： (A) $\\mathbf{F}$ 可能是無散場 (B) 內部源與匯抵消 (C) $\\mathbf{F} = \\mathbf{0}$ (D) 區域內無電荷（若為電場）",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "向量積分定理中涉及的算子包括： (A) $\\nabla$ (B) $\\nabla \\cdot$ (C) $\\nabla \\times$ (D) $\\nabla^2$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "哪些是計算通量的有效途徑？ (A) 直接定義式 $\\iint \\mathbf{F} \\cdot \\mathbf{n} dS$ (B) 散度定理 $\\iiint \\text{div } \\mathbf{F} dV$ (C) Stokes 定理（若 $\\mathbf{F}$ 是旋度場） (D) 線積分基本定理",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "Stokes 定理：$\\oint_C \\mathbf{F} \\cdot d\\mathbf{r} = \\iint_S (\\underline{\\quad\\quad}) \\cdot d\\mathbf{S}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "散度定理：$\\iint_S \\mathbf{F} \\cdot d\\mathbf{S} = \\iiint_E (\\underline{\\quad\\quad}) dV$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "若 $\\text{div } \\mathbf{F} = 1$，則 $\\iint_S \\mathbf{F} \\cdot d\\mathbf{S}$ 等於區域 $E$ 的 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "Stokes 定理中，若 $S$ 為平面，$d\\mathbf{S} = \\mathbf{n} dA$，$\\mathbf{n}$ 是平面的 $\\underline{\\quad\\quad}$ 向量。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "在散度定理中，若 $\\mathbf{F} = \\langle x, y, z \\rangle$，則 $\\text{div } \\mathbf{F} = \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "$\\iint_S (\\nabla \\times \\mathbf{F}) \\cdot d\\mathbf{S}$ 對於任何以 $C$ 為邊界的曲面 $S$ 都 $\\underline{\\quad\\quad}$ (填相同或不同)。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "散度定理又稱為 $\\underline{\\quad\\quad}$ 定理。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "單位球的體積為 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "若 $\\mathbf{F} = \\langle -y, x \\rangle$，則 $\\iint_D (Q_x - P_y) dA$ 為面積的 $\\underline{\\quad\\quad}$ 倍。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "積分定理建立了一定維度積分與其 $\\underline{\\quad\\quad}$ 積分的聯繫。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

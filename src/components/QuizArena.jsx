@@ -246,6 +246,7 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
         masteredQuestions: nextMastered,
         attemptsCount: attemptsCount + 1,
         totalQuestionsInPool: quizData.questions.length,
+        activeQuestions: activeQuestions,
         created_at: new Date().toISOString()
       };
 

@@ -4,14 +4,25 @@
     "title": "Python 基礎與進階編程",
     "description": "融合現代化工具鏈 (uv) 與 Python 核心生態，適合從零開始的學習者，並包含 18 週完整的自我診斷測驗與心理計量診斷。",
     "category": "Python開發",
-    "tags": ["推薦", "零基礎", "現代工具鏈"],
+    "tags": [
+      "推薦",
+      "零基礎",
+      "現代工具鏈"
+    ],
     "totalWeeks": 18,
     "totalQuestions": 540,
     "syllabus": [
       {
         "week": 1,
         "title": "Python 環境生態與現代化工具鏈",
-        "topics": ["直譯器原理", "Colab雲端開發", "Anaconda生態", "uv極速管理", "f-string互動", "PEP 8縮進"],
+        "topics": [
+          "直譯器原理",
+          "Colab雲端開發",
+          "Anaconda生態",
+          "uv極速管理",
+          "f-string互動",
+          "PEP 8縮進"
+        ],
         "mdPath": "week1.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -19,7 +30,14 @@
       {
         "week": 2,
         "title": "變數、資料型態與基礎運算",
-        "topics": ["變數記憶體模型", "數值型態int/float", "字串切片操作", "布林邏輯Truthy", "型別轉換", "內建函數len/round"],
+        "topics": [
+          "變數記憶體模型",
+          "數值型態int/float",
+          "字串切片操作",
+          "布林邏輯Truthy",
+          "型別轉換",
+          "內建函數len/round"
+        ],
         "mdPath": "week2.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -27,7 +45,14 @@
       {
         "week": 3,
         "title": "流程控制：條件判斷與邏輯分支",
-        "topics": ["if/elif/else結構", "比較與邏輯運算", "短路求值", "三元運算子", "match-case語法", "Guard Clauses最佳實踐"],
+        "topics": [
+          "if/elif/else結構",
+          "比較與邏輯運算",
+          "短路求值",
+          "三元運算子",
+          "match-case語法",
+          "Guard Clauses最佳實踐"
+        ],
         "mdPath": "week3.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -35,7 +60,14 @@
       {
         "week": 4,
         "title": "迴圈控制與自動化任務",
-        "topics": ["for迴圈與range", "while迴圈", "break/continue/pass", "enumerate/zip", "串列生成式", "巢狀迴圈"],
+        "topics": [
+          "for迴圈與range",
+          "while迴圈",
+          "break/continue/pass",
+          "enumerate/zip",
+          "串列生成式",
+          "巢狀迴圈"
+        ],
         "mdPath": "week4.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -43,7 +75,14 @@
       {
         "week": 5,
         "title": "串列與元組 (List & Tuple)",
-        "topics": ["串列增刪改查", "切片操作", "串列排序sort", "元組不可變性", "元組解包", "常用內建函數"],
+        "topics": [
+          "串列增刪改查",
+          "切片操作",
+          "串列排序sort",
+          "元組不可變性",
+          "元組解包",
+          "常用內建函數"
+        ],
         "mdPath": "week5.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -51,7 +90,14 @@
       {
         "week": 6,
         "title": "字典與集合 (Dictionaries & Sets)",
-        "topics": ["字典建立與操作", "get/update方法", "字典生成式", "集合Set運算", "聯集交集差集", "frozenset"],
+        "topics": [
+          "字典建立與操作",
+          "get/update方法",
+          "字典生成式",
+          "集合Set運算",
+          "聯集交集差集",
+          "frozenset"
+        ],
         "mdPath": "week6.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -59,7 +105,14 @@
       {
         "week": 7,
         "title": "函數與模組 (Functions & Modules)",
-        "topics": ["函數定義與呼叫", "預設與關鍵字參數", "*args/**kwargs", "模組import機制", "標準庫常用模組", "命名空間作用域"],
+        "topics": [
+          "函數定義與呼叫",
+          "預設與關鍵字參數",
+          "*args/**kwargs",
+          "模組import機制",
+          "標準庫常用模組",
+          "命名空間作用域"
+        ],
         "mdPath": "week7.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -67,7 +120,14 @@
       {
         "week": 8,
         "title": "函式設計範式 (Functional Programming)",
-        "topics": ["lambda匿名函數", "map/filter/reduce", "閉包Closure", "高階函數概念", "函數式編程優點", "純函數設計"],
+        "topics": [
+          "lambda匿名函數",
+          "map/filter/reduce",
+          "閉包Closure",
+          "高階函數概念",
+          "函數式編程優點",
+          "純函數設計"
+        ],
         "mdPath": "week8.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -75,7 +135,12 @@
       {
         "week": 9,
         "title": "期中綜合複習與核心知識精華",
-        "topics": ["Week1-8知識點彙整", "常見錯誤解析", "綜合實作挑戰", "面試題型演練"],
+        "topics": [
+          "Week1-8知識點彙整",
+          "常見錯誤解析",
+          "綜合實作挑戰",
+          "面試題型演練"
+        ],
         "mdPath": "week9.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 60
@@ -83,7 +148,14 @@
       {
         "week": 10,
         "title": "物件導向程式設計 I：基礎與封裝",
-        "topics": ["類別Class定義", "建構子__init__", "實例與類別屬性", "封裝原則", "存取控制_/__", "property裝飾器"],
+        "topics": [
+          "類別Class定義",
+          "建構子__init__",
+          "實例與類別屬性",
+          "封裝原則",
+          "存取控制_/__",
+          "property裝飾器"
+        ],
         "mdPath": "week10.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -91,7 +163,14 @@
       {
         "week": 11,
         "title": "物件導向 II：繼承、多型與方法",
-        "topics": ["繼承extends", "方法覆寫override", "super()使用", "多型Polymorphism", "鴨子型別", "抽象類別ABC"],
+        "topics": [
+          "繼承extends",
+          "方法覆寫override",
+          "super()使用",
+          "多型Polymorphism",
+          "鴨子型別",
+          "抽象類別ABC"
+        ],
         "mdPath": "week11.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -99,7 +178,14 @@
       {
         "week": 12,
         "title": "進階函式與裝飾器 (Decorators)",
-        "topics": ["裝飾器Decorator概念", "functools.wraps", "帶參數裝飾器", "類別裝飾器", "多層裝飾器疊加", "實戰：計時/日誌裝飾器"],
+        "topics": [
+          "裝飾器Decorator概念",
+          "functools.wraps",
+          "帶參數裝飾器",
+          "類別裝飾器",
+          "多層裝飾器疊加",
+          "實戰：計時/日誌裝飾器"
+        ],
         "mdPath": "week12.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -107,7 +193,14 @@
       {
         "week": 13,
         "title": "疊代器與產生器 (Iterators & Generators)",
-        "topics": ["可迭代物件Iterable", "__iter__/__next__", "yield產生器函數", "生成器表達式", "惰性求值優點", "itertools模組"],
+        "topics": [
+          "可迭代物件Iterable",
+          "__iter__/__next__",
+          "yield產生器函數",
+          "生成器表達式",
+          "惰性求值優點",
+          "itertools模組"
+        ],
         "mdPath": "week13.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -115,7 +208,14 @@
       {
         "week": 14,
         "title": "OS 與 Sys 模組操作",
-        "topics": ["os.path路徑操作", "os.listdir目錄遍歷", "shutil檔案操作", "sys.argv命令列", "sys.path模組搜尋", "環境變數管理"],
+        "topics": [
+          "os.path路徑操作",
+          "os.listdir目錄遍歷",
+          "shutil檔案操作",
+          "sys.argv命令列",
+          "sys.path模組搜尋",
+          "環境變數管理"
+        ],
         "mdPath": "week14.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -123,7 +223,14 @@
       {
         "week": 15,
         "title": "正規表示式 (Regular Expressions)",
-        "topics": ["re模組基礎", "基本元字符", "分組捕獲Group", "re.findall/search/sub", "貪婪與懶惰匹配", "實戰：Email/電話驗證"],
+        "topics": [
+          "re模組基礎",
+          "基本元字符",
+          "分組捕獲Group",
+          "re.findall/search/sub",
+          "貪婪與懶惰匹配",
+          "實戰：Email/電話驗證"
+        ],
         "mdPath": "week15.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -131,7 +238,14 @@
       {
         "week": 16,
         "title": "檔案處理與資料格式",
-        "topics": ["open()讀寫模式", "Context Manager with", "CSV讀寫操作", "JSON序列化", "Pathlib現代路徑", "二進位檔案處理"],
+        "topics": [
+          "open()讀寫模式",
+          "Context Manager with",
+          "CSV讀寫操作",
+          "JSON序列化",
+          "Pathlib現代路徑",
+          "二進位檔案處理"
+        ],
         "mdPath": "week16.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -139,7 +253,14 @@
       {
         "week": 17,
         "title": "例外處理與日誌紀錄",
-        "topics": ["try/except/finally", "自定義Exception", "raise主動拋出", "logging模組架構", "日誌等級設定", "多模組日誌整合"],
+        "topics": [
+          "try/except/finally",
+          "自定義Exception",
+          "raise主動拋出",
+          "logging模組架構",
+          "日誌等級設定",
+          "多模組日誌整合"
+        ],
         "mdPath": "week17.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 30
@@ -147,7 +268,14 @@
       {
         "week": 18,
         "title": "期末綜合複習與 Python 進階實戰",
-        "topics": ["Week1-17全面複習", "進階學習路線圖", "專案架構實踐", "Python生態系導覽", "開源貢獻入門", "職涯發展建議"],
+        "topics": [
+          "Week1-17全面複習",
+          "進階學習路線圖",
+          "專案架構實踐",
+          "Python生態系導覽",
+          "開源貢獻入門",
+          "職涯發展建議"
+        ],
         "mdPath": "week18.md",
         "quizPath": "python_week1.json",
         "estimatedMinutes": 60
@@ -159,14 +287,25 @@
     "title": "Python 自動化辦公與量化應用",
     "description": "融合 Excel、Word、PDF 自動化處理，並延伸至基礎量化分析、爬蟲與數據可視化，讓 Python 成為您最強大的生產力武器。",
     "category": "自動化與量化",
-    "tags": ["熱門", "辦公自動化", "量化分析"],
+    "tags": [
+      "熱門",
+      "辦公自動化",
+      "量化分析"
+    ],
     "totalWeeks": 18,
     "totalQuestions": 540,
     "syllabus": [
       {
         "week": 1,
         "title": "Excel 與 CSV 自動化處理 (Pandas 核心應用)",
-        "topics": ["Pandas結構", "資料讀寫", "標籤loc", "位置iloc", "布林篩選", "缺失值清理"],
+        "topics": [
+          "Pandas結構",
+          "資料讀寫",
+          "標籤loc",
+          "位置iloc",
+          "布林篩選",
+          "缺失值清理"
+        ],
         "mdPath": "week1.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -174,7 +313,14 @@
       {
         "week": 2,
         "title": "Word 報表生成與文檔自動化",
-        "topics": ["python-docx段落操作", "樣式Style設定", "表格自動生成", "圖片嵌入", "模板渲染", "批量報表輸出"],
+        "topics": [
+          "python-docx段落操作",
+          "樣式Style設定",
+          "表格自動生成",
+          "圖片嵌入",
+          "模板渲染",
+          "批量報表輸出"
+        ],
         "mdPath": "week2.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -182,7 +328,14 @@
       {
         "week": 3,
         "title": "PPT 簡報自動化設計",
-        "topics": ["python-pptx架構", "幻燈片版面配置", "文字框操作", "圖表嵌入", "主題樣式設定", "批量簡報生成"],
+        "topics": [
+          "python-pptx架構",
+          "幻燈片版面配置",
+          "文字框操作",
+          "圖表嵌入",
+          "主題樣式設定",
+          "批量簡報生成"
+        ],
         "mdPath": "week3.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -190,7 +343,14 @@
       {
         "week": 4,
         "title": "電子郵件自動化與排程",
-        "topics": ["smtplib發送郵件", "MIME格式", "HTML郵件設計", "附件處理", "排程任務schedule", "群發策略"],
+        "topics": [
+          "smtplib發送郵件",
+          "MIME格式",
+          "HTML郵件設計",
+          "附件處理",
+          "排程任務schedule",
+          "群發策略"
+        ],
         "mdPath": "week4.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -198,7 +358,14 @@
       {
         "week": 5,
         "title": "網頁爬蟲入門 (Requests & BeautifulSoup)",
-        "topics": ["HTTP請求原理", "requests庫使用", "BeautifulSoup解析", "CSS選擇器", "資料清洗存儲", "爬蟲禮儀robots.txt"],
+        "topics": [
+          "HTTP請求原理",
+          "requests庫使用",
+          "BeautifulSoup解析",
+          "CSS選擇器",
+          "資料清洗存儲",
+          "爬蟲禮儀robots.txt"
+        ],
         "mdPath": "week5.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -206,7 +373,14 @@
       {
         "week": 6,
         "title": "進階爬蟲技術：Cookies、Session 與反爬",
-        "topics": ["Cookie/Session機制", "登入狀態維持", "Headers偽裝", "代理IP使用", "限速策略", "JSON API爬取"],
+        "topics": [
+          "Cookie/Session機制",
+          "登入狀態維持",
+          "Headers偽裝",
+          "代理IP使用",
+          "限速策略",
+          "JSON API爬取"
+        ],
         "mdPath": "week6.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -214,7 +388,14 @@
       {
         "week": 7,
         "title": "動態網頁爬取 (Selenium 實踐)",
-        "topics": ["Selenium架構", "WebDriver控制", "元素定位策略", "等待機制Wait", "截圖與錄製", "無頭瀏覽器Headless"],
+        "topics": [
+          "Selenium架構",
+          "WebDriver控制",
+          "元素定位策略",
+          "等待機制Wait",
+          "截圖與錄製",
+          "無頭瀏覽器Headless"
+        ],
         "mdPath": "week7.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -222,7 +403,14 @@
       {
         "week": 8,
         "title": "反爬蟲攻防、驗證碼處理與 Scrapy 初探",
-        "topics": ["反爬蟲識別機制", "驗證碼繞過策略", "Scrapy框架架構", "Spider爬蟲設計", "Item Pipeline", "數據持久化"],
+        "topics": [
+          "反爬蟲識別機制",
+          "驗證碼繞過策略",
+          "Scrapy框架架構",
+          "Spider爬蟲設計",
+          "Item Pipeline",
+          "數據持久化"
+        ],
         "mdPath": "week8.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -230,7 +418,12 @@
       {
         "week": 9,
         "title": "期中綜合測驗",
-        "topics": ["Week1-8技術回顧", "自動化最佳實踐", "爬蟲整合案例", "綜合挑戰題"],
+        "topics": [
+          "Week1-8技術回顧",
+          "自動化最佳實踐",
+          "爬蟲整合案例",
+          "綜合挑戰題"
+        ],
         "mdPath": "week9.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 60
@@ -238,7 +431,14 @@
       {
         "week": 10,
         "title": "科學計算基石：NumPy 數值運算",
-        "topics": ["ndarray向量操作", "廣播機制Broadcasting", "矩陣乘法", "統計函數", "隨機數生成", "索引進階操作"],
+        "topics": [
+          "ndarray向量操作",
+          "廣播機制Broadcasting",
+          "矩陣乘法",
+          "統計函數",
+          "隨機數生成",
+          "索引進階操作"
+        ],
         "mdPath": "week10.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -246,7 +446,14 @@
       {
         "week": 11,
         "title": "Pandas 數據清洗與進階預處理",
-        "topics": ["缺失值處理策略", "重複值刪除", "異常值偵測", "資料合併merge/join", "字串欄位操作str", "dtype轉換優化"],
+        "topics": [
+          "缺失值處理策略",
+          "重複值刪除",
+          "異常值偵測",
+          "資料合併merge/join",
+          "字串欄位操作str",
+          "dtype轉換優化"
+        ],
         "mdPath": "week11.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -254,7 +461,14 @@
       {
         "week": 12,
         "title": "數據分組、透視表與時間序列分析",
-        "topics": ["groupby分組聚合", "pivot_table透視表", "時間序列DatetimeIndex", "resample重採樣", "rolling滾動窗口", "時區處理"],
+        "topics": [
+          "groupby分組聚合",
+          "pivot_table透視表",
+          "時間序列DatetimeIndex",
+          "resample重採樣",
+          "rolling滾動窗口",
+          "時區處理"
+        ],
         "mdPath": "week12.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -262,7 +476,14 @@
       {
         "week": 13,
         "title": "數據視覺化 (Matplotlib & Seaborn)",
-        "topics": ["Matplotlib基礎圖形", "子圖subplot配置", "Seaborn統計圖", "熱力圖heatmap", "圖表美化定制", "互動圖表Plotly"],
+        "topics": [
+          "Matplotlib基礎圖形",
+          "子圖subplot配置",
+          "Seaborn統計圖",
+          "熱力圖heatmap",
+          "圖表美化定制",
+          "互動圖表Plotly"
+        ],
         "mdPath": "week13.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -270,7 +491,14 @@
       {
         "week": 14,
         "title": "量化投資入門：金融數據獲取",
-        "topics": ["yfinance資料下載", "tushare A股數據", "OHLCV數據結構", "報酬率計算", "對數報酬率", "多股票比較分析"],
+        "topics": [
+          "yfinance資料下載",
+          "tushare A股數據",
+          "OHLCV數據結構",
+          "報酬率計算",
+          "對數報酬率",
+          "多股票比較分析"
+        ],
         "mdPath": "week14.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -278,7 +506,14 @@
       {
         "week": 15,
         "title": "技術指標構建與策略邏輯",
-        "topics": ["移動平均線MA", "RSI相對強弱指數", "MACD指標算法", "布林通道Bollinger", "交叉訊號生成", "信號回測邏輯"],
+        "topics": [
+          "移動平均線MA",
+          "RSI相對強弱指數",
+          "MACD指標算法",
+          "布林通道Bollinger",
+          "交叉訊號生成",
+          "信號回測邏輯"
+        ],
         "mdPath": "week15.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -286,7 +521,14 @@
       {
         "week": 16,
         "title": "策略回測原理與向量化回測實踐",
-        "topics": ["向量化回測框架", "進出場信號管理", "持倉部位計算", "交易成本模擬", "累積報酬曲線", "最大回撤計算"],
+        "topics": [
+          "向量化回測框架",
+          "進出場信號管理",
+          "持倉部位計算",
+          "交易成本模擬",
+          "累積報酬曲線",
+          "最大回撤計算"
+        ],
         "mdPath": "week16.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -294,7 +536,14 @@
       {
         "week": 17,
         "title": "風險指標與績效評估",
-        "topics": ["夏普比率Sharpe", "索提諾比率Sortino", "最大回撤MaxDrawdown", "勝率與賠率分析", "Calmar比率", "風險調整後報酬"],
+        "topics": [
+          "夏普比率Sharpe",
+          "索提諾比率Sortino",
+          "最大回撤MaxDrawdown",
+          "勝率與賠率分析",
+          "Calmar比率",
+          "風險調整後報酬"
+        ],
         "mdPath": "week17.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 30
@@ -302,7 +551,14 @@
       {
         "week": 18,
         "title": "期末綜合評量：自動化/量化實戰全景指南",
-        "topics": ["Week1-17全面複習", "自動化辦公整合案例", "量化策略完整流程", "雲端部署與監控", "學習路線圖", "職涯發展建議"],
+        "topics": [
+          "Week1-17全面複習",
+          "自動化辦公整合案例",
+          "量化策略完整流程",
+          "雲端部署與監控",
+          "學習路線圖",
+          "職涯發展建議"
+        ],
         "mdPath": "week18.md",
         "quizPath": "quant_week1.json",
         "estimatedMinutes": 60
@@ -314,9 +570,758 @@
     "title": "心理計量學與測驗理論基礎",
     "description": "學習古典測驗理論 (CTT)、項目反應理論 (IRT) 及認知診斷模型 (CDM)，理解現代教育測驗背後的數學之美與 Python 計算實作。",
     "category": "心理計量",
-    "tags": ["即將開放", "進階理論", "跨學門"],
+    "tags": [
+      "即將開放",
+      "進階理論",
+      "跨學門"
+    ],
     "totalWeeks": 8,
     "totalQuestions": 120,
     "syllabus": []
+  },
+  {
+    "id": "calculus-i",
+    "title": "微積分 上 (Calculus I)",
+    "description": "基礎微積分課程，涵蓋極限、連續性、微分法則與基本積分。結合 SymPy 與 Matplotlib 進行視覺化與符號運算，並提供心理計量診斷。",
+    "category": "數學與演算法",
+    "tags": [
+      "大學先修",
+      "基礎數學",
+      "Python實作"
+    ],
+    "totalWeeks": 18,
+    "totalQuestions": 580,
+    "syllabus": [
+      {
+        "week": 1,
+        "title": "第 1 週 - 函數與模型 (Functions and Models)",
+        "topics": [
+          "函數的四種表示法（視覺、代數、數值、語意）。",
+          "基本函數分類（多項式、有理、代數、三角）。",
+          "函數的平移（左右上下）與伸縮變換。",
+          "指數函數 $a^x$ 的圖形特徵與底數 $e$。",
+          "反函數的求法與對數函數 $\\ln x$ 的基本運算律。"
+        ],
+        "mdPath": "week1.md",
+        "quizPath": "calculus1_week1.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 2,
+        "title": "Week 2 Review",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week2.md",
+        "quizPath": "calculus1_week2.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 3,
+        "title": "Week 3 Review",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week3.md",
+        "quizPath": "calculus1_week3.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 4,
+        "title": "Week 4 Review",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week4.md",
+        "quizPath": "calculus1_week4.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 5,
+        "title": "Week 5 Review",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week5.md",
+        "quizPath": "calculus1_week5.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 6,
+        "title": "Week 6 Review",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week6.md",
+        "quizPath": "calculus1_week6.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 7,
+        "title": "Week 7 Review",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week7.md",
+        "quizPath": "calculus1_week7.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 8,
+        "title": "Week 8 Review",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week8.md",
+        "quizPath": "calculus1_week8.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 9,
+        "title": "第 9 週 - 期中考試 (Midterm Exam)",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week9.md",
+        "quizPath": "calculus1_week9.json",
+        "estimatedMinutes": 60
+      },
+      {
+        "week": 10,
+        "title": "第 10 週 - 微分的應用：極值與均值定理 (Applications of Differentiation)",
+        "topics": [
+          "絕對與局部極值的定義。",
+          "極值定理 (EVT) 的重要性與臨界點的判定。",
+          "封閉區間求極值的標準流程。",
+          "羅爾定理的條件與證明。",
+          "均值定理 (MVT) 的幾何意義與其在函數分析中的應用。"
+        ],
+        "mdPath": "week10.md",
+        "quizPath": "calculus1_week10.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 11,
+        "title": "第 11 週 - 微分的應用：導數如何影響函數圖形 (How Derivatives Affect the Shape of a Graph)",
+        "topics": [
+          "一階導數檢定判定局部極值。",
+          "二階導數正負決定函數的凹向性。",
+          "反曲點定義為凹向性改變的轉折點。",
+          "二階導數檢定在平滑臨界點的應用。",
+          "綜合定義域、漸近線、增減性、凹向性繪製函數。"
+        ],
+        "mdPath": "week11.md",
+        "quizPath": "calculus1_week11.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 12,
+        "title": "第 12 週 - 洛必達法則與函數圖形描繪 (L'Hospital's Rule and Curve Sketching)",
+        "topics": [
+          "洛必達法則處理 $0/0$ 與 $\\infty/\\infty$ 的基本條件。",
+          "將乘積與差項轉為商式以應用洛必達。",
+          "利用對數將指數型未定式降階。",
+          "斜漸近線的判斷與綜合繪圖技術。",
+          "微積分是驗證圖形工具正確性的最終標準。"
+        ],
+        "mdPath": "week12.md",
+        "quizPath": "calculus1_week12.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 13,
+        "title": "第 13 週 - 最佳化問題、牛頓法與反導數",
+        "topics": [
+          "利用導數尋找面積與體積的最大化方案。",
+          "成本最小化與距離最短問題的建模技巧。",
+          "理解邊際成本與邊際營收相等時，利潤達到最大。",
+          "牛頓法公式 $x_{n+1} = x_n - f(x_n)/f'(x_n)$ 的運用。",
+          "反導數的定義與初值問題的解法。"
+        ],
+        "mdPath": "week13.md",
+        "quizPath": "calculus1_week13.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 14,
+        "title": "第 14 週 - 定積分的定義與性質",
+        "topics": [
+          "理解長方形逼近法是求解曲線面積的基礎。",
+          "熟練構造左、右與中點黎曼和的 $\\Sigma$ 表達式。",
+          "掌握定積分作為黎曼和極限的定義及其可積條件。",
+          "理解定積分代表淨面積，並靈活運用積分的線性與區間加法性質。",
+          "學會使用比較定理來估計定積分的上下界。"
+        ],
+        "mdPath": "week14.md",
+        "quizPath": "calculus1_week14.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 15,
+        "title": "第 15 週 - 微積分基本定理",
+        "topics": [
+          "微積分基本定理第一部分 (FTC 1) 說明了微分與積分是逆運算。",
+          "學會將連鎖律應用於積分上限為複合函數的情況。",
+          "掌握 FTC 2 的定義，理解如何透過反導數避開黎曼和極限。",
+          "熟練各種代數技巧輔助定積分的計算。",
+          "理解淨變化定理在物理上的意義，區分位移與總距離的計算。"
+        ],
+        "mdPath": "week15.md",
+        "quizPath": "calculus1_week15.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 16,
+        "title": "第 16 週 - 代換法 (The Substitution Rule)",
+        "topics": [
+          "理解代換法是連鎖律的逆運算。",
+          "掌握不定積分中選擇 $u$ 並「湊」出 $du$ 的技巧。",
+          "記住在計算定積分時，必須同步更新積分上下限。",
+          "利用函數的奇偶對稱性快速簡化對稱區間上的積分。",
+          "學會處理需要變形或多次處理的複雜代換題目。"
+        ],
+        "mdPath": "week16.md",
+        "quizPath": "calculus1_week16.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 17,
+        "title": "第 17 週 - 積分的應用：面積與體積",
+        "topics": [
+          "掌握面積積分的基本公式 $\\int (上 - 下) dx$ 並學會找交點。",
+          "理解何時使用 $\\int (右 - 左) dy$ 積分更簡便。",
+          "建立切片法概念：體積是截面積函數的積分。",
+          "熟練圓盤法公式，區分繞 x 軸與繞 y 軸的差異。",
+          "應用墊圈法處理空心旋轉體，精確識別內外半徑。"
+        ],
+        "mdPath": "week17.md",
+        "quizPath": "calculus1_week17.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 18,
+        "title": "第 18 週 - 期末綜合考試 (Final Exam)",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week18.md",
+        "quizPath": "calculus1_week18.json",
+        "estimatedMinutes": 60
+      }
+    ]
+  },
+  {
+    "id": "calculus-ii",
+    "title": "微積分 中 (Calculus II)",
+    "description": "進階微積分課程，深入探討積分技巧、數值積分、無窮級數與多元函數極限。結合 Python SciPy 進行數值模擬。",
+    "category": "數學與演算法",
+    "tags": [
+      "進階數學",
+      "級數",
+      "數值分析"
+    ],
+    "totalWeeks": 18,
+    "totalQuestions": 580,
+    "syllabus": [
+      {
+        "week": 1,
+        "title": "第 1 週 - 積分複習與對數/指數函數",
+        "topics": [
+          "反函數求導公式 $(f^{-1})'(a) = 1/f'(f^{-1}(a))$。",
+          "$\\ln x$ 的積分定義與 $\\frac{d}{dx}(\\ln x) = 1/x$。",
+          "$e^x$ 的性質與 $\\frac{d}{dx}(e^x) = e^x$。",
+          "一般底數 $a^x$ 與 $\\log_a x$ 的轉換與求導。",
+          "微分方程 $\\frac{dy}{dt} = ky$ 的解與應用。"
+        ],
+        "mdPath": "week1.md",
+        "quizPath": "calculus2_week1.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 2,
+        "title": "第 2 週 - 超越函數與反函數",
+        "topics": [
+          "反三角函數的定義域與值域限制。",
+          "反三角函數導函數公式（特別是 $\\sin^{-1} x$ 與 $\\tan^{-1} x$）。",
+          "雙曲函數定義（$e^x$ 組合）與 $\\cosh^2 x - \\sinh^2 x = 1$。",
+          "雙曲函數的微分（注意 $\\cosh x$ 微分為 $\\sinh x$）。",
+          "羅必達法則適用條件與不定型分類。"
+        ],
+        "mdPath": "week2.md",
+        "quizPath": "calculus2_week2.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 3,
+        "title": "第 3 週 - 積分技巧 I：分部積分與三角積分",
+        "topics": [
+          "分部積分公式 $\\int u dv = uv - \\int v du$。",
+          "表格法簡化多次分部積分。",
+          "$\\sin^m \\cos^n$ 積分中奇偶次數的處理策略。",
+          "$\\tan^m \\sec^n$ 積分中 $\\sec^2$ 或 $\\sec \\tan$ 的提取技巧。",
+          "循環積分的方程解法。"
+        ],
+        "mdPath": "week3.md",
+        "quizPath": "calculus2_week3.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 4,
+        "title": "第 4 週 - 積分技巧 II：三角代換與部分分式",
+        "topics": [
+          "$x = a \\sin \\theta$ 用於 $\\sqrt{a^2-x^2}$。",
+          "$x = a \\tan \\theta$ 與 $x = a \\sec \\theta$ 的適用時機。",
+          "有理函數拆解中的 A, B 係數求解。",
+          "處理不可約二次分母的 $Ax+B$ 設法。",
+          "綜合各種積分工具的判斷流程。"
+        ],
+        "mdPath": "week4.md",
+        "quizPath": "calculus2_week4.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 5,
+        "title": "第 5 週 - 數值積分與瑕積分",
+        "topics": [
+          "中點法則利用中點高度。",
+          "梯形法則利用端點平均。",
+          "辛普森法則利用二次逼近（$n$ 必為偶數）。",
+          "第一型瑕積分處理無窮範圍。",
+          "第二型瑕積分處理不連續點。"
+        ],
+        "mdPath": "week5.md",
+        "quizPath": "calculus2_week5.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 6,
+        "title": "第 6 週 - 積分應用 I：體積與弧長",
+        "topics": [
+          "圓盤法適用於垂直於旋轉軸的實心截面。",
+          "墊圈法處理空心旋轉體。",
+          "剝殼法利用圓柱殼層，通常用於繞 $y$-軸旋轉。",
+          "弧長公式涉及導數的平方與開方。",
+          "函數平均值是積分值除以區間長度。"
+        ],
+        "mdPath": "week6.md",
+        "quizPath": "calculus2_week6.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 7,
+        "title": "第 7 週 - 積分應用 II：表面積與物理應用",
+        "topics": [
+          "表面積公式包含 $2\\pi y$ 與 $ds$。",
+          "功是力對位移的積分。",
+          "流體壓力取決於深度與受力面積。",
+          "重心是區域質量的加權平均位置。",
+          "消費者剩餘反映了市場定價下的消費者獲益。"
+        ],
+        "mdPath": "week7.md",
+        "quizPath": "calculus2_week7.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 8,
+        "title": "第 8 週 - 期中總複習與綜合解題",
+        "topics": [
+          "建立「觀察 $\\to$ 分類 $\\to$ 執行」的解題流程。"
+        ],
+        "mdPath": "week8.md",
+        "quizPath": "calculus2_week8.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 9,
+        "title": "第 9 週 - 期中評量 (Midterm Exam)",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week9.md",
+        "quizPath": "calculus2_week9.json",
+        "estimatedMinutes": 60
+      },
+      {
+        "week": 10,
+        "title": "第 10 週 - 數列 (Sequences)",
+        "topics": [
+          "掌握數列的顯式公式與遞迴定義，學會列舉前幾項觀察規律。",
+          "理解收斂與發散的定義，特別是 $\\epsilon-N$ 的邏輯概念。",
+          "熟練運用極限運算律與羅必達法則（需先轉化為連續函數）。",
+          "掌握單調性與有界性的判定方法，並能運用單調收斂定理求遞迴數列極限。",
+          "學會尋找適當的夾擠函數來解決包含震盪項或階乘項的數列極限。"
+        ],
+        "mdPath": "week10.md",
+        "quizPath": "calculus2_week10.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 11,
+        "title": "第 11 週 - 級數導論 (Series Introduction)",
+        "topics": [
+          "理解級數收斂的本質是其部分和數列的極限。",
+          "熟記幾何級數公式，並學會先用發散檢定法排除明顯不收斂的項。",
+          "學會將級數轉化為瑕積分，並掌握 $p$-級數這個基準工具。",
+          "掌握「找老大」的技巧進行比較檢定。",
+          "區分絕對收斂與條件收斂，並學會處理交錯號級數。"
+        ],
+        "mdPath": "week11.md",
+        "quizPath": "calculus2_week11.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 12,
+        "title": "第 12 週 - 泰勒與麥克勞林級數 (Taylor & Maclaurin Series)",
+        "topics": [
+          "掌握比值檢定法求收斂半徑，並注意端點檢查。",
+          "學會利用幾何級數進行代換與微積分變換。",
+          "熟記泰勒級數的一般項公式。",
+          "理解多項式逼近的物理意義。",
+          "能夠使用拉格朗日餘項進行數值誤差分析。"
+        ],
+        "mdPath": "week12.md",
+        "quizPath": "calculus2_week12.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 13,
+        "title": "第 13 週 - 泰勒級數的應用 (Applications of Taylor Series)",
+        "topics": [
+          "熟記五大麥克勞林級數及其收斂區間。",
+          "學會觀察極限式中的主導項，利用級數簡化運算。",
+          "掌握將不可積函數轉化為冪級數再逐項求積分的標準流程。",
+          "區分交錯級數誤差與拉格朗日餘項的使用時機。",
+          "理解歐拉公式如何將旋轉（三角）與增長（指數）聯繫起來。"
+        ],
+        "mdPath": "week13.md",
+        "quizPath": "calculus2_week13.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 14,
+        "title": "第 14 週 - 多元函數與極限 (Functions of Several Variables & Limits)",
+        "topics": [
+          "掌握二元及三元函數的定義域判定，特別是複合限制。",
+          "理解等高線與曲面圖形的幾何關係（$f=k$ 即切面投影）。",
+          "理解多元極限必須對「所有路徑」均成立。",
+          "熟練運用兩路徑測試法，包含特殊的拋物線路徑。",
+          "學會判斷分段定義函數在連接點的連續性。"
+        ],
+        "mdPath": "week14.md",
+        "quizPath": "calculus2_week14.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 15,
+        "title": "第 15 週 - 偏導數 (Partial Derivatives)",
+        "topics": [
+          "牢記偏導數是「凍結其餘變數」後的變化率。",
+          "熟練掌握複合函數（如 $\\sin(x/y)$）的偏微分技巧。",
+          "理解混合偏導相等的前提是二階導數必須連續。",
+          "了解調和函數滿足 $u_{xx} + u_{yy} = 0$。",
+          "掌握隱函數微分公式 $\\frac{\\partial z}{\\partial x} = -F_x/F_z$。"
+        ],
+        "mdPath": "week15.md",
+        "quizPath": "calculus2_week15.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 16,
+        "title": "第 16 週 - 切平面與線性逼近 (Tangent Planes & Linear Approximations)",
+        "topics": [
+          "學會建立切平面方程式的基本模組：點 $(x_0, y_0, z_0)$ 與斜率 $(f_x, f_y)$。",
+          "理解線性逼近是將曲面問題轉化為簡單的加減乘除。",
+          "掌握全微分的微分形式，並能區分其與增量 $\\Delta z$ 的差異。",
+          "記住「偏導連續 $\\Rightarrow$ 可微 $\\Rightarrow$ 連續」的層級關係。",
+          "能應用全微分處理物理量測量的誤差傳遞問題。"
+        ],
+        "mdPath": "week16.md",
+        "quizPath": "calculus2_week16.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 17,
+        "title": "第 17 週 - 多元連鎖律 (The Chain Rule for Several Variables)",
+        "topics": [
+          "掌握單變數路徑下的全導數 $\\frac{dz}{dt}$ 結構。",
+          "理解多元參數下，偏導數是以「分支相加」的形式組成的。",
+          "熟練繪製樹狀圖，這是處理複雜連鎖律問題的標準 S.O.P.。",
+          "理解隱函數微分定理的來源，並能擴展至三元以上。",
+          "能將物理問題轉化為變數間的依賴關係並求解變化率。"
+        ],
+        "mdPath": "week17.md",
+        "quizPath": "calculus2_week17.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 18,
+        "title": "第 18 週 - 期末總複習與期末考試 (Final Exam & Review)",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week18.md",
+        "quizPath": "calculus2_week18.json",
+        "estimatedMinutes": 60
+      }
+    ]
+  },
+  {
+    "id": "calculus-iii",
+    "title": "微積分 下 (Calculus III)",
+    "description": "多變數微積分與向量微積分，涵蓋空間幾何、多重積分、Green定理、Stokes定理與散度定理。著重於 3D 視覺化與物理應用。",
+    "category": "數學與演算法",
+    "tags": [
+      "高等微積分",
+      "向量分析",
+      "3D視覺化"
+    ],
+    "totalWeeks": 18,
+    "totalQuestions": 580,
+    "syllabus": [
+      {
+        "week": 1,
+        "title": "第 1 週 - 空間幾何與向量基礎 (Vectors and the Geometry of Space)",
+        "topics": [
+          "3D 坐標系、距離公式與球體方程式。",
+          "向量代數運算、長度計算與單位向量。",
+          "內積的代數與幾何定義（夾角計算與正交判定）。",
+          "外積的計算（行列式法）與其幾何意義（面積與垂直性）。",
+          "純量三重積與平行六面體體積。"
+        ],
+        "mdPath": "week1.md",
+        "quizPath": "calculus3_week1.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 2,
+        "title": "第 2 週 - 空間中的直線與平面 (Lines and Planes in Space)",
+        "topics": [
+          "直線的向量、參數與對稱方程式。",
+          "平面的法向量概念與標量方程式。",
+          "直線與平面的交點計算方法。",
+          "點到平面的距離公式推導與應用。",
+          "常見二次曲面（柱面、橢球面、拋物面等）的識別。"
+        ],
+        "mdPath": "week2.md",
+        "quizPath": "calculus3_week2.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 3,
+        "title": "第 3 週 - 向量函數與空間曲線 (Vector Functions and Space Curves)",
+        "topics": [
+          "向量函數的定義、極限與空間曲線的概念。",
+          "向量函數的導數（切向量）與積分。",
+          "空間曲線的弧長積分公式。",
+          "單位切向量 $\\mathbf{T}$ 與單位法向量 $\\mathbf{N}$ 的定義及其垂直性。",
+          "曲率 $\\kappa$ 的幾何意義及其計算公式。"
+        ],
+        "mdPath": "week3.md",
+        "quizPath": "calculus3_week3.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 4,
+        "title": "第 4 週 - 空間中的運動學 (Motion in Space)",
+        "topics": [
+          "速度、速率與加速度的向量定義與計算。",
+          "加速度的切線分量 $a_T$ 與法線分量 $a_N$ 的公式與物理意義。",
+          "TNB 基底（Frenet 標架）與密切平面的幾何結構。",
+          "重力場下的 3D 拋體運動推導。",
+          "克卜勒定律在向量分析中的意義。"
+        ],
+        "mdPath": "week4.md",
+        "quizPath": "calculus3_week4.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 5,
+        "title": "第 5 週 - 方向導數與梯度向量 (Directional Derivatives and Gradient Vectors)",
+        "topics": [
+          "方向導數定義 $D_{\\mathbf{u}}f = \\lim_{h \\to 0} \\frac{f(\\mathbf{x}+h\\mathbf{u}) - f(\\mathbf{x})}{h}$。",
+          "梯度向量 $\\nabla f = \\langle f_x, f_y, f_z \\rangle$ 的定義。",
+          "重要公式 $D_{\\mathbf{u}}f = \\nabla f \\cdot \\mathbf{u}$。",
+          "梯度方向是函數增加最快的方向，其模長是最大變化率。",
+          "梯度垂直於等值曲線/曲面。"
+        ],
+        "mdPath": "week5.md",
+        "quizPath": "calculus3_week5.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 6,
+        "title": "第 6 週 - 多變數函數的極值 (Maximum and Minimum Values)",
+        "topics": [
+          "局部極值的定義。",
+          "臨界點的求法 ($\\nabla f = \\mathbf{0}$)。",
+          "二階導數測試公式 $D = f_{xx}f_{yy} - f_{xy}^2$。",
+          "鞍點的性質與幾何特徵。",
+          "閉區域絕對極值的尋找步驟。"
+        ],
+        "mdPath": "week6.md",
+        "quizPath": "calculus3_week6.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 7,
+        "title": "第 7 週 - 拉格朗日乘數法 (Lagrange Multipliers)",
+        "topics": [
+          "拉格朗日法的幾何意義：梯度平行。",
+          "單約束方程組：$\\nabla f = \\lambda \\nabla g, g=k$。",
+          "多約束方程組：$\\nabla f = \\lambda \\nabla g + \\mu \\nabla h$。",
+          "距離問題中最小化 $d^2$ 的技巧。",
+          "拉格朗日乘數 $\\lambda$ 的物理/經濟含義。"
+        ],
+        "mdPath": "week7.md",
+        "quizPath": "calculus3_week7.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 8,
+        "title": "第 8 週 - 雙重積分 (Double Integrals)",
+        "topics": [
+          "雙重積分與體積的幾何聯繫。",
+          "矩形區域的逐次積分與順序互換。",
+          "Type I ($dy dx$) 與 Type II ($dx dy$) 區域的描述與積分。",
+          "積分的線性與區域分解性質。",
+          "極座標變換公式 $dA = r dr d\\theta$。"
+        ],
+        "mdPath": "week8.md",
+        "quizPath": "calculus3_week8.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 9,
+        "title": "第 9 週 - 期中考試 (Midterm Exam)",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week9.md",
+        "quizPath": "calculus3_week9.json",
+        "estimatedMinutes": 60
+      },
+      {
+        "week": 10,
+        "title": "第 10 週 - 極座標與多重積分應用 (Double Integrals in Polar Coordinates & Applications)",
+        "topics": [
+          "掌握 $dA = r dr d\\theta$ 及其背後的幾何意義。",
+          "能夠設定極座標積分的邊界，特別是 $r=f(\\theta)$ 的曲線。",
+          "應用二重積分計算平面薄片的質量。",
+          "理解矩的概念並能計算質心。",
+          "理解慣性矩的定義及極座標在解決廣義積分（如高斯積分）中的威力。"
+        ],
+        "mdPath": "week10.md",
+        "quizPath": "calculus3_week10.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 11,
+        "title": "第 11 週 - 三重積分 (Triple Integrals)",
+        "topics": [
+          "理解三重積分的黎曼和定義與富比尼定理。",
+          "學會如何決定一般區域的積分限，特別是「投影法」。",
+          "使用三重積分求得立體幾何的體積。",
+          "掌握三維物體的質量與質心公式。",
+          "理解對不同坐標軸的慣性矩定義。"
+        ],
+        "mdPath": "week11.md",
+        "quizPath": "calculus3_week11.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 12,
+        "title": "第 12 週 - 柱座標與球座標 (Cylindrical & Spherical Coordinates)",
+        "topics": [
+          "掌握柱座標定義與 $dV = r dz dr d\\theta$。",
+          "應用柱座標解決圓柱對稱問題。",
+          "理解球座標 $(\\rho, \\phi, \\theta)$ 及其幾何意義。",
+          "掌握球座標 $dV = \\rho^2 \\sin \\phi d\\rho d\\phi d\\theta$ 並能計算球形區域積分。",
+          "根據問題特徵選擇最有效率的座標系統。"
+        ],
+        "mdPath": "week12.md",
+        "quizPath": "calculus3_week12.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 13,
+        "title": "第 13 週 - 向量場與線積分 (Vector Fields & Line Integrals)",
+        "topics": [
+          "辨識向量場，特別是梯度場。",
+          "掌握純量線積分公式 $\\int f ds$。",
+          "理解向量線積分與功的關係 $\\int \\mathbf{F} \\cdot d\\mathbf{r}$。",
+          "運用線積分基本定理簡化保守場積分。",
+          "學會保守場的判定條件與位能函數的求解。"
+        ],
+        "mdPath": "week13.md",
+        "quizPath": "calculus3_week13.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 14,
+        "title": "第 14 週 - 線積分基本定理與 Green 定理 (FTC for Line Integrals & Green's Theorem)",
+        "topics": [
+          "掌握線積分基本定理 $\\int_C \\nabla f \\cdot d\\mathbf{r} = f(B) - f(A)$。",
+          "理解保守場判定條件 $P_y = Q_x$。",
+          "運用 Green 定理簡化封閉路徑的線積分。",
+          "應用 $\\frac{1}{2} \\oint x dy - y dx$ 計算平面圖形面積。",
+          "理解 Green 定理的旋度與散度物理意義。"
+        ],
+        "mdPath": "week14.md",
+        "quizPath": "calculus3_week14.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 15,
+        "title": "第 15 週 - 旋度與散度 (Curl and Divergence)",
+        "topics": [
+          "學會計算旋度 $\\nabla \\times \\mathbf{F}$ 並理解其旋轉意義。",
+          "學會計算散度 $\\nabla \\cdot \\mathbf{F}$ 並理解其源匯意義。",
+          "熟記 $\\text{curl}(\\nabla f) = \\mathbf{0}$ 及其在保守場判定的應用。",
+          "熟記 $\\text{div}(\\text{curl } \\mathbf{F}) = 0$。",
+          "靈活運用 $\\nabla$ 算子的運算性質。"
+        ],
+        "mdPath": "week15.md",
+        "quizPath": "calculus3_week15.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 16,
+        "title": "第 16 週 - 參數曲面與面積分 (Parametric Surfaces & Surface Integrals)",
+        "topics": [
+          "掌握曲面的參數化方法 $\\mathbf{r}(u,v)$。",
+          "學會計算面積微元 $dS = |\\mathbf{r}_u \\times \\mathbf{r}_v| dA$。",
+          "理解純量函數面積分的步驟：參數化 -> 代入 -> 計算二重積分。",
+          "掌握通量積分 $\\iint \\mathbf{F} \\cdot d\\mathbf{S}$ 的物理意義與計算。",
+          "辨識定向曲面與非定向曲面（如莫比烏斯帶）。"
+        ],
+        "mdPath": "week16.md",
+        "quizPath": "calculus3_week16.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 17,
+        "title": "第 17 週 - Stokes 定理與 Divergence 定理 (Stokes' & Divergence Theorems)",
+        "topics": [
+          "理解 Stokes 定理的陳述與方向規定。",
+          "掌握利用 Stokes 定理將線積分轉為面積分（或反之）。",
+          "理解散度定理的陳述與物理背景。",
+          "學會利用散度定理簡化閉曲面的通量計算。",
+          "建立所有積分定理的統一框架（廣義 Stokes 定理）。"
+        ],
+        "mdPath": "week17.md",
+        "quizPath": "calculus3_week17.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 18,
+        "title": "第 18 週 - 期末總複習與題庫 (Final Exam Review & Item Bank)",
+        "topics": [
+          "進階學習"
+        ],
+        "mdPath": "week18.md",
+        "quizPath": "calculus3_week18.json",
+        "estimatedMinutes": 60
+      }
+    ]
   }
 ]

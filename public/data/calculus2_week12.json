@@ -1,0 +1,304 @@
+{
+  "course": "calculus2",
+  "week": "week12",
+  "title": "第 12 週 - 泰勒與麥克勞林級數 (Taylor & Maclaurin Series)",
+  "knowledge_points": {
+    "KP12.1": "掌握比值檢定法求收斂半徑，並注意端點檢查。",
+    "KP12.2": "學會利用幾何級數進行代換與微積分變換。",
+    "KP12.3": "熟記泰勒級數的一般項公式。",
+    "KP12.4": "理解多項式逼近的物理意義。",
+    "KP12.5": "能夠使用拉格朗日餘項進行數值誤差分析。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "冪級數 $\\sum n! x^n$ 的收斂半徑 $R$ 為？\n   - (A) 0 (B) 1 (C) $\\infty$ (D) $e$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "函數 $f(x) = \\frac{1}{1+x^2}$ 在 $x=0$ 處的級數展開項中，$x^4$ 的係數為？\n   - (A) 1 (B) -1 (C) 1/2 (D) 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "$e^x$ 的麥克勞林級數收斂區間為？\n   - (A) $(-1, 1)$ (B) $[0, \\infty)$ (C) $(-\\infty, \\infty)$ (D) $[-1, 1]$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "$\\sin x$ 的級數中只包含 $x$ 的哪些次項？\n   - (A) 偶次方 (B) 奇次方 (C) 整數次方 (D) 負次方",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "泰勒級數中心點 $a=2$ 表示級數是關於哪個項的冪次？\n   - (A) $x^n$ (B) $(x+2)^n$ (C) $(x-2)^n$ (D) $(2x)^n$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "若收斂半徑 $R=5$，中心點 $a=0$，則在 $x=-5$ 處級數：\n   - (A) 必定收斂 (B) 必定發散 (C) 需額外檢查 (D) 絕對收斂",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "$\\cos x$ 在 $x=0$ 處的二階泰勒多項式 $T_2(x)$ 為？\n   - (A) $1 - x$ (B) $1 - x^2$ (C) $1 - x^2/2$ (D) $x - x^3/6$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "下列何者是 $\\arctan x$ 的級數展開？\n   - (A) $\\sum x^n/n$ (B) $\\sum (-1)^n x^{2n+1}/(2n+1)$ (C) $\\sum x^{2n}/(2n)!$ (D) $\\sum (-1)^n x^n$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "餘項 $R_n(x) \\to 0$ 意味著：\n   - (A) 函數發散 (B) 級數等於函數 (C) 誤差無限大 (D) 導數為零",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "計算 $e^{0.1}$ 時，取 $T_1(x) = 1+x$ 的拉格朗日餘項中，$z$ 的取值範圍是？\n    - (A) $(0, 0.1)$ (B) $(0, 1)$ (C) $(0.1, 1)$ (D) $(-\\infty, \\infty)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "哪些函數的麥克勞林級數對所有實數 $x$ 均收斂？\n    - (A) $\\sin x$ (B) $\\cos x$ (C) $e^x$ (D) $\\frac{1}{1-x}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "關於冪級數的逐項微積分，正確的是？\n    - (A) 微分後收斂半徑不變 (B) 積分後收斂半徑不變 (C) 端點的收斂性可能會改變 (D) 微分後次數會增加",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "泰勒多項式 $T_n(x)$ 的性質包括？\n    - (A) $T_n(a) = f(a)$ (B) $T_n'(a) = f'(a)$ (C) $T_n^{(n)}(a) = f^{(n)}(a)$ (D) 在 $x=a$ 遠處依然非常準確",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "哪些方法可以用來求新函數的級數？\n    - (A) 代換法 (B) 逐項微分 (C) 逐項積分 (D) 兩個級數相乘",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "對於級數 $\\sum \\frac{x^n}{n^2}$，其收斂性質：\n    - (A) $R=1$ (B) $x=1$ 處收斂 (C) $x=-1$ 處收斂 (D) 收斂區間為 $(-1, 1)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "$\\frac{1}{1+x}$ 的麥克勞林級數一般項為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "$\\sum_{n=0}^{\\infty} \\frac{x^n}{n!}$ 收斂至函數 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "$\\sin x$ 的三階泰勒多項式 $T_3(x) = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "若 $f(x) = \\sum c_n x^n$，則 $c_n$ 的公式為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "$\\ln(1+x)$ 的收斂半徑為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "$f(x) = \\sin(x^2)$ 的麥克勞林級數首項（非零）為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "在收斂區間內，若 $f(x) = \\sum c_n (x-a)^n$，則 $f'(x) = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "拉格朗日餘項公式中，分母的階乘項為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "$1 + 1 + 1/2! + 1/3! + \\dots$ 的和為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "冪級數在收斂圓 __________ (內部/外部) 必定絕對收斂。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "$\\cosh x = \\frac{e^x + e^{-x}}{2}$ 的級數展開只包含 $x$ 的 __________ 次項。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "$\\int_0^x \\frac{1}{1+t} dt$ 的級數展開即為 __________ 的級數。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "收斂半徑 $R = \\lim_{n \\to \\infty} |c_n / c_{n+1}|$ 是由 __________ 檢定法推導而來。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "泰勒級數本質上是用無限多項的 __________ 來逼近函數。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "course": "calculus2",
+  "week": "week2",
+  "title": "第 2 週 - 超越函數與反函數",
+  "knowledge_points": {
+    "KP2.1": "反三角函數的定義域與值域限制。",
+    "KP2.2": "反三角函數導函數公式（特別是 $\\sin^{-1} x$ 與 $\\tan^{-1} x$）。",
+    "KP2.3": "雙曲函數定義（$e^x$ 組合）與 $\\cosh^2 x - \\sinh^2 x = 1$。",
+    "KP2.4": "雙曲函數的微分（注意 $\\cosh x$ 微分為 $\\sinh x$）。",
+    "KP2.5": "羅必達法則適用條件與不定型分類。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "$\\arcsin(1) = $？ (A) 0 (B) $\\pi/2$ (C) $\\pi$ (D) $1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "找一個角度 $\\theta \\in [-\\pi/2, \\pi/2]$ 使得 $\\sin \\theta = 1$。故 $\\theta = \\pi/2$。"
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "$\\frac{d}{dx}(\\tan^{-1} x) = $？ (A) $1/\\sqrt{1-x^2}$ (B) $1/(1+x^2)$ (C) $\\sec^2 x$ (D) $1/(1-x^2)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "這是基本公式 $\\frac{d}{dx}(\\arctan x) = \\frac{1}{1+x^2}$。"
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "$\\cosh 0 = $？ (A) 0 (B) 1 (C) $e$ (D) $1/2$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "根據定義 $\\cosh 0 = \\frac{e^0 + e^{-0}}{2} = \\frac{1+1}{2} = 1$。"
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "$\\frac{d}{dx}(\\cosh x) = $？ (A) $\\sinh x$ (B) $-\\sinh x$ (C) $\\cosh x$ (D) $\\text{sech}^2 x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\frac{d}{dx}(\\frac{e^x+e^{-x}}{2}) = \\frac{e^x-e^{-x}}{2} = \\sinh x$。"
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "羅必達法則主要解決哪種問題？ (A) 積分 (B) 極限不定型 (C) 微分方程 (D) 函數定義域",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "羅必達法則是處理不定型極限的強大工具。"
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "$\\lim_{x \\to 0} \\frac{\\sin x}{x} = $？ (A) 0 (B) 1 (C) $\\infty$ (D) 不存在",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "使用羅必達法則：$\\lim_{x \\to 0} \\frac{\\cos x}{1} = \\cos 0 = 1$。"
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "下列何者為 $\\sinh x$ 的定義？ (A) $\\frac{e^x+e^{-x}}{2}$ (B) $\\frac{e^x-e^{-x}}{2}$ (C) $e^x - e^{-x}$ (D) $\\frac{1}{\\sin x}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "雙曲正弦定義為 $\\frac{e^x-e^{-x}}{2}$。"
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "$\\arctan(1) = $？ (A) $\\pi/4$ (B) $\\pi/2$ (C) 0 (D) $1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\tan(\\pi/4) = 1$ 且 $\\pi/4 \\in (-\\pi/2, \\pi/2)$。"
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "$\\int \\frac{1}{1+x^2} dx = $？ (A) $\\ln(1+x^2)+C$ (B) $\\tan^{-1} x + C$ (C) $\\sin^{-1} x + C$ (D) $x + C$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "因為 $(\\tan^{-1} x)' = \\frac{1}{1+x^2}$，故積分為 $\\tan^{-1} x + C$。"
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "$\\cosh^2 x - \\sinh^2 x = $？ (A) 0 (B) 1 (C) $\\cosh 2x$ (D) $-1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "這是雙曲函數最基本的恆等式，類比於 $\\cos^2 \\theta + \\sin^2 \\theta = 1$。\n\n---"
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "下列哪些是羅必達法則適用的直接不定型？ (A) $0/0$ (B) $\\infty/\\infty$ (C) $0 \\cdot \\infty$ (D) $1^\\infty$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "羅必達法則直接適用於 $0/0$ 與 $\\infty/\\infty$。其他形式（如 $0 \\cdot \\infty, 1^\\infty$）需轉換後才能使用。"
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "關於 $\\arcsin x$，哪些敘述正確？ (A) 定義域為 $[-1, 1]$ (B) 值域為 $[-\\pi/2, \\pi/2]$ (C) 是奇函數 (D) 導函數恆正",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(A) 定義域正確；(B) 值域正確；(C) $\\sin^{-1}(-x) = -\\sin^{-1} x$；(D) 導數 $1/\\sqrt{1-x^2}$ 在 $(-1, 1)$ 恆正。"
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "關於雙曲函數，哪些正確？ (A) $\\sinh x$ 是奇函數 (B) $\\cosh x$ 是偶函數 (C) $\\cosh x \\ge 1$ 對於所有實數 $x$ (D) $\\tanh x$ 的值域為 $(-1, 1)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(A) $\\sinh(-x) = -\\sinh x$；(B) $\\cosh(-x) = \\cosh x$；(C) 最小值為 $\\cosh 0 = 1$；(D) 漸近於 $\\pm 1$。"
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "下列導數正確的有？ (A) $(\\sin^{-1} x)' = 1/\\sqrt{1-x^2}$ (B) $(\\cos^{-1} x)' = -1/\\sqrt{1-x^2}$ (C) $(\\sinh x)' = \\cosh x$ (D) $(\\tanh x)' = \\text{sech}^2 x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "這些皆為本週學習的核心導函數公式。注意 $\\cos^{-1} x$ 帶負號，而 $\\sinh x$ 的微分不帶負號。"
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "哪些極限可以用羅必達法則處理（可能需先變換）？ (A) $\\lim_{x \\to 0} x \\ln x$ (B) $\\lim_{x \\to \\infty} (1+1/x)^x$ (C) $\\lim_{x \\to 0} (1/x - 1/\\sin x)$ (D) $\\lim_{x \\to 1} \\frac{x-1}{x^2-1}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(A) $0 \\cdot (-\\infty)$；(B) $1^\\infty$ 型（取對數）；(C) $\\infty - \\infty$ 型（通分）；(D) $0/0$ 型。"
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "下列恆等式正確的有？ (A) $\\cosh^2 x - \\sinh^2 x = 1$ (B) $1 - \\tanh^2 x = \\text{sech}^2 x$ (C) $\\sinh(x+y) = \\sinh x \\cosh y + \\cosh x \\sinh y$ (D) $\\cosh x + \\sinh x = e^x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "這些是雙曲函數的基本運算性質與加法公式。"
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "反三角函數的值域限制包括： (A) $\\arcsin: [-\\pi/2, \\pi/2]$ (B) $\\arccos: [0, \\pi]$ (C) $\\arctan: (-\\pi/2, \\pi/2)$ (D) $\\text{arcsec}: [0, \\pi]$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(A, B, C) 皆正確。(D) $\\text{arcsec}$ 的限制通常依教材而定，但 Stewart 常用 $[0, \\pi/2) \\cup [\\pi, 3\\pi/2)$。"
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "積分公式正確的有？ (A) $\\int \\cosh x dx = \\sinh x + C$ (B) $\\int \\text{sech}^2 x dx = \\tanh x + C$ (C) $\\int \\frac{1}{\\sqrt{1-x^2}} dx = \\sin^{-1} x + C$ (D) $\\int \\sinh x dx = -\\cosh x + C$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(D) 錯誤，$\\int \\sinh x dx = \\cosh x + C$（無負號）。"
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "羅必達法則的先決條件包括： (A) 分子分母皆可微 (B) 呈現不定型 (C) 分母導數不為 0 (D) 極限點必須是 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(D) 錯誤，極限點可以是任何實數或 $\\pm \\infty$。"
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "下列哪些函數在 $x \\to \\infty$ 時比 $x^n$ 增長得快？ (A) $e^x$ (B) $\\ln x$ (C) $2^x$ (D) $\\sinh x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "指數函數（包括 $e^x, 2^x, \\sinh x$）的增長速度皆高於任何多項式函數。$\\ln x$ 增長最慢。\n\n---"
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "$\\sin^{-1}(1/2) = $ __________ (弧度)。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\sin(\\pi/6) = 1/2$。"
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(\\sin^{-1}(2x)) = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "連鎖律 $\\frac{1}{\\sqrt{1-(2x)^2}} \\cdot 2$。"
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "$\\lim_{x \\to \\infty} \\frac{\\ln x}{x} = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "羅必達法則 $\\lim_{x \\to \\infty} \\frac{1/x}{1} = 0$。"
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "$\\cosh x$ 的定義式為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "基本定義。"
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "$\\int \\text{sech}^2(3x) dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "代換 $u=3x$。"
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "$\\cos(\\sin^{-1} x) = $ __________ (以 $x$ 表示)。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "令 $\\theta = \\sin^{-1} x \\implies \\sin \\theta = x$，則 $\\cos \\theta = \\sqrt{1-\\sin^2 \\theta} = \\sqrt{1-x^2}$。"
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "$\\lim_{x \\to 0} \\frac{e^x - 1}{x} = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "羅必達法則或導數定義。"
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "雙曲正切函數 $\\tanh x$ 當 $x \\to \\infty$ 時趨近於 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\lim_{x \\to \\infty} \\frac{e^x-e^{-x}}{e^x+e^{-x}} = \\lim_{x \\to \\infty} \\frac{1-e^{-2x}}{1+e^{-2x}} = 1$。"
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(\\sinh(x^2)) = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "連鎖律。"
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "若 $y = \\cos^{-1} x$，則 $dy/dx$ 在 $x=0$ 的值為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$(\\cos^{-1} x)' = -1/\\sqrt{1-x^2}$，代入 $x=0$ 得 $-1/1 = -1$。\n\n---"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "course": "calculus2",
+  "week": "week10",
+  "title": "第 10 週 - 數列 (Sequences)",
+  "knowledge_points": {
+    "KP10.1": "掌握數列的顯式公式與遞迴定義，學會列舉前幾項觀察規律。",
+    "KP10.2": "理解收斂與發散的定義，特別是 $\\epsilon-N$ 的邏輯概念。",
+    "KP10.3": "熟練運用極限運算律與羅必達法則（需先轉化為連續函數）。",
+    "KP10.4": "掌握單調性與有界性的判定方法，並能運用單調收斂定理求遞迴數列極限。",
+    "KP10.5": "學會尋找適當的夾擠函數來解決包含震盪項或階乘項的數列極限。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "數列 $a_n = \\frac{n!}{n^n}$ 當 $n \\to \\infty$ 時的極限為何？\n   - (A) 1 (B) $e$ (C) 0 (D) $\\infty$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "下列哪一個數列是單調遞增的？\n   - (A) $a_n = 1/n$ (B) $a_n = \\cos n$ (C) $a_n = \\frac{n}{n+1}$ (D) $a_n = (-1)^n$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "若 $\\lim_{n \\to \\infty} a_n = L$ 且 $L > 0$，則 $\\lim_{n \\to \\infty} \\ln(a_n)$ 等於？\n   - (A) $\\ln L$ (B) $L$ (C) $1/L$ (D) 不存在",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "$\\lim_{n \\to \\infty} \\frac{5^n}{n!}$ 的值為？\n   - (A) 5 (B) 0 (C) $\\infty$ (D) $1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "數列 $a_n = (-1)^n \\frac{n}{n+1}$ 的性質為何？\n   - (A) 收斂至 1 (B) 收斂至 0 (C) 發散（震盪） (D) 發散至 $\\infty$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "根據單調收斂定理，若數列 $a_n$ 遞減且有下界，則數列：\n   - (A) 必定發散 (B) 必定收斂 (C) 趨向於 0 (D) 可能不存在極限",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "$\\lim_{n \\to \\infty} \\sqrt[n]{n}$ 的值為？\n   - (A) 0 (B) 1 (C) $e$ (D) $\\infty$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "數列 $a_n = \\frac{\\sin n}{n^2}$ 的極限可由何種定理求得？\n   - (A) 羅必達法則 (B) 單調收斂定理 (C) 夾擠定理 (D) 積分檢定法",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "若 $r = -0.5$，則幾何數列 $a_n = r^n$：\n   - (A) 收斂至 0 (B) 收斂至 1 (C) 發散 (D) 收斂至 -0.5",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "數列 $a_n = \\frac{n^2 + \\sin n}{2n^2 + 1}$ 的極限為？\n    - (A) 0 (B) 1 (C) 1/2 (D) 2",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "下列關於數列的敘述，哪些正確？\n    - (A) 收斂數列必有界 (B) 有界數列必收斂 (C) 單調且有界數列必收斂 (D) 若 $\\lim a_n = 0$，則 $\\lim |a_n| = 0$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "下列哪些數列發散？\n    - (A) $a_n = \\frac{(-1)^n n}{n+1}$ (B) $a_n = \\ln n$ (C) $a_n = 0.9^n$ (D) $a_n = \\sin(n\\pi/2)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "關於羅必達法則在數列極限的應用，正確的是？\n    - (A) 可直接對 $a_n$ 的 $n$ 進行微分 (B) 需先假設存在對應的連續函數 $f(x)$ (C) 適用於 $0 \\cdot \\infty$ 型的轉化 (D) 只能用於正項數列",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "哪些數列收斂至 0？\n    - (A) $\\frac{100^n}{n!}$ (B) $\\frac{\\ln n}{n^2}$ (C) $(1.01)^n$ (D) $\\frac{\\sin(n)}{n}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "對於遞迴數列 $a_{n+1} = f(a_n)$，若已知其收斂至 $L$，則：\n    - (A) $L$ 必須滿足 $L = f(L)$ (B) $f$ 必須在 $L$ 處連續 (C) 數列必須是單調的 (D) $L$ 可能是複數",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "數列 $a_n = \\frac{2n^3 - 1}{5n^3 + n^2}$ 的極限為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "$\\lim_{n \\to \\infty} (1 + \\frac{2}{n})^n$ 的值為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "若 $a_n = \\sqrt{n^2 + n} - n$，則其極限為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "數列 $a_n = \\arctan(n)$ 當 $n \\to \\infty$ 時收斂至 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "數列 $a_n = \\frac{n^2}{e^n}$ 的極限為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "利用夾擠定理，可求得 $\\lim_{n \\to \\infty} \\frac{n!}{n^n}$ 為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "數列 $a_n = \\ln(n+1) - \\ln(n)$ 的極限為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "若數列 $a_n = r^n$ 收斂至非零常數，則 $r$ 必須等於 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "數列 $\\{1, 0, 1, 0, \\dots\\}$ 的一般項可寫為 $a_n = \\frac{1 + (-1)^{n+?}}{2}$，其中 $?$ 為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "若 $a_n = \\frac{\\sin n}{n}$，則 $\\lim_{n \\to \\infty} a_n = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "$\\lim_{n \\to \\infty} \\frac{3^n + 4^n}{5^n}$ 的值為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "單調收斂定理指出，一個數列若遞增且有 __________ 界，則必收斂。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "$\\lim_{n \\to \\infty} \\sqrt[n]{3^n + 2^n}$ 的值為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "數列 $a_n = \\frac{(n+1)!}{n!}$ 的極限為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "根據 $\\epsilon-N$ 定義，極限 $L$ 代表當 $n$ 足夠大時，$a_n$ 與 $L$ 的 __________ 可以任意小。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

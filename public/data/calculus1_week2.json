@@ -1,0 +1,628 @@
+{
+  "course": "calculus1",
+  "week": "week2",
+  "title": "Week 2 Review",
+  "knowledge_points": {},
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "取鄰近點 $Q(x, x^2)$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "割線斜率為 $m_{PQ} = \\frac{x^2 - 1}{x - 1} = x + 1$ (當 $x \\neq 1$)。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "當 $x$ 越來越靠近 1 (例如 $x=1.1, 1.01, 1.001$)：\n   - $x = 1.1 \\Rightarrow m_{PQ} = 2.1$\n   - $x = 1.01 \\Rightarrow m_{PQ} = 2.01$\n   - $x = 1.001 \\Rightarrow m_{PQ} = 2.001$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "由此推測，當 $x$ 趨近於 1 時，切線斜率為 2。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "取 $x$ 接近 0 的值，代入 $f(x) = \\frac{\\sin x}{x}$（$x$ 必須以弧度為單位）：\n   - $x = \\pm 0.1 \\Rightarrow f(x) \\approx 0.998334$\n   - $x = \\pm 0.01 \\Rightarrow f(x) \\approx 0.999983$\n   - $x = \\pm 0.001 \\Rightarrow f(x) \\approx 0.999999$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "隨著 $x$ 趨近於 0，$f(x)$ 趨近於 1。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "估計極限為 $\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "加上法則：$\\lim_{x \\to a} [f(x) + g(x)] = \\lim_{x \\to a} f(x) + \\lim_{x \\to a} g(x)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "常數倍法則：$\\lim_{x \\to a} [c \\cdot f(x)] = c \\cdot \\lim_{x \\to a} f(x)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "乘積法則：$\\lim_{x \\to a} [f(x) \\cdot g(x)] = \\lim_{x \\to a} f(x) \\cdot \\lim_{x \\to a} g(x)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "商法則：$\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\frac{\\lim_{x \\to a} f(x)}{\\lim_{x \\to a} g(x)}$ (前提是 $\\lim_{x \\to a} g(x) \\neq 0$)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "直接代入 $x=2$ 會得到 $0/0$ 的形式。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "對分子進行因式分解：$x^2 - 4 = (x - 2)(x + 2)$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "原式 = $\\lim_{x \\to 2} \\frac{(x - 2)(x + 2)}{x - 2}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "因為 $x \\to 2$ 表示 $x \\neq 2$，可以消去 $(x - 2)$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "得到 $\\lim_{x \\to 2} (x + 2)$。代入 $x=2$，極限值為 $2 + 2 = 4$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "**分析階段 (猜測 $\\delta$)：** 給定 $\\epsilon > 0$，我們需要找到 $\\delta > 0$ 使得當 $0 < |x - 3| < \\delta$ 時，$|(2x - 1) - 5| < \\epsilon$。\n   整理不等式：$|2x - 6| < \\epsilon \\Rightarrow 2|x - 3| < \\epsilon \\Rightarrow |x - 3| < \\frac{\\epsilon}{2}$。\n   因此，我們選擇 $\\delta = \\frac{\\epsilon}{2}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "**證明階段：** 給定任意 $\\epsilon > 0$，取 $\\delta = \\frac{\\epsilon}{2}$。\n   若 $0 < |x - 3| < \\delta$，則：\n   $|(2x - 1) - 5| = |2x - 6| = 2|x - 3| < 2\\delta = 2(\\frac{\\epsilon}{2}) = \\epsilon$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "根據定義，證明完成：$\\lim_{x \\to 3} (2x - 1) = 5$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "計算右極限 ($x \\to 0^+$)：此時 $x > 0$，故 $|x| = x$。\n   $\\lim_{x \\to 0^+} \\frac{|x|}{x} = \\lim_{x \\to 0^+} \\frac{x}{x} = \\lim_{x \\to 0^+} 1 = 1$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "計算左極限 ($x \\to 0^-$)：此時 $x < 0$，故 $|x| = -x$。\n   $\\lim_{x \\to 0^-} \\frac{|x|}{x} = \\lim_{x \\to 0^-} \\frac{-x}{x} = \\lim_{x \\to 0^-} -1 = -1$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "結論：因為右極限 $\\neq$ 左極限，所以 $\\lim_{x \\to 0} \\frac{|x|}{x}$ 不存在。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "直觀上，當割線上的兩點無限靠近時，割線的極限位置為：",
+      "options": {
+        "A": "漸近線",
+        "B": "切線",
+        "C": "法線",
+        "D": "平行線"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "若 $\\lim_{x \\to 1} f(x) = 3$ 且 $\\lim_{x \\to 1} g(x) = 4$，則 $\\lim_{x \\to 1} [2f(x) - g(x)] =$ ?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "-1",
+        "D": "5"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "計算 $\\lim_{x \\to 3} \\frac{x^2 - 9}{x - 3}$：",
+      "options": {
+        "A": "0",
+        "B": "3",
+        "C": "6",
+        "D": "不存在"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "根據極限的嚴格定義，要證明 $\\lim_{x \\to a} f(x) = L$，必須對任意給定的 $\\epsilon > 0$，找到對應的：",
+      "options": {
+        "A": "$\\delta > 0$ 使得若 $0 < |x - a| < \\delta$，則 $|f(x) - L| < \\epsilon$",
+        "B": "$\\delta > 0$ 使得若 $|f(x) - L| < \\epsilon$，則 $0 < |x - a| < \\delta$",
+        "C": "$M > 0$ 使得 $|f(x)| \\le M$",
+        "D": "$\\delta > 0$ 使得 $|x - a| = \\delta$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "對於函數 $f(x) = \\frac{1}{x-2}$，求 $\\lim_{x \\to 2^+} f(x)$：",
+      "options": {
+        "A": "$\\infty$",
+        "B": "$-\\infty$",
+        "C": "0",
+        "D": "不存在（非無窮）"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "判斷 $\\lim_{x \\to 0} \\sin(\\frac{1}{x})$：",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "$\\infty$",
+        "D": "不存在"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "在使用 $\\epsilon-\\delta$ 定義證明 $\\lim_{x \\to 2} (3x - 1) = 5$ 時，若給定 $\\epsilon = 0.03$，則可取的最大 $\\delta$ 為：",
+      "options": {
+        "A": "0.01",
+        "B": "0.03",
+        "C": "0.09",
+        "D": "0.1"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "若 $\\lim_{x \\to a} f(x)$ 存在，則：",
+      "options": {
+        "A": "$\\lim_{x \\to a^+} f(x) = \\lim_{x \\to a^-} f(x)$",
+        "B": "$f(a)$ 必須有定義",
+        "C": "$f(a) = \\lim_{x \\to a} f(x)$",
+        "D": "$f(x)$ 必須是多項式"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "計算 $\\lim_{t \\to 0} \\frac{\\sqrt{t^2 + 9} - 3}{t^2}$：",
+      "options": {
+        "A": "0",
+        "B": "$1/6$",
+        "C": "3",
+        "D": "不存在"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "計算 $\\lim_{x \\to 1} \\frac{x^3 - 1}{x - 1}$：",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "關於極限 $\\lim_{x \\to a} f(x) = L$，下列敘述哪些正確？",
+      "options": {
+        "A": "$f(a)$ 不一定需要有定義。",
+        "B": "若 $f(a)$ 有定義，$\\lim_{x \\to a} f(x)$ 不一定等於 $f(a)$。",
+        "C": "只有當左右極限皆存在且相等時，此極限才存在。",
+        "D": "極限一定存在於所有的函數中。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "計算極限時，哪些情況可能需要代數操作 (如因式分解、有理化)？",
+      "options": {
+        "A": "$0/0$",
+        "B": "$\\infty/\\infty$",
+        "C": "常數/0",
+        "D": "$\\infty - \\infty$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "若 $\\lim_{x \\to c} f(x) = L$，且 $L>0$，下列哪些極限必然存在且為正？",
+      "options": {
+        "A": "$\\lim_{x \\to c} (f(x))^2$",
+        "B": "$\\lim_{x \\to c} \\sqrt{f(x)}$",
+        "C": "$\\lim_{x \\to c} \\frac{1}{f(x)}$",
+        "D": "$\\lim_{x \\to c} \\ln(f(x))$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "在 $\\epsilon-\\delta$ 證明 $\\lim_{x \\to 4} (5x) = 20$ 中：",
+      "options": {
+        "A": "$\\delta = \\epsilon / 5$ 是正確的選擇。",
+        "B": "$\\delta = \\epsilon / 10$ 也是正確的選擇。",
+        "C": "$|x - 4| < \\delta$ 是前提條件。",
+        "D": "需要限制 $x \\neq 4$。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "關於單側極限，下列哪些正確？",
+      "options": {
+        "A": "函數的定義域可以限制在 $a$ 的單側來探討單側極限。",
+        "B": "若 $\\lim_{x \\to a} f(x)$ 存在，則單側極限必存在。",
+        "C": "若單側極限存在，則雙側極限必存在。",
+        "D": "步階函數在斷點處有單側極限。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "下列哪些極限為 0？",
+      "options": {
+        "A": "$\\lim_{x \\to 0} x \\sin(\\frac{1}{x})$",
+        "B": "$\\lim_{x \\to 0} \\frac{\\sin x}{x}$",
+        "C": "$\\lim_{x \\to 0} \\frac{1-\\cos x}{x}$",
+        "D": "$\\lim_{x \\to 0} x^2$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "若函數 $f(x)$ 包含根式如 $\\sqrt{x+4}-2$，在 $x \\to 0$ 時，常用的處理方法包括：",
+      "options": {
+        "A": "直接代入",
+        "B": "羅必達法則 (後續學到)",
+        "C": "分子分母同乘有理化因式 $(\\sqrt{x+4}+2)$",
+        "D": "取對數"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "下列關於切線與割線的敘述，哪些正確？",
+      "options": {
+        "A": "割線通過曲線上兩相異點。",
+        "B": "切線是割線當兩點距離趨近於零時的極限狀態。",
+        "C": "所有曲線在任一點都有切線。",
+        "D": "切線斜率代表瞬時變化率。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "對於函數 $f(x) = \\lfloor x \\rfloor$ (高斯符號，不大於 $x$ 的最大整數)，下列哪些正確？",
+      "options": {
+        "A": "$\\lim_{x \\to 2^-} f(x) = 1$",
+        "B": "$\\lim_{x \\to 2^+} f(x) = 2$",
+        "C": "$\\lim_{x \\to 2} f(x) = 2$",
+        "D": "在 $x=2.5$ 時，極限存在。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "極限定律成立的前提是：",
+      "options": {
+        "A": "各別的極限必須存在。",
+        "B": "若求商的極限，分母極限不可為零。",
+        "C": "函數必須是連續的。",
+        "D": "函數必須是多項式。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "$\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x - 4} = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "若 $f(x) = x^3 - 2x + 1$，則 $\\lim_{x \\to 2} f(x) = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "給定 $\\lim_{x \\to a} f(x) = 5, \\lim_{x \\to a} g(x) = -2$，則 $\\lim_{x \\to a} [f(x) \\cdot g(x)] = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "在 $\\epsilon-\\delta$ 定義中，欲證 $\\lim_{x \\to -1} (4x + 3) = -1$，若 $\\epsilon = 0.08$，則對應的最大 $\\delta = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "曲線 $y = x^3$ 在 $x=1$ 處的切線斜率為 $\\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "$\\lim_{h \\to 0} \\frac{(2+h)^2 - 4}{h} = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "若函數 $f(x) = \\begin{cases} cx+1 & \\text{if } x \\le 2 \\\\ 5-x & \\text{if } x > 2 \\end{cases}$，且 $\\lim_{x \\to 2} f(x)$ 存在，則 $c = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "單側極限 $\\lim_{x \\to 3^-} \\frac{x-3}{|x-3|} = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "$\\lim_{x \\to 0} \\frac{\\sin 3x}{x} = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "直觀上，$\\lim_{x \\to 0} \\cos x = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

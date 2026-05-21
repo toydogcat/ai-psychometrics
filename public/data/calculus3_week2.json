@@ -1,0 +1,314 @@
+{
+  "course": "calculus3",
+  "week": "week2",
+  "title": "第 2 週 - 空間中的直線與平面 (Lines and Planes in Space)",
+  "knowledge_points": {
+    "KP2.1": "直線的向量、參數與對稱方程式。",
+    "KP2.2": "平面的法向量概念與標量方程式。",
+    "KP2.3": "直線與平面的交點計算方法。",
+    "KP2.4": "點到平面的距離公式推導與應用。",
+    "KP2.5": "常見二次曲面（柱面、橢球面、拋物面等）的識別。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "空間中通過兩點的直線有幾條？\n   - (A) 0 (B) 1 (C) 2 (D) 無限多",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "平面 $2x - 3y + z = 4$ 的法向量為？\n   - (A) $\\langle 2, -3, 1 \\rangle$ (B) $\\langle 2, 3, 1 \\rangle$ (C) $\\langle -2, 3, 4 \\rangle$ (D) $\\langle 1, 1, 1 \\rangle$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "若兩平面的法向量垂直，則這兩個平面？\n   - (A) 平行 (B) 重合 (C) 垂直 (D) 夾角為 45 度",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "方程式 $x^2 + y^2 = 9$ 在三維空間中代表？\n   - (A) 圓 (B) 球面 (C) 圓柱面 (D) 拋物面",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "直線 $\\frac{x-1}{2} = \\frac{y+2}{3} = z-4$ 的方向向量為？\n   - (A) $\\langle 1, -2, 4 \\rangle$ (B) $\\langle 2, 3, 0 \\rangle$ (C) $\\langle 2, 3, 1 \\rangle$ (D) $\\langle 1, 1, 1 \\rangle$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "點 $(0, 0, 0)$ 到平面 $x+y+z=1$ 的距離為？\n   - (A) 1 (B) $\\sqrt{3}$ (C) $1/\\sqrt{3}$ (D) 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "下列哪一個是橢球面的標準方程式？\n   - (A) $x^2+y^2-z^2=1$ (B) $x^2/4+y^2/9+z^2/1=1$ (C) $z=x^2+y^2$ (D) $x^2+y^2=z^2$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "若直線與平面平行，則直線的方向向量 $\\mathbf{v}$ 與平面的法向量 $\\mathbf{n}$ 關係為？\n   - (A) $\\mathbf{v} \\cdot \\mathbf{n} = 0$ (B) $\\mathbf{v} \\times \\mathbf{n} = \\mathbf{0}$ (C) $\\mathbf{v} = \\mathbf{n}$ (D) 以上皆非",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "兩平行平面 $x+y+z=1$ 與 $x+y+z=3$ 之間的距離為？\n   - (A) 2 (B) $2/\\sqrt{3}$ (C) $\\sqrt{2}$ (D) 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "通過點 $(1, 0, 0)$ 且平行於 $yz$ 平面的平面方程式為？\n    - (A) $y=0$ (B) $z=0$ (C) $x=1$ (D) $x+y+z=1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "關於直線方程式，下列哪些正確？\n    - (A) 向量式為 $\\mathbf{r} = \\mathbf{r}_0 + t\\mathbf{v}$ (B) 參數式中 $t$ 是實數參數 (C) 對稱式在分母為零時仍可寫出 (D) 直線由一點與方向向量唯一確定",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "哪些曲面的截面（Trace）包含橢圓？\n    - (A) 橢球面 (B) 橢圓拋物面 (C) 單葉雙曲面 (D) 圓柱面",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "平面 $ax + by + cz + d = 0$ 中，若 $d=0$ 則：\n    - (A) 平面通過原點 (B) 平面平行於 $z$ 軸 (C) 法向量為 $\\langle a, b, c \\rangle$ (D) 平面是垂直的",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "判定兩直線是否為「歪斜線 (Skew lines)」的條件包括：\n    - (A) 不平行 (B) 不相交 (C) 不共面 (D) 垂直",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "直線 $L_1$ 與 $L_2$ 平行的條件是其方向向量 $\\mathbf{v}_1, \\mathbf{v}_2$：\n    - (A) $\\mathbf{v}_1 = k \\mathbf{v}_2$ (B) $\\mathbf{v}_1 \\cdot \\mathbf{v}_2 = 0$ (C) $\\mathbf{v}_1 \\times \\mathbf{v}_2 = \\mathbf{0}$ (D) 夾角為 0 或 $\\pi$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "下列哪些是二次曲面？\n    - (A) 球面 (B) 雙曲拋物面 (C) 圓錐面 (D) 平面",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "關於點到平面距離公式 $D$，下列敘述正確的是：\n    - (A) 分母是法向量的長度 (B) 分子是點代入平面方程的絕對值 (C) 距離恆不為負 (D) 若點在平面上則 $D=0$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "若平面 $\\pi$ 通過點 $P, Q, R$，其法向量可以透過哪些運算得到？\n    - (A) $\\vec{PQ} \\times \\vec{PR}$ (B) $\\vec{QP} \\times \\vec{QR}$ (C) $\\vec{PQ} \\cdot \\vec{PR}$ (D) $\\vec{PQ} + \\vec{PR}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "二次曲面 $z = y^2 - x^2$ 的名稱是：\n    - (A) 雙曲拋物面 (B) 馬鞍面 (C) 橢圓拋物面 (D) 雙葉雙曲面",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "直線與平面的關係可能為：\n    - (A) 直線在平面上 (B) 直線與平面交於一點 (C) 直線與平面平行 (D) 直線與平面交於兩點但不重合",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "通過 $(0,0,0)$ 且方向向量為 $\\langle 1, 1, 1 \\rangle$ 的直線參數式為 $x=t, y=t, z=$ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "平面 $x - 2y + 2z = 6$ 到原點的距離為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "若兩平面平行，則它們的 __________ 向量必平行。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "曲面 $z = x^2 + y^2$ 在 $z=4$ 處的截面是一個半徑為 __________ 的圓。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "直線 $x=t, y=t, z=t$ 與平面 $x+y+z=3$ 的交點為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "空間中通過點 $(1, 1, 1)$ 且垂直於 $z$ 軸的平面方程式為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "單葉雙曲面 $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} - \\frac{z^2}{c^2} = 1$ 的對稱中心在 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "方程式 $y = x^2$ 在 3D 空間中代表 __________ 面。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "兩平面 $x+y=1$ 與 $x+y=2$ 的關係是 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "點到平面距離公式中，法向量不需要是單位向量，但分母必須除以其 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "course": "calculus1",
+  "week": "week1",
+  "title": "第 1 週 - 函數與模型 (Functions and Models)",
+  "knowledge_points": {
+    "KP1.1": "函數的四種表示法（視覺、代數、數值、語意）。",
+    "KP1.2": "基本函數分類（多項式、有理、代數、三角）。",
+    "KP1.3": "函數的平移（左右上下）與伸縮變換。",
+    "KP1.4": "指數函數 $a^x$ 的圖形特徵與底數 $e$。",
+    "KP1.5": "反函數的求法與對數函數 $\\ln x$ 的基本運算律。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "在 Google Colab 中執行以下代碼，觀察不同參數對圖形的影響。\n    ```python\n    import matplotlib.pyplot as plt\n    import numpy as np",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "函數有四種標準的表示方式（簡稱 **Rule of Four**）：\n    1.  **視覺法 (Visual)**：利用圖形（Graph）直觀呈現。\n    2.  **代數法 (Algebraic)**：利用明確的數學公式（Formula）表示，例如 $f(x) = x^2 + 1$。\n    3.  **數值法 (Numerical)**：利用數值表格（Table of values）列出輸入與輸出。\n    4.  **語意法 (Verbal)**：以文字描述規則，例如：「輸出值是輸入值平方後加一」。\n    因此，文字描述對應的是**語意法 (Verbal)**，故選 (D)。"
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "安裝並導入 SymPy。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "函數有四種標準的表示方式（簡稱 **Rule of Four**）：\n    1.  **視覺法 (Visual)**：利用圖形（Graph）直觀呈現。\n    2.  **代數法 (Algebraic)**：利用明確的數學公式（Formula）表示，例如 $f(x) = x^2 + 1$。\n    3.  **數值法 (Numerical)**：利用數值表格（Table of values）列出輸入與輸出。\n    4.  **語意法 (Verbal)**：以文字描述規則，例如：「輸出值是輸入值平方後加一」。\n    因此，文字描述對應的是**語意法 (Verbal)**，故選 (D)。"
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "求解函數的零點與反函數表達式。\n    ```python\n    import sympy as sp",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "一個函數若可以表示成兩個多項式函數相除的形式，即：\n    $$f(x) = \\frac{P(x)}{Q(x)}$$\n    其中 $P(x) = x+1$ 和 $Q(x) = x^2-4$ 都是多項式函數，則該函數定義為**有理函數 (Rational Function)**。\n    *   (A) 多項式函數：不能有分式或變數在分母（除非分母為常數）。\n    *   (C) 三角函數：包含 $\\sin x, \\cos x$ 等。\n    *   (D) 指數函數：變數在指數位置，例如 $a^x$。\n    故選 (B)。"
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "下列哪一種表示法是透過「文字」來描述函數規則？\n   - (A) 視覺法 (B) 代數法 (C) 數值法 (D) 語意法\n   - *答案*: D (KP1.1)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "函數有四種標準的表示方式（簡稱 **Rule of Four**）：\n    1.  **視覺法 (Visual)**：利用圖形（Graph）直觀呈現。\n    2.  **代數法 (Algebraic)**：利用明確的數學公式（Formula）表示，例如 $f(x) = x^2 + 1$。\n    3.  **數值法 (Numerical)**：利用數值表格（Table of values）列出輸入與輸出。\n    4.  **語意法 (Verbal)**：以文字描述規則，例如：「輸出值是輸入值平方後加一」。\n    因此，文字描述對應的是**語意法 (Verbal)**，故選 (D)。"
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "函數 $f(x) = \\frac{x+1}{x^2-4}$ 屬於哪一類函數？\n   - (A) 多項式函數 (B) 有理函數 (C) 三角函數 (D) 指數函數\n   - *答案*: B (KP1.2)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "一個函數若可以表示成兩個多項式函數相除的形式，即：\n    $$f(x) = \\frac{P(x)}{Q(x)}$$\n    其中 $P(x) = x+1$ 和 $Q(x) = x^2-4$ 都是多項式函數，則該函數定義為**有理函數 (Rational Function)**。\n    *   (A) 多項式函數：不能有分式或變數在分母（除非分母為常數）。\n    *   (C) 三角函數：包含 $\\sin x, \\cos x$ 等。\n    *   (D) 指數函數：變數在指數位置，例如 $a^x$。\n    故選 (B)。"
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "若將 $y=f(x)$ 的圖形向右平移 3 單位，新的方程式為？\n   - (A) $y=f(x)+3$ (B) $y=f(x)-3$ (C) $y=f(x+3)$ (D) $y=f(x-3)$\n   - *答案*: D (KP1.3)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "根據函數圖形變換規律（水平平移）：\n    *   **向右平移 $c$ 單位**：將自變數 $x$ 替換為 $(x - c)$。因為新的 $x$ 必須比原本大 $c$，其函數值才能與原本相同。即 $y = f(x - c)$。\n    *   **向左平移 $c$ 單位**：將自變數 $x$ 替換為 $(x + c)$。即 $y = f(x + c)$。\n    本題要求向右平移 3 單位，故應將 $x$ 替換為 $x-3$，方程式為 $y = f(x-3)$，選 (D)。"
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "$e$ 的近似值約為多少？\n   - (A) 3.14 (B) 2.718 (C) 1.414 (D) 1.618\n   - *答案*: B (KP1.4)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "自然對數底數 $e$（歐拉常數）是一個無理數，其定義為：\n    $$e = \\lim_{n \\to \\infty} \\left(1 + \\frac{1}{n}\\right)^n \\approx 2.7182818284\\dots$$\n    *   (A) 3.14 是圓周率 $\\pi$ 的近似值。\n    *   (C) 1.414 是 $\\sqrt{2}$ 的近似值。\n    *   (D) 1.618 是黃金比例 $\\phi$ 的近似值。\n    故選 (B)。"
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "$\\ln(e^5)$ 的值為多少？\n   - (A) 1 (B) 0 (C) 5 (D) $e$\n   - *答案*: C (KP1.5)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "自然對數 $\\ln x$ 是以 $e$ 為底的對數，即 $\\log_e x$。根據對數與指數的互逆性質：\n    $$\\ln(e^x) = x \\quad \\text{對於所有實數 } x$$\n    本題中 $x = 5$，因此：\n    $$\\ln(e^5) = 5$$\n    故選 (C)。"
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "下列哪一個函數在 $x=0$ 時沒有定義？\n   - (A) $y=x^2$ (B) $y=e^x$ (C) $y=\\ln x$ (D) $y=\\sin x$\n   - *答案*: C (KP1.5)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "對數函數 $y = \\ln x$ 的定義域是正實數集合，即 $(0, \\infty)$。當 $x \\le 0$ 時，$\\ln x$ 無實數定義。\n    *   (A) $y=x^2$ 在 $x=0$ 處值為 $0^2 = 0$。\n    *   (B) $y=e^x$ 在 $x=0$ 處值為 $e^0 = 1$。\n    *   (D) $y=\\sin x$ 在 $x=0$ 處值為 $\\sin(0) = 0$。\n    因此在 $x=0$ 無定義的是 $y=\\ln x$，選 (C)。"
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "若 $f(x) = 2x + 3$，則其反函數 $f^{-1}(x)$ 為？\n   - (A) $\\frac{x-3}{2}$ (B) $\\frac{x+3}{2}$ (C) $2x-3$ (D) $\\frac{1}{2x+3}$\n   - *答案*: A (KP1.5)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "要求反函數，先令 $y = f(x)$，接著解出 $x$：\n    $$y = 2x + 3$$\n    $$y - 3 = 2x$$\n    $$x = \\frac{y-3}{2}$$\n    將自變數與因變數符號互換（將 $y$ 換回 $x$），即可得到反函數：\n    $$f^{-1}(x) = \\frac{x-3}{2}$$\n    故選 (A)。"
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "多項式函數的定義域通常為何？\n   - (A) $(0, \\infty)$ (B) $(-\\infty, 0)$ (C) $(-\\infty, \\infty)$ (D) $[-1, 1]$\n   - *答案*: C (KP1.2)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "多項式函數的形式為 $P(x) = a_n x^n + a_{n-1} x^{n-1} + \\dots + a_1 x + a_0$。由於多項式中不包含變數在分母或在根號內等限制，任何實數代入皆能產生確定的實數輸出。因此，多項式函數的定義域為全體實數集合 $\\mathbb{R}$，即 $(-\\infty, \\infty)$，選 (C)。"
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "$\\ln(1)$ 的值是多少？\n   - (A) 1 (B) $e$ (C) 0 (D) 無定義\n   - *答案*: C (KP1.5)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "根據對數的定義，若 $\\ln(1) = y$，則代表 $e^y = 1$。\n    因為任何非零數的 0 次方都等於 1（即 $e^0 = 1$），所以：\n    $$y = 0 \\implies \\ln(1) = 0$$\n    故選 (C)。"
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "將 $y=x^2$ 對 x 軸進行反射後，方程式變為？\n    - (A) $y=x^2$ (B) $y=-x^2$ (C) $y=(-x)^2$ (D) $y=x^{-2}$\n    - *答案*: B (KP1.3)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "根據函數圖形的反射規律：\n    *   **對 x 軸反射（上下顛倒）**：函數值正負反轉，即將 $y$ 替換為 $-y$（或直接在右側乘以 $-1$），得到 $y = -f(x)$。\n    *   **對 y 軸反射（左右相反）**：自變數正負反轉，即將 $x$ 替換為 $-x$，得到 $y = f(-x)$。\n    本題要求對 x 軸反射，因此方程式變為 $y = -x^2$，選 (B)。\n\n---"
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "關於函數的四種表示法，哪些描述正確？\n    - (A) 視覺法能一眼看出增減趨勢 (B) 代數法最精確 (C) 數值法一定能表現出所有定義域的點 (D) 語意法能用生活化語言解釋\n    - *答案*: A, B, D (KP1.1)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "*   (A) **正確**：視覺法（圖形）非常直觀，適合快速判斷函數的單調性（上升或下降）與極值。\n    *   (B) **正確**：代數法（公式）提供了無窮解析度，是數學分析中最精確的工具。\n    *   (C) **錯誤**：數值法（表格）通常只能列出有限個點，對於定義域為實數全集等無窮集合的函數，無法表現出所有定義域的點。\n    *   (D) **正確**：語意法（文字）在物理、經濟應用中極為實用，能以生活化語言傳達實際關係。\n    故選 A, B, D。"
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "下列哪些是「超越函數 (Transcendental functions)」？\n    - (A) 三角函數 (B) 指數函數 (C) 多項式函數 (D) 對數函數\n    - *答案*: A, B, D (KP1.2)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "非代數函數的函數統稱為**超越函數 (Transcendental Function)**。這類函數「超越」了代數加、減、乘、除、乘方、開方的運算範圍。\n    *   (A) 三角函數（如 $\\sin x, \\cos x$）、(B) 指數函數（如 $e^x$）、(D) 對數函數（如 $\\ln x$）均不屬於代數函數，皆為超越函數。\n    *   (C) 多項式函數是代數函數中最基礎的一種。\n    故選 A, B, D。"
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "若 $c > 1$，則 $y = c f(x)$ 的圖形相對於 $y = f(x)$ 發生了什麼？\n    - (A) 鉛直伸張 (B) 鉛直壓縮 (C) 遠離 x 軸 (D) 靠近 x 軸\n    - *答案*: A, C (KP1.3)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "對於變換 $y = c f(x)$：\n    *   因為 $c > 1$，所有函數輸出值被放大 $c$ 倍，在幾何上這稱為**鉛直伸張 (Vertical Stretch)**。\n    *   由於高度被放大，圖形上的每個點（除了 $y=0$ 的點之外）都會在鉛直方向上**遠離 x 軸**。\n    *   若 $0 < c < 1$，則會發生鉛直壓縮 (Vertical Compression)，點會靠近 x 軸。\n    因此答案為 A, C。"
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "指數函數 $f(x) = a^x$ (當 $a > 1$) 的性質包括：\n    - (A) 定義域為實數全集 (B) 恆大於 0 (C) 是遞增函數 (D) 圖形通過 (0, 1)\n    - *答案*: A, B, C, D (KP1.4)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "當底數 $a > 1$ 時，指數函數 $y = a^x$ 具備下列優良幾何與代數性質：\n    *   (A) **正確**：定義域為 $\\mathbb{R}$，即 $(-\\infty, \\infty)$。\n    *   (B) **正確**：因為正數的任何實數次方皆為正數，值域為 $(0, \\infty)$，函數值恆大於 0。\n    *   (C) **正確**：隨著 $x$ 變大，$a^x$ 不斷相乘而增長，是嚴格單調遞增函數。\n    *   (D) **正確**：當 $x=0$ 時，$a^0 = 1$，因此圖形必然通過點 $(0, 1)$。\n    故選 A, B, C, D。"
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "下列哪些是有效的對數運算律？\n    - (A) $\\ln(a+b) = \\ln a + \\ln b$ (B) $\\ln(ab) = \\ln a + \\ln b$ (C) $\\ln(a/b) = \\ln a - \\ln b$ (D) $\\ln(a^b) = b \\ln a$\n    - *答案*: B, C, D (KP1.5)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "對數的運算規律是從指數性質推導而來的（假設 $a, b > 0$）：\n    *   (B) **正確**：積的對數等於對數的和：$\\ln(ab) = \\ln a + \\ln b$。\n    *   (C) **正確**：商的對數等於對數的差：$\\ln(a/b) = \\ln a - \\ln b$。\n    *   (D) **正確**：冪次的對數等於冪次提前：$\\ln(a^b) = b \\ln a$。\n    *   (A) **錯誤**：$\\ln(a+b)$ 無法進一步拆分，這是常見的代數陷阱！\n    故選 B, C, D。"
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "下列哪些函數在其定義域內是一對一函數（即存在反函數）？\n    - (A) $y = x^3$ (B) $y = e^x$ (C) $y = x^2$ (D) $y = \\ln x$\n    - *答案*: A, B, D (KP1.5)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "函數具備反函數的充要條件是它是**一對一函數 (One-to-One Function)**，也就是通過**水平線測試 (Horizontal Line Test)**：任意水平線與函數圖形最多只能交於一點。\n    *   (A) $y = x^3$：嚴格單調遞增，任何水平線只交一點，存在反函數 $y = \\sqrt[3]{x}$。\n    *   (B) $y = e^x$：嚴格單調遞增，存在反函數 $y = \\ln x$。\n    *   (D) $y = \\ln x$：嚴格單調遞增，存在反函數 $y = e^x$。\n    *   (C) $y = x^2$：不是一對一函數，例如 $x = -1$ 與 $x = 1$ 的輸出皆為 $1$，水平線 $y=1$ 與其交於兩點。因此在全定義域上無反函數（除非限制定義域至 $[0, \\infty)$）。\n    故選 A, B, D。"
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "關於 $y = \\sin x$ 的描述，哪些正確？\n    - (A) 是週期函數 (B) 值域為 $[-1, 1]$ (C) 屬於代數函數 (D) $x$ 通常使用弧度\n    - *答案*: A, B, D (KP1.2)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "*   (A) **正確**：正弦函數為週期函數，其最小正週期為 $2\\pi$。\n    *   (B) **正確**：正弦值受到單位圓投影限制，最大為 1，最小為 -1，值域為 $[-1, 1]$。\n    *   (C) **錯誤**：三角函數是超越函數，非代數函數。\n    *   (D) **正確**：在微積分中，若無特別說明，所有三角函數的自變數 $x$ 均預設以**弧度 (Radians)** 為單位，這有利於簡化微分公式（如 $\\lim_{h\\to 0} \\frac{\\sin h}{h} = 1$ 只在弧度制下成立）。\n    故選 A, B, D。"
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "進行函數變換時，哪些操作會影響圖形的水平位置？\n    - (A) $f(x+c)$ (B) $f(x)+c$ (C) $f(cx)$ (D) $cf(x)$\n    - *答案*: A, C (KP1.3)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "*   直接對**自變數 $x$** 進行的操作會影響水平方向（沿 x 軸）：\n        - (A) $f(x+c)$：水平平移。\n        - (C) $f(cx)$：水平伸縮。\n    *   對**整個函數值 $f(x)$** 進行的操作會影響鉛直方向（沿 y 軸）：\n        - (B) $f(x)+c$：鉛直平移。\n        - (D) $cf(x)$：鉛直伸縮。\n    因此，影響水平位置的為 A, C。"
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "自然對數 $\\ln x$ 的圖形特徵包括：\n    - (A) 通過 (1, 0) (B) 以 y 軸為垂直漸近線 (C) 定義域為 $x > 0$ (D) 是 $e^x$ 的對稱圖形（相對於 $y=x$）\n    - *答案*: A, B, C, D (KP1.5)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "對數函數 $y = \\ln x$ 作為 $y = e^x$ 的反函數，具備以下對稱與幾何特徵：\n    *   (A) **正確**：由於 $e^0 = 1$，對應地 $\\ln(1) = 0$，圖形必通過 $(1, 0)$。\n    *   (B) **正確**：當 $x \\to 0^+$ 時，$\\ln x \\to -\\infty$，故直線 $x=0$（y 軸）為其垂直漸近線。\n    *   (C) **正確**：負數與零無對數，定義域為 $(0, \\infty)$。\n    *   (D) **正確**：互為反函數的兩函數，其圖形必然相對於 45 度對角線 $y = x$ 呈鏡像對稱。\n    故選 A, B, C, D。"
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "下列哪些屬於多項式函數？\n    - (A) $y = 3x^2 + 5$ (B) $y = \\sqrt{x}$ (C) $y = x^5 - x + 1$ (D) $y = 2/x$\n    - *答案*: A, C (KP1.2)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "多項式函數的自變數 $x$ 必須僅包含非負整數次冪。\n    *   (A) $y = 3x^2 + 5$：最高次冪為 2（整數），是多項式（二次函數）。\n    *   (C) $y = x^5 - x + 1$：最高次冪為 5（整數），是多項式（五次函數）。\n    *   (B) $y = \\sqrt{x} = x^{1/2}$：次冪為分數，屬於代數函數（根式函數），非多項式。\n    *   (D) $y = 2/x = 2x^{-1}$：次冪為負數，屬於有理函數，非多項式。\n    故選 A, C。\n\n---"
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "函數 $f(x) = \\sqrt{x}$ 的定義域為 __________ (使用區間符號)。\n    - *答案*: $[0, \\infty)$ (KP1.2)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "在實數範圍內，偶次方根號（如平方根）底下的被開方式必須大於或等於零：\n    $$x \\ge 0$$\n    以區間符號表示，包含左端點 $0$ 且向右無限延伸，即為 $[0, \\infty)$。"
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "將 $y=f(x)$ 向上平移 5 單位，得到的方程式為 __________。\n    - *答案*: $y=f(x)+5$ (KP1.3)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "根據圖形鉛直平移變換規律，若要將整個圖形向上抬升 $k$ 單位，只需在原函數的輸出值上直接加上常數 $k$。因此向上平移 5 單位的方程式即為 $y = f(x) + 5$。"
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "$\\ln e = $ __________。\n    - *答案*: 1 (KP1.5)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "自然對數 $\\ln e$ 的底數為 $e$。\n    根據對數基本性質，底數與真數相同時，對數值為 1：\n    $$\\log_a a = 1 \\implies \\ln e = \\log_e e = 1$$\n    這是因為 $e^1 = e$。"
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "指數函數 $f(x) = 2^x$ 與 $g(x) = (1/2)^x$ 的圖形相對於 __________ 軸對稱。\n    - *答案*: y (KP1.4)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "我們可以將 $g(x)$ 改寫為：\n    $$g(x) = \\left(\\frac{1}{2}\\right)^x = (2^{-1})^x = 2^{-x}$$\n    比較 $f(x) = 2^x$ 與 $g(x) = 2^{-x}$，可以發現其自變數相差一個負號（即 $g(x) = f(-x)$）。\n    自變數變為相反數對應的幾何變換是**對 y 軸進行反射**。因此兩函數圖形相對於 y 軸左右對稱。"
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "若 $f(x) = \\ln(x-1)$，則其定義域為 $x > $ __________。\n    - *答案*: 1 (KP1.5)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "對數函數的真數部分必須嚴格大於零：\n    $$x - 1 > 0 \\implies x > 1$$\n    因此定義域為所有大於 1 的實數。"
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "代數法表示函數時，若一輸入對應多個輸出，則該規則 __________ (是/不是) 函數。\n    - *答案*: 不是 (KP1.1)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "根據函數的嚴格定義，定義域中的每一個輸入值 $x$，在值域中必須有且僅有**唯一確定 (Unique)** 的輸出值 $y$ 與之對應（即「一對一」或「多對一」關係）。若一個輸入值對應多個不同的輸出值（一對多關係，如圓的方程式 $x^2+y^2=1$），則該規則在數學上**不是**函數。"
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "$\\log_{10} 100 = $ __________。\n    - *答案*: 2 (KP1.5)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "這題尋找 10 的幾次方等於 100。\n    因為：\n    $$100 = 10^2$$\n    所以：\n    $$\\log_{10} 100 = 2$$"
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "有理函數是由兩個 __________ 函數相除構成。\n    - *答案*: 多項式 (KP1.2)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "有理函數（Rational Function）的定義即為兩個多項式（Polynomial）函數相除所構成的函數。"
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "將 $y=f(x)$ 圖形水平伸張為原來的 2 倍（即變寬），應將 $x$ 代換為 __________。\n    - *答案*: $x/2$ (KP1.3)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "根據水平伸縮變換規律：若要將圖形沿著水平（x 軸）方向伸張（擴大）為原來的 $a$ 倍，需要將自變數 $x$ 替換為 $\\frac{x}{a}$。\n    因此，水平伸張 2 倍時，應將 $x$ 代換為 $x/2$。"
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "函數 $y = e^x$ 的值域為 __________ (使用區間符號)。\n    - *答案*: $(0, \\infty)$ (KP1.4)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "底數 $e \\approx 2.718 > 0$。一個正數不論取何種實數次方，其結果永遠是嚴格大於零的正數。\n    當 $x \\to \\infty$ 時，$e^x \\to \\infty$；當 $x \\to -\\infty$ 時，$e^x \\to 0$。\n    因此，函數輸出的值域範圍不包含 0，為大於 0 的所有實數，區間表示為 $(0, \\infty)$。\n\n---"
+    }
+  ]
+}

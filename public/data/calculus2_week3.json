@@ -1,0 +1,314 @@
+{
+  "course": "calculus2",
+  "week": "week3",
+  "title": "第 3 週 - 積分技巧 I：分部積分與三角積分",
+  "knowledge_points": {
+    "KP3.1": "分部積分公式 $\\int u dv = uv - \\int v du$。",
+    "KP3.2": "表格法簡化多次分部積分。",
+    "KP3.3": "$\\sin^m \\cos^n$ 積分中奇偶次數的處理策略。",
+    "KP3.4": "$\\tan^m \\sec^n$ 積分中 $\\sec^2$ 或 $\\sec \\tan$ 的提取技巧。",
+    "KP3.5": "循環積分的方程解法。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "分部積分法公式為？ (A) $\\int f \\cdot g = \\int f \\cdot \\int g$ (B) $uv - \\int v du$ (C) $uv + \\int v du$ (D) $f'g + fg'$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\int u dv = uv - \\int v du$。"
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "計算 $\\int \\ln x dx$ 時，$u$ 應選取？ (A) $x$ (B) $dx$ (C) $\\ln x$ (D) $1/x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "根據 LIATE，對數函數優先選為 $u$。令 $u = \\ln x, dv = dx$。"
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "使用 LIATE 法則，哪類函數在選取 $u$ 時優先度最高？ (A) 代數 (B) 指數 (C) 對數 (D) 三角",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "L (Logarithmic) > I (Inverse Trig) > A (Algebraic) > T (Trigonometric) > E (Exponential)。"
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "$\\int x e^x dx = $？ (A) $(x-1)e^x+C$ (B) $(x+1)e^x+C$ (C) $x^2e^x/2+C$ (D) $e^x+C$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$u=x, dv=e^x dx \\implies uv - \\int v du = x e^x - \\int e^x dx = x e^x - e^x + C = (x-1)e^x + C$。"
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "表格法最適合處理哪種組合？ (A) $\\ln x / x$ (B) $x^3 \\sin x$ (C) $e^x \\cos x$ (D) $\\tan^{-1} x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "表格法適合多項式（次數有限，微分趨於 0）乘以指數或三角函數。"
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "計算 $\\int \\sin^2 x \\cos^3 x dx$ 時，應令 $u = $？ (A) $\\sin x$ (B) $\\cos x$ (C) $\\tan x$ (D) $\\sin^2 x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "因為 $\\cos$ 次數為奇數，保留一個 $\\cos x$，將 $\\cos^2$ 化為 $1-\\sin^2$，令 $u = \\sin x$。"
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "$\\int \\sec^2 x dx = $？ (A) $\\sec x \\tan x$ (B) $\\tan x$ (C) $\\ln|\\sec x|$ (D) $\\sec x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "這是基本導函數的反向運算：$(\\tan x)' = \\sec^2 x$。"
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "下列哪一個是 $\\sin^2 x$ 的倍角公式？ (A) $(1-\\cos 2x)/2$ (B) $(1+\\cos 2x)/2$ (C) $2\\sin x \\cos x$ (D) $\\cos^2 x - 1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\sin^2 x = \\frac{1-\\cos 2x}{2}$。"
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "$\\int \\tan x dx = $？ (A) $\\sec^2 x$ (B) $\\ln|\\sec x|+C$ (C) $\\ln|\\sin x|+C$ (D) $-\\sec^2 x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\int \\frac{\\sin x}{\\cos x} dx = -\\ln|\\cos x| + C = \\ln|\\sec x| + C$。"
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "循環積分通常發生在什麼組合？ (A) $x \\ln x$ (B) $e^x \\sin x$ (C) $x^2 e^x$ (D) $\\sin^3 x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "指數函數乘以三角函數（如 $e^x \\sin x$）在兩次分部積分後會回到原式。\n\n---"
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "下列哪些積分通常使用分部積分法？ (A) $\\int x \\sin x dx$ (B) $\\int x \\ln x dx$ (C) $\\int \\tan^{-1} x dx$ (D) $\\int e^{x^2} dx$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(A, B) 為典型的 LIATE 組合；(C) $\\arctan x \\cdot 1$；(D) $\\int e^{x^2} dx$ 無初等函數解，不可用分部積分求得。"
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "關於三角積分 $\\int \\sin^m x \\cos^n x dx$，正確敘述包括： (A) $n$ 奇數則提取 $\\cos x$ (B) $m$ 奇數則提取 $\\sin x$ (C) 皆為偶數則用倍角公式 (D) 任何情況都能用代換 $u = \\tan x$ 解決",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(A, B) 為奇數次方的提取策略；(C) 偶數次方需降次；(D) 錯誤，$u=\\tan x$ 通常用於 $\\sec$ 為偶數的情況。"
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "分部積分中 $v du$ 的部分： (A) 必須比原積分容易處理 (B) 可以是循環形式 (C) 決定了計算能否完成 (D) 必須是多項式",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(A) 這是分部積分的目的；(B) 如循環積分；(C) $v du$ 若無法積分則分部積分失敗；(D) 錯誤。"
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "下列積分結果正確的有： (A) $\\int x \\cos x dx = x\\sin x + \\cos x + C$ (B) $\\int \\ln x dx = x\\ln x - x + C$ (C) $\\int \\sin^2 x dx = \\frac{x}{2} - \\frac{\\sin 2x}{4} + C$ (D) $\\int \\sec x dx = \\ln|\\sec x + \\tan x| + C$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "皆為課本常見的重要積分公式與基本題型結果。"
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "表格法中： (A) $u$ 欄應選微分後能趨向 0 的函數 (B) 符號必須正負交替 (C) 最後一行若不為 0 則需以積分形式結尾 (D) 只適用於多項式乘以指數",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(A, B, C) 皆為表格法正確操作步驟；(D) 錯誤，不限於指數。"
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "下列恆等式在三角積分中常用： (A) $\\sin^2 x + \\cos^2 x = 1$ (B) $\\sec^2 x = 1 + \\tan^2 x$ (C) $\\sin x \\cos x = \\frac{1}{2}\\sin 2x$ (D) $2\\cos^2 x = 1 + \\cos 2x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "皆為三角函數降次與變換的核心公式。"
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "對於 $\\int e^{2x} \\cos 3x dx$： (A) 是一個循環積分 (B) 需要兩次分部積分 (C) $u$ 選 $e^{2x}$ 或 $\\cos 3x$ 皆可 (D) 可以用表格法直接求出最終解",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "(A, B) 指數與三角組合具循環性；(C) 選誰為 $u$ 只影響中間過程；(D) 表格法需以積分結尾，不能「直接」求出，需列方程。"
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "積分 $\\int \\tan^3 x \\sec x dx$： (A) tan 次數為奇數 (B) 提取 $\\sec x \\tan x$ (C) 將剩餘 $\\tan^2$ 化為 $\\sec^2 - 1$ (D) 令 $u = \\sec x$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "tan 次數為奇數時，提取 $\\sec x \\tan x$ 並令 $u = \\sec x$ 是標準作法。"
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "關於 $\\int \\sec^3 x dx$： (A) 常用分部積分處理 (B) 是一個循環積分 (C) 常用於弧長計算 (D) 結果包含 $\\ln|\\sec x + \\tan x|$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "這是三角積分中最著名的循環積分題型，常用於求曲線弧長。"
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "定積分的分部積分公式滿足： (A) $[uv]_a^b - \\int_a^b v du$ (B) 必須先求出不定積分再代值 (C) 代換過程可能改變上下限 (D) 幾何意義與區域面積相關",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "定積分公式 $[uv]_a^b - \\int_a^b v du$ 涵蓋了所有選項描述。\n\n---"
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "$\\int x \\sin x dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$u=x, dv=\\sin x dx \\implies -x \\cos x - \\int (-\\cos x) dx$。"
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "表格法計算 $\\int x^2 \\sin x dx$，符號序列為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "表格法正負交替。"
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "$\\int \\cos^2 x dx = $ __________ (以 $x$ 與 $\\sin 2x$ 表示)。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\int \\frac{1+\\cos 2x}{2} dx = \\frac{x}{2} + \\frac{1}{2} \\cdot \\frac{\\sin 2x}{2}$。"
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "計算 $\\int \\sec^4 x dx$ 時，可令 $u = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\sec$ 次數為偶數，保留 $\\sec^2$ 給 $du$。"
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "LIATE 法則中，'A' 代表 __________ 函數。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "LIATE 縮寫。"
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "$\\int \\ln(2x) dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "與 $\\int \\ln x dx$ 類似。"
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "$\\int \\sin x \\cos x dx = $ __________ (使用 $\\sin 2x$ 表示)。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\int \\frac{1}{2}\\sin 2x dx = -\\frac{1}{4}\\cos 2x$。"
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "$\\int \\tan^2 x dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$\\int (\\sec^2 x - 1) dx$。"
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "若 $\\int u dv = x^2 e^x - \\int 2x e^x dx$，則 $u = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "根據分部積分公式開頭部分。"
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "$\\int_1^e \\ln x dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": "$[x\\ln x - x]_1^e = (e-e) - (0-1) = 1$。\n\n---"
+    }
+  ]
+}

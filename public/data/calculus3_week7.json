@@ -1,0 +1,314 @@
+{
+  "course": "calculus3",
+  "week": "week7",
+  "title": "第 7 週 - 拉格朗日乘數法 (Lagrange Multipliers)",
+  "knowledge_points": {
+    "KP7.1": "拉格朗日法的幾何意義：梯度平行。",
+    "KP7.2": "單約束方程組：$\\nabla f = \\lambda \\nabla g, g=k$。",
+    "KP7.3": "多約束方程組：$\\nabla f = \\lambda \\nabla g + \\mu \\nabla h$。",
+    "KP7.4": "距離問題中最小化 $d^2$ 的技巧。",
+    "KP7.5": "拉格朗日乘數 $\\lambda$ 的物理/經濟含義。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "拉格朗日法的基本前提是 $\\nabla f$ 與 $\\nabla g$ 必須？\n   - (A) 垂直 (B) 平行 (C) 相加為零 (D) 長度相等",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "在拉格朗日方程 $\\nabla f = \\lambda \\nabla g$ 中，$\\lambda$ 稱為？\n   - (A) 衰減因子 (B) 特徵值 (C) 乘數 (D) 偏導",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "若約束條件為 $x^2 + y^2 = 1$，則其梯度 $\\nabla g$ 為？\n   - (A) $\\langle x, y \\rangle$ (B) $\\langle 2x, 2y \\rangle$ (C) $\\langle 1, 1 \\rangle$ (D) $2x+2y$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "拉格朗日法主要用於尋找什麼類型的極值？\n   - (A) 無約束極值 (B) 條件極值 (C) 離散極值 (D) 二階極值",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "當有兩個約束 $g=k$ 與 $h=c$ 時，需要幾個乘數？\n   - (A) 1 個 (B) 2 個 (C) 3 個 (D) 不需要",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "若解得 $\\lambda = 0$，這通常意味著？\n   - (A) 無解 (B) 極值點同時也是無約束極值點 (C) 約束無效 (D) 計算錯誤",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "在體積最大的長方體問題中（表面積固定），最優形狀通常是？\n   - (A) 長板狀 (B) 球狀 (C) 正方體 (D) 圓柱體",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "下列哪個方程式不屬於單約束拉格朗日方程組？\n   - (A) $f_x = \\lambda g_x$ (B) $f_y = \\lambda g_y$ (C) $g(x, y) = k$ (D) $f(x, y) = k$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "拉格朗日法求得的點一定是？\n   - (A) 極大值點 (B) 極小值點 (C) 候選極值點 (D) 鞍點",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "經濟學中的「邊際效用」對應拉格朗日法中的？\n    - (A) $x$ (B) $y$ (C) $\\lambda$ (D) $U$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "下列關於拉格朗日法的描述哪些正確？\n    - (A) 它可以處理多個約束 (B) 它不需要顯式解出 $y=h(x)$ (C) 它利用了等值線相切的性質 (D) 它保證能找到絕對極值",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "求解 $\\nabla f = \\lambda \\nabla g$ 時，若 $\\nabla g = \\mathbf{0}$：\n    - (A) 拉格朗日法可能失效 (B) 該點可能是約束條件的奇異點 (C) 必須單獨檢查該點 (D) 該點一定是極值點",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "關於兩個約束 $\\nabla f = \\lambda \\nabla g + \\mu \\nabla h$，下列敘述正確的有：\n    - (A) $\\nabla g$ 與 $\\nabla h$ 必須不平行 (B) 方程組包含 5 個變數 (C) 對應空間曲線的相切 (D) 只能求極大值",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "哪些問題適合用拉格朗日法解決？\n    - (A) 預算限制下的消費決策 (B) 周長固定下的面積最大化 (C) 點到曲面的最短距離 (D) 求解 $x^2+y^2$ 的最小值（無約束）",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "乘數 $\\lambda$ 的數值意義包括：\n    - (A) 約束常數 $k$ 改變時，極值的變化率 (B) 靈敏度分析 (C) 影子價格 (D) 函數的斜率",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "解決拉格朗日問題時常遇到的困難有：\n    - (A) 方程組是非線性的 (B) 變數太多 (C) 難以判斷是極大還是極小 (D) $\\lambda$ 無法消去",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "關於 $f(x, y) = xy$ 在 $x^2+y^2=1$ 下的極值：\n    - (A) 極大值為 1/2 (B) 極小值為 -1/2 (C) 共有 4 個候選點 (D) 解點在 $y = \\pm x$ 上",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "若目標函數 $f$ 是線性的，而約束 $g=k$ 是二次的：\n    - (A) 極值點一定在邊界上 (B) 可能有極大也有極小 (C) 梯度 $\\nabla f$ 是常數向量 (D) 無解",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "下列哪些是正確的梯度關係？\n    - (A) $\\nabla f \\perp$ 等值面 (B) $\\nabla g \\perp$ 約束面 (C) 極值時 $\\nabla f \\parallel \\nabla g$ (D) $\\nabla f \\cdot \\nabla g = 0$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "在 3D 空間中，一個約束條件定義了一個？\n    - (A) 點 (B) 曲線 (C) 曲面 (D) 區域",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "拉格朗日法的基本方程是 $\\nabla f = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "若有 $n$ 個變數與 $m$ 個約束，則拉格朗日方程組共有 __________ 個方程。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "目標函數 $f(x, y) = x+y$，約束 $x^2+y^2=1$，則 $\\nabla f = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "在求點 $(x_0, y_0, z_0)$ 到面 $g=0$ 的最短距離時，目標函數通常設為 $f = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "若 $\\nabla f$ 與 $\\nabla g$ 方向相反，則 $\\lambda$ 的值為 __________ (填「正」或「負」)。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "拉格朗日乘數 $\\lambda$ 在物理中常代表 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "兩個約束 $\\nabla f = \\lambda \\nabla g + \\mu \\nabla h$ 中，$\\mu$ 也是一個 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "約束條件 $x^2+y^2 \\leq 1$ 是一個 __________ 區域（包含內部），不能直接只用拉格朗日法。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "解方程組時，若能先消去 __________ 往往能簡化運算。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "$f$ 的等值線與 $g$ 的等值線相切時，它們的 __________ 線重合。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

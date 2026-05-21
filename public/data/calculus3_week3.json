@@ -1,0 +1,314 @@
+{
+  "course": "calculus3",
+  "week": "week3",
+  "title": "第 3 週 - 向量函數與空間曲線 (Vector Functions and Space Curves)",
+  "knowledge_points": {
+    "KP3.1": "向量函數的定義、極限與空間曲線的概念。",
+    "KP3.2": "向量函數的導數（切向量）與積分。",
+    "KP3.3": "空間曲線的弧長積分公式。",
+    "KP3.4": "單位切向量 $\\mathbf{T}$ 與單位法向量 $\\mathbf{N}$ 的定義及其垂直性。",
+    "KP3.5": "曲率 $\\kappa$ 的幾何意義及其計算公式。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "向量函數 $\\mathbf{r}(t) = \\langle \\cos t, \\sin t, t \\rangle$ 的圖形名稱是？\n   - (A) 圓 (B) 直線 (C) 螺旋線 (D) 拋物線",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "若 $\\mathbf{r}(t) = \\langle t, t^2, t^3 \\rangle$，則 $\\mathbf{r}'(t) =$？\n   - (A) $\\langle 1, 2t, 3t^2 \\rangle$ (B) $\\langle 1, 1, 1 \\rangle$ (C) $t + t^2 + t^3$ (D) $\\sqrt{1+4t^2+9t^4}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "單位切向量 $\\mathbf{T}(t)$ 的長度恆為？\n   - (A) 0 (B) 1 (C) $t$ (D) 不固定",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "直線的曲率 $\\kappa$ 為？\n   - (A) 1 (B) 0 (C) $\\infty$ (D) 與斜率有關",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "弧長參數 $s(t)$ 的微分 $ds/dt$ 等於？\n   - (A) $\\mathbf{r}'(t)$ (B) $|\\mathbf{r}'(t)|$ (C) $\\mathbf{r}''(t)$ (D) $\\kappa$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "若 $\\mathbf{r}(t) = \\langle 3t, 4t, 0 \\rangle$，其弧長積分中的速度 $|\\mathbf{r}'(t)|$ 為？\n   - (A) 3 (B) 4 (C) 5 (D) 7",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "單位法向量 $\\mathbf{N}(t)$ 的方向與 $\\mathbf{T}'(t)$ 的關係是？\n   - (A) 相反 (B) 垂直 (C) 相同 (D) 無關",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "半徑為 5 的圓，其曲率為？\n   - (A) 5 (B) 25 (C) 0.2 (D) 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "$\\int \\langle t, 1, 0 \\rangle dt$ 的結果包含？\n   - (A) $t^2/2$ (B) $t^2$ (C) $\\ln t$ (D) $1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "空間曲線 $\\mathbf{r}(t)$ 為光滑曲線 (Smooth) 的條件是 $\\mathbf{r}'(t)$：\n    - (A) 等於 $\\mathbf{0}$ (B) 不等於 $\\mathbf{0}$ 且連續 (C) 為常數 (D) 不存在",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "關於向量函數導數的性質，哪些正確？\n    - (A) $\\frac{d}{dt}[\\mathbf{u}(t) \\cdot \\mathbf{v}(t)] = \\mathbf{u}' \\cdot \\mathbf{v} + \\mathbf{u} \\cdot \\mathbf{v}'$\n    - (B) $\\frac{d}{dt}[\\mathbf{u}(t) \\times \\mathbf{v}(t)] = \\mathbf{u}' \\times \\mathbf{v} + \\mathbf{u} \\times \\mathbf{v}'$\n    - (C) $\\frac{d}{dt}[f(t)\\mathbf{u}(t)] = f'(t)\\mathbf{u} + f(t)\\mathbf{u}'$\n    - (D) $\\frac{d}{dt}|\\mathbf{u}(t)| = |\\mathbf{u}'(t)|$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "下列哪些向量在曲線任一點處互相垂直？\n    - (A) $\\mathbf{T}(t)$ 與 $\\mathbf{N}(t)$ (B) $\\mathbf{T}(t)$ 與 $\\mathbf{r}'(t)$ (C) $\\mathbf{N}(t)$ 與 $\\mathbf{B}(t)$ (D) $\\mathbf{T}(t)$ 與 $\\mathbf{B}(t)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "曲率 $\\kappa$ 可以表示為：\n    - (A) $|d\\mathbf{T}/ds|$ (B) $|\\mathbf{T}'(t)|/|\\mathbf{r}'(t)|$ (C) $|\\mathbf{r}' \\times \\mathbf{r}''|/|\\mathbf{r}'|^3$ (D) $1/\\rho$ ($\\rho$ 為曲率半徑)",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "若一質點沿曲線運動，其路徑長度與哪些因素有關？\n    - (A) 運動的時間區間 (B) 速度的大小 (C) 起點的坐標 (D) 加速度的方向",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "向量函數 $\\mathbf{r}(t) = \\langle t, \\sin t, 2 \\rangle$ 在 $z=2$ 平面上。這意味著：\n    - (A) 它是平面曲線 (B) 它的 $z$ 分量導數為 0 (C) 它的法向量 $\\mathbf{N}$ 在 $z$ 方向為 0 (D) 曲率恆為 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "螺旋線 $\\mathbf{r}(t) = \\langle a\\cos t, a\\sin t, bt \\rangle$ 的性質包括：\n    - (A) 投影在 $xy$ 平面是圓 (B) 速度大小為常數 (C) 曲率為常數 (D) 它是直線",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "關於弧長參數 $s$，下列敘述正確的是：\n    - (A) $|\\frac{d\\mathbf{r}}{ds}| = 1$ (B) $s$ 是從某固定點開始計算的長度 (C) $s$ 與 $t$ 無關 (D) 使用 $s$ 參數化時，切向量即為單位切向量",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "若 $\\mathbf{r}'(t) \\cdot \\mathbf{r}''(t) = 0$，則：\n    - (A) 速度大小為常數 (B) 切線加速度為 0 (C) 加速度垂直於速度 (D) 曲率為 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "下列哪些函數代表同一條空間曲線（僅參數化不同）？\n    - (A) $\\mathbf{r}(t) = \\langle t, t^2, t^3 \\rangle$\n    - (B) $\\mathbf{r}(u) = \\langle e^u, e^{2u}, e^{3u} \\rangle$ (當 $t>0$)\n    - (C) $\\mathbf{r}(s) = \\langle s^2, s^4, s^6 \\rangle$\n    - (D) $\\mathbf{r}(w) = \\langle \\sin w, \\sin^2 w, \\sin^3 w \\rangle$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "求空間曲線交點時，正確的步驟包括：\n    - (A) 令兩曲線的 $x, y, z$ 分量分別相等 (B) 使用不同的參數名（如 $t$ 與 $s$） (C) 求解參數方程組 (D) 只需考慮 $x$ 坐標相等",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "若 $\\mathbf{r}(t) = \\langle 2t, t^2, \\ln t \\rangle$，則 $\\mathbf{r}(1) = \\langle 2, 1, $ __________ $\\rangle$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "圓 $x^2 + y^2 = 1$ 的曲率 $\\kappa = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "向量函數 $\\mathbf{r}(t)$ 的二階導數 $\\mathbf{r}''(t)$ 在物理上代表 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "計算 $\\int_0^1 \\langle t, t^2, t^3 \\rangle dt = \\langle 1/2, 1/3, $ __________ $\\rangle$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "單位切向量 $\\mathbf{T}(t)$ 的微分 $\\mathbf{T}'(t)$ 始終與 $\\mathbf{T}(t)$ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "弧長 $L = \\int_a^b \\sqrt{ (x')^2 + (y')^2 + (z')^2 } dt$。其中 $x', y', z'$ 是對 __________ 的導數。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "曲率半徑 $\\rho$ 與曲率 $\\kappa$ 的關係為 $\\rho = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "螺旋線 $\\mathbf{r}(t) = \\langle \\cos t, \\sin t, t \\rangle$ 的速度大小 $|\\mathbf{r}'(t)| = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "若曲線的曲率恆為 0，則該曲線必為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "單位法向量 $\\mathbf{N}$ 的長度為 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

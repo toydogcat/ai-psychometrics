@@ -1,0 +1,314 @@
+{
+  "course": "calculus3",
+  "week": "week16",
+  "title": "第 16 週 - 參數曲面與面積分 (Parametric Surfaces & Surface Integrals)",
+  "knowledge_points": {
+    "KP16.1": "掌握曲面的參數化方法 $\\mathbf{r}(u,v)$。",
+    "KP16.2": "學會計算面積微元 $dS = |\\mathbf{r}_u \\times \\mathbf{r}_v| dA$。",
+    "KP16.3": "理解純量函數面積分的步驟：參數化 -> 代入 -> 計算二重積分。",
+    "KP16.4": "掌握通量積分 $\\iint \\mathbf{F} \\cdot d\\mathbf{S}$ 的物理意義與計算。",
+    "KP16.5": "辨識定向曲面與非定向曲面（如莫比烏斯帶）。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "參數曲面 $\\mathbf{r}(u,v)$ 在某點的法向量由哪個運算得到？ (A) $\\mathbf{r}_u \\cdot \\mathbf{r}_v$ (B) $\\mathbf{r}_u \\times \\mathbf{r}_v$ (C) $\\nabla \\cdot \\mathbf{r}$ (D) $\\text{curl } \\mathbf{r}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "若曲面方程為 $z = g(x,y)$，則面積微元 $dS$ 為？ (A) $dx dy$ (B) $\\sqrt{1+g_x^2+g_y^2} dA$ (C) $\\sqrt{g_x^2+g_y^2} dA$ (D) $g(x,y) dA$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "通量 $\\iint_S \\mathbf{F} \\cdot d\\mathbf{S}$ 的物理單位（若 $\\mathbf{F}$ 是速度）為？ (A) 面積 (B) 體積 (C) 體積流率 (D) 質量",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "球面 $x^2+y^2+z^2 = a^2$ 的面積為？ (A) $\\pi a^2$ (B) $2\\pi a^2$ (C) $4\\pi a^2$ (D) $\\frac{4}{3}\\pi a^3$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "莫比烏斯帶（Mobius Strip）是？ (A) 定向曲面 (B) 非定向曲面 (C) 閉曲面 (D) 平面",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "在向量面積分中，$d\\mathbf{S}$ 等於？ (A) $dS$ (B) $\\mathbf{n} dS$ (C) $\\mathbf{T} ds$ (D) $dA$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "若 $\\mathbf{F}$ 與曲面 $S$ 平行，則穿過 $S$ 的通量為？ (A) 最大 (B) 1 (C) 0 (D) 無窮大",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "計算 $\\iint_S dS$ 的結果是？ (A) 體積 (B) 面積 (C) 長度 (D) 0",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "正向法向量 $\\mathbf{n}$ 的長度通常取為？ (A) $0$ (B) $1$ (C) $|\\mathbf{r}_u \\times \\mathbf{r}_v|$ (D) 任意",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "對於封閉曲面，約定的正方向通常是？ (A) 向上 (B) 向下 (C) 向外 (D) 向內",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "下列哪些是常見的參數曲面？ (A) 球面 (B) 圓柱面 (C) 錐面 (D) 拋物面",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "面積分 $\\iint_S f dS$ 與參數化的選擇？ (A) 有關 (B) 無關 (C) 只要參數化覆蓋曲面一次 (D) 只與邊界有關",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "若 $\\mathbf{F} = \\langle P, Q, R \\rangle$ 且 $S$ 是平面 $z=c$，則 $\\mathbf{F} \\cdot d\\mathbf{S}$ 等於？ (A) $P dx dz$ (B) $Q dy dz$ (C) $R dx dy$ (D) $R dA$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "關於定向曲面的敘述，哪些正確？ (A) 必須有兩側 (B) 必須是閉合的 (C) 球面是定向的 (D) 法向量場需連續",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "哪些情況下通量積分為負？ (A) 流向與法向量相反 (B) 場的方向指向曲面內部 (C) 場的強度為負 (D) 曲面面積為負",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "面積微元 $dS$ 在極座標下可能涉及： (A) $r$ (B) $dr$ (C) $d\\theta$ (D) $\\sin\\phi$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "向量面積分可以用於計算： (A) 磁通量 (B) 熱流率 (C) 流體質量流率 (D) 曲面周長",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "若 $S$ 是圖形 $z=f(x,y)$，則其法向量可取為： (A) $\\langle -f_x, -f_y, 1 \\rangle$ (B) $\\langle f_x, f_y, -1 \\rangle$ (C) $\\langle 1, 0, f_x \\rangle$ (D) $\\langle 0, 1, f_y \\rangle$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "面積分的基本步驟包括： (A) 參數化曲面 (B) 求法向量 (C) 確定積分區域 (D) 代入被積函數",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "哪些因素會影響 $\\iint_S \\mathbf{F} \\cdot \\mathbf{n} dS$ 的值？ (A) 向量場的強度 (B) 曲面的彎曲程度 (C) 法向量的方向 (D) 曲面的大小",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "顯函數 $z = x+y$ 在 $0 \\le x, y \\le 1$ 上的面積為 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "通量積分公式為 $\\iint_D \\mathbf{F} \\cdot (\\underline{\\quad\\quad}) dA$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "半徑為 $R$ 的圓盤面積分 $\\iint_S dS = \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "若 $\\mathbf{F} = \\mathbf{n}$，則 $\\iint_S \\mathbf{F} \\cdot \\mathbf{n} dS = \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "球面座標下，面積微元 $dS = a^2 \\sin\\phi \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "穿過閉曲面的淨通量若為正，說明內部有 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "非定向曲面最著名的例子是 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "面積分中，若 $f(x,y,z)=1$，則積分結果即為 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "法向量 $\\mathbf{n}$ 與切向量 $\\mathbf{r}_u$ 的點積為 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "若曲面 $S$ 由 $x=u+v, y=u-v, z=uv$ 給出，則 $\\mathbf{r}_u = \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

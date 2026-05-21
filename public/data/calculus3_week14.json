@@ -1,0 +1,314 @@
+{
+  "course": "calculus3",
+  "week": "week14",
+  "title": "第 14 週 - 線積分基本定理與 Green 定理 (FTC for Line Integrals & Green's Theorem)",
+  "knowledge_points": {
+    "KP14.1": "掌握線積分基本定理 $\\int_C \\nabla f \\cdot d\\mathbf{r} = f(B) - f(A)$。",
+    "KP14.2": "理解保守場判定條件 $P_y = Q_x$。",
+    "KP14.3": "運用 Green 定理簡化封閉路徑的線積分。",
+    "KP14.4": "應用 $\\frac{1}{2} \\oint x dy - y dx$ 計算平面圖形面積。",
+    "KP14.5": "理解 Green 定理的旋度與散度物理意義。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "若 $\\mathbf{F} = \\nabla f$，則 $\\oint_C \\mathbf{F} \\cdot d\\mathbf{r}$ 對任何閉路徑 $C$ 必為？ (A) $2\\pi$ (B) $\\pi$ (C) $0$ (D) $f(C)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "Green 定理將線積分轉換為？ (A) 三重積分 (B) 二重積分 (C) 弧長積分 (D) 表面積分",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "判定 $\\mathbf{F} = \\langle P, Q \\rangle$ 是否保守，需檢查？ (A) $P_x = Q_y$ (B) $P_y = Q_x$ (C) $P_y = -Q_x$ (D) $P_x = -Q_y$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "在 Green 定理中，正向路徑是指？ (A) 順時針 (B) 逆時針 (C) 沿 $x$ 軸正向 (D) 沿 $z$ 軸正向",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "勢函數 $f$ 與 $\\mathbf{F}$ 的關係是？ (A) $\\mathbf{F} = f$ (B) $\\mathbf{F} = \\nabla f$ (C) $f = \\nabla \\cdot \\mathbf{F}$ (D) $\\mathbf{F} = \\nabla \\times f$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "使用 Green 定理計算面積時，被積函數 $Q_x - P_y$ 應為？ (A) $0$ (B) $1$ (C) $x+y$ (D) $r$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "若 $\\mathbf{F} = \\langle y, -x \\rangle$，其沿單位圓逆時針旋轉的積分值為？ (A) $0$ (B) $2\\pi$ (C) $-2\\pi$ (D) $\\pi$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "線積分基本定理要求場必須是？ (A) 旋轉場 (B) 保守場 (C) 常數場 (D) 連續場",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "簡單連通區域是指？ (A) 沒有洞的區域 (B) 凸集 (C) 圓形區域 (D) 無界區域",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "$\\int_C (2x dx + 2y dy)$ 的值？ (A) 必為 0 (B) 與路徑無關 (C) 僅與起點有關 (D) 取決於速度",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "下列哪些場是保守場？ (A) $\\langle x, y \\rangle$ (B) $\\langle y, x \\rangle$ (C) $\\langle -y, x \\rangle$ (D) $\\langle 1, 1 \\rangle$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "關於 Green 定理的前提條件，哪些正確？ (A) $C$ 為簡單閉曲線 (B) $C$ 為正向 (C) $P, Q$ 具連續偏導數 (D) 區域必須是圓形",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "哪些公式可求面積 $A$？ (A) $\\oint x dy$ (B) $-\\oint y dx$ (C) $\\frac{1}{2} \\oint (x dy - y dx)$ (D) $\\iint 1 dA$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "若 $\\mathbf{F}$ 是保守場，則： (A) $\\oint_C \\mathbf{F} \\cdot d\\mathbf{r} = 0$ (B) $\\int_C \\mathbf{F} \\cdot d\\mathbf{r}$ 路徑無關 (C) $\\text{curl } \\mathbf{F} = \\mathbf{0}$ (D) $\\text{div } \\mathbf{F} = 0$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "關於線積分基本定理，哪些敘述正確？ (A) 它是 FTC 的推廣 (B) 適用於任何向量場 (C) 勢函數不唯一（差一常數） (D) 可求重力作功",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "若 $Q_x - P_y = 2$，則 $\\oint_C P dx + Q dy$ 為？ (A) 面積的兩倍 (B) $2 \\iint_D dA$ (C) $0$ (D) $\\iint_D 2 dA$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "哪些因素會改變 $\\int_C \\mathbf{F} \\cdot d\\mathbf{r}$ 的符號？ (A) 改變 $C$ 的方向 (B) $\\mathbf{F}$ 變為 $-\\mathbf{F}$ (C) 改變參數化的起點 (D) 改變座標系",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "簡單閉曲線 $C$ 的特性包括： (A) 端點重合 (B) 不自交 (C) 必須是光滑的 (D) 有明確的內部區域",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "梯度場 $\\nabla f$ 的旋度 $\\nabla \\times (\\nabla f)$： (A) 恆為 $\\mathbf{0}$ (B) 取決於 $f$ (C) 代表無旋性 (D) 說明場是保守的",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "Green 定理可用於計算： (A) 流量 (B) 環量 (C) 面積 (D) 功",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "若 $\\mathbf{F} = \\langle 2x+y, x+2y \\rangle$，其位能函數 $f(x,y) = \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "Green 定理：$\\oint_C P dx + Q dy = \\iint_D (\\underline{\\quad\\quad}) dA$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "沿路徑 $\\mathbf{r}(t)$ 從 $t=0$ 到 $t=1$ 的線積分 $\\int_C \\nabla f \\cdot d\\mathbf{r} = f(\\mathbf{r}(1)) - \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "計算面積的線積分公式 $\\frac{1}{2} \\oint_C x dy - y dx$ 對應的 $P = \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "向量場 $\\mathbf{F} = \\langle y, -x \\rangle$ 在 Green 定理中的 $Q_x - P_y = \\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "若 $\\mathbf{F}$ 為保守場，則其在任意閉曲線上的環量（Circulation）為 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "一個區域如果任何閉曲線都能在其中縮成一點，稱為 $\\underline{\\quad\\quad}$ 區域。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "功的單位在 SI 制中是 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "$\\oint_C dy$ 對於任何閉曲線 $C$ 的結果為 $\\underline{\\quad\\quad}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "若 $\\mathbf{F} = \\nabla f$，則 $\\mathbf{F}$ 稱為 $\\underline{\\quad\\quad}$ 向量場。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}

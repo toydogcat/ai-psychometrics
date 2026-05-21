@@ -1,0 +1,494 @@
+{
+  "course": "calculus2",
+  "week": "week1",
+  "title": "第 1 週 - 積分複習與對數/指數函數",
+  "knowledge_points": {
+    "KP1.1": "反函數求導公式 $(f^{-1})'(a) = 1/f'(f^{-1}(a))$。",
+    "KP1.2": "$\\ln x$ 的積分定義與 $\\frac{d}{dx}(\\ln x) = 1/x$。",
+    "KP1.3": "$e^x$ 的性質與 $\\frac{d}{dx}(e^x) = e^x$。",
+    "KP1.4": "一般底數 $a^x$ 與 $\\log_a x$ 的轉換與求導。",
+    "KP1.5": "微分方程 $\\frac{dy}{dt} = ky$ 的解與應用。"
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "若 $f(x) = e^{2x}$，則 $f'(x) = $？ (A) $e^{2x}$ (B) $2e^{2x}$ (C) $\\frac{1}{2}e^{2x}$ (D) $e^x$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.3",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "explanation": "根據連鎖律，$\\frac{d}{dx}(e^{u}) = e^u \\cdot u'$。令 $u = 2x$，則 $u' = 2$。故 $f'(x) = e^{2x} \\cdot 2 = 2e^{2x}$。"
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "$\\int \\frac{1}{x+1} dx = $？ (A) $\\ln|x+1|+C$ (B) $\\frac{1}{(x+1)^2}+C$ (C) $e^{x+1}+C$ (D) $x+C$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.2",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "explanation": "根據基本積分公式 $\\int \\frac{1}{u} du = \\ln|u| + C$。令 $u = x+1$，則 $du = dx$。原式 $= \\ln|x+1| + C$。"
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "$\\ln(e^3) = $？ (A) 1 (B) $e$ (C) 3 (D) $e^3$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.3",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "explanation": "根據對數性質 $\\ln(e^x) = x$。此處 $x=3$，故結果為 3。"
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "函數 $y = \\log_{10} x$ 的導函數為？ (A) $1/x$ (B) $1/(x\\ln 10)$ (C) $(\\ln 10)/x$ (D) $10^x$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.4",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "explanation": "一般底數對數導函數公式為 $\\frac{d}{dx}(\\log_a x) = \\frac{1}{x \\ln a}$。此處 $a=10$，故為 $1/(x\\ln 10)$。"
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "若 $\\frac{dy}{dt} = 0.5y$ 且 $y(0)=10$，則 $y(2) = $？ (A) $10e$ (B) $10e^2$ (C) $5e$ (D) $10$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.5",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "explanation": "此為指數增長模型 $y(t) = y(0)e^{kt}$，其中 $k=0.5, y(0)=10$。則 $y(2) = 10e^{0.5 \\cdot 2} = 10e^1 = 10e$。"
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "$(f^{-1})'(y)$ 的公式與下列何者相關？ (A) $f'(x)$ (B) $1/f'(x)$ (C) $f(x)$ (D) $-f'(x)$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.1",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "explanation": "反函數求導公式為 $(f^{-1})'(y) = \\frac{1}{f'(x)}$，其中 $y = f(x)$。故與 $1/f'(x)$ 相關。"
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "$e^{\\ln 5} = $？ (A) $e$ (B) $\\ln 5$ (C) 5 (D) 1",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.3",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "explanation": "指數與對數互為反函數，滿足 $e^{\\ln x} = x$。故結果為 5。"
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "$\\frac{d}{dx}(2^x) = $？ (A) $x \\cdot 2^{x-1}$ (B) $2^x$ (C) $2^x \\ln 2$ (D) $2^x / \\ln 2$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.4",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "explanation": "一般指數函數導函數公式為 $\\frac{d}{dx}(a^x) = a^x \\ln a$。此處 $a=2$，故為 $2^x \\ln 2$。"
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "哪種函數的變化率與自身成正比？ (A) 多項式 (B) 指數 (C) 對數 (D) 三角",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.5",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "explanation": "滿足 $\\frac{dy}{dt} = ky$ 的函數是指數函數。"
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "$\\ln 1 = $？ (A) 0 (B) 1 (C) $e$ (D) 無定義",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.4",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "explanation": "因為 $e^0 = 1$，所以 $\\ln 1 = 0$。\n\n---"
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "下列哪些關於 $\\ln x$ 的敘述正確？ (A) 定義域為 $(0, \\infty)$ (B) 是 $e^x$ 的反函數 (C) 導函數為 $1/x$ (D) 圖形通過 $(1, 0)$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.2, KP1.3",
+      "q_vector": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "explanation": "(A) 真數必須大於 0；(B) 指數與對數互為反函數；(C) 這是其核心微積分性質；(D) $\\ln 1 = 0$ 對應座標 $(1, 0)$。"
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "關於 $y = e^x$，哪些正確？ (A) 值域為 $(0, \\infty)$ (B) $\\int e^x dx = e^x + C$ (C) 恆大於 0 (D) 是遞增函數",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.3",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "explanation": "(A) 指數函數輸出恆正；(B) $e^x$ 的積分仍為 $e^x$；(C) 同 A；(D) 底數 $e > 1$，為遞增。"
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "下列哪些是對數律？ (A) $\\ln(ab) = \\ln a + \\ln b$ (B) $\\ln(a/b) = \\ln a - \\ln b$ (C) $\\ln(a^b) = b \\ln a$ (D) $\\ln(a+b) = \\ln a \\ln b$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.2",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "explanation": "(A) 積變和；(B) 商變差；(C) 冪次提前；(D) $\\ln(a+b)$ 無公式。"
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "若 $y = a^x$ 且 $a > 1$，則： (A) $y' > 0$ (B) 圖形通過 $(0, 1)$ (C) $\\lim_{x \\to \\infty} y = \\infty$ (D) $\\lim_{x \\to -\\infty} y = 0$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.4",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "explanation": "(A) $y' = a^x \\ln a > 0$；(B) $a^0=1$；(C) 底數大於 1 時趨近無限；(D) 趨近 x 軸（左側漸近線）。"
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "指數衰減模型 $y = y_0 e^{kt}$ 中，哪些敘述正確？ (A) $k < 0$ (B) $y$ 隨時間減少 (C) 半衰期與 $y_0$ 無關 (D) $y$ 永遠不會變成 0",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.5",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "explanation": "(A) $k < 0$ 代表衰減；(B) 同 A；(C) 半衰期 $T = (\\ln 2)/|k|$，與初始量 $y_0$ 無關；(D) 指數函數漸近於 0 但永不為 0。"
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "反函數存在的前提是函數必須： (A) 連續 (B) 一對一 (C) 單調 (D) 可微",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.1",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "explanation": "一對一 (One-to-one) 是必要條件。嚴格單調 (Strictly monotonic) 函數必為一對一。連續與可微非必要條件。"
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "下列哪些導數正確？ (A) $(e^{3x})' = 3e^{3x}$ (B) $(\\ln x^2)' = 2/x$ (C) $(3^x)' = 3^x \\ln 3$ (D) $(\\log_2 x)' = 1/(x\\ln 2)$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.2, KP1.3, KP1.4",
+      "q_vector": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "explanation": "(A) 連鎖律 $3e^{3x}$；(B) $(\\ln x^2)' = \\frac{1}{x^2} \\cdot 2x = 2/x$；(C) $3^x \\ln 3$；(D) $1/(x\\ln 2)$。"
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "積分 $\\int e^{2x} dx$ 的結果可能包含： (A) $1/2$ (B) $e^{2x}$ (C) $C$ (D) $\\ln 2$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.3",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "explanation": "積分結果為 $\\frac{1}{2} e^{2x} + C$，故包含 $1/2, e^{2x}$ 與常數 $C$。"
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "關於數 $e$，哪些正確？ (A) 是無理數 (B) 約等於 2.718 (C) $\\ln e = 1$ (D) $\\lim_{n \\to \\infty} (1+1/n)^n = e$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.3",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "explanation": "(A) $e$ 是超越數也是無理數；(B) 近似值正確；(C) 以 $e$ 為底的對數值為 1；(D) $e$ 的極限定義。"
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "哪些是超越函數？ (A) $e^x$ (B) $\\ln x$ (C) $x^2$ (D) $\\sin x$",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.2, KP1.3",
+      "q_vector": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "explanation": "指數、對數、三角函數皆為超越函數。$x^2$ 是代數函數（多項式）。\n\n---"
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(\\ln(x^2+1)) = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.2",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "explanation": "連鎖律 $\\frac{1}{u} \\cdot u'$。"
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "若 $f(x) = x^3$，則 $(f^{-1})'(8) = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.1",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "explanation": "$f(2)=8 \\implies f^{-1}(8)=2$。$f'(x)=3x^2 \\implies f'(2)=12$。公式得 $1/12$。"
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "$\\int_0^1 e^x dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.3",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "explanation": "$[e^x]_0^1 = e^1 - e^0 = e - 1$。"
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "若 $\\ln x = 2$，則 $x = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.4",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "explanation": "指數對數互換。"
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "放射性物質剩餘量 $y = y_0 e^{kt}$，若 $k=-0.1$，其衰減百分率約為每單位時間 __________%。",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.5",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "explanation": "$k=-0.1$ 對應於 $y' = -0.1y$，即減少 10%。"
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "$\\log_e x$ 通常記作 __________。",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.2",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "explanation": "自然對數符號。"
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "$\\frac{d}{dx}(x e^x) = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.3",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "explanation": "乘法法則 $1 \\cdot e^x + x \\cdot e^x$。"
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "$\\int \\frac{1}{2x} dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.2",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "explanation": "係數提取 $\\frac{1}{2} \\int \\frac{1}{x} dx$。"
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "若 $y = 5^x$，則 $dy/dx = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.4",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "explanation": "一般指數求導。"
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "$e^0 = $ __________。",
+      "options": null,
+      "answer": "",
+      "kp": "KP1.3",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "explanation": "任何非零數的 0 次方為 1。\n\n---"
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "course": "calculus1",
+  "week": "week4",
+  "title": "Week 4 Review",
+  "knowledge_points": {},
+  "questions": [
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "觀察分母：當 $x = 3$ 時，分母為 0，且分子為 1（不為 0），故 $x = 3$ 是潛在的垂直漸近線。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "計算極限 $\\lim_{x \\to 3} \\frac{1}{(x-3)^2}$：\n   無論 $x$ 從左側 ($x < 3$) 還是右側 ($x > 3$) 逼近 3，$(x-3)^2$ 始終為一個極小的正數。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "因此，倒數 $\\frac{1}{(x-3)^2}$ 會無限制地增大。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "結論：$\\lim_{x \\to 3} \\frac{1}{(x-3)^2} = \\infty$。垂直漸近線方程式為 $x = 3$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "我們需要計算 $\\lim_{x \\to \\infty} f(x)$ 和 $\\lim_{x \\to -\\infty} f(x)$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "分母的最高次項為 $x^2$。將分子分母同除以 $x^2$：\n   $f(x) = \\frac{\\frac{3x^2}{x^2} - \\frac{x}{x^2} - \\frac{2}{x^2}}{\\frac{5x^2}{x^2} + \\frac{4x}{x^2} + \\frac{1}{x^2}} = \\frac{3 - \\frac{1}{x} - \\frac{2}{x^2}}{5 + \\frac{4}{x} + \\frac{1}{x^2}}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "當 $x \\to \\infty$ (或 $-\\infty$) 時，所有形如 $\\frac{c}{x^n}$ ($n>0$) 的項都會趨向於 0。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "極限值 $= \\frac{3 - 0 - 0}{5 + 0 + 0} = \\frac{3}{5}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "因此，水平漸近線為 $y = \\frac{3}{5}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "根據定義：$f'(3) = \\lim_{h \\to 0} \\frac{f(3+h) - f(3)}{h}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "計算 $f(3) = 3^2 - 8(3) + 9 = 9 - 24 + 9 = -6$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "計算 $f(3+h) = (3+h)^2 - 8(3+h) + 9 = (9 + 6h + h^2) - 24 - 8h + 9 = h^2 - 2h - 6$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "代入極限式：\n   $\\lim_{h \\to 0} \\frac{(h^2 - 2h - 6) - (-6)}{h} = \\lim_{h \\to 0} \\frac{h^2 - 2h}{h}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "提出 $h$ 並約分 (因為 $h \\neq 0$)：\n   $\\lim_{h \\to 0} (h - 2)$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "代入 $h=0$，得到 $f'(3) = -2$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "$f'(x) = \\lim_{h \\to 0} \\frac{\\sqrt{x+h} - \\sqrt{x}}{h}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "分子有理化，同乘 $\\frac{\\sqrt{x+h} + \\sqrt{x}}{\\sqrt{x+h} + \\sqrt{x}}$：\n   $= \\lim_{h \\to 0} \\frac{(x+h) - x}{h(\\sqrt{x+h} + \\sqrt{x})}$\n   $= \\lim_{h \\to 0} \\frac{h}{h(\\sqrt{x+h} + \\sqrt{x})}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "消去 $h$：\n   $= \\lim_{h \\to 0} \\frac{1}{\\sqrt{x+h} + \\sqrt{x}}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "讓 $h \\to 0$，得 $f'(x) = \\frac{1}{2\\sqrt{x}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "定義域：原函數定義域為 $x \\ge 0$。但導數分母不能為零，故導數的定義域為 $x > 0$ (即 $(0, \\infty)$)。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "利用定義計算 $x=0$ 處的導數極限：\n   $f'(0) = \\lim_{h \\to 0} \\frac{|0+h| - |0|}{h} = \\lim_{h \\to 0} \\frac{|h|}{h}$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "這個極限我們在 Week 2 算過：\n   右極限 ($h \\to 0^+$)：$\\lim_{h \\to 0^+} \\frac{h}{h} = 1$\n   左極限 ($h \\to 0^-$)：$\\lim_{h \\to 0^-} \\frac{-h}{h} = -1$",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "因為左極限不等於右極限，所以雙側極限不存在。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "故 $f'(0)$ 不存在，$f(x) = |x|$ 在 $x=0$ 不可微。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q1",
+      "type": "single",
+      "title": "求 $\\lim_{x \\to \\infty} \\frac{4x^3 - 2x + 1}{5x^3 + 7x^2}$：",
+      "options": {
+        "A": "0",
+        "B": "$4/5$",
+        "C": "$\\infty$",
+        "D": "$4/7$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q2",
+      "type": "single",
+      "title": "函數 $f(x) = \\frac{1}{x-5}$ 在 $x=5$ 的圖形特徵是：",
+      "options": {
+        "A": "水平漸近線",
+        "B": "垂直漸近線",
+        "C": "可去不連續點 (空心圓)",
+        "D": "轉折點"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q3",
+      "type": "single",
+      "title": "下列何者是導數 $f'(a)$ 的定義？",
+      "options": {
+        "A": "$\\lim_{x \\to a} \\frac{f(x) + f(a)}{x + a}$",
+        "B": "$\\lim_{h \\to 0} \\frac{f(a+h) - f(a)}{h}$",
+        "C": "$\\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$",
+        "D": "$\\lim_{x \\to 0} \\frac{f(x) - f(a)}{x - a}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q4",
+      "type": "single",
+      "title": "求 $f(x) = x^2$ 的導數函數 $f'(x)$：",
+      "options": {
+        "A": "$x$",
+        "B": "$2x$",
+        "C": "$x^2$",
+        "D": "$2$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q5",
+      "type": "single",
+      "title": "關於可微與連續，下列敘述何者恆真？",
+      "options": {
+        "A": "若連續則必可微",
+        "B": "若可微則必連續",
+        "C": "若不可微則必不連續",
+        "D": "連續與可微無關"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q6",
+      "type": "single",
+      "title": "求 $\\lim_{x \\to -\\infty} e^x$：",
+      "options": {
+        "A": "$\\infty$",
+        "B": "1",
+        "C": "0",
+        "D": "不存在"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q7",
+      "type": "single",
+      "title": "函數 $y = \\frac{\\sin x}{x}$ 有沒有水平漸近線？",
+      "options": {
+        "A": "沒有",
+        "B": "有，$y=1$",
+        "C": "有，$y=0$",
+        "D": "有，$y=\\pi$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q8",
+      "type": "single",
+      "title": "如果 $f'(3) = 4$，這代表什麼幾何意義？",
+      "options": {
+        "A": "曲線在 $x=3$ 處的函數值為 4。",
+        "B": "曲線在 $x=3$ 處的切線斜率為 4。",
+        "C": "曲線在 $x=3$ 處的割線斜率為 4。",
+        "D": "曲線在 $x=4$ 處有切線。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q9",
+      "type": "single",
+      "title": "計算極限 $\\lim_{x \\to \\infty} \\frac{x^2}{e^x}$：(提示：指數增長快於多項式)",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "$\\infty$",
+        "D": "$e$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q10",
+      "type": "single",
+      "title": "$f(x) = \\sqrt[3]{x}$ 在 $x=0$ 處是否可微？",
+      "options": {
+        "A": "是，導數為 0",
+        "B": "是，導數為 1",
+        "C": "否，因為函數在 $x=0$ 不連續",
+        "D": "否，因為在 $x=0$ 處有垂直切線"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q11",
+      "type": "multiple",
+      "title": "關於漸近線，下列敘述哪些正確？",
+      "options": {
+        "A": "多項式函數沒有垂直漸近線。",
+        "B": "有理函數的垂直漸近線必發生在分母為 0 處。",
+        "C": "函數圖形可以與水平漸近線相交。",
+        "D": "函數圖形最多只能有兩條水平漸近線 (對應 $x \\to \\infty$ 和 $x \\to -\\infty$)。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q12",
+      "type": "multiple",
+      "title": "下列哪些函數在 $x=0$ 處不可微？",
+      "options": {
+        "A": "$y = |x|$",
+        "B": "$y = x^{1/3}$",
+        "C": "$y = \\sin x$",
+        "D": "$y = \\begin{cases} 0 & x < 0 \\\\ x & x \\ge 0 \\end{cases}$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q13",
+      "type": "multiple",
+      "title": "要尋找函數 $f(x) = \\frac{P(x)}{Q(x)}$ 的漸近線 ($P, Q$ 為多項式，無公因式)：",
+      "options": {
+        "A": "若 $P$ 次數等於 $Q$ 次數，有水平漸近線 $y \\neq 0$。",
+        "B": "若 $P$ 次數小於 $Q$ 次數，水平漸近線為 $y = 0$。",
+        "C": "若 $P$ 次數大於 $Q$ 次數，必無水平漸近線。",
+        "D": "使 $Q(x)=0$ 的 $x$ 值為垂直漸近線的位置。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q14",
+      "type": "multiple",
+      "title": "對於導數 $f'(x)$ 的理解，哪些是正確的？",
+      "options": {
+        "A": "$f'(x)$ 也是一個函數。",
+        "B": "$f'(x)$ 的定義域與 $f(x)$ 必相同。",
+        "C": "$f'(x)$ 描述了 $f(x)$ 變化率的分布。",
+        "D": "若 $f(x)$ 是常數，則 $f'(x) = 0$。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q15",
+      "type": "multiple",
+      "title": "下列哪些極限運算是正確的？",
+      "options": {
+        "A": "$\\lim_{x \\to \\infty} \\frac{1}{x} = 0$",
+        "B": "$\\lim_{x \\to 0^+} \\ln x = -\\infty$",
+        "C": "$\\lim_{x \\to \\infty} \\sin x$ 存在",
+        "D": "$\\lim_{x \\to \\pi/2^-} \\tan x = \\infty$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q16",
+      "type": "multiple",
+      "title": "若極限 $\\lim_{h \\to 0} \\frac{f(2+h) - f(2)}{h}$ 存在，我們可以推論：",
+      "options": {
+        "A": "$f(x)$ 在 $x=2$ 可微。",
+        "B": "$f(x)$ 在 $x=2$ 連續。",
+        "C": "$\\lim_{x \\to 2} f(x) = f(2)$。",
+        "D": "該極限值等於 $f(2)$。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q17",
+      "type": "multiple",
+      "title": "考慮 $f(x) = \\frac{x^2 - 1}{x^2 - x - 2}$，下列敘述哪些正確？",
+      "options": {
+        "A": "$f(x)$ 有水平漸近線 $y = 1$。",
+        "B": "$x = 2$ 是垂直漸近線。",
+        "C": "$x = -1$ 是垂直漸近線。",
+        "D": "$x = -1$ 處有可去不連續點。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q18",
+      "type": "multiple",
+      "title": "下列哪些符號可以表示 $y = f(x)$ 對 $x$ 的導數？",
+      "options": {
+        "A": "$f'(x)$",
+        "B": "$\\frac{dy}{dx}$",
+        "C": "$y'$",
+        "D": "$\\frac{d}{dx}[f(x)]$"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q19",
+      "type": "multiple",
+      "title": "對於有理函數，當 $x \\to \\infty$ 時：",
+      "options": {
+        "A": "若分子最高次項為 $ax^n$，分母最高次項為 $bx^n$，極限為 $a/b$。",
+        "B": "永遠需要用羅必達法則計算。",
+        "C": "極限可以為 $\\infty$ 或 $-\\infty$。",
+        "D": "若分母次數較高，極限為 0。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q20",
+      "type": "multiple",
+      "title": "由定義求 $f(x) = c$ (常數) 的導數：",
+      "options": {
+        "A": "$f(x+h) = c$",
+        "B": "$f(x+h) - f(x) = c - c = 0$",
+        "C": "$\\lim_{h \\to 0} \\frac{0}{h} = 0$",
+        "D": "證明了常數的變化率為 0。"
+      },
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q21",
+      "type": "fill",
+      "title": "$\\lim_{x \\to \\infty} \\frac{7x^2 - 3x}{2x^2 + 5} = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q22",
+      "type": "fill",
+      "title": "函數 $y = \\frac{3}{x-4} + 2$ 的垂直漸近線為 $x = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q23",
+      "type": "fill",
+      "title": "同上題，水平漸近線為 $y = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q24",
+      "type": "fill",
+      "title": "利用定義計算 $f(x) = 3x$ 的導數 $f'(x) = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q25",
+      "type": "fill",
+      "title": "$\\lim_{x \\to \\infty} e^{-x} = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q26",
+      "type": "fill",
+      "title": "如果 $f(x)$ 在 $x=a$ 可微，則 $\\lim_{x \\to a} f(x) = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q27",
+      "type": "fill",
+      "title": "若物體位置函數為 $s(t) = t^2$，則 $t=3$ 時的瞬時速度為 $\\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q28",
+      "type": "fill",
+      "title": "函數 $f(x) = \\ln(x-1)$ 的垂直漸近線是 $x = \\underline{\\hspace{1cm}}$。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q29",
+      "type": "fill",
+      "title": "$\\lim_{x \\to -\\infty} \\frac{x}{\\sqrt{x^2+1}} = \\underline{\\hspace{1cm}}$ (注意正負號)。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    },
+    {
+      "id": "Q30",
+      "type": "fill",
+      "title": "極限 $\\lim_{h \\to 0} \\frac{(5+h)^3 - 5^3}{h}$ 代表函數 $f(x) = x^3$ 在 $x= \\underline{\\hspace{1cm}}$ 處的導數。",
+      "options": null,
+      "answer": "",
+      "kp": "",
+      "q_vector": [],
+      "explanation": ""
+    }
+  ]
+}
