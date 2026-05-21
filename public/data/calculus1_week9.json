@@ -7,70 +7,105 @@
     {
       "id": "Q1",
       "type": "single",
-      "title": "函數 $f(x) = \\ln(x-1)$ 的定義域為？\n   - (A) $x \\ge 1$ (B) $x > 1$ (C) $x > 0$ (D) 全實數\n   - *答案*: B (KP1.5)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "函數 $f(x) = \\ln(x-1)$ 的定義域為？",
+      "options": {
+        "A": "$x \\ge 1$",
+        "B": "$x > 1$",
+        "C": "$x > 0$",
+        "D": "全實數"
+      },
+      "answer": "B",
+      "kp": "KP1.5",
       "q_vector": [],
       "explanation": "對數函數 $\\ln(u)$ 的定義要求真數 $u$ 必須大於零。\n    對於 $f(x) = \\ln(x-1)$，我們需要：\n    $$x - 1 > 0 \\implies x > 1$$\n    因此定義域為 $(1, \\infty)$，故選 (B)。"
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "若 $\\lim_{x \\to 2^-} f(x) = 5$ 且 $\\lim_{x \\to 2^+} f(x) = 5$，但 $f(2) = 3$，則該點屬於？\n   - (A) 連續點 (B) 可去不連續點 (C) 跳躍不連續點 (D) 無窮不連續點\n   - *答案*: B (KP3.2)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "若 $\\lim_{x \\to 2^-} f(x) = 5$ 且 $\\lim_{x \\to 2^+} f(x) = 5$，但 $f(2) = 3$，則該點屬於？",
+      "options": {
+        "A": "連續點",
+        "B": "可去不連續點",
+        "C": "跳躍不連續點",
+        "D": "無窮不連續點"
+      },
+      "answer": "B",
+      "kp": "KP3.2",
       "q_vector": [],
       "explanation": "1.  因為左右極限相等（皆為 5），所以極限 $\\lim_{x \\to 2} f(x)$ 存在且等於 5。\n    2.  因為 $\\lim_{x \\to 2} f(x) = 5 \\neq f(2) = 3$，函數在 $x=2$ 處不連續。\n    3.  **可去不連續 (Removable Discontinuity)** 的特徵是極限存在，但極限值不等於函數值（或函數值未定義）。\n    故選 (B)。"
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "曲線 $y = x^2$ 在點 (1, 1) 的切線斜率為？\n   - (A) 1 (B) 2 (C) 0 (D) $x$\n   - *答案*: B (KP4.3)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "曲線 $y = x^2$ 在點 (1, 1) 的切線斜率為？",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "0",
+        "D": "$x$"
+      },
+      "answer": "B",
+      "kp": "KP4.3",
       "q_vector": [],
       "explanation": "切線斜率等於函數在該點的導數值。\n    1.  對 $y = x^2$ 求導：$y' = 2x$。\n    2.  將點 (1, 1) 的 $x=1$ 代入：$y'(1) = 2(1) = 2$。\n    故斜率為 2，選 (B)。"
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "$\\frac{d}{dx}(\\sin(x^2)) = ?$\n   - (A) $\\cos(x^2)$ (B) $2x \\cos(x^2)$ (C) $-2x \\cos(x^2)$ (D) $\\cos(2x)$\n   - *答案*: B (KP6.3)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "$\\frac{d}{dx}(\\sin(x^2)) = ?$",
+      "options": {
+        "A": "$\\cos(x^2)$",
+        "B": "$2x \\cos(x^2)$",
+        "C": "$-2x \\cos(x^2)$",
+        "D": "$\\cos(2x)$"
+      },
+      "answer": "B",
+      "kp": "KP6.3",
       "q_vector": [],
       "explanation": "使用連鎖律 (Chain Rule)，令外層函數為 $\\sin(u)$，內層函數 $u = x^2$：\n    $$\\frac{d}{dx} \\sin(x^2) = \\cos(x^2) \\cdot \\frac{d}{dx}(x^2) = \\cos(x^2) \\cdot 2x = 2x \\cos(x^2)$$\n    故選 (B)。"
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "$\\frac{d}{dx}(\\ln x)$ 等於？\n   - (A) $e^x$ (B) $1/x$ (C) $1/x^2$ (D) $x$\n   - *答案*: B (KP7.3)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "$\\frac{d}{dx}(\\ln x)$ 等於？",
+      "options": {
+        "A": "$e^x$",
+        "B": "$1/x$",
+        "C": "$1/x^2$",
+        "D": "$x$"
+      },
+      "answer": "B",
+      "kp": "KP7.3",
       "q_vector": [],
       "explanation": "這是基本初等函數的導數公式。由定義或隱函數微分可推導出：\n    $$\\frac{d}{dx}(\\ln x) = \\frac{1}{x}$$\n    故選 (B)。"
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "若 $y = x^x$，求 $y'$ 應首選？\n   - (A) 冪次律 (B) 指數律 (C) 對數微分法 (D) 商律\n   - *答案*: C (KP7.4)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "若 $y = x^x$，求 $y'$ 應首選？",
+      "options": {
+        "A": "冪次律",
+        "B": "指數律",
+        "C": "對數微分法",
+        "D": "商律"
+      },
+      "answer": "C",
+      "kp": "KP7.4",
       "q_vector": [],
       "explanation": "函數 $y = x^x$ 的底數與指數都含有自變數 $x$，不能直接使用冪次律（要求指數為常數）或指數律（要求底數為常數）。\n    此類型的標準解法是兩邊取自然對數：\n    $$\\ln y = \\ln(x^x) = x \\ln x$$\n    接著對 $x$ 進行隱函數微分。這種方法稱為**對數微分法 (Logarithmic Differentiation)**。\n    故選 (C)。"
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "勘根定理 (IVT) 的前提是函數在該閉區間必須？\n   - (A) 可微 (B) 連續 (C) 遞增 (D) 有極值\n   - *答案*: B (KP3.4)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "勘根定理 (IVT) 的前提是函數在該閉區間必須？",
+      "options": {
+        "A": "可微",
+        "B": "連續",
+        "C": "遞增",
+        "D": "有極值"
+      },
+      "answer": "B",
+      "kp": "KP3.4",
       "q_vector": [],
       "explanation": "勘根定理（或中間值定理，Intermediate Value Theorem）敘述：若 $f$ 在閉區間 $[a, b]$ 上**連續**，且 $f(a)$ 與 $f(b)$ 異號，則在 $(a, b)$ 內至少存在一點 $c$ 使得 $f(c) = 0$。\n    其核心前提是**連續性**。\n    故選 (B)。"
     },
@@ -87,70 +122,105 @@
     {
       "id": "Q9",
       "type": "single",
-      "title": "水平漸近線 $y = L$ 發生在 $x$ 趨向何處時？\n   - (A) 0 (B) 函數不連續點 (C) 正負無窮大 (D) 極值點\n   - *答案*: C (KP4.1)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "水平漸近線 $y = L$ 發生在 $x$ 趨向何處時？",
+      "options": {
+        "A": "0",
+        "B": "函數不連續點",
+        "C": "正負無窮大",
+        "D": "極值點"
+      },
+      "answer": "C",
+      "kp": "KP4.1",
       "q_vector": [],
       "explanation": "水平漸近線定義為：\n    若 $\\lim_{x \\to \\infty} f(x) = L$ 或 $\\lim_{x \\to -\\infty} f(x) = L$，則直線 $y = L$ 為 $f(x)$ 的水平漸近線。\n    故選 (C)。"
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "$\\frac{d}{dx}(\\tan^{-1} x) = ?$\n    - (A) $\\sec^2 x$ (B) $\\frac{1}{\\sqrt{1-x^2}}$ (C) $\\frac{1}{1+x^2}$ (D) $\\frac{-1}{1+x^2}$\n    - *答案*: C (KP7.2)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "$\\frac{d}{dx}(\\tan^{-1} x) = ?$",
+      "options": {
+        "A": "$\\sec^2 x$",
+        "B": "$\\frac{1}{\\sqrt{1-x^2}}$",
+        "C": "$\\frac{1}{1+x^2}$",
+        "D": "$\\frac{-1}{1+x^2}$"
+      },
+      "answer": "C",
+      "kp": "KP7.2",
       "q_vector": [],
       "explanation": "反正切函數的導數公式為：\n    $$\\frac{d}{dx}(\\tan^{-1} x) = \\frac{1}{1+x^2}$$\n    *   (A) 是 $\\tan x$ 的導數。\n    *   (B) 是 $\\sin^{-1} x$ 的導數。\n    故選 (C)。"
     },
     {
       "id": "Q11",
       "type": "single",
-      "title": "$\\lim_{x \\to 0} \\frac{\\sin x}{x} = ?$\n    - (A) 0 (B) 1 (C) $\\infty$ (D) 不存在\n    - *答案*: B (KP2.2)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "$\\lim_{x \\to 0} \\frac{\\sin x}{x} = ?$",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "$\\infty$",
+        "D": "不存在"
+      },
+      "answer": "B",
+      "kp": "KP2.2",
       "q_vector": [],
       "explanation": "這是微積分中最重要的基本極限之一，可以透過幾何面積比較或羅必達法則（後半學期學到）來證明。在弧度制下，當 $x \\to 0$ 時，$\\sin x$ 近似於 $x$。\n    故極限值為 1，選 (B)。"
     },
     {
       "id": "Q12",
       "type": "single",
-      "title": "速度對時間的導數是？\n    - (A) 位移 (B) 動量 (C) 加速度 (D) 力\n    - *答案*: C (KP5.5)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "速度對時間的導數是？",
+      "options": {
+        "A": "位移",
+        "B": "動量",
+        "C": "加速度",
+        "D": "力"
+      },
+      "answer": "C",
+      "kp": "KP5.5",
       "q_vector": [],
       "explanation": "1.  位移 $s(t)$ 對時間的導數是速度 $v(t)$。\n    2.  速度 $v(t)$ 對時間的導數（即位移的二階導數）是加速度 $a(t)$：\n    $$a(t) = \\frac{dv}{dt} = \\frac{d^2s}{dt^2}$$\n    故選 (C)。"
     },
     {
       "id": "Q13",
       "type": "single",
-      "title": "臨界點是指 $f'(x)$ 為多少或不存在的點？\n    - (A) 1 (B) 0 (C) $f(x)$ (D) $e$\n    - *答案*: B (KP8.5)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "臨界點是指 $f'(x)$ 為多少或不存在的點？",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "$f(x)$",
+        "D": "$e$"
+      },
+      "answer": "B",
+      "kp": "KP8.5",
       "q_vector": [],
       "explanation": "在函數 $f$ 的定義域內，若一點 $c$ 滿足 $f'(c) = 0$ 或者 $f'(c)$ 不存在，則稱點 $c$ 為 $f$ 的**臨界點 (Critical Point)**。\n    故選 (B)。"
     },
     {
       "id": "Q14",
       "type": "single",
-      "title": "$\\frac{d}{dx}(\\cos x) = ?$\n    - (A) $\\sin x$ (B) $-\\sin x$ (C) $\\sec x$ (D) $-\\cos x$\n    - *答案*: B (KP6.1)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "$\\frac{d}{dx}(\\cos x) = ?$",
+      "options": {
+        "A": "$\\sin x$",
+        "B": "$-\\sin x$",
+        "C": "$\\sec x$",
+        "D": "$-\\cos x$"
+      },
+      "answer": "B",
+      "kp": "KP6.1",
       "q_vector": [],
       "explanation": "基本三角函數導數公式：\n    *   $\\frac{d}{dx} \\sin x = \\cos x$\n    *   $\\frac{d}{dx} \\cos x = -\\sin x$\n    記法：所有以 \"c\" 開頭的三角函數 ($\\cos, \\cot, \\csc$) 的導數都帶有負號。\n    故選 (B)。"
     },
     {
       "id": "Q15",
       "type": "single",
-      "title": "使用線性化估算 $\\sqrt{4.1}$，應以哪個點作為 $a$？\n    - (A) 0 (B) 4 (C) 4.1 (D) 1\n    - *答案*: B (KP8.4)",
-      "options": null,
-      "answer": "",
-      "kp": "",
+      "title": "使用線性化估算 $\\sqrt{4.1}$，應以哪個點作為 $a$？",
+      "options": {
+        "A": "0",
+        "B": "4",
+        "C": "4.1",
+        "D": "1"
+      },
+      "answer": "B",
+      "kp": "KP8.4",
       "q_vector": [],
       "explanation": "線性化 $L(x) = f(a) + f'(a)(x-a)$ 要求 $a$ 必須滿足兩個條件：\n    1.  $a$ 必須非常接近待求點 $x=4.1$。\n    2.  $f(a)$ 和 $f'(a)$ 必須易於計算。\n    對於 $f(x) = \\sqrt{x}$，選擇 $a=4$ 最合適，因為 $\\sqrt{4}=2$ 是整數且與 4.1 極近。\n    故選 (B)。\n\n---"
     },

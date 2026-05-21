@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Send, AlertTriangle, HelpCircle, Award, RefreshCw, CheckCircle } from 'lucide-react';
 import { calculateCTT, calculateIRT2PL, calculateCDM } from '../utils/psychometricsEngine';
 import { StorageEngine } from '../utils/supabaseClient';
@@ -12,6 +12,27 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
   const [answers, setAnswers] = useState({});
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
+  const cardRef = useRef(null);
+
+  // Auto-render math when question changes
+  useEffect(() => {
+    const renderMath = () => {
+      if (window.renderMathInElement && cardRef.current && !loading) {
+        window.renderMathInElement(cardRef.current, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+            { left: '\\(', right: '\\)', display: false },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          throwOnError: false
+        });
+      }
+    };
+
+    const timer = setTimeout(renderMath, 150);
+    return () => clearTimeout(timer);
+  }, [currentIdx, loading, activeQuestions]);
 
   useEffect(() => {
     loadQuizAndMastery();
@@ -313,7 +334,7 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
       </div>
 
       {/* Main Question Arena Card */}
-      <div className="p-8 md:p-10 rounded-3xl bg-gradient-to-b from-[#090b16]/40 to-[#05060c]/60 border border-slate-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-md min-h-[380px] flex flex-col justify-between">
+      <div ref={cardRef} className="p-8 md:p-10 rounded-3xl bg-gradient-to-b from-[#090b16]/40 to-[#05060c]/60 border border-slate-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-md min-h-[380px] flex flex-col justify-between">
         <div>
           {/* Question Meta Info */}
           <div className="flex flex-wrap gap-2.5 items-center mb-6">

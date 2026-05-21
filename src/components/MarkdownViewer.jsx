@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Copy, Check, List } from 'lucide-react';
 
 const fontSizes = {
@@ -40,20 +40,34 @@ export default function MarkdownViewer({ rawText }) {
   const [fontSize, setFontSize] = useState('medium');
   const [copiedIndex, setCopiedIndex] = useState(null);
   const [headings, setHeadings] = useState([]);
+  const containerRef = useRef(null);
 
   // Auto-render math when content changes
   useEffect(() => {
-    if (window.renderMathInElement && rawText) {
-      renderMathInElement(document.body, {
-        delimiters: [
-          { left: '$$', right: '$$', display: true },
-          { left: '$', right: '$', display: false },
-          { left: '\\(', right: '\\)', display: false },
-          { left: '\\[', right: '\\]', display: true }
-        ],
-        throwOnError: false
-      });
-    }
+    const renderMath = () => {
+      if (window.renderMathInElement && containerRef.current) {
+        window.renderMathInElement(containerRef.current, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+            { left: '\\(', right: '\\)', display: false },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          throwOnError: false
+        });
+      }
+    };
+
+    // Small delay to ensure React has finished DOM updates
+    const timer = setTimeout(renderMath, 150);
+    
+    // Also try to render again after a longer delay in case of slow script loading
+    const timer2 = setTimeout(renderMath, 1200);
+
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(timer2);
+    };
   }, [rawText, fontSize]);
 
   // Extract headings for the dynamic Table of Contents
@@ -200,7 +214,7 @@ export default function MarkdownViewer({ rawText }) {
   const parseMarkdown = () => {
     const sizes = fontSizes[fontSize] || fontSizes.medium;
 
-    // Helper to parse inline elements: bold (**bold**) and inline code (`code`)
+    // Helper to parse inline elements: bold (**bold**), inline code (`code`), and math ($math$)
     const parseInlineStyles = (text) => {
       if (!text) return '';
 
@@ -208,7 +222,37 @@ export default function MarkdownViewer({ rawText }) {
       let index = 0;
 
       while (index < text.length) {
-        // 1. Inline code: `code`
+        // 1. Display math: $$math$$
+        if (text.startsWith('$$', index)) {
+          const nextMath = text.indexOf('$$', index + 2);
+          if (nextMath !== -1) {
+            const mathText = text.substring(index, nextMath + 2);
+            tokens.push(
+              <span key={`display-math-${index}`} className="math-display">
+                {mathText}
+              </span>
+            );
+            index = nextMath + 2;
+            continue;
+          }
+        }
+
+        // 2. Inline math: $math$
+        if (text[index] === '$' && (index === 0 || text[index-1] !== '\\')) {
+          const nextMath = text.indexOf('$', index + 1);
+          if (nextMath !== -1) {
+            const mathText = text.substring(index, nextMath + 1);
+            tokens.push(
+              <span key={`inline-math-${index}`} className="math-inline">
+                {mathText}
+              </span>
+            );
+            index = nextMath + 1;
+            continue;
+          }
+        }
+
+        // 3. Inline code: `code`
         if (text[index] === '`') {
           const nextBacktick = text.indexOf('`', index + 1);
           if (nextBacktick !== -1) {
@@ -506,7 +550,7 @@ export default function MarkdownViewer({ rawText }) {
   return (
     <div className="flex gap-8 relative flex-col lg:flex-row items-start w-full">
       {/* Markdown Content Frame */}
-      <div className="flex-1 max-w-4xl w-full bg-[#090b16]/25 border border-slate-800/60 p-6 md:p-10 rounded-3xl backdrop-blur-md text-slate-100 shadow-xl overflow-hidden select-text">
+      <div ref={containerRef} className="flex-1 max-w-4xl w-full bg-[#090b16]/25 border border-slate-800/60 p-6 md:p-10 rounded-3xl backdrop-blur-md text-slate-100 shadow-xl overflow-hidden select-text">
         {/* Font Control Bar */}
         <div className="flex items-center justify-between pb-6 mb-8 border-b border-slate-800/40 select-none">
           <div className="flex items-center gap-2.5">
