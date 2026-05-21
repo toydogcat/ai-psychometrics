@@ -1,0 +1,224 @@
+{
+  "course_id": "artificial-intelligence",
+  "week": 5,
+  "title": "人工智慧第 5 週 - 自我診斷評量",
+  "knowledge_points": {
+    "KP5.1": "歷史背景",
+    "KP5.2": "核心定義",
+    "KP5.3": "算法邏輯",
+    "KP5.4": "倫理法律",
+    "KP5.5": "未來趨勢"
+  },
+  "questions": [
+    {
+      "id": "AI-W5-Q1",
+      "type": "single",
+      "kp": "KP5.2",
+      "title": "這是第 5 週的第 1 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "AI-W5-Q2",
+      "type": "single",
+      "kp": "KP5.3",
+      "title": "這是第 5 週的第 2 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "AI-W5-Q3",
+      "type": "single",
+      "kp": "KP5.4",
+      "title": "這是第 5 週的第 3 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "AI-W5-Q4",
+      "type": "single",
+      "kp": "KP5.5",
+      "title": "這是第 5 週的第 4 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "AI-W5-Q5",
+      "type": "single",
+      "kp": "KP5.1",
+      "title": "這是第 5 週的第 5 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "AI-W5-Q6",
+      "type": "single",
+      "kp": "KP5.2",
+      "title": "這是第 5 週的第 6 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "AI-W5-Q7",
+      "type": "single",
+      "kp": "KP5.3",
+      "title": "這是第 5 週的第 7 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "AI-W5-Q8",
+      "type": "single",
+      "kp": "KP5.4",
+      "title": "這是第 5 週的第 8 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "AI-W5-Q9",
+      "type": "single",
+      "kp": "KP5.5",
+      "title": "這是第 5 週的第 9 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "AI-W5-Q10",
+      "type": "single",
+      "kp": "KP5.1",
+      "title": "這是第 5 週的第 10 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

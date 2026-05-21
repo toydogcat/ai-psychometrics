@@ -851,6 +851,576 @@
     ]
   },
   {
+    "id": "deep-learning",
+    "title": "深度學習與神經網路：從 PyTorch 到變換器",
+    "description": "系統化學習深度學習核心架構，從感知器到卷積神經網路 (CNN)、循環神經網路 (RNN) 與 Transformer。課程強調現代框架 PyTorch 的實戰應用。",
+    "category": "人工智慧",
+    "tags": [
+      "進階課程",
+      "PyTorch",
+      "神經網路"
+    ],
+    "totalWeeks": 18,
+    "totalQuestions": 540,
+    "syllabus": [
+      {
+        "week": 1,
+        "title": "課程四：第 1 週 - 神經網路起源：從感知器到連接主義 (Neural Network Origins)",
+        "topics": [
+          "AI 的三次浪潮與派系之爭",
+          "M-P 模型：神經元的數學模型",
+          "感知器 (Perceptron) 原理",
+          "線性可分性與 XOR 問題",
+          "激發函數 (Activation Function) 初探",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week1.md",
+        "quizPath": "dl_week1.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 2,
+        "title": "課程四：第 2 週 - 多層感知器 (MLP) 與反向傳播 (Backpropagation)",
+        "topics": [
+          "多層感知器 (MLP) 的架構",
+          "梯度下降 (Gradient Descent) 複習與進階",
+          "反向傳播 (Backpropagation) 算法",
+          "參數初始化策略",
+          "梯度消失 (Vanishing Gradient) 初探",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week2.md",
+        "quizPath": "dl_week2.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 3,
+        "title": "課程四：第 3 週 - 深度學習的潤滑劑：激發函數與損失函數 (Activation & Loss)",
+        "topics": [
+          "激發函數 (Activation Function) 的進化",
+          "損失函數 (Loss Function) 的選擇",
+          "輸出層與激活函數的搭配",
+          "防止過擬合：正則化與 Dropout",
+          "數據批次處理與收斂",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week3.md",
+        "quizPath": "dl_week3.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 4,
+        "title": "課程四：第 4 週 - PyTorch 實戰：張量運算與自動微分 (PyTorch Mastery)",
+        "topics": [
+          "深度學習框架之王：為什麼選擇 PyTorch？",
+          "張量 (Tensor) 基礎",
+          "Autograd：自動微分引擎",
+          "PyTorch 建模核心三部曲",
+          "GPU 加速與 CPU 交互",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week4.md",
+        "quizPath": "dl_week4.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 5,
+        "title": "課程四：第 5 週 - 計算機視覺 (CV) 革命：卷積神經網絡 (CNN)",
+        "topics": [
+          "MLP 處理圖像的困境",
+          "卷積操作 (Convolution) 的直覺",
+          "CNN 的三大核心支柱",
+          "卷積層細節",
+          "池化層 (Pooling Layer)",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week5.md",
+        "quizPath": "dl_week5.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 6,
+        "title": "課程四：第 6 週 - 深度卷積網路演進：從 LeNet 到 ResNet (Architecture Evolution)",
+        "topics": [
+          "LeNet-5 (1998)：CNN 的原型",
+          "AlexNet (2012)：深度學習的引爆點",
+          "VGG (2014)：深度與規整的藝術",
+          "GoogLeNet (2014)：橫向擴展與 Inception",
+          "ResNet (2015)：跳躍連接的魔法",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week6.md",
+        "quizPath": "dl_week6.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 7,
+        "title": "課程四：第 7 週 - ImageNet 傳奇與遷移學習 (Transfer Learning)",
+        "topics": [
+          "ImageNet 與李飛飛的遠見",
+          "遷移學習 (Transfer Learning) 的哲學",
+          "遷移學習的三種策略",
+          "數據增強 (Data Augmentation)",
+          "實戰工具：Torchvision",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week7.md",
+        "quizPath": "dl_week7.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 8,
+        "title": "課程四：第 8 週 - 計算機視覺進階：目標檢測與圖像分割 (Advanced CV)",
+        "topics": [
+          "從「分类」到「定位」",
+          "YOLO 系列：實時檢測的王者",
+          "目標檢測的核心技術",
+          "圖像分割 (Segmentation)",
+          "評估指標：mAP",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week8.md",
+        "quizPath": "dl_week8.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 9,
+        "title": "課程四：第 9 週 - 期中綜合測驗 (Midterm Comprehensive Exam)",
+        "topics": [
+          "深度學習基石 (25 min)",
+          "激發與優化 (25 min)",
+          "卷積視覺地圖 (25 min)",
+          "進階視覺應用 (25 min)",
+          "單選題 (Single Choice, SC) - 共 50 題",
+          "多選題 (Multiple Choice, MC) - 共 50 題"
+        ],
+        "mdPath": "week9.md",
+        "quizPath": "dl_week9.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 10,
+        "title": "課程四：第 10 週 - 序列建模：循環神經網絡 (RNN) 與 GRU (Sequence Modeling)",
+        "topics": [
+          "序列數據 (Sequential Data) 的特性",
+          "RNN 的架構與工作原理",
+          "RNN 的致命傷：梯度消失與爆炸",
+          "門控循環單元 (GRU)",
+          "多種任務架構",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week10.md",
+        "quizPath": "dl_week10.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 11,
+        "title": "課程四：第 11 週 - 長期記憶的鑰匙：LSTM 與 Seq2Seq (Long-term Memory)",
+        "topics": [
+          "LSTM (Long Short-Term Memory) 的誕生",
+          "LSTM 的三道門（門控機制）",
+          "編碼器-解碼器 (Encoder-Decoder) 架構",
+          "翻譯中的訓練技巧",
+          "Seq2Seq 的瓶頸",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week11.md",
+        "quizPath": "dl_week11.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 12,
+        "title": "課程四：第 12 週 - NLP 的基石：詞嵌入 (Word Embeddings) 與 Word2Vec (Word Embeddings)",
+        "topics": [
+          "語言表示的困局",
+          "詞嵌入 (Word Embeddings) 的優勢",
+          "Word2Vec 模型深度解析",
+          "向量空間的魔法：詞法類比",
+          "預訓練詞向量家族",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week12.md",
+        "quizPath": "dl_week12.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 13,
+        "title": "課程四：第 13 週 - 注意力機制 (Attention)：AI 的集中力 (Attention Mechanism)",
+        "topics": [
+          "注意力機制的直覺",
+          "核心公式：Query, Key, Value",
+          "計算三部曲",
+          "自注意力 (Self-Attention)",
+          "多頭注意力 (Multi-head Attention) 初探",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week13.md",
+        "quizPath": "dl_week13.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 14,
+        "title": "課程四：第 14 週 - Transformer 震撼：Attention is All You Need (Transformer)",
+        "topics": [
+          "拋棄循環：Transformer 的誕生",
+          "位置編碼 (Positional Encoding)",
+          "編碼器 (Encoder) 結構",
+          "解碼器 (Decoder) 結構",
+          "為什麼 Transformer 更好？",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week14.md",
+        "quizPath": "dl_week14.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 15,
+        "title": "課程四：第 15 週 - BERT 與預訓練模型：NLP 的 ImageNet 時刻 (BERT & Pre-training)",
+        "topics": [
+          "NLP 的典範轉移",
+          "BERT：雙向 Transformer 編碼器",
+          "BERT 的兩大預訓練任務",
+          "特殊標記與輸入表示",
+          "BERT 家族與生態",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week15.md",
+        "quizPath": "dl_week15.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 16,
+        "title": "課程四：第 16 週 - GPT 家族演進：走向生成式 AI (GPT Family)",
+        "topics": [
+          "GPT (Generative Pre-trained Transformer)",
+          "從 1 到 3：參數規模的躍遷",
+          "指令微調 (Instruction Tuning) 與 ChatGPT",
+          "RLHF：人類反饋強化學習",
+          "幻覺 (Hallucination) 與限制",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week16.md",
+        "quizPath": "dl_week16.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 17,
+        "title": "課程四：第 17 週 - 提示工程 (Prompt Engineering) 與 AI 倫理 (Prompts & Ethics)",
+        "topics": [
+          "提示工程 (Prompt Engineering)：溝通的藝術",
+          "RAG (檢索增強生成)：AI 的外部大腦",
+          "AI 的安全與對抗",
+          "AI 倫理與社會影響",
+          "通向 AGI (通用人工智慧) 之路",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week17.md",
+        "quizPath": "dl_week17.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 18,
+        "title": "課程四：第 18 週 - 期末綜合測驗 (Final Comprehensive Exam)",
+        "topics": [
+          "深度學習演進全景 (25 min)",
+          "電腦視覺與空間智能 (25 min)",
+          "語言理解與序列建模 (25 min)",
+          "生成式 AI 與未來 (25 min)",
+          "單選題 (Single Choice, SC) - 共 50 題",
+          "多選題 (Multiple Choice, MC) - 共 50 題"
+        ],
+        "mdPath": "week18.md",
+        "quizPath": "dl_week18.json",
+        "estimatedMinutes": 45
+      }
+    ]
+  },
+  {
+    "id": "artificial-intelligence",
+    "title": "人工智慧全傳：從邏輯推理到生成式未來",
+    "description": "系統化學習人工智慧的廣度，涵蓋經典 AI、搜索算法、機率圖模型到現代大語言模型 (LLM)。課程強調跨學科視野與產業應用趨勢。",
+    "category": "人工智慧",
+    "tags": [
+      "通識課程",
+      "AI 歷史",
+      "大語言模型"
+    ],
+    "totalWeeks": 18,
+    "totalQuestions": 540,
+    "syllabus": [
+      {
+        "week": 1,
+        "title": "課程五：第 1 週 - 人工智慧發展史與核心定義 (AI History & Definitions)",
+        "topics": [
+          "什麼是人工智慧？",
+          "AI 的歷史里程碑",
+          "三大演進浪潮",
+          "現代 AI 成功的「三位一體」",
+          "AI 的分類範式初步",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week1.md",
+        "quizPath": "ai_week1.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 2,
+        "title": "課程五：第 2 週 - AI 學習範式：從監督式到生成式 (Learning Paradigms)",
+        "topics": [
+          "監督式學習 (Supervised Learning)：標籤的力量",
+          "非監督式學習 (Unsupervised Learning)：挖掘隱藏模式",
+          "強化學習 (Reinforcement Learning)：試錯與獎勵",
+          "深度學習 (DL) 的位置",
+          "生成式 AI (GenAI) 的突圍",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week2.md",
+        "quizPath": "ai_week2.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 3,
+        "title": "課程五：第 3 週 - 機器學習基礎演算法概念 (ML Algorithms)",
+        "topics": [
+          "回歸 vs. 分類：問題的兩面",
+          "線性回歸與邏輯回歸",
+          "決策樹 (Decision Trees) 與 森林",
+          "效能與誤差：偏差-方差權衡",
+          "評估指標：混淆矩陣",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week3.md",
+        "quizPath": "ai_week3.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 4,
+        "title": "課程五：第 4 週 - 深度學習與神經網路原理 (Neural Networks)",
+        "topics": [
+          "人工神經元的構造",
+          "多層感知器 (MLP) 的層級",
+          "如何學習？反向傳播 (Backpropagation)",
+          "卷積神經網路 (CNN)：眼睛",
+          "循環神經網路 (RNN)：記憶",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week4.md",
+        "quizPath": "ai_week4.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 5,
+        "title": "課程五：第 5 週 - 數據倫理、偏見與公平性 (AI Ethics & Fairness)",
+        "topics": [
+          "AI 偏見 (Bias) 的真相",
+          "公平性 (Fairness) 的定義",
+          "透明度 (Transparency) 與 可解釋性 (Explainability)",
+          "隱私保護與 GDPR",
+          "負責任的 AI (Responsible AI)",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week5.md",
+        "quizPath": "ai_week5.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 6,
+        "title": "課程五：第 6 週 - Python 與 雲端 AI 平台概覽 (AI Ecosystem)",
+        "topics": [
+          "為什麼是 Python？AI 的母語",
+          "零配置雲端環境：Google Colab",
+          "Model-as-a-Service (MaaS) 時代",
+          "HuggingFace：AI 界的 GitHub",
+          "API 串接與 Token 經濟",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week6.md",
+        "quizPath": "ai_week6.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 7,
+        "title": "課程五：第 7 週 - 大語言模型 (LLM) 進化史與 BERT/GPT (LLM Evolution)",
+        "topics": [
+          "NLP 的前夜：RNN 的侷限",
+          "Transformer：現代 AI 的公約數",
+          "BERT：理解語言的大師",
+          "GPT：生成語言的鬼才",
+          "湧現能力 (Emergent Abilities)",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week7.md",
+        "quizPath": "ai_week7.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 8,
+        "title": "課程五：第 8 週 - 影像生成與多模態 AI (Image Gen & Multimodal)",
+        "topics": [
+          "影像生成的革命：從 GAN 到 Diffusion",
+          "聽懂人話的畫家：Stable Diffusion 與 Midjourney",
+          "多模態 AI 的橋樑：CLIP 模型",
+          "控制生成的藝術：ControlNet 與 負面提示",
+          "AI 影像的隱憂：Deepfake 與 檢測",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week8.md",
+        "quizPath": "ai_week8.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 9,
+        "title": "課程五：第 9 週 - 期中綜合測驗 (Midterm Comprehensive Exam)",
+        "topics": [
+          "AI 全景地圖回顧 (25 min)",
+          "深度學習與視覺 (25 min)",
+          "生成式 AI 與 LLM (25 min)",
+          "倫理、偏見與實務 (25 min)",
+          "單選題 (Single Choice, SC) - 共 50 題",
+          "多選題 (Multiple Choice, MC) - 共 50 題"
+        ],
+        "mdPath": "week9.md",
+        "quizPath": "ai_week9.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 10,
+        "title": "課程五：第 10 週 - 提示工程基礎：溝通的藝術 (Prompt Engineering)",
+        "topics": [
+          "提示工程 (Prompt Engineering) 的定義",
+          "Prompt 的六大核心要素 (CO-STAR 框架)",
+          "提示技巧：Zero-shot 與 Few-shot",
+          "角色設定 (Persona) 的威力",
+          "指令分隔符與負面約束",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week10.md",
+        "quizPath": "ai_week10.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 11,
+        "title": "課程五：第 11 週 - 進階提示技巧與 RAG 初探 (Advanced Prompts & RAG)",
+        "topics": [
+          "思維鏈 (Chain of Thought, CoT)",
+          "少樣本思維鏈 (Few-shot CoT)",
+          "RAG：檢索增強生成 (Retrieval-Augmented Generation)",
+          "向量資料庫 (Vector Database) 簡介",
+          "自我反思與自我校正 (Self-Reflection)",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week11.md",
+        "quizPath": "ai_week11.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 12,
+        "title": "課程五：第 12 週 - AI 產業應用：製造業與金融科技 (AI in Industry I)",
+        "topics": [
+          "智慧製造 (Smart Manufacturing) 的四大場景",
+          "工業 4.0 與 AI 的結合",
+          "金融科技 (FinTech) 的核心應用",
+          "量化交易與 NLP 的整合",
+          "數據孤島 (Data Silos) 挑戰",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week12.md",
+        "quizPath": "ai_week12.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 13,
+        "title": "課程五：第 13 週 - AI 商業應用：行銷與客戶支援 (AI in Industry II)",
+        "topics": [
+          "生成式行銷 (Generative Marketing)",
+          "智慧客服與支援 (AI Support)",
+          "個人化推薦系統 (Recommendation Systems)",
+          "銷售預測與定價策略",
+          "商業 AI 的邊界與限制",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week13.md",
+        "quizPath": "ai_week13.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 14,
+        "title": "課程五：第 14 週 - 低代碼/無代碼 AI 解決方案開發 (No-code AI)",
+        "topics": [
+          "為什麼需要無代碼 AI 開發？",
+          "OpenAI GPTs 與 個人化助理",
+          "自動化工作流串接：Make.com 與 Zapier",
+          "低代碼平台概覽",
+          "MVP (最小可行性產品) 思維",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week14.md",
+        "quizPath": "ai_week14.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 15,
+        "title": "課程五：第 15 週 - AI 法律、智慧財產權與著作權 (AI Law & IP)",
+        "topics": [
+          "AI 內容的著作權 (Copyright) 之爭",
+          "訓練數據的合法性",
+          "責任歸屬：當 AI 犯錯時",
+          "全球 AI 法案趨勢",
+          "企業內部的 AI 合規指南",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week15.md",
+        "quizPath": "ai_week15.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 16,
+        "title": "課程五：第 16 週 - AI 安全、防禦與防偽 (AI Security)",
+        "topics": [
+          "提示詞注入攻擊 (Prompt Injection)",
+          "越獄 (Jailbreaking) 與 對抗性誘導",
+          "深度偽造 (Deepfake) 全方位分析",
+          "數據投毒 (Data Poisoning)",
+          "防禦策略與紅隊演練 (Red Teaming)",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week16.md",
+        "quizPath": "ai_week16.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 17,
+        "title": "課程五：第 17 週 - AI 專案生命週期與導入規劃 (AI Lifecycle)",
+        "topics": [
+          "AI 專案的五大階段",
+          "需求分析：AI 適用性檢查",
+          "成本預算與 ROI (投資報酬率)",
+          "設定成功的 KPI",
+          "變革管理 (Change Management)",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week17.md",
+        "quizPath": "ai_week17.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 18,
+        "title": "課程五：第 18 週 - 期末綜合測驗 (Final Comprehensive Exam)",
+        "topics": [
+          "AI 知識體系總回顧 (25 min)",
+          "生成式 AI 與 提示工程 (25 min)",
+          "產業應用與專案管理 (25 min)",
+          "法律、安全與治理 (25 min)",
+          "單選題 (Single Choice, SC) - 共 50 題",
+          "多選題 (Multiple Choice, MC) - 共 50 題"
+        ],
+        "mdPath": "week18.md",
+        "quizPath": "ai_week18.json",
+        "estimatedMinutes": 45
+      }
+    ]
+  },
+  {
     "id": "intro-psychometrics",
     "title": "心理計量學與測驗理論基礎",
     "description": "學習古典測驗理論 (CTT)、項目反應理論 (IRT) 及認知診斷模型 (CDM)，理解現代教育測驗背後的數學之美與 Python 計算實作。",

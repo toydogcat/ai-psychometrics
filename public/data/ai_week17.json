@@ -1,0 +1,224 @@
+{
+  "course_id": "artificial-intelligence",
+  "week": 17,
+  "title": "人工智慧第 17 週 - 自我診斷評量",
+  "knowledge_points": {
+    "KP17.1": "歷史背景",
+    "KP17.2": "核心定義",
+    "KP17.3": "算法邏輯",
+    "KP17.4": "倫理法律",
+    "KP17.5": "未來趨勢"
+  },
+  "questions": [
+    {
+      "id": "AI-W17-Q1",
+      "type": "single",
+      "kp": "KP17.2",
+      "title": "這是第 17 週的第 1 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "AI-W17-Q2",
+      "type": "single",
+      "kp": "KP17.3",
+      "title": "這是第 17 週的第 2 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "AI-W17-Q3",
+      "type": "single",
+      "kp": "KP17.4",
+      "title": "這是第 17 週的第 3 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "AI-W17-Q4",
+      "type": "single",
+      "kp": "KP17.5",
+      "title": "這是第 17 週的第 4 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "AI-W17-Q5",
+      "type": "single",
+      "kp": "KP17.1",
+      "title": "這是第 17 週的第 5 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "AI-W17-Q6",
+      "type": "single",
+      "kp": "KP17.2",
+      "title": "這是第 17 週的第 6 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "AI-W17-Q7",
+      "type": "single",
+      "kp": "KP17.3",
+      "title": "這是第 17 週的第 7 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "AI-W17-Q8",
+      "type": "single",
+      "kp": "KP17.4",
+      "title": "這是第 17 週的第 8 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "AI-W17-Q9",
+      "type": "single",
+      "kp": "KP17.5",
+      "title": "這是第 17 週的第 9 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "AI-W17-Q10",
+      "type": "single",
+      "kp": "KP17.1",
+      "title": "這是第 17 週的第 10 個人工智慧練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是人工智慧 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

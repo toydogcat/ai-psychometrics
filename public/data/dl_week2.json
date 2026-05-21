@@ -1,0 +1,224 @@
+{
+  "course_id": "deep-learning",
+  "week": 2,
+  "title": "深度學習第 2 週 - 自我診斷評量",
+  "knowledge_points": {
+    "KP2.1": "理論基礎",
+    "KP2.2": "架構原理",
+    "KP2.3": "PyTorch 實作",
+    "KP2.4": "模型調優",
+    "KP2.5": "進階應用"
+  },
+  "questions": [
+    {
+      "id": "DL-W2-Q1",
+      "type": "single",
+      "kp": "KP2.2",
+      "title": "這是第 2 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是深度學習 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "DL-W2-Q2",
+      "type": "single",
+      "kp": "KP2.3",
+      "title": "這是第 2 週的第 2 個深度學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是深度學習 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "DL-W2-Q3",
+      "type": "single",
+      "kp": "KP2.4",
+      "title": "這是第 2 週的第 3 個深度學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是深度學習 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "DL-W2-Q4",
+      "type": "single",
+      "kp": "KP2.5",
+      "title": "這是第 2 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是深度學習 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "DL-W2-Q5",
+      "type": "single",
+      "kp": "KP2.1",
+      "title": "這是第 2 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是深度學習 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "DL-W2-Q6",
+      "type": "single",
+      "kp": "KP2.2",
+      "title": "這是第 2 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是深度學習 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "DL-W2-Q7",
+      "type": "single",
+      "kp": "KP2.3",
+      "title": "這是第 2 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是深度學習 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "DL-W2-Q8",
+      "type": "single",
+      "kp": "KP2.4",
+      "title": "這是第 2 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是深度學習 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "DL-W2-Q9",
+      "type": "single",
+      "kp": "KP2.5",
+      "title": "這是第 2 週的第 9 個深度學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是深度學習 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "DL-W2-Q10",
+      "type": "single",
+      "kp": "KP2.1",
+      "title": "這是第 2 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是深度學習 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}
