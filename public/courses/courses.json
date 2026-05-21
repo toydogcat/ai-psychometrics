@@ -566,6 +566,291 @@
     ]
   },
   {
+    "id": "machine-learning",
+    "title": "機器學習實戰：從數學直覺到 Python 實踐",
+    "description": "系統化學習機器學習核心演算法，從線性回歸到深度學習前哨站。課程強調數學原理的直觀理解，並透過 Scikit-Learn 進行大量動態實驗。",
+    "category": "人工智慧",
+    "tags": [
+      "核心課程",
+      "數學直覺",
+      "Scikit-Learn"
+    ],
+    "totalWeeks": 18,
+    "totalQuestions": 540,
+    "syllabus": [
+      {
+        "week": 1,
+        "title": "課程三：第 1 週 - 機器學習發展史與基本概念 (ML History & Basic Concepts)",
+        "topics": [
+          "機器學習的歷史脈絡",
+          "機器學習的核心定義 (Tom Mitchell)",
+          "三大機器學習範式",
+          "機器學習工作流 (Workflow)",
+          "Scikit-Learn (sklearn) 入門",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week1.md",
+        "quizPath": "ml_week1.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 2,
+        "title": "課程三：第 2 週 - 線性回歸：數學直覺與統計基礎 (Linear Regression)",
+        "topics": [
+          "線性回歸的數學模型",
+          "損失函數 (Loss Function)：均方誤差 (MSE)",
+          "普通最小平方法 (OLS) 的閉式解",
+          "模型評估指標：$R^2$ 分數",
+          "線性回歸的基礎假設",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week2.md",
+        "quizPath": "ml_week2.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 3,
+        "title": "課程三：第 3 週 - 梯度下降與優化算法 (Gradient Descent)",
+        "topics": [
+          "為什麼需要梯度下降？",
+          "梯度的數學定義與方向意義",
+          "優化三要素",
+          "學習率 (Learning Rate) 的影響",
+          "梯度下降的變體",
+          "特徵縮放 (Feature Scaling)"
+        ],
+        "mdPath": "week3.md",
+        "quizPath": "ml_week3.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 4,
+        "title": "課程三：第 4 週 - 邏輯回歸：機率建模與分類基礎 (Logistic Regression)",
+        "topics": [
+          "從回歸到分類：Sigmoid 函數",
+          "邏輯回歸的模型表達式",
+          "損失函數：對數損失 (Log Loss)",
+          "正則化 (Regularization) 簡介",
+          "多分類擴展",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week4.md",
+        "quizPath": "ml_week4.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 5,
+        "title": "課程三：第 5 週 - 決策樹：資訊理論與分而治之 (Decision Trees)",
+        "topics": [
+          "決策樹的結構",
+          "核心指標：不純度 (Impurity)",
+          "CART 算法與切分策略",
+          "過擬合與剪枝 (Pruning)",
+          "特徵重要性 (Feature Importance)",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week5.md",
+        "quizPath": "ml_week5.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 6,
+        "title": "課程三：第 6 週 - 集成學習 I：Bagging 與隨機森林 (Random Forest)",
+        "topics": [
+          "集成學習 (Ensemble Learning) 核心思想",
+          "Bagging 原理：Bootstrap Aggregating",
+          "隨機森林 (Random Forest)",
+          "袋外錯誤率 (OOB Error)",
+          "極隨機樹 (Extra Trees)",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week6.md",
+        "quizPath": "ml_week6.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 7,
+        "title": "課程三：第 7 週 - 集成學習 II：Boosting 與 XGBoost/LightGBM 簡介 (Boosting Techniques)",
+        "topics": [
+          "Boosting 核心原理",
+          "AdaBoost：權重調整",
+          "梯度提升樹 (GBDT)：擬合殘差",
+          "XGBoost：工業級改進",
+          "LightGBM：追求極速",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week7.md",
+        "quizPath": "ml_week7.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 8,
+        "title": "課程三：第 8 週 - SVM 與 KNN：幾何空間與近鄰法則 (SVM & KNN)",
+        "topics": [
+          "K-最近鄰 (KNN) 算法",
+          "KNN 的維度災難 (Curse of Dimensionality)",
+          "支援向量機 (SVM) 基礎",
+          "線性不可分與核技巧 (Kernel Trick)",
+          "軟間隔 (Soft Margin) 與懲罰參數 $C$",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week8.md",
+        "quizPath": "ml_week8.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 9,
+        "title": "課程三：第 9 週 - 期中綜合測驗 (Midterm Comprehensive Exam)",
+        "topics": [
+          "監督式學習核心地圖 (25 min)",
+          "優化與泛化 (25 min)",
+          "樹與森林 (25 min)",
+          "幾何空間模型 (25 min)",
+          "單選題 (Single Choice, SC) - 共 50 題",
+          "多選題 (Multiple Choice, MC) - 共 50 題"
+        ],
+        "mdPath": "week9.md",
+        "quizPath": "ml_week9.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 10,
+        "title": "課程三：第 10 週 - 非監督式學習：K-Means 聚類與 EM 算法直覺 (K-Means Clustering)",
+        "topics": [
+          "非監督式學習 (Unsupervised Learning) 簡介",
+          "K-Means 算法流程",
+          "K-Means++ 改進",
+          "如何選擇聚類數量 $K$？",
+          "K-Means 的局限性",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week10.md",
+        "quizPath": "ml_week10.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 11,
+        "title": "課程三：第 11 週 - 主成分分析 (PCA)：線性降維的藝術 (PCA)",
+        "topics": [
+          "為什麼需要降維？",
+          "PCA 的核心思想",
+          "PCA 運算流程",
+          "主成分的特性",
+          "如何選擇主成分數量？",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week11.md",
+        "quizPath": "ml_week11.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 12,
+        "title": "課程三：第 12 週 - 奇異值分解 (SVD) 與矩陣分解應用 (SVD & Matrix Factorization)",
+        "topics": [
+          "SVD 的數學定義",
+          "SVD 的幾何意義",
+          "SVD 與 PCA 的關係",
+          "矩陣低秩逼近 (Low-rank Approximation)",
+          "推薦系統初步：矩陣補全",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week12.md",
+        "quizPath": "ml_week12.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 13,
+        "title": "課程三：第 13 週 - 異常檢測：孤立森林與局部異常因子 (Anomaly Detection)",
+        "topics": [
+          "什麼是異常檢測 (Anomaly Detection)？",
+          "孤立森林 (Isolation Forest)",
+          "局部異常因子 (Local Outlier Factor, LOF)",
+          "一類 SVM (One-Class SVM) 簡介",
+          "評估異常檢測模型",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week13.md",
+        "quizPath": "ml_week13.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 14,
+        "title": "課程三：第 14 週 - 特徵工程：資料清洗與特徵轉換 (Feature Engineering)",
+        "topics": [
+          "資料清洗 (Data Cleaning)",
+          "特徵縮放 (Feature Scaling)",
+          "類別特徵處理 (Categorical Encoding)",
+          "數值特徵轉換",
+          "特徵衍生 (Feature Creation)",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week14.md",
+        "quizPath": "ml_week14.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 15,
+        "title": "課程三：第 15 週 - 模型評估與效能度量 (Model Evaluation)",
+        "topics": [
+          "混淆矩陣 (Confusion Matrix)",
+          "分類核心指標",
+          "ROC 曲線與 AUC",
+          "回歸指標",
+          "學習曲線與偏差-方差診斷",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week15.md",
+        "quizPath": "ml_week15.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 16,
+        "title": "課程三：第 16 週 - 交叉驗證與模型選擇 (Validation & Selection)",
+        "topics": [
+          "驗證的需求：防止偶然性",
+          "K-折交叉驗證 (K-Fold CV)",
+          "分層交叉驗證 (Stratified K-Fold)",
+          "留一法 (Leave-One-Out, LOO)",
+          "時間序列驗證 (Time Series Split)",
+          "驗證曲線 (Validation Curve)"
+        ],
+        "mdPath": "week16.md",
+        "quizPath": "ml_week16.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 17,
+        "title": "課程三：第 17 週 - 超參數調優與自動化管線 (Hyperparameter Tuning & Pipelines)",
+        "topics": [
+          "參數 (Parameters) vs. 超參數 (Hyperparameters)",
+          "網格搜索 (Grid Search)",
+          "隨機搜索 (Randomized Search)",
+          "Scikit-Learn Pipeline",
+          "模型持久化 (Serialization)",
+          "單選題 (Single Choice) - 10 題"
+        ],
+        "mdPath": "week17.md",
+        "quizPath": "ml_week17.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 18,
+        "title": "課程三：第 18 週 - 期末綜合測驗 (Final Comprehensive Exam)",
+        "topics": [
+          "機器學習全景地圖 (25 min)",
+          "資料工程與工作流 (25 min)",
+          "模型評估與診斷 (25 min)",
+          "調優與持久化 (25 min)",
+          "單選題 (Single Choice, SC) - 共 50 題",
+          "多選題 (Multiple Choice, MC) - 共 50 題"
+        ],
+        "mdPath": "week18.md",
+        "quizPath": "ml_week18.json",
+        "estimatedMinutes": 45
+      }
+    ]
+  },
+  {
     "id": "intro-psychometrics",
     "title": "心理計量學與測驗理論基礎",
     "description": "學習古典測驗理論 (CTT)、項目反應理論 (IRT) 及認知診斷模型 (CDM)，理解現代教育測驗背後的數學之美與 Python 計算實作。",

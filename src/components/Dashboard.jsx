@@ -34,10 +34,11 @@ export default function Dashboard({ user, onLogout, onSelectCourse, onSelectHist
 
       // 2. Fetch history and compute progress percentages
       const historyData = await StorageEngine.getQuizResults(user?.id);
-      setHistory(historyData);
+      const safeHistory = Array.isArray(historyData) ? historyData : [];
+      setHistory(safeHistory);
 
       const prog = {};
-      historyData.forEach(item => {
+      safeHistory.forEach(item => {
         if (!prog[item.course_id]) {
           prog[item.course_id] = new Set();
         }

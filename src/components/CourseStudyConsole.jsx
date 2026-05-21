@@ -45,11 +45,14 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
     try {
       const results = await StorageEngine.getQuizResults(user?.id);
       const progressMap = {};
-      results.forEach(res => {
-        if (res.course_id === course.id) {
-          progressMap[res.week] = res;
-        }
-      });
+      
+      if (results && Array.isArray(results)) {
+        results.forEach(res => {
+          if (res.course_id === course.id) {
+            progressMap[res.week] = res;
+          }
+        });
+      }
       setCourseProgress(progressMap);
     } catch (err) {
       console.error('Failed to load progress from StorageEngine:', err);

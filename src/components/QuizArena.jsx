@@ -25,9 +25,12 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
       const data = await response.json();
       setQuizData(data);
 
+      if (!data || !data.questions) throw new Error('Invalid quiz data');
+
       // 2. Fetch user's saved mastery progress for this week
       const results = await StorageEngine.getQuizResults(user?.id);
-      const weekProgress = results.find(r => r.course_id === courseId && r.week === weekId);
+      const historyArr = Array.isArray(results) ? results : [];
+      const weekProgress = historyArr.find(r => r.course_id === courseId && r.week === weekId);
       const mastered = weekProgress?.mastered_questions || [];
       const attempts = weekProgress?.attempts_count || 0;
       
@@ -54,6 +57,7 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
       setAnswers(initialAnswers);
     } catch (err) {
       console.error('Failed to load quiz or progress:', err);
+      setQuizData(null);
     } finally {
       setLoading(false);
     }
@@ -225,8 +229,8 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
       }
 
       const itemNames = activeQuestions.map(q => q.id);
-      const attributeNames = Object.keys(quizData.knowledge_points);
-      const qMatrix = activeQuestions.map(q => q.q_vector);
+      const attributeNames = quizData.knowledge_points ? Object.keys(quizData.knowledge_points) : [];
+      const qMatrix = activeQuestions.map(q => q.q_vector || Array(attributeNames.length).fill(0));
 
       const cttResults = calculateCTT(cohortMatrix, itemNames);
       const irtResults = calculateIRT2PL(cohortMatrix, itemNames);
@@ -317,7 +321,7 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
               {currentQuestion.type === 'single' ? '單選題' : currentQuestion.type === 'multiple' ? '多選題' : '填空題'}
             </span>
             <span className="text-[10px] font-semibold px-3 py-1 rounded-full bg-white/5 border border-white/5 text-slate-400">
-              主要知識點：{quizData.knowledge_points[currentQuestion.kp]}
+              主要知識點：{quizData.knowledge_points ? quizData.knowledge_points[currentQuestion.kp] : '未指定'}
             </span>
           </div>
 
@@ -329,7 +333,7 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
           {/* Answer Inputs based on Question Type */}
           {currentQuestion.type === 'single' && (
             <div className="flex flex-col gap-3.5">
-              {Object.entries(currentQuestion.options).map(([key, val]) => (
+              {Object.entries(currentQuestion.options || {}).map(([key, val]) => (
                 <div 
                   key={key}
                   className={`p-4 rounded-2xl border transition duration-200 cursor-pointer flex items-center gap-4 ${
@@ -353,7 +357,7 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
           {currentQuestion.type === 'multiple' && (
             <div>
               <div className="flex flex-col gap-3.5 mb-4">
-                {Object.entries(currentQuestion.options).map(([key, val]) => {
+                {Object.entries(currentQuestion.options || {}).map(([key, val]) => {
                   const isSel = (answers[currentQuestion.id] || []).includes(key);
                   return (
                     <div 

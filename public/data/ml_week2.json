@@ -1,0 +1,644 @@
+{
+  "course_id": "machine-learning",
+  "week": 2,
+  "title": "機器學習第 2 週 - 自我診斷評量",
+  "knowledge_points": {
+    "KP2.1": "概念基礎",
+    "KP2.2": "數學原理",
+    "KP2.3": "Python 實作",
+    "KP2.4": "模型評估",
+    "KP2.5": "進階應用"
+  },
+  "questions": [
+    {
+      "id": "ML-W2-Q1",
+      "type": "single",
+      "kp": "KP2.2",
+      "title": "這是第 2 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q2",
+      "type": "single",
+      "kp": "KP2.3",
+      "title": "這是第 2 週的第 2 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q3",
+      "type": "single",
+      "kp": "KP2.4",
+      "title": "這是第 2 週的第 3 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q4",
+      "type": "single",
+      "kp": "KP2.5",
+      "title": "這是第 2 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ML-W2-Q5",
+      "type": "single",
+      "kp": "KP2.1",
+      "title": "這是第 2 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q6",
+      "type": "single",
+      "kp": "KP2.2",
+      "title": "這是第 2 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q7",
+      "type": "single",
+      "kp": "KP2.3",
+      "title": "這是第 2 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q8",
+      "type": "single",
+      "kp": "KP2.4",
+      "title": "這是第 2 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q9",
+      "type": "single",
+      "kp": "KP2.5",
+      "title": "這是第 2 週的第 9 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ML-W2-Q10",
+      "type": "single",
+      "kp": "KP2.1",
+      "title": "這是第 2 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q11",
+      "type": "single",
+      "kp": "KP2.2",
+      "title": "這是第 2 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q12",
+      "type": "single",
+      "kp": "KP2.3",
+      "title": "這是第 2 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q13",
+      "type": "single",
+      "kp": "KP2.4",
+      "title": "這是第 2 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q14",
+      "type": "single",
+      "kp": "KP2.5",
+      "title": "這是第 2 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ML-W2-Q15",
+      "type": "single",
+      "kp": "KP2.1",
+      "title": "這是第 2 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q16",
+      "type": "single",
+      "kp": "KP2.2",
+      "title": "這是第 2 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q17",
+      "type": "single",
+      "kp": "KP2.3",
+      "title": "這是第 2 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q18",
+      "type": "single",
+      "kp": "KP2.4",
+      "title": "這是第 2 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q19",
+      "type": "single",
+      "kp": "KP2.5",
+      "title": "這是第 2 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ML-W2-Q20",
+      "type": "single",
+      "kp": "KP2.1",
+      "title": "這是第 2 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q21",
+      "type": "single",
+      "kp": "KP2.2",
+      "title": "這是第 2 週的第 21 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q22",
+      "type": "single",
+      "kp": "KP2.3",
+      "title": "這是第 2 週的第 22 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q23",
+      "type": "single",
+      "kp": "KP2.4",
+      "title": "這是第 2 週的第 23 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q24",
+      "type": "single",
+      "kp": "KP2.5",
+      "title": "這是第 2 週的第 24 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ML-W2-Q25",
+      "type": "single",
+      "kp": "KP2.1",
+      "title": "這是第 2 週的第 25 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q26",
+      "type": "single",
+      "kp": "KP2.2",
+      "title": "這是第 2 週的第 26 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q27",
+      "type": "single",
+      "kp": "KP2.3",
+      "title": "這是第 2 週的第 27 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q28",
+      "type": "single",
+      "kp": "KP2.4",
+      "title": "這是第 2 週的第 28 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "ML-W2-Q29",
+      "type": "single",
+      "kp": "KP2.5",
+      "title": "這是第 2 週的第 29 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "ML-W2-Q30",
+      "type": "single",
+      "kp": "KP2.1",
+      "title": "這是第 2 週的第 30 個機器學習練習題。請選擇正確答案。",
+      "options": {
+        "A": "選項 A (正確)",
+        "B": "選項 B",
+        "C": "選項 C",
+        "D": "選項 D"
+      },
+      "answer": "A",
+      "explanation": "這是 placeholder 解析內容。",
+      "q_vector": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

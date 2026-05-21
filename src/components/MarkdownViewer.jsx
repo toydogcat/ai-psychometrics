@@ -41,6 +41,21 @@ export default function MarkdownViewer({ rawText }) {
   const [copiedIndex, setCopiedIndex] = useState(null);
   const [headings, setHeadings] = useState([]);
 
+  // Auto-render math when content changes
+  useEffect(() => {
+    if (window.renderMathInElement && rawText) {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '\\[', right: '\\]', display: true }
+        ],
+        throwOnError: false
+      });
+    }
+  }, [rawText, fontSize]);
+
   // Extract headings for the dynamic Table of Contents
   useEffect(() => {
     if (!rawText) return;
