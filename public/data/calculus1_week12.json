@@ -1,324 +1,408 @@
 {
-  "course": "calculus1",
-  "week": "week12",
-  "title": "第 12 週 - 洛必達法則與函數圖形描繪 (L'Hospital's Rule and Curve Sketching)",
-  "knowledge_points": {
-    "KP12.1": "洛必達法則處理 $0/0$ 與 $\\infty/\\infty$ 的基本條件。",
-    "KP12.2": "將乘積與差項轉為商式以應用洛必達。",
-    "KP12.3": "利用對數將指數型未定式降階。",
-    "KP12.4": "斜漸近線的判斷與綜合繪圖技術。",
-    "KP12.5": "微積分是驗證圖形工具正確性的最終標準。"
-  },
+  "course_id": "calculus1",
+  "week": 12,
+  "title": "微積分 上 第 12 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "在 Google Colab 中執行以下代碼。\n    ```python\n    import sympy as sp",
-      "options": null,
+      "title": "**Q1**: 洛必達法則主要用來解決哪種問題？\n   -",
+      "options": {
+        "A": "微分",
+        "B": "積分",
+        "C": "未定式極限",
+        "D": "導數連續性"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "洛必達法則主要用來解決哪種問題？\n   - (A) 微分 (B) 積分 (C) 未定式極限 (D) 導數連續性",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "若 $\\lim_{x \\to a} f(x) = 1$ 且 $\\lim_{x \\to a} g(x) = \\infty$，則 $\\lim_{x \\to a} [f(x)]^{g(x)}$ 屬於哪種未定式？\n   - (A) $0^0$ (B) $\\infty^0$ (C) $1^\\infty$ (D) $0/0$",
-      "options": null,
+      "title": "**Q2**: 若 $\\lim_{x \\to a} f(x) = 1$ 且 $\\lim_{x \\to a} g(x) = \\infty$，則 $\\lim_{x \\to a} [f(x)]^{g(x)}$ 屬於哪種未定式？\n   -",
+      "options": {
+        "A": "$0^0$",
+        "B": "$\\infty^0$",
+        "C": "$1^\\infty$",
+        "D": "$0/0$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "求 $\\lim_{x \\to 0} \\frac{e^x - 1}{x}$ 的結果為？\n   - (A) 0 (B) 1 (C) $\\infty$ (D) 不存在",
-      "options": null,
+      "title": "**Q3**: 求 $\\lim_{x \\to 0} \\frac{e^x - 1}{x}$ 的結果為？\n   -",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "$\\infty$",
+        "D": "不存在"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "下列哪個函數具有斜漸近線？\n   - (A) $\\frac{x}{x^2+1}$ (B) $\\frac{x^2}{x+1}$ (C) $\\frac{x^3}{x+1}$ (D) $\\sin x$",
-      "options": null,
+      "title": "**Q4**: 下列哪個函數具有斜漸近線？\n   -",
+      "options": {
+        "A": "$\\frac{x}{x^2+1}$",
+        "B": "$\\frac{x^2}{x+1}$",
+        "C": "$\\frac{x^3}{x+1}$",
+        "D": "$\\sin x$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "處理 $\\infty - \\infty$ 未定式的第一步通常是？\n   - (A) 取對數 (B) 直接微分 (C) 合併分式 (D) 使用連鎖律",
-      "options": null,
+      "title": "**Q5**: 處理 $\\infty - \\infty$ 未定式的第一步通常是？\n   -",
+      "options": {
+        "A": "取對數",
+        "B": "直接微分",
+        "C": "合併分式",
+        "D": "使用連鎖律"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "斜漸近線 $y = mx + b$ 中的 $m$ 可以透過哪個極限求得？\n   - (A) $\\lim_{x \\to \\infty} f(x)$ (B) $\\lim_{x \\to \\infty} \\frac{f(x)}{x}$ (C) $\\lim_{x \\to 0} f(x)$ (D) $\\lim_{x \\to \\infty} [f(x) - x]$",
-      "options": null,
+      "title": "**Q6**: 斜漸近線 $y = mx + b$ 中的 $m$ 可以透過哪個極限求得？\n   -",
+      "options": {
+        "A": "$\\lim_{x \\to \\infty} f(x)$",
+        "B": "$\\lim_{x \\to \\infty} \\frac{f(x)}{x}$",
+        "C": "$\\lim_{x \\to 0} f(x)$",
+        "D": "$\\lim_{x \\to \\infty} [f(x) - x]$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "函數 $f(x) = e^{-x}x$ 在 $x \\to \\infty$ 時的極限為？\n   - (A) $\\infty$ (B) 1 (C) 0 (D) $e$",
-      "options": null,
+      "title": "**Q7**: 函數 $f(x) = e^{-x}x$ 在 $x \\to \\infty$ 時的極限為？\n   -",
+      "options": {
+        "A": "$\\infty$",
+        "B": "1",
+        "C": "0",
+        "D": "$e$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "下列何者**不是**洛必達法則的直接適用形式？\n   - (A) $0/0$ (B) $\\infty/\\infty$ (C) $0 \\cdot \\infty$ (D) 全部都不是",
-      "options": null,
+      "title": "**Q8**: 下列何者**不是**洛必達法則的直接適用形式？\n   -",
+      "options": {
+        "A": "$0/0$",
+        "B": "$\\infty/\\infty$",
+        "C": "$0 \\cdot \\infty$",
+        "D": "全部都不是"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "$\\lim_{x \\to 0^+} x^x$ 的值為？\n   - (A) 0 (B) 1 (C) $e$ (D) $1/e$",
-      "options": null,
+      "title": "**Q9**: $\\lim_{x \\to 0^+} x^x$ 的值為？\n   -",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "$e$",
+        "D": "$1/e$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "在繪製圖形時，若發現分子次數恰比分母次數大 1，應檢查是否存在？\n    - (A) 垂直漸近線 (B) 水平漸近線 (C) 斜漸近線 (D) 反曲點",
-      "options": null,
+      "title": "**Q10**: 在繪製圖形時，若發現分子次數恰比分母次數大 1，應檢查是否存在？\n    -",
+      "options": {
+        "A": "垂直漸近線",
+        "B": "水平漸近線",
+        "C": "斜漸近線",
+        "D": "反曲點\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列哪些是洛必達法則的正確應用前提？\n    - (A) 分子分母必須同時趨近於 0 或 $\\infty$ (B) 分母的導數不能為 0 (C) 極限必須是單側極限 (D) 分子分母必須在區間內可微",
-      "options": null,
+      "title": "**Q11**: 下列哪些是洛必達法則的正確應用前提？\n    -",
+      "options": {
+        "A": "分子分母必須同時趨近於 0 或 $\\infty$",
+        "B": "分母的導數不能為 0",
+        "C": "極限必須是單側極限",
+        "D": "分子分母必須在區間內可微"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "指數型未定式包括？\n    - (A) $0^0$ (B) $1^\\infty$ (C) $\\infty^0$ (D) $0^\\infty$",
-      "options": null,
+      "title": "**Q12**: 指數型未定式包括？\n    -",
+      "options": {
+        "A": "$0^0$",
+        "B": "$1^\\infty$",
+        "C": "$\\infty^0$",
+        "D": "$0^\\infty$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "關於漸近線，下列敘述哪些正確？\n    - (A) 水平漸近線可以與圖形相交 (B) 垂直漸近線絕不與圖形相交 (C) 一個函數最多只有兩條水平漸近線 (D) 斜漸近線必不與水平漸近線同時存在（在同一端）",
-      "options": null,
+      "title": "**Q13**: 關於漸近線，下列敘述哪些正確？\n    -",
+      "options": {
+        "A": "水平漸近線可以與圖形相交",
+        "B": "垂直漸近線絕不與圖形相交",
+        "C": "一個函數最多只有兩條水平漸近線",
+        "D": "斜漸近線必不與水平漸近線同時存在（在同一端）"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "求 $\\lim_{x \\to \\infty} \\frac{\\ln x}{x^p}$ ($p > 0$) 時，下列敘述正確的是？\n    - (A) 形式為 $\\infty/\\infty$ (B) 結果為 0 (C) 代表冪函數比對數函數增長快 (D) 結果為 $\\infty$",
-      "options": null,
+      "title": "**Q14**: 求 $\\lim_{x \\to \\infty} \\frac{\\ln x}{x^p}$ ($p > 0$) 時，下列敘述正確的是？\n    -",
+      "options": {
+        "A": "形式為 $\\infty/\\infty$",
+        "B": "結果為 0",
+        "C": "代表冪函數比對數函數增長快",
+        "D": "結果為 $\\infty$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "使用繪圖計算機時可能的誤差來源包括？\n    - (A) 函數在某點未定義 (B) 選取的 $x$ 軸範圍太廣 (C) 垂直漸近線被畫成斜線 (D) 計算機解析度限制",
-      "options": null,
+      "title": "**Q15**: 使用繪圖計算機時可能的誤差來源包括？\n    -",
+      "options": {
+        "A": "函數在某點未定義",
+        "B": "選取的 $x$ 軸範圍太廣",
+        "C": "垂直漸近線被畫成斜線",
+        "D": "計算機解析度限制"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "轉換 $0 \\cdot \\infty$ 為洛必達形式時，可以？\n    - (A) 把 0 項放到分母變成 $1/0 = \\infty$ (B) 把 $\\infty$ 項放到分母變成 $1/\\infty = 0$ (C) 直接對兩項分別微分 (D) 取 $\\ln$ 轉換",
-      "options": null,
+      "title": "**Q16**: 轉換 $0 \\cdot \\infty$ 為洛必達形式時，可以？\n    -",
+      "options": {
+        "A": "把 0 項放到分母變成 $1/0 = \\infty$",
+        "B": "把 $\\infty$ 項放到分母變成 $1/\\infty = 0$",
+        "C": "直接對兩項分別微分",
+        "D": "取 $\\ln$ 轉換"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "函數 $f(x) = \\frac{x^2-1}{x+1}$ 的特性包括？\n    - (A) $x = -1$ 是垂直漸近線 (B) 在 $x = -1$ 處有空心點 (C) 其圖形是一條直線（除 $x=-1$ 外） (D) 具有斜漸近線",
-      "options": null,
+      "title": "**Q17**: 函數 $f(x) = \\frac{x^2-1}{x+1}$ 的特性包括？\n    -",
+      "options": {
+        "A": "$x = -1$ 是垂直漸近線",
+        "B": "在 $x = -1$ 處有空心點",
+        "C": "其圖形是一條直線（除 $x=-1$ 外）",
+        "D": "具有斜漸近線"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "若 $\\lim_{x \\to a} \\frac{f'(x)}{g'(x)} = L$，則 $\\lim_{x \\to a} \\frac{f(x)}{g(x)} = L$ 的條件是？\n    - (A) $f(a)=g(a)=0$ (B) $f, g$ 在 $a$ 附近可微 (C) $L$ 必須是實數 (D) $g'(x) \\neq 0$",
-      "options": null,
+      "title": "**Q18**: 若 $\\lim_{x \\to a} \\frac{f'(x)}{g'(x)} = L$，則 $\\lim_{x \\to a} \\frac{f(x)}{g(x)} = L$ 的條件是？\n    -",
+      "options": {
+        "A": "$f(a)=g(a)=0$",
+        "B": "$f, g$ 在 $a$ 附近可微",
+        "C": "$L$ 必須是實數",
+        "D": "$g'(x) \\neq 0$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "下列極限值為 1 的有？\n    - (A) $\\lim_{x \\to 0} \\frac{\\sin x}{x}$ (B) $\\lim_{x \\to \\infty} (1+1/x)^x$ (C) $\\lim_{x \\to 0^+} x^x$ (D) $\\lim_{x \\to \\infty} \\frac{x+1}{x-1}$",
-      "options": null,
+      "title": "**Q19**: 下列極限值為 1 的有？\n    -",
+      "options": {
+        "A": "$\\lim_{x \\to 0} \\frac{\\sin x}{x}$",
+        "B": "$\\lim_{x \\to \\infty} (1+1/x)^x$",
+        "C": "$\\lim_{x \\to 0^+} x^x$",
+        "D": "$\\lim_{x \\to \\infty} \\frac{x+1}{x-1}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "斜漸近線的求法步驟包含？\n    - (A) 長除法 (B) 求 $\\lim f(x)/x$ (C) 求 $\\lim [f(x) - mx]$ (D) 檢查二階導數",
-      "options": null,
+      "title": "**Q20**: 斜漸近線的求法步驟包含？\n    -",
+      "options": {
+        "A": "長除法",
+        "B": "求 $\\lim f(x)/x$",
+        "C": "求 $\\lim [f(x) - mx]$",
+        "D": "檢查二階導數\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "$\\lim_{x \\to 0} \\frac{\\tan x}{x} = $ __________。",
-      "options": null,
+      "title": "**Q21**: $\\lim_{x \\to 0} \\frac{\\tan x}{x} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "函數 $f(x) = \\frac{2x^2+1}{x-1}$ 的斜漸近線方程式為 $y = $ __________。",
-      "options": null,
+      "title": "**Q22**: 函數 $f(x) = \\frac{2x^2+1}{x-1}$ 的斜漸近線方程式為 $y = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "$\\lim_{x \\to \\infty} \\frac{\\ln x}{x} = $ __________。",
-      "options": null,
+      "title": "**Q23**: $\\lim_{x \\to \\infty} \\frac{\\ln x}{x} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "處理 $1^\\infty$ 未定式時，取對數後的極限形式通常會變成 __________ 型。",
-      "options": null,
+      "title": "**Q24**: 處理 $1^\\infty$ 未定式時，取對數後的極限形式通常會變成 __________ 型。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "若 $\\lim_{x \\to a} f(x) = 0$ 且 $\\lim_{x \\to a} g(x) = \\infty$，則 $f(x) \\cdot g(x)$ 的極限稱為 __________ 式。",
-      "options": null,
+      "title": "**Q25**: 若 $\\lim_{x \\to a} f(x) = 0$ 且 $\\lim_{x \\to a} g(x) = \\infty$，則 $f(x) \\cdot g(x)$ 的極限稱為 __________ 式。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "洛必達法則**不能**直接用於 $\\frac{\\infty}{0}$，因為這不是 __________。",
-      "options": null,
+      "title": "**Q26**: 洛必達法則**不能**直接用於 $\\frac{\\infty}{0}$，因為這不是 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "$\\lim_{x \\to 0} \\frac{1-\\cos x}{x^2} = $ __________。",
-      "options": null,
+      "title": "**Q27**: $\\lim_{x \\to 0} \\frac{1-\\cos x}{x^2} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "函數 $f(x) = \\frac{x^3}{x^2+1}$ 的斜漸近線為 $y = $ __________。",
-      "options": null,
+      "title": "**Q28**: 函數 $f(x) = \\frac{x^3}{x^2+1}$ 的斜漸近線為 $y = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "使用洛必達法則時，是對分子與分母分別 __________，而不是使用除法規則。",
-      "options": null,
+      "title": "**Q29**: 使用洛必達法則時，是對分子與分母分別 __________，而不是使用除法規則。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "繪圖時若 $\\lim_{x \\to 3^+} f(x) = \\infty$，則 $x=3$ 是 __________ 漸近線。",
-      "options": null,
+      "title": "**Q30**: 繪圖時若 $\\lim_{x \\to 3^+} f(x) = \\infty$，則 $x=3$ 是 __________ 漸近線。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

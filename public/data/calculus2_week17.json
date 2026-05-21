@@ -1,314 +1,383 @@
 {
-  "course": "calculus2",
-  "week": "week17",
-  "title": "第 17 週 - 多元連鎖律 (The Chain Rule for Several Variables)",
-  "knowledge_points": {
-    "KP17.1": "掌握單變數路徑下的全導數 $\\frac{dz}{dt}$ 結構。",
-    "KP17.2": "理解多元參數下，偏導數是以「分支相加」的形式組成的。",
-    "KP17.3": "熟練繪製樹狀圖，這是處理複雜連鎖律問題的標準 S.O.P.。",
-    "KP17.4": "理解隱函數微分定理的來源，並能擴展至三元以上。",
-    "KP17.5": "能將物理問題轉化為變數間的依賴關係並求解變化率。"
-  },
+  "course_id": "calculus2",
+  "week": 17,
+  "title": "微積分 中 第 17 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "$z = f(x, y)$，若 $x, y$ 均為 $t$ 的函數，則 $dz/dt$ 的項數為？\n   - (A) 1 (B) 2 (C) 3 (D) 4",
-      "options": null,
+      "title": "**Q1**: $z = f(x, y)$，若 $x, y$ 均為 $t$ 的函數，則 $dz/dt$ 的項數為？\n   -",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "在樹狀圖中，從 $z$ 到 $x$ 的路徑權重是？\n   - (A) $dx/dz$ (B) $\\partial z / \\partial x$ (C) $\\partial x / \\partial z$ (D) $z/x$",
-      "options": null,
+      "title": "**Q2**: 在樹狀圖中，從 $z$ 到 $x$ 的路徑權重是？\n   -",
+      "options": {
+        "A": "$dx/dz$",
+        "B": "$\\partial z / \\partial x$",
+        "C": "$\\partial x / \\partial z$",
+        "D": "$z/x$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "若 $F(x, y, z) = 0$，則 $\\partial z / \\partial x$ 等於？\n   - (A) $F_x / F_z$ (B) $-F_x / F_z$ (C) $F_z / F_x$ (D) $-F_z / F_x$",
-      "options": null,
+      "title": "**Q3**: 若 $F(x, y, z) = 0$，則 $\\partial z / \\partial x$ 等於？\n   -",
+      "options": {
+        "A": "$F_x / F_z$",
+        "B": "$-F_x / F_z$",
+        "C": "$F_z / F_x$",
+        "D": "$-F_z / F_x$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "若 $z = x+y$ 且 $x=t, y=t^2$，則 $dz/dt$ 為？\n   - (A) $1+2t$ (B) $1+t$ (C) $2t$ (D) 0",
-      "options": null,
+      "title": "**Q4**: 若 $z = x+y$ 且 $x=t, y=t^2$，則 $dz/dt$ 為？\n   -",
+      "options": {
+        "A": "$1+2t$",
+        "B": "$1+t$",
+        "C": "$2t$",
+        "D": "0"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "通用連鎖律中，若 $z = f(x, y)$ 且 $x=x(u, v), y=y(u, v)$，求 $\\partial z / \\partial v$ 時應固定哪一個變數？\n   - (A) $x$ (B) $y$ (C) $u$ (D) $z$",
-      "options": null,
+      "title": "**Q5**: 通用連鎖律中，若 $z = f(x, y)$ 且 $x=x(u, v), y=y(u, v)$，求 $\\partial z / \\partial v$ 時應固定哪一個變數？\n   -",
+      "options": {
+        "A": "$x$",
+        "B": "$y$",
+        "C": "$u$",
+        "D": "$z$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "$w = f(x, y, z)$，其中 $x, y, z$ 是 $t$ 的函數，則 $dw/dt$ 是？\n   - (A) 偏導數 (B) 全導數 (C) 方向導數 (D) 二階導數",
-      "options": null,
+      "title": "**Q6**: $w = f(x, y, z)$，其中 $x, y, z$ 是 $t$ 的函數，則 $dw/dt$ 是？\n   -",
+      "options": {
+        "A": "偏導數",
+        "B": "全導數",
+        "C": "方向導數",
+        "D": "二階導數"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "隱微分 $dy/dx = -F_x/F_y$ 要求前提為？\n   - (A) $F_x \\neq 0$ (B) $F_y \\neq 0$ (C) $F = 1$ (D) $x=0$",
-      "options": null,
+      "title": "**Q7**: 隱微分 $dy/dx = -F_x/F_y$ 要求前提為？\n   -",
+      "options": {
+        "A": "$F_x \\neq 0$",
+        "B": "$F_y \\neq 0$",
+        "C": "$F = 1$",
+        "D": "$x=0$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "若一個變量依賴 3 個中間變量，每個中間變量依賴 2 個最終變量，則樹狀圖底部共有幾個端點？\n   - (A) 3 (B) 2 (C) 6 (D) 5",
-      "options": null,
+      "title": "**Q8**: 若一個變量依賴 3 個中間變量，每個中間變量依賴 2 個最終變量，則樹狀圖底部共有幾個端點？\n   -",
+      "options": {
+        "A": "3",
+        "B": "2",
+        "C": "6",
+        "D": "5"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "在 $PV=nRT$ 中，若 $T$ 固定，求 $dP/dt$ 與 $dV/dt$ 的關係。\n   - (A) $V dP/dt + P dV/dt = 0$ (B) $dP/dt = dV/dt$ (C) $P dP/dt = V dV/dt$ (D) 無關",
-      "options": null,
+      "title": "**Q9**: 在 $PV=nRT$ 中，若 $T$ 固定，求 $dP/dt$ 與 $dV/dt$ 的關係。\n   -",
+      "options": {
+        "A": "$V dP/dt + P dV/dt = 0$",
+        "B": "$dP/dt = dV/dt$",
+        "C": "$P dP/dt = V dV/dt$",
+        "D": "無關"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "連鎖律的本質是什麼？\n    - (A) 導數的乘法規律 (B) 導數的加法規律 (C) 函數複合的變化率傳遞 (D) 座標轉換",
-      "options": null,
+      "title": "**Q10**: 連鎖律的本質是什麼？\n    -",
+      "options": {
+        "A": "導數的乘法規律",
+        "B": "導數的加法規律",
+        "C": "函數複合的變化率傳遞",
+        "D": "座標轉換\n\n### 2. 多選題 (Multiple Choice)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列關於連鎖律的敘述，正確的有？\n    - (A) 它可以用於計算高階偏導數 (B) 樹狀圖對任何層次的複合都有效 (C) 中間變數必須是可微的 (D) 結果與變數命名無關",
-      "options": null,
+      "title": "**Q11**: 下列關於連鎖律的敘述，正確的有？\n    -",
+      "options": {
+        "A": "它可以用於計算高階偏導數",
+        "B": "樹狀圖對任何層次的複合都有效",
+        "C": "中間變數必須是可微的",
+        "D": "結果與變數命名無關"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "若 $z = f(x, y)$，其中 $x=r\\cos\\theta, y=r\\sin\\theta$（極座標轉換），則 $\\partial z / \\partial r$ 包含？\n    - (A) $f_x \\cos\\theta$ (B) $f_y \\sin\\theta$ (C) $f_x (-r\\sin\\theta)$ (D) $f_y (r\\cos\\theta)$",
-      "options": null,
+      "title": "**Q12**: 若 $z = f(x, y)$，其中 $x=r\\cos\\theta, y=r\\sin\\theta$（極座標轉換），則 $\\partial z / \\partial r$ 包含？\n    -",
+      "options": {
+        "A": "$f_x \\cos\\theta$",
+        "B": "$f_y \\sin\\theta$",
+        "C": "$f_x (-r\\sin\\theta)$",
+        "D": "$f_y (r\\cos\\theta)$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "隱微分公式 $\\partial z / \\partial x = -F_x/F_z$ 適用的場景包括？\n    - (A) 球面方程式 $x^2+y^2+z^2=R^2$ (B) 平面方程式 $Ax+By+Cz=D$ (C) 顯函數 $z = x^2+y^2$ (D) 任何形如 $F(x,y,z)=0$ 的關係",
-      "options": null,
+      "title": "**Q13**: 隱微分公式 $\\partial z / \\partial x = -F_x/F_z$ 適用的場景包括？\n    -",
+      "options": {
+        "A": "球面方程式 $x^2+y^2+z^2=R^2$",
+        "B": "平面方程式 $Ax+By+Cz=D$",
+        "C": "顯函數 $z = x^2+y^2$",
+        "D": "任何形如 $F(x,y,z)=0$ 的關係"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "多元連鎖律常見的錯誤包括？\n    - (A) 遺漏某條路徑 (B) 混淆全導數與偏導數符號 (C) 忘了將路徑上的項相乘 (D) 忘了將不同路徑的項相加",
-      "options": null,
+      "title": "**Q14**: 多元連鎖律常見的錯誤包括？\n    -",
+      "options": {
+        "A": "遺漏某條路徑",
+        "B": "混淆全導數與偏導數符號",
+        "C": "忘了將路徑上的項相乘",
+        "D": "忘了將不同路徑的項相加"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "在物理應用中，連鎖律可以用來計算？\n    - (A) 流體中質點的加速度 (B) 氣體受壓縮時的壓力變化率 (C) 機械臂末端的運動速度 (D) 迴路中的電流變化",
-      "options": null,
+      "title": "**Q15**: 在物理應用中，連鎖律可以用來計算？\n    -",
+      "options": {
+        "A": "流體中質點的加速度",
+        "B": "氣體受壓縮時的壓力變化率",
+        "C": "機械臂末端的運動速度",
+        "D": "迴路中的電流變化\n\n### 3. 填充題 (Fill-in-the-blank)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "$\\frac{\\partial}{\\partial u} f(x(u,v), y(u,v)) = f_x \\frac{\\partial x}{\\partial u} + $ __________。",
-      "options": null,
+      "title": "**Q16**: $\\frac{\\partial}{\\partial u} f(x(u,v), y(u,v)) = f_x \\frac{\\partial x}{\\partial u} + $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "若 $x=e^t, y=t^2$，則 $dx/dt = $ __________。",
-      "options": null,
+      "title": "**Q17**: 若 $x=e^t, y=t^2$，則 $dx/dt = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "$F(x, y) = x^2 - y^2 = 0$ 定義的隱函數在 $(1, 1)$ 處的 $dy/dx = $ __________。",
-      "options": null,
+      "title": "**Q18**: $F(x, y) = x^2 - y^2 = 0$ 定義的隱函數在 $(1, 1)$ 處的 $dy/dx = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "在樹狀圖法中，自因變數到最終自變數的每一條線段代表一個 __________。",
-      "options": null,
+      "title": "**Q19**: 在樹狀圖法中，自因變數到最終自變數的每一條線段代表一個 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "$w = f(x, y, z, t)$ 的全微分 $dw$ 共有 __________ 項。",
-      "options": null,
+      "title": "**Q20**: $w = f(x, y, z, t)$ 的全微分 $dw$ 共有 __________ 項。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "若 $z = xy$，而 $x, y$ 隨時間變化，則 $dz/dt = y \\frac{dx}{dt} + $ __________。",
-      "options": null,
+      "title": "**Q21**: 若 $z = xy$，而 $x, y$ 隨時間變化，則 $dz/dt = y \\frac{dx}{dt} + $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "隱函數定理中，分母不能為零的條件是為了確保 __________ 定理成立。",
-      "options": null,
+      "title": "**Q22**: 隱函數定理中，分母不能為零的條件是為了確保 __________ 定理成立。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "$\\frac{\\partial}{\\partial \\theta} (r \\cos \\theta) = $ __________。",
-      "options": null,
+      "title": "**Q23**: $\\frac{\\partial}{\\partial \\theta} (r \\cos \\theta) = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "連鎖律反映了微積分的 __________ 性質。",
-      "options": null,
+      "title": "**Q24**: 連鎖律反映了微積分的 __________ 性質。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "若 $\\frac{\\partial z}{\\partial x} = 2, \\frac{\\partial z}{\\partial y} = 3$ 且 $\\frac{dx}{dt} = 1, \\frac{dy}{dt} = -1$，則 $\\frac{dz}{dt} = $ __________。",
-      "options": null,
+      "title": "**Q25**: 若 $\\frac{\\partial z}{\\partial x} = 2, \\frac{\\partial z}{\\partial y} = 3$ 且 $\\frac{dx}{dt} = 1, \\frac{dy}{dt} = -1$，則 $\\frac{dz}{dt} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "繪製樹狀圖時，中間變數位於圖的 __________ 層。",
-      "options": null,
+      "title": "**Q26**: 繪製樹狀圖時，中間變數位於圖的 __________ 層。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "$\\frac{d}{dt} f(\\mathbf{r}(t))$ 稱為函數沿曲線的 __________。",
-      "options": null,
+      "title": "**Q27**: $\\frac{d}{dt} f(\\mathbf{r}(t))$ 稱為函數沿曲線的 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "二階偏導 $z_{uu}$ 的計算通常需要對一階偏導再次使用 __________。",
-      "options": null,
+      "title": "**Q28**: 二階偏導 $z_{uu}$ 的計算通常需要對一階偏導再次使用 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "$x^y = e^{y \\ln x}$ 對 $y$ 的偏導數為 __________。",
-      "options": null,
+      "title": "**Q29**: $x^y = e^{y \\ln x}$ 對 $y$ 的偏導數為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "多元微積分的核心目標之一是理解多變數間的 __________ 變化。",
-      "options": null,
+      "title": "**Q30**: 多元微積分的核心目標之一是理解多變數間的 __________ 變化。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP17.1 | KP17.2 | KP17.3 | KP17.4 | KP17.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,0,0,0,0 | 0,1,0,0,0 | 0,0,1,0,0 | 0,0,0,1,0 | 0,1,0,0,0 |\n| Q6-Q10 | 1,0,0,0,0 | 0,0,0,1,0 | 0,0,1,0,0 | 0,0,0,0,1 | 1,0,0,0,0 |\n| Q11-Q30| ... | ... | ... | ... | ... |",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

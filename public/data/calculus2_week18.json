@@ -1,508 +1,568 @@
 {
-  "course": "calculus2",
-  "week": "week18",
-  "title": "第 18 週 - 期末總複習與期末考試 (Final Exam & Review)",
+  "course_id": "calculus2",
+  "week": 18,
+  "title": "微積分 中 第 18 週",
   "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "級數 $\\sum_{n=1}^{\\infty} \\frac{1}{n^p}$ 在何種條件下收斂？\n   - (A) $p < 1$ (B) $p \\le 1$ (C) $p > 1$ (D) $p \\ge 1$",
-      "options": null,
+      "title": "**Q1**: **",
+      "options": {
+        "C": "** ($p > 1$ 時收斂)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "$e^x$ 的麥克勞林級數中，$x^3$ 項的係數為？\n   - (A) 1/2 (B) 1/3 (C) 1/6 (D) 1/24",
-      "options": null,
+      "title": "**Q2**: **",
+      "options": {
+        "C": "** ($1/3! = 1/6$)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "$\\lim_{(x, y) \\to (0, 0)} \\frac{x^2}{x^2+y^2}$ 的值為何？\n   - (A) 0 (B) 1 (C) 1/2 (D) 不存在",
-      "options": null,
+      "title": "**Q3**: **",
+      "options": {
+        "D": "** (沿 $x$ 軸為 1，沿 $y$ 軸為 0)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "若 $f(x, y) = x \\sin y$，則 $f_{xy}$ 為？\n   - (A) $\\sin y$ (B) $\\cos y$ (C) $x \\cos y$ (D) $-x \\sin y$",
-      "options": null,
+      "title": "**Q4**: **",
+      "options": {
+        "B": "** ($f_x = \\sin y \\Rightarrow f_{xy} = \\cos y$)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "切平面方程式 $z - z_0 = f_x(x-x_0) + f_y(y-y_0)$ 中，$f_x$ 代表？\n   - (A) 切點高度 (B) 沿 $x$ 軸方向的斜率 (C) 法向量長度 (D) 曲率",
-      "options": null,
+      "title": "**Q5**: **",
+      "options": {
+        "B": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "若級數 $\\sum a_n$ 絕對收斂，則 $\\sum a_n$ 必？\n   - (A) 發散 (B) 條件收斂 (C) 收斂 (D) 等於零",
-      "options": null,
+      "title": "**Q6**: **",
+      "options": {
+        "C": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "$\\ln(1+x)$ 的麥克勞林展開式首項為？\n   - (A) 1 (B) $x$ (C) $x^2/2$ (D) $-x$",
-      "options": null,
+      "title": "**Q7**: **",
+      "options": {
+        "B": "** ($x$)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "$x^2 + y^2 + z^2 = 9$ 描述的是？\n   - (A) 圓形 (B) 球面 (C) 橢圓 (D) 平面",
-      "options": null,
+      "title": "**Q8**: **",
+      "options": {
+        "B": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "多元連鎖律中 $\\frac{dz}{dt}$ 的公式由幾項相加組成（若 $z=f(x, y)$）？\n   - (A) 1 (B) 2 (C) 3 (D) 4",
-      "options": null,
+      "title": "**Q9**: **",
+      "options": {
+        "B": "** (透過 $x$ 和 $y$ 兩條路徑)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "歐拉恆等式中 $e^{i\\pi} = $？\n    - (A) 0 (B) 1 (C) -1 (D) $i$",
-      "options": null,
+      "title": "**Q10**: **",
+      "options": {
+        "C": "** (-1)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
-      "type": "single",
-      "title": "下列何者是「調和函數」？\n    - (A) $u = x+y$ (B) $u = x^2+y^2$ (C) $u = e^x$ (D) $u = \\sin x$",
-      "options": null,
+      "type": "multiple",
+      "title": "**Q11**: **",
+      "options": {
+        "A": "** ($u_{xx} = 0, u_{yy} = 0$)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
-      "type": "single",
-      "title": "若 $f_x, f_y$ 在 $(a, b)$ 連續，則 $f$ 在該點必？\n    - (A) 極大 (B) 可微 (C) 等於零 (D) 不連續",
-      "options": null,
+      "type": "multiple",
+      "title": "**Q12**: **",
+      "options": {
+        "B": "** (充分條件定理)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
-      "type": "single",
-      "title": "級數 $\\sum (-1)^n \\frac{1}{n}$ 是？\n    - (A) 絕對收斂 (B) 條件收斂 (C) 發散 (D) 幾何級數",
-      "options": null,
+      "type": "multiple",
+      "title": "**Q13**: **",
+      "options": {
+        "B": "** (交錯級數測試)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
-      "type": "single",
-      "title": "$\\int e^{-x^2} dx$ 的原函數：\n    - (A) 是 $e^{-x^2}/(-2x)$ (B) 是初等函數 (C) 不是初等函數 (D) 不存在",
-      "options": null,
+      "type": "multiple",
+      "title": "**Q14**: **",
+      "options": {
+        "C": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
-      "type": "single",
-      "title": "二元函數 $z = \\sqrt{1-x^2-y^2}$ 的定義域是？\n    - (A) 單位圓內 (含邊界) (B) 單位圓外 (C) 全平面 (D) 第一象限",
-      "options": null,
+      "type": "multiple",
+      "title": "**Q15**: **",
+      "options": {
+        "A": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
-      "type": "single",
-      "title": "隱函數 $x^2 + y^2 = 1$ 的 $dy/dx$ 為？\n    - (A) $x/y$ (B) $-x/y$ (C) $y/x$ (D) $-y/x$",
-      "options": null,
+      "type": "multiple",
+      "title": "**Q16**: **",
+      "options": {
+        "B": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
-      "type": "single",
-      "title": "冪級數 $\\sum x^n$ 的收斂半徑為？\n    - (A) 0 (B) 1 (C) $\\infty$ (D) 2",
-      "options": null,
+      "type": "multiple",
+      "title": "**Q17**: **",
+      "options": {
+        "B": "** (1)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
-      "type": "single",
-      "title": "若 $f_{xy} = f_{yx}$，這通常被稱為？\n    - (A) 費馬定理 (B) 羅爾定理 (C) 克萊羅定理 (D) 泰勒定理",
-      "options": null,
+      "type": "multiple",
+      "title": "**Q18**: **",
+      "options": {
+        "C": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
-      "type": "single",
-      "title": "$f(x, y) = e^{xy}$ 在 $(0, 0)$ 的線性逼近為？\n    - (A) $1+xy$ (B) $1$ (C) $x+y$ (D) $1+x+y$",
-      "options": null,
+      "type": "multiple",
+      "title": "**Q19**: **",
+      "options": {
+        "B": "** ($f(0,0)=1, f_x=0, f_y=0 \\Rightarrow L=1$)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
-      "type": "single",
-      "title": "在 3D 空間中，$z=0$ 代表什麼？\n    - (A) $z$ 軸 (B) 原點 (C) $xy$ 平面 (D) $yz$ 平面",
-      "options": null,
+      "type": "multiple",
+      "title": "**Q20**: **",
+      "options": {
+        "C": "**\n\n### 2. 多選題 (Multiple Choice)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
-      "type": "multiple",
-      "title": "下列哪些級數收斂？\n    - (A) $\\sum 1/n^2$ (B) $\\sum 1/n$ (C) $\\sum (1/2)^n$ (D) $\\sum (-1)^n/n$",
-      "options": null,
+      "type": "fill",
+      "title": "**Q21**: **(A, C,",
+      "options": {
+        "D": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
-      "type": "multiple",
-      "title": "多元極限 $\\lim_{(x, y) \\to (a, b)} f(x, y) = L$ 意味著？\n    - (A) 沿直線趨近結果為 $L$ (B) 沿拋物線趨近結果為 $L$ (C) 沿任何路徑趨近結果均為 $L$ (D) $f(a, b)$ 必須等於 $L$",
-      "options": null,
+      "type": "fill",
+      "title": "**Q22**: **",
+      "options": {
+        "C": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
-      "type": "multiple",
-      "title": "關於偏導數，正確的是？\n    - (A) $f_x$ 計算時 $y$ 視為常數 (B) $f_x$ 代表 $x$ 方向切線斜率 (C) 偏導存在必連續 (D) 高階偏導順序通常可交換",
-      "options": null,
+      "type": "fill",
+      "title": "**Q23**: **(A, B,",
+      "options": {
+        "D": "** (偏導存在不保證連續)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
-      "type": "multiple",
-      "title": "哪些函數是初等函數？\n    - (A) 多項式 (B) 三角函數 (C) 指數函數 (D) 誤差函數 $erf(x)$",
-      "options": null,
+      "type": "fill",
+      "title": "**Q24**: **(A, B,",
+      "options": {
+        "C": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
-      "type": "multiple",
-      "title": "若 $z = f(x, y)$ 可微，則其全微分 $dz$：\n    - (A) $dz = f_x dx + f_y dy$ (B) 可用於誤差估算 (C) 等於 $\\Delta z$ (D) 代表切平面的高度變化",
-      "options": null,
+      "type": "fill",
+      "title": "**Q25**: **(A, B,",
+      "options": {
+        "D": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
-      "type": "multiple",
-      "title": "下列哪些是常見的三維二次曲面？\n    - (A) 橢球 (B) 拋物面 (C) 雙曲面 (D) 圓柱面",
-      "options": null,
+      "type": "fill",
+      "title": "**Q26**: **(A, B, C,",
+      "options": {
+        "D": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
-      "type": "multiple",
-      "title": "泰勒級數的餘項 $R_n(x)$：\n    - (A) 代表逼近誤差 (B) 當 $n \\to \\infty$ 時若 $R_n \\to 0$ 則級數收斂於函數 (C) 可由拉格朗日形式表達 (D) 永遠等於 0",
-      "options": null,
+      "type": "fill",
+      "title": "**Q27**: **(A, B,",
+      "options": {
+        "C": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
-      "type": "multiple",
-      "title": "隱函數微分定理適用於？\n    - (A) $x^2 + y^2 + z^2 = 1$ (B) $z = x^2 + y^2$ (C) $e^{xyz} = 10$ (D) $x+y+z=0$",
-      "options": null,
+      "type": "fill",
+      "title": "**Q28**: **(A, C,",
+      "options": {
+        "D": "** (顯函數不叫隱函數，雖然公式通用)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
-      "type": "multiple",
-      "title": "連鎖律的應用場景包括？\n    - (A) 座標變換 (B) 物理中的變化率關聯 (C) 複合函數求導 (D) 證明級數收斂",
-      "options": null,
+      "type": "fill",
+      "title": "**Q29**: **(A, B,",
+      "options": {
+        "C": "**"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
-      "type": "multiple",
-      "title": "關於歐拉公式 $e^{i\\theta} = \\cos \\theta + i \\sin \\theta$：\n    - (A) 連結了指數與三角函數 (B) 可導出 $\\cos \\theta = (e^{i\\theta} + e^{-i\\theta})/2$ (C) 僅對 $\\theta=0$ 成立 (D) 是級數展開的結果",
-      "options": null,
+      "type": "fill",
+      "title": "**Q30**: **(A, B,",
+      "options": {
+        "D": "**\n\n### 3. 填充題 (Fill-in-the-blank)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q31",
-      "type": "multiple",
-      "title": "$\\sum_{n=0}^{\\infty} x^n = \\frac{1}{1-x}$ 的收斂區間為 __________。",
-      "options": null,
+      "type": "fill",
+      "title": "**Q31**: **(-1, 1)** (或 $|x| < 1$)",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q32",
-      "type": "multiple",
-      "title": "$\\sin x$ 的麥克勞林展開式中，偶次方項的係數均為 __________。",
-      "options": null,
+      "type": "fill",
+      "title": "**Q32**: **0**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q33",
-      "type": "multiple",
-      "title": "若 $f(x, y) = x^2 + y^2$，則其在點 $(1, 2)$ 的梯度向量（偏導組）為 __________。",
-      "options": null,
+      "type": "fill",
+      "title": "**Q33**: **(2, 4)**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q34",
-      "type": "multiple",
-      "title": "$\\lim_{(x, y) \\to (0, 0)} \\frac{\\sin(xy)}{xy} = $ __________。",
-      "options": null,
+      "type": "fill",
+      "title": "**Q34**: **1**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q35",
-      "type": "multiple",
-      "title": "二元函數的圖形通常是三維空間中的 __________。",
-      "options": null,
+      "type": "fill",
+      "title": "**Q35**: **曲面**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q36",
-      "type": "multiple",
-      "title": "$f(x, y) = \\ln(xy)$ 的 $f_x = $ __________。",
-      "options": null,
+      "type": "fill",
+      "title": "**Q36**: **1/x**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q37",
-      "type": "multiple",
-      "title": "切平面 $z = 3x + 4y + 5$ 在 $(0, 0)$ 處的高度為 __________。",
-      "options": null,
+      "type": "fill",
+      "title": "**Q37**: **5**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q38",
-      "type": "multiple",
-      "title": "$e^x \\approx 1 + x + $ __________ (二階項)。",
-      "options": null,
+      "type": "fill",
+      "title": "**Q38**: **x²/2**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q39",
-      "type": "multiple",
-      "title": "若 $z = x^y$，則 $\\partial z / \\partial y = $ __________。",
-      "options": null,
+      "type": "fill",
+      "title": "**Q39**: **x^y ln x**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q40",
-      "type": "multiple",
-      "title": "複數 $e^{i\\pi/2}$ 的直角座標形式為 __________。",
-      "options": null,
+      "type": "fill",
+      "title": "**Q40**: **(0, 1)** (或 $i$)",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q41",
       "type": "fill",
-      "title": "多元連鎖律中，若 $z=z(x,y)$ 且 $x=x(t), y=y(t)$，則 $dz/dt = z_x x' + $ __________。",
-      "options": null,
+      "title": "**Q41**: **z_y y'**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q42",
       "type": "fill",
-      "title": "$x^2 - y^2 = 1$ 在雙曲幾何中代表 __________。",
-      "options": null,
+      "title": "**Q42**: **雙曲線**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q43",
       "type": "fill",
-      "title": "級數 $\\sum 1/n^2$ 的和為 __________ (已知為 $\\pi^2/6$)。",
-      "options": null,
+      "title": "**Q43**: **π²/6**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q44",
       "type": "fill",
-      "title": "若 $f(x, y)$ 在 $(a, b)$ 處可微，則該點的 __________ 必定存在。",
-      "options": null,
+      "title": "**Q44**: **切平面** (或偏導數)",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q45",
       "type": "fill",
-      "title": "$f(x, y) = \\tan^{-1}(y/x)$ 常用於 __________ 座標轉換。",
-      "options": null,
+      "title": "**Q45**: **極** (或柱/球)",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q46",
       "type": "fill",
-      "title": "$dz = f_x dx + f_y dy$ 被稱為 __________ 分。",
-      "options": null,
+      "title": "**Q46**: **全微**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q47",
       "type": "fill",
-      "title": "拉普拉斯方程的解稱為 __________ 函數。",
-      "options": null,
+      "title": "**Q47**: **調和**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q48",
       "type": "fill",
-      "title": "$\\sum_{n=0}^{\\infty} \\frac{1}{n!} = $ __________。",
-      "options": null,
+      "title": "**Q48**: **e**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q49",
       "type": "fill",
-      "title": "函數 $f(x, y) = \\frac{x}{y}$ 在 __________ 處不連續。",
-      "options": null,
+      "title": "**Q49**: **y = 0**",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q50",
       "type": "fill",
-      "title": "本學期微積分中課程的主題是 __________ 級數與多元微積分基礎。",
-      "options": null,
+      "title": "**Q50**: **無窮**\n\n---\n\n## 二、 難點解析與備考建議\n\n### 1. 級數判定的混淆點\n學生常在「條件收斂」與「絕對收斂」間掙扎。\n- **絕對收斂**：級數非常強壯，加了絕對值依然收斂。\n- **條件收斂**：級數比較脆弱，全靠正負項抵消來維持收斂，加了絕對值就發散了。\n**考試技巧**：先測絕對值級數。若收斂，則原級數絕對收斂；若發散，再用交錯級數測試法 (AST)。\n\n### 2. 多元極限的證明邏輯\n記住：**證明不存在**找路徑；**證明存在**找不等式（夾擠定理）。\n千萬不要在多元極限中使用羅必達法則，那是單變數的專利！\n\n### 3. 連鎖律的樹狀圖\n在考試中，遇到複合函數求導，先花 10 秒鐘在草稿紙上畫出樹狀圖。\n- 每個節點是一個變量。\n- 每條線是一個偏導。\n- 從起點到終點的路徑，線段相乘，路徑相加。\n這能幫你避開 90% 的漏項錯誤。\n\n---\n\n## 三、 給學生的話\n《微積分中》是微積分體系的轉折點。我們從有序的數列跨入了混亂但美麗的多維空間。級數為我們提供了數值計算的精度，而多元微積分則為我們提供了描述物理世界的語言。希望大家在期末考試中能冷靜應對，將公式轉化為洞察力。\n祝大家考試順利！",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

@@ -1,508 +1,458 @@
 {
-  "course": "calculus1",
-  "week": "week18",
-  "title": "第 18 週 - 期末綜合考試 (Final Exam)",
+  "course_id": "calculus1",
+  "week": 18,
+  "title": "期末綜合考試 (Final Exam)",
   "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "$\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2} = $ ？\n   - (A) 0 (B) 2 (C) 4 (D) 不存在\n   - *答案*: C (W1)",
-      "options": null,
-      "answer": "",
+      "title": "$\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2} = $ ？",
+      "options": {},
+      "answer": "C) 4",
       "kp": "",
-      "q_vector": [],
-      "explanation": "當 $x \\to 2$ 時，分母為 0。我們觀察分子 $x^2 - 4$ 可以進行平方差分解：\n    $$\\frac{x^2 - 4}{x - 2} = \\frac{(x - 2)(x + 2)}{x - 2} = x + 2 \\quad (x \\neq 2)$$\n    因此極限為：\n    $$\\lim_{x \\to 2} (x + 2) = 2 + 2 = 4$$"
+      "explanation": ""
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "下列哪種情況會導致函數在 $x=c$ 不連續？\n   - (A) $f(c)$ 定義存在 (B) $\\lim_{x\\to c} f(x)$ 存在 (C) $\\lim_{x\\to c} f(x) = f(c)$ (D) $\\lim_{x\\to c^-} f(x) \\neq \\lim_{x\\to c^+} f(x)$\n   - *答案*: D (W2)",
-      "options": null,
-      "answer": "",
+      "title": "下列哪種情況會導致函數在 $x=c$ 不連續？",
+      "options": {},
+      "answer": "D) $\\lim_{x\\to c^-} f(x) \\neq \\lim_{x\\to c^+} f(x)$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "函數在 $x=c$ 連續必須滿足三個條件：\n    1.  $f(c)$ 存在（選項 A）。\n    2.  $\\lim_{x\\to c} f(x)$ 存在（選項 B）。\n    3.  極限值等於函數值（選項 C）。\n    若左極限不等於右極限，則 $\\lim_{x\\to c} f(x)$ 不存在，這直接違反了連續性的條件，故選 (D)。"
+      "explanation": ""
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "若 $f(x) = \\sin(x^2)$，則 $f'(x) = $ ？\n   - (A) $\\cos(x^2)$ (B) $2x \\cos(x^2)$ (C) $-2x \\cos(x^2)$ (D) $2 \\sin x \\cos x$\n   - *答案*: B (W6)",
-      "options": null,
-      "answer": "",
+      "title": "若 $f(x) = \\sin(x^2)$，則 $f'(x) = $ ？",
+      "options": {},
+      "answer": "B) $2x \\cos(x^2)$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "令外函數 $y = \\sin(u)$，內函數 $u = x^2$。\n    根據連鎖律 $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$：\n    $$f'(x) = \\cos(u) \\cdot (2x) = 2x \\cos(x^2)$$"
+      "explanation": ""
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "隱函數 $x^2 + y^2 = 25$ 在點 $(3, 4)$ 的切線斜率為？\n   - (A) -3/4 (B) 3/4 (C) -4/3 (D) 4/3\n   - *答案*: A (W7)",
-      "options": null,
-      "answer": "",
+      "title": "隱函數 $x^2 + y^2 = 25$ 在點 $(3, 4)$ 的切線斜率為？",
+      "options": {},
+      "answer": "A) -3/4",
       "kp": "",
-      "q_vector": [],
-      "explanation": "對等式兩邊對 $x$ 微分：\n    $$\\frac{d}{dx}(x^2) + \\frac{d}{dx}(y^2) = \\frac{d}{dx}(25)$$\n    $$2x + 2y \\frac{dy}{dx} = 0 \\implies \\frac{dy}{dx} = -\\frac{x}{y}$$\n    代入點 $(3, 4)$：\n    $$m = -\\frac{3}{4}$$"
+      "explanation": ""
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "根據均值定理 (MVT)，若 $f$ 在 $[1, 3]$ 上可微，則存在 $c \\in (1, 3)$ 使得 $f'(c) = $ ？\n   - (A) $f(3)-f(1)$ (B) $\\frac{f(3)-f(1)}{2}$ (C) 0 (D) $f(2)$\n   - *答案*: B (W9)",
-      "options": null,
-      "answer": "",
+      "title": "根據均值定理 (MVT)，若 $f$ 在 $[1, 3]$ 上可微，則存在 $c \\in (1, 3)$ 使得 $f'(c) = $ ？",
+      "options": {},
+      "answer": "B) $\\frac{f(3)-f(1)}{2}$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "均值定理指出，若 $f$ 在 $[a, b]$ 連續且在 $(a, b)$ 可微，則存在 $c \\in (a, b)$ 滿足：\n    $$f'(c) = \\frac{f(b) - f(a)}{b - a}$$\n    本題中 $a=1, b=3$，故分母為 $3-1=2$，結果為 $\\frac{f(3)-f(1)}{2}$。"
+      "explanation": ""
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "若 $f''(x) > 0$，則函數圖形為？\n   - (A) 遞增 (B) 遞減 (C) 向上凹 (Concave Up) (D) 向下凹\n   - *答案*: C (W10)",
-      "options": null,
-      "answer": "",
+      "title": "若 $f''(x) > 0$，則函數圖形為？",
+      "options": {},
+      "answer": "C) 向上凹 (Concave Up",
       "kp": "",
-      "q_vector": [],
-      "explanation": "*   $f''(x) > 0$ 代表切線斜率 $f'(x)$ 正在增加，圖形開口向上，即**向上凹**。\n    *   $f''(x) < 0$ 代表圖形向下凹。\n    *   $f'(x) > 0$ 才是遞增。"
+      "explanation": ""
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "$\\lim_{x \\to 0} \\frac{e^x - 1}{x} = $ ？\n   - (A) 0 (B) 1 (C) $e$ (D) $\\infty$\n   - *答案*: B (W11)",
-      "options": null,
-      "answer": "",
+      "title": "$\\lim_{x \\to 0} \\frac{e^x - 1}{x} = $ ？",
+      "options": {},
+      "answer": "B) 1",
       "kp": "",
-      "q_vector": [],
-      "explanation": "此為 $0/0$ 型不定式，使用羅必達法則：\n    $$\\lim_{x \\to 0} \\frac{e^x - 1}{x} = \\lim_{x \\to 0} \\frac{\\frac{d}{dx}(e^x - 1)}{\\frac{d}{dx}(x)} = \\lim_{x \\to 0} \\frac{e^x}{1} = e^0 = 1$$\n    （此亦為 $e^x$ 在 $x=0$ 處導數的定義）。"
+      "explanation": ""
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "$\\int (3x^2 + 2x) dx = $ ？\n   - (A) $x^3 + x^2 + C$ (B) $6x + 2 + C$ (C) $x^3 + 2x^2 + C$ (D) $3x^3 + x^2 + C$\n   - *答案*: A (W13)",
-      "options": null,
-      "answer": "",
+      "title": "$\\int (3x^2 + 2x) dx = $ ？",
+      "options": {},
+      "answer": "A) $x^3 + x^2 + C$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "使用冪次積分公式 $\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$：\n    $$\\int 3x^2 dx + \\int 2x dx = 3 \\cdot \\frac{x^3}{3} + 2 \\cdot \\frac{x^2}{2} + C = x^3 + x^2 + C$$"
+      "explanation": ""
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "$\\frac{d}{dx} \\int_1^x \\sqrt{t^3 + 1} dt = $ ？\n   - (A) $\\sqrt{x^3 + 1}$ (B) $\\frac{2}{3}(x^3+1)^{3/2}$ (C) $\\sqrt{t^3 + 1}$ (D) 0\n   - *答案*: A (W15)",
-      "options": null,
-      "answer": "",
+      "title": "$\\frac{d}{dx} \\int_1^x \\sqrt{t^3 + 1} dt = $ ？",
+      "options": {},
+      "answer": "A) $\\sqrt{x^3 + 1}$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "根據 FTC Part 1，$\\frac{d}{dx} \\int_a^x f(t) dt = f(x)$。\n    直接將上限 $x$ 代入被積函數即可得到 $\\sqrt{x^3 + 1}$。"
+      "explanation": ""
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "$\\int_0^1 e^{2x} dx = $ ？\n    - (A) $e^2 - 1$ (B) $\\frac{1}{2}(e^2 - 1)$ (C) $2(e^2 - 1)$ (D) $e^2$\n    - *答案*: B (W16)",
-      "options": null,
-      "answer": "",
+      "title": "$\\int_0^1 e^{2x} dx = $ ？",
+      "options": {},
+      "answer": "B) $\\frac{1}{2}(e^2 - 1)$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "令 $u = 2x, du = 2dx \\implies dx = \\frac{1}{2} du$。\n    $$\\int e^{2x} dx = \\frac{1}{2} e^{2x} + C$$\n    代入上下限：\n    $$\\left[ \\frac{1}{2} e^{2x} \\right]_0^1 = \\frac{1}{2}(e^{2(1)} - e^{2(0)}) = \\frac{1}{2}(e^2 - 1)$$"
+      "explanation": ""
     },
     {
       "id": "Q11",
-      "type": "single",
-      "title": "求 $y=x^2$ 與 $y=x$ 在 $[0, 1]$ 圍成的面積？\n    - (A) 1/2 (B) 1/3 (C) 1/6 (D) 1/12\n    - *答案*: C (W17)",
-      "options": null,
-      "answer": "",
+      "type": "multiple",
+      "title": "求 $y=x^2$ 與 $y=x$ 在 $[0, 1]$ 圍成的面積？",
+      "options": {},
+      "answer": "C) 1/6",
       "kp": "",
-      "q_vector": [],
-      "explanation": "在 $[0, 1]$ 區間內，$x \\ge x^2$。\n    $$A = \\int_0^1 (x - x^2) dx = \\left[ \\frac{x^2}{2} - \\frac{x^3}{3} \\right]_0^1 = \\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$$"
+      "explanation": ""
     },
     {
       "id": "Q12",
-      "type": "single",
-      "title": "繞 x 軸旋轉 $y=x$ 在 $[0, 1]$ 的體積（圓錐體）為？\n    - (A) $\\pi/2$ (B) $\\pi/3$ (C) $\\pi/4$ (D) $\\pi$\n    - *答案*: B (W17)",
-      "options": null,
-      "answer": "",
+      "type": "multiple",
+      "title": "繞 x 軸旋轉 $y=x$ 在 $[0, 1]$ 的體積（圓錐體）為？",
+      "options": {},
+      "answer": "B) $\\pi/3$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "使用圓盤法 $V = \\int_a^b \\pi [f(x)]^2 dx$：\n    $$V = \\int_0^1 \\pi x^2 dx = \\pi \\left[ \\frac{x^3}{3} \\right]_0^1 = \\frac{\\pi}{3}$$"
+      "explanation": ""
     },
     {
       "id": "Q13",
-      "type": "single",
-      "title": "函數 $f(x) = |x|$ 在 $x=0$ 處？\n    - (A) 連續且可微 (B) 連續但不可微 (C) 不連續但可微 (D) 以上皆非\n    - *答案*: B (W5)",
-      "options": null,
-      "answer": "",
+      "type": "multiple",
+      "title": "函數 $f(x) = |x|$ 在 $x=0$ 處？",
+      "options": {},
+      "answer": "B) 連續但不可微",
       "kp": "",
-      "q_vector": [],
-      "explanation": "*   $\\lim_{x\\to 0} |x| = 0 = f(0)$，故連續。\n    *   左導數為 $\\lim_{h\\to 0^-} \\frac{|h|-0}{h} = -1$，右導數為 $\\lim_{h\\to 0^+} \\frac{|h|-0}{h} = 1$。\n    *   左右導數不相等，故在 $x=0$ 處不可微（圖形在此處有尖點）。"
+      "explanation": ""
     },
     {
       "id": "Q14",
-      "type": "single",
-      "title": "商數法則 $\\frac{d}{dx}(\\frac{u}{v}) = $ ？\n    - (A) $\\frac{u'v - uv'}{v^2}$ (B) $\\frac{uv' - u'v}{v^2}$ (C) $\\frac{u'}{v'}$ (D) $\\frac{u'v + uv'}{v^2}$\n    - *答案*: A (W6)",
-      "options": null,
-      "answer": "",
+      "type": "multiple",
+      "title": "商數法則 $\\frac{d}{dx}(\\frac{u}{v}) = $ ？",
+      "options": {},
+      "answer": "A) $\\frac{u'v - uv'}{v^2}$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "這是微分的基本法則：(子微分 $\\times$ 母) $-$ (子 $\\times$ 母微分)，最後除以 (母的平方)。"
+      "explanation": ""
     },
     {
       "id": "Q15",
-      "type": "single",
-      "title": "函數 $f(x) = x^3 - 3x$ 的相對極大值發生在 $x = $ ？\n    - (A) 0 (B) 1 (C) -1 (D) $\\sqrt{3}$\n    - *答案*: C (W10)",
-      "options": null,
-      "answer": "",
+      "type": "multiple",
+      "title": "函數 $f(x) = x^3 - 3x$ 的相對極大值發生在 $x = $ ？",
+      "options": {},
+      "answer": "C) -1",
       "kp": "",
-      "q_vector": [],
-      "explanation": "1.  找臨界點：$f'(x) = 3x^2 - 3 = 3(x-1)(x+1) = 0 \\implies x = 1, -1$。\n    2.  二階判別：$f''(x) = 6x$。\n    3.  $f''(1) = 6 > 0$（極小值）；$f''(-1) = -6 < 0$（極大值）。\n    故極大值發生在 $x = -1$。"
+      "explanation": ""
     },
     {
       "id": "Q16",
-      "type": "single",
-      "title": "$\\int \\frac{1}{x} dx = $ ？\n    - (A) $\\ln|x| + C$ (B) $-1/x^2 + C$ (C) $e^x + C$ (D) 1\n    - *答案*: A (W13)",
-      "options": null,
-      "answer": "",
+      "type": "multiple",
+      "title": "$\\int \\frac{1}{x} dx = $ ？",
+      "options": {},
+      "answer": "A) $\\ln|x| + C$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "這是基本積分公式，要注意必須加上絕對值，因為 $\\ln$ 的真數必須為正。"
+      "explanation": ""
     },
     {
       "id": "Q17",
-      "type": "single",
-      "title": "定積分 $\\int_{-1}^1 x^3 dx = $ ？\n    - (A) 1/2 (B) 0 (C) 1/4 (D) -1/2\n    - *答案*: B (W15)",
-      "options": null,
-      "answer": "",
+      "type": "multiple",
+      "title": "定積分 $\\int_{-1}^1 x^3 dx = $ ？",
+      "options": {},
+      "answer": "B) 0",
       "kp": "",
-      "q_vector": [],
-      "explanation": "$f(x) = x^3$ 是一個**奇函數** ($f(-x) = -f(x)$)。\n    奇函數在對稱區間 $[-a, a]$ 上的積分恆為 0。"
+      "explanation": ""
     },
     {
       "id": "Q18",
-      "type": "single",
-      "title": "若 $u = 1+x^2$，則 $x dx = $ ？\n    - (A) $du$ (B) $2 du$ (C) $\\frac{1}{2} du$ (D) $u du$\n    - *答案*: C (W16)",
-      "options": null,
-      "answer": "",
+      "type": "multiple",
+      "title": "若 $u = 1+x^2$，則 $x dx = $ ？",
+      "options": {},
+      "answer": "C) $\\frac{1}{2} du$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "$u = 1+x^2 \\implies \\frac{du}{dx} = 2x \\implies du = 2x dx \\implies x dx = \\frac{1}{2} du$。"
+      "explanation": ""
     },
     {
       "id": "Q19",
-      "type": "single",
-      "title": "使用剝殼法繞 y 軸旋轉 $y=f(x)$，微小體積 $dV = $ ？\n    - (A) $\\pi f(x)^2 dx$ (B) $2\\pi x f(x) dx$ (C) $2\\pi f(x) dx$ (D) $\\pi x^2 dx$\n    - *答案*: B (W17)",
-      "options": null,
-      "answer": "",
+      "type": "multiple",
+      "title": "使用剝殼法繞 y 軸旋轉 $y=f(x)$，微小體積 $dV = $ ？",
+      "options": {},
+      "answer": "B) $2\\pi x f(x) dx$",
       "kp": "",
-      "q_vector": [],
-      "explanation": "剝殼法公式 $V = \\int 2\\pi (\\text{半徑}) (\\text{高度}) dx$。\n    繞 y 軸旋轉時，半徑為 $x$，高度為 $f(x)$，厚度為 $dx$。"
+      "explanation": ""
     },
     {
       "id": "Q20",
-      "type": "single",
-      "title": "$f(x) = x^2$ 在 $[0, 2]$ 上的平均值為？\n    - (A) 4/3 (B) 2 (C) 4 (D) 8/3\n    - *答案*: A (W15)",
-      "options": null,
-      "answer": "",
+      "type": "multiple",
+      "title": "$f(x) = x^2$ 在 $[0, 2]$ 上的平均值為？",
+      "options": {},
+      "answer": "A) 4/3",
       "kp": "",
-      "q_vector": [],
-      "explanation": "平均值公式 $f_{avg} = \\frac{1}{b-a} \\int_a^b f(x) dx$：\n    $$f_{avg} = \\frac{1}{2-0} \\int_0^2 x^2 dx = \\frac{1}{2} \\left[ \\frac{x^3}{3} \\right]_0^2 = \\frac{1}{2} \\cdot \\frac{8}{3} = \\frac{4}{3}$$\n\n---"
+      "explanation": ""
     },
     {
       "id": "Q21",
-      "type": "multiple",
-      "title": "下列哪些極限結果為 $\\infty$？\n    - (A) $\\lim_{x\\to 0^+} \\frac{1}{x}$ (B) $\\lim_{x\\to \\infty} e^x$ (C) $\\lim_{x\\to \\infty} \\frac{1}{x}$ (D) $\\lim_{x\\to 0} \\frac{1}{x^2}$\n    - *答案*: A, B, D (W3)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "下列哪些極限結果為 $\\infty$？",
+      "options": {},
+      "answer": "A, B, D",
       "kp": "",
-      "q_vector": [],
-      "explanation": "*   (A) $\\lim_{x\\to 0^+} \\frac{1}{x} = \\infty$ (正確)。\n    *   (B) $\\lim_{x\\to \\infty} e^x = \\infty$ (正確)。\n    *   (C) $\\lim_{x\\to \\infty} \\frac{1}{x} = 0$ (錯誤)。\n    *   (D) $\\lim_{x\\to 0} \\frac{1}{x^2} = \\infty$ (正確，左右極限皆正)。"
+      "explanation": ""
     },
     {
       "id": "Q22",
-      "type": "multiple",
-      "title": "關於連續函數 $f$ 在閉區間 $[a, b]$，正確的是：\n    - (A) 必有最大值 (B) 必有最小值 (C) 若 $f(a)f(b) < 0$ 則必有根 (D) 必可微\n    - *答案*: A, B, C (W4)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "關於連續函數 $f$ 在閉區間 $[a, b]$，正確的是：",
+      "options": {},
+      "answer": "A, B, C",
       "kp": "",
-      "q_vector": [],
-      "explanation": "*   (A, B) 極值定理 (EVT) 保證閉區間連續函數必有最大、最小值。\n    *   (C) 中間值定理 (IVT) 的應用：若端點變號則區間內必有根。\n    *   (D) 連續不代表可微（如 $|x|$ 在 $[-1, 1]$ 連續但不可微）。"
+      "explanation": ""
     },
     {
       "id": "Q23",
-      "type": "multiple",
-      "title": "下列微分公式正確的有：\n    - (A) $\\frac{d}{dx} \\tan x = \\sec^2 x$ (B) $\\frac{d}{dx} e^x = e^x$ (C) $\\frac{d}{dx} \\ln x = 1/x$ (D) $\\frac{d}{dx} \\cos x = \\sin x$\n    - *答案*: A, B, C (W6)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "下列微分公式正確的有：",
+      "options": {},
+      "answer": "A, B, C",
       "kp": "",
-      "q_vector": [],
-      "explanation": "*   (A) $(\\tan x)' = \\sec^2 x$ (正確)。\n    *   (B) $(e^x)' = e^x$ (正確)。\n    *   (C) $(\\ln x)' = 1/x$ (正確)。\n    *   (D) $(\\cos x)' = -\\sin x$ (錯誤，漏了負號)。"
+      "explanation": ""
     },
     {
       "id": "Q24",
-      "type": "multiple",
-      "title": "連鎖律的應用實例包括：\n    - (A) $\\frac{d}{dx} (x^2+1)^5$ (B) $\\frac{d}{dx} \\sin(e^x)$ (C) $\\frac{d}{dx} (x \\sin x)$ (D) $\\frac{d}{dx} \\sqrt{x}$\n    - *答案*: A, B (W6)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "連鎖律的應用實例包括：",
+      "options": {},
+      "answer": "A, B",
       "kp": "",
-      "q_vector": [],
-      "explanation": "*   (A, B) 皆為複合函數，需使用連鎖律。\n    *   (C) $x \\sin x$ 使用乘積法則 (Product Rule)。\n    *   (D) $\\sqrt{x} = x^{1/2}$ 使用冪次法則 (Power Rule)。"
+      "explanation": ""
     },
     {
       "id": "Q25",
-      "type": "multiple",
-      "title": "下列哪些點可能是函數的極值點？\n    - (A) $f'(x) = 0$ 的點 (B) $f'(x)$ 不存在的點 (C) 區間端點 (D) $f''(x) = 0$ 的點\n    - *答案*: A, B, C (W9)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "下列哪些點可能是函數的極值點？",
+      "options": {},
+      "answer": "A, B, C",
       "kp": "",
-      "q_vector": [],
-      "explanation": "極值可能發生在：1. 導數為零的點；2. 導數不存在的點（以上合稱臨界點）；3. 閉區間的端點。$f''(x)=0$ 通常是尋找反曲點。"
+      "explanation": ""
     },
     {
       "id": "Q26",
-      "type": "multiple",
-      "title": "關於羅必達法則的使用條件：\n    - (A) 型式為 $0/0$ (B) 型式為 $\\infty/\\infty$ (C) 分子分母皆可微 (D) 必須是多項式\n    - *答案*: A, B, C (W11)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "關於羅必達法則的使用條件：",
+      "options": {},
+      "answer": "A, B, C",
       "kp": "",
-      "q_vector": [],
-      "explanation": "羅必達法則適用於 $0/0$ 或 $\\infty/\\infty$ 型態，且分子分母在極限點附近需可微。它並不限制函數必須是多項式。"
+      "explanation": ""
     },
     {
       "id": "Q27",
-      "type": "multiple",
-      "title": "反導數的性質包括：\n    - (A) 兩個反導數之間相差一個常數 (B) 不定積分是所有反導數的集合 (C) 積分是微分的逆運算 (D) 所有函數都有初等函數形式的反導數\n    - *答案*: A, B, C (W13)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "反導數的性質包括：",
+      "options": {},
+      "answer": "A, B, C",
       "kp": "",
-      "q_vector": [],
-      "explanation": "*   (A) $F(x)$ 與 $F(x)+C$ 微分結果相同。\n    *   (B, C) 積分是微分的逆運算。\n    *   (D) 錯誤，許多函數的反導數無法表示為初等函數（如 $e^{-x^2}$）。"
+      "explanation": ""
     },
     {
       "id": "Q28",
-      "type": "multiple",
-      "title": "微積分基本定理 (FTC) 連結了：\n    - (A) 微分 (B) 積分 (C) 極限 (D) 面積\n    - *答案*: A, B, D (W15)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "微積分基本定理 (FTC) 連結了：",
+      "options": {},
+      "answer": "A, B, D",
       "kp": "",
-      "q_vector": [],
-      "explanation": "FTC 建立了微分與積分（反導數）之間的強大聯繫，並讓我們能計算曲線下的面積。"
+      "explanation": ""
     },
     {
       "id": "Q29",
-      "type": "multiple",
-      "title": "使用代換法時需注意：\n    - (A) 找到合適的 $u$ (B) 換算 $dx$ 為 $du$ (C) 定積分需換上下限 (D) 最後必須換回 $x$ (定積分除外)\n    - *答案*: A, B, C, D (W16)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "使用代換法時需注意：",
+      "options": {},
+      "answer": "A, B, C, D",
       "kp": "",
-      "q_vector": [],
-      "explanation": "四個步驟皆為代換積分法的標準流程：選 $u$、求 $du$、換限（定積分）、回代（不定積分）。"
+      "explanation": ""
     },
     {
       "id": "Q30",
-      "type": "multiple",
-      "title": "求旋轉體體積的方法有：\n    - (A) 圓盤法 (B) 墊圈法 (C) 剝殼法 (D) 黎曼和法\n    - *答案*: A, B, C (W17)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "求旋轉體體積的方法有：",
+      "options": {},
+      "answer": "A, B, C",
       "kp": "",
-      "q_vector": [],
-      "explanation": "圓盤法 (Disk)、墊圈法 (Washer)、剝殼法 (Shell) 是三大基本方法。黎曼和是積分的定義方式。"
+      "explanation": ""
     },
     {
       "id": "Q31",
-      "type": "multiple",
-      "title": "下列哪些極限可以使用羅必達法則直接或變形後處理？\n    - (A) $\\lim x \\ln x$ (B) $\\lim \\frac{\\sin x}{x}$ (C) $\\lim 1^\\infty$ (D) $\\lim (x - \\ln x)$\n    - *答案*: A, B, C (W11)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "下列哪些極限可以使用羅必達法則直接或變形後處理？",
+      "options": {},
+      "answer": "A, B, C",
       "kp": "",
-      "q_vector": [],
-      "explanation": "(A) $0 \\cdot \\infty$ 可化為 $\\infty/\\infty$。(B) $0/0$ 直接使用。(C) $1^\\infty$ 取對數後化為 $0/0$。(D) $\\infty - \\infty$ 若無分式結構通常使用因式分解或有理化，不直接適用。"
+      "explanation": ""
     },
     {
       "id": "Q32",
-      "type": "multiple",
-      "title": "函數 $f(x) = x^2$ 在其定義域內是：\n    - (A) 偶函數 (B) 始終遞增 (C) 向上凹 (D) 有最小值\n    - *答案*: A, C, D (W10)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "函數 $f(x) = x^2$ 在其定義域內是：",
+      "options": {},
+      "answer": "A, C, D",
       "kp": "",
-      "q_vector": [],
-      "explanation": "*   (A) $f(-x) = (-x)^2 = x^2$ (偶函數)。\n    *   (B) 在負數區間遞減，正數區間遞增。\n    *   (C) $f''(x) = 2 > 0$ (上凹)。\n    *   (D) 頂點 $(0, 0)$ 為最小值。"
+      "explanation": ""
     },
     {
       "id": "Q33",
-      "type": "multiple",
-      "title": "定積分的性質包括：\n    - (A) 線性性質 (B) 區間可加性 (C) 比較性質 (D) $\\int_a^a f dx = 0$\n    - *答案*: A, B, C, D (W14)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "定積分的性質包括：",
+      "options": {},
+      "answer": "A, B, C, D",
       "kp": "",
-      "q_vector": [],
-      "explanation": "線性（加法/係數）、區間可加性、大小比較性質、以及上限等於下限時積分值為 0。"
+      "explanation": ""
     },
     {
       "id": "Q34",
-      "type": "multiple",
-      "title": "下列哪些是偶函數？\n    - (A) $\\cos x$ (B) $x^2$ (C) $|x|$ (D) $\\sin x$\n    - *答案*: A, B, C (W16)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "下列哪些是偶函數？",
+      "options": {},
+      "answer": "A, B, C",
       "kp": "",
-      "q_vector": [],
-      "explanation": "$\\cos(-x) = \\cos x$, $(-x)^2 = x^2$, $|-x| = |x|$ 均滿足 $f(-x) = f(x)$。$\\sin x$ 是奇函數。"
+      "explanation": ""
     },
     {
       "id": "Q35",
-      "type": "multiple",
-      "title": "剝殼法相對於圓盤法的優點：\n    - (A) 繞 y 軸旋轉時不一定要解 $x$ 為 $y$ 的函數 (B) 幾何結構有時更簡單 (C) 適用範圍更廣 (D) 精度更高\n    - *答案*: A, B (精度取決於解析計算，兩者一致) (W17)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "剝殼法相對於圓盤法的優點：",
+      "options": {},
+      "answer": "A, B",
       "kp": "",
-      "q_vector": [],
-      "explanation": "有時繞 y 軸旋轉但函數寫成 $y=f(x)$ 很難解出 $x=g(y)$，此時剝殼法可以直接積分 $x$，非常便利。"
+      "explanation": ""
     },
     {
       "id": "Q36",
-      "type": "multiple",
-      "title": "影響函數連續性的因素有：\n    - (A) 分母為零 (B) 根號內為負 (C) 分段點極限不相等 (D) 函數值未定義\n    - *答案*: A, C, D (W2)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "影響函數連續性的因素有：",
+      "options": {},
+      "answer": "A, C, D",
       "kp": "",
-      "q_vector": [],
-      "explanation": "分母為零與函數值未定義導致點不存在，分段點極限不相等導致極限不存在。根號內為負通常是不在定義域內，討論連續性前必須先在定義域內。"
+      "explanation": ""
     },
     {
       "id": "Q37",
-      "type": "multiple",
-      "title": "導數的幾何與物理意義：\n    - (A) 切線斜率 (B) 瞬時速度 (C) 邊際成本 (D) 總變量\n    - *答案*: A, B, C (W5)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "導數的幾何與物理意義：",
+      "options": {},
+      "answer": "A, B, C",
       "kp": "",
-      "q_vector": [],
-      "explanation": "切線斜率（幾何）、瞬時變化率/速度/邊際（物理/經濟）。總變量則是積分的意義。"
+      "explanation": ""
     },
     {
       "id": "Q38",
-      "type": "multiple",
-      "title": "反曲點 (Inflection Point) 的特徵：\n    - (A) 凹凸性改變 (B) $f''(x) = 0$ 或不存在 (C) 切線垂直 (D) 函數值最大\n    - *答案*: A, B (W10)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "反曲點 (Inflection Point) 的特徵：",
+      "options": {},
+      "answer": "A, B",
       "kp": "",
-      "q_vector": [],
-      "explanation": "反曲點是凹凸性改變的點，通常出現在 $f''(x)=0$ 或不存在的地方。"
+      "explanation": ""
     },
     {
       "id": "Q39",
-      "type": "multiple",
-      "title": "不定積分 $\\int \\sin x dx$ 的結果可以是：\n    - (A) $-\\cos x + 5$ (B) $-\\cos x - 10$ (C) $\\cos x + C$ (D) $-\\cos x + C$\n    - *答案*: A, B, D (W13)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "不定積分 $\\int \\sin x dx$ 的結果可以是：",
+      "options": {},
+      "answer": "A, B, D",
       "kp": "",
-      "q_vector": [],
-      "explanation": "積分結果為 $-\\cos x + C$，其中 $C$ 是任意實數（如 5, -10）。(C) 漏了負號。"
+      "explanation": ""
     },
     {
       "id": "Q40",
-      "type": "multiple",
-      "title": "曲線間面積計算時需確定：\n    - (A) 上下函數關係 (B) 積分上下限（交點） (C) 旋轉軸 (D) 是否對稱\n    - *答案*: A, B, D (面積不需旋轉軸) (W17)",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "曲線間面積計算時需確定：",
+      "options": {},
+      "answer": "A, B, D",
       "kp": "",
-      "q_vector": [],
-      "explanation": "面積計算需考慮哪條曲線在上、交點位置（積分限）以及是否可以利用對稱性簡化。\n\n---"
+      "explanation": ""
     },
     {
       "id": "Q41",
       "type": "fill",
-      "title": "$\\lim_{x\\to 0} \\frac{\\sin 5x}{x} = $ __________。\n    - *答案*: 5 (W1)",
-      "options": null,
+      "title": "$\\lim_{x\\to 0} \\frac{\\sin 5x}{x} = $ **5**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": "利用 $\\lim_{\\theta\\to 0} \\frac{\\sin\\theta}{\\theta} = 1$。\n    $$\\lim_{x\\to 0} 5 \\cdot \\frac{\\sin 5x}{5x} = 5 \\cdot 1 = 5$$"
+      "explanation": ""
     },
     {
       "id": "Q42",
       "type": "fill",
-      "title": "$f(x) = \\ln(x^2+1)$，則 $f'(0) = $ __________。\n    - *答案*: 0 (W6)",
-      "options": null,
+      "title": "$f(x) = \\ln(x^2+1)$，則 $f'(0) = $ **0**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": "$f'(x) = \\frac{1}{x^2+1} \\cdot 2x = \\frac{2x}{x^2+1}$。代入 $x=0$ 得到 $0/1 = 0$。"
+      "explanation": ""
     },
     {
       "id": "Q43",
       "type": "fill",
-      "title": "若 $xy = 1$，則 $dy/dx = $ __________。\n    - *答案*: -y/x (或 -1/x^2) (W7)",
-      "options": null,
+      "title": "若 $xy = 1$，則 $dy/dx = $ **-y/x** (或 **-1/x^2**)。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": "隱函數微分 $y + x \\frac{dy}{dx} = 0 \\implies \\frac{dy}{dx} = -\\frac{y}{x}$。"
+      "explanation": ""
     },
     {
       "id": "Q44",
       "type": "fill",
-      "title": "函數 $f(x) = x^4$ 的二階導數 $f''(x) = $ __________。\n    - *答案*: 12x^2 (W10)",
-      "options": null,
+      "title": "函數 $f(x) = x^4$ 的二階導數 $f''(x) = $ **12x^2**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": "$f'(x) = 4x^3 \\implies f''(x) = 12x^2$。"
+      "explanation": ""
     },
     {
       "id": "Q45",
       "type": "fill",
-      "title": "使用羅必達法則，$\\lim_{x\\to \\infty} \\frac{\\ln x}{x} = $ __________。\n    - *答案*: 0 (W11)",
-      "options": null,
+      "title": "使用羅必達法則，$\\lim_{x\\to \\infty} \\frac{\\ln x}{x} = $ **0**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": "$\\lim_{x\\to \\infty} \\frac{1/x}{1} = 0$。"
+      "explanation": ""
     },
     {
       "id": "Q46",
       "type": "fill",
-      "title": "$\\int_1^2 \\frac{1}{x^2} dx = $ __________。\n    - *答案*: 1/2 (W15)",
-      "options": null,
+      "title": "$\\int_1^2 \\frac{1}{x^2} dx = $ **1/2**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": "$\\int x^{-2} dx = -x^{-1} = \\left[ -\\frac{1}{x} \\right]_1^2 = -\\frac{1}{2} - (-1) = \\frac{1}{2}$。"
+      "explanation": ""
     },
     {
       "id": "Q47",
       "type": "fill",
-      "title": "代換積分 $\\int 2x e^{x^2} dx = $ __________ $+ C$。\n    - *答案*: e^{x^2} (W16)",
-      "options": null,
+      "title": "代換積分 $\\int 2x e^{x^2} dx = $ **e^{x^2}** $+ C$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": "令 $u = x^2, du = 2x dx \\implies \\int e^u du = e^u = e^{x^2}$。"
+      "explanation": ""
     },
     {
       "id": "Q48",
       "type": "fill",
-      "title": "半徑為 $R$ 的圓面積公式 $A = \\pi R^2$ 可由積分 $\\int_{-R}^R 2\\sqrt{R^2-x^2} dx$ 導出，這體現了 __________ 的應用。\n    - *答案*: 面積 (或 定積分) (W17)",
-      "options": null,
+      "title": "此體現了 **面積** (或 **定積分**) 的應用。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": "將圓形看作上下兩半圓函數的差值積分，是定積分求面積的典型應用。"
+      "explanation": ""
     },
     {
       "id": "Q49",
       "type": "fill",
-      "title": "微積分基本定理第一部分：$\\frac{d}{dx} \\int_a^x f(t) dt = $ __________。\n    - *答案*: f(x) (W15)",
-      "options": null,
+      "title": "微積分基本定理第一部分：$\\frac{d}{dx} \\int_a^x f(t) dt = $ **f(x)**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": "FTC Part 1 指出變限積分的導數等於被積函數。"
+      "explanation": ""
     },
     {
       "id": "Q50",
       "type": "fill",
-      "title": "旋轉體體積：若區域在 $x$ 軸上方，繞 $x$ 軸旋轉一周，橫截面是 __________。\n    - *答案*: 圓形 (W17)",
-      "options": null,
+      "title": "旋轉體體積：橫截面是 **圓形**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": "繞軸旋轉每一點形成的軌跡是圓，故橫截面（與軸垂直）為圓盤。\n\n---"
+      "explanation": ""
     }
   ]
 }

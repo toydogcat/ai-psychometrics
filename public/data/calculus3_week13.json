@@ -1,354 +1,408 @@
 {
-  "course": "calculus3",
-  "week": "week13",
-  "title": "第 13 週 - 向量場與線積分 (Vector Fields & Line Integrals)",
-  "knowledge_points": {
-    "KP13.1": "辨識向量場，特別是梯度場。",
-    "KP13.2": "掌握純量線積分公式 $\\int f ds$。",
-    "KP13.3": "理解向量線積分與功的關係 $\\int \\mathbf{F} \\cdot d\\mathbf{r}$。",
-    "KP13.4": "運用線積分基本定理簡化保守場積分。",
-    "KP13.5": "學會保守場的判定條件與位能函數的求解。"
-  },
+  "course_id": "calculus3",
+  "week": 13,
+  "title": "微積分 下 第 13 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "向量場 $\\mathbf{F} = \\langle y, x \\rangle$ 的梯度位能函數可以是？\n   (A) $xy$ (B) $x+y$ (C) $x^2+y^2$ (D) $x/y$",
+      "title": "**Q1**: 向量場 $\\mathbf{F} = \\langle y, x \\rangle$ 的梯度位能函數可以是？",
       "options": {
-        "A": "$xy$ (B) $x+y$ (C) $x^2+y^2$ (D) $x/y$"
+        "A": "$xy$",
+        "B": "$x+y$",
+        "C": "$x^2+y^2$",
+        "D": "$x/y$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "計算 $\\int_C f ds$ 時，$ds$ 代表？\n   (A) 面積微元 (B) 弧長微元 (C) 體積微元 (D) 切向量",
+      "title": "**Q2**: 計算 $\\int_C f ds$ 時，$ds$ 代表？",
       "options": {
-        "A": "面積微元 (B) 弧長微元 (C) 體積微元 (D) 切向量"
+        "A": "面積微元",
+        "B": "弧長微元",
+        "C": "體積微元",
+        "D": "切向量"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "若 $\\mathbf{F}$ 垂直於曲線 $C$ 的切方向，則 $\\int_C \\mathbf{F} \\cdot d\\mathbf{r} =$？\n   (A) $1$ (B) $0$ (C) 無窮大 (D) $|\\mathbf{F}|$",
+      "title": "**Q3**: 若 $\\mathbf{F}$ 垂直於曲線 $C$ 的切方向，則 $\\int_C \\mathbf{F} \\cdot d\\mathbf{r} =$？",
       "options": {
-        "A": "$1$ (B) $0$ (C) 無窮大 (D) $|\\mathbf{F}|$"
+        "A": "$1$",
+        "B": "$0$",
+        "C": "無窮大",
+        "D": "$|\\mathbf{F}|$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "哪種場沿封閉路徑積分必為 0？\n   (A) 旋轉場 (B) 保守場 (C) 常數場 (D) 任何向量場",
+      "title": "**Q4**: 哪種場沿封閉路徑積分必為 0？",
       "options": {
-        "A": "旋轉場 (B) 保守場 (C) 常數場 (D) 任何向量場"
+        "A": "旋轉場",
+        "B": "保守場",
+        "C": "常數場",
+        "D": "任何向量場"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "二維場 $\\mathbf{F} = \\langle P, Q \\rangle$ 為保守場的必要條件是？\n   (A) $P_x = Q_y$ (B) $P_y = Q_x$ (C) $P_y = -Q_x$ (D) $P+Q=0$",
+      "title": "**Q5**: 二維場 $\\mathbf{F} = \\langle P, Q \\rangle$ 為保守場的必要條件是？",
       "options": {
-        "A": "$P_x = Q_y$ (B) $P_y = Q_x$ (C) $P_y = -Q_x$ (D) $P+Q=0$"
+        "A": "$P_x = Q_y$",
+        "B": "$P_y = Q_x$",
+        "C": "$P_y = -Q_x$",
+        "D": "$P+Q=0$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "功的公式為 $\\int \\mathbf{F} \\cdot d\\mathbf{r}$，若路徑方向反轉，功的值會？\n   (A) 不變 (B) 變號 (C) 變兩倍 (D) 變 0",
+      "title": "**Q6**: 功的公式為 $\\int \\mathbf{F} \\cdot d\\mathbf{r}$，若路徑方向反轉，功的值會？",
       "options": {
-        "A": "不變 (B) 變號 (C) 變兩倍 (D) 變 0"
+        "A": "不變",
+        "B": "變號",
+        "C": "變兩倍",
+        "D": "變 0"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "梯度算子 $\\nabla$ 作用於純量函數得到？\n   (A) 純量 (B) 向量 (C) 矩陣 (D) 常數",
+      "title": "**Q7**: 梯度算子 $\\nabla$ 作用於純量函數得到？",
       "options": {
-        "A": "純量 (B) 向量 (C) 矩陣 (D) 常數"
+        "A": "純量",
+        "B": "向量",
+        "C": "矩陣",
+        "D": "常數"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "螺旋線 $\\mathbf{r}(t) = \\langle \\cos t, \\sin t, t \\rangle$ 的速度向量大小 $|\\mathbf{r}'(t)|$ 為？\n   (A) $1$ (B) $\\sqrt{2}$ (C) $t$ (D) $\\sqrt{1+t^2}$",
+      "title": "**Q8**: 螺旋線 $\\mathbf{r}(t) = \\langle \\cos t, \\sin t, t \\rangle$ 的速度向量大小 $|\\mathbf{r}'(t)|$ 為？",
       "options": {
-        "A": "$1$ (B) $\\sqrt{2}$ (C) $t$ (D) $\\sqrt{1+t^2}$"
+        "A": "$1$",
+        "B": "$\\sqrt{2}$",
+        "C": "$t$",
+        "D": "$\\sqrt{1+t^2}$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "線積分的基本定理與微積分基本定理的共同點是？\n   (A) 都只看端點值 (B) 都需要求導數 (C) 都只能用於直線 (D) 都需要計算面積",
+      "title": "**Q9**: 線積分的基本定理與微積分基本定理的共同點是？",
       "options": {
-        "A": "都只看端點值 (B) 都需要求導數 (C) 都只能用於直線 (D) 都需要計算面積"
+        "A": "都只看端點值",
+        "B": "都需要求導數",
+        "C": "都只能用於直線",
+        "D": "都需要計算面積"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "徑向向量場 $\\mathbf{F} = \\langle x, y, z \\rangle$ 是否為保守場？\n    (A) 是 (B) 否 (C) 取決於路徑 (D) 無法判定",
+      "title": "**Q10**: 徑向向量場 $\\mathbf{F} = \\langle x, y, z \\rangle$ 是否為保守場？",
       "options": {
-        "A": "是 (B) 否 (C) 取決於路徑 (D) 無法判定"
+        "A": "是",
+        "B": "否",
+        "C": "取決於路徑",
+        "D": "無法判定\n\n### 2. 多選題 (Multiple Choice) - 10 題"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列關於線積分 $\\int_C \\mathbf{F} \\cdot d\\mathbf{r}$ 的敘述，哪些正確？\n    (A) 它等於 $\\int_C \\mathbf{F} \\cdot \\mathbf{T} ds$ (B) 它與參數化的選擇無關（只要方向一致） (C) 它可以用來計算流量 (D) 單位是焦耳（若 $\\mathbf{F}$ 是力）",
+      "title": "**Q11**: 下列關於線積分 $\\int_C \\mathbf{F} \\cdot d\\mathbf{r}$ 的敘述，哪些正確？",
       "options": {
-        "A": "它等於 $\\int_C \\mathbf{F} \\cdot \\mathbf{T} ds$ (B) 它與參數化的選擇無關（只要方向一致） (C) 它可以用來計算流量 (D) 單位是焦耳（若 $\\mathbf{F}$ 是力）"
+        "A": "它等於 $\\int_",
+        "B": "它與參數化的選擇無關（只要方向一致）",
+        "C": "它可以用來計算流量",
+        "D": "單位是焦耳（若 $\\mathbf{F}$ 是力）"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "哪些場是保守場？\n    (A) $\\langle 1, 1, 1 \\rangle$ (B) $\\langle y, x \\rangle$ (C) $\\langle -y, x \\rangle$ (D) 重力場",
+      "title": "**Q12**: 哪些場是保守場？",
       "options": {
-        "A": "$\\langle 1, 1, 1 \\rangle$ (B) $\\langle y, x \\rangle$ (C) $\\langle -y, x \\rangle$ (D) 重力場"
+        "A": "$\\langle 1, 1, 1 \\rangle$",
+        "B": "$\\langle y, x \\rangle$",
+        "C": "$\\langle -y, x \\rangle$",
+        "D": "重力場"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "關於位能函數 $f(x,y)$，哪些正確？\n    (A) $\\nabla f = \\mathbf{F}$ (B) $f$ 加上任何常數仍是位能函數 (C) 它只存在於保守場中 (D) 它是向量函數",
+      "title": "**Q13**: 關於位能函數 $f(x,y)$，哪些正確？",
       "options": {
-        "A": "$\\nabla f = \\mathbf{F}$ (B) $f$ 加上任何常數仍是位能函數 (C) 它只存在於保守場中 (D) 它是向量函數"
+        "A": "$\\nabla f = \\mathbf{F}$",
+        "B": "$f$ 加上任何常數仍是位能函數",
+        "C": "它只存在於保守場中",
+        "D": "它是向量函數"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "曲線 $C$ 的參數化可以是：\n    (A) $\\mathbf{r}(t)$ (B) $y = g(x)$ (C) $x = h(y)$ (D) 極座標 $r = \\theta$",
+      "title": "**Q14**: 曲線 $C$ 的參數化可以是：",
       "options": {
-        "A": "$\\mathbf{r}(t)$ (B) $y = g(x)$ (C) $x = h(y)$ (D) 極座標 $r = \\theta$"
+        "A": "$\\mathbf{r}(t)$",
+        "B": "$y = g(x)$",
+        "C": "$x = h(y)$",
+        "D": "極座標 $r = \\theta$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "哪些因素會影響線積分 $\\int_C f ds$ 的值？\n    (A) 函數 $f$ 的數值 (B) 曲線 $C$ 的長度 (C) 路徑的方向 (D) 參數化的速率",
+      "title": "**Q15**: 哪些因素會影響線積分 $\\int_C f ds$ 的值？",
       "options": {
-        "A": "函數 $f$ 的數值 (B) 曲線 $C$ 的長度 (C) 路徑的方向 (D) 參數化的速率"
+        "A": "函數 $f$ 的數值",
+        "B": "曲線 $C$ 的長度",
+        "C": "路徑的方向",
+        "D": "參數化的速率"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "關於旋轉場 $\\mathbf{F} = \\langle -y, x \\rangle$：\n    (A) 它是保守場 (B) 它的 $P_y = -1, Q_x = 1$ (C) 沿封閉圓路徑積分不為 0 (D) 它有位能函數",
+      "title": "**Q16**: 關於旋轉場 $\\mathbf{F} = \\langle -y, x \\rangle$：",
       "options": {
-        "A": "它是保守場 (B) 它的 $P_y = -1, Q_x = 1$ (C) 沿封閉圓路徑積分不為 0 (D) 它有位能函數"
+        "A": "它是保守場",
+        "B": "它的 $P_y = -1, Q_x = 1$",
+        "C": "沿封閉圓路徑積分不為 0",
+        "D": "它有位能函數"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "線積分可以用於：\n    (A) 求曲線質量 (B) 求力所作的功 (C) 求流體環量 (D) 求曲線長度（令 $f=1$）",
+      "title": "**Q17**: 線積分可以用於：",
       "options": {
-        "A": "求曲線質量 (B) 求力所作的功 (C) 求流體環量 (D) 求曲線長度（令 $f=1$）"
+        "A": "求曲線質量",
+        "B": "求力所作的功",
+        "C": "求流體環量",
+        "D": "求曲線長度（令 $f=1$）"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "若 $\\int_C \\mathbf{F} \\cdot d\\mathbf{r}$ 與路徑無關，則：\n    (A) $\\mathbf{F}$ 是梯度場 (B) $\\text{curl } \\mathbf{F} = \\mathbf{0}$ (C) 沿任何圓圈積分為 0 (D) $\\mathbf{F}$ 是常數",
+      "title": "**Q18**: 若 $\\int_C \\mathbf{F} \\cdot d\\mathbf{r}$ 與路徑無關，則：",
       "options": {
-        "A": "$\\mathbf{F}$ 是梯度場 (B) $\\text{curl } \\mathbf{F} = \\mathbf{0}$ (C) 沿任何圓圈積分為 0 (D) $\\mathbf{F}$ 是常數"
+        "A": "$\\mathbf{F}$ 是梯度場",
+        "B": "$\\text{curl } \\mathbf{F} = \\mathbf{0}$",
+        "C": "沿任何圓圈積分為 0",
+        "D": "$\\mathbf{F}$ 是常數"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "在三維中，$\\mathbf{F} = \\langle P, Q, R \\rangle$ 為保守場的條件包括：\n    (A) $P_y = Q_x$ (B) $P_z = R_x$ (C) $Q_z = R_y$ (D) $P+Q+R=0$",
+      "title": "**Q19**: 在三維中，$\\mathbf{F} = \\langle P, Q, R \\rangle$ 為保守場的條件包括：",
       "options": {
-        "A": "$P_y = Q_x$ (B) $P_z = R_x$ (C) $Q_z = R_y$ (D) $P+Q+R=0$"
+        "A": "$P_y = Q_x$",
+        "B": "$P_z = R_x$",
+        "C": "$Q_z = R_y$",
+        "D": "$P+Q+R=0$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "下列哪些函數的梯度場必為保守場？\n    (A) $x^2+y^2$ (B) $\\sin(xy)$ (C) $\\ln(x+y)$ (D) $e^z$",
+      "title": "**Q20**: 下列哪些函數的梯度場必為保守場？",
       "options": {
-        "A": "$x^2+y^2$ (B) $\\sin(xy)$ (C) $\\ln(x+y)$ (D) $e^z$"
+        "A": "$x^2+y^2$",
+        "B": "$\\sin(xy)$",
+        "C": "$\\ln(x+y)$",
+        "D": "$e^z$\n\n### 3. 填充題 (Fill-in-the-blank) - 10 題"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "若 $\\mathbf{F} = \\nabla f$，則 $\\int_C \\mathbf{F} \\cdot d\\mathbf{r} = f(\\text{終點}) - \\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q21**: 若 $\\mathbf{F} = \\nabla f$，則 $\\int_C \\mathbf{F} \\cdot d\\mathbf{r} = f(\\text{終點}) - \\underline{\\quad\\quad}$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "沿著 $x$ 軸從 $0$ 到 $1$ 的線積分 $\\int_C \\langle P, Q \\rangle \\cdot d\\mathbf{r} = \\int_0^1 \\underline{\\quad\\quad} dx$。",
-      "options": null,
+      "title": "**Q22**: 沿著 $x$ 軸從 $0$ 到 $1$ 的線積分 $\\int_C \\langle P, Q \\rangle \\cdot d\\mathbf{r} = \\int_0^1 \\underline{\\quad\\quad} dx$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "純量線積分 $ds = \\sqrt{(dx/dt)^2 + (dy/dt)^2} \\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q23**: 純量線積分 $ds = \\sqrt{(dx/dt)^2 + (dy/dt)^2} \\underline{\\quad\\quad}$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "常數力 $\\mathbf{F} = \\langle 2, 3 \\rangle$ 沿位移 $\\mathbf{d} = \\langle 4, 1 \\rangle$ 所作的功為 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q24**: 常數力 $\\mathbf{F} = \\langle 2, 3 \\rangle$ 沿位移 $\\mathbf{d} = \\langle 4, 1 \\rangle$ 所作的功為 $\\underline{\\quad\\quad}$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "若 $\\mathbf{F} = \\langle P, Q \\rangle$ 滿足 $P_y = Q_x$，且區域無洞，則 $\\mathbf{F}$ 稱為 $\\underline{\\quad\\quad}$ 場。",
-      "options": null,
+      "title": "**Q25**: 若 $\\mathbf{F} = \\langle P, Q \\rangle$ 滿足 $P_y = Q_x$，且區域無洞，則 $\\mathbf{F}$ 稱為 $\\underline{\\quad\\quad}$ 場。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "梯度場 $\\nabla (x+y+z) = \\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q26**: 梯度場 $\\nabla (x+y+z) = _______$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "單位圓 $C$ 的周長可以用線積分表示為 $\\int_C \\underline{\\quad\\quad} ds$。",
-      "options": null,
+      "title": "**Q27**: 單位圓 $C$ 的周長可以用線積分表示為 $\\int_C \\underline{\\quad\\quad} ds$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "$\\int_C \\mathbf{F} \\cdot d\\mathbf{r}$ 中，若 $d\\mathbf{r} = \\langle dx, dy, dz \\rangle$，則積分式展開為 $\\int (P dx + Q dy + \\underline{\\quad\\quad})$。",
-      "options": null,
+      "title": "**Q28**: $\\int_C \\mathbf{F} \\cdot d\\mathbf{r}$ 中，若 $d\\mathbf{r} = \\langle dx, dy, dz \\rangle$，則積分式展開為 $\\int (P dx + Q dy + \\underline{\\quad\\quad})$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "位能函數 $f$ 的等位線（或等位面）與梯度場向量 $\\nabla f$ 互相 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q29**: 位能函數 $f$ 的等位線（或等位面）與梯度場向量 $\\nabla f$ 互相 $\\underline{\\quad\\quad}$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "若 $\\mathbf{F} = \\langle y, 0 \\rangle$，則 $P_y = 1, Q_x = 0$，此場 $\\underline{\\quad\\quad}$ (填是或不是) 保守場。",
-      "options": null,
+      "title": "**Q30**: 若 $\\mathbf{F} = \\langle y, 0 \\rangle$，則 $P_y = 1, Q_x = 0$，此場 $\\underline{\\quad\\quad}$ (填是或不是) 保守場。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP13.1 | KP13.2 | KP13.3 | KP13.4 | KP13.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 7, 10 | 2, 8 | 3, 6 | 9 | 1, 4, 5 |\n| Q11-Q20| 20 | 14, 15, 17| 11 | 18 | 12, 13, 16, 19 |\n| Q21-Q30| 26 | 23, 27 | 22, 24, 28| 21, 29 | 25, 30 |",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

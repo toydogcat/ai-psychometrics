@@ -1,314 +1,383 @@
 {
-  "course": "calculus2",
-  "week": "week14",
-  "title": "第 14 週 - 多元函數與極限 (Functions of Several Variables & Limits)",
-  "knowledge_points": {
-    "KP14.1": "掌握二元及三元函數的定義域判定，特別是複合限制。",
-    "KP14.2": "理解等高線與曲面圖形的幾何關係（$f=k$ 即切面投影）。",
-    "KP14.3": "理解多元極限必須對「所有路徑」均成立。",
-    "KP14.4": "熟練運用兩路徑測試法，包含特殊的拋物線路徑。",
-    "KP14.5": "學會判斷分段定義函數在連接點的連續性。"
-  },
+  "course_id": "calculus2",
+  "week": 14,
+  "title": "微積分 中 第 14 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "$f(x, y) = \\ln(x^2 + y^2 - 1)$ 的定義域為何？\n   - (A) $x^2 + y^2 \\ge 1$ (B) $x^2 + y^2 > 1$ (C) 全平面 (D) 單位圓內部",
-      "options": null,
+      "title": "**Q1**: $f(x, y) = \\ln(x^2 + y^2 - 1)$ 的定義域為何？\n   -",
+      "options": {
+        "A": "$x^2 + y^2 \\ge 1$",
+        "B": "$x^2 + y^2 > 1$",
+        "C": "全平面",
+        "D": "單位圓內部"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "下列何種函數的圖形是半球面？\n   - (A) $z = x^2 + y^2$ (B) $z = \\sqrt{4 - x^2 - y^2}$ (C) $z = 4 - x - y$ (D) $z = \\sin(x^2+y^2)$",
-      "options": null,
+      "title": "**Q2**: 下列何種函數的圖形是半球面？\n   -",
+      "options": {
+        "A": "$z = x^2 + y^2$",
+        "B": "$z = \\sqrt{4 - x^2 - y^2}$",
+        "C": "$z = 4 - x - y$",
+        "D": "$z = \\sin(x^2+y^2)$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "若 $\\lim_{(x, y) \\to (0, 0)} \\frac{xy}{x^2+y^2}$ 沿 $y=mx$ 的極限值為何？\n   - (A) 0 (B) $m/(1+m^2)$ (C) 1 (D) 不存在",
-      "options": null,
+      "title": "**Q3**: 若 $\\lim_{(x, y) \\to (0, 0)} \\frac{xy}{x^2+y^2}$ 沿 $y=mx$ 的極限值為何？\n   -",
+      "options": {
+        "A": "0",
+        "B": "$m/(1+m^2)$",
+        "C": "1",
+        "D": "不存在"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "若一個函數在 $(0, 0)$ 處連續，則下列何者必正確？\n   - (A) $f(0, 0) = 0$ (B) $\\lim_{(x, y) \\to (0, 0)} f(x, y)$ 存在 (C) 偏導數存在 (D) 圖形是平面",
-      "options": null,
+      "title": "**Q4**: 若一個函數在 $(0, 0)$ 處連續，則下列何者必正確？\n   -",
+      "options": {
+        "A": "$f(0, 0) = 0$",
+        "B": "$\\lim_{(x, y) \\to (0, 0)} f(x, y)$ 存在",
+        "C": "偏導數存在",
+        "D": "圖形是平面"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "函數 $f(x, y, z) = x+y+z$ 的等值面是什麼？\n   - (A) 球面 (B) 圓柱面 (C) 平面 (D) 拋物面",
-      "options": null,
+      "title": "**Q5**: 函數 $f(x, y, z) = x+y+z$ 的等值面是什麼？\n   -",
+      "options": {
+        "A": "球面",
+        "B": "圓柱面",
+        "C": "平面",
+        "D": "拋物面"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "$\\lim_{(x, y) \\to (1, 1)} \\frac{x^2 - y^2}{x - y}$ 的值為？\n   - (A) 0 (B) 1 (C) 2 (D) 不存在",
-      "options": null,
+      "title": "**Q6**: $\\lim_{(x, y) \\to (1, 1)} \\frac{x^2 - y^2}{x - y}$ 的值為？\n   -",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "不存在"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "若沿 $x$ 軸極限為 0，沿 $y$ 軸極限為 0，則該點極限：\n   - (A) 必為 0 (B) 必不存在 (C) 不一定存在 (D) 必為無窮大",
-      "options": null,
+      "title": "**Q7**: 若沿 $x$ 軸極限為 0，沿 $y$ 軸極限為 0，則該點極限：\n   -",
+      "options": {
+        "A": "必為 0",
+        "B": "必不存在",
+        "C": "不一定存在",
+        "D": "必為無窮大"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "$\\lim_{(x, y) \\to (0, 0)} \\frac{x^4 - y^4}{x^2 + y^2}$ 等於？\n   - (A) 0 (B) 1 (C) -1 (D) 不存在",
-      "options": null,
+      "title": "**Q8**: $\\lim_{(x, y) \\to (0, 0)} \\frac{x^4 - y^4}{x^2 + y^2}$ 等於？\n   -",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "不存在"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "哪個函數的圖形被稱為「馬鞍面」？\n   - (A) $z = x^2 + y^2$ (B) $z = x^2 - y^2$ (C) $z = \\sqrt{x^2+y^2}$ (D) $z = xy$",
-      "options": null,
+      "title": "**Q9**: 哪個函數的圖形被稱為「馬鞍面」？\n   -",
+      "options": {
+        "A": "$z = x^2 + y^2$",
+        "B": "$z = x^2 - y^2$",
+        "C": "$z = \\sqrt{x^2+y^2}$",
+        "D": "$z = xy$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "證明多元極限存在通常需要使用？\n    - (A) 羅必達法則 (B) 兩路徑測試法 (C) 夾擠定理或極座標 (D) 畫圖",
-      "options": null,
+      "title": "**Q10**: 證明多元極限存在通常需要使用？\n    -",
+      "options": {
+        "A": "羅必達法則",
+        "B": "兩路徑測試法",
+        "C": "夾擠定理或極座標",
+        "D": "畫圖\n\n### 2. 多選題 (Multiple Choice)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列哪些函數在原點 $(0, 0)$ 不連續？\n    - (A) $f(x, y) = \\frac{x^2}{x^2+y^2}$ (B) $f(x, y) = \\sin(xy)$ (C) $f(x, y) = \\frac{1}{x+y}$ (D) $f(x, y) = e^{x+y}$",
-      "options": null,
+      "title": "**Q11**: 下列哪些函數在原點 $(0, 0)$ 不連續？\n    -",
+      "options": {
+        "A": "$f(x, y) = \\frac{x^2}{x^2+y^2}$",
+        "B": "$f(x, y) = \\sin(xy)$",
+        "C": "$f(x, y) = \\frac{1}{x+y}$",
+        "D": "$f(x, y) = e^{x+y}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "關於二元函數 $z = f(x, y)$，正確的敘述有？\n    - (A) 定義域是 $\\mathbb{R}^2$ 的子集 (B) 值域是 $\\mathbb{R}$ 的子集 (C) 其圖形是一條曲線 (D) 等高線位於 $xy$ 平面",
-      "options": null,
+      "title": "**Q12**: 關於二元函數 $z = f(x, y)$，正確的敘述有？\n    -",
+      "options": {
+        "A": "定義域是 $\\mathbb{R}^2$ 的子集",
+        "B": "值域是 $\\mathbb{R}$ 的子集",
+        "C": "其圖形是一條曲線",
+        "D": "等高線位於 $xy$ 平面"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "兩路徑測試法中，若兩路徑極限相同，則？\n    - (A) 仍需測試更多路徑 (B) 極限可能不存在 (C) 極限一定存在 (D) 可能需要改用極座標法證明",
-      "options": null,
+      "title": "**Q13**: 兩路徑測試法中，若兩路徑極限相同，則？\n    -",
+      "options": {
+        "A": "仍需測試更多路徑",
+        "B": "極限可能不存在",
+        "C": "極限一定存在",
+        "D": "可能需要改用極座標法證明"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "下列哪些是常見的三維二次曲面？\n    - (A) 橢球 (B) 雙曲拋物面 (C) 圓錐 (D) 圓柱面",
-      "options": null,
+      "title": "**Q14**: 下列哪些是常見的三維二次曲面？\n    -",
+      "options": {
+        "A": "橢球",
+        "B": "雙曲拋物面",
+        "C": "圓錐",
+        "D": "圓柱面"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "使用極座標 $x=r\\cos\\theta, y=r\\sin\\theta$ 處理 $(0, 0)$ 的極限時：\n    - (A) $(x, y) \\to (0, 0)$ 等價於 $r \\to 0^+$ (B) 若極限結果與 $\\theta$ 有關，則極限不存在 (C) 若結果與 $\\theta$ 無關，則極限存在 (D) 極限結果必須是常數",
-      "options": null,
+      "title": "**Q15**: 使用極座標 $x=r\\cos\\theta, y=r\\sin\\theta$ 處理 $(0, 0)$ 的極限時：\n    -",
+      "options": {
+        "A": "$(x, y) \\to (0, 0)$ 等價於 $r \\to 0^+$",
+        "B": "若極限結果與 $\\theta$ 有關，則極限不存在",
+        "C": "若結果與 $\\theta$ 無關，則極限存在",
+        "D": "極限結果必須是常數\n\n### 3. 填充題 (Fill-in-the-blank)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "$f(x, y) = \\sqrt{y-x}$ 的定義域為 $y \\ge $ __________。",
-      "options": null,
+      "title": "**Q16**: $f(x, y) = \\sqrt{y-x}$ 的定義域為 $y \\ge $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "$\\lim_{(x, y) \\to (0, 0)} \\frac{x^2 y^2}{x^2 + y^2} = $ __________。",
-      "options": null,
+      "title": "**Q17**: $\\lim_{(x, y) \\to (0, 0)} \\frac{x^2 y^2}{x^2 + y^2} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "$z = x^2 + y^2$ 在 $z=4$ 處的等高線半徑為 __________。",
-      "options": null,
+      "title": "**Q18**: $z = x^2 + y^2$ 在 $z=4$ 處的等高線半徑為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "多項式函數在全平面均為 __________。",
-      "options": null,
+      "title": "**Q19**: 多項式函數在全平面均為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "沿 $y = x$ 路徑趨近 $(0, 0)$，函數 $f(x, y) = \\frac{xy}{x^2+y^2}$ 的值恆為 __________。",
-      "options": null,
+      "title": "**Q20**: 沿 $y = x$ 路徑趨近 $(0, 0)$，函數 $f(x, y) = \\frac{xy}{x^2+y^2}$ 的值恆為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "$f(x, y, z) = e^{xyz}$ 在點 $(1, 0, 5)$ 的值為 __________。",
-      "options": null,
+      "title": "**Q21**: $f(x, y, z) = e^{xyz}$ 在點 $(1, 0, 5)$ 的值為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "若 $\\lim_{(x, y) \\to (0, 0)} f(x, y) = L$，則沿任何經過原點的平滑曲線極限必為 __________。",
-      "options": null,
+      "title": "**Q22**: 若 $\\lim_{(x, y) \\to (0, 0)} f(x, y) = L$，則沿任何經過原點的平滑曲線極限必為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "$\\lim_{(x, y) \\to (0, 0)} \\frac{\\sin(x^2+y^2)}{x^2+y^2} = $ __________。",
-      "options": null,
+      "title": "**Q23**: $\\lim_{(x, y) \\to (0, 0)} \\frac{\\sin(x^2+y^2)}{x^2+y^2} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "二元函數的圖形通常稱為 __________。",
-      "options": null,
+      "title": "**Q24**: 二元函數的圖形通常稱為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "函數 $f(x, y) = \\frac{1}{x^2+y^2}$ 在點 __________ 處不連續。",
-      "options": null,
+      "title": "**Q25**: 函數 $f(x, y) = \\frac{1}{x^2+y^2}$ 在點 __________ 處不連續。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "繪製等高線時，若高度間隔相等且線條越密集，表示地形越 __________。",
-      "options": null,
+      "title": "**Q26**: 繪製等高線時，若高度間隔相等且線條越密集，表示地形越 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "$\\lim_{(x, y) \\to (2, 3)} (5x - 2y) = $ __________。",
-      "options": null,
+      "title": "**Q27**: $\\lim_{(x, y) \\to (2, 3)} (5x - 2y) = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "拋物面 $z = x^2+y^2$ 的開口方向向 __________。",
-      "options": null,
+      "title": "**Q28**: 拋物面 $z = x^2+y^2$ 的開口方向向 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "使用夾擠定理證明極限時，常用的不等式有 $|x| \\le \\sqrt{x^2+y^2}$ 及 __________ $\\le 1$。",
-      "options": null,
+      "title": "**Q29**: 使用夾擠定理證明極限時，常用的不等式有 $|x| \\le \\sqrt{x^2+y^2}$ 及 __________ $\\le 1$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "多元微積分中，$x, y$ 被稱為 __________ 變數。",
-      "options": null,
+      "title": "**Q30**: 多元微積分中，$x, y$ 被稱為 __________ 變數。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP14.1 | KP14.2 | KP14.3 | KP14.4 | KP14.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,0,0,0,0 | 0,1,0,0,0 | 0,0,0,0,1 | 0,0,1,0,0 | 0,0,0,0,1 |\n| Q6-Q10 | 0,0,0,0,0 | 0,0,0,0,0 | 1,1,1,0,1 | 0,0,0,1,0 | 0,0,0,0,0 |\n| Q11-Q30| ... | ... | ... | ... | ... |",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

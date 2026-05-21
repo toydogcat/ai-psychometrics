@@ -1,324 +1,408 @@
 {
-  "course": "calculus1",
-  "week": "week17",
-  "title": "第 17 週 - 積分的應用：面積與體積",
-  "knowledge_points": {
-    "KP17.1": "掌握面積積分的基本公式 $\\int (上 - 下) dx$ 並學會找交點。",
-    "KP17.2": "理解何時使用 $\\int (右 - 左) dy$ 積分更簡便。",
-    "KP17.3": "建立切片法概念：體積是截面積函數的積分。",
-    "KP17.4": "熟練圓盤法公式，區分繞 x 軸與繞 y 軸的差異。",
-    "KP17.5": "應用墊圈法處理空心旋轉體，精確識別內外半徑。"
-  },
+  "course_id": "calculus1",
+  "week": 17,
+  "title": "微積分 上 第 17 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "在 Google Colab 中執行以下代碼。\n    ```python\n    import sympy as sp",
-      "options": null,
+      "title": "**Q1**: 求 $y=x^2$ 與 $y=x^3$ 在 $[0, 1]$ 圍成的面積？\n   -",
+      "options": {
+        "A": "1/12",
+        "B": "1/4",
+        "C": "1/3",
+        "D": "1/2"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "求 $y=x^2$ 與 $y=x^3$ 在 $[0, 1]$ 圍成的面積？\n   - (A) 1/12 (B) 1/4 (C) 1/3 (D) 1/2",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "若區域繞 y 軸旋轉，截面垂直於 y 軸，則應使用？\n   - (A) $dx$ 圓盤法 (B) $dy$ 圓盤法 (C) $dx$ 剝殼法 (D) $dy$ 墊圈法",
-      "options": null,
+      "title": "**Q2**: 若區域繞 y 軸旋轉，截面垂直於 y 軸，則應使用？\n   -",
+      "options": {
+        "A": "$dx$ 圓盤法",
+        "B": "$dy$ 圓盤法",
+        "C": "$dx$ 剝殼法",
+        "D": "$dy$ 墊圈法"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "墊圈法公式中，若繞 $x$ 軸旋轉，內半徑 $r$ 是？\n   - (A) 離 $x$ 軸較遠的函數 (B) 離 $x$ 軸較近的函數 (C) 恆為常數 (D) 旋轉軸的長度",
-      "options": null,
+      "title": "**Q3**: 墊圈法公式中，若繞 $x$ 軸旋轉，內半徑 $r$ 是？\n   -",
+      "options": {
+        "A": "離 $x$ 軸較遠的函數",
+        "B": "離 $x$ 軸較近的函數",
+        "C": "恆為常數",
+        "D": "旋轉軸的長度"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "計算面積時若曲線 $f(x)$ 與 $g(x)$ 相交兩次，形成一個封閉區域，則積分限 $a, b$ 為？\n   - (A) 任意給定 (B) 曲線的交點 (C) 必為 0 與 1 (D) $x$ 軸的截點",
-      "options": null,
+      "title": "**Q4**: 計算面積時若曲線 $f(x)$ 與 $g(x)$ 相交兩次，形成一個封閉區域，則積分限 $a, b$ 為？\n   -",
+      "options": {
+        "A": "任意給定",
+        "B": "曲線的交點",
+        "C": "必為 0 與 1",
+        "D": "$x$ 軸的截點"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "圓盤法是切片法的特例，其截面形狀為？\n   - (A) 正方形 (B) 圓形 (C) 三角形 (D) 梯形",
-      "options": null,
+      "title": "**Q5**: 圓盤法是切片法的特例，其截面形狀為？\n   -",
+      "options": {
+        "A": "正方形",
+        "B": "圓形",
+        "C": "三角形",
+        "D": "梯形"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "$y = \\sqrt{r^2 - x^2}$ 繞 $x$ 軸旋轉產生的幾何體是？\n   - (A) 圓柱 (B) 圓錐 (C) 球體 (D) 環面",
-      "options": null,
+      "title": "**Q6**: $y = \\sqrt{r^2 - x^2}$ 繞 $x$ 軸旋轉產生的幾何體是？\n   -",
+      "options": {
+        "A": "圓柱",
+        "B": "圓錐",
+        "C": "球體",
+        "D": "環面"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "若對 $y$ 積分求面積，被積函數應為？\n   - (A) $f(y) - g(y)$ (B) $f(x) - g(x)$ (C) $f(y) + g(y)$ (D) $f'(y)$",
-      "options": null,
+      "title": "**Q7**: 若對 $y$ 積分求面積，被積函數應為？\n   -",
+      "options": {
+        "A": "$f(y) - g(y)$",
+        "B": "$f(x) - g(x)$",
+        "C": "$f(y) + g(y)$",
+        "D": "$f'(y)$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "繞 $x$ 軸旋轉時，若區域位於 $y=1$ 與 $y=3$ 之間，外半徑為？\n   - (A) 1 (B) 2 (C) 3 (D) 4",
-      "options": null,
+      "title": "**Q8**: 繞 $x$ 軸旋轉時，若區域位於 $y=1$ 與 $y=3$ 之間，外半徑為？\n   -",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "$\\int_1^2 \\pi (x^2)^2 \\, dx$ 代表哪條曲線繞 $x$ 軸旋轉的體積？\n   - (A) $y=x$ (B) $y=x^2$ (C) $y=x^4$ (D) $y=\\sqrt{x}$",
-      "options": null,
+      "title": "**Q9**: $\\int_1^2 \\pi (x^2)^2 \\, dx$ 代表哪條曲線繞 $x$ 軸旋轉的體積？\n   -",
+      "options": {
+        "A": "$y=x$",
+        "B": "$y=x^2$",
+        "C": "$y=x^4$",
+        "D": "$y=\\sqrt{x}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "哪種方法最適合求橫截面為等邊三角形的幾何體體積？\n    - (A) 圓盤法 (B) 墊圈法 (C) 一般切片法 (D) 剝殼法",
-      "options": null,
+      "title": "**Q10**: 哪種方法最適合求橫截面為等邊三角形的幾何體體積？\n    -",
+      "options": {
+        "A": "圓盤法",
+        "B": "墊圈法",
+        "C": "一般切片法",
+        "D": "剝殼法\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列關於面積積分的敘述，正確的有？\n    - (A) 面積恆為正值 (B) 必須找出所有交點 (C) 只能對 $x$ 積分 (D) 右減左適用於對 $y$ 積分",
-      "options": null,
+      "title": "**Q11**: 下列關於面積積分的敘述，正確的有？\n    -",
+      "options": {
+        "A": "面積恆為正值",
+        "B": "必須找出所有交點",
+        "C": "只能對 $x$ 積分",
+        "D": "右減左適用於對 $y$ 積分"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "墊圈法與圓盤法的共同點包括？\n    - (A) 截面都垂直於旋轉軸 (B) 都涉及 $\\pi \\times (\\text{半徑})^2$ (C) 都不需要考慮旋轉軸 (D) 都是切片法的應用",
-      "options": null,
+      "title": "**Q12**: 墊圈法與圓盤法的共同點包括？\n    -",
+      "options": {
+        "A": "截面都垂直於旋轉軸",
+        "B": "都涉及 $\\pi \\times (\\text{半徑})^2$",
+        "C": "都不需要考慮旋轉軸",
+        "D": "都是切片法的應用"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "哪些因素會改變旋轉體的體積？\n    - (A) 旋轉區域的形狀 (B) 旋轉軸的位置 (C) 旋轉的角度 (D) 積分變數的選擇",
-      "options": null,
+      "title": "**Q13**: 哪些因素會改變旋轉體的體積？\n    -",
+      "options": {
+        "A": "旋轉區域的形狀",
+        "B": "旋轉軸的位置",
+        "C": "旋轉的角度",
+        "D": "積分變數的選擇"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "若區域由 $y=f(x), y=g(x)$ 圍成，繞 $x$ 軸旋轉，體積公式正確的有？\n    - (A) $\\int \\pi (f^2 - g^2) dx$ (B) $\\pi \\int (f-g)^2 dx$ (C) $\\int \\pi f^2 dx - \\int \\pi g^2 dx$ (D) $\\int 2\\pi x f dx$",
-      "options": null,
+      "title": "**Q14**: 若區域由 $y=f(x), y=g(x)$ 圍成，繞 $x$ 軸旋轉，體積公式正確的有？\n    -",
+      "options": {
+        "A": "$\\int \\pi (f^2 - g^2) dx$",
+        "B": "$\\pi \\int (f-g)^2 dx$",
+        "C": "$\\int \\pi f^2 dx - \\int \\pi g^2 dx$",
+        "D": "$\\int 2\\pi x f dx$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "下列哪些函數圍成的面積建議對 $y$ 積分？\n    - (A) $x = y^2$ 與 $x = y + 2$ (B) $y = x^2$ 與 $y = x$ (C) $x = e^y$ 與 $x = 1, y = 1$ (D) $y = \\ln x$ 與 $x$ 軸",
-      "options": null,
+      "title": "**Q15**: 下列哪些函數圍成的面積建議對 $y$ 積分？\n    -",
+      "options": {
+        "A": "$x = y^2$ 與 $x = y + 2$",
+        "B": "$y = x^2$ 與 $y = x$",
+        "C": "$x = e^y$ 與 $x = 1, y = 1$",
+        "D": "$y = \\ln x$ 與 $x$ 軸"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "求體積時，若截面平行於旋轉軸，通常不使用？\n    - (A) 圓盤法 (B) 墊圈法 (C) 剝殼法 (D) 切片法",
-      "options": null,
+      "title": "**Q16**: 求體積時，若截面平行於旋轉軸，通常不使用？\n    -",
+      "options": {
+        "A": "圓盤法",
+        "B": "墊圈法",
+        "C": "剝殼法",
+        "D": "切片法"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "關於 $V = \\int_a^b A(x) \\, dx$，下列何者正確？\n    - (A) $A(x)$ 是橫截面積 (B) 截面必須垂直於 $x$ 軸 (C) 此公式僅適用於圓形截面 (D) $A(x)$ 必須是 $x$ 的函數",
-      "options": null,
+      "title": "**Q17**: 關於 $V = \\int_a^b A(x) \\, dx$，下列何者正確？\n    -",
+      "options": {
+        "A": "$A(x)$ 是橫截面積",
+        "B": "截面必須垂直於 $x$ 軸",
+        "C": "此公式僅適用於圓形截面",
+        "D": "$A(x)$ 必須是 $x$ 的函數"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "使用 SymPy 計算時，哪些步驟是必要的？\n    - (A) 定義符號變數 (B) 設定積分限 (C) 呼叫 `sp.integrate` (D) 必須畫圖",
-      "options": null,
+      "title": "**Q18**: 使用 SymPy 計算時，哪些步驟是必要的？\n    -",
+      "options": {
+        "A": "定義符號變數",
+        "B": "設定積分限",
+        "C": "呼叫 `sp.integrate`",
+        "D": "必須畫圖"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "下列幾何體的體積公式推導涉及積分的有？\n    - (A) 球體 (B) 圓錐 (C) 圓柱 (D) 長方體",
-      "options": null,
+      "title": "**Q19**: 下列幾何體的體積公式推導涉及積分的有？\n    -",
+      "options": {
+        "A": "球體",
+        "B": "圓錐",
+        "C": "圓柱",
+        "D": "長方體"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "墊圈法的「空洞」部分體積計算式為？\n    - (A) $\\int \\pi r^2 dx$ (B) $\\int \\pi R^2 dx$ (C) $\\int \\pi (R-r)^2 dx$ (D) 總體積減去實心部分",
-      "options": null,
+      "title": "**Q20**: 墊圈法的「空洞」部分體積計算式為？\n    -",
+      "options": {
+        "A": "$\\int \\pi r^2 dx$",
+        "B": "$\\int \\pi R^2 dx$",
+        "C": "$\\int \\pi (R-r)^2 dx$",
+        "D": "總體積減去實心部分\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "兩曲線 $y=x$ 與 $y=x^2$ 的交點坐標為 (0,0) 與 __________。",
-      "options": null,
+      "title": "**Q21**: 兩曲線 $y=x$ 與 $y=x^2$ 的交點坐標為 (0,0) 與 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "圓盤法公式中，若繞 $y=k$ 旋轉，半徑應表示為 __________。",
-      "options": null,
+      "title": "**Q22**: 圓盤法公式中，若繞 $y=k$ 旋轉，半徑應表示為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "墊圈法的截面面積公式為 $A(x) = \\pi(R^2 - r^2)$，其中 $r$ 代表 __________。",
-      "options": null,
+      "title": "**Q23**: 墊圈法的截面面積公式為 $A(x) = \\pi(R^2 - r^2)$，其中 $r$ 代表 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "切片法中，若截面為邊長 $s(x)$ 的正方形，則 $A(x) = $ __________。",
-      "options": null,
+      "title": "**Q24**: 切片法中，若截面為邊長 $s(x)$ 的正方形，則 $A(x) = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "繞 $y$ 軸旋轉的圓盤法公式為 $V = \\int_c^d$ __________ $dy$。",
-      "options": null,
+      "title": "**Q25**: 繞 $y$ 軸旋轉的圓盤法公式為 $V = \\int_c^d$ __________ $dy$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "$\\int_{-1}^1 (1-x^2) dx = $ __________（此為面積值）。",
-      "options": null,
+      "title": "**Q26**: $\\int_{-1}^1 (1-x^2) dx = $ __________（此為面積值）。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "墊圈法公式 $\\int \\pi (R^2 - r^2) dx$ 中，$R$ 稱為 __________。",
-      "options": null,
+      "title": "**Q27**: 墊圈法公式 $\\int \\pi (R^2 - r^2) dx$ 中，$R$ 稱為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "若一個旋轉體是由 $y=x$ 在 $[0, 1]$ 繞 $x$ 軸旋轉而成，其形狀為 __________。",
-      "options": null,
+      "title": "**Q28**: 若一個旋轉體是由 $y=x$ 在 $[0, 1]$ 繞 $x$ 軸旋轉而成，其形狀為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "在 Python 中，`sp.solve(f-g, x)` 的作用是 __________。",
-      "options": null,
+      "title": "**Q29**: 在 Python 中，`sp.solve(f-g, x)` 的作用是 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "體積積分的本質是累積無數個微小幾何元件的 __________。",
-      "options": null,
+      "title": "**Q30**: 體積積分的本質是累積無數個微小幾何元件的 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

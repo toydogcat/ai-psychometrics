@@ -1,324 +1,408 @@
 {
-  "course": "calculus1",
-  "week": "week13",
-  "title": "第 13 週 - 最佳化問題、牛頓法與反導數",
-  "knowledge_points": {
-    "KP13.1": "利用導數尋找面積與體積的最大化方案。",
-    "KP13.2": "成本最小化與距離最短問題的建模技巧。",
-    "KP13.3": "理解邊際成本與邊際營收相等時，利潤達到最大。",
-    "KP13.4": "牛頓法公式 $x_{n+1} = x_n - f(x_n)/f'(x_n)$ 的運用。",
-    "KP13.5": "反導數的定義與初值問題的解法。"
-  },
+  "course_id": "calculus1",
+  "week": 13,
+  "title": "微積分 上 第 13 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "在 Google Colab 中執行以下代碼。\n    ```python\n    import sympy as sp",
-      "options": null,
+      "title": "**Q1**: 最佳化問題中，若目標函數在開區間內只有一個臨界點且二階導為正，則該點為？\n   -",
+      "options": {
+        "A": "局部最大",
+        "B": "絕對最小",
+        "C": "反曲點",
+        "D": "垂直漸近線"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "最佳化問題中，若目標函數在開區間內只有一個臨界點且二階導為正，則該點為？\n   - (A) 局部最大 (B) 絕對最小 (C) 反曲點 (D) 垂直漸近線",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "在「無蓋盒子」問題中，若紙板為正方形（邊長 $L$），剪去的小正方形邊長 $x$ 為多少時體積最大？\n   - (A) $L/2$ (B) $L/4$ (C) $L/6$ (D) $L/8$",
-      "options": null,
+      "title": "**Q2**: 在「無蓋盒子」問題中，若紙板為正方形（邊長 $L$），剪去的小正方形邊長 $x$ 為多少時體積最大？\n   -",
+      "options": {
+        "A": "$L/2$",
+        "B": "$L/4$",
+        "C": "$L/6$",
+        "D": "$L/8$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "邊際成本 $MC$ 是成本函數 $C(x)$ 的？\n   - (A) 積分 (B) 一階導數 (C) 二階導數 (D) 倒數",
-      "options": null,
+      "title": "**Q3**: 邊際成本 $MC$ 是成本函數 $C(x)$ 的？\n   -",
+      "options": {
+        "A": "積分",
+        "B": "一階導數",
+        "C": "二階導數",
+        "D": "倒數"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "當邊際營收 $MR$ 小於邊際成本 $MC$ 時，企業應該？\n   - (A) 增加產量 (B) 減少產量 (C) 保持不變 (D) 提高售價但不改產量",
-      "options": null,
+      "title": "**Q4**: 當邊際營收 $MR$ 小於邊際成本 $MC$ 時，企業應該？\n   -",
+      "options": {
+        "A": "增加產量",
+        "B": "減少產量",
+        "C": "保持不變",
+        "D": "提高售價但不改產量"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "牛頓法在下列哪種情況下會失效？\n   - (A) $f(x)$ 是多項式 (B) $f'(x_n) = 0$ (C) $x_0$ 太接近根 (D) $f''(x) > 0$",
-      "options": null,
+      "title": "**Q5**: 牛頓法在下列哪種情況下會失效？\n   -",
+      "options": {
+        "A": "$f(x)$ 是多項式",
+        "B": "$f'(x_n) = 0$",
+        "C": "$x_0$ 太接近根",
+        "D": "$f''(x) > 0$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "求 $x^2 - 2 = 0$ 的牛頓法迭代公式為？\n   - (A) $x_{n+1} = (x_n + 2/x_n)/2$ (B) $x_{n+1} = x_n - x_n^2$ (C) $x_{n+1} = 2x_n$ (D) $x_{n+1} = x_n - 2$",
-      "options": null,
+      "title": "**Q6**: 求 $x^2 - 2 = 0$ 的牛頓法迭代公式為？\n   -",
+      "options": {
+        "A": "$x_{n+1} = (x_n + 2/x_n)/2$",
+        "B": "$x_{n+1} = x_n - x_n^2$",
+        "C": "$x_{n+1} = 2x_n$",
+        "D": "$x_{n+1} = x_n - 2$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "函數 $f(x) = \\sin x$ 的一般反導數為？\n   - (A) $\\cos x + C$ (B) $-\\cos x + C$ (C) $\\sin x + C$ (D) $-\\sin x + C$",
-      "options": null,
+      "title": "**Q7**: 函數 $f(x) = \\sin x$ 的一般反導數為？\n   -",
+      "options": {
+        "A": "$\\cos x + C$",
+        "B": "$-\\cos x + C$",
+        "C": "$\\sin x + C$",
+        "D": "$-\\sin x + C$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "若 $F(x)$ 是 $f(x)$ 的反導數，則 $(F(x) + 5)' = $？\n   - (A) $f(x) + 5$ (B) $f(x)$ (C) $f'(x)$ (D) $0$",
-      "options": null,
+      "title": "**Q8**: 若 $F(x)$ 是 $f(x)$ 的反導數，則 $(F(x) + 5)' = $？\n   -",
+      "options": {
+        "A": "$f(x) + 5$",
+        "B": "$f(x)$",
+        "C": "$f'(x)$",
+        "D": "$0$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "求解初值問題 $y' = e^x, y(0) = 2$，則 $y(x) = $？\n   - (A) $e^x + 1$ (B) $e^x + 2$ (C) $e^x$ (D) $e^x - 1$",
-      "options": null,
+      "title": "**Q9**: 求解初值問題 $y' = e^x, y(0) = 2$，則 $y(x) = $？\n   -",
+      "options": {
+        "A": "$e^x + 1$",
+        "B": "$e^x + 2$",
+        "C": "$e^x$",
+        "D": "$e^x - 1$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "距離最短問題中，最小化 $d = \\sqrt{f(x)^2 + g(x)^2}$ 等同於最小化？\n    - (A) $f(x) + g(x)$ (B) $f(x)^2 + g(x)^2$ (C) $f'(x) + g'(x)$ (D) $\\sqrt{f(x) + g(x)}$",
-      "options": null,
+      "title": "**Q10**: 距離最短問題中，最小化 $d = \\sqrt{f(x)^2 + g(x)^2}$ 等同於最小化？\n    -",
+      "options": {
+        "A": "$f(x) + g(x)$",
+        "B": "$f(x)^2 + g(x)^2$",
+        "C": "$f'(x) + g'(x)$",
+        "D": "$\\sqrt{f(x) + g(x)}$\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列哪些是解決最佳化問題的正確步驟？\n    - (A) 找出目標函數 (B) 確定定義域 (C) 求臨界點 (D) 忽略端點值",
-      "options": null,
+      "title": "**Q11**: 下列哪些是解決最佳化問題的正確步驟？\n    -",
+      "options": {
+        "A": "找出目標函數",
+        "B": "確定定義域",
+        "C": "求臨界點",
+        "D": "忽略端點值"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "關於圓柱體罐頭（體積固定）表面積最小化的敘述，正確的是？\n    - (A) 側面面積應等於底面積的兩倍 (B) 高度等於直徑 (C) $h = 2r$ (D) 只要半徑大，面積就小",
-      "options": null,
+      "title": "**Q12**: 關於圓柱體罐頭（體積固定）表面積最小化的敘述，正確的是？\n    -",
+      "options": {
+        "A": "側面面積應等於底面積的兩倍",
+        "B": "高度等於直徑",
+        "C": "$h = 2r$",
+        "D": "只要半徑大，面積就小"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "利潤最大化發生在？\n    - (A) $MR = MC$ (B) $P'(x) = 0$ (C) $R(x) = C(x)$ (D) 營收最大時",
-      "options": null,
+      "title": "**Q13**: 利潤最大化發生在？\n    -",
+      "options": {
+        "A": "$MR = MC$",
+        "B": "$P'(x) = 0$",
+        "C": "$R(x) = C(x)$",
+        "D": "營收最大時"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "牛頓法可能不收斂的原因 include？\n    - (A) 初始值遠離真實根 (B) 導數為零 (C) 陷入循環 (D) 函數是二階的",
-      "options": null,
+      "title": "**Q14**: 牛頓法可能不收斂的原因 include？\n    -",
+      "options": {
+        "A": "初始值遠離真實根",
+        "B": "導數為零",
+        "C": "陷入循環",
+        "D": "函數是二階的"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "反導數的應用包括？\n    - (A) 由加速度求速度 (B) 由速度求位移 (C) 由邊際成本求總成本 (D) 求曲線的切線斜率",
-      "options": null,
+      "title": "**Q15**: 反導數的應用包括？\n    -",
+      "options": {
+        "A": "由加速度求速度",
+        "B": "由速度求位移",
+        "C": "由邊際成本求總成本",
+        "D": "求曲線的切線斜率"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "下列哪些是 $f(x) = x$ 的反導數？\n    - (A) $x^2/2$ (B) $x^2/2 + 10$ (C) $x^2/2 - \\pi$ (D) $1$",
-      "options": null,
+      "title": "**Q16**: 下列哪些是 $f(x) = x$ 的反導數？\n    -",
+      "options": {
+        "A": "$x^2/2$",
+        "B": "$x^2/2 + 10$",
+        "C": "$x^2/2 - \\pi$",
+        "D": "$1$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "關於初值問題 (IVP)，下列敘述正確的是？\n    - (A) 需要一個已知點來確定常數 $C$ (B) 反導數的通解包含無數個函數 (C) IVP 的解是唯一的 (D) IVP 只能解決多項式",
-      "options": null,
+      "title": "**Q17**: 關於初值問題 (IVP)，下列敘述正確的是？\n    -",
+      "options": {
+        "A": "需要一個已知點來確定常數 $C$",
+        "B": "反導數的通解包含無數個函數",
+        "C": "IVP 的解是唯一的",
+        "D": "IVP 只能解決多項式"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "牛頓法求 $f(x)=0$ 的根，若 $f(x)$ 是直線 $ax+b$，則？\n    - (A) 一次迭代即可得到精確根 (B) 需要多次迭代 (C) 迭代公式與 $x_n$ 無關 (D) 公式簡化為 $-b/a$",
-      "options": null,
+      "title": "**Q18**: 牛頓法求 $f(x)=0$ 的根，若 $f(x)$ 是直線 $ax+b$，則？\n    -",
+      "options": {
+        "A": "一次迭代即可得到精確根",
+        "B": "需要多次迭代",
+        "C": "迭代公式與 $x_n$ 無關",
+        "D": "公式簡化為 $-b/a$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "在經濟學模型中，總利潤 $P(x)$ 增加的條件是？\n    - (A) $MR > MC$ (B) $P'(x) > 0$ (C) $MR < MC$ (D) $R(x) > C(x)$ 且產量在增加",
-      "options": null,
+      "title": "**Q19**: 在經濟學模型中，總利潤 $P(x)$ 增加的條件是？\n    -",
+      "options": {
+        "A": "$MR > MC$",
+        "B": "$P'(x) > 0$",
+        "C": "$MR < MC$",
+        "D": "$R(x) > C(x)$ 且產量在增加"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "下列公式正確的有？\n    - (A) $\\int x^3 dx = \\frac{1}{4}x^4 + C$ (B) $\\int \\frac{1}{x} dx = \\ln|x| + C$ (C) $\\int \\cos x dx = \\sin x + C$ (D) $\\int k dx = kx + C$",
-      "options": null,
+      "title": "**Q20**: 下列公式正確的有？\n    -",
+      "options": {
+        "A": "$\\int x^3 dx = \\frac{1}{4}x^4 + C$",
+        "B": "$\\int \\frac{1}{x} dx = \\ln|x| + C$",
+        "C": "$\\int \\cos x dx = \\sin x + C$",
+        "D": "$\\int k dx = kx + C$\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "若 $f'(x) = 2x + 3$，則其一般反導數 $F(x) = $ __________。",
-      "options": null,
+      "title": "**Q21**: 若 $f'(x) = 2x + 3$，則其一般反導數 $F(x) = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "牛頓法的迭代公式中，分母項為 __________。",
-      "options": null,
+      "title": "**Q22**: 牛頓法的迭代公式中，分母項為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "經濟學中，當 $MR = MC$ 時，__________ 達到極大。",
-      "options": null,
+      "title": "**Q23**: 經濟學中，當 $MR = MC$ 時，__________ 達到極大。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "給定周長固定為 $P$ 的矩形，當其為 __________ 時面積最大。",
-      "options": null,
+      "title": "**Q24**: 給定周長固定為 $P$ 的矩形，當其為 __________ 時面積最大。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "求 $\\sqrt{a}$ 的牛頓迭代式為 $x_{n+1} = \\frac{1}{2}(x_n + \\frac{a}{x_n})$，這又被稱為 __________ 法。",
-      "options": null,
+      "title": "**Q25**: 求 $\\sqrt{a}$ 的牛頓迭代式為 $x_{n+1} = \\frac{1}{2}(x_n + \\frac{a}{x_n})$，這又被稱為 __________ 法。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "若 $f(x) = \\sec^2 x$，則其反導數為 $F(x) = $ __________。",
-      "options": null,
+      "title": "**Q26**: 若 $f(x) = \\sec^2 x$，則其反導數為 $F(x) = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "已知 $a(t) = -9.8$，則速度 $v(t) = $ __________（設初始速度為 $v_0$）。",
-      "options": null,
+      "title": "**Q27**: 已知 $a(t) = -9.8$，則速度 $v(t) = $ __________（設初始速度為 $v_0$）。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "最佳化問題中，若臨界點在邊界上，則必須檢查 __________ 的函數值。",
-      "options": null,
+      "title": "**Q28**: 最佳化問題中，若臨界點在邊界上，則必須檢查 __________ 的函數值。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "牛頓法求根時，若切線水平，則無法與 __________ 軸相交。",
-      "options": null,
+      "title": "**Q29**: 牛頓法求根時，若切線水平，則無法與 __________ 軸相交。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "符號 $\\int f(x) dx$ 稱為 __________ 積分。",
-      "options": null,
+      "title": "**Q30**: 符號 $\\int f(x) dx$ 稱為 __________ 積分。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

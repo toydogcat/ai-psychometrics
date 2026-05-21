@@ -1,324 +1,408 @@
 {
-  "course": "calculus1",
-  "week": "week16",
-  "title": "第 16 週 - 代換法 (The Substitution Rule)",
-  "knowledge_points": {
-    "KP16.1": "理解代換法是連鎖律的逆運算。",
-    "KP16.2": "掌握不定積分中選擇 $u$ 並「湊」出 $du$ 的技巧。",
-    "KP16.3": "記住在計算定積分時，必須同步更新積分上下限。",
-    "KP16.4": "利用函數的奇偶對稱性快速簡化對稱區間上的積分。",
-    "KP16.5": "學會處理需要變形或多次處理的複雜代換題目。"
-  },
+  "course_id": "calculus1",
+  "week": 16,
+  "title": "微積分 上 第 16 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "在 Google Colab 中執行以下代碼。\n    ```python\n    import sympy as sp",
-      "options": null,
+      "title": "**Q1**: 計算 $\\int x(x^2+1)^5 \\, dx$ 時，最適合的代換是？\n   -",
+      "options": {
+        "A": "$u=x$",
+        "B": "$u=x^2$",
+        "C": "$u=x^2+1$",
+        "D": "$u=(x^2+1)^5$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "計算 $\\int x(x^2+1)^5 \\, dx$ 時，最適合的代換是？\n   - (A) $u=x$ (B) $u=x^2$ (C) $u=x^2+1$ (D) $u=(x^2+1)^5$",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "若 $u = \\sqrt{x}$，則 $dx$ 等於？\n   - (A) $du$ (B) $\\frac{1}{2\\sqrt{x}} du$ (C) $2u \\, du$ (D) $u^2 \\, du$",
-      "options": null,
+      "title": "**Q2**: 若 $u = \\sqrt{x}$，則 $dx$ 等於？\n   -",
+      "options": {
+        "A": "$du$",
+        "B": "$\\frac{1}{2\\sqrt{x}} du$",
+        "C": "$2u \\, du$",
+        "D": "$u^2 \\, du$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "計算 $\\int_1^2 e^{3x} \\, dx$，代換 $u=3x$ 後的積分限為？\n   - (A) $[1, 2]$ (B) $[3, 6]$ (C) $[0, 3]$ (D) $[e^3, e^6]$",
-      "options": null,
+      "title": "**Q3**: 計算 $\\int_1^2 e^{3x} \\, dx$，代換 $u=3x$ 後的積分限為？\n   -",
+      "options": {
+        "A": "$[1, 2]$",
+        "B": "$[3, 6]$",
+        "C": "$[0, 3]$",
+        "D": "$[e^3, e^6]$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "$\\int_{-5}^5 (x^3 + \\sin x) \\, dx = $ ？\n   - (A) 0 (B) 10 (C) 50 (D) $\\pi$",
-      "options": null,
+      "title": "**Q4**: $\\int_{-5}^5 (x^3 + \\sin x) \\, dx = $ ？\n   -",
+      "options": {
+        "A": "0",
+        "B": "10",
+        "C": "50",
+        "D": "$\\pi$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "$\\int \\frac{1}{x \\ln x} \\, dx = $ ？\n   - (A) $\\ln x + C$ (B) $(\\ln x)^2 + C$ (C) $\\ln|\\ln x| + C$ (D) $\\frac{1}{\\ln x} + C$",
-      "options": null,
+      "title": "**Q5**: $\\int \\frac{1}{x \\ln x} \\, dx = $ ？\n   -",
+      "options": {
+        "A": "$\\ln x + C$",
+        "B": "$(\\ln x)^2 + C$",
+        "C": "$\\ln|\\ln x| + C$",
+        "D": "$\\frac{1}{\\ln x} + C$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "若 $f$ 為偶函數且 $\\int_0^3 f(x) \\, dx = 4$，則 $\\int_{-3}^3 f(x) \\, dx = $ ？\n   - (A) 0 (B) 4 (C) 8 (D) -8",
-      "options": null,
+      "title": "**Q6**: 若 $f$ 為偶函數且 $\\int_0^3 f(x) \\, dx = 4$，則 $\\int_{-3}^3 f(x) \\, dx = $ ？\n   -",
+      "options": {
+        "A": "0",
+        "B": "4",
+        "C": "8",
+        "D": "-8"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "$\\int \\cos(2x+1) \\, dx = $ ？\n   - (A) $\\sin(2x+1) + C$ (B) $2\\sin(2x+1) + C$ (C) $\\frac{1}{2}\\sin(2x+1) + C$ (D) $-\\frac{1}{2}\\sin(2x+1) + C$",
-      "options": null,
+      "title": "**Q7**: $\\int \\cos(2x+1) \\, dx = $ ？\n   -",
+      "options": {
+        "A": "$\\sin(2x+1) + C$",
+        "B": "$2\\sin(2x+1) + C$",
+        "C": "$\\frac{1}{2}\\sin(2x+1) + C$",
+        "D": "$-\\frac{1}{2}\\sin(2x+1) + C$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "$\\int_0^1 x e^{x^2} \\, dx = $ ？\n   - (A) $e-1$ (B) $\\frac{1}{2}(e-1)$ (C) $e$ (D) $\\frac{1}{2}e$",
-      "options": null,
+      "title": "**Q8**: $\\int_0^1 x e^{x^2} \\, dx = $ ？\n   -",
+      "options": {
+        "A": "$e-1$",
+        "B": "$\\frac{1}{2}(e-1)$",
+        "C": "$e$",
+        "D": "$\\frac{1}{2}e$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "下列何者為奇函數？\n   - (A) $x^2$ (B) $\\cos x$ (C) $x \\cos x$ (D) $x \\sin x$",
-      "options": null,
+      "title": "**Q9**: 下列何者為奇函數？\n   -",
+      "options": {
+        "A": "$x^2$",
+        "B": "$\\cos x$",
+        "C": "$x \\cos x$",
+        "D": "$x \\sin x$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "計算 $\\int \\frac{x}{x^2+1} \\, dx$，結果為？\n    - (A) $\\arctan x + C$ (B) $\\ln(x^2+1) + C$ (C) $\\frac{1}{2}\\ln(x^2+1) + C$ (D) $x^2+1 + C$",
-      "options": null,
+      "title": "**Q10**: 計算 $\\int \\frac{x}{x^2+1} \\, dx$，結果為？\n    -",
+      "options": {
+        "A": "$\\arctan x + C$",
+        "B": "$\\ln(x^2+1) + C$",
+        "C": "$\\frac{1}{2}\\ln(x^2+1) + C$",
+        "D": "$x^2+1 + C$\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列關於代換法的敘述，正確的有？\n    - (A) 它是連鎖律的逆過程 (B) 定積分代換後不需要換回原變項 (C) 不定積分最後必須換回原變項 (D) 任何積分都能用代換法解決",
-      "options": null,
+      "title": "**Q11**: 下列關於代換法的敘述，正確的有？\n    -",
+      "options": {
+        "A": "它是連鎖律的逆過程",
+        "B": "定積分代換後不需要換回原變項",
+        "C": "不定積分最後必須換回原變項",
+        "D": "任何積分都能用代換法解決"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "哪些積分的結果包含對數函數 $\\ln$？\n    - (A) $\\int \\frac{1}{x} \\, dx$ (B) $\\int \\tan x \\, dx$ (C) $\\int \\frac{2x}{x^2+1} \\, dx$ (D) $\\int e^x \\, dx$",
-      "options": null,
+      "title": "**Q12**: 哪些積分的結果包含對數函數 $\\ln$？\n    -",
+      "options": {
+        "A": "$\\int \\frac{1}{x} \\, dx$",
+        "B": "$\\int \\tan x \\, dx$",
+        "C": "$\\int \\frac{2x}{x^2+1} \\, dx$",
+        "D": "$\\int e^x \\, dx$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "下列哪些是偶函數？\n    - (A) $x^4$ (B) $|x|$ (C) $\\cos(x^3)$ (D) $\\sin^2 x$",
-      "options": null,
+      "title": "**Q13**: 下列哪些是偶函數？\n    -",
+      "options": {
+        "A": "$x^4$",
+        "B": "$|x|$",
+        "C": "$\\cos(x^3)$",
+        "D": "$\\sin^2 x$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "關於 $\\int_{-a}^a f(x) \\, dx$，下列何者正確？\n    - (A) 若 $f$ 為奇函數，結果為 0 (B) 若 $f$ 為偶函數，結果為 $2 \\int_0^a f(x) \\, dx$ (C) 即使 $f$ 既非奇也非偶，此公式也適用 (D) 這可以用代換 $u = -x$ 證明",
-      "options": null,
+      "title": "**Q14**: 關於 $\\int_{-a}^a f(x) \\, dx$，下列何者正確？\n    -",
+      "options": {
+        "A": "若 $f$ 為奇函數，結果為 0",
+        "B": "若 $f$ 為偶函數，結果為 $2 \\int_0^a f(x) \\, dx$",
+        "C": "即使 $f$ 既非奇也非偶，此公式也適用",
+        "D": "這可以用代換 $u = -x$ 證明"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "計算 $\\int x \\sqrt{x-1} \\, dx$ 時，可以使用？\n    - (A) 代換 $u = x-1$ (B) 代換 $u = \\sqrt{x-1}$ (C) 直接積分 (D) 先展開再積分",
-      "options": null,
+      "title": "**Q15**: 計算 $\\int x \\sqrt{x-1} \\, dx$ 時，可以使用？\n    -",
+      "options": {
+        "A": "代換 $u = x-1$",
+        "B": "代換 $u = \\sqrt{x-1}$",
+        "C": "直接積分",
+        "D": "先展開再積分"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "下列積分值為 0 的有？\n    - (A) $\\int_{-1}^1 x^5 \\, dx$ (B) $\\int_{-\\pi}^{\\pi} \\cos x \\, dx$ (C) $\\int_{-2}^2 \\frac{x}{x^2+1} \\, dx$ (D) $\\int_0^\\pi \\sin x \\, dx$",
-      "options": null,
+      "title": "**Q16**: 下列積分值為 0 的有？\n    -",
+      "options": {
+        "A": "$\\int_{-1}^1 x^5 \\, dx$",
+        "B": "$\\int_{-\\pi}^{\\pi} \\cos x \\, dx$",
+        "C": "$\\int_{-2}^2 \\frac{x}{x^2+1} \\, dx$",
+        "D": "$\\int_0^\\pi \\sin x \\, dx$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "定積分代換公式中，要求哪些條件？\n    - (A) $g'$ 在 $[a, b]$ 連續 (B) $f$ 在 $g$ 的值域上連續 (C) $g(a) < g(b)$ (D) $f$ 必須是多項式",
-      "options": null,
+      "title": "**Q17**: 定積分代換公式中，要求哪些條件？\n    -",
+      "options": {
+        "A": "$g'$ 在 $[a, b]$ 連續",
+        "B": "$f$ 在 $g$ 的值域上連續",
+        "C": "$g(a) < g(b)$",
+        "D": "$f$ 必須是多項式"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "$\\int \\sin x \\cos x \\, dx$ 可以透過以下哪些方式求解？\n    - (A) 令 $u = \\sin x$ (B) 令 $u = \\cos x$ (C) 使用倍角公式 $\\frac{1}{2}\\sin 2x$ (D) 直接寫成 $\\frac{1}{2}\\sin^2 x + C$",
-      "options": null,
+      "title": "**Q18**: $\\int \\sin x \\cos x \\, dx$ 可以透過以下哪些方式求解？\n    -",
+      "options": {
+        "A": "令 $u = \\sin x$",
+        "B": "令 $u = \\cos x$",
+        "C": "使用倍角公式 $\\frac{1}{2}\\sin 2x$",
+        "D": "直接寫成 $\\frac{1}{2}\\sin^2 x + C$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "下列運算正確的有？\n    - (A) $\\int f(x) \\, dx = \\int f(u) \\frac{dx}{du} \\, du$ (B) $d(e^{x^2}) = 2x e^{x^2} dx$ (C) $d(\\ln(\\cos x)) = -\\tan x dx$ (D) $d(\\sqrt{u}) = \\frac{1}{2\\sqrt{u}} du$",
-      "options": null,
+      "title": "**Q19**: 下列運算正確的有？\n    -",
+      "options": {
+        "A": "$\\int f(x) \\, dx = \\int f(u) \\frac{dx}{du} \\, du$",
+        "B": "$d(e^{x^2}) = 2x e^{x^2} dx$",
+        "C": "$d(\\ln(\\cos x)) = -\\tan x dx$",
+        "D": "$d(\\sqrt{u}) = \\frac{1}{2\\sqrt{u}} du$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "使用 SymPy 時，下列代碼正確的有？\n    - (A) `sp.integrate(f, (x, a, b))` (B) `sp.diff(f, x)` (C) `f.subs(x, -x)` 用於檢查奇偶性 (D) `sp.Integral` 只建立積分式但不計算",
-      "options": null,
+      "title": "**Q20**: 使用 SymPy 時，下列代碼正確的有？\n    -",
+      "options": {
+        "A": "`sp.integrate(f, (x, a, b))`",
+        "B": "`sp.diff(f, x)`",
+        "C": "`f.subs(x, -x)` 用於檢查奇偶性",
+        "D": "`sp.Integral` 只建立積分式但不計算\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "若 $u = 3x+1$，則 $dx = $ __________ $du$。",
-      "options": null,
+      "title": "**Q21**: 若 $u = 3x+1$，則 $dx = $ __________ $du$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "$\\int x^2 (x^3-5)^9 \\, dx$ 的結果為 __________（需含 $C$）。",
-      "options": null,
+      "title": "**Q22**: $\\int x^2 (x^3-5)^9 \\, dx$ 的結果為 __________（需含 $C$）。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "$\\int_{-2}^2 (x^7 - 3x^3 + x) \\, dx = $ __________。",
-      "options": null,
+      "title": "**Q23**: $\\int_{-2}^2 (x^7 - 3x^3 + x) \\, dx = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "計算 $\\int_0^{\\pi/2} \\sin x \\cos x \\, dx$，結果為 __________。",
-      "options": null,
+      "title": "**Q24**: 計算 $\\int_0^{\\pi/2} \\sin x \\cos x \\, dx$，結果為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "若 $\\int_0^a f(x) \\, dx = K$ 且 $f$ 為偶函數，則 $\\int_{-a}^a f(x) \\, dx = $ __________。",
-      "options": null,
+      "title": "**Q25**: 若 $\\int_0^a f(x) \\, dx = K$ 且 $f$ 為偶函數，則 $\\int_{-a}^a f(x) \\, dx = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "$\\int \\frac{(\\ln x)^2}{x} \\, dx = $ __________（需含 $C$）。",
-      "options": null,
+      "title": "**Q26**: $\\int \\frac{(\\ln x)^2}{x} \\, dx = $ __________（需含 $C$）。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "代換法公式：$\\int f(g(x))g'(x) \\, dx = \\int f(u) \\, du$，其中 $u = $ __________。",
-      "options": null,
+      "title": "**Q27**: 代換法公式：$\\int f(g(x))g'(x) \\, dx = \\int f(u) \\, du$，其中 $u = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "$\\int_1^2 \\frac{1}{(3x-2)^2} \\, dx = $ __________。",
-      "options": null,
+      "title": "**Q28**: $\\int_1^2 \\frac{1}{(3x-2)^2} \\, dx = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "函數 $f(x) = x^3 \\cos x$ 是 __________ 函數（填奇或偶）。",
-      "options": null,
+      "title": "**Q29**: 函數 $f(x) = x^3 \\cos x$ 是 __________ 函數（填奇或偶）。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "$\\int \\tan^2 x \\sec^2 x \\, dx = $ __________（需含 $C$）。",
-      "options": null,
+      "title": "**Q30**: $\\int \\tan^2 x \\sec^2 x \\, dx = $ __________（需含 $C$）。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

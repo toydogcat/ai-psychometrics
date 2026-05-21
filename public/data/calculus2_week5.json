@@ -1,314 +1,358 @@
 {
-  "course": "calculus2",
-  "week": "week5",
-  "title": "第 5 週 - 數值積分與瑕積分",
-  "knowledge_points": {
-    "KP5.1": "中點法則利用中點高度。",
-    "KP5.2": "梯形法則利用端點平均。",
-    "KP5.3": "辛普森法則利用二次逼近（$n$ 必為偶數）。",
-    "KP5.4": "第一型瑕積分處理無窮範圍。",
-    "KP5.5": "第二型瑕積分處理不連續點。"
-  },
+  "course_id": "calculus2",
+  "week": 5,
+  "title": "微積分 中 第 5 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "辛普森法則 $S_n$ 的誤差項與 $n$ 的幾次方成反比？ (A) $n$ (B) $n^2$ (C) $n^3$ (D) $n^4$",
-      "options": null,
+      "title": "辛普森法則 $S_n$ 的誤差項與 $n$ 的幾次方成反比？",
+      "options": {
+        "A": "$n$",
+        "B": "$n^2$",
+        "C": "$n^3$",
+        "D": "$n^4$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "欲使用辛普森法則，子區間數 $n$ 必須為： (A) 質數 (B) 奇數 (C) 偶數 (D) 3的倍數",
-      "options": null,
+      "title": "欲使用辛普森法則，子區間數 $n$ 必須為：",
+      "options": {
+        "A": "質數",
+        "B": "奇數",
+        "C": "偶數",
+        "D": "3的倍數"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "下列何者收斂？ (A) $\\int_1^\\infty \\frac{1}{x} dx$ (B) $\\int_1^\\infty \\frac{1}{\\sqrt{x}} dx$ (C) $\\int_1^\\infty \\frac{1}{x^2} dx$ (D) $\\int_1^\\infty \\frac{1}{x^{0.9}} dx$",
-      "options": null,
+      "title": "下列何者收斂？",
+      "options": {
+        "A": "$\\int_1^\\infty \\frac{1}{x} dx$",
+        "B": "$\\int_1^\\infty \\frac{1}{\\sqrt{x}} dx$",
+        "C": "$\\int_1^\\infty \\frac{1}{x^2} dx$",
+        "D": "$\\int_1^\\infty \\frac{1}{x^{0.9}} dx$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "梯形法則估計 $\\int_a^b f(x) dx$ 時，若 $f''(x) > 0$，則 $T_n$ 會： (A) 高估 (B) 低估 (C) 等於精確值 (D) 無法判斷",
-      "options": null,
+      "title": "梯形法則估計 $\\int_a^b f(x) dx$ 時，若 $f''(x) > 0$，則 $T_n$ 會：",
+      "options": {
+        "A": "高估",
+        "B": "低估",
+        "C": "等於精確值",
+        "D": "無法判斷"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "中點法則估計時，若 $f''(x) > 0$，則 $M_n$ 會： (A) 高估 (B) 低估 (C) 等於精確值 (D) 無法判斷",
-      "options": null,
+      "title": "中點法則估計時，若 $f''(x) > 0$，則 $M_n$ 會：",
+      "options": {
+        "A": "高估",
+        "B": "低估",
+        "C": "等於精確值",
+        "D": "無法判斷"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "計算 $\\int_0^1 \\ln x dx$ 屬於： (A) 第一型瑕積分 (B) 第二型瑕積分 (C) 非瑕積分 (D) 定積分",
-      "options": null,
+      "title": "計算 $\\int_0^1 \\ln x dx$ 屬於：",
+      "options": {
+        "A": "第一型瑕積分",
+        "B": "第二型瑕積分",
+        "C": "非瑕積分",
+        "D": "定積分"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "$\\int_1^\\infty e^{-x} dx$ 的值為： (A) 1 (B) $e$ (C) $1/e$ (D) 發散",
-      "options": null,
+      "title": "$\\int_1^\\infty e^{-x} dx$ 的值為：",
+      "options": {
+        "A": "1",
+        "B": "$e$",
+        "C": "$1/e$",
+        "D": "發散"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "下列哪種方法的代數精度最高（能精確積分最高次數的多項式）？ (A) 左端點法 (B) 中點法 (C) 梯形法 (D) 辛普森法",
-      "options": null,
+      "title": "下列哪種方法的代數精度最高（能精確積分最高次數的多項式）？",
+      "options": {
+        "A": "左端點法",
+        "B": "中點法",
+        "C": "梯形法",
+        "D": "辛普森法"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "$\\int_0^\\infty \\frac{1}{1+x^2} dx$ 的值為： (A) $\\pi$ (B) $\\pi/2$ (C) 1 (D) 發散",
-      "options": null,
+      "title": "$\\int_0^\\infty \\frac{1}{1+x^2} dx$ 的值為：",
+      "options": {
+        "A": "$\\pi$",
+        "B": "$\\pi/2$",
+        "C": "1",
+        "D": "發散"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "若 $\\int_a^\\infty f(x) dx$ 收斂且 $\\int_a^\\infty g(x) dx$ 發散，則 $\\int_a^\\infty (f(x)+g(x)) dx$： (A) 收斂 (B) 發散 (C) 不一定 (D) 趨於零",
-      "options": null,
+      "title": "若 $\\int_a^\\infty f(x) dx$ 收斂且 $\\int_a^\\infty g(x) dx$ 發散，則 $\\int_a^\\infty (f(x)+g(x)) dx$：",
+      "options": {
+        "A": "收斂",
+        "B": "發散",
+        "C": "不一定",
+        "D": "趨於零\n\n### 2. 填充題 (11-20)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
       "title": "使用梯形法 $T_4$ 估計 $\\int_0^2 x^2 dx$，其值為 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
       "title": "$\\int_2^\\infty \\frac{1}{x(\\ln x)^2} dx$ 的值為 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
       "title": "若 $f(x)$ 為三次多項式，則辛普森法得到的估計值與精確值的關係是 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
       "title": "$\\int_0^1 \\frac{1}{x-1} dx$ 是 \\_\\_\\_\\_\\_\\_（收斂/發散）。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
       "title": "瑕積分 $\\int_0^1 x^p dx$ 在 $p >$ \\_\\_\\_\\_\\_\\_ 時收斂。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
       "title": "辛普森公式中，係數序列的中間項（非首尾）交替出現的數字是 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
       "title": "$\\int_{-\\infty}^\\infty \\frac{1}{1+x^2} dx = $ \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
       "title": "在區間 $[0, 10]$ 取 $n=5$，則 $\\Delta x = $ \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
       "title": "比較 $\\int_1^\\infty \\frac{1}{x^2+1} dx$ 與 $\\int_1^\\infty \\frac{1}{x^2} dx$，利用比較檢定法可知前者 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "梯形法 $T_n$ 的公式中，$f(x_0)$ 的係數是 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "title": "梯形法 $T_n$ 的公式中，$f(x_0)$ 的係數是 \\_\\_\\_\\_\\_\\_。\n\n### 3. 計算與證明題 (21-30)",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
       "title": "證明 $\\int_1^\\infty \\frac{1}{x^p} dx$ 在 $p > 1$ 時收斂。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
       "title": "利用辛普森法 $S_4$ 估計 $\\int_0^1 e^{x^2} dx$ (列式即可)。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
       "title": "判斷 $\\int_0^{\\pi/2} \\sec x dx$ 的收斂性。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
       "title": "計算 $\\int_0^3 \\frac{1}{(x-1)^{2/3}} dx$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
       "title": "使用比較檢定法判斷 $\\int_1^\\infty \\frac{\\sin^2 x}{x^2} dx$ 是否收斂。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
       "title": "說明為何辛普森法對三次多項式仍能給出精確解。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
       "title": "求 $\\int_e^\\infty \\frac{1}{x \\ln x} dx$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
       "title": "設 $f(x)$ 為凸函數 ($f'' > 0$)，證明 $M_n \\le \\int_a^b f(x) dx \\le T_n$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
       "title": "計算 $\\int_{-\\infty}^0 e^{2x} dx$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
       "title": "若 $f(x)$ 在 $[0, \\infty)$ 上連續且 $\\lim_{x \\to \\infty} f(x) = 1$，證明 $\\int_0^\\infty f(x) dx$ 發散。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

@@ -1,324 +1,408 @@
 {
-  "course": "calculus1",
-  "week": "week15",
-  "title": "第 15 週 - 微積分基本定理",
-  "knowledge_points": {
-    "KP15.1": "微積分基本定理第一部分 (FTC 1) 說明了微分與積分是逆運算。",
-    "KP15.2": "學會將連鎖律應用於積分上限為複合函數的情況。",
-    "KP15.3": "掌握 FTC 2 的定義，理解如何透過反導數避開黎曼和極限。",
-    "KP15.4": "熟練各種代數技巧輔助定積分的計算。",
-    "KP15.5": "理解淨變化定理在物理上的意義，區分位移與總距離的計算。"
-  },
+  "course_id": "calculus1",
+  "week": 15,
+  "title": "微積分 上 第 15 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "在 Google Colab 中執行以下代碼。\n    ```python\n    import sympy as sp",
-      "options": null,
+      "title": "**Q1**: $\\frac{d}{dx} \\int_2^x \\sin(t^2) \\, dt = $ ？\n   -",
+      "options": {
+        "A": "$\\cos(x^2)$",
+        "B": "$\\sin(x^2)$",
+        "C": "$2x \\sin(x^2)$",
+        "D": "$\\sin(x^2) - \\sin(4)$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "$\\frac{d}{dx} \\int_2^x \\sin(t^2) \\, dt = $ ？\n   - (A) $\\cos(x^2)$ (B) $\\sin(x^2)$ (C) $2x \\sin(x^2)$ (D) $\\sin(x^2) - \\sin(4)$",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "$\\frac{d}{dx} \\int_0^{x^3} e^t \\, dt = $ ？\n   - (A) $e^{x^3}$ (B) $3x^2 e^{x^3}$ (C) $e^{x^3} - 1$ (D) $x^3 e^{x^2}$",
-      "options": null,
+      "title": "**Q2**: $\\frac{d}{dx} \\int_0^{x^3} e^t \\, dt = $ ？\n   -",
+      "options": {
+        "A": "$e^{x^3}$",
+        "B": "$3x^2 e^{x^3}$",
+        "C": "$e^{x^3} - 1$",
+        "D": "$x^3 e^{x^2}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "若 $\\int_a^b f(x) \\, dx = 10$，則 $\\int_b^a 3f(x) \\, dx = $ ？\n   - (A) 30 (B) -30 (C) 10 (D) 13",
-      "options": null,
+      "title": "**Q3**: 若 $\\int_a^b f(x) \\, dx = 10$，則 $\\int_b^a 3f(x) \\, dx = $ ？\n   -",
+      "options": {
+        "A": "30",
+        "B": "-30",
+        "C": "10",
+        "D": "13"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "計算 $\\int_1^e \\frac{1}{x} \\, dx$ 的結果為？\n   - (A) $e$ (B) 1 (C) 0 (D) $\\ln 2$",
-      "options": null,
+      "title": "**Q4**: 計算 $\\int_1^e \\frac{1}{x} \\, dx$ 的結果為？\n   -",
+      "options": {
+        "A": "$e$",
+        "B": "1",
+        "C": "0",
+        "D": "$\\ln 2$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "淨變化定理中，速度函數的積分 $\\int_{t_1}^{t_2} v(t) \\, dt$ 代表？\n   - (A) 總距離 (B) 加速度 (C) 位移 (D) 平均速率",
-      "options": null,
+      "title": "**Q5**: 淨變化定理中，速度函數的積分 $\\int_{t_1}^{t_2} v(t) \\, dt$ 代表？\n   -",
+      "options": {
+        "A": "總距離",
+        "B": "加速度",
+        "C": "位移",
+        "D": "平均速率"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "$\\int_{-2}^2 x^5 \\, dx = $ ？\n   - (A) 0 (B) 32 (C) 64 (D) 128",
-      "options": null,
+      "title": "**Q6**: $\\int_{-2}^2 x^5 \\, dx = $ ？\n   -",
+      "options": {
+        "A": "0",
+        "B": "32",
+        "C": "64",
+        "D": "128"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "設 $g(x) = \\int_x^1 \\sqrt{u} \\, du$，則 $g'(4) = $ ？\n   - (A) 2 (B) -2 (C) 1/4 (D) -1/4",
-      "options": null,
+      "title": "**Q7**: 設 $g(x) = \\int_x^1 \\sqrt{u} \\, du$，則 $g'(4) = $ ？\n   -",
+      "options": {
+        "A": "2",
+        "B": "-2",
+        "C": "1/4",
+        "D": "-1/4"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "下列何者為 $\\int (x^2 + 1) \\, dx$ 的正確表示？\n   - (A) $\\frac{1}{3}x^3 + x$ (B) $\\frac{1}{3}x^3 + x + C$ (C) $2x$ (D) $x^3 + x + C$",
-      "options": null,
+      "title": "**Q8**: 下列何者為 $\\int (x^2 + 1) \\, dx$ 的正確表示？\n   -",
+      "options": {
+        "A": "$\\frac{1}{3}x^3 + x$",
+        "B": "$\\frac{1}{3}x^3 + x + C$",
+        "C": "$2x$",
+        "D": "$x^3 + x + C$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "$\\int_0^{\\pi} \\sin x \\, dx = $ ？\n   - (A) 0 (B) 1 (C) 2 (D) -2",
-      "options": null,
+      "title": "**Q9**: $\\int_0^{\\pi} \\sin x \\, dx = $ ？\n   -",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "-2"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "FTC 2 成立的前提是 $f$ 在區間內必須：\n    - (A) 可微 (B) 連續 (C) 恆正 (D) 是多項式",
-      "options": null,
+      "title": "**Q10**: FTC 2 成立的前提是 $f$ 在區間內必須：\n    -",
+      "options": {
+        "A": "可微",
+        "B": "連續",
+        "C": "恆正",
+        "D": "是多項式\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "關於 $\\frac{d}{dx} \\int_{v(x)}^{u(x)} f(t) \\, dt$，下列敘述正確的有？\n    - (A) 涉及微分連鎖律 (B) 結果與 $a$ 的選取無關 (C) 等於 $f(u(x))u'(x) - f(v(x))v'(x)$ (D) 要求 $f$ 連續",
-      "options": null,
+      "title": "**Q11**: 關於 $\\frac{d}{dx} \\int_{v(x)}^{u(x)} f(t) \\, dt$，下列敘述正確的有？\n    -",
+      "options": {
+        "A": "涉及微分連鎖律",
+        "B": "結果與 $a$ 的選取無關",
+        "C": "等於 $f(u(x))u'(x) - f(v(x))v'(x)$",
+        "D": "要求 $f$ 連續"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "定積分 $\\int_a^b f(x) \\, dx$ 與不定積分 $\\int f(x) \\, dx$ 的區別在於？\n    - (A) 前者是一個數值，後者是一個函數族 (B) 後者必須加常數 $C$ (C) 前者有上下限 (D) 兩者毫無關聯",
-      "options": null,
+      "title": "**Q12**: 定積分 $\\int_a^b f(x) \\, dx$ 與不定積分 $\\int f(x) \\, dx$ 的區別在於？\n    -",
+      "options": {
+        "A": "前者是一個數值，後者是一個函數族",
+        "B": "後者必須加常數 $C$",
+        "C": "前者有上下限",
+        "D": "兩者毫無關聯"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "下列哪些函數的反導數包含 $\\ln|x|$？\n    - (A) $1/x$ (B) $2/(2x)$ (C) $e^x$ (D) $1/x^2$",
-      "options": null,
+      "title": "**Q13**: 下列哪些函數的反導數包含 $\\ln|x|$？\n    -",
+      "options": {
+        "A": "$1/x$",
+        "B": "$2/(2x)$",
+        "C": "$e^x$",
+        "D": "$1/x^2$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "關於總距離與位移，正確的有？\n    - (A) 總距離 $\\ge$ |位移| (B) 速度恆正時兩者相等 (C) 總距離是速率的積分 (D) 位移是速度的積分",
-      "options": null,
+      "title": "**Q14**: 關於總距離與位移，正確的有？\n    -",
+      "options": {
+        "A": "總距離 $\\ge$ |位移|",
+        "B": "速度恆正時兩者相等",
+        "C": "總距離是速率的積分",
+        "D": "位移是速度的積分"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "若 $F, G$ 都是 $f$ 的反導數，則？\n    - (A) $F = G$ (B) $F' = G'$ (C) $F - G = C$ (D) $\\int_a^b f = F(b) - F(a) = G(b) - G(a)$",
-      "options": null,
+      "title": "**Q15**: 若 $F, G$ 都是 $f$ 的反導數，則？\n    -",
+      "options": {
+        "A": "$F = G$",
+        "B": "$F' = G'$",
+        "C": "$F - G = C$",
+        "D": "$\\int_a^b f = F(b) - F(a) = G(b) - G(a)$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "下列積分值為正的有？\n    - (A) $\\int_0^1 e^x \\, dx$ (B) $\\int_1^2 \\frac{1}{x} \\, dx$ (C) $\\int_{-1}^0 x^2 \\, dx$ (D) $\\int_\\pi^{2\\pi} \\sin x \\, dx$",
-      "options": null,
+      "title": "**Q16**: 下列積分值為正的有？\n    -",
+      "options": {
+        "A": "$\\int_0^1 e^x \\, dx$",
+        "B": "$\\int_1^2 \\frac{1}{x} \\, dx$",
+        "C": "$\\int_{-1}^0 x^2 \\, dx$",
+        "D": "$\\int_\\pi^{2\\pi} \\sin x \\, dx$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "FTC 1 的證明中用到了？\n    - (A) 導數的定義 (B) 積分均值定理 (C) 夾擊定理 (D) 連續性的定義",
-      "options": null,
+      "title": "**Q17**: FTC 1 的證明中用到了？\n    -",
+      "options": {
+        "A": "導數的定義",
+        "B": "積分均值定理",
+        "C": "夾擊定理",
+        "D": "連續性的定義"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "計算 $\\int_0^2 |x-1| \\, dx$ 可以拆解為？\n    - (A) $\\int_0^1 (1-x) \\, dx + \\int_1^2 (x-1) \\, dx$ (B) $\\int_0^2 (x-1) \\, dx$ (C) $2 \\int_0^1 (1-x) \\, dx$ (D) $0$",
-      "options": null,
+      "title": "**Q18**: 計算 $\\int_0^2 |x-1| \\, dx$ 可以拆解為？\n    -",
+      "options": {
+        "A": "$\\int_0^1 (1-x) \\, dx + \\int_1^2 (x-1) \\, dx$",
+        "B": "$\\int_0^2 (x-1) \\, dx$",
+        "C": "$2 \\int_0^1 (1-x) \\, dx$",
+        "D": "$0$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "下列哪些公式正確？\n    - (A) $\\int \\sec^2 x \\, dx = \\tan x + C$ (B) $\\int \\frac{1}{\\sqrt{1-x^2}} \\, dx = \\sin^{-1} x + C$ (C) $\\int a^x \\, dx = a^x \\ln a + C$ (D) $\\int \\cos x \\, dx = \\sin x + C$",
-      "options": null,
+      "title": "**Q19**: 下列哪些公式正確？\n    -",
+      "options": {
+        "A": "$\\int \\sec^2 x \\, dx = \\tan x + C$",
+        "B": "$\\int \\frac{1}{\\sqrt{1-x^2}} \\, dx = \\sin^{-1} x + C$",
+        "C": "$\\int a^x \\, dx = a^x \\ln a + C$",
+        "D": "$\\int \\cos x \\, dx = \\sin x + C$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "使用 Python SymPy 時：\n    - (A) `integrate(f, x)` 求不定積分 (B) `integrate(f, (x, a, b))` 求定積分 (C) `diff()` 求導數 (D) `Subs()` 可以用來做變數變換",
-      "options": null,
+      "title": "**Q20**: 使用 Python SymPy 時：\n    -",
+      "options": {
+        "A": "`integrate(f, x)` 求不定積分",
+        "B": "`integrate(f, (x, a, b))` 求定積分",
+        "C": "`diff()` 求導數",
+        "D": "`Subs()` 可以用來做變數變換\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "$\\frac{d}{dx} \\int_1^{\\sqrt{x}} \\frac{z^2}{z^4+1} \\, dz$ 在 $x=1$ 時的值為 __________。",
-      "options": null,
+      "title": "**Q21**: $\\frac{d}{dx} \\int_1^{\\sqrt{x}} \\frac{z^2}{z^4+1} \\, dz$ 在 $x=1$ 時的值為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "$\\int_1^9 \\frac{1}{2\\sqrt{x}} \\, dx = $ __________。",
-      "options": null,
+      "title": "**Q22**: $\\int_1^9 \\frac{1}{2\\sqrt{x}} \\, dx = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "若 $F(x) = \\int_0^x (t-1) \\, dt$，則 $F(x)$ 的極小值發生在 $x = $ __________。",
-      "options": null,
+      "title": "**Q23**: 若 $F(x) = \\int_0^x (t-1) \\, dt$，則 $F(x)$ 的極小值發生在 $x = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "$\\int_{-1}^1 (x^3 + x^2) \\, dx = $ __________。",
-      "options": null,
+      "title": "**Q24**: $\\int_{-1}^1 (x^3 + x^2) \\, dx = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "若 $\\int_a^x f(t) \\, dt = x^2 - 4$，則 $f(x) = $ __________。",
-      "options": null,
+      "title": "**Q25**: 若 $\\int_a^x f(t) \\, dt = x^2 - 4$，則 $f(x) = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "某工廠邊際成本為 $C'(x) = 3x^2 - 2x$，則產量從 1 增加到 3 的總成本增加量為 __________。",
-      "options": null,
+      "title": "**Q26**: 某工廠邊際成本為 $C'(x) = 3x^2 - 2x$，則產量從 1 增加到 3 的總成本增加量為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "$\\int_0^{\\pi/2} \\cos x \\, dx = $ __________。",
-      "options": null,
+      "title": "**Q27**: $\\int_0^{\\pi/2} \\cos x \\, dx = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "$\\frac{d}{dx} \\int_x^{x+1} e^{t} \\, dt = $ __________。",
-      "options": null,
+      "title": "**Q28**: $\\frac{d}{dx} \\int_x^{x+1} e^{t} \\, dt = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "$f(x) = x$ 在 $[0, 4]$ 上的平均值為 __________。",
-      "options": null,
+      "title": "**Q29**: $f(x) = x$ 在 $[0, 4]$ 上的平均值為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "積分 $\\int \\frac{dx}{x^2+1} = $ __________ $+ C$。",
-      "options": null,
+      "title": "**Q30**: 積分 $\\int \\frac{dx}{x^2+1} = $ __________ $+ C$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

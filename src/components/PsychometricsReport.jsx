@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Award, Shield, ArrowLeft, RefreshCw, BarChart2, CheckCircle, XCircle, BookOpen, AlertCircle, HelpCircle } from 'lucide-react';
 import { Radar, Line } from 'react-chartjs-2';
 import {
@@ -28,8 +28,29 @@ ChartJS.register(
 
 export default function PsychometricsReport({ report, reportData, onBackToDashboard }) {
   const [selectedItemId, setSelectedItemId] = useState('Q1');
+  const reportRef = useRef(null);
 
   const actualReport = report || reportData;
+
+  // Auto-render math when report loads or selected item changes
+  useEffect(() => {
+    const renderMath = () => {
+      if (window.renderMathInElement && reportRef.current) {
+        window.renderMathInElement(reportRef.current, {
+          delimiters: [
+            { left: '$$', right: '$$', display: true },
+            { left: '$', right: '$', display: false },
+            { left: '\\(', right: '\\)', display: false },
+            { left: '\\[', right: '\\]', display: true }
+          ],
+          throwOnError: false
+        });
+      }
+    };
+    
+    const timer = setTimeout(renderMath, 150);
+    return () => clearTimeout(timer);
+  }, [actualReport, selectedItemId]);
 
   if (!actualReport) return null;
 
@@ -184,7 +205,7 @@ export default function PsychometricsReport({ report, reportData, onBackToDashbo
   const reliabilityInfo = getReliabilityBadge(cttMetrics?.kr20 ?? 0);
 
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '40px 24px', minHeight: '100vh' }}>
+    <div ref={reportRef} style={{ maxWidth: '1200px', margin: '0 auto', padding: '40px 24px', minHeight: '100vh' }}>
       
       {/* Upper Navigation Back Button */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '32px' }}>
@@ -429,17 +450,38 @@ export default function PsychometricsReport({ report, reportData, onBackToDashbo
                     </tr>
                     {!isCorrect && questionData && (
                       <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.02)', background: 'rgba(239, 68, 68, 0.05)' }}>
-                        <td colSpan="6" style={{ padding: '16px', fontSize: '13px' }}>
-                          <div style={{ marginBottom: '8px' }}>
-                            <strong style={{ color: '#f87171' }}>題目：</strong> <span style={{ color: '#e5e7eb', whiteSpace: 'pre-wrap' }}>{questionData.title}</span>
+                        <td colSpan="6" style={{ padding: '24px', fontSize: '14px' }}>
+                          <div style={{ marginBottom: '16px', borderLeft: '4px solid #ef4444', paddingLeft: '16px' }}>
+                            <strong style={{ color: '#f87171', display: 'block', marginBottom: '8px', textTransform: 'uppercase', fontSize: '11px', tracking: '1px' }}>題目內容</strong>
+                            <span style={{ color: '#e5e7eb', whiteSpace: 'pre-wrap', lineHeight: '1.6' }}>{questionData.title}</span>
+                            {questionData.options && Object.keys(questionData.options).length > 0 && (
+                              <div style={{ marginTop: '12px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '8px' }}>
+                                {Object.entries(questionData.options).map(([key, val]) => (
+                                  <div key={key} style={{ fontSize: '13px', color: '#9ca3af' }}>
+                                    <span style={{ color: '#f3f4f6', fontWeight: 'bold', marginRight: '8px' }}>({key})</span> {val}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
                           </div>
-                          <div style={{ marginBottom: '8px' }}>
-                            <strong style={{ color: '#f87171' }}>正確答案：</strong> <span style={{ color: '#e5e7eb', fontFamily: 'var(--font-mono)' }}>{Array.isArray(questionData.answer) ? questionData.answer.join(', ') : questionData.answer}</span>
+                          
+                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '16px' }}>
+                            <div style={{ background: 'rgba(239, 68, 68, 0.1)', padding: '12px', borderRadius: '12px', border: '1px solid rgba(239, 68, 68, 0.2)' }}>
+                              <strong style={{ color: '#f87171', display: 'block', marginBottom: '4px', fontSize: '11px' }}>您的作答</strong>
+                              <span style={{ color: '#fff', fontWeight: '800' }}>{actualReport.rawAnswers[questionData.id] || '未作答'}</span>
+                            </div>
+                            <div style={{ background: 'rgba(16, 185, 129, 0.1)', padding: '12px', borderRadius: '12px', border: '1px solid rgba(16, 185, 129, 0.2)' }}>
+                              <strong style={{ color: '#34d399', display: 'block', marginBottom: '4px', fontSize: '11px' }}>正確答案</strong>
+                              <span style={{ color: '#fff', fontWeight: '800' }}>{Array.isArray(questionData.answer) ? questionData.answer.join(', ') : questionData.answer}</span>
+                            </div>
                           </div>
+
                           {questionData.explanation && (
-                            <div style={{ background: 'rgba(0,0,0,0.2)', padding: '12px', borderRadius: '8px', borderLeft: '3px solid #f87171' }}>
-                              <strong style={{ color: '#f87171', display: 'block', marginBottom: '4px' }}>詳細解析：</strong>
-                              <span style={{ color: '#d1d5db', whiteSpace: 'pre-wrap', lineHeight: '1.5' }}>{questionData.explanation}</span>
+                            <div style={{ background: 'rgba(0,0,0,0.3)', padding: '16px', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)', boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.2)' }}>
+                              <strong style={{ color: '#6366f1', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', fontSize: '12px' }}>
+                                <BookOpen style={{ width: '14px', height: '14px' }} /> 核心觀念解析
+                              </strong>
+                              <span style={{ color: '#d1d5db', whiteSpace: 'pre-wrap', lineHeight: '1.7', fontSize: '14px' }}>{questionData.explanation}</span>
                             </div>
                           )}
                         </td>

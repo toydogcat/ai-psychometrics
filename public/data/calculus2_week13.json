@@ -1,314 +1,383 @@
 {
-  "course": "calculus2",
-  "week": "week13",
-  "title": "第 13 週 - 泰勒級數的應用 (Applications of Taylor Series)",
-  "knowledge_points": {
-    "KP13.1": "熟記五大麥克勞林級數及其收斂區間。",
-    "KP13.2": "學會觀察極限式中的主導項，利用級數簡化運算。",
-    "KP13.3": "掌握將不可積函數轉化為冪級數再逐項求積分的標準流程。",
-    "KP13.4": "區分交錯級數誤差與拉格朗日餘項的使用時機。",
-    "KP13.5": "理解歐拉公式如何將旋轉（三角）與增長（指數）聯繫起來。"
-  },
+  "course_id": "calculus2",
+  "week": 13,
+  "title": "微積分 中 第 13 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "$f(x) = e^{-x^2}$ 的麥克勞林級數中，$x^4$ 的係數為何？\n   - (A) 1 (B) -1 (C) 1/2 (D) -1/2",
-      "options": null,
+      "title": "**Q1**: $f(x) = e^{-x^2}$ 的麥克勞林級數中，$x^4$ 的係數為何？\n   -",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "1/2",
+        "D": "-1/2"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "$\\lim_{x \\to 0} \\frac{\\sin x - x}{x^3}$ 的值為？\n   - (A) 1/6 (B) -1/6 (C) 0 (D) 1/3",
-      "options": null,
+      "title": "**Q2**: $\\lim_{x \\to 0} \\frac{\\sin x - x}{x^3}$ 的值為？\n   -",
+      "options": {
+        "A": "1/6",
+        "B": "-1/6",
+        "C": "0",
+        "D": "1/3"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "若用 $T_1(x) = x$ 近似 $\\sin(0.1)$，則其誤差絕對值必小於？\n   - (A) $0.1$ (B) $0.001/6$ (C) $0.01$ (D) $1$",
-      "options": null,
+      "title": "**Q3**: 若用 $T_1(x) = x$ 近似 $\\sin(0.1)$，則其誤差絕對值必小於？\n   -",
+      "options": {
+        "A": "$0.1$",
+        "B": "$0.001/6$",
+        "C": "$0.01$",
+        "D": "$1$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "下列級數何者收斂至 $\\pi/4$？\n   - (A) $\\sum 1/n^2$ (B) $\\sum (-1)^n/(2n+1)$ (C) $\\sum 1/n$ (D) $\\sum 1/n!$",
-      "options": null,
+      "title": "**Q4**: 下列級數何者收斂至 $\\pi/4$？\n   -",
+      "options": {
+        "A": "$\\sum 1/n^2$",
+        "B": "$\\sum (-1)^n/(2n+1)$",
+        "C": "$\\sum 1/n$",
+        "D": "$\\sum 1/n!$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "$e^{i\\pi/2}$ 的值等於？\n   - (A) 1 (B) -1 (C) $i$ (D) $-i$",
-      "options": null,
+      "title": "**Q5**: $e^{i\\pi/2}$ 的值等於？\n   -",
+      "options": {
+        "A": "1",
+        "B": "-1",
+        "C": "$i$",
+        "D": "$-i$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "利用級數求 $\\int \\frac{1}{1-x^3} dx$ 時，級數展開的項為？\n   - (A) $\\sum x^{3n}$ (B) $\\sum x^n/3$ (C) $\\sum (-x)^{3n}$ (D) $\\sum x^{n^3}$",
-      "options": null,
+      "title": "**Q6**: 利用級數求 $\\int \\frac{1}{1-x^3} dx$ 時，級數展開的項為？\n   -",
+      "options": {
+        "A": "$\\sum x^{3n}$",
+        "B": "$\\sum x^n/3$",
+        "C": "$\\sum (-x)^{3n}$",
+        "D": "$\\sum x^{n^3}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "哪一個函數的二階泰勒多項式 $T_2(x) = 1 + x + x^2/2$？\n   - (A) $\\sin x$ (B) $\\cos x$ (C) $e^x$ (D) $\\ln(1+x)$",
-      "options": null,
+      "title": "**Q7**: 哪一個函數的二階泰勒多項式 $T_2(x) = 1 + x + x^2/2$？\n   -",
+      "options": {
+        "A": "$\\sin x$",
+        "B": "$\\cos x$",
+        "C": "$e^x$",
+        "D": "$\\ln(1+x)$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "計算 $\\ln(1.1)$ 時，級數 $x - x^2/2 + x^3/3 \\dots$ 是？\n   - (A) 交錯級數 (B) 正項級數 (C) 發散級數 (D) 幾何級數",
-      "options": null,
+      "title": "**Q8**: 計算 $\\ln(1.1)$ 時，級數 $x - x^2/2 + x^3/3 \\dots$ 是？\n   -",
+      "options": {
+        "A": "交錯級數",
+        "B": "正項級數",
+        "C": "發散級數",
+        "D": "幾何級數"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{x^2}$ 等於？\n   - (A) 0 (B) 1 (C) 1/2 (D) $1/4$",
-      "options": null,
+      "title": "**Q9**: $\\lim_{x \\to 0} \\frac{1 - \\cos x}{x^2}$ 等於？\n   -",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "1/2",
+        "D": "$1/4$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "歐拉恆等式 $e^{i\\pi} + 1 = 0$ 連結了數學中最重要的幾個常數，除了？\n    - (A) $e$ (B) $\\pi$ (C) $i$ (D) $\\gamma$ (歐拉常數)",
-      "options": null,
+      "title": "**Q10**: 歐拉恆等式 $e^{i\\pi} + 1 = 0$ 連結了數學中最重要的幾個常數，除了？\n    -",
+      "options": {
+        "A": "$e$",
+        "B": "$\\pi$",
+        "C": "$i$",
+        "D": "$\\gamma$ (歐拉常數)\n\n### 2. 多選題 (Multiple Choice)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列哪些極限可用級數展開法求解？\n    - (A) $\\lim_{x \\to 0} \\frac{\\tan x - x}{x^3}$ (B) $\\lim_{x \\to 0} \\frac{e^x - e^{-x}}{x}$ (C) $\\lim_{x \\to \\infty} \\frac{x^2}{e^x}$ (D) $\\lim_{x \\to 0} \\frac{\\ln(1+x)}{x}$",
-      "options": null,
+      "title": "**Q11**: 下列哪些極限可用級數展開法求解？\n    -",
+      "options": {
+        "A": "$\\lim_{x \\to 0} \\frac{\\tan x - x}{x^3}$",
+        "B": "$\\lim_{x \\to 0} \\frac{e^x - e^{-x}}{x}$",
+        "C": "$\\lim_{x \\to \\infty} \\frac{x^2}{e^x}$",
+        "D": "$\\lim_{x \\to 0} \\frac{\\ln(1+x)}{x}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "關於級數積分 $\\int_0^1 \\frac{\\sin x}{x} dx$，正確的是？\n    - (A) 原函數無法用初等函數表達 (B) 可展開為 $\\sum (-1)^n \\frac{x^{2n+1}}{(2n+1)(2n+1)!}$ (C) 積分值約為 0.946 (D) 該積分是發散的",
-      "options": null,
+      "title": "**Q12**: 關於級數積分 $\\int_0^1 \\frac{\\sin x}{x} dx$，正確的是？\n    -",
+      "options": {
+        "A": "原函數無法用初等函數表達",
+        "B": "可展開為 $\\sum (-1)^n \\frac{x^{2n+1}}{(2n+1)(2n+1)!}$",
+        "C": "積分值約為 0.946",
+        "D": "該積分是發散的"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "泰勒級數應用中的常見錯誤包括？\n    - (A) 在收斂半徑外使用展開式 (B) 忘記交錯級數誤差的正負號 (C) 誤以為所有函數都等於其泰勒級數 (D) 逐項積分時忘記常數 $C$",
-      "options": null,
+      "title": "**Q13**: 泰勒級數應用中的常見錯誤包括？\n    -",
+      "options": {
+        "A": "在收斂半徑外使用展開式",
+        "B": "忘記交錯級數誤差的正負號",
+        "C": "誤以為所有函數都等於其泰勒級數",
+        "D": "逐項積分時忘記常數 $C$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "下列等式正確的有？\n    - (A) $\\cos(i x) = \\frac{e^x + e^{-x}}{2}$ (B) $\\sin(i x) = i \\sinh(x)$ (C) $e^{2\\pi i} = 1$ (D) $e^i = \\cos 1 + i \\sin 1$",
-      "options": null,
+      "title": "**Q14**: 下列等式正確的有？\n    -",
+      "options": {
+        "A": "$\\cos(i x) = \\frac{e^x + e^{-x}}{2}$",
+        "B": "$\\sin(i x) = i \\sinh(x)$",
+        "C": "$e^{2\\pi i} = 1$",
+        "D": "$e^i = \\cos 1 + i \\sin 1$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "哪些情況下，拉格朗日餘項比交錯級數估計更適用？\n    - (A) 級數非交錯項時 (B) 需要一個確定的誤差上限時 (C) 級數收斂極慢時 (D) 級數是幾何級數時",
-      "options": null,
+      "title": "**Q15**: 哪些情況下，拉格朗日餘項比交錯級數估計更適用？\n    -",
+      "options": {
+        "A": "級數非交錯項時",
+        "B": "需要一個確定的誤差上限時",
+        "C": "級數收斂極慢時",
+        "D": "級數是幾何級數時\n\n### 3. 填充題 (Fill-in-the-blank)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "$x^2 e^x$ 的麥克勞林級數一般項為 __________。",
-      "options": null,
+      "title": "**Q16**: $x^2 e^x$ 的麥克勞林級數一般項為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "$\\lim_{x \\to 0} \\frac{x - \\tan^{-1} x}{x^3}$ 的值為 __________。",
-      "options": null,
+      "title": "**Q17**: $\\lim_{x \\to 0} \\frac{x - \\tan^{-1} x}{x^3}$ 的值為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "$\\int_0^1 e^{-x^2} dx$ 的級數表示中，前三項為 __________。",
-      "options": null,
+      "title": "**Q18**: $\\int_0^1 e^{-x^2} dx$ 的級數表示中，前三項為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "$e^{i\\pi/4}$ 的實部為 __________。",
-      "options": null,
+      "title": "**Q19**: $e^{i\\pi/4}$ 的實部為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "利用級數估計 $\\cos(1)$，若取前兩項 $1 - 1/2 = 0.5$，則誤差小於 __________。",
-      "options": null,
+      "title": "**Q20**: 利用級數估計 $\\cos(1)$，若取前兩項 $1 - 1/2 = 0.5$，則誤差小於 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "$\\frac{d}{dx} \\sum \\frac{x^n}{n!} = $ __________。",
-      "options": null,
+      "title": "**Q21**: $\\frac{d}{dx} \\sum \\frac{x^n}{n!} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "$f(x) = \\frac{1}{1-x^2}$ 的級數展開區間為 __________。",
-      "options": null,
+      "title": "**Q22**: $f(x) = \\frac{1}{1-x^2}$ 的級數展開區間為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "若 $\\sin x \\approx x - x^3/6$，則 $x=0.5$ 時的絕對誤差約為 __________。",
-      "options": null,
+      "title": "**Q23**: 若 $\\sin x \\approx x - x^3/6$，則 $x=0.5$ 時的絕對誤差約為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "$\\sum_{n=0}^{\\infty} \\frac{(-1)^n \\pi^{2n}}{(2n)!}$ 的和為 __________。",
-      "options": null,
+      "title": "**Q24**: $\\sum_{n=0}^{\\infty} \\frac{(-1)^n \\pi^{2n}}{(2n)!}$ 的和為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "複數 $z = 1 + i$ 的極座標形式 $re^{i\\theta}$ 中，$\\theta = $ __________。",
-      "options": null,
+      "title": "**Q25**: 複數 $z = 1 + i$ 的極座標形式 $re^{i\\theta}$ 中，$\\theta = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "$\\lim_{x \\to 0} \\frac{\\ln(1+x) - x + x^2/2}{x^3}$ 為 __________。",
-      "options": null,
+      "title": "**Q26**: $\\lim_{x \\to 0} \\frac{\\ln(1+x) - x + x^2/2}{x^3}$ 為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "$f(x) = \\sin x$ 在 $x=\\pi/2$ 處的泰勒級數首項為 __________。",
-      "options": null,
+      "title": "**Q27**: $f(x) = \\sin x$ 在 $x=\\pi/2$ 處的泰勒級數首項為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "被稱為「數學界最美公式」的是 __________。",
-      "options": null,
+      "title": "**Q28**: 被稱為「數學界最美公式」的是 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "二項級數 $(1+x)^k$ 的展開在 $|x| < $ __________ 時收斂。",
-      "options": null,
+      "title": "**Q29**: 二項級數 $(1+x)^k$ 的展開在 $|x| < $ __________ 時收斂。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "泰勒級數將微積分運算轉化成了更簡單的 __________ 運算。",
-      "options": null,
+      "title": "**Q30**: 泰勒級數將微積分運算轉化成了更簡單的 __________ 運算。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP13.1 | KP13.2 | KP13.3 | KP13.4 | KP13.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,0,0,1,0 | 0,1,0,0,0 | 0,0,0,0,0 | 0,0,1,0,0 | 0,0,0,0,1 |\n| Q6-Q10 | 1,0,1,1,0 | 0,1,0,0,0 | 1,0,0,0,0 | 0,0,0,1,0 | 0,0,0,0,1 |\n| Q11-Q30| ... | ... | ... | ... | ... |\n*(註：詳細對應請參閱教師手冊)*",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

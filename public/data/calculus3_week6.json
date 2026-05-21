@@ -1,314 +1,408 @@
 {
-  "course": "calculus3",
-  "week": "week6",
-  "title": "第 6 週 - 多變數函數的極值 (Maximum and Minimum Values)",
-  "knowledge_points": {
-    "KP6.1": "局部極值的定義。",
-    "KP6.2": "臨界點的求法 ($\\nabla f = \\mathbf{0}$)。",
-    "KP6.3": "二階導數測試公式 $D = f_{xx}f_{yy} - f_{xy}^2$。",
-    "KP6.4": "鞍點的性質與幾何特徵。",
-    "KP6.5": "閉區域絕對極值的尋找步驟。"
-  },
+  "course_id": "calculus3",
+  "week": 6,
+  "title": "微積分 下 第 6 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "若 $f_x(1, 2) = 0$ 且 $f_y(1, 2) = 0$，則 $(1, 2)$ 必為？\n   - (A) 局部極大 (B) 局部極小 (C) 臨界點 (D) 絕對極值",
-      "options": null,
+      "title": "**Q1**: 若 $f_x(1, 2) = 0$ 且 $f_y(1, 2) = 0$，則 $(1, 2)$ 必為？\n   -",
+      "options": {
+        "A": "局部極大",
+        "B": "局部極小",
+        "C": "臨界點",
+        "D": "絕對極值"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "二階導數測試中，若 $D < 0$，該臨界點是？\n   - (A) 極大點 (B) 極小點 (C) 鞍點 (D) 不連續點",
-      "options": null,
+      "title": "**Q2**: 二階導數測試中，若 $D < 0$，該臨界點是？\n   -",
+      "options": {
+        "A": "極大點",
+        "B": "極小點",
+        "C": "鞍點",
+        "D": "不連續點"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "若 $D > 0$ 且 $f_{xx} < 0$，則該點為？\n   - (A) 局部極大 (B) 局部極小 (C) 鞍點 (D) 無法判斷",
-      "options": null,
+      "title": "**Q3**: 若 $D > 0$ 且 $f_{xx} < 0$，則該點為？\n   -",
+      "options": {
+        "A": "局部極大",
+        "B": "局部極小",
+        "C": "鞍點",
+        "D": "無法判斷"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "函數 $f(x, y) = x^2 + y^2$ 的臨界點 $(0, 0)$ 是？\n   - (A) 局部極大 (B) 局部極小 (C) 鞍點 (D) 不是臨界點",
-      "options": null,
+      "title": "**Q4**: 函數 $f(x, y) = x^2 + y^2$ 的臨界點 $(0, 0)$ 是？\n   -",
+      "options": {
+        "A": "局部極大",
+        "B": "局部極小",
+        "C": "鞍點",
+        "D": "不是臨界點"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "極值定理要求區域必須具備什麼性質？\n   - (A) 開放 (B) 無界 (C) 閉合且有界 (D) 離散",
-      "options": null,
+      "title": "**Q5**: 極值定理要求區域必須具備什麼性質？\n   -",
+      "options": {
+        "A": "開放",
+        "B": "無界",
+        "C": "閉合且有界",
+        "D": "離散"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "尋找絕對極值時，除了內部臨界點，還必須檢查？\n   - (A) 原點 (B) 邊界 (C) 二階導數 (D) 梯度方向",
-      "options": null,
+      "title": "**Q6**: 尋找絕對極值時，除了內部臨界點，還必須檢查？\n   -",
+      "options": {
+        "A": "原點",
+        "B": "邊界",
+        "C": "二階導數",
+        "D": "梯度方向"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "鞍點 $f(x, y) = x^2 - y^2$ 在原點的 $D$ 值為？\n   - (A) 4 (B) 0 (C) -4 (D) -1",
-      "options": null,
+      "title": "**Q7**: 鞍點 $f(x, y) = x^2 - y^2$ 在原點的 $D$ 值為？\n   -",
+      "options": {
+        "A": "4",
+        "B": "0",
+        "C": "-4",
+        "D": "-1"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "若 $f_{xx} = 2, f_{yy} = 3, f_{xy} = 2$，則 $D$ 等於？\n   - (A) 10 (B) 2 (C) -2 (D) 6",
-      "options": null,
+      "title": "**Q8**: 若 $f_{xx} = 2, f_{yy} = 3, f_{xy} = 2$，則 $D$ 等於？\n   -",
+      "options": {
+        "A": "10",
+        "B": "2",
+        "C": "-2",
+        "D": "6"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "若 $D=0$，二階導數測試？\n   - (A) 失敗/無結論 (B) 確定是極值 (C) 確定是鞍點 (D) 函數不連續",
-      "options": null,
+      "title": "**Q9**: 若 $D=0$，二階導數測試？\n   -",
+      "options": {
+        "A": "失敗/無結論",
+        "B": "確定是極值",
+        "C": "確定是鞍點",
+        "D": "函數不連續"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "費馬定理指出，局部極值點必為？\n    - (A) 鞍點 (B) 臨界點 (C) 拐點 (D) 邊界點",
-      "options": null,
+      "title": "**Q10**: 費馬定理指出，局部極值點必為？\n    -",
+      "options": {
+        "A": "鞍點",
+        "B": "臨界點",
+        "C": "拐點",
+        "D": "邊界點\n\n### 2. 多選題 (Multiple Choice) - 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列哪些點可能是函數的極值點？\n    - (A) 偏導為零的點 (B) 偏導不存在的點 (C) 區域邊界上的點 (D) 函數值為零的點",
-      "options": null,
+      "title": "**Q11**: 下列哪些點可能是函數的極值點？\n    -",
+      "options": {
+        "A": "偏導為零的點",
+        "B": "偏導不存在的點",
+        "C": "區域邊界上的點",
+        "D": "函數值為零的點"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "關於判別式 $D = f_{xx}f_{yy} - f_{xy}^2$，敘述正確的有？\n    - (A) $D$ 其實是 Hessian 矩陣的行列式 (B) $D > 0$ 保證 $f_{xx}$ 與 $f_{yy}$ 同號 (C) $D < 0$ 時 $f_{xx}$ 與 $f_{yy}$ 必異號 (D) $D$ 的正負與座標軸選取無關",
-      "options": null,
+      "title": "**Q12**: 關於判別式 $D = f_{xx}f_{yy} - f_{xy}^2$，敘述正確的有？\n    -",
+      "options": {
+        "A": "$D$ 其實是 Hessian 矩陣的行列式",
+        "B": "$",
+        "C": "$",
+        "D": "$D$ 的正負與座標軸選取無關"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "在閉區域求絕對極值，需要考慮？\n    - (A) 內部的 $f_x=0, f_y=0$ 點 (B) 邊界曲線上的端點 (C) 邊界曲線內部的極值點 (D) 區域外的點",
-      "options": null,
+      "title": "**Q13**: 在閉區域求絕對極值，需要考慮？\n    -",
+      "options": {
+        "A": "內部的 $f_x=0, f_y=0$ 點",
+        "B": "邊界曲線上的端點",
+        "C": "邊界曲線內部的極值點",
+        "D": "區域外的點"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "哪些函數在 $(0, 0)$ 有鞍點？\n    - (A) $f = xy$ (B) $f = x^2 - y^2$ (C) $f = y^2 - x^2$ (D) $f = x^3 + y^3$",
-      "options": null,
+      "title": "**Q14**: 哪些函數在 $(0, 0)$ 有鞍點？\n    -",
+      "options": {
+        "A": "$f = xy$",
+        "B": "$f = x^2 - y^2$",
+        "C": "$f = y^2 - x^2$",
+        "D": "$f = x^3 + y^3$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "若 $(a, b)$ 是局部極小點，則：\n    - (A) $f_x(a, b) = 0$ (B) $D \\geq 0$ (若存在) (C) $f_{xx}(a, b) \\geq 0$ (D) $f(a, b)$ 必為 0",
-      "options": null,
+      "title": "**Q15**: 若 $(a, b)$ 是局部極小點，則：\n    -",
+      "options": {
+        "A": "$f_x(a, b) = 0$",
+        "B": "$",
+        "C": "$f_{xx}(a, b) \\geq 0$",
+        "D": "$f(a, b)$ 必為 0"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "二階導數測試失效 ($D=0$) 的例子包括：\n    - (A) $f = x^4 + y^4$ (B) $f = x^3$ (C) $f = x^2 + y^4$ (D) $f = e^x$",
-      "options": null,
+      "title": "**Q16**: 二階導數測試失效 ($D=0$) 的例子包括：\n    -",
+      "options": {
+        "A": "$f = x^4 + y^4$",
+        "B": "$f = x^3$",
+        "C": "$f = x^2 + y^4$",
+        "D": "$f = e^x$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "絕對極值可能發生在：\n    - (A) 臨界點 (B) 邊界 (C) 鞍點 (D) 區域頂點",
-      "options": null,
+      "title": "**Q17**: 絕對極值可能發生在：\n    -",
+      "options": {
+        "A": "臨界點",
+        "B": "邊界",
+        "C": "鞍點",
+        "D": "區域頂點"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "對於連續函數，下列敘述正確的有：\n    - (A) 有局部極大必有局部極小 (B) 在閉區間必有最大值 (C) 臨界點數量可能為無窮多個 (D) 梯度在極值點必為零向量（若可微）",
-      "options": null,
+      "title": "**Q18**: 對於連續函數，下列敘述正確的有：\n    -",
+      "options": {
+        "A": "有局部極大必有局部極小",
+        "B": "在閉區間必有最大值",
+        "C": "臨界點數量可能為無窮多個",
+        "D": "梯度在極值點必為零向量（若可微）"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "關於 $f(x, y) = \\sin(x)\\cos(y)$，其臨界點特徵：\n    - (A) 呈週期性分佈 (B) 包含極大點 (C) 包含極小點 (D) 包含鞍點",
-      "options": null,
+      "title": "**Q19**: 關於 $f(x, y) = \\sin(x)\\cos(y)$，其臨界點特徵：\n    -",
+      "options": {
+        "A": "呈週期性分佈",
+        "B": "包含極大點",
+        "C": "包含極小點",
+        "D": "包含鞍點"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "要讓二階導數測試 $D > 0$ 且 $f_{xx} > 0$ 成立，必須滿足：\n    - (A) 函數在該點向上彎曲 (B) 兩個主曲率皆為正 (C) 函數是線性的 (D) 切平面是水平的",
-      "options": null,
+      "title": "**Q20**: 要讓二階導數測試 $D > 0$ 且 $f_{xx} > 0$ 成立，必須滿足：\n    -",
+      "options": {
+        "A": "函數在該點向上彎曲",
+        "B": "兩個主曲率皆為正",
+        "C": "函數是線性的",
+        "D": "切平面是水平的\n\n### 3. 填充題 (Fill-in-the-blank) - 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "臨界點是滿足 $\\nabla f = $ __________ 的點。",
-      "options": null,
+      "title": "**Q21**: 臨界點是滿足 $\\nabla f = $ __________ 的點。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "$f(x, y) = x^2 - y^2$ 的判別式 $D = $ __________。",
-      "options": null,
+      "title": "**Q22**: $f(x, y) = x^2 - y^2$ 的判別式 $D = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "若 $f$ 在 $D$ 上有極小值 $M$，則 $-f$ 在 $D$ 上有 __________ 值 $-M$。",
-      "options": null,
+      "title": "**Q23**: 若 $f$ 在 $D$ 上有極小值 $M$，則 $-f$ 在 $D$ 上有 __________ 值 $-M$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "邊界 $x^2 + y^2 = 1$ 可以用參數式 $x = \\cos \\theta, y = $ __________ 來簡化極值計算。",
-      "options": null,
+      "title": "**Q24**: 邊界 $x^2 + y^2 = 1$ 可以用參數式 $x = \\cos \\theta, y = $ __________ 來簡化極值計算。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "鞍點在某些方向看起來像 __________。",
-      "options": null,
+      "title": "**Q25**: 鞍點在某些方向看起來像 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "Hessian 矩陣 $\\begin{bmatrix} f_{xx} & f_{xy} \\\\ f_{yx} & f_{yy} \\end{bmatrix}$ 的行列式即為 __________。",
-      "options": null,
+      "title": "**Q26**: Hessian 矩陣 $\\begin{bmatrix} f_{xx} & f_{xy} \\\\ f_{yx} & f_{yy} \\end{bmatrix}$ 的行列式即為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "若區域 $D$ 是整個 $xy$ 平面，則它是 __________ (填「有界」或「無界」) 的。",
-      "options": null,
+      "title": "**Q27**: 若區域 $D$ 是整個 $xy$ 平面，則它是 __________ (填「有界」或「無界」) 的。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "$f(x, y) = 10$ 的所有點都是 __________。",
-      "options": null,
+      "title": "**Q28**: $f(x, y) = 10$ 的所有點都是 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "二階導數測試中，$f_{xy}$ 稱為 __________ 二階偏導。",
-      "options": null,
+      "title": "**Q29**: 二階導數測試中，$f_{xy}$ 稱為 __________ 二階偏導。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "絕對最大值一定是局部 __________。",
-      "options": null,
+      "title": "**Q30**: 絕對最大值一定是局部 __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP6.1 | KP6.2 | KP6.3 | KP6.4 | KP6.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 1 | 4, 10 | 2, 3, 8, 9 | 7 | 5, 6 |\n| Q11-Q20| 11, 15 | 18 | 12, 16, 20 | 14, 19 | 13, 17 |\n| Q21-Q30| 23, 30 | 21, 28 | 26, 29 | 22, 25 | 24, 27 |",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

@@ -1,314 +1,408 @@
 {
-  "course": "calculus3",
-  "week": "week15",
-  "title": "第 15 週 - 旋度與散度 (Curl and Divergence)",
-  "knowledge_points": {
-    "KP15.1": "學會計算旋度 $\\nabla \\times \\mathbf{F}$ 並理解其旋轉意義。",
-    "KP15.2": "學會計算散度 $\\nabla \\cdot \\mathbf{F}$ 並理解其源匯意義。",
-    "KP15.3": "熟記 $\\text{curl}(\\nabla f) = \\mathbf{0}$ 及其在保守場判定的應用。",
-    "KP15.4": "熟記 $\\text{div}(\\text{curl } \\mathbf{F}) = 0$。",
-    "KP15.5": "靈活運用 $\\nabla$ 算子的運算性質。"
-  },
+  "course_id": "calculus3",
+  "week": 15,
+  "title": "微積分 下 第 15 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "旋度 $\\nabla \\times \\mathbf{F}$ 的結果是一個？ (A) 純量 (B) 向量 (C) 矩陣 (D) 常數",
-      "options": null,
+      "title": "旋度 $\\nabla \\times \\mathbf{F}$ 的結果是一個？",
+      "options": {
+        "A": "純量",
+        "B": "向量",
+        "C": "矩陣",
+        "D": "常數"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "若 $\\text{div } \\mathbf{F} > 0$，則該點被稱為？ (A) 匯 (B) 源 (C) 旋渦 (D) 節點",
-      "options": null,
+      "title": "若 $\\text{div } \\mathbf{F} > 0$，則該點被稱為？",
+      "options": {
+        "A": "匯",
+        "B": "源",
+        "C": "旋渦",
+        "D": "節點"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "下列哪個恆等式恆成立？ (A) $\\nabla \\cdot (\\nabla f) = 0$ (B) $\\nabla \\times (\\nabla f) = \\mathbf{0}$ (C) $\\nabla \\cdot \\mathbf{F} = \\nabla \\times \\mathbf{F}$ (D) $\\nabla^2 \\mathbf{F} = 0$",
-      "options": null,
+      "title": "下列哪個恆等式恆成立？",
+      "options": {
+        "A": "$\\nabla \\cdot (\\nabla f) = 0$",
+        "B": "$\\nabla \\times (\\nabla f) = \\mathbf{0}$",
+        "C": "$\\nabla \\cdot \\mathbf{F} = \\nabla \\times \\mathbf{F}$",
+        "D": "$\\nabla^2 \\mathbf{F} = 0$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "散度 $\\nabla \\cdot \\mathbf{F}$ 的結果是一個？ (A) 純量 (B) 向量 (C) 矩陣 (D) 座標",
-      "options": null,
+      "title": "散度 $\\nabla \\cdot \\mathbf{F}$ 的結果是一個？",
+      "options": {
+        "A": "純量",
+        "B": "向量",
+        "C": "矩陣",
+        "D": "座標"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "向量場 $\\mathbf{F} = \\langle y, z, x \\rangle$ 的散度為？ (A) $0$ (B) $3$ (C) $x+y+z$ (D) $1$",
-      "options": null,
+      "title": "向量場 $\\mathbf{F} = \\langle y, z, x \\rangle$ 的散度為？",
+      "options": {
+        "A": "$0$",
+        "B": "$3$",
+        "C": "$x+y+z$",
+        "D": "$1$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "拉普拉斯算子 $\\nabla^2$ 作用於純量函數得到？ (A) 向量 (B) 純量 (C) 旋度 (D) 梯度",
-      "options": null,
+      "title": "拉普拉斯算子 $\\nabla^2$ 作用於純量函數得到？",
+      "options": {
+        "A": "向量",
+        "B": "純量",
+        "C": "旋度",
+        "D": "梯度"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "若 $\\text{curl } \\mathbf{F} = \\mathbf{0}$，則 $\\mathbf{F}$ 可能是？ (A) 旋轉場 (B) 梯度場 (C) 無源場 (D) 恆等場",
-      "options": null,
+      "title": "若 $\\text{curl } \\mathbf{F} = \\mathbf{0}$，則 $\\mathbf{F}$ 可能是？",
+      "options": {
+        "A": "旋轉場",
+        "B": "梯度場",
+        "C": "無源場",
+        "D": "恆等場"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "$\\text{div}(\\text{curl } \\mathbf{F})$ 等於？ (A) $\\nabla^2 \\mathbf{F}$ (B) $0$ (C) $\\mathbf{F}$ (D) $\\text{curl}(\\text{div } \\mathbf{F})$",
-      "options": null,
+      "title": "$\\text{div}(\\text{curl } \\mathbf{F})$ 等於？",
+      "options": {
+        "A": "$\\nabla^2 \\mathbf{F}$",
+        "B": "$0$",
+        "C": "$\\mathbf{F}$",
+        "D": "$\\text{curl}(\\text{div } \\mathbf{F})$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "在 Maxwell 方程組中，$\\nabla \\cdot \\mathbf{B} = 0$ 表示？ (A) 電荷守恆 (B) 無磁單極子 (C) 磁場由電流產生 (D) 電場隨時間變化",
-      "options": null,
+      "title": "在 Maxwell 方程組中，$\\nabla \\cdot \\mathbf{B} = 0$ 表示？",
+      "options": {
+        "A": "電荷守恆",
+        "B": "無磁單極子",
+        "C": "磁場由電流產生",
+        "D": "電場隨時間變化"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "若 $\\mathbf{F} = \\langle -y, x, 0 \\rangle$，其旋度在原點的方向為？ (A) $x$ 軸 (B) $y$ 軸 (C) $z$ 軸 (D) 無方向",
-      "options": null,
+      "title": "若 $\\mathbf{F} = \\langle -y, x, 0 \\rangle$，其旋度在原點的方向為？",
+      "options": {
+        "A": "$x$ 軸",
+        "B": "$y$ 軸",
+        "C": "$z$ 軸",
+        "D": "無方向\n\n### 2. 多選題 (10 題)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列哪些關於旋度的敘述是正確的？ (A) 僅定義於三維空間 (B) 其大小代表旋轉強度 (C) 方程 $\\text{curl } \\mathbf{F} = \\mathbf{0}$ 意指無旋 (D) 它是一個線性算子",
-      "options": null,
+      "title": "下列哪些關於旋度的敘述是正確的？",
+      "options": {
+        "A": "僅定義於三維空間",
+        "B": "其大小代表旋轉強度",
+        "C": "方程 $\\text{curl } \\mathbf{F} = \\mathbf{0}$ 意指無旋",
+        "D": "它是一個線性算子"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "哪些場是無散場 ($\\text{div } \\mathbf{F} = 0$)？ (A) $\\langle y, z, x \\rangle$ (B) $\\langle -y, x, 0 \\rangle$ (C) $\\langle x, y, z \\rangle$ (D) $\\langle e^y, e^z, e^x \\rangle$",
-      "options": null,
+      "title": "哪些場是無散場 ($\\text{div } \\mathbf{F} = 0$)？",
+      "options": {
+        "A": "$\\langle y, z, x \\rangle$",
+        "B": "$\\langle -y, x, 0 \\rangle$",
+        "C": "$\\langle x, y, z \\rangle$",
+        "D": "$\\langle e^y, e^z, e^x \\rangle$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "下列哪些算子作用後結果為向量？ (A) $\\text{grad } f$ (B) $\\text{div } \\mathbf{F}$ (C) $\\text{curl } \\mathbf{F}$ (D) $\\nabla^2 f$",
-      "options": null,
+      "title": "下列哪些算子作用後結果為向量？",
+      "options": {
+        "A": "$\\text{grad } f$",
+        "B": "$\\text{div } \\mathbf{F}$",
+        "C": "$\\text{curl } \\mathbf{F}$",
+        "D": "$\\nabla^2 f$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "若 $\\mathbf{F} = \\nabla f$，則下列哪些正確？ (A) $\\mathbf{F}$ 是保守場 (B) $\\int_C \\mathbf{F} \\cdot d\\mathbf{r}$ 路徑無關 (C) $\\text{curl } \\mathbf{F} = \\mathbf{0}$ (D) $\\text{div } \\mathbf{F} = \\nabla^2 f$",
-      "options": null,
+      "title": "若 $\\mathbf{F} = \\nabla f$，則下列哪些正確？",
+      "options": {
+        "A": "$\\mathbf{F}$ 是保守場",
+        "B": "$\\int_",
+        "C": "$\\text{curl } \\mathbf{F} = \\mathbf{0}$",
+        "D": "$\\text{div } \\mathbf{F} = \\nabla^2 f$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "關於 $\\nabla$ 算子的描述，正確的有： (A) 它是一個微分向量算子 (B) $\\nabla = \\langle \\partial_x, \\partial_y, \\partial_z \\rangle$ (C) 它服從乘積法則 (D) 它不滿足交換律",
-      "options": null,
+      "title": "關於 $\\nabla$ 算子的描述，正確的有：",
+      "options": {
+        "A": "它是一個微分向量算子",
+        "B": "$\\nabla = \\langle \\partial_x, \\partial_y, \\partial_z \\rangle$",
+        "C": "它服從乘積法則",
+        "D": "它不滿足交換律"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "下列哪些場在全空間均為無旋場？ (A) 重力場 (B) 靜電場 (C) 均勻流場 (D) 剛體旋轉流場",
-      "options": null,
+      "title": "下列哪些場在全空間均為無旋場？",
+      "options": {
+        "A": "重力場",
+        "B": "靜電場",
+        "C": "均勻流場",
+        "D": "剛體旋轉流場"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "$\\text{div}(f\\mathbf{F}) =$ 哪些項的和？ (A) $f(\\text{div } \\mathbf{F})$ (B) $\\mathbf{F} \\cdot (\\text{grad } f)$ (C) $f(\\text{curl } \\mathbf{F})$ (D) $\\text{grad}(f\\mathbf{F})$",
-      "options": null,
+      "title": "$\\text{div}(f\\mathbf{F}) =$ 哪些項的和？",
+      "options": {
+        "A": "$f(\\text{div } \\mathbf{F})$",
+        "B": "$\\mathbf{F} \\cdot (\\text{grad } f)$",
+        "C": "$f(\\text{curl } \\mathbf{F})$",
+        "D": "$\\text{grad}(f\\mathbf{F})$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "剛體以角速度 $\\boldsymbol{\\omega}$ 旋轉，速度場 $\\mathbf{v} = \\boldsymbol{\\omega} \\times \\mathbf{r}$，則： (A) $\\text{curl } \\mathbf{v} = 2\\boldsymbol{\\omega}$ (B) $\\text{div } \\mathbf{v} = 0$ (C) 它是無旋場 (D) 它是無散場",
-      "options": null,
+      "title": "剛體以角速度 $\\boldsymbol{\\omega}$ 旋轉，速度場 $\\mathbf{v} = \\boldsymbol{\\omega} \\times \\mathbf{r}$，則：",
+      "options": {
+        "A": "$\\text{curl } \\mathbf{v} = 2\\boldsymbol{\\omega}$",
+        "B": "$\\text{div } \\mathbf{v} = 0$",
+        "C": "它是無旋場",
+        "D": "它是無散場"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "哪些場的散度處處為 1？ (A) $\\langle x, 0, 0 \\rangle$ (B) $\\langle x/3, y/3, z/3 \\rangle$ (C) $\\langle x, y, z \\rangle$ (D) $\\langle 0, y, 0 \\rangle$",
-      "options": null,
+      "title": "哪些場的散度處處為 1？",
+      "options": {
+        "A": "$\\langle x, 0, 0 \\rangle$",
+        "B": "$\\langle x/3, y/3, z/3 \\rangle$",
+        "C": "$\\langle x, y, z \\rangle$",
+        "D": "$\\langle 0, y, 0 \\rangle$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "若 $f$ 滿足 $\\nabla^2 f = 0$，則 $f$ 稱為： (A) 調和函數 (B) 位能函數 (C) 拉普拉斯函數 (D) 保守函數",
-      "options": null,
+      "title": "若 $f$ 滿足 $\\nabla^2 f = 0$，則 $f$ 稱為：",
+      "options": {
+        "A": "調和函數",
+        "B": "位能函數",
+        "C": "拉普拉斯函數",
+        "D": "保守函數\n\n### 3. 填充題 (10 題)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "$\\text{div } \\langle x, y, z \\rangle = \\underline{\\quad\\quad}$。",
-      "options": null,
-      "answer": "",
+      "title": "$\\text{div } \\langle x, y, z \\rangle = _______$。",
+      "options": {},
+      "answer": "3",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "$\\text{curl } \\langle y, x, 0 \\rangle = \\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "$\\text{curl } \\langle y, x, 0 \\rangle = _______$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
       "title": "若 $\\text{div } \\mathbf{F} = 0$，稱 $\\mathbf{F}$ 為 $\\underline{\\quad\\quad}$ 場。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
       "title": "計算旋度使用的行列式第一列為 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
       "title": "拉普拉斯算子的符號為 $\\nabla^2$ 或 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
       "title": "$\\text{curl}(\\text{grad } f)$ 的結果是 $\\underline{\\quad\\quad}$ 向量。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
       "title": "$\\nabla \\cdot (f\\mathbf{F}) = f(\\nabla \\cdot \\mathbf{F}) + \\underline{\\quad\\quad}$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
       "title": "二維向量場 $\\mathbf{F} = \\langle P, Q \\rangle$ 的旋度僅有 $\\underline{\\quad\\quad}$ 分量。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
       "title": "若向量場的散度在某區間恆為正，代表該區間有流體 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "$\\text{div}(\\text{curl } \\mathbf{F}) = \\underline{\\quad\\quad}$。",
-      "options": null,
-      "answer": "",
+      "title": "$\\text{div}(\\text{curl } \\mathbf{F}) = _______$。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP15.1 | KP15.2 | KP15.3 | KP15.4 | KP15.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 1, 10 | 2, 4, 5, 9 | 3, 7 | 6, 8 | |\n| Q11-Q20| 11 | 12, 19 | 14, 16 | 20 | 13, 15, 17, 18 |\n| Q21-Q30| 22, 24, 28| 21, 23, 29| 26 | 25, 30 | 27 |",
+      "options": {},
+      "answer": "0",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

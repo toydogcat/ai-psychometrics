@@ -1,229 +1,16 @@
 {
-  "course": "calculus1",
-  "week": "week2",
-  "title": "Week 2 Review",
-  "knowledge_points": {},
+  "course_id": "calculus1",
+  "week": 2,
+  "title": "微積分 上 第 2 週",
+  "knowledge_points": {
+    "KP2.1": "知識點 KP2.1",
+    "KP2.3": "知識點 KP2.3",
+    "KP2.4": "知識點 KP2.4",
+    "KP2.5": "知識點 KP2.5",
+    "KP2.2": "知識點 KP2.2",
+    "2.3": "知識點 2.3"
+  },
   "questions": [
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "取鄰近點 $Q(x, x^2)$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q2",
-      "type": "single",
-      "title": "割線斜率為 $m_{PQ} = \\frac{x^2 - 1}{x - 1} = x + 1$ (當 $x \\neq 1$)。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q3",
-      "type": "single",
-      "title": "當 $x$ 越來越靠近 1 (例如 $x=1.1, 1.01, 1.001$)：\n   - $x = 1.1 \\Rightarrow m_{PQ} = 2.1$\n   - $x = 1.01 \\Rightarrow m_{PQ} = 2.01$\n   - $x = 1.001 \\Rightarrow m_{PQ} = 2.001$",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q4",
-      "type": "single",
-      "title": "由此推測，當 $x$ 趨近於 1 時，切線斜率為 2。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "取 $x$ 接近 0 的值，代入 $f(x) = \\frac{\\sin x}{x}$（$x$ 必須以弧度為單位）：\n   - $x = \\pm 0.1 \\Rightarrow f(x) \\approx 0.998334$\n   - $x = \\pm 0.01 \\Rightarrow f(x) \\approx 0.999983$\n   - $x = \\pm 0.001 \\Rightarrow f(x) \\approx 0.999999$",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q2",
-      "type": "single",
-      "title": "隨著 $x$ 趨近於 0，$f(x)$ 趨近於 1。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q3",
-      "type": "single",
-      "title": "估計極限為 $\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "加上法則：$\\lim_{x \\to a} [f(x) + g(x)] = \\lim_{x \\to a} f(x) + \\lim_{x \\to a} g(x)$",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q2",
-      "type": "single",
-      "title": "常數倍法則：$\\lim_{x \\to a} [c \\cdot f(x)] = c \\cdot \\lim_{x \\to a} f(x)$",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q3",
-      "type": "single",
-      "title": "乘積法則：$\\lim_{x \\to a} [f(x) \\cdot g(x)] = \\lim_{x \\to a} f(x) \\cdot \\lim_{x \\to a} g(x)$",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q4",
-      "type": "single",
-      "title": "商法則：$\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\frac{\\lim_{x \\to a} f(x)}{\\lim_{x \\to a} g(x)}$ (前提是 $\\lim_{x \\to a} g(x) \\neq 0$)",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "直接代入 $x=2$ 會得到 $0/0$ 的形式。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q2",
-      "type": "single",
-      "title": "對分子進行因式分解：$x^2 - 4 = (x - 2)(x + 2)$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q3",
-      "type": "single",
-      "title": "原式 = $\\lim_{x \\to 2} \\frac{(x - 2)(x + 2)}{x - 2}$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q4",
-      "type": "single",
-      "title": "因為 $x \\to 2$ 表示 $x \\neq 2$，可以消去 $(x - 2)$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q5",
-      "type": "single",
-      "title": "得到 $\\lim_{x \\to 2} (x + 2)$。代入 $x=2$，極限值為 $2 + 2 = 4$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "**分析階段 (猜測 $\\delta$)：** 給定 $\\epsilon > 0$，我們需要找到 $\\delta > 0$ 使得當 $0 < |x - 3| < \\delta$ 時，$|(2x - 1) - 5| < \\epsilon$。\n   整理不等式：$|2x - 6| < \\epsilon \\Rightarrow 2|x - 3| < \\epsilon \\Rightarrow |x - 3| < \\frac{\\epsilon}{2}$。\n   因此，我們選擇 $\\delta = \\frac{\\epsilon}{2}$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q2",
-      "type": "single",
-      "title": "**證明階段：** 給定任意 $\\epsilon > 0$，取 $\\delta = \\frac{\\epsilon}{2}$。\n   若 $0 < |x - 3| < \\delta$，則：\n   $|(2x - 1) - 5| = |2x - 6| = 2|x - 3| < 2\\delta = 2(\\frac{\\epsilon}{2}) = \\epsilon$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q3",
-      "type": "single",
-      "title": "根據定義，證明完成：$\\lim_{x \\to 3} (2x - 1) = 5$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "計算右極限 ($x \\to 0^+$)：此時 $x > 0$，故 $|x| = x$。\n   $\\lim_{x \\to 0^+} \\frac{|x|}{x} = \\lim_{x \\to 0^+} \\frac{x}{x} = \\lim_{x \\to 0^+} 1 = 1$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q2",
-      "type": "single",
-      "title": "計算左極限 ($x \\to 0^-$)：此時 $x < 0$，故 $|x| = -x$。\n   $\\lim_{x \\to 0^-} \\frac{|x|}{x} = \\lim_{x \\to 0^-} \\frac{-x}{x} = \\lim_{x \\to 0^-} -1 = -1$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q3",
-      "type": "single",
-      "title": "結論：因為右極限 $\\neq$ 左極限，所以 $\\lim_{x \\to 0} \\frac{|x|}{x}$ 不存在。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
     {
       "id": "Q1",
       "type": "single",
@@ -234,10 +21,17 @@
         "C": "法線",
         "D": "平行線"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "B",
+      "kp": "KP2.1",
+      "explanation": "直觀上，當割線上兩點 $P, Q$ 的距離無限縮短 (即 $Q \\to P$)，割線便逼近切線。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
     },
     {
       "id": "Q2",
@@ -249,10 +43,17 @@
         "C": "-1",
         "D": "5"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "B",
+      "kp": "KP2.3",
+      "explanation": "由極限定律，$\\lim_{x \\to 1} [2f(x) - g(x)] = 2(3) - 4 = 2$。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q3",
@@ -264,10 +65,17 @@
         "C": "6",
         "D": "不存在"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "C",
+      "kp": "KP2.3",
+      "explanation": "代入產生 $0/0$。因式分解：$\\lim_{x \\to 3} \\frac{(x-3)(x+3)}{x-3} = \\lim_{x \\to 3} (x+3) = 6$。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q4",
@@ -279,10 +87,17 @@
         "C": "$M > 0$ 使得 $|f(x)| \\le M$",
         "D": "$\\delta > 0$ 使得 $|x - a| = \\delta$"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "A",
+      "kp": "KP2.4",
+      "explanation": "此為 $\\epsilon-\\delta$ 的標準定義形式。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
     },
     {
       "id": "Q5",
@@ -294,10 +109,17 @@
         "C": "0",
         "D": "不存在（非無窮）"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "A",
+      "kp": "KP2.5",
+      "explanation": "當 $x \\to 2^+$，即 $x > 2$，$x-2$ 是一極小之正數，故倒數為正無窮大 $\\infty$。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
     },
     {
       "id": "Q6",
@@ -309,10 +131,17 @@
         "C": "$\\infty$",
         "D": "不存在"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "D",
+      "kp": "KP2.2",
+      "explanation": "當 $x \\to 0$ 時，$\\frac{1}{x} \\to \\infty$，$\\sin(\\frac{1}{x})$ 在 $[-1, 1]$ 之間無限次震盪，因此極限不存在。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
     },
     {
       "id": "Q7",
@@ -324,10 +153,17 @@
         "C": "0.09",
         "D": "0.1"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "A",
+      "kp": "KP2.4",
+      "explanation": "$|3x - 1 - 5| = 3|x - 2| < \\epsilon$。推得 $|x - 2| < \\frac{\\epsilon}{3}$。取 $\\delta = \\frac{0.03}{3} = 0.01$。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
     },
     {
       "id": "Q8",
@@ -339,10 +175,17 @@
         "C": "$f(a) = \\lim_{x \\to a} f(x)$",
         "D": "$f(x)$ 必須是多項式"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "A",
+      "kp": "KP2.5",
+      "explanation": "若雙側極限存在，則左右極限必存在且相等。$f(a)$ 不需有定義。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
     },
     {
       "id": "Q9",
@@ -354,10 +197,17 @@
         "C": "3",
         "D": "不存在"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "B",
+      "kp": "KP2.3",
+      "explanation": "分子分母同乘有理化因式 $(\\sqrt{t^2+9}+3)$。\n   $\\lim_{t \\to 0} \\frac{t^2+9-9}{t^2(\\sqrt{t^2+9}+3)} = \\lim_{t \\to 0} \\frac{1}{\\sqrt{t^2+9}+3} = \\frac{1}{6}$。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q10",
@@ -367,12 +217,19 @@
         "A": "0",
         "B": "1",
         "C": "2",
-        "D": "3"
+        "D": "3\n\n**多選題 (10題)**"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "D",
+      "kp": "KP2.3",
+      "explanation": "$x^3 - 1 = (x-1)(x^2+x+1)$。消去 $(x-1)$ 後代入 $x=1$，得 $1^2+1+1=3$。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q11",
@@ -384,10 +241,17 @@
         "C": "只有當左右極限皆存在且相等時，此極限才存在。",
         "D": "極限一定存在於所有的函數中。"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "ABC",
+      "kp": "KP2.2",
+      "explanation": "極限探討函數在該點附近的行為，與該點是否有定義無關。左右極限相等才保證雙側極限存在。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
     },
     {
       "id": "Q12",
@@ -399,10 +263,17 @@
         "C": "常數/0",
         "D": "$\\infty - \\infty$"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "AB",
+      "kp": "KP2.3",
+      "explanation": "$0/0$ 和 $\\infty/\\infty$ 是典型的不定型，需進一步代數操作或使用後續會學到的方法。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q13",
@@ -414,10 +285,17 @@
         "C": "$\\lim_{x \\to c} \\frac{1}{f(x)}$",
         "D": "$\\lim_{x \\to c} \\ln(f(x))$"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "AB",
+      "kp": "KP2.3",
+      "explanation": "A, B 皆存在。C 需要 $L \\neq 0$ 且在此條件 $L>0$ 下存在。D 需要 $L>0$，也存在。故全選 ABCD。\n    *(修正: 選項為 ABCD)*",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q14",
@@ -429,10 +307,17 @@
         "C": "$|x - 4| < \\delta$ 是前提條件。",
         "D": "需要限制 $x \\neq 4$。"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "AB",
+      "kp": "KP2.4",
+      "explanation": "$|5x - 20| < \\epsilon \\Rightarrow 5|x-4| < \\epsilon \\Rightarrow |x-4| < \\frac{\\epsilon}{5}$。只要 $\\delta \\le \\frac{\\epsilon}{5}$ 皆可，因此 A, B 皆對。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
     },
     {
       "id": "Q15",
@@ -444,10 +329,17 @@
         "C": "若單側極限存在，則雙側極限必存在。",
         "D": "步階函數在斷點處有單側極限。"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "ABD",
+      "kp": "KP2.5",
+      "explanation": "C 錯，因為單側極限存在但若不相等，雙側極限就不存在。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
     },
     {
       "id": "Q16",
@@ -459,10 +351,17 @@
         "C": "$\\lim_{x \\to 0} \\frac{1-\\cos x}{x}$",
         "D": "$\\lim_{x \\to 0} x^2$"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "ACD",
+      "kp": "KP2.2/2.3",
+      "explanation": "A 由夾擠定理 (Week 3) 可知極限為 0。B 為 1。C 極限為 0。D 極限為 0。",
+      "q_vector": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
     },
     {
       "id": "Q17",
@@ -474,10 +373,17 @@
         "C": "分子分母同乘有理化因式 $(\\sqrt{x+4}+2)$",
         "D": "取對數"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "C",
+      "kp": "KP2.3",
+      "explanation": "遇到根式相減產生不定型時，常使用有理化技巧。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q18",
@@ -489,10 +395,17 @@
         "C": "所有曲線在任一點都有切線。",
         "D": "切線斜率代表瞬時變化率。"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "ABD",
+      "kp": "KP2.1",
+      "explanation": "C 錯，有些曲線如絕對值函數在頂點處沒有切線 (不可導)。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
     },
     {
       "id": "Q19",
@@ -504,10 +417,17 @@
         "C": "$\\lim_{x \\to 2} f(x) = 2$",
         "D": "在 $x=2.5$ 時，極限存在。"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "AD",
+      "kp": "KP2.5",
+      "explanation": "A) 當 $x$ 從左逼近 2，即 $1.999...$，高斯符號值為 1。B) 當 $x$ 從右逼近 2，即 $2.001...$，值為 2。C) 左右不等，極限不存在。D) 在 $x=2.5$ 附近皆為 2，極限為 2。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
     },
     {
       "id": "Q20",
@@ -517,112 +437,189 @@
         "A": "各別的極限必須存在。",
         "B": "若求商的極限，分母極限不可為零。",
         "C": "函數必須是連續的。",
-        "D": "函數必須是多項式。"
+        "D": "函數必須是多項式。\n\n**填空題 (10題)**"
       },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "answer": "AB",
+      "kp": "KP2.3",
+      "explanation": "極限定律適用於個別極限均存在的情況。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "$\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x - 4} = \\underline{\\hspace{1cm}}$。",
-      "options": null,
+      "title": "$\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x - 4} = _______}$。",
+      "options": {},
       "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "kp": "KP2.3",
+      "explanation": "",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "若 $f(x) = x^3 - 2x + 1$，則 $\\lim_{x \\to 2} f(x) = \\underline{\\hspace{1cm}}$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "title": "若 $f(x) = x^3 - 2x + 1$，則 $\\lim_{x \\to 2} f(x) = _______}$。",
+      "options": {},
+      "answer": "5",
+      "kp": "KP2.3",
+      "explanation": "多項式函數可直接代入 $2^3 - 2(2) + 1 = 8 - 4 + 1 = 5$。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "給定 $\\lim_{x \\to a} f(x) = 5, \\lim_{x \\to a} g(x) = -2$，則 $\\lim_{x \\to a} [f(x) \\cdot g(x)] = \\underline{\\hspace{1cm}}$。",
-      "options": null,
+      "title": "給定 $\\lim_{x \\to a} f(x) = 5, \\lim_{x \\to a} g(x) = -2$，則 $\\lim_{x \\to a} [f(x) \\cdot g(x)] = _______}$。",
+      "options": {},
       "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "kp": "KP2.3",
+      "explanation": "",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "在 $\\epsilon-\\delta$ 定義中，欲證 $\\lim_{x \\to -1} (4x + 3) = -1$，若 $\\epsilon = 0.08$，則對應的最大 $\\delta = \\underline{\\hspace{1cm}}$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "title": "在 $\\epsilon-\\delta$ 定義中，欲證 $\\lim_{x \\to -1} (4x + 3) = -1$，若 $\\epsilon = 0.08$，則對應的最大 $\\delta = _______}$。",
+      "options": {},
+      "answer": "0",
+      "kp": "KP2.4",
+      "explanation": "$|(4x+3) - (-1)| = |4x+4| = 4|x+1| < \\epsilon$。$\\delta = \\epsilon/4 = 0.08/4 = 0.02$。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
     },
     {
       "id": "Q25",
       "type": "fill",
       "title": "曲線 $y = x^3$ 在 $x=1$ 處的切線斜率為 $\\underline{\\hspace{1cm}}$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "options": {},
+      "answer": "3",
+      "kp": "KP2.1",
+      "explanation": "$\\lim_{x \\to 1} \\frac{x^3 - 1}{x - 1} = 3$。",
+      "q_vector": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "$\\lim_{h \\to 0} \\frac{(2+h)^2 - 4}{h} = \\underline{\\hspace{1cm}}$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "title": "$\\lim_{h \\to 0} \\frac{(2+h)^2 - 4}{h} = _______}$。",
+      "options": {},
+      "answer": "4",
+      "kp": "KP2.3",
+      "explanation": "$\\frac{4+4h+h^2-4}{h} = 4+h$。當 $h \\to 0$ 為 4。",
+      "q_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "若函數 $f(x) = \\begin{cases} cx+1 & \\text{if } x \\le 2 \\\\ 5-x & \\text{if } x > 2 \\end{cases}$，且 $\\lim_{x \\to 2} f(x)$ 存在，則 $c = \\underline{\\hspace{1cm}}$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "title": "若函數 $f(x) = \\begin{cases} cx+1 & \\text{if } x \\le 2 \\\\ 5-x & \\text{if } x > 2 \\end{cases}$，且 $\\lim_{x \\to 2} f(x)$ 存在，則 $c = _______}$。",
+      "options": {},
+      "answer": "1",
+      "kp": "KP2.5",
+      "explanation": "左極限 $\\lim_{x \\to 2^-} (cx+1) = 2c+1$。右極限 $\\lim_{x \\to 2^+} (5-x) = 3$。$2c+1 = 3 \\Rightarrow c = 1$。\n    *(修正: $2c+1=3 \\Rightarrow 2c=2 \\Rightarrow c=1$。故答案為 1)*",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "單側極限 $\\lim_{x \\to 3^-} \\frac{x-3}{|x-3|} = \\underline{\\hspace{1cm}}$。",
-      "options": null,
+      "title": "單側極限 $\\lim_{x \\to 3^-} \\frac{x-3}{|x-3|} = _______}$。",
+      "options": {},
       "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "kp": "KP2.5",
+      "explanation": "",
+      "q_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "$\\lim_{x \\to 0} \\frac{\\sin 3x}{x} = \\underline{\\hspace{1cm}}$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "title": "$\\lim_{x \\to 0} \\frac{\\sin 3x}{x} = _______}$。",
+      "options": {},
+      "answer": "3",
+      "kp": "KP2.2",
+      "explanation": "$\\lim_{x \\to 0} 3 \\frac{\\sin 3x}{3x} = 3 \\times 1 = 3$。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "直觀上，$\\lim_{x \\to 0} \\cos x = \\underline{\\hspace{1cm}}$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "title": "直觀上，$\\lim_{x \\to 0} \\cos x = _______}$。",
+      "options": {},
+      "answer": "1",
+      "kp": "KP2.2",
+      "explanation": "直接代入 $\\cos(0) = 1$。",
+      "q_vector": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
     }
   ]
 }

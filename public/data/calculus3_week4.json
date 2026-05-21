@@ -1,314 +1,408 @@
 {
-  "course": "calculus3",
-  "week": "week4",
-  "title": "第 4 週 - 空間中的運動學 (Motion in Space)",
-  "knowledge_points": {
-    "KP4.1": "速度、速率與加速度的向量定義與計算。",
-    "KP4.2": "加速度的切線分量 $a_T$ 與法線分量 $a_N$ 的公式與物理意義。",
-    "KP4.3": "TNB 基底（Frenet 標架）與密切平面的幾何結構。",
-    "KP4.4": "重力場下的 3D 拋體運動推導。",
-    "KP4.5": "克卜勒定律在向量分析中的意義。"
-  },
+  "course_id": "calculus3",
+  "week": 4,
+  "title": "微積分 下 第 4 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "速率 $v(t)$ 是下列哪一項的長度？\n   - (A) 位置向量 (B) 速度向量 (C) 加速度向量 (D) 法向量",
-      "options": null,
+      "title": "**Q1**: 速率 $v(t)$ 是下列哪一項的長度？\n   -",
+      "options": {
+        "A": "位置向量",
+        "B": "速度向量",
+        "C": "加速度向量",
+        "D": "法向量"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "若加速度恆垂直於速度，則速率：\n   - (A) 增加 (B) 減少 (C) 不變 (D) 變為 0",
-      "options": null,
+      "title": "**Q2**: 若加速度恆垂直於速度，則速率：\n   -",
+      "options": {
+        "A": "增加",
+        "B": "減少",
+        "C": "不變",
+        "D": "變為 0"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "切線加速度 $a_T$ 的計算公式為？\n   - (A) $v'$ (B) $\\kappa v^2$ (C) $|\\mathbf{a}|$ (D) $\\mathbf{a} \\cdot \\mathbf{N}$",
-      "options": null,
+      "title": "**Q3**: 切線加速度 $a_T$ 的計算公式為？\n   -",
+      "options": {
+        "A": "$v'$",
+        "B": "$\\kappa v^2$",
+        "C": "$|\\mathbf{a}|$",
+        "D": "$\\mathbf{a} \\cdot \\mathbf{N}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "副法向量 $\\mathbf{B}$ 等於？\n   - (A) $\\mathbf{N} \\times \\mathbf{T}$ (B) $\\mathbf{T} \\times \\mathbf{N}$ (C) $\\mathbf{T} \\cdot \\mathbf{N}$ (D) $\\mathbf{a} \\times \\mathbf{v}$",
-      "options": null,
+      "title": "**Q4**: 副法向量 $\\mathbf{B}$ 等於？\n   -",
+      "options": {
+        "A": "$\\mathbf{N} \\times \\mathbf{T}$",
+        "B": "$\\mathbf{T} \\times \\mathbf{N}$",
+        "C": "$\\mathbf{T} \\cdot \\mathbf{N}$",
+        "D": "$\\mathbf{a} \\times \\mathbf{v}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "拋體運動在忽略阻力時，哪個方向的加速度為 0？\n   - (A) 鉛直方向 (B) 水平方向 (C) 所有方向 (D) 運動切線方向",
-      "options": null,
+      "title": "**Q5**: 拋體運動在忽略阻力時，哪個方向的加速度為 0？\n   -",
+      "options": {
+        "A": "鉛直方向",
+        "B": "水平方向",
+        "C": "所有方向",
+        "D": "運動切線方向"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "密切平面的法向量是？\n   - (A) $\\mathbf{T}$ (B) $\\mathbf{N}$ (C) $\\mathbf{B}$ (D) $\\mathbf{v}$",
-      "options": null,
+      "title": "**Q6**: 密切平面的法向量是？\n   -",
+      "options": {
+        "A": "$\\mathbf{T}$",
+        "B": "$\\mathbf{N}$",
+        "C": "$\\mathbf{B}$",
+        "D": "$\\mathbf{v}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "若 $a_N = 0$，則質點的運動路徑為？\n   - (A) 圓 (B) 螺旋線 (C) 直線 (D) 拋物線",
-      "options": null,
+      "title": "**Q7**: 若 $a_N = 0$，則質點的運動路徑為？\n   -",
+      "options": {
+        "A": "圓",
+        "B": "螺旋線",
+        "C": "直線",
+        "D": "拋物線"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "克卜勒第二定律（面積定律）實質上反映了什麼守恆？\n   - (A) 能量 (B) 動量 (C) 角動量 (D) 質量",
-      "options": null,
+      "title": "**Q8**: 克卜勒第二定律（面積定律）實質上反映了什麼守恆？\n   -",
+      "options": {
+        "A": "能量",
+        "B": "動量",
+        "C": "角動量",
+        "D": "質量"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "法線加速度 $a_N$ 的物理意義是改變速度的？\n   - (A) 大小 (B) 方向 (C) 能量 (D) 時間",
-      "options": null,
+      "title": "**Q9**: 法線加速度 $a_N$ 的物理意義是改變速度的？\n   -",
+      "options": {
+        "A": "大小",
+        "B": "方向",
+        "C": "能量",
+        "D": "時間"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "單位切向量 $\\mathbf{T}$ 對弧長 $s$ 的變化率大小 $|d\\mathbf{T}/ds|$ 是？\n    - (A) 速率 (B) 曲率 (C) 加速度 (D) 扭率",
-      "options": null,
+      "title": "**Q10**: 單位切向量 $\\mathbf{T}$ 對弧長 $s$ 的變化率大小 $|d\\mathbf{T}/ds|$ 是？\n    -",
+      "options": {
+        "A": "速率",
+        "B": "曲率",
+        "C": "加速度",
+        "D": "扭率\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列哪些關於加速度分解的描述是正確的？\n    - (A) $\\mathbf{a} = v' \\mathbf{T} + \\kappa v^2 \\mathbf{N}$\n    - (B) $a_T = \\frac{\\mathbf{v} \\cdot \\mathbf{a}}{v}$\n    - (C) $a_N = \\sqrt{|\\mathbf{a}|^2 - a_T^2}$\n    - (D) $a_T$ 永遠為正值",
-      "options": null,
+      "title": "**Q11**: 下列哪些關於加速度分解的描述是正確的？\n    -",
+      "options": {
+        "A": "$\\mathbf{a} = v' \\mathbf{T} + \\kappa v^2 \\mathbf{N}$\n    -",
+        "B": "$a_T = \\frac{\\mathbf{v} \\cdot \\mathbf{a}}{v}$\n    -",
+        "C": "$a_N = \\sqrt{|\\mathbf{a}|^2 - a_T^2}$\n    -",
+        "D": "$a_T$ 永遠為正值"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "關於 Frenet 標架 $\\{\\mathbf{T, N, B}\\}$，下列哪些正確？\n    - (A) 相互垂直 (B) 皆為單位向量 (C) 隨時間（位置）而變 (D) 是右手系",
-      "options": null,
+      "title": "**Q12**: 關於 Frenet 標架 $\\{\\mathbf{T, N, B}\\}$，下列哪些正確？\n    -",
+      "options": {
+        "A": "相互垂直",
+        "B": "皆為單位向量",
+        "C": "隨時間（位置）而變",
+        "D": "是右手系"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "在拋體運動中，位置向量 $\\mathbf{r}(t)$ 與哪些量有關？\n    - (A) 初速 (B) 初始位置 (C) 重力加速度 (D) 質點質量",
-      "options": null,
+      "title": "**Q13**: 在拋體運動中，位置向量 $\\mathbf{r}(t)$ 與哪些量有關？\n    -",
+      "options": {
+        "A": "初速",
+        "B": "初始位置",
+        "C": "重力加速度",
+        "D": "質點質量"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "哪些運動狀態下，$a_T \\neq 0$？\n    - (A) 等速圓周運動 (B) 加速直線運動 (C) 變速曲線運動 (D) 自由落體",
-      "options": null,
+      "title": "**Q14**: 哪些運動狀態下，$a_T \\neq 0$？\n    -",
+      "options": {
+        "A": "等速圓周運動",
+        "B": "加速直線運動",
+        "C": "變速曲線運動",
+        "D": "自由落體"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "密切平面（Osculating Plane）的特點包括：\n    - (A) 包含切向量 (B) 包含法向量 (C) 與副法向量垂直 (D) 是曲線最貼近的平面",
-      "options": null,
+      "title": "**Q15**: 密切平面（Osculating Plane）的特點包括：\n    -",
+      "options": {
+        "A": "包含切向量",
+        "B": "包含法向量",
+        "C": "與副法向量垂直",
+        "D": "是曲線最貼近的平面"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "關於速率 $v$ 與曲率 $\\kappa$ 對法線加速度 $a_N$ 的影響：\n    - (A) 速率越快，$a_N$ 越大 (B) 曲率越大，$a_N$ 越大 (C) $a_N$ 恆指向彎曲圓心 (D) $a_N$ 可能為負",
-      "options": null,
+      "title": "**Q16**: 關於速率 $v$ 與曲率 $\\kappa$ 對法線加速度 $a_N$ 的影響：\n    -",
+      "options": {
+        "A": "速率越快，$a_N$ 越大",
+        "B": "曲率越大，$a_N$ 越大",
+        "C": "$a_N$ 恆指向彎曲圓心",
+        "D": "$a_N$ 可能為負"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "質點在空間中做勻速運動（速度向量為常數），則：\n    - (A) $\\mathbf{a} = \\mathbf{0}$ (B) $\\kappa = 0$ (C) $a_T = 0$ (D) $a_N = 0$",
-      "options": null,
+      "title": "**Q17**: 質點在空間中做勻速運動（速度向量為常數），則：\n    -",
+      "options": {
+        "A": "$\\mathbf{a} = \\mathbf{0}$",
+        "B": "$\\kappa = 0$",
+        "C": "$a_T = 0$",
+        "D": "$a_N = 0$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "向量 $\\mathbf{B}$ 稱為副法向量，其性質有：\n    - (A) $\\mathbf{B} = \\mathbf{T} \\times \\mathbf{N}$ (B) $|\\mathbf{B}| = 1$ (C) $d\\mathbf{B}/ds$ 與 $\\mathbf{N}$ 平行 (D) $\\mathbf{B}$ 垂直於 $\\mathbf{T}$",
-      "options": null,
+      "title": "**Q18**: 向量 $\\mathbf{B}$ 稱為副法向量，其性質有：\n    -",
+      "options": {
+        "A": "$\\mathbf{B} = \\mathbf{T} \\times \\mathbf{N}$",
+        "B": "$|\\mathbf{B}| = 1$",
+        "C": "$d\\mathbf{B}/ds$ 與 $\\mathbf{N}$ 平行",
+        "D": "$\\mathbf{B}$ 垂直於 $\\mathbf{T}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "在研究行星運動時，我們通常假設：\n    - (A) 太陽位於原點 (B) 引力指向中心 (C) 運動在一個平面內 (D) 速率恆定",
-      "options": null,
+      "title": "**Q19**: 在研究行星運動時，我們通常假設：\n    -",
+      "options": {
+        "A": "太陽位於原點",
+        "B": "引力指向中心",
+        "C": "運動在一個平面內",
+        "D": "速率恆定"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "下列哪些量是「標量 (Scalar)」？\n    - (A) 速率 (B) 曲率 (C) 切線加速度分量 $a_T$ (D) 速度",
-      "options": null,
+      "title": "**Q20**: 下列哪些量是「標量 (Scalar)」？\n    -",
+      "options": {
+        "A": "速率",
+        "B": "曲率",
+        "C": "切線加速度分量 $a_T$",
+        "D": "速度\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "若 $\\mathbf{v} = \\langle 3, 4, 0 \\rangle$，則速率 $v = $ __________。",
-      "options": null,
+      "title": "**Q21**: 若 $\\mathbf{v} = \\langle 3, 4, 0 \\rangle$，則速率 $v = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "加速度向量 $\\mathbf{a}$ 在 $\\mathbf{N}$ 方向的分量大小稱為 __________ 加速度。",
-      "options": null,
+      "title": "**Q22**: 加速度向量 $\\mathbf{a}$ 在 $\\mathbf{N}$ 方向的分量大小稱為 __________ 加速度。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "在圓周運動中，若半徑為 2，速率為 4，則法線加速度 $a_N = $ __________。",
-      "options": null,
+      "title": "**Q23**: 在圓周運動中，若半徑為 2，速率為 4，則法線加速度 $a_N = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "密切平面的方程式可以用點與法向量 __________ 來建立。",
-      "options": null,
+      "title": "**Q24**: 密切平面的方程式可以用點與法向量 __________ 來建立。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "拋體運動的水平軌跡在 $xy$ 平面上是一條 __________。",
-      "options": null,
+      "title": "**Q25**: 拋體運動的水平軌跡在 $xy$ 平面上是一條 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "若質點做直線運動，則其副法向量 $\\mathbf{B}$ 是 __________ (填「確定的」或「不確定的」)。",
-      "options": null,
+      "title": "**Q26**: 若質點做直線運動，則其副法向量 $\\mathbf{B}$ 是 __________ (填「確定的」或「不確定的」)。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "$a_T$ 的正負取決於速率是 __________ 還是減小。",
-      "options": null,
+      "title": "**Q27**: $a_T$ 的正負取決於速率是 __________ 還是減小。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "單位切向量對時間的導數 $\\mathbf{T}'(t)$ 的方向與向量 __________ 相同。",
-      "options": null,
+      "title": "**Q28**: 單位切向量對時間的導數 $\\mathbf{T}'(t)$ 的方向與向量 __________ 相同。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "克卜勒第一定律指出行星軌道形狀為 __________。",
-      "options": null,
+      "title": "**Q29**: 克卜勒第一定律指出行星軌道形狀為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "加速度的長度平方滿足 $|\\mathbf{a}|^2 = a_T^2 + $ __________。",
-      "options": null,
+      "title": "**Q30**: 加速度的長度平方滿足 $|\\mathbf{a}|^2 = a_T^2 + $ __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP4.1 | KP4.2 | KP4.3 | KP4.4 | KP4.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 1, 2 | 3, 7, 9 | 4, 6, 10 | 5 | 8 |\n| Q11-Q20| 14, 17, 20 | 11, 16 | 12, 15, 18 | 13 | 19 |\n| Q21-Q30| 21 | 22, 23, 27, 30 | 24, 26, 28 | 25 | 29 |",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

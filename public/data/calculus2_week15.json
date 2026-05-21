@@ -1,314 +1,383 @@
 {
-  "course": "calculus2",
-  "week": "week15",
-  "title": "第 15 週 - 偏導數 (Partial Derivatives)",
-  "knowledge_points": {
-    "KP15.1": "牢記偏導數是「凍結其餘變數」後的變化率。",
-    "KP15.2": "熟練掌握複合函數（如 $\\sin(x/y)$）的偏微分技巧。",
-    "KP15.3": "理解混合偏導相等的前提是二階導數必須連續。",
-    "KP15.4": "了解調和函數滿足 $u_{xx} + u_{yy} = 0$。",
-    "KP15.5": "掌握隱函數微分公式 $\\frac{\\partial z}{\\partial x} = -F_x/F_z$。"
-  },
+  "course_id": "calculus2",
+  "week": 15,
+  "title": "微積分 中 第 15 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "$f(x, y) = xy^2$，則 $f_x(1, 2)$ 等於？\n   - (A) 1 (B) 2 (C) 4 (D) 0",
-      "options": null,
+      "title": "**Q1**: $f(x, y) = xy^2$，則 $f_x(1, 2)$ 等於？\n   -",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "4",
+        "D": "0"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "下列何者代表 $f$ 先對 $y$ 微分再對 $x$ 微分的記號？\n   - (A) $f_{xy}$ (B) $f_{yx}$ (C) $\\frac{\\partial^2 f}{\\partial y \\partial x}$ (D) $\\frac{\\partial^2 f}{\\partial x^2}$",
-      "options": null,
+      "title": "**Q2**: 下列何者代表 $f$ 先對 $y$ 微分再對 $x$ 微分的記號？\n   -",
+      "options": {
+        "A": "$f_{xy}$",
+        "B": "$f_{yx}$",
+        "C": "$\\frac{\\partial^2 f}{\\partial y \\partial x}$",
+        "D": "$\\frac{\\partial^2 f}{\\partial x^2}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "若 $u = e^{x^2+y^2}$，則 $u_x$ 為？\n   - (A) $e^{x^2+y^2}$ (B) $2xe^{x^2+y^2}$ (C) $2ye^{x^2+y^2}$ (D) $2x$",
-      "options": null,
+      "title": "**Q3**: 若 $u = e^{x^2+y^2}$，則 $u_x$ 為？\n   -",
+      "options": {
+        "A": "$e^{x^2+y^2}$",
+        "B": "$2xe^{x^2+y^2}$",
+        "C": "$2ye^{x^2+y^2}$",
+        "D": "$2x$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "關於克萊羅定理，若 $f_{xy} \\neq f_{yx}$，則代表？\n   - (A) 計算錯誤 (B) 函數不連續 (C) 二階偏導數在該點不連續 (D) 函數不是多項式",
-      "options": null,
+      "title": "**Q4**: 關於克萊羅定理，若 $f_{xy} \\neq f_{yx}$，則代表？\n   -",
+      "options": {
+        "A": "計算錯誤",
+        "B": "函數不連續",
+        "C": "二階偏導數在該點不連續",
+        "D": "函數不是多項式"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "拉普拉斯方程 $\\Delta u = 0$ 在二維中是指？\n   - (A) $u_x + u_y = 0$ (B) $u_{xx} + u_{yy} = 0$ (C) $u_{xy} = 0$ (D) $u_x u_y = 0$",
-      "options": null,
+      "title": "**Q5**: 拉普拉斯方程 $\\Delta u = 0$ 在二維中是指？\n   -",
+      "options": {
+        "A": "$u_x + u_y = 0$",
+        "B": "$u_{xx} + u_{yy} = 0$",
+        "C": "$u_{xy} = 0$",
+        "D": "$u_x u_y = 0$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "$f(x, y) = x^y$，求 $f_x$。\n   - (A) $yx^{y-1}$ (B) $x^y \\ln x$ (C) $y \\ln x$ (D) $x^y/y$",
-      "options": null,
+      "title": "**Q6**: $f(x, y) = x^y$，求 $f_x$。\n   -",
+      "options": {
+        "A": "$yx^{y-1}$",
+        "B": "$x^y \\ln x$",
+        "C": "$y \\ln x$",
+        "D": "$x^y/y$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "隱函數 $x^2 + y^2 + z^2 = 1$ 的 $\\partial z / \\partial x$ 為？\n   - (A) $-x/z$ (B) $-y/z$ (C) $x/z$ (D) $-x/y$",
-      "options": null,
+      "title": "**Q7**: 隱函數 $x^2 + y^2 + z^2 = 1$ 的 $\\partial z / \\partial x$ 為？\n   -",
+      "options": {
+        "A": "$-x/z$",
+        "B": "$-y/z$",
+        "C": "$x/z$",
+        "D": "$-x/y$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "若 $f(x, y)$ 是 $x$ 的三次多項式，$y$ 的二次多項式，則 $f_{xxx}$ 是？\n   - (A) 0 (B) 常數 (C) 關於 $y$ 的函數 (D) 關於 $x$ 的函數",
-      "options": null,
+      "title": "**Q8**: 若 $f(x, y)$ 是 $x$ 的三次多項式，$y$ 的二次多項式，則 $f_{xxx}$ 是？\n   -",
+      "options": {
+        "A": "0",
+        "B": "常數",
+        "C": "關於 $y$ 的函數",
+        "D": "關於 $x$ 的函數"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "$f(x, y) = \\sin x \\cos y$，則 $f_{xy}$ 等於？\n   - (A) $\\cos x \\sin y$ (B) $-\\cos x \\sin y$ (C) $\\sin x \\cos y$ (D) $-\\sin x \\sin y$",
-      "options": null,
+      "title": "**Q9**: $f(x, y) = \\sin x \\cos y$，則 $f_{xy}$ 等於？\n   -",
+      "options": {
+        "A": "$\\cos x \\sin y$",
+        "B": "$-\\cos x \\sin y$",
+        "C": "$\\sin x \\cos y$",
+        "D": "$-\\sin x \\sin y$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "偏導數 $f_y(a, b)$ 在幾何上代表什麼平面的切線斜率？\n    - (A) $y=b$ (B) $x=a$ (C) $z=0$ (D) $x+y=a+b$",
-      "options": null,
+      "title": "**Q10**: 偏導數 $f_y(a, b)$ 在幾何上代表什麼平面的切線斜率？\n    -",
+      "options": {
+        "A": "$y=b$",
+        "B": "$x=a$",
+        "C": "$z=0$",
+        "D": "$x+y=a+b$\n\n### 2. 多選題 (Multiple Choice)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列哪些函數滿足拉普拉斯方程 $u_{xx} + u_{yy} = 0$？\n    - (A) $u = x^2 - y^2$ (B) $u = xy$ (C) $u = e^x \\cos y$ (D) $u = \\sin x \\sin y$",
-      "options": null,
+      "title": "**Q11**: 下列哪些函數滿足拉普拉斯方程 $u_{xx} + u_{yy} = 0$？\n    -",
+      "options": {
+        "A": "$u = x^2 - y^2$",
+        "B": "$u = xy$",
+        "C": "$u = e^x \\cos y$",
+        "D": "$u = \\sin x \\sin y$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "對於 $f(x, y, z)$，三階偏導 $f_{xyz}$ 等價於？（假設連續）\n    - (A) $f_{zyx}$ (B) $f_{xzy}$ (C) $f_{yxz}$ (D) $f_{zxy}$",
-      "options": null,
+      "title": "**Q12**: 對於 $f(x, y, z)$，三階偏導 $f_{xyz}$ 等價於？（假設連續）\n    -",
+      "options": {
+        "A": "$f_{zyx}$",
+        "B": "$f_{xzy}$",
+        "C": "$f_{yxz}$",
+        "D": "$f_{zxy}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "關於偏導數的敘述，正確的有？\n    - (A) 偏導數存在不代表函數連續 (B) 偏導數描述沿軸向的斜率 (C) 計算 $f_x$ 時必須將 $y$ 視為常數 (D) 偏導數記號必須用 $\\partial$",
-      "options": null,
+      "title": "**Q13**: 關於偏導數的敘述，正確的有？\n    -",
+      "options": {
+        "A": "偏導數存在不代表函數連續",
+        "B": "偏導數描述沿軸向的斜率",
+        "C": "計算 $f_x$ 時必須將 $y$ 視為常數",
+        "D": "偏導數記號必須用 $\\partial$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "若 $f(x, y) = \\sqrt{x^2+y^2}$，在 $(0, 0)$ 處：\n    - (A) $f_x$ 存在 (B) $f_x$ 不存在 (C) 函數連續 (D) 函數不連續",
-      "options": null,
+      "title": "**Q14**: 若 $f(x, y) = \\sqrt{x^2+y^2}$，在 $(0, 0)$ 處：\n    -",
+      "options": {
+        "A": "$f_x$ 存在",
+        "B": "$f_x$ 不存在",
+        "C": "函數連續",
+        "D": "函數不連續"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "隱函數微分 $\\frac{\\partial z}{\\partial x} = -F_x/F_z$ 要求：\n    - (A) $F$ 可微 (B) $F_z \\neq 0$ (C) $F = 0$ (D) $z$ 必須能寫成解析式",
-      "options": null,
+      "title": "**Q15**: 隱函數微分 $\\frac{\\partial z}{\\partial x} = -F_x/F_z$ 要求：\n    -",
+      "options": {
+        "A": "$F$ 可微",
+        "B": "$F_z \\neq 0$",
+        "C": "$F = 0$",
+        "D": "$z$ 必須能寫成解析式\n\n### 3. 填充題 (Fill-in-the-blank)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "$f(x, y) = x^2 y + y^3$，則 $f_{yy} = $ __________。",
-      "options": null,
+      "title": "**Q16**: $f(x, y) = x^2 y + y^3$，則 $f_{yy} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "波動方程 $\\frac{\\partial^2 u}{\\partial t^2} = a^2 \\frac{\\partial^2 u}{\\partial x^2}$ 中，$a$ 代表波的 __________。",
-      "options": null,
+      "title": "**Q17**: 波動方程 $\\frac{\\partial^2 u}{\\partial t^2} = a^2 \\frac{\\partial^2 u}{\\partial x^2}$ 中，$a$ 代表波的 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "若 $f_x = 2x+y$ 且 $f_y = x+2y$，則 $f_{xy} = $ __________。",
-      "options": null,
+      "title": "**Q18**: 若 $f_x = 2x+y$ 且 $f_y = x+2y$，則 $f_{xy} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "$f(x, y) = e^{xy}$，則 $f_{xy}(0, 1) = $ __________。",
-      "options": null,
+      "title": "**Q19**: $f(x, y) = e^{xy}$，則 $f_{xy}(0, 1) = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "調和函數在物理上常用於描述 __________ 狀態下的溫度分佈。",
-      "options": null,
+      "title": "**Q20**: 調和函數在物理上常用於描述 __________ 狀態下的溫度分佈。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "$\\frac{\\partial}{\\partial y}(\\ln x) = $ __________。",
-      "options": null,
+      "title": "**Q21**: $\\frac{\\partial}{\\partial y}(\\ln x) = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "對於 $z = f(x, y)$，其全微分 $dz$ 與偏導數的關係為 $dz = f_x dx + $ __________。",
-      "options": null,
+      "title": "**Q22**: 對於 $z = f(x, y)$，其全微分 $dz$ 與偏導數的關係為 $dz = f_x dx + $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "若 $f_{xy}$ 連續，則 $f_{xy} - f_{yx} = $ __________。",
-      "options": null,
+      "title": "**Q23**: 若 $f_{xy}$ 連續，則 $f_{xy} - f_{yx} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "$f(x, y) = \\cos(x^2 y)$，則 $f_x = $ __________。",
-      "options": null,
+      "title": "**Q24**: $f(x, y) = \\cos(x^2 y)$，則 $f_x = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "理想氣體定律 $PV = nRT$，若 $n, R$ 為常數，則 $\\frac{\\partial P}{\\partial V} = $ __________。",
-      "options": null,
+      "title": "**Q25**: 理想氣體定律 $PV = nRT$，若 $n, R$ 為常數，則 $\\frac{\\partial P}{\\partial V} = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "三元函數 $f(x, y, z)$ 共有 __________ 個一階偏導數。",
-      "options": null,
+      "title": "**Q26**: 三元函數 $f(x, y, z)$ 共有 __________ 個一階偏導數。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "$f(x, y) = \\tan^{-1}(y/x)$ 的 $f_x = $ __________。",
-      "options": null,
+      "title": "**Q27**: $f(x, y) = \\tan^{-1}(y/x)$ 的 $f_x = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "偏微分中的「偏」字（Partial）強調了只對 __________ 個變數求導。",
-      "options": null,
+      "title": "**Q28**: 偏微分中的「偏」字（Partial）強調了只對 __________ 個變數求導。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "二階偏導 $f_{xx}$ 的萊布尼茲記號為 __________。",
-      "options": null,
+      "title": "**Q29**: 二階偏導 $f_{xx}$ 的萊布尼茲記號為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "隱函數 $z + \\ln z = x + y$ 中，$\\frac{\\partial z}{\\partial y} = $ __________。",
-      "options": null,
+      "title": "**Q30**: 隱函數 $z + \\ln z = x + y$ 中，$\\frac{\\partial z}{\\partial y} = $ __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP15.1 | KP15.2 | KP15.3 | KP15.4 | KP15.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,0,0,0,0 | 0,1,1,0,0 | 0,1,0,0,0 | 0,0,1,1,0 | 0,0,0,1,0 |\n| Q6-Q10 | 1,1,0,0,0 | 0,0,0,0,1 | 0,1,0,0,0 | 0,0,1,0,0 | 1,0,0,0,0 |\n| Q11-Q30| ... | ... | ... | ... | ... |",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

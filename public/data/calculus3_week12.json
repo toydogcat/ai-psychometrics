@@ -1,354 +1,408 @@
 {
-  "course": "calculus3",
-  "week": "week12",
-  "title": "第 12 週 - 柱座標與球座標 (Cylindrical & Spherical Coordinates)",
-  "knowledge_points": {
-    "KP12.1": "掌握柱座標定義與 $dV = r dz dr d\\theta$。",
-    "KP12.2": "應用柱座標解決圓柱對稱問題。",
-    "KP12.3": "理解球座標 $(\\rho, \\phi, \\theta)$ 及其幾何意義。",
-    "KP12.4": "掌握球座標 $dV = \\rho^2 \\sin \\phi d\\rho d\\phi d\\theta$ 並能計算球形區域積分。",
-    "KP12.5": "根據問題特徵選擇最有效率的座標系統。"
-  },
+  "course_id": "calculus3",
+  "week": 12,
+  "title": "微積分 下 第 12 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "柱座標中的 $r$ 代表什麼？\n   (A) 到原點的距離 (B) 到 $z$ 軸的距離 (C) 到 $xy$ 平面的距離 (D) 角度",
+      "title": "**Q1**: 柱座標中的 $r$ 代表什麼？",
       "options": {
-        "A": "到原點的距離 (B) 到 $z$ 軸的距離 (C) 到 $xy$ 平面的距離 (D) 角度"
+        "A": "到原點的距離",
+        "B": "到 $z$ 軸的距離",
+        "C": "到 $xy$ 平面的距離",
+        "D": "角度"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "球座標中的 $\\phi$ 取值範圍是？\n   (A) $0 \\le \\phi \\le 2\\pi$ (B) $0 \\le \\phi \\le \\pi/2$ (C) $0 \\le \\phi \\le \\pi$ (D) $-\\pi/2 \\le \\phi \\le \\pi/2$",
+      "title": "**Q2**: 球座標中的 $\\phi$ 取值範圍是？",
       "options": {
-        "A": "$0 \\le \\phi \\le 2\\pi$ (B) $0 \\le \\phi \\le \\pi/2$ (C) $0 \\le \\phi \\le \\pi$ (D) $-\\pi/2 \\le \\phi \\le \\pi/2$"
+        "A": "$0 \\le \\phi \\le 2\\pi$",
+        "B": "$0 \\le \\phi \\le \\pi/2$",
+        "C": "$0 \\le \\phi \\le \\pi$",
+        "D": "$-\\pi/2 \\le \\phi \\le \\pi/2$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "下列何者是球座標下的體積元素 $dV$？\n   (A) $\\rho \\sin \\phi d\\rho d\\phi d\\theta$ (B) $\\rho^2 \\sin \\phi d\\rho d\\phi d\\theta$ (C) $\\rho^2 \\cos \\phi d\\rho d\\phi d\\theta$ (D) $r dr d\\theta dz$",
+      "title": "**Q3**: 下列何者是球座標下的體積元素 $dV$？",
       "options": {
-        "A": "$\\rho \\sin \\phi d\\rho d\\phi d\\theta$ (B) $\\rho^2 \\sin \\phi d\\rho d\\phi d\\theta$ (C) $\\rho^2 \\cos \\phi d\\rho d\\phi d\\theta$ (D) $r dr d\\theta dz$"
+        "A": "$\\rho \\sin \\phi d\\rho d\\phi d\\theta$",
+        "B": "$\\rho^2 \\sin \\phi d\\rho d\\phi d\\theta$",
+        "C": "$\\rho^2 \\cos \\phi d\\rho d\\phi d\\theta$",
+        "D": "$r dr d\\theta dz$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "柱座標下，方程式 $r = 2$ 代表什麼？\n   (A) 圓 (B) 球 (C) 圓柱 (D) 平面",
+      "title": "**Q4**: 柱座標下，方程式 $r = 2$ 代表什麼？",
       "options": {
-        "A": "圓 (B) 球 (C) 圓柱 (D) 平面"
+        "A": "圓",
+        "B": "球",
+        "C": "圓柱",
+        "D": "平面"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "球座標下，方程式 $\\phi = \\pi/4$ 代表什麼？\n   (A) 平面 (B) 圓錐 (C) 球面 (D) 圓柱",
+      "title": "**Q5**: 球座標下，方程式 $\\phi = \\pi/4$ 代表什麼？",
       "options": {
-        "A": "平面 (B) 圓錐 (C) 球面 (D) 圓柱"
+        "A": "平面",
+        "B": "圓錐",
+        "C": "球面",
+        "D": "圓柱"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "點 $(0, 0, 1)$ 在球座標中的 $(\\rho, \\phi, \\theta)$ 為？\n   (A) $(1, 0, 0)$ (B) $(1, \\pi/2, 0)$ (C) $(1, \\pi, 0)$ (D) $(1, 0, \\pi)$",
+      "title": "**Q6**: 點 $(0, 0, 1)$ 在球座標中的 $(\\rho, \\phi, \\theta)$ 為？",
       "options": {
-        "A": "$(1, 0, 0)$ (B) $(1, \\pi/2, 0)$ (C) $(1, \\pi, 0)$ (D) $(1, 0, \\pi)$"
+        "A": "$(1, 0, 0)$",
+        "B": "$(1, \\pi/2, 0)$",
+        "C": "$(1, \\pi, 0)$",
+        "D": "$(1, 0, \\pi)$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "計算 $\\iiint_E e^{x^2+y^2+z^2} dV$ 時，首選座標系為？\n   (A) 直角 (B) 柱 (C) 球 (D) 極",
+      "title": "**Q7**: 計算 $\\iiint_E e^{x^2+y^2+z^2} dV$ 時，首選座標系為？",
       "options": {
-        "A": "直角 (B) 柱 (C) 球 (D) 極"
+        "A": "直角",
+        "B": "柱",
+        "C": "球",
+        "D": "極"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "在柱座標轉直角座標中，$x^2+y^2$ 等於？\n   (A) $r$ (B) $r^2$ (C) $\\rho^2 \\sin^2 \\phi$ (D) $z^2$",
+      "title": "**Q8**: 在柱座標轉直角座標中，$x^2+y^2$ 等於？",
       "options": {
-        "A": "$r$ (B) $r^2$ (C) $\\rho^2 \\sin^2 \\phi$ (D) $z^2$"
+        "A": "$r$",
+        "B": "$r^2$",
+        "C": "$\\rho^2 \\sin^2 \\phi$",
+        "D": "$z^2$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "$\\iiint_E 1 dV$ 在球座標中，若區域是單位球，則對 $\\rho$ 的積分限為？\n   (A) $0 \\to 1$ (B) $0 \\to \\pi$ (C) $0 \\to 2\\pi$ (D) $-1 \\to 1$",
+      "title": "**Q9**: $\\iiint_E 1 dV$ 在球座標中，若區域是單位球，則對 $\\rho$ 的積分限為？",
       "options": {
-        "A": "$0 \\to 1$ (B) $0 \\to \\pi$ (C) $0 \\to 2\\pi$ (D) $-1 \\to 1$"
+        "A": "$0 \\to 1$",
+        "B": "$0 \\to \\pi$",
+        "C": "$0 \\to 2\\pi$",
+        "D": "$-1 \\to 1$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "柱座標與球座標中，哪一個變數的定義是一樣的？\n    (A) $r$ 與 $\\rho$ (B) $\\theta$ (C) $z$ (D) $\\phi$",
+      "title": "**Q10**: 柱座標與球座標中，哪一個變數的定義是一樣的？",
       "options": {
-        "A": "$r$ 與 $\\rho$ (B) $\\theta$ (C) $z$ (D) $\\phi$"
+        "A": "$r$ 與 $\\rho$",
+        "B": "$\\theta$",
+        "C": "$z$",
+        "D": "$\\phi$\n\n### 2. 多選題 (Multiple Choice) - 10 題"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列關於球座標轉換公式，哪些正確？\n    (A) $z = \\rho \\cos \\phi$ (B) $r = \\rho \\sin \\phi$ (C) $x = r \\cos \\theta$ (D) $x^2+y^2+z^2 = \\rho^2$",
+      "title": "**Q11**: 下列關於球座標轉換公式，哪些正確？",
       "options": {
-        "A": "$z = \\rho \\cos \\phi$ (B) $r = \\rho \\sin \\phi$ (C) $x = r \\cos \\theta$ (D) $x^2+y^2+z^2 = \\rho^2$"
+        "A": "$z = \\rho \\cos \\phi$",
+        "B": "$r = \\rho \\sin \\phi$",
+        "C": "$x = r \\cos \\theta$",
+        "D": "$x^2+y^2+z^2 = \\rho^2$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "哪些區域適合使用柱座標處理？\n    (A) $x^2+y^2 \\le 4, 0 \\le z \\le 3$ (B) $z = x^2+y^2$ 下方的區域 (C) $x^2+y^2+z^2 \\le 9$ (D) 矩形盒子",
+      "title": "**Q12**: 哪些區域適合使用柱座標處理？",
       "options": {
-        "A": "$x^2+y^2 \\le 4, 0 \\le z \\le 3$ (B) $z = x^2+y^2$ 下方的區域 (C) $x^2+y^2+z^2 \\le 9$ (D) 矩形盒子"
+        "A": "$x^2+y^2 \\le 4, 0 \\le z \\le 3$",
+        "B": "$z = x^2+y^2$ 下方的區域",
+        "C": "$x^2+y^2+z^2 \\le 9$",
+        "D": "矩形盒子"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "關於球座標體積元素 $dV = \\rho^2 \\sin \\phi d\\rho d\\phi d\\theta$：\n    (A) $\\rho^2$ 來自於 Jacobian 行列式 (B) $\\sin \\phi$ 確保在極點附近體積元素縮小 (C) 它是標量 (D) 它可以寫成 $r dr d\\theta dz$",
+      "title": "**Q13**: 關於球座標體積元素 $dV = \\rho^2 \\sin \\phi d\\rho d\\phi d\\theta$：",
       "options": {
-        "A": "$\\rho^2$ 來自於 Jacobian 行列式 (B) $\\sin \\phi$ 確保在極點附近體積元素縮小 (C) 它是標量 (D) 它可以寫成 $r dr d\\theta dz$"
+        "A": "$\\rho^2$ 來自於 Jacobian 行列式",
+        "B": "$\\sin \\phi$ 確保在極點附近體積元素縮小",
+        "C": "它是標量",
+        "D": "它可以寫成 $r dr d\\theta dz$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "方程式 $\\rho = 2\\cos \\phi$ 代表：\n    (A) 球面 (B) 通過原點 (C) 圓心在 $(0, 0, 1)$ (D) 半徑為 1",
+      "title": "**Q14**: 方程式 $\\rho = 2\\cos \\phi$ 代表：",
       "options": {
-        "A": "球面 (B) 通過原點 (C) 圓心在 $(0, 0, 1)$ (D) 半徑為 1"
+        "A": "球面",
+        "B": "通過原點",
+        "C": "圓心在 $(0, 0, 1)$",
+        "D": "半徑為 1"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "哪些物理量在非直角座標下計算更簡單？\n    (A) 圓柱的轉動慣量 (B) 球對稱電荷分佈的電位 (C) 正方體的質量 (D) 圓錐的重心",
+      "title": "**Q15**: 哪些物理量在非直角座標下計算更簡單？",
       "options": {
-        "A": "圓柱的轉動慣量 (B) 球對稱電荷分佈的電位 (C) 正方體的質量 (D) 圓錐的重心"
+        "A": "圓柱的轉動慣量",
+        "B": "球對稱電荷分佈的電位",
+        "C": "正方體的質量",
+        "D": "圓錐的重心"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "關於 $\\theta$ 的取值範圍，哪些敘述正確？\n    (A) 在柱座標中通常是 $0$ 到 $2\\pi$ (B) 在球座標中通常是 $0$ 到 $2\\pi$ (C) 它是方位角 (Azimuthal angle) (D) 它是天頂角 (Zenith angle)",
+      "title": "**Q16**: 關於 $\\theta$ 的取值範圍，哪些敘述正確？",
       "options": {
-        "A": "在柱座標中通常是 $0$ 到 $2\\pi$ (B) 在球座標中通常是 $0$ 到 $2\\pi$ (C) 它是方位角 (Azimuthal angle) (D) 它是天頂角 (Zenith angle)"
+        "A": "在柱座標中通常是 $0$ 到 $2\\pi$",
+        "B": "在球座標中通常是 $0$ 到 $2\\pi$",
+        "C": "它是方位角 (Azimuthal angle)",
+        "D": "它是天頂角 (Zenith angle)"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "哪些變換會導致體積元素中出現 $r$？\n    (A) 二重積分極座標 (B) 三重積分柱座標 (C) 三重積分球座標 (D) 線積分",
+      "title": "**Q17**: 哪些變換會導致體積元素中出現 $r$？",
       "options": {
-        "A": "二重積分極座標 (B) 三重積分柱座標 (C) 三重積分球座標 (D) 線積分"
+        "A": "二重積分極座標",
+        "B": "三重積分柱座標",
+        "C": "三重積分球座標",
+        "D": "線積分"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "若區域對 $xy$ 平面對稱，則在球座標積分中：\n    (A) $\\phi$ 的範圍可能是 $0$ 到 $\\pi/2$ 的兩倍 (B) 質心 $\\bar{z}$ 可能為 0 (C) $\\theta$ 範圍必為 $0 \\to \\pi$ (D) $\\rho$ 恆為常數",
+      "title": "**Q18**: 若區域對 $xy$ 平面對稱，則在球座標積分中：",
       "options": {
-        "A": "$\\phi$ 的範圍可能是 $0$ 到 $\\pi/2$ 的兩倍 (B) 質心 $\\bar{z}$ 可能為 0 (C) $\\theta$ 範圍必為 $0 \\to \\pi$ (D) $\\rho$ 恆為常數"
+        "A": "$\\phi$ 的範圍可能是 $0$ 到 $\\pi/2$ 的兩倍",
+        "B": "質心 $\\bar{z}$ 可能為 0",
+        "C": "$\\theta$ 範圍必為 $0 \\to \\pi$",
+        "D": "$\\rho$ 恆為常數"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "下列哪些函數在球座標下顯得簡潔？\n    (A) $1/\\sqrt{x^2+y^2+z^2}$ (B) $z$ (C) $x^2+y^2$ (D) $\\exp(-(x^2+y^2+z^2))$",
+      "title": "**Q19**: 下列哪些函數在球座標下顯得簡潔？",
       "options": {
-        "A": "$1/\\sqrt{x^2+y^2+z^2}$ (B) $z$ (C) $x^2+y^2$ (D) $\\exp(-(x^2+y^2+z^2))$"
+        "A": "$1/\\sqrt{x^2+y^2+z^2}$",
+        "B": "$z$",
+        "C": "$x^2+y^2$",
+        "D": "$\\exp(-(x^2+y^2+z^2))$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "在處理圓錐 $z = \\sqrt{3(x^2+y^2)}$ 時：\n    (A) 柱座標下 $z = \\sqrt{3}r$ (B) 球座標下 $\\phi = \\pi/6$ (C) 球座標下 $\\phi = \\pi/3$ (D) $\\theta$ 範圍為 $0 \\to 2\\pi$",
+      "title": "**Q20**: 在處理圓錐 $z = \\sqrt{3(x^2+y^2)}$ 時：",
       "options": {
-        "A": "柱座標下 $z = \\sqrt{3}r$ (B) 球座標下 $\\phi = \\pi/6$ (C) 球座標下 $\\phi = \\pi/3$ (D) $\\theta$ 範圍為 $0 \\to 2\\pi$"
+        "A": "柱座標下 $z = \\sqrt{3}r$",
+        "B": "球座標下 $\\phi = \\pi/6$",
+        "C": "球座標下 $\\phi = \\pi/3$",
+        "D": "$\\theta$ 範圍為 $0 \\to 2\\pi$\n\n### 3. 填充題 (Fill-in-the-blank) - 10 題"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "直角座標 $(1, 1, \\sqrt{2})$ 轉換為球座標 $(\\rho, \\phi, \\theta)$ 為 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q21**: 直角座標 $(1, 1, \\sqrt{2})$ 轉換為球座標 $(\\rho, \\phi, \\theta)$ 為 $\\underline{\\quad\\quad}$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "柱座標體積元素 $dV = \\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q22**: 柱座標體積元素 $dV = _______$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "球座標中，$\\rho^2 = \\underline{\\quad\\quad}$ (以 $x, y, z$ 表示)。",
-      "options": null,
+      "title": "**Q23**: 球座標中，$\\rho^2 = _______$ (以 $x, y, z$ 表示)。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "積分 $\\int_0^{2\\pi} \\int_0^{\\pi} \\int_0^R \\rho^2 \\sin \\phi \\, d\\rho d\\phi d\\theta$ 的結果為 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q24**: 積分 $\\int_0^{2\\pi} \\int_0^{\\pi} \\int_0^R \\rho^2 \\sin \\phi \\, d\\rho d\\phi d\\theta$ 的結果為 $\\underline{\\quad\\quad}$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "若 $\\phi = \\pi/2$，則點必位於 $\\underline{\\quad\\quad}$ 平面上。",
-      "options": null,
+      "title": "**Q25**: 若 $\\phi = \\pi/2$，則點必位於 $\\underline{\\quad\\quad}$ 平面上。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "柱座標下，$x = \\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q26**: 柱座標下，$x = _______$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "球座標雅可比行列式的值為 $\\underline{\\quad\\quad}$ (取絕對值)。",
-      "options": null,
+      "title": "**Q27**: 球座標雅可比行列式的值為 $\\underline{\\quad\\quad}$ (取絕對值)。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "圓柱 $x^2 + y^2 = 9$ 且 $0 \\le z \\le 5$ 的體積為 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q28**: 圓柱 $x^2 + y^2 = 9$ 且 $0 \\le z \\le 5$ 的體積為 $\\underline{\\quad\\quad}$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "在球座標中，$\\int_0^{\\pi} \\sin \\phi \\, d\\phi = \\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q29**: 在球座標中，$\\int_0^{\\pi} \\sin \\phi \\, d\\phi = _______$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "若要計算球體 $x^2+y^2+z^2 \\le 4$ 內在圓錐 $z \\ge \\sqrt{x^2+y^2}$ 上方的體積，球座標 $\\phi$ 的上限為 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**Q30**: 若要計算球體 $x^2+y^2+z^2 \\le 4$ 內在圓錐 $z \\ge \\sqrt{x^2+y^2}$ 上方的體積，球座標 $\\phi$ 的上限為 $\\underline{\\quad\\quad}$。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP12.1 | KP12.2 | KP12.3 | KP12.4 | KP12.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 1, 4, 8, 10 | 12 | 2, 3, 6 | 9 | 5, 7 |\n| Q11-Q20| 11, 17 | 15 | 13, 16 | 14, 18, 19 | 20 |\n| Q21-Q30| 22, 26, 28| | 21, 23, 25, 27 | 24, 29 | 30 |",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

@@ -1,233 +1,163 @@
 {
-  "course": "calculus1",
-  "week": "week8",
-  "title": "Week 8 Review",
+  "course_id": "calculus1",
+  "week": 8,
+  "title": "微積分 上 第 8 週",
   "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "**讀題與繪圖**：畫出圖形，標示常數與隨時間變化的變數。",
-      "options": null,
+      "title": "在線性逼近 $L(x) = f(a) + f'(a)(x-a)$ 中，$f'(a)$ 代表什麼？",
+      "options": {
+        "A": "函數值",
+        "B": "切線斜率",
+        "C": "截距",
+        "D": "曲率"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "**已知與未知**：寫下已知的變率與要求解的變率。",
-      "options": null,
+      "title": "若 $y = x^2$，則微分量 $dy =$ ?",
+      "options": {
+        "A": "$2x$",
+        "B": "$2x \\Delta x$",
+        "C": "$2x dx$",
+        "D": "$x^2 dx$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "**建立方程式**：找出連結這些變數的方程式（如三角函數、相似三角形、體積）。",
-      "options": null,
+      "title": "球的體積 $V = \\frac{4}{3}\\pi r^3$，若 $r$ 隨時間改變，則 $\\frac{dV}{dt} =$ ?",
+      "options": {
+        "A": "$4\\pi r^2$",
+        "B": "$4\\pi r^2 \\frac{dr}{dt}$",
+        "C": "$\\frac{4}{3}\\pi r^2 \\frac{dr}{dt}$",
+        "D": "$r^3 \\frac{dr}{dt}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "**對 $t$ 微分**：使用連鎖律對時間 $t$ 隱微分。",
-      "options": null,
+      "title": "利用 $y=x^2$ 於 $x=3$ 的線性逼近來估計 $3.01^2$，結果為？",
+      "options": {
+        "A": "$9$",
+        "B": "$9.06$",
+        "C": "$9.01$",
+        "D": "$9.1$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "**代入數值**：將特定時刻的數值代入，解出未知的變率。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "設梯腳距牆 $x$，梯頂距地 $y$。$x^2 + y^2 = 5^2$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q2",
-      "type": "single",
-      "title": "已知 $\\frac{dx}{dt} = 1$，求 $x=3$ 時的 $\\frac{dy}{dt}$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q3",
-      "type": "single",
-      "title": "$x=3$ 時，$y = \\sqrt{25-9} = 4$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q4",
-      "type": "single",
-      "title": "對 $t$ 微分：$2x \\frac{dx}{dt} + 2y \\frac{dy}{dt} = 0 \\implies x \\frac{dx}{dt} + y \\frac{dy}{dt} = 0$。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q5",
-      "type": "single",
-      "title": "代入數值：$3(1) + 4 \\frac{dy}{dt} = 0 \\implies \\frac{dy}{dt} = -0.75$ m/s。下滑速度為 0.75 m/s。",
-      "options": null,
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q1",
-      "type": "single",
-      "title": "在線性逼近 $L(x) = f(a) + f'(a)(x-a)$ 中，$f'(a)$ 代表什麼？\n   (A) 函數值  (B) 切線斜率  (C) 截距  (D) 曲率",
+      "title": "當 $\\Delta x$ 極小時，$\\Delta y$ 與 $dy$ 的關係是？",
       "options": {
-        "A": "函數值  (B) 切線斜率  (C) 截距  (D) 曲率"
+        "A": "$\\Delta y = dy$",
+        "B": "$\\Delta y \\approx dy$",
+        "C": "$\\Delta y > dy$",
+        "D": "無關"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q2",
-      "type": "single",
-      "title": "若 $y = x^2$，則微分量 $dy =$ ?\n   (A) $2x$  (B) $2x \\Delta x$  (C) $2x dx$  (D) $x^2 dx$",
-      "options": {
-        "A": "$2x$  (B) $2x \\Delta x$  (C) $2x dx$  (D) $x^2 dx$"
-      },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q3",
-      "type": "single",
-      "title": "球的體積 $V = \\frac{4}{3}\\pi r^3$，若 $r$ 隨時間改變，則 $\\frac{dV}{dt} =$ ?\n   (A) $4\\pi r^2$  (B) $4\\pi r^2 \\frac{dr}{dt}$  (C) $\\frac{4}{3}\\pi r^2 \\frac{dr}{dt}$  (D) $r^3 \\frac{dr}{dt}$",
-      "options": {
-        "A": "$4\\pi r^2$  (B) $4\\pi r^2 \\frac{dr}{dt}$  (C) $\\frac{4}{3}\\pi r^2 \\frac{dr}{dt}$  (D) $r^3 \\frac{dr}{dt}$"
-      },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q4",
-      "type": "single",
-      "title": "利用 $y=x^2$ 於 $x=3$ 的線性逼近來估計 $3.01^2$，結果為？\n   (A) $9$  (B) $9.06$  (C) $9.01$  (D) $9.1$",
-      "options": {
-        "A": "$9$  (B) $9.06$  (C) $9.01$  (D) $9.1$"
-      },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
-    },
-    {
-      "id": "Q5",
-      "type": "single",
-      "title": "當 $\\Delta x$ 極小時，$\\Delta y$ 與 $dy$ 的關係是？\n   (A) $\\Delta y = dy$  (B) $\\Delta y \\approx dy$  (C) $\\Delta y > dy$  (D) 無關",
-      "options": {
-        "A": "$\\Delta y = dy$  (B) $\\Delta y \\approx dy$  (C) $\\Delta y > dy$  (D) 無關"
-      },
-      "answer": "",
-      "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "相關變率問題中，必須對哪一個變數隱微分？\n   (A) $x$  (B) $y$  (C) 時間 $t$  (D) 常數 $C$",
+      "title": "相關變率問題中，必須對哪一個變數隱微分？",
       "options": {
-        "A": "$x$  (B) $y$  (C) 時間 $t$  (D) 常數 $C$"
+        "A": "$x$",
+        "B": "$y$",
+        "C": "時間 $t$",
+        "D": "常數 $C$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "若正方形面積 $A = x^2$，邊長增加率 $\\frac{dx}{dt} = 2$，當 $x=5$ 時 $\\frac{dA}{dt}$ 為何？\n   (A) 10  (B) 20  (C) 25  (D) 50",
+      "title": "若正方形面積 $A = x^2$，邊長增加率 $\\frac{dx}{dt} = 2$，當 $x=5$ 時 $\\frac{dA}{dt}$ 為何？",
       "options": {
-        "A": "10  (B) 20  (C) 25  (D) 50"
+        "A": "10",
+        "B": "20",
+        "C": "25",
+        "D": "50"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "測量半徑 $r$ 誤差為 $dr$，則圓面積 $A = \\pi r^2$ 的相對誤差 $\\frac{dA}{A}$ 為何？\n   (A) $2dr$  (B) $2 \\frac{dr}{r}$  (C) $\\pi dr$  (D) $\\frac{dr}{r}$",
+      "title": "測量半徑 $r$ 誤差為 $dr$，則圓面積 $A = \\pi r^2$ 的相對誤差 $\\frac{dA}{A}$ 為何？",
       "options": {
-        "A": "$2dr$  (B) $2 \\frac{dr}{r}$  (C) $\\pi dr$  (D) $\\frac{dr}{r}$"
+        "A": "$2dr$",
+        "B": "$2 \\frac{dr}{r}$",
+        "C": "$\\pi dr$",
+        "D": "$\\frac{dr}{r}$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "已知微分量 $dy = \\cos x \\, dx$，則原函數可能為？\n   (A) $\\cos x$  (B) $-\\sin x$  (C) $\\sin x$  (D) $\\tan x$",
+      "title": "已知微分量 $dy = \\cos x \\, dx$，則原函數可能為？",
       "options": {
-        "A": "$\\cos x$  (B) $-\\sin x$  (C) $\\sin x$  (D) $\\tan x$"
+        "A": "$\\cos x$",
+        "B": "$-\\sin x$",
+        "C": "$\\sin x$",
+        "D": "$\\tan x$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "對 $y = \\sqrt{x}$ 於 $x=1$ 取線性逼近估計 $\\sqrt{1.02}$，得值為？\n    (A) $1.01$  (B) $1.02$  (C) $1.005$  (D) $1.04$",
+      "title": "對 $y = \\sqrt{x}$ 於 $x=1$ 取線性逼近估計 $\\sqrt{1.02}$，得值為？",
       "options": {
-        "A": "$1.01$  (B) $1.02$  (C) $1.005$  (D) $1.04$"
+        "A": "$1.01$",
+        "B": "$1.02$",
+        "C": "$1.005$",
+        "D": "$1.04$\n\n### 多選題 (10題)"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "關於線性逼近 $L(x)$，下列哪些正確？\n    (A) 其圖形是一條直線\n    (B) $L(a) = f(a)$\n    (C) 當 $x$ 遠離 $a$ 時，逼近通常不準確\n    (D) $L(x)$ 是 $f(x)$ 曲線的切線",
+      "title": "關於線性逼近 $L(x)$，下列哪些正確？",
       "options": {
         "A": "其圖形是一條直線",
         "B": "$L(a) = f(a)$",
@@ -236,13 +166,13 @@
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "關於微分量，下列哪些正確？\n    (A) $dx$ 與 $\\Delta x$ 相同\n    (B) $dy = f'(x)dx$\n    (C) $dy$ 代表沿著切線的垂直變化量\n    (D) $\\Delta y$ 是沿著曲線的實際變化量",
+      "title": "關於微分量，下列哪些正確？",
       "options": {
         "A": "$dx$ 與 $\\Delta x$ 相同",
         "B": "$dy = f'(x)dx$",
@@ -251,13 +181,13 @@
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "解決相關變率問題時，下列哪些步驟是必要的？\n    (A) 找出所有變數的關係式\n    (B) 先代入特定數值，再對時間 $t$ 微分\n    (C) 對時間 $t$ 微分時需要使用連鎖律\n    (D) 確認各變數是增加還是減少（正負號）",
+      "title": "解決相關變率問題時，下列哪些步驟是必要的？",
       "options": {
         "A": "找出所有變數的關係式",
         "B": "先代入特定數值，再對時間 $t$ 微分",
@@ -266,13 +196,13 @@
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "若梯子沿牆滑下，梯腳以 $\\frac{dx}{dt} > 0$ 遠離牆，則梯頂高度 $y$ 會有什麼變化？\n    (A) $\\frac{dy}{dt} < 0$\n    (B) $y$ 逐漸減小\n    (C) $x^2 + y^2 = L^2$ (常數)\n    (D) $\\frac{dy}{dt} = 0$",
+      "title": "若梯子沿牆滑下，梯腳以 $\\frac{dx}{dt} > 0$ 遠離牆，則梯頂高度 $y$ 會有什麼變化？",
       "options": {
         "A": "$\\frac{dy}{dt} < 0$",
         "B": "$y$ 逐漸減小",
@@ -281,13 +211,13 @@
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "利用線性逼近來估計時，誤差大小取決於哪些因素？\n    (A) $x$ 與展開點 $a$ 的距離\n    (B) 函數的二階導數（彎曲程度）\n    (C) 函數的值 $f(a)$ 本身\n    (D) $f'(a)$ 的正負號",
+      "title": "利用線性逼近來估計時，誤差大小取決於哪些因素？",
       "options": {
         "A": "$x$ 與展開點 $a$ 的距離",
         "B": "函數的二階導數（彎曲程度）",
@@ -296,28 +226,28 @@
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "下列哪些公式在計算相對誤差時是正確的？\n    (A) 若 $V = x^3$，則 $\\frac{dV}{V} = 3 \\frac{dx}{x}$\n    (B) 若 $A = \\pi r^2$，則 $\\frac{dA}{A} = 2 \\frac{dr}{r}$\n    (C) 若 $y = \\sqrt{x}$，則 $\\frac{dy}{y} = \\frac{1}{2} \\frac{dx}{x}$\n    (D) 相對誤差等同於微分量 $dy$",
+      "title": "下列哪些公式在計算相對誤差時是正確的？",
       "options": {
         "A": "若 $V = x^3$，則 $\\frac{dV}{V} = 3 \\frac{dx}{x}$",
-        "B": "若 $A = \\pi r^2$，則 $\\frac{dA}{A} = 2 \\frac{dr}{r}$",
+        "B": "若 $",
         "C": "若 $y = \\sqrt{x}$，則 $\\frac{dy}{y} = \\frac{1}{2} \\frac{dx}{x}$",
         "D": "相對誤差等同於微分量 $dy$"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "已知直角三角形兩股 $x, y$ 都在變，斜邊 $z$ 也變。哪些關係成立？\n    (A) $x^2 + y^2 = z^2$\n    (B) $2x\\frac{dx}{dt} + 2y\\frac{dy}{dt} = 2z\\frac{dz}{dt}$\n    (C) $z = x+y$\n    (D) 若 $x,y$ 增加，則 $z$ 必增加",
+      "title": "已知直角三角形兩股 $x, y$ 都在變，斜邊 $z$ 也變。哪些關係成立？",
       "options": {
         "A": "$x^2 + y^2 = z^2$",
         "B": "$2x\\frac{dx}{dt} + 2y\\frac{dy}{dt} = 2z\\frac{dz}{dt}$",
@@ -326,13 +256,13 @@
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "對於估計值 $\\Delta y \\approx dy$，何時估計最好？\n    (A) 當 $dx$ 很小\n    (B) 當 $dx$ 很大\n    (C) 當曲線在此區間接近直線\n    (D) 當 $f'(x) = 0$ 且不變時",
+      "title": "對於估計值 $\\Delta y \\approx dy$，何時估計最好？",
       "options": {
         "A": "當 $dx$ 很小",
         "B": "當 $dx$ 很大",
@@ -341,13 +271,13 @@
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "設 $y = e^x$，在 $x=0$ 處的線性逼近：\n    (A) $f(0) = 1$\n    (B) $f'(0) = 1$\n    (C) $L(x) = 1 + x$\n    (D) 估計 $e^{0.1} \\approx 1.1$",
+      "title": "設 $y = e^x$，在 $x=0$ 處的線性逼近：",
       "options": {
         "A": "$f(0) = 1$",
         "B": "$f'(0) = 1$",
@@ -356,123 +286,123 @@
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "計算 $\\sin(0.05)$ 的線性逼近（以 $a=0$ 為基準），哪些正確？\n    (A) $f(0) = 0$\n    (B) $f'(0) = 1$\n    (C) $L(x) = x$\n    (D) $\\sin(0.05) \\approx 0.05$",
+      "title": "計算 $\\sin(0.05)$ 的線性逼近（以 $a=0$ 為基準），哪些正確？",
       "options": {
         "A": "$f(0) = 0$",
         "B": "$f'(0) = 1$",
         "C": "$L(x) = x$",
-        "D": "$\\sin(0.05) \\approx 0.05$"
+        "D": "$\\sin(0.05) \\approx 0.05$\n\n### 填充題 (10題)"
       },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "切線逼近公式 $L(x) = \\underline{f(a) + f'(a)(x-a)}$。",
-      "options": null,
+      "title": "切線逼近公式 $L(x) = _______$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "$y = x^4$，微分量 $dy = \\underline{4x^3 dx}$。",
-      "options": null,
+      "title": "$y = x^4$，微分量 $dy = _______$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "半徑變率為 $\\frac{dr}{dt}$，則圓面積 $A=\\pi r^2$ 變率 $\\frac{dA}{dt} = \\underline{2\\pi r \\frac{dr}{dt}}$。",
-      "options": null,
+      "title": "半徑變率為 $\\frac{dr}{dt}$，則圓面積 $A=\\pi r^2$ 變率 $\\frac{dA}{dt} = _______{dt}}$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
       "title": "利用 $L(x) = 1+x$ 估計 $e^{0.02}$，得值為 $\\underline{1.02}$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
       "title": "體積 $V=x^3$，邊長測量誤差為 $1\\%$ ($\\frac{dx}{x}=0.01$)，則體積最大相對誤差為 $\\underline{3\\%}$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "梯子問題中，若 $x \\frac{dx}{dt} + y \\frac{dy}{dt} = 0$，當 $x=y$ 且 $\\frac{dx}{dt}=2$ 時，$\\frac{dy}{dt} = \\underline{-2}$。",
-      "options": null,
+      "title": "梯子問題中，若 $x \\frac{dx}{dt} + y \\frac{dy}{dt} = 0$，當 $x=y$ 且 $\\frac{dx}{dt}=2$ 時，$\\frac{dy}{dt} = _______$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "若 $y = \\sin x$，$dy = \\underline{\\cos x \\, dx}$。",
-      "options": null,
+      "title": "若 $y = \\sin x$，$dy = _______$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
       "title": "當 $x \\approx 0$ 時，$\\sin x \\approx \\underline{x}$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
       "title": "微分量中，$\\Delta x$ 與 $dx$ 的關係為 $\\underline{\\Delta x = dx}$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "直角坐標中，點到原點距離平方 $D^2 = x^2 + y^2$，對時間微分得 $2D\\frac{dD}{dt} = \\underline{2x\\frac{dx}{dt} + 2y\\frac{dy}{dt}}$。",
-      "options": null,
+      "title": "直角坐標中，點到原點距離平方 $D^2 = x^2 + y^2$，對時間微分得 $2D\\frac{dD}{dt} = _______{dt} + 2y\\frac{dy}{dt}}$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

@@ -1,314 +1,408 @@
 {
-  "course": "calculus3",
-  "week": "week5",
-  "title": "第 5 週 - 方向導數與梯度向量 (Directional Derivatives and Gradient Vectors)",
-  "knowledge_points": {
-    "KP5.1": "方向導數定義 $D_{\\mathbf{u}}f = \\lim_{h \\to 0} \\frac{f(\\mathbf{x}+h\\mathbf{u}) - f(\\mathbf{x})}{h}$。",
-    "KP5.2": "梯度向量 $\\nabla f = \\langle f_x, f_y, f_z \\rangle$ 的定義。",
-    "KP5.3": "重要公式 $D_{\\mathbf{u}}f = \\nabla f \\cdot \\mathbf{u}$。",
-    "KP5.4": "梯度方向是函數增加最快的方向，其模長是最大變化率。",
-    "KP5.5": "梯度垂直於等值曲線/曲面。"
-  },
+  "course_id": "calculus3",
+  "week": 5,
+  "title": "微積分 下 第 5 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "梯度向量 $\\nabla f$ 的方向與等值線 $f(x, y) = k$ 的關係是？\n   - (A) 平行 (B) 垂直 (C) 夾角 45 度 (D) 沒有固定關係",
-      "options": null,
+      "title": "**Q1**: 梯度向量 $\\nabla f$ 的方向與等值線 $f(x, y) = k$ 的關係是？\n   -",
+      "options": {
+        "A": "平行",
+        "B": "垂直",
+        "C": "夾角 45 度",
+        "D": "沒有固定關係"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "函數 $f$ 在點 $P$ 沿單位向量 $\\mathbf{u}$ 的方向導數最大值發生在？\n   - (A) $\\mathbf{u}$ 與 $\\nabla f$ 同向 (B) $\\mathbf{u}$ 與 $\\nabla f$ 反向 (C) $\\mathbf{u} \\perp \\nabla f$ (D) $\\mathbf{u} = \\mathbf{i}$",
-      "options": null,
+      "title": "**Q2**: 函數 $f$ 在點 $P$ 沿單位向量 $\\mathbf{u}$ 的方向導數最大值發生在？\n   -",
+      "options": {
+        "A": "$\\mathbf{u}$ 與 $\\nabla f$ 同向",
+        "B": "$\\mathbf{u}$ 與 $\\nabla f$ 反向",
+        "C": "$\\mathbf{u} \\perp \\nabla f$",
+        "D": "$\\mathbf{u} = \\mathbf{i}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "若 $\\nabla f(P) = \\langle 3, 4 \\rangle$，則 $f$ 在 $P$ 點的最大變化率為？\n   - (A) 3 (B) 4 (C) 5 (D) 7",
-      "options": null,
+      "title": "**Q3**: 若 $\\nabla f(P) = \\langle 3, 4 \\rangle$，則 $f$ 在 $P$ 點的最大變化率為？\n   -",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "7"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "方向導數 $D_{\\mathbf{u}}f$ 是一個？\n   - (A) 向量 (B) 標量 (C) 矩陣 (D) 函數",
-      "options": null,
+      "title": "**Q4**: 方向導數 $D_{\\mathbf{u}}f$ 是一個？\n   -",
+      "options": {
+        "A": "向量",
+        "B": "標量",
+        "C": "矩陣",
+        "D": "函數"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "若 $D_{\\mathbf{u}}f(P) = 0$，則向量 $\\mathbf{u}$ 與 $\\nabla f(P)$ 的夾角為？\n   - (A) 0 (B) $\\pi/4$ (C) $\\pi/2$ (D) $\\pi$",
-      "options": null,
+      "title": "**Q5**: 若 $D_{\\mathbf{u}}f(P) = 0$，則向量 $\\mathbf{u}$ 與 $\\nabla f(P)$ 的夾角為？\n   -",
+      "options": {
+        "A": "0",
+        "B": "$\\pi/4$",
+        "C": "$\\pi/2$",
+        "D": "$\\pi$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "$f(x, y) = xy$ 在點 $(1, 1)$ 處的梯度為？\n   - (A) $\\langle 1, 1 \\rangle$ (B) $\\langle 1, 0 \\rangle$ (C) $\\langle 0, 1 \\rangle$ (D) $\\langle y, x \\rangle$",
-      "options": null,
+      "title": "**Q6**: $f(x, y) = xy$ 在點 $(1, 1)$ 處的梯度為？\n   -",
+      "options": {
+        "A": "$\\langle 1, 1 \\rangle$",
+        "B": "$\\langle 1, 0 \\rangle$",
+        "C": "$\\langle 0, 1 \\rangle$",
+        "D": "$\\langle y, x \\rangle$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "計算方向導數時，使用的向量 $\\mathbf{u}$ 必須是？\n   - (A) 零向量 (B) 單位向量 (C) 梯度向量 (D) 任意向量",
-      "options": null,
+      "title": "**Q7**: 計算方向導數時，使用的向量 $\\mathbf{u}$ 必須是？\n   -",
+      "options": {
+        "A": "零向量",
+        "B": "單位向量",
+        "C": "梯度向量",
+        "D": "任意向量"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "對於三元函數 $F(x, y, z) = k$，其在 $(x_0, y_0, z_0)$ 的切平面法向量為？\n   - (A) $\\langle 1, 1, 1 \\rangle$ (B) $\\langle x_0, y_0, z_0 \\rangle$ (C) $\\nabla F(x_0, y_0, z_0)$ (D) $\\mathbf{0}$",
-      "options": null,
+      "title": "**Q8**: 對於三元函數 $F(x, y, z) = k$，其在 $(x_0, y_0, z_0)$ 的切平面法向量為？\n   -",
+      "options": {
+        "A": "$\\langle 1, 1, 1 \\rangle$",
+        "B": "$\\langle x_0, y_0, z_0 \\rangle$",
+        "C": "$\\nabla F(x_0, y_0, z_0)$",
+        "D": "$\\mathbf{0}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "若 $\\nabla f = \\mathbf{0}$，則該點的方向導數在任何方向皆為？\n   - (A) 1 (B) 變動的 (C) 0 (D) 無法定義",
-      "options": null,
+      "title": "**Q9**: 若 $\\nabla f = \\mathbf{0}$，則該點的方向導數在任何方向皆為？\n   -",
+      "options": {
+        "A": "1",
+        "B": "變動的",
+        "C": "0",
+        "D": "無法定義"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "梯度算子 $\\nabla$ 在直角座標系中的形式為？\n    - (A) $\\frac{\\partial}{\\partial x} + \\frac{\\partial}{\\partial y}$ (B) $\\langle \\frac{\\partial}{\\partial x}, \\frac{\\partial}{\\partial y}, \\frac{\\partial}{\\partial z} \\rangle$ (C) $f_x + f_y$ (D) $dx + dy$",
-      "options": null,
+      "title": "**Q10**: 梯度算子 $\\nabla$ 在直角座標系中的形式為？\n    -",
+      "options": {
+        "A": "$\\frac{\\partial}{\\partial x} + \\frac{\\partial}{\\partial y}$",
+        "B": "$\\langle \\frac{\\partial}{\\partial x}, \\frac{\\partial}{\\partial y}, \\frac{\\partial}{\\partial z} \\rangle$",
+        "C": "$f_x + f_y$",
+        "D": "$dx + dy$\n\n### 2. 多選題 (Multiple Choice) - 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
-      "title": "下列關於梯度的描述哪些正確？\n    - (A) 梯度是一個向量 (B) 梯度指向函數增加最快的方向 (C) 梯度的長度代表變化率的大小 (D) 梯度永遠指向原點",
-      "options": null,
+      "title": "**Q11**: 下列關於梯度的描述哪些正確？\n    -",
+      "options": {
+        "A": "梯度是一個向量",
+        "B": "梯度指向函數增加最快的方向",
+        "C": "梯度的長度代表變化率的大小",
+        "D": "梯度永遠指向原點"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
-      "title": "若 $f(x, y)$ 在 $P$ 點可微，則 $D_{\\mathbf{u}}f$ 可以透過哪些量計算？\n    - (A) $\\nabla f$ (B) $\\mathbf{u}$ 的分量 (C) $f$ 的二階導數 (D) 內積運算",
-      "options": null,
+      "title": "**Q12**: 若 $f(x, y)$ 在 $P$ 點可微，則 $D_{\\mathbf{u}}f$ 可以透過哪些量計算？\n    -",
+      "options": {
+        "A": "$\\nabla f$",
+        "B": "$\\mathbf{u}$ 的分量",
+        "C": "$f$ 的二階導數",
+        "D": "內積運算"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
-      "title": "關於等值面 $F(x, y, z) = C$，下列哪些敘述正確？\n    - (A) 梯度 $\\nabla F$ 與面上任何曲線的切線垂直\n    - (B) $\\nabla F$ 是切平面的法向量\n    - (C) 面上點的函數值皆相等\n    - (D) 梯度向量一定在等值面上",
-      "options": null,
+      "title": "**Q13**: 關於等值面 $F(x, y, z) = C$，下列哪些敘述正確？\n    -",
+      "options": {
+        "A": "梯度 $\\nabla F$ 與面上任何曲線的切線垂直\n    -",
+        "B": "$\\nabla F$ 是切平面的法向量\n    -",
+        "C": "面上點的函數值皆相等\n    -",
+        "D": "梯度向量一定在等值面上"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
-      "title": "哪些因素會影響方向導數 $D_{\\mathbf{u}}f$ 的數值？\n    - (A) 函數的偏導數 (B) 向量 $\\mathbf{u}$ 的方向 (C) 所在點的座標 (D) 向量 $\\mathbf{u}$ 的長度（若不限制為單位向量）",
-      "options": null,
+      "title": "**Q14**: 哪些因素會影響方向導數 $D_{\\mathbf{u}}f$ 的數值？\n    -",
+      "options": {
+        "A": "函數的偏導數",
+        "B": "向量 $\\mathbf{u}$ 的方向",
+        "C": "所在點的座標",
+        "D": "向量 $\\mathbf{u}$ 的長度（若不限制為單位向量）"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
-      "title": "函數 $f(x, y) = x^2 + y^2$ 在點 $(1, 1)$：\n    - (A) 梯度為 $\\langle 2, 2 \\rangle$ (B) 向外輻射 (C) 等值線為圓 (D) 沿 $\\langle -1, -1 \\rangle$ 方向減少最快",
-      "options": null,
+      "title": "**Q15**: 函數 $f(x, y) = x^2 + y^2$ 在點 $(1, 1)$：\n    -",
+      "options": {
+        "A": "梯度為 $\\langle 2, 2 \\rangle$",
+        "B": "向外輻射",
+        "C": "等值線為圓",
+        "D": "沿 $\\langle -1, -1 \\rangle$ 方向減少最快"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
-      "title": "梯度的連鎖律性質包括：\n    - (A) $\\nabla(fg) = f\\nabla g + g\\nabla f$\n    - (B) $\\nabla(f/g) = \\frac{g\\nabla f - f\\nabla g}{g^2}$\n    - (C) $\\nabla(u^n) = nu^{n-1}\\nabla u$\n    - (D) $\\nabla(f+g) = \\nabla f + \\nabla g$",
-      "options": null,
+      "title": "**Q16**: 梯度的連鎖律性質包括：\n    -",
+      "options": {
+        "A": "$\\nabla(fg) = f\\nabla g + g\\nabla f$\n    -",
+        "B": "$\\nabla(f/g) = \\frac{g\\nabla f - f\\nabla g}{g^2}$\n    -",
+        "C": "$\\nabla(u^n) = nu^{n-1}\\nabla u$\n    -",
+        "D": "$\\nabla(f+g) = \\nabla f + \\nabla g$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
-      "title": "關於切平面與法線：\n    - (A) 法線垂直於切平面 (B) 法向量平行於梯度 (C) 切平面方程式是線性的 (D) 所有曲面在每一點都有切平面",
-      "options": null,
+      "title": "**Q17**: 關於切平面與法線：\n    -",
+      "options": {
+        "A": "法線垂直於切平面",
+        "B": "法向量平行於梯度",
+        "C": "切平面方程式是線性的",
+        "D": "所有曲面在每一點都有切平面"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
-      "title": "若 $D_{\\mathbf{u}}f > 0$，則：\n    - (A) 函數在該方向增加 (B) $\\mathbf{u}$ 與 $\\nabla f$ 的夾角小於 90 度 (C) 該點是極大值點 (D) 梯度不為零",
-      "options": null,
+      "title": "**Q18**: 若 $D_{\\mathbf{u}}f > 0$，則：\n    -",
+      "options": {
+        "A": "函數在該方向增加",
+        "B": "$\\mathbf{u}$ 與 $\\nabla f$ 的夾角小於 90 度",
+        "C": "該點是極大值點",
+        "D": "梯度不為零"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
-      "title": "下列哪些函數的梯度場是常數向量場？\n    - (A) $f = x + y$ (B) $f = x^2 + y^2$ (C) $f = 3x - 2y + 5z$ (D) $f = \\sin x$",
-      "options": null,
+      "title": "**Q19**: 下列哪些函數的梯度場是常數向量場？\n    -",
+      "options": {
+        "A": "$f = x + y$",
+        "B": "$f = x^2 + y^2$",
+        "C": "$f = 3x - 2y + 5z$",
+        "D": "$f = \\sin x$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "在 3D 空間中，$D_{\\mathbf{u}}f$ 的計算涉及：\n    - (A) $f_x, f_y, f_z$ (B) $u_1, u_2, u_3$ (C) 加法與乘法 (D) 外積 (Cross Product)",
-      "options": null,
+      "title": "**Q20**: 在 3D 空間中，$D_{\\mathbf{u}}f$ 的計算涉及：\n    -",
+      "options": {
+        "A": "$f_x, f_y, f_z$",
+        "B": "$u_1, u_2, u_3$",
+        "C": "加法與乘法",
+        "D": "外積 (Cross Product)\n\n### 3. 填充題 (Fill-in-the-blank) - 10 題"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
-      "title": "若 $f(x, y) = e^{xy}$，則 $\\nabla f = $ __________。",
-      "options": null,
+      "title": "**Q21**: 若 $f(x, y) = e^{xy}$，則 $\\nabla f = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
-      "title": "向量 $\\mathbf{u} = \\langle \\cos \\theta, \\sin \\theta \\rangle$，則 $D_{\\mathbf{u}}f = f_x \\cos \\theta + $ __________。",
-      "options": null,
+      "title": "**Q23**: 向量 $\\mathbf{u} = \\langle \\cos \\theta, \\sin \\theta \\rangle$，則 $D_{\\mathbf{u}}f = f_x \\cos \\theta + $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
-      "title": "函數 $f$ 在點 $P$ 沿梯度相反方向的方向導數為 __________ (用 $|\\nabla f|$ 表示)。",
-      "options": null,
+      "title": "**Q23**: 函數 $f$ 在點 $P$ 沿梯度相反方向的方向導數為 __________ (用 $|\\nabla f|$ 表示)。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
-      "title": "曲面 $z = f(x, y)$ 可以看作三元函數 $F(x, y, z) = f(x, y) - z = 0$ 的 __________。",
-      "options": null,
+      "title": "**Q24**: 曲面 $z = f(x, y)$ 可以看作三元函數 $F(x, y, z) = f(x, y) - z = 0$ 的 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
-      "title": "若 $\\nabla f = \\langle 2, -1 \\rangle$ 且 $\\mathbf{u} = \\langle 0.6, 0.8 \\rangle$，則 $D_{\\mathbf{u}}f = $ __________。",
-      "options": null,
+      "title": "**Q25**: 若 $\\nabla f = \\langle 2, -1 \\rangle$ 且 $\\mathbf{u} = \\langle 0.6, 0.8 \\rangle$，則 $D_{\\mathbf{u}}f = $ __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
-      "title": "梯度向量 $\\nabla f$ 的幾何意義是：垂直於 __________ 線。",
-      "options": null,
+      "title": "**Q26**: 梯度向量 $\\nabla f$ 的幾何意義是：垂直於 __________ 線。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
-      "title": "若 $f(x, y, z) = x^2 + y^2 + z^2$，則在 $(1, 2, 3)$ 的梯度長度為 __________。",
-      "options": null,
+      "title": "**Q27**: 若 $f(x, y, z) = x^2 + y^2 + z^2$，則在 $(1, 2, 3)$ 的梯度長度為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
-      "title": "切平面的通用方程式為 $n_1(x-x_0) + n_2(y-y_0) + n_3(z-z_0) = 0$，其中 $\\langle n_1, n_2, n_3 \\rangle$ 為 __________。",
-      "options": null,
+      "title": "**Q28**: 切平面的通用方程式為 $n_1(x-x_0) + n_2(y-y_0) + n_3(z-z_0) = 0$，其中 $\\langle n_1, n_2, n_3 \\rangle$ 為 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
-      "title": "方向導數 $D_{\\mathbf{u}}f$ 達到最小值的方向是 __________。",
-      "options": null,
+      "title": "**Q29**: 方向導數 $D_{\\mathbf{u}}f$ 達到最小值的方向是 __________。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "梯度場中，積分曲線（流線）總是與等值線 __________。",
-      "options": null,
+      "title": "**Q30**: 梯度場中，積分曲線（流線）總是與等值線 __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP5.1 | KP5.2 | KP5.3 | KP5.4 | KP5.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 4, 7 | 6, 10 | 5, 9 | 2, 3 | 1, 8 |\n| Q11-Q20| 14 | 11, 16, 19 | 12, 18, 20 | 15 | 13, 17 |\n| Q21-Q30| 22 | 21 | 25 | 23, 27, 29 | 24, 26, 28, 30 |",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

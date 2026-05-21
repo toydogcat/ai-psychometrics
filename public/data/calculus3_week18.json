@@ -1,508 +1,510 @@
 {
-  "course": "calculus3",
-  "week": "week18",
-  "title": "第 18 週 - 期末總複習與題庫 (Final Exam Review & Item Bank)",
+  "course_id": "calculus3",
+  "week": 18,
+  "title": "微積分 下 第 18 週",
   "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "若 $f(x,y) = \\frac{xy}{x^2+y^2}$，在 $(0,0)$ 處的極限？ (A) $0$ (B) $1$ (C) 不存在 (D) $1/2$",
-      "options": null,
+      "title": "**答案：C**。沿不同路徑（如 $y=x$ 與 $y=0$）趨近的極限值不同。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "$\\nabla f$ 與 $f$ 的等位線（Level Curve）？ (A) 平行 (B) 垂直 (C) 夾角 45 度 (D) 無關",
-      "options": null,
+      "title": "**答案：B**。梯度向量在每一點都垂直於通過該點的等位線。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "二重積分中 $dA$ 在極座標下是？ (A) $dr d\\theta$ (B) $r dr d\\theta$ (C) $r^2 dr d\\theta$ (D) $d\\rho d\\theta$",
-      "options": null,
+      "title": "**答案：B**。極座標面積微元需乘上 Jacobian $r$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "若 $\\text{curl } \\mathbf{F} = \\mathbf{0}$，則 $\\oint_C \\mathbf{F} \\cdot d\\mathbf{r} =$？ (A) 面積 (B) 體積 (C) $0$ (D) $2\\pi$",
-      "options": null,
+      "title": "**答案：C**。無旋場在簡單連通區域內是保守場，閉路徑積分為 0。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "哪種座標系最適合計算球體一部分的體積？ (A) 直角 (B) 柱 (C) 球面 (D) 參數",
-      "options": null,
+      "title": "**答案：C**。球面座標最適合處理具球對稱性的區域。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "Lagrange 乘數法中，$\\lambda$ 的物理意義常與什麼相關？ (A) 速度 (B) 影子價格/靈敏度 (C) 功 (D) 密度",
-      "options": null,
+      "title": "**答案：B**。在經濟學中代表每單位約束變動對目標函數的影響。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "$\\text{div}(\\text{curl } \\mathbf{F})$ 恆等於？ (A) $0$ (B) $\\nabla^2 \\mathbf{F}$ (C) 1 (D) 無窮大",
-      "options": null,
+      "title": "**答案：A**。向量恆等式：旋度場的散度恆為零。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "Green 定理中的被積函數 $Q_x - P_y$ 代表？ (A) 散度 (B) 2D 旋度的 $z$ 分量 (C) 梯度 (D) 切向加速度",
-      "options": null,
+      "title": "**答案：B**。這是 2D 向量場的標量旋度。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "若 $\\mathbf{F} = \\langle 2, 3, 4 \\rangle$，其散度為？ (A) 9 (B) 0 (C) 24 (D) 向量",
-      "options": null,
+      "title": "**答案：B**。常數場的偏導數皆為 0，故散度為 0。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "曲面 $z = \\sqrt{x^2+y^2}$ 是什麼形狀？ (A) 球 (B) 柱 (C) 錐 (D) 拋物面",
-      "options": null,
+      "title": "**答案：C**。圓錐面的標準方程。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
-      "type": "single",
-      "title": "方向導數在梯度方向取？ (A) 最小值 (B) 最大值 (C) 0 (D) 平均值",
-      "options": null,
+      "type": "multiple",
+      "title": "**答案：B**。梯度方向是函數增加最快的方向。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
-      "type": "single",
-      "title": "面積分 $\\iint_S 1 dS$ 的結果是？ (A) 體積 (B) 曲面面積 (C) 通量 (D) 長度",
-      "options": null,
+      "type": "multiple",
+      "title": "**答案：B**。面積分中 $f=1$ 代表求曲面總面積。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
-      "type": "single",
-      "title": "哪一個定理將三重積分轉為面積分？ (A) Stokes (B) Green (C) 散度定理 (D) FTC",
-      "options": null,
+      "type": "multiple",
+      "title": "**答案：C**。散度定理聯繫體積積分與其邊界面的通量積分。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
-      "type": "single",
-      "title": "若 $P_y = Q_x$，則場是？ (A) 保守的 (B) 旋轉的 (C) 無源的 (D) 發散的",
-      "options": null,
+      "type": "multiple",
+      "title": "**答案：A**。這是 2D 保守場的充要條件。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
-      "type": "single",
-      "title": "重力場是哪種場？ (A) 旋轉場 (B) 保守場 (C) 非梯度場 (D) 無界場",
-      "options": null,
+      "type": "multiple",
+      "title": "**答案：B**。所有平方反比力場都是保守場。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
-      "type": "single",
-      "title": "三重積分在柱座標下 $dV = $？ (A) $r dr d\\theta dz$ (B) $\\rho^2 \\sin\\phi d\\rho d\\phi d\\theta$ (C) $dx dy dz$ (D) $r dz dr d\\theta$",
-      "options": null,
+      "type": "multiple",
+      "title": "**答案：A**。柱座標體積微元。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
-      "type": "single",
-      "title": "$\\oint_C x dy$ 的幾何意義是？ (A) 長度 (B) 面積 (C) 功 (D) 流量",
-      "options": null,
+      "type": "multiple",
+      "title": "**答案：B**。由 Green 定理，此線積分等於 $\\iint 1 dA = \\text{Area}$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
-      "type": "single",
-      "title": "莫比烏斯帶具有幾個面？ (A) 1 (B) 2 (C) 0 (D) 無數個",
-      "options": null,
+      "type": "multiple",
+      "title": "**答案：A**。莫比烏斯帶是非定向曲面，只有一個面。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
-      "type": "single",
-      "title": "若 $f$ 滿足 $\\Delta f = 0$，則稱其為？ (A) 調和函數 (B) 解析函數 (C) 奇異函數 (D) 保守函數",
-      "options": null,
+      "type": "multiple",
+      "title": "**答案：A**。滿足拉普拉斯方程的函數定義。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
-      "type": "single",
-      "title": "斯托克斯定理（Stokes' Theorem）的核心是？ (A) 散度 (B) 旋度 (C) 梯度 (D) 全微分",
-      "options": null,
+      "type": "multiple",
+      "title": "**答案：B**。斯托克斯定理的核心是旋度。\n\n---\n\n## 二、 多選題 (Multiple Choice)",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
-      "type": "multiple",
-      "title": "哪些場是無旋場？ (A) $\\langle x, y, z \\rangle$ (B) $\\langle y, x, 0 \\rangle$ (C) $\\langle -y, x, 0 \\rangle$ (D) $\\langle 1, 2, 3 \\rangle$",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, D**。計算 $\\text{curl } \\mathbf{F}$，C 的旋度不為 0。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
-      "type": "multiple",
-      "title": "多重積分可以用來求： (A) 面積 (B) 體積 (C) 質量 (D) 質心",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, C, D**。多重積分在幾何與物理中有廣泛應用。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
-      "type": "multiple",
-      "title": "關於梯度的敘述，正確的有： (A) 指向增長最快方向 (B) 大小等於方向導數的最大值 (C) 垂直於等位面 (D) 是一個標量",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, C**。梯度是一個向量，不是標量。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
-      "type": "multiple",
-      "title": "散度定理的條件包括： (A) 封閉曲面 (B) 區域有洞 (C) 場具連續偏導 (D) 法向量向外",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, C, D**。區域不必有洞（通常要求簡單連通更佳，但定理本身適用於任何封閉區域）。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
-      "type": "multiple",
-      "title": "下列哪些是向量恆等式？ (A) $\\nabla \\times (\\nabla f) = 0$ (B) $\\nabla \\cdot (\\nabla \\times \\mathbf{F}) = 0$ (C) $\\nabla \\cdot (\\nabla f) = \\nabla^2 f$ (D) $\\nabla \\times \\mathbf{F} = \\mathbf{F} \\times \\nabla$",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, C**。算子運算順序不可隨意交換。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
-      "type": "multiple",
-      "title": "哪些座標變換的 Jacobian $|J|$ 正確？ (A) 極座標 $r$ (B) 球面座標 $\\rho^2 \\sin\\phi$ (C) 柱座標 $r$ (D) 線性變換 $\\text{det}(A)$",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, C, D**。這些是各類座標變換的核心縮放因子。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
-      "type": "multiple",
-      "title": "關於線積分，哪些正確？ (A) $\\int_C \\mathbf{F} \\cdot d\\mathbf{r}$ 代表功 (B) $\\int_C f ds$ 與方向無關 (C) 保守場的閉路徑積分為 0 (D) 單位是牛頓",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, C**。功的單位是焦耳。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
-      "type": "multiple",
-      "title": "哪些函數在 $(0,0)$ 連續？ (A) $x+y$ (B) $x^2+y^2$ (C) $xy/(x^2+y^2)$ (D) $\\sin(x^2+y^2)$",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, D**。C 的極限不存在，故不連續。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
-      "type": "multiple",
-      "title": "曲面的表示法有： (A) 參數式 $\\mathbf{r}(u,v)$ (B) 顯函數 $z=f(x,y)$ (C) 隱函數 $F(x,y,z)=0$ (D) 極座標 $r = \\theta$",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, C**。D 是曲線的極座標表示。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
-      "type": "multiple",
-      "title": "積分定理的共同點： (A) 降維 (B) 邊界與內部的聯繫 (C) 必須是線性場 (D) 與物理守恆律相關",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, D**。這些是所有向量積分定理（廣義 Stokes）的數學哲學。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q31",
-      "type": "multiple",
-      "title": "哪些場是無散場？ (A) 剛體旋轉流場 (B) 磁場 (C) 均勻流場 (D) 點電荷電場（原點外）",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, C, D**。這些場在特定區域（或全空間）的散度均為 0。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q32",
-      "type": "multiple",
-      "title": "拉格朗日乘數法可用於： (A) 約束極值 (B) 求切平面 (C) 經濟學最優化 (D) 無約束極值",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, C**。專門處理帶約束的極值問題。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q33",
-      "type": "multiple",
-      "title": "關於二階偏導數 $f_{xy}$ 與 $f_{yx}$： (A) 通常相等 (B) 若函數連續則相等 (C) 總是不相等 (D) 稱為混合偏導",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, D**。Clairaut 定理保證了二階混合偏導的對稱性。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q34",
-      "type": "multiple",
-      "title": "面積分的應用包括： (A) 通量 (B) 殼層質量 (C) 表面壓力 (D) 曲線長度",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, C**。D 應使用線積分。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q35",
-      "type": "multiple",
-      "title": "向量場的視覺化工具包括： (A) 向量箭頭圖 (B) 流線 (C) 等位面 (D) 散度雲圖",
-      "options": null,
+      "type": "fill",
+      "title": "**答案：A, B, D**。等位面是純量場的工具，向量場主要看向量大小與方向。\n\n---\n\n## 三、 填充題 (Fill-in-the-blank)",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q36",
-      "type": "multiple",
-      "title": "若 $\\mathbf{F} = \\nabla f$，則 $\\int_C \\mathbf{F} \\cdot d\\mathbf{r} = f(B) - \\underline{\\quad\\quad}$。",
-      "options": null,
+      "type": "fill",
+      "title": "**$f",
+      "options": {
+        "A": "$**。線積分基本定理。"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q37",
-      "type": "multiple",
-      "title": "半徑為 $a$ 的球體積為 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "type": "fill",
+      "title": "**$4\\pi a^3/3$**。體積公式。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q38",
-      "type": "multiple",
-      "title": "$\\text{div } \\langle x^2, y^2, z^2 \\rangle$ 在 $(1,1,1)$ 的值為 $\\underline{\\quad\\quad}$。",
-      "options": null,
-      "answer": "",
+      "type": "fill",
+      "title": "**6**。$2x+2y+2z = 2(1+1+1)=6$。",
+      "options": {},
+      "answer": "6",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q39",
-      "type": "multiple",
-      "title": "二維 Green 定理中，$Q_x - P_y$ 被稱為區域 $D$ 上的 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "type": "fill",
+      "title": "**標量旋度 (Scalar Curl)**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q40",
-      "type": "multiple",
-      "title": "球面座標中 $\\phi$ 的取值範圍是 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "type": "fill",
+      "title": "**$[0, \\pi]$**。球面座標約定。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q41",
       "type": "fill",
-      "title": "若 $\\mathbf{F} = \\langle -y, x \\rangle$，則沿單位圓逆時針旋轉一圈的功為 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**$2\\pi$**。$\\oint -y dx + x dy = \\iint 2 dA = 2\\pi$。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q42",
       "type": "fill",
-      "title": "曲面 $z = x^2+y^2$ 在點 $(1,1,2)$ 的法向量可取為 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**$\\langle -2, -2, 1 \\rangle$**。由 $\\nabla(x^2+y^2-z) = \\langle 2x, 2y, -1 \\rangle$ 取反向。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q43",
       "type": "fill",
-      "title": "雅可比行列式的符號為 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**$|J|$ 或 $\\frac{\\partial(x,y)}{\\partial(u,v)}$**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q44",
       "type": "fill",
-      "title": "在保守場中，勢函數 $f$ 加上任何 $\\underline{\\quad\\quad}$ 仍為位能函數。",
-      "options": null,
+      "title": "**常數 (Constant)**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q45",
       "type": "fill",
-      "title": "散度定理中，閉曲面面積分等於內部 $\\underline{\\quad\\quad}$ 的三重積分。",
-      "options": null,
+      "title": "**散度 (Divergence)**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q46",
       "type": "fill",
-      "title": "$\\iint_D 1 dA$ 的結果等於區域 $D$ 的 $\\underline{\\quad\\quad}$。",
-      "options": null,
+      "title": "**面積 (Area)**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q47",
       "type": "fill",
-      "title": "Stokes 定理將 $\\underline{\\quad\\quad}$ 積分與 $\\underline{\\quad\\quad}$ 積分聯繫起來。",
-      "options": null,
+      "title": "**線 (Line)；面 (Surface)**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q48",
       "type": "fill",
-      "title": "$\\nabla f$ 的方向代表函數 $\\underline{\\quad\\quad}$ 最快的方向。",
-      "options": null,
+      "title": "**增長 (Increase)**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q49",
       "type": "fill",
-      "title": "若 $\\nabla^2 f = 0$，則 $\\iint_S \\nabla f \\cdot d\\mathbf{S} = \\underline{\\quad\\quad}$。",
-      "options": null,
-      "answer": "",
+      "title": "**0**。由散度定理，通量等於散度的體積分。",
+      "options": {},
+      "answer": "0",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q50",
       "type": "fill",
-      "title": "本學期微積分的主要核心是從「數」的微積分跨越到「$\\underline{\\quad\\quad}$」的微積分。",
-      "options": null,
+      "title": "**向量 (Vector)**。",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }

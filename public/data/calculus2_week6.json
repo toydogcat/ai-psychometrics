@@ -1,314 +1,358 @@
 {
-  "course": "calculus2",
-  "week": "week6",
-  "title": "第 6 週 - 積分應用 I：體積與弧長",
-  "knowledge_points": {
-    "KP6.1": "圓盤法適用於垂直於旋轉軸的實心截面。",
-    "KP6.2": "墊圈法處理空心旋轉體。",
-    "KP6.3": "剝殼法利用圓柱殼層，通常用於繞 $y$-軸旋轉。",
-    "KP6.4": "弧長公式涉及導數的平方與開方。",
-    "KP6.5": "函數平均值是積分值除以區間長度。"
-  },
+  "course_id": "calculus2",
+  "week": 6,
+  "title": "微積分 中 第 6 週",
+  "knowledge_points": {},
   "questions": [
     {
       "id": "Q1",
       "type": "single",
-      "title": "圓盤法的積分核 (Integrand) 中通常包含： (A) $f(x)$ (B) $f(x)^2$ (C) $x f(x)$ (D) $\\sqrt{1+f'(x)^2}$",
-      "options": null,
+      "title": "圓盤法的積分核 (Integrand) 中通常包含：",
+      "options": {
+        "A": "$f(x)$",
+        "B": "$f(x)^2$",
+        "C": "$x f(x)$",
+        "D": "$\\sqrt{1+f'(x)^2}$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q2",
       "type": "single",
-      "title": "繞 $y$-軸旋轉時，若使用剝殼法，積分變數通常是： (A) $x$ (B) $y$ (C) $z$ (D) $\\theta$",
-      "options": null,
+      "title": "繞 $y$-軸旋轉時，若使用剝殼法，積分變數通常是：",
+      "options": {
+        "A": "$x$",
+        "B": "$y$",
+        "C": "$z$",
+        "D": "$\\theta$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q3",
       "type": "single",
-      "title": "弧長公式中的 $\\sqrt{1+[f'(x)]^2}$ 必須滿足： (A) $f(x)>0$ (B) $f'(x)$ 連續 (C) $f''(x)>0$ (D) $f(x)$ 為多項式",
-      "options": null,
+      "title": "弧長公式中的 $\\sqrt{1+[f'(x)]^2}$ 必須滿足：",
+      "options": {
+        "A": "$f(x)>0$",
+        "B": "$f'(x)$ 連續",
+        "C": "$f''(x)>0$",
+        "D": "$f(x)$ 為多項式"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q4",
       "type": "single",
-      "title": "函數 $f(x)=c$（常數）在 $[a, b]$ 上的平均值為： (A) $c(b-a)$ (B) $c$ (C) $c/2$ (D) 0",
-      "options": null,
+      "title": "函數 $f(x)=c$（常數）在 $[a, b]$ 上的平均值為：",
+      "options": {
+        "A": "$c(b-a)$",
+        "B": "$c$",
+        "C": "$c/2$",
+        "D": "0"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q5",
       "type": "single",
-      "title": "墊圈法的外半徑 $R$ 與內半徑 $r$，其體積元為： (A) $\\pi(R-r)^2$ (B) $\\pi(R^2-r^2)$ (C) $2\\pi R r$ (D) $\\pi(R^2+r^2)$",
-      "options": null,
+      "title": "墊圈法的外半徑 $R$ 與內半徑 $r$，其體積元為：",
+      "options": {
+        "A": "$\\pi(R-r)^2$",
+        "B": "$\\pi(R^2-r^2)$",
+        "C": "$2\\pi R r$",
+        "D": "$\\pi(R^2+r^2)$"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q6",
       "type": "single",
-      "title": "若 $f(x) = \\sin x$，則在 $[0, \\pi]$ 的平均值為： (A) 0 (B) $1/\\pi$ (C) $2/\\pi$ (D) 1",
-      "options": null,
+      "title": "若 $f(x) = \\sin x$，則在 $[0, \\pi]$ 的平均值為：",
+      "options": {
+        "A": "0",
+        "B": "$1/\\pi$",
+        "C": "$2/\\pi$",
+        "D": "1"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q7",
       "type": "single",
-      "title": "求 $x = y^2$ 繞 $y$-軸旋轉的體積（$0 \\le y \\le 1$），最簡便的方法是： (A) 圓盤法 (B) 剝殼法 (C) 弧長法 (D) 均值法",
-      "options": null,
+      "title": "求 $x = y^2$ 繞 $y$-軸旋轉的體積（$0 \\le y \\le 1$），最簡便的方法是：",
+      "options": {
+        "A": "圓盤法",
+        "B": "剝殼法",
+        "C": "弧長法",
+        "D": "均值法"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q8",
       "type": "single",
-      "title": "剝殼法公式 $2\\pi \\int x f(x) dx$ 中，$2\\pi x$ 代表： (A) 殼的面積 (B) 殼的圓周長 (C) 殼的厚度 (D) 殼的高度",
-      "options": null,
+      "title": "剝殼法公式 $2\\pi \\int x f(x) dx$ 中，$2\\pi x$ 代表：",
+      "options": {
+        "A": "殼的面積",
+        "B": "殼的圓周長",
+        "C": "殼的厚度",
+        "D": "殼的高度"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q9",
       "type": "single",
-      "title": "若積分所得體積為負值，通常是因為： (A) 函數在 $x$-軸下方 (B) 設定了錯誤的上下限或半徑 (C) 旋轉軸在區域左側 (D) 這是正常的",
-      "options": null,
+      "title": "若積分所得體積為負值，通常是因為：",
+      "options": {
+        "A": "函數在 $x$-軸下方",
+        "B": "設定了錯誤的上下限或半徑",
+        "C": "旋轉軸在區域左側",
+        "D": "這是正常的"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q10",
       "type": "single",
-      "title": "$\\int_1^3 \\sqrt{1+0} dx$ 代表的幾何意義是： (A) 圓面積 (B) 拋物線弧長 (C) 水平線段長度 (D) 單位圓體積",
-      "options": null,
+      "title": "$\\int_1^3 \\sqrt{1+0} dx$ 代表的幾何意義是：",
+      "options": {
+        "A": "圓面積",
+        "B": "拋物線弧長",
+        "C": "水平線段長度",
+        "D": "單位圓體積\n\n### 2. 填充題 (11-20)"
+      },
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q11",
       "type": "multiple",
       "title": "$y = x^3$ 在 $[0, 1]$ 繞 $x$-軸旋轉，圓盤法體積式為 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q12",
       "type": "multiple",
       "title": "剝殼法中，繞直線 $x = -1$ 旋轉，半徑應改為 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q13",
       "type": "multiple",
       "title": "$y = x^2$ 在 $[0, 2]$ 的平均值為 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q14",
       "type": "multiple",
       "title": "$y = \\ln(\\cos x)$ 在 $[0, \\pi/4]$ 的弧長被稱為 \\_\\_\\_\\_\\_\\_（需填入具體數值積分式）。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q15",
       "type": "multiple",
       "title": "若 $f(c) = f_{avg}$，則點 $c$ 在均值定理中保證 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q16",
       "type": "multiple",
       "title": "圓盤法中，若繞 $y=2$ 旋轉，區域在 $y=2$ 下方，則半徑為 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q17",
       "type": "multiple",
       "title": "弧長公式 $ds = \\sqrt{dx^2 + dy^2}$ 的代數變形為 $ds = \\sqrt{1+(dx/dy)^2} dy$。這適用於 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q18",
       "type": "multiple",
       "title": "單位圓 $x^2 + y^2 = 1$ 上半部的弧長精確值為 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q19",
       "type": "multiple",
       "title": "$y = e^x$ 繞 $x$-軸旋轉在 $[0, 1]$ 的體積為 \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q20",
       "type": "multiple",
-      "title": "計算體積時，若截面為正方形且邊長為 $s(x)$，則體積 $V = $ \\_\\_\\_\\_\\_\\_。",
-      "options": null,
+      "title": "計算體積時，若截面為正方形且邊長為 $s(x)$，則體積 $V = $ \\_\\_\\_\\_\\_\\_。\n\n### 3. 計算與證明題 (21-30)",
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q21",
       "type": "fill",
       "title": "證明半徑為 $r$ 的球體體積為 $\\frac{4}{3}\\pi r^3$（利用圓盤法）。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q22",
       "type": "fill",
       "title": "求 $y = x$ 與 $y = \\sqrt{x}$ 圍成區域繞 $y$-軸旋轉之體積（利用剝殼法）。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q23",
       "type": "fill",
       "title": "求 $y = \\frac{1}{4}x^2 - \\frac{1}{2}\\ln x$ 在 $[1, 2]$ 的弧長。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q24",
       "type": "fill",
       "title": "一水槽橫截面由 $y = x^2$ 給出，深 4 公尺。若水槽長 10 公尺，求盛滿水時的總體積。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q25",
       "type": "fill",
       "title": "證明若 $f$ 是偶函數，則其在 $[-a, a]$ 的平均值等於其在 $[0, a]$ 的平均值。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q26",
       "type": "fill",
       "title": "求 $y = \\cos x$ 在 $[0, \\pi/2]$ 的平均值。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q27",
       "type": "fill",
       "title": "區域 $0 \\le x \\le \\pi, 0 \\le y \\le \\sin x$ 繞 $y$-軸旋轉，求體積。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q28",
       "type": "fill",
       "title": "利用積分求直線 $y = mx + b$ 在 $[x_1, x_2]$ 的弧長，驗證其符合距離公式。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q29",
       "type": "fill",
       "title": "求由 $x=y^2$ 與 $x=1$ 圍成區域繞 $x=1$ 旋轉的體積。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
       "title": "設 $f$ 在 $[a, b]$ 上連續且 $\\int_a^b f(x) dx = 0$，證明在 $(a, b)$ 內至少存在一點 $c$ 使得 $f(c)=0$。",
-      "options": null,
+      "options": {},
       "answer": "",
       "kp": "",
-      "q_vector": [],
-      "explanation": ""
+      "explanation": "",
+      "q_vector": []
     }
   ]
 }
