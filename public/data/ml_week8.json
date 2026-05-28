@@ -1,644 +1,491 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 8,
-  "title": "機器學習第 8 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP8.1": "概念基礎",
-    "KP8.2": "數學原理",
-    "KP8.3": "Python 實作",
-    "KP8.4": "模型評估",
-    "KP8.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W8-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP8.2",
-      "title": "這是第 8 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.8.2"
+      ],
+      "answer": "B",
+      "title": "KNN 算法中，若 $K=1$，模型最容易出現什麼問題？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "欠擬合",
+        "B": "過擬合",
+        "C": "計算太慢",
+        "D": "偏差太大"
+      }
     },
     {
-      "id": "ML-W8-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP8.3",
-      "title": "這是第 8 週的第 2 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.8.1"
+      ],
+      "answer": "C",
+      "title": "下列哪種距離度量方式在二維平面上代表「兩點間的最短直線距離」？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "曼哈頓距離",
+        "B": "歐氏距離",
+        "C": "漢明距離",
+        "D": "餘弦相似度"
+      }
     },
     {
-      "id": "ML-W8-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP8.4",
-      "title": "這是第 8 週的第 3 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.8.3"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "SVM 中決定分類超平面的樣本點被稱為？",
+      "options": {
+        "A": "質心",
+        "B": "支援向量",
+        "C": "離群值",
+        "D": "特徵向量"
+      }
     },
     {
-      "id": "ML-W8-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP8.5",
-      "title": "這是第 8 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.8.3"
+      ],
+      "answer": "D",
+      "title": "SVM 的核心目標是使什麼最大化？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "準確率",
+        "B": "分類間隔 (Margin)",
+        "C": "權重總和",
+        "D": "樣本數量"
+      }
     },
     {
-      "id": "ML-W8-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP8.1",
-      "title": "這是第 8 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.8.4"
+      ],
+      "answer": "C",
+      "title": "哪種核函數常用於將低維線性不可分的數據映射到無窮維空間？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "線性核",
+        "B": "多項式核",
+        "C": "高斯核 (RBF)",
+        "D": "Sigmoid 核"
+      }
     },
     {
-      "id": "ML-W8-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP8.2",
-      "title": "這是第 8 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.8.2"
+      ],
+      "answer": "D",
+      "title": "在 KNN 預測中，如果 $K$ 值增加，決策邊界會趨向於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "更平滑",
+        "B": "更抖動",
+        "C": "更複雜",
+        "D": "不變"
+      }
     },
     {
-      "id": "ML-W8-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP8.3",
-      "title": "這是第 8 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.8.5"
+      ],
+      "answer": "B",
+      "title": "SVM 參數 $C$ 設置得非常大，代表？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "高度容忍錯分點",
+        "B": "幾乎不容忍錯分點，追求分類嚴謹",
+        "C": "忽略支援向量",
+        "D": "模型變為 KNN"
+      }
     },
     {
-      "id": "ML-W8-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP8.4",
-      "title": "這是第 8 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.8.2"
+      ],
+      "answer": "C",
+      "title": "KNN 算法通常被稱為 \"Lazy Learner\" 是因為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "運算速度慢",
+        "B": "基本上不進行顯式的模型訓練",
+        "C": "精度低",
+        "D": "不需要輸入數據"
+      }
     },
     {
-      "id": "ML-W8-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP8.5",
-      "title": "這是第 8 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.8.1"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "維度災難 (Curse of Dimensionality) 對哪種算法影響最直接？",
+      "options": {
+        "A": "決策樹",
+        "B": "邏輯回歸",
+        "C": "KNN",
+        "D": "隨機森林"
+      }
     },
     {
-      "id": "ML-W8-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP8.1",
-      "title": "這是第 8 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.8.5"
+      ],
+      "answer": "D",
+      "title": "SVM 中的 Gamma 參數（對於 RBF 核）代表？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "分類權重",
+        "B": "單個樣本影響的範圍",
+        "C": "樹的深度",
+        "D": "學習率"
+      }
     },
     {
-      "id": "ML-W8-Q11",
-      "type": "single",
-      "kp": "KP8.2",
-      "title": "這是第 8 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.8.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些是 KNN 算法的特點？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "簡單易懂",
+        "B": "適合非線性分類",
+        "C": "預測時計算成本高",
+        "D": "訓練速度快"
+      }
     },
     {
-      "id": "ML-W8-Q12",
-      "type": "single",
-      "kp": "KP8.3",
-      "title": "這是第 8 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.8.3",
+        "KP 3.8.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "SVM 可以解決的問題包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "線性二分類",
+        "B": "非線性分類",
+        "C": "回歸任務 (SVR)",
+        "D": "異常檢測 (One-Class SVM)"
+      }
     },
     {
-      "id": "ML-W8-Q13",
-      "type": "single",
-      "kp": "KP8.4",
-      "title": "這是第 8 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.8.1"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於特徵縮放（如標準化），正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "對 KNN 是必須的",
+        "B": "對 SVM 是必須的",
+        "C": "對決策樹是必須的",
+        "D": "可以防止某些特徵主導距離計算"
+      }
     },
     {
-      "id": "ML-W8-Q14",
-      "type": "single",
-      "kp": "KP8.5",
-      "title": "這是第 8 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.8.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "導致 SVM 計算緩慢的因素包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "樣本量太大",
+        "B": "特徵維度太高",
+        "C": "核函數計算複雜",
+        "D": "正則化參數 $C$ 太大"
+      }
     },
     {
-      "id": "ML-W8-Q15",
-      "type": "single",
-      "kp": "KP8.1",
-      "title": "這是第 8 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.8.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些核函數常用於 SVM？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "Linear",
+        "B": "Poly",
+        "C": "RBF",
+        "D": "Logit"
+      }
     },
     {
-      "id": "ML-W8-Q16",
-      "type": "single",
-      "kp": "KP8.2",
-      "title": "這是第 8 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.8.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於支援向量，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "它們位於間隔邊界上",
+        "B": "它們是最難分類的樣本",
+        "C": "移除它們會改變決策邊界",
+        "D": "它們佔據了資料集的大多數"
+      }
     },
     {
-      "id": "ML-W8-Q17",
-      "type": "single",
-      "kp": "KP8.3",
-      "title": "這是第 8 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.8.3"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "處理資料不平衡時，SVM 的策略有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "設置不同類別的權重 (`class_weight`)",
+        "B": "過採樣",
+        "C": "下採樣",
+        "D": "忽略少數類"
+      }
     },
     {
-      "id": "ML-W8-Q18",
-      "type": "single",
-      "kp": "KP8.4",
-      "title": "這是第 8 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.8.2"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 KNN 的 $K$ 值選擇，敘述正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "常用奇數以避免投票平手",
+        "B": "常用交叉驗證來選擇",
+        "C": "$K$ 值應遠大於總樣本數",
+        "D": "$K=N$ 時模型會預測為樣本最多的類別"
+      }
     },
     {
-      "id": "ML-W8-Q19",
-      "type": "single",
-      "kp": "KP8.5",
-      "title": "這是第 8 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.8.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "SVM 的軟間隔 (Soft Margin) 優點？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "提高模型的泛化能力",
+        "B": "防止過擬合",
+        "C": "能夠處理包含雜訊的資料",
+        "D": "減少計算時間"
+      }
     },
     {
-      "id": "ML-W8-Q20",
-      "type": "single",
-      "kp": "KP8.1",
-      "title": "這是第 8 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.8.3",
+        "KP 3.8.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些場景適合使用 SVM？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "文本分類",
+        "B": "生物資訊學",
+        "C": "影像識別",
+        "D": "大規模即時推薦（效能挑戰大）"
+      }
     },
     {
-      "id": "ML-W8-Q21",
-      "type": "single",
-      "kp": "KP8.2",
-      "title": "這是第 8 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.8.2"
+      ],
+      "answer": [
+        "KNN"
+      ],
+      "title": "KNN 的全稱是 __________ Nearest Neighbors。"
     },
     {
-      "id": "ML-W8-Q22",
-      "type": "single",
-      "kp": "KP8.3",
-      "title": "這是第 8 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.8.3"
+      ],
+      "answer": [
+        "K"
+      ],
+      "title": "SVM 的核心概念是 __________ 間隔最大化。"
     },
     {
-      "id": "ML-W8-Q23",
-      "type": "single",
-      "kp": "KP8.4",
-      "title": "這是第 8 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.8.1"
+      ],
+      "answer": [
+        "距離"
+      ],
+      "title": "歐氏距離計算的是空間中兩點之間的 __________ 距離。"
     },
     {
-      "id": "ML-W8-Q24",
-      "type": "single",
-      "kp": "KP8.5",
-      "title": "這是第 8 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.8.4"
+      ],
+      "answer": [
+        "歐氏距離"
+      ],
+      "title": "SVM 處理非線性數據的關鍵技術是 __________ 技巧。"
     },
     {
-      "id": "ML-W8-Q25",
-      "type": "single",
-      "kp": "KP8.1",
-      "title": "這是第 8 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.8.5"
+      ],
+      "answer": [
+        "懶惰學習"
+      ],
+      "title": "在 sklearn 的 `SVC` 中，控制容錯程度的參數是 __________。"
     },
     {
-      "id": "ML-W8-Q26",
-      "type": "single",
-      "kp": "KP8.2",
-      "title": "這是第 8 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.8.2"
+      ],
+      "answer": [
+        "KNeighborsClassifier"
+      ],
+      "title": "當 $K$ 等於樣本總數時，KNN 的預測結果始終是 __________。"
     },
     {
-      "id": "ML-W8-Q27",
-      "type": "single",
-      "kp": "KP8.3",
-      "title": "這是第 8 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.8.3"
+      ],
+      "answer": [
+        "多數決"
+      ],
+      "title": "SVM 尋找的分割線（或平面）在數學上稱為 __________。"
     },
     {
-      "id": "ML-W8-Q28",
-      "type": "single",
-      "kp": "KP8.4",
-      "title": "這是第 8 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.8.5"
+      ],
+      "answer": [
+        "特徵縮放"
+      ],
+      "title": "對於 RBF 核，參數 __________ 越大，單個樣本的影響範圍越小。"
     },
     {
-      "id": "ML-W8-Q29",
-      "type": "single",
-      "kp": "KP8.5",
-      "title": "這是第 8 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.8.1",
+        "KP 3.8.2"
+      ],
+      "answer": [
+        "交叉驗證"
+      ],
+      "title": "KNN 在預測時需要計算待測點與訓練集所有點的 __________。"
     },
     {
-      "id": "ML-W8-Q30",
-      "type": "single",
-      "kp": "KP8.1",
-      "title": "這是第 8 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.8.1"
+      ],
+      "answer": [
+        "維度災難"
+      ],
+      "title": "距離度量之前，必須對特徵進行 __________ 化處理。 ---"
     }
   ]
 }

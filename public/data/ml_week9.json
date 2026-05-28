@@ -1,644 +1,2047 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 9,
-  "title": "機器學習第 9 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP9.1": "概念基礎",
-    "KP9.2": "數學原理",
-    "KP9.3": "Python 實作",
-    "KP9.4": "模型評估",
-    "KP9.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W9-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP9.2",
-      "title": "這是第 9 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP3.9.1"
+      ],
+      "answer": "C",
+      "title": "機器學習中 $P, T, E$ 的 $T$ 代表？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "效能",
+        "B": "任務",
+        "C": "經驗",
+        "D": "測試"
+      }
     },
     {
-      "id": "ML-W9-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP9.3",
-      "title": "這是第 9 週的第 2 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP3.9.1"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "線性回歸的損失函數 MSE 全稱是？",
+      "options": {
+        "A": "平均絕對誤差",
+        "B": "均方誤差",
+        "C": "交叉熵",
+        "D": "合頁損失"
+      }
     },
     {
-      "id": "ML-W9-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP9.4",
-      "title": "這是第 9 週的第 3 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP3.9.1"
+      ],
+      "answer": "D",
+      "title": "哪種算法不具備顯式的訓練過程，被稱為 Lazy Learner？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "決策樹",
+        "B": "SVM",
+        "C": "KNN",
+        "D": "隨機森林"
+      }
     },
     {
-      "id": "ML-W9-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP9.5",
-      "title": "這是第 9 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP3.9.1"
+      ],
+      "answer": "B",
+      "title": "梯度下降中，若學習率太大會導致？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "收斂太慢",
+        "B": "損失函數震盪或發散",
+        "C": "模型欠擬合",
+        "D": "權重變為零"
+      }
     },
     {
-      "id": "ML-W9-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP9.1",
-      "title": "這是第 9 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP3.9.1"
+      ],
+      "answer": "C",
+      "title": "Sigmoid 函數將輸出映射到哪個區間？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "[-1, 1]",
+        "B": "[0, 1]",
+        "C": "(0, 1)",
+        "D": "無窮大"
+      }
     },
     {
-      "id": "ML-W9-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP9.2",
-      "title": "這是第 9 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP3.9.1"
+      ],
+      "answer": "B",
+      "title": "決策樹中衡量資訊混亂程度的指標是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "準確率",
+        "B": "熵 (Entropy)",
+        "C": "偏差",
+        "D": "學習率"
+      }
     },
     {
-      "id": "ML-W9-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP9.3",
-      "title": "這是第 9 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP3.9.1"
+      ],
+      "answer": "D",
+      "title": "隨機森林主要透過減少基學習器的什麼來提升？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "偏差",
+        "B": "方差",
+        "C": "雜訊",
+        "D": "深度"
+      }
     },
     {
-      "id": "ML-W9-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP9.4",
-      "title": "這是第 9 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP3.9.1"
+      ],
+      "answer": "C",
+      "title": "GBDT 每一輪迭代是在擬合什麼？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "原始標籤",
+        "B": "殘差（負梯度）",
+        "C": "權重",
+        "D": "隨機樣本"
+      }
     },
     {
-      "id": "ML-W9-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP9.5",
-      "title": "這是第 9 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP3.9.1"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "SVM 的核心思想是？",
+      "options": {
+        "A": "距離最近",
+        "B": "間隔最大化",
+        "C": "投票最優",
+        "D": "熵最小"
+      }
     },
     {
-      "id": "ML-W9-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP9.1",
-      "title": "這是第 9 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP3.9.1"
+      ],
+      "answer": "D",
+      "title": "對於高維稀疏資料，SVM 常用的核技巧是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "線性核",
+        "B": "高斯核",
+        "C": "多項式核",
+        "D": "隨機核"
+      }
     },
     {
-      "id": "ML-W9-Q11",
-      "type": "single",
-      "kp": "KP9.2",
-      "title": "這是第 9 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP3.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "機器學習歷史上「達特茅斯會議」發生在？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "1945",
+        "B": "1956",
+        "C": "1980",
+        "D": "2012"
+      }
     },
     {
-      "id": "ML-W9-Q12",
-      "type": "single",
-      "kp": "KP9.3",
-      "title": "這是第 9 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP3.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "預測明天的降雨量（mm）屬於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "分類",
+        "B": "回歸",
+        "C": "聚類",
+        "D": "降維"
+      }
     },
     {
-      "id": "ML-W9-Q13",
-      "type": "single",
-      "kp": "KP9.4",
-      "title": "這是第 9 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP3.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "線性回歸的正規方程解涉及矩陣的？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "轉置",
+        "B": "求逆",
+        "C": "特徵分解",
+        "D": "卷積"
+      }
     },
     {
-      "id": "ML-W9-Q14",
-      "type": "single",
-      "kp": "KP9.5",
-      "title": "這是第 9 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP3.9.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "隨機梯度下降 (SGD) 每次更新使用？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "全部樣本",
+        "B": "一個樣本",
+        "C": "一半樣本",
+        "D": "驗證集"
+      }
     },
     {
-      "id": "ML-W9-Q15",
-      "type": "single",
-      "kp": "KP9.1",
-      "title": "這是第 9 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP3.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "邏輯回歸的決策邊界是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "線性的",
+        "B": "圓形的",
+        "C": "隨機的",
+        "D": "非線性的"
+      }
     },
     {
-      "id": "ML-W9-Q16",
-      "type": "single",
-      "kp": "KP9.2",
-      "title": "這是第 9 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP3.9.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "資訊增益最大的特徵會被決策樹放在？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "葉節點",
+        "B": "根節點",
+        "C": "隨機位置",
+        "D": "最後面"
+      }
     },
     {
-      "id": "ML-W9-Q17",
-      "type": "single",
-      "kp": "KP9.3",
-      "title": "這是第 9 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP3.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "隨機森林中「自助抽樣」的比例約為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "50%",
+        "B": "63.2%",
+        "C": "100%",
+        "D": "36.8%"
+      }
     },
     {
-      "id": "ML-W9-Q18",
-      "type": "single",
-      "kp": "KP9.4",
-      "title": "這是第 9 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP3.9.2"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "AdaBoost 會對分類錯誤的樣本？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "降低權重",
+        "B": "提高權重",
+        "C": "刪除",
+        "D": "保持不變"
+      }
     },
     {
-      "id": "ML-W9-Q19",
-      "type": "single",
-      "kp": "KP9.5",
-      "title": "這是第 9 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP3.9.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "SVM 參數 $C$ 越小代表？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "懲罰越嚴",
+        "B": "容錯越高（間隔越寬）",
+        "C": "模型越複雜",
+        "D": "核函數越強"
+      }
     },
     {
-      "id": "ML-W9-Q20",
-      "type": "single",
-      "kp": "KP9.1",
-      "title": "這是第 9 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP3.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "KNN 中距離度量最常用的是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "曼哈頓",
+        "B": "歐氏距離",
+        "C": "漢明距離",
+        "D": "編輯距離"
+      }
     },
     {
-      "id": "ML-W9-Q21",
-      "type": "single",
-      "kp": "KP9.2",
-      "title": "這是第 9 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "邏輯回歸"
+      ],
+      "title": "過擬合的特徵是？ (A) 訓練集好，測試集好 (B) 訓練集差，測試集差 (C) 訓練集好，測試集差 (D) 訓練集差，測試集好"
     },
     {
-      "id": "ML-W9-Q22",
-      "type": "single",
-      "kp": "KP9.3",
-      "title": "這是第 9 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "決策樹"
+      ],
+      "title": "$R^2$ 分數的範圍通常在？ (A) [-1, 1] (B) [0, 1] (C) (0, 100) (D) 無限制"
     },
     {
-      "id": "ML-W9-Q23",
-      "type": "single",
-      "kp": "KP9.4",
-      "title": "這是第 9 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "隨機森林"
+      ],
+      "title": "梯度下降中參數更新公式是 $w = w - \\eta \\cdot$ ？ (A) $J$ (B) $\\nabla J$ (C) $x$ (D) $y$"
     },
     {
-      "id": "ML-W9-Q24",
-      "type": "single",
-      "kp": "KP9.5",
-      "title": "這是第 9 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "支持向量機"
+      ],
+      "title": "邏輯回歸的損失函數是？ (A) MSE (B) Log Loss (C) Hinge Loss (D) MAE"
     },
     {
-      "id": "ML-W9-Q25",
-      "type": "single",
-      "kp": "KP9.1",
-      "title": "這是第 9 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "正規化"
+      ],
+      "title": "決策樹的 CART 算法預設使用？ (A) 資訊增益 (B) 基尼不純度 (C) 方差減少量 (D) 準確率"
     },
     {
-      "id": "ML-W9-Q26",
-      "type": "single",
-      "kp": "KP9.2",
-      "title": "這是第 9 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "超參數"
+      ],
+      "title": "隨機森林中的樹是？ (A) 相互依賴的 (B) 獨立並行生成的 (C) 串行生成的 (D) 同一棵樹"
     },
     {
-      "id": "ML-W9-Q27",
-      "type": "single",
-      "kp": "KP9.3",
-      "title": "這是第 9 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "混淆矩陣"
+      ],
+      "title": "XGBoost 相比 GBDT 增加了？ (A) 正則項 (B) 更多樣本 (C) 更多特徵 (D) 隨機種子"
     },
     {
-      "id": "ML-W9-Q28",
-      "type": "single",
-      "kp": "KP9.4",
-      "title": "這是第 9 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "F1"
+      ],
+      "title": "SVM 中位於間隔邊界上的樣本稱為？ (A) 核心點 (B) 支援向量 (C) 邊界點 (D) 質心"
     },
     {
-      "id": "ML-W9-Q29",
-      "type": "single",
-      "kp": "KP9.5",
-      "title": "這是第 9 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "ROC"
+      ],
+      "title": "KNN 中 $K$ 值過小會導致？ (A) 過擬合 (B) 欠擬合 (C) 運算變快 (D) 偏差變大"
     },
     {
-      "id": "ML-W9-Q30",
-      "type": "single",
-      "kp": "KP9.1",
-      "title": "這是第 9 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "AUC"
+      ],
+      "title": "特徵縮放對哪種模型影響最小？ (A) KNN (B) SVM (C) 決策樹 (D) 邏輯回歸"
+    },
+    {
+      "id": "Q31",
+      "num": 31,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "非監督式學習與監督式學習的主要區別是？ (A) 算力需求 (B) 是否有標籤 (C) 代碼長度 (D) 數據來源"
+    },
+    {
+      "id": "Q32",
+      "num": 32,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "線性回歸預測值 $\\hat{y} = 10$，真實值 $y=12$，則殘差為？ (A) 2 (B) -2 (C) 4 (D) 1"
+    },
+    {
+      "id": "Q33",
+      "num": 33,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "梯度下降最快下降的方向是？ (A) 梯度方向 (B) 負梯度方向 (C) 水平方向 (D) 隨機方向"
+    },
+    {
+      "id": "Q34",
+      "num": 34,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "邏輯回歸輸出 0.5 代表？ (A) 100% 正類 (B) 100% 負類 (C) 正負類機率相等 (D) 報錯"
+    },
+    {
+      "id": "Q35",
+      "num": 35,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "剪枝 (Pruning) 是為了防止？ (A) 欠擬合 (B) 過擬合 (C) 計算太慢 (D) 資料遺失"
+    },
+    {
+      "id": "Q36",
+      "num": 36,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機森林中 `max_features` 預設通常是？ (A) 所有特徵 (B) 特徵數平方根 (C) 1 個 (D) 10 個"
+    },
+    {
+      "id": "Q37",
+      "num": 37,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Boosting 旨在降低？ (A) 方差 (B) 偏差 (C) 雜訊 (D) 維度"
+    },
+    {
+      "id": "Q38",
+      "num": 38,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "SVM 處理非線性問題使用？ (A) 梯度下降 (B) 核技巧 (C) 投票 (D) 隨機森林"
+    },
+    {
+      "id": "Q39",
+      "num": 39,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "KNN 預測時間複雜度與訓練樣本數 $N$ 的關係是？ (A) $O(1)$ (B) $O(\\log N)$ (C) $O(N)$ (D) $O(N^2)$"
+    },
+    {
+      "id": "Q40",
+      "num": 40,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Z-score 標準化後的資料均值為？ (A) 0 (B) 1 (C) 隨機 (D) 原資料均值"
+    },
+    {
+      "id": "Q41",
+      "num": 41,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "第一次 AI 寒冬約發生在？ (A) 1950s (B) 1970s (C) 1990s (D) 2010s"
+    },
+    {
+      "id": "Q42",
+      "num": 42,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "MSE 損失函數是 __________ 函數？ (A) 凹 (B) 凸 (C) 線性 (D) 階梯"
+    },
+    {
+      "id": "Q43",
+      "num": 43,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機梯度下降 (SGD) 的優點是？ (A) 適合大數據 (B) 路徑平滑 (C) 精度最高 (D) 不需學習率"
+    },
+    {
+      "id": "Q44",
+      "num": 44,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Softmax 用於？ (A) 二分類 (B) 多分類 (C) 回歸 (D) 降維"
+    },
+    {
+      "id": "Q45",
+      "num": 45,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "決策樹的葉節點代表？ (A) 特徵 (B) 判斷條件 (C) 最終類別或數值 (D) 根"
+    },
+    {
+      "id": "Q46",
+      "num": 46,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Bagging 的全稱是？ (A) Bootstrap Aggregating (B) Binary Aggregating (C) Basic Grouping (D) Boosted Grouping"
+    },
+    {
+      "id": "Q47",
+      "num": 47,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "XGBoost 使用的是第幾階導數？ (A) 一階 (B) 二階 (C) 三階 (D) 不使用"
+    },
+    {
+      "id": "Q48",
+      "num": 48,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RBF 核又稱為？ (A) 線性核 (B) 高斯核 (C) 多項式核 (D) 邏輯核"
+    },
+    {
+      "id": "Q49",
+      "num": 49,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "維度災難中，高維空間的點趨向於？ (A) 聚集在中心 (B) 分佈在邊緣 (C) 消失 (D) 變為線性"
+    },
+    {
+      "id": "Q50",
+      "num": 50,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "sklearn 模型訓練統一使用的方法是？ (A) `train()` (B) `fit()` (C) `execute()` (D) `run()`"
+    },
+    {
+      "id": "Q51",
+      "num": 51,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "監督式學習包含哪些任務？ (A) 分類 (B) 回歸 (C) 聚類 (D) 降維"
+    },
+    {
+      "id": "Q52",
+      "num": 52,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "線性回歸的基礎假設包括？ (A) 線性關係 (B) 獨立性 (C) 同質方差 (D) 標籤必須是整數"
+    },
+    {
+      "id": "Q53",
+      "num": 53,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "梯度下降的變體有？ (A) BGD (B) SGD (C) Mini-batch GD (D) OLS"
+    },
+    {
+      "id": "Q54",
+      "num": 54,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "邏輯回歸的特點包括？ (A) 輸出是機率 (B) 決策邊界線性 (C) 損失函數是 Log Loss (D) 只能處理二分類"
+    },
+    {
+      "id": "Q55",
+      "num": 55,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "決策樹的不純度指標有？ (A) Entropy (B) Gini (C) MSE (D) Accuracy"
+    },
+    {
+      "id": "Q56",
+      "num": 56,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "集成學習的兩大類別是？ (A) Bagging (B) Boosting (C) Stacking (D) Clustering"
+    },
+    {
+      "id": "Q57",
+      "num": 57,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機森林的隨機性體現在？ (A) 樣本隨機 (B) 特徵隨機 (C) 標籤隨機 (D) 參數隨機"
+    },
+    {
+      "id": "Q58",
+      "num": 58,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Boosting 框架包括？ (A) XGBoost (B) LightGBM (C) CatBoost (D) Random Forest"
+    },
+    {
+      "id": "Q59",
+      "num": 59,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "SVM 的核函數有？ (A) Linear (B) Poly (C) RBF (D) Sigmoid"
+    },
+    {
+      "id": "Q60",
+      "num": 60,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "KNN 的距離度量有？ (A) Euclidean (B) Manhattan (C) Minkowski (D) Cosine"
+    },
+    {
+      "id": "Q61",
+      "num": 61,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "機器學習核心三要素是？ (A) 任務 T (B) 經驗 E (C) 效能 P (D) 電腦 C"
+    },
+    {
+      "id": "Q62",
+      "num": 62,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "導致模型過擬合的原因有？ (A) 模型太複雜 (B) 數據太少 (C) 雜訊太多 (D) 正則化太強"
+    },
+    {
+      "id": "Q63",
+      "num": 63,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "學習率設置不當會導致？ (A) 無法收斂 (B) 收斂太慢 (C) 局部最優 (D) 內存溢出"
+    },
+    {
+      "id": "Q64",
+      "num": 64,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "正則化 L1 與 L2 的區別？ (A) L1 產生稀疏權重 (B) L2 防止權重過大 (C) L1 是絕對值和 (D) L2 是平方和"
+    },
+    {
+      "id": "Q65",
+      "num": 65,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "決策樹的優點有？ (A) 可解釋性強 (B) 不需特徵縮放 (C) 能處理非線性 (D) 不容易過擬合"
+    },
+    {
+      "id": "Q66",
+      "num": 66,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機森林的優點有？ (A) 準確率高 (B) 降低方差 (C) 能並行訓練 (D) 能給出特徵重要性"
+    },
+    {
+      "id": "Q67",
+      "num": 67,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Boosting 的特點有？ (A) 降低偏差 (B) 基學習器通常較弱 (C) 串行訓練 (D) 容易並行"
+    },
+    {
+      "id": "Q68",
+      "num": 68,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "SVM 軟間隔的優點？ (A) 提高泛化能力 (B) 處理雜訊 (C) 速度最快 (D) 不需核函數"
+    },
+    {
+      "id": "Q69",
+      "num": 69,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "解決維度災難的方法？ (A) 降維 (B) 特徵選擇 (C) 增加樣本 (D) 增加維度"
+    },
+    {
+      "id": "Q70",
+      "num": 70,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "數據預處理包含？ (A) 標準化 (B) 歸一化 (C) 缺失值處理 (D) 模型訓練"
+    },
+    {
+      "id": "Q71",
+      "num": 71,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "分類問題的評估指標有？ (A) Accuracy (B) Precision (C) Recall (D) F1-score"
+    },
+    {
+      "id": "Q72",
+      "num": 72,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "回歸問題的評估指標有？ (A) MSE (B) MAE (C) $R^2$ (D) AUC"
+    },
+    {
+      "id": "Q73",
+      "num": 73,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "邏輯回歸正則化參數有？ (A) `penalty` (B) `C` (C) `learning_rate` (D) `n_estimators`"
+    },
+    {
+      "id": "Q74",
+      "num": 74,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "決策樹的停止條件有？ (A) 達到最大深度 (B) 節點樣本數太少 (C) 不純度減少量太小 (D) 所有特徵用完"
+    },
+    {
+      "id": "Q75",
+      "num": 75,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機森林中 OOB 的作用？ (A) 驗證模型 (B) 代替測試集 (C) 特徵選擇 (D) 減少計算量"
+    },
+    {
+      "id": "Q76",
+      "num": 76,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GBDT 與 XGBoost 的區別？ (A) XGBoost 有正則項 (B) XGBoost 用二階導數 (C) XGBoost 支持並行 (D) GBDT 準確度更高"
+    },
+    {
+      "id": "Q77",
+      "num": 77,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "SVM 支援向量的特性？ (A) 決定超平面 (B) 位於邊界上 (C) 是少數樣本 (D) 是所有樣本"
+    },
+    {
+      "id": "Q78",
+      "num": 78,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "KNN 的缺點？ (A) 預測慢 (B) 內存佔用大 (C) 對縮放敏感 (D) 參數太少"
+    },
+    {
+      "id": "Q79",
+      "num": 79,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scikit-Learn 的核心模組有？ (A) `linear_model` (B) `ensemble` (C) `svm` (D) `os`"
+    },
+    {
+      "id": "Q80",
+      "num": 80,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "哪些模型是參數化模型？ (A) 線性回歸 (B) 邏輯回歸 (C) KNN (D) SVM (非參數化或半參數化)"
+    },
+    {
+      "id": "Q81",
+      "num": 81,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "引起 AI 寒冬的因素？ (A) 理論極限 (B) 算力不足 (C) 經費刪減 (D) 數據太多"
+    },
+    {
+      "id": "Q82",
+      "num": 82,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "正規方程失效的情況？ (A) 矩陣奇異 (B) 特徵高度相關 (C) 樣本數小於特徵數 (D) 數據已標準化"
+    },
+    {
+      "id": "Q83",
+      "num": 83,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "梯度下降的收斂判斷？ (A) 梯度為零 (B) 損失函數不變 (C) 達到最大迭代 (D) 準確率 100%"
+    },
+    {
+      "id": "Q84",
+      "num": 84,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "邏輯回歸多分類策略？ (A) OvR (B) OvO (C) Softmax (D) OLS"
+    },
+    {
+      "id": "Q85",
+      "num": 85,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "集成學習的優點？ (A) 精度高 (B) 魯棒性強 (C) 可解釋性好 (D) 計算簡單"
+    },
+    {
+      "id": "Q86",
+      "num": 86,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機森林 `max_features` 設置？ (A) `sqrt` (B) `log2` (C) `None` (D) `auto`"
+    },
+    {
+      "id": "Q87",
+      "num": 87,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "LightGBM 的優點？ (A) 速度快 (B) 內存低 (C) 精度高 (D) 容易實現"
+    },
+    {
+      "id": "Q88",
+      "num": 88,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "核函數的選擇標準？ (A) 資料分佈 (B) 特徵維度 (C) 運算資源 (D) 顏色"
+    },
+    {
+      "id": "Q89",
+      "num": 89,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "特徵工程的步驟？ (A) 清理 (B) 轉換 (C) 衍生 (D) 降維"
+    },
+    {
+      "id": "Q90",
+      "num": 90,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "防止過擬合的手段？ (A) 增加數據 (B) 簡化模型 (C) 正則化 (D) 增加特徵"
+    },
+    {
+      "id": "Q91",
+      "num": 91,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "偏差與方差的關係？ (A) 偏差高代表欠擬合 (B) 方差高代表過擬合 (C) 兩者通常此消彼長 (D) 兩者越小越好"
+    },
+    {
+      "id": "Q92",
+      "num": 92,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "決策樹的算法有？ (A) ID3 (B) C4.5 (C) CART (D) SVM"
+    },
+    {
+      "id": "Q93",
+      "num": 93,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機森林與 Bagging 的關係？ (A) RF 是 Bagging 的擴展 (B) RF 增加了特徵隨機 (C) 兩者完全一樣 (D) 兩者都降低方差"
+    },
+    {
+      "id": "Q94",
+      "num": 94,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Boosting 的基學習器可以是？ (A) 決策樹 (B) 神經網路 (C) 線性模型 (D) 聚類"
+    },
+    {
+      "id": "Q95",
+      "num": 95,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "SVM 在工業界的應用？ (A) 文字分類 (B) 垃圾郵件 (C) 醫學影像 (D) 排序"
+    },
+    {
+      "id": "Q96",
+      "num": 96,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "KNN 的 $K$ 值選擇？ (A) 小 $K$ 靈敏 (B) 大 $K$ 平滑 (C) 隨機選 (D) 交叉驗證選"
+    },
+    {
+      "id": "Q97",
+      "num": 97,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Z-score 與 Min-Max 的區別？ (A) Z-score 保留分佈 (B) Min-Max 固定區間 (C) Z-score 適合離群值 (D) 兩者一樣"
+    },
+    {
+      "id": "Q98",
+      "num": 98,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "機器學習工作流包含？ (A) 定義問題 (B) 獲取數據 (C) 訓練評估 (D) 模型部屬"
+    },
+    {
+      "id": "Q99",
+      "num": 99,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Python 機器學習常用的庫？ (A) Scikit-Learn (B) NumPy (C) Pandas (D) Matplotlib"
+    },
+    {
+      "id": "Q100",
+      "num": 100,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "機器學習與統計學的關係？ (A) 互有重疊 (B) 機器學習更重預測 (C) 統計學更重推斷 (D) 毫無關係"
+    },
+    {
+      "id": "Q101",
+      "num": 101,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "機器學習三要素中，$P$ 指的是 __________。"
+    },
+    {
+      "id": "Q102",
+      "num": 102,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "線性回歸中，$y = wx + b$ 的 $b$ 稱為 __________。"
+    },
+    {
+      "id": "Q103",
+      "num": 103,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "均方誤差的縮寫是 __________。"
+    },
+    {
+      "id": "Q104",
+      "num": 104,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "正規方程的求解涉及對 $X^T X$ 進行 __________ 運算。"
+    },
+    {
+      "id": "Q105",
+      "num": 105,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "梯度下降中，$\\eta$ 的名稱是 __________。"
+    },
+    {
+      "id": "Q106",
+      "num": 106,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "每步使用全部數據的梯度下降稱為 __________ 梯度下降。"
+    },
+    {
+      "id": "Q107",
+      "num": 107,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "邏輯回歸將實數映射到 (0,1) 的函數是 __________。"
+    },
+    {
+      "id": "Q108",
+      "num": 108,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "邏輯回歸的預設機率閾值是 __________。"
+    },
+    {
+      "id": "Q109",
+      "num": 109,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "決策樹中，包含所有樣本的頂層節點是 __________ 節點。"
+    },
+    {
+      "id": "Q110",
+      "num": 110,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "資訊熵越 __________，代表數據越混亂。"
+    },
+    {
+      "id": "Q111",
+      "num": 111,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "CART 算法構建的是 __________ 樹（分叉數量）。"
+    },
+    {
+      "id": "Q112",
+      "num": 112,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "集成學習中組合多個弱學習器得到 __________ 學習器。"
+    },
+    {
+      "id": "Q113",
+      "num": 113,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機森林中，樣本抽樣是有 __________ 的隨機抽樣。"
+    },
+    {
+      "id": "Q114",
+      "num": 114,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "未被抽樣的樣本稱為 __________ 樣本（英文縮寫）。"
+    },
+    {
+      "id": "Q115",
+      "num": 115,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AdaBoost 透過調整樣本 __________ 來學習。"
+    },
+    {
+      "id": "Q116",
+      "num": 116,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GBDT 是梯度 __________ 決策樹。"
+    },
+    {
+      "id": "Q117",
+      "num": 117,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "XGBoost 相比 GBDT 引入了二階 __________ 展開。"
+    },
+    {
+      "id": "Q118",
+      "num": 118,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "SVM 旨在尋找最大 __________ 超平面。"
+    },
+    {
+      "id": "Q119",
+      "num": 119,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "映射到高維空間而不需要顯示計算映射的技術是 __________ 技巧。"
+    },
+    {
+      "id": "Q120",
+      "num": 120,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "KNN 的預測邏輯是基於最近鄰居的 __________。"
+    },
+    {
+      "id": "Q121",
+      "num": 121,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "資料維度極高導致距離失效的問題稱為 __________ 災難。"
+    },
+    {
+      "id": "Q122",
+      "num": 122,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "將特徵縮放到均值為 0、標準差為 1 的操作是 __________ 化。"
+    },
+    {
+      "id": "Q123",
+      "num": 123,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "模型在訓練集表現好但在測試集表現差稱為 __________。"
+    },
+    {
+      "id": "Q124",
+      "num": 124,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "正則化 L2 懲罰的是參數的 __________ 和。"
+    },
+    {
+      "id": "Q125",
+      "num": 125,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "決策樹在分類時，葉節點輸出的是樣本最多的 __________。"
+    },
+    {
+      "id": "Q126",
+      "num": 126,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機森林中，樹與樹之間是 __________ 執行的。"
+    },
+    {
+      "id": "Q127",
+      "num": 127,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Boosting 模型中，後一棵樹會修正前一棵樹的 __________。"
+    },
+    {
+      "id": "Q128",
+      "num": 128,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "LightGBM 採用的分裂策略是 __________-wise。"
+    },
+    {
+      "id": "Q129",
+      "num": 129,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "SVM 中懲罰參數 $C$ 越小，間隔越 __________。"
+    },
+    {
+      "id": "Q130",
+      "num": 130,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "KNN 算法通常在 __________ 階段才進行計算。"
+    },
+    {
+      "id": "Q131",
+      "num": 131,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "圖靈測試的發明者是 __________。"
+    },
+    {
+      "id": "Q132",
+      "num": 132,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "多元線性回歸的權重向量 $w$ 的長度等於 __________ 數量（含偏差）。"
+    },
+    {
+      "id": "Q133",
+      "num": 133,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "梯度下降停止的條件通常是梯度接近於 __________。"
+    },
+    {
+      "id": "Q134",
+      "num": 134,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "邏輯回歸的損失函數也稱為 __________ 熵。"
+    },
+    {
+      "id": "Q135",
+      "num": 135,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "基尼不純度最小的值是 __________。"
+    },
+    {
+      "id": "Q136",
+      "num": 136,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機森林在回歸任務中輸出的是所有樹預測值的 __________。"
+    },
+    {
+      "id": "Q137",
+      "num": 137,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "集成學習中，Bagging 旨在降低 __________。"
+    },
+    {
+      "id": "Q138",
+      "num": 138,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "第一個提出感知器模型的人是 __________。"
+    },
+    {
+      "id": "Q139",
+      "num": 139,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "$R^2$ 等於 1 代表模型 __________ 擬合。"
+    },
+    {
+      "id": "Q140",
+      "num": 140,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "邏輯回歸常用於處理 __________ 分類問題。"
+    },
+    {
+      "id": "Q141",
+      "num": 141,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "決策樹的深度越深，越容易發生 __________。"
+    },
+    {
+      "id": "Q142",
+      "num": 142,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "在 Scikit-Learn 中，導入線性回歸的指令是 `from sklearn.linear_model import __________`。"
+    },
+    {
+      "id": "Q143",
+      "num": 143,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Z-score 標準化的公式是 $(x - \\mu) /$ __________。"
+    },
+    {
+      "id": "Q144",
+      "num": 144,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "如果資料線性不可分，線性 SVM 的損失函數會變 __________。"
+    },
+    {
+      "id": "Q145",
+      "num": 145,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "$K=1$ 的 KNN 決策邊界非常 __________。"
+    },
+    {
+      "id": "Q146",
+      "num": 146,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "學習率排程中，隨著時間推移通常應 __________ 學習率。"
+    },
+    {
+      "id": "Q147",
+      "num": 147,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "損失函數的幾何圖形若是「碗狀」，則它是 __________ 函數。"
+    },
+    {
+      "id": "Q148",
+      "num": 148,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Softmax 的輸出之和必須等於 __________。"
+    },
+    {
+      "id": "Q149",
+      "num": 149,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "預剪枝是在樹構建 __________ 進行的。"
+    },
+    {
+      "id": "Q150",
+      "num": 150,
+      "type": "fill",
+      "kps": [
+        "KP3.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "量化數據分析中，特徵縮放通常在 __________ 切分之後進行。 ---"
     }
   ]
 }

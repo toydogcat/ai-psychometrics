@@ -1,0 +1,495 @@
+{
+  "courseId": "python-office-quant",
+  "week": 7,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": "B",
+      "title": "下列哪種等待方式是 Selenium 官方推薦，能有效減少腳本報錯且不浪費多餘時間的？",
+      "options": {
+        "A": "`time.sleep(10)`",
+        "B": "隱式等待 `implicitly_wait`",
+        "C": "顯式等待 `WebDriverWait`",
+        "D": "不等待"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "C",
+      "title": "Selenium 中，切換到 ID 為 'login_frame' 的 iframe 應使用哪段代碼？",
+      "options": {
+        "A": "`driver.switch_to.frame('login_frame')`",
+        "B": "`driver.get_frame('login_frame')`",
+        "C": "`driver.find_element(By.ID, 'login_frame').click()`",
+        "D": "`driver.focus('login_frame')`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP7.1",
+        "KP7.2"
+      ],
+      "answer": "A",
+      "title": "使用 `find_element` 時，若找不到元素，Selenium 預設會拋出什麼異常？",
+      "options": {
+        "A": "`TimeoutException`",
+        "B": "`NoSuchElementException`",
+        "C": "`ElementNotVisibleException`",
+        "D": "`ConnectionError`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": "D",
+      "title": "下列哪個方法可以用來在輸入框中按下「回車鍵」？",
+      "options": {
+        "A": "`send_keys(Keys.ENTER)`",
+        "B": "`press_enter()`",
+        "C": "`click(Keys.RETURN)`",
+        "D": "`input('\\n')`"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": "C",
+      "title": "如何獲取當前頁面的網址？",
+      "options": {
+        "A": "`driver.url`",
+        "B": "`driver.current_url`",
+        "C": "`driver.get_url()`",
+        "D": "`driver.location`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": "D",
+      "title": "在 Selenium 中實現「無頭模式」需要在哪個對象中進行配置？",
+      "options": {
+        "A": "`DesiredCapabilities`",
+        "B": "`Options`",
+        "C": "`Service`",
+        "D": "`DriverConfig`"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": "B",
+      "title": "想要獲取標籤 `<div class=\"price\">100</div>` 中的數字 100，應訪問？",
+      "options": {
+        "A": "`elem.value`",
+        "B": "`elem.text`",
+        "C": "`elem.content`",
+        "D": "`elem.get_attribute('text')`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP7.1",
+        "KP7.3"
+      ],
+      "answer": "C",
+      "title": "`driver.back()` 的作用是？",
+      "options": {
+        "A": "關閉瀏覽器",
+        "B": "瀏覽器後退一步",
+        "C": "頁面刷新",
+        "D": "最小化視窗"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": "A",
+      "title": "下列定位方式中，哪一種最為強大且支援從下往上查找？",
+      "options": {
+        "A": "`By.ID`",
+        "B": "`By.CLASS_NAME`",
+        "C": "`By.XPATH`",
+        "D": "`By.TAG_NAME`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": "D",
+      "title": "`implicitly_wait(10)` 代表什麼意思？",
+      "options": {
+        "A": "每次操作前休眠 10 秒",
+        "B": "全局元素找尋的最長等待時間為 10 秒",
+        "C": "頁面加載必須在 10 秒內完成",
+        "D": "脚本執行總時長限制為 10 秒"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP7.1",
+        "KP7.2",
+        "KP7.3",
+        "KP7.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Selenium 可以用於哪些場景？",
+      "options": {
+        "A": "爬取單頁應用 (SPA) 數據",
+        "B": "自動化網頁功能測試",
+        "C": "模擬真實用戶滑鼠軌跡",
+        "D": "繞過所有圖形驗證碼"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 WebDriver，正確的有？",
+      "options": {
+        "A": "不同瀏覽器需要對應的驅動程序",
+        "B": "驅動程序版本需與瀏覽器版本匹配",
+        "C": "必須將驅動程序路徑加入環境變數或在代碼中指定",
+        "D": "一個 WebDriver 對象可以同時控制多個不同的瀏覽器窗口"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "下列哪些是 Selenium 支援的定位策略？",
+      "options": {
+        "A": "`By.ID`",
+        "B": "`By.XPATH`",
+        "C": "`By.CSS_SELECTOR`",
+        "D": "`By.PARTIAL_LINK_TEXT`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於顯式等待 (`WebDriverWait`)，正確的是？",
+      "options": {
+        "A": "可以針對特定元素設置等待條件",
+        "B": "條件滿足時會立即繼續執行",
+        "C": "支援「元素可見」、「元素可點擊」等多種條件",
+        "D": "必須與 `time.sleep` 配合使用"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "模擬用戶交互時，哪些操作是可行的？",
+      "options": {
+        "A": "雙擊 (Double Click)",
+        "B": "右鍵點擊 (Context Click)",
+        "C": "滑鼠懸停 (Hover)",
+        "D": "拖拽 (Drag and Drop)"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP7.1",
+        "KP7.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "下列哪些是 Selenium 中的窗口管理操作？",
+      "options": {
+        "A": "`driver.window_handles` 獲取所有窗口句柄",
+        "B": "`driver.switch_to.window()` 切換窗口",
+        "C": "`driver.close()` 關閉當前窗口",
+        "D": "`driver.quit()` 退出整個驅動並關閉所有窗口"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 Selenium 的優缺點，正確的是？",
+      "options": {
+        "A": "優點：能處理任何 JS 動態渲染內容",
+        "B": "優點：操作直觀，模擬真實",
+        "C": "缺點：運行速度比 Requests 慢很多",
+        "D": "缺點：極度節省資源"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些 `expected_conditions` (EC) 是常用的？",
+      "options": {
+        "A": "`presence_of_element_located`",
+        "B": "`visibility_of_element_located`",
+        "C": "`element_to_be_clickable`",
+        "D": "`title_is`"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "在 XPath 中，下列哪些語法是正確的？",
+      "options": {
+        "A": "`//div[@id='test']`",
+        "B": "`//a[contains(text(), '登入')]`",
+        "C": "`//input/parent::div`",
+        "D": "`/html/body/div[1]`"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP7.1",
+        "KP7.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "使用 Selenium 爬蟲時，被識別為機器人的常見特徵包括？",
+      "options": {
+        "A": "`window.navigator.webdriver` 屬性為 true",
+        "B": "操作速度過快且精確",
+        "C": "請求頭中缺少常規瀏覽器資訊",
+        "D": "固定不變的 IP 地址"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": [
+        "scrapy"
+      ],
+      "title": "Selenium 的核心作用是通過 __________ 來控制瀏覽器。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": [
+        "start_urls"
+      ],
+      "title": "在定位元素時，如果一個標籤有多個 Class，CSS Selector 中應使用「.」連接，例如 `.class1.________`。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": [
+        "parse"
+      ],
+      "title": "顯式等待中，用於指定條件的類別名稱縮寫通常是 __________ (Expected Conditions)。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": [
+        "yield"
+      ],
+      "title": "`driver.execute_script(\"window.scrollTo(0, ________)\")` 可用於滾動到頁面底部。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": [
+        "Item"
+      ],
+      "title": "獲取標籤屬性 `href` 的方法是 `elem.get_attribute('________')`。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": [
+        "Pipeline"
+      ],
+      "title": "如果要操作一個在彈出警告框 (Alert) 中的「確定」按鈕，應使用 `driver.switch_to.________.accept()`。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": [
+        "settings"
+      ],
+      "title": "定義 XPath 時，`//` 代表從 __________ 節點開始選擇。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP7.1",
+        "KP7.3"
+      ],
+      "answer": [
+        "USER_AGENT"
+      ],
+      "title": "要最大化瀏覽器窗口，應使用 `driver._________window()`。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": [
+        "response.xpath"
+      ],
+      "title": "Selenium 腳本執行完成後，必須調用 __________ 以關閉所有瀏覽器進程。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": [
+        "css"
+      ],
+      "title": "`By.LINK_TEXT` 定位方式僅適用於 __________ 標籤。 ---"
+    }
+  ]
+}

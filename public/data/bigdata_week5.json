@@ -1,0 +1,503 @@
+{
+  "courseId": "big-data",
+  "week": 5,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": "B",
+      "title": "隨機森林 (Random Forest) 主要透過集成多個決策樹來降低模型的？",
+      "options": {
+        "A": "偏差 (Bias)",
+        "B": "方差 (Variance)",
+        "C": "雜訊",
+        "D": "參數量"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP5.2"
+      ],
+      "answer": "C",
+      "title": "GBDT (梯度提升樹) 的核心思想是透過每一輪迭代來擬合損失函數的？",
+      "options": {
+        "A": "原始標籤",
+        "B": "均值",
+        "C": "負梯度",
+        "D": "隨機噪聲"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP5.2"
+      ],
+      "answer": "B",
+      "title": "XGBoost 相比傳統 GBDT，在損失函數中額外引入了什麼來防止模型過於複雜？",
+      "options": {
+        "A": "更多隱藏層",
+        "B": "正則化項 (Complexity Penalty)",
+        "C": "更多樣本",
+        "D": "激活函數"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP5.3"
+      ],
+      "answer": "B",
+      "title": "LightGBM 採用的哪種生長策略使其在處理數據時通常比 XGBoost 的 Level-wise 更快？",
+      "options": {
+        "A": "逐層生長",
+        "B": "按葉子節點生長 (Leaf-wise)",
+        "C": "隨機生長",
+        "D": "深度優先"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP5.3"
+      ],
+      "answer": "C",
+      "title": "下列哪一個框架在「不需要手動進行類別特徵處理」的情況下表現最為出色？",
+      "options": {
+        "A": "XGBoost",
+        "B": "LightGBM",
+        "C": "CatBoost",
+        "D": "Scikit-Learn"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": "A",
+      "title": "在 Stacking 流程中，第一層模型的預測結果通常被稱為？",
+      "options": {
+        "A": "OOF (Out-of-fold) 預測",
+        "B": "殘差",
+        "C": "權重",
+        "D": "虛假數據"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP5.1",
+        "KP5.4"
+      ],
+      "answer": "B",
+      "title": "為了使集成學習 (Ensemble) 效果最大化，參與融合的基模型之間應該？",
+      "options": {
+        "A": "高度相關",
+        "B": "低度相關且原理多樣化",
+        "C": "參數量一致",
+        "D": "使用相同的隨機種子"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP5.5"
+      ],
+      "answer": "B",
+      "title": "Optuna 這種超參數調優工具主要使用的進階搜尋策略是？",
+      "options": {
+        "A": "窮舉網格搜尋",
+        "B": "貝氏優化 (TPE)",
+        "C": "遺傳演算法",
+        "D": "梯度上升"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP5.2",
+        "KP5.5"
+      ],
+      "answer": "B",
+      "title": "在 Boosting 模型中，若調小了學習率 (learning_rate)，通常需要配合？",
+      "options": {
+        "A": "減小樹的深度",
+        "B": "增加樹的數量 (n_estimators)",
+        "C": "減少數據量",
+        "D": "增加懲罰項"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": "B",
+      "title": "Blending 與 Stacking 的主要技術區別在於 Blending 使用了？",
+      "options": {
+        "A": "交叉驗證",
+        "B": "獨立的留出集 (Hold-out set)",
+        "C": "更多模型",
+        "D": "深度學習"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP5.1",
+        "KP5.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列屬於 Boosting 演算法家族成員的有？",
+      "options": {
+        "A": "AdaBoost",
+        "B": "XGBoost",
+        "C": "LightGBM",
+        "D": "Random Forest"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP5.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "XGBoost 相較於傳統 GBDT 的技術改進包括？",
+      "options": {
+        "A": "二階泰勒展開",
+        "B": "損失函數包含正則化",
+        "C": "支援特徵並行處理",
+        "D": "自動填補缺失值"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP5.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "LightGBM 的核心加速技術包括？",
+      "options": {
+        "A": "GOSS (基於梯度的單邊採樣)",
+        "B": "EFB (互斥特徵綑綁)",
+        "C": "基於直方圖的算法",
+        "D": "深度卷積"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP5.1",
+        "KP5.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "為什麼模型融合 (Ensemble) 通常能提升效能？",
+      "options": {
+        "A": "減少單個模型的隨機誤差",
+        "B": "捕捉不同模型學到的不同特徵關係",
+        "C": "降低陷入局部最優解的風險",
+        "D": "一定能縮短推理時間"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "實施 Stacking 時必須注意哪些關鍵細節？",
+      "options": {
+        "A": "嚴格防止訓練集標籤滲漏到特徵中",
+        "B": "基模型預測結果的相關性不宜過高",
+        "C": "Meta-model 建議選擇較簡單的模型",
+        "D": "必須在 GPU 上運算"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP5.2",
+        "KP5.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "增加下列哪些參數數值通常會導致模型「過擬合」風險增加？",
+      "options": {
+        "A": "樹的深度 (max_depth)",
+        "B": "正則化係數 (lambda)",
+        "C": "學習率 (learning_rate)",
+        "D": "樹的數量 (n_estimators)"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP5.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "CatBoost 的獨特優勢在於？",
+      "options": {
+        "A": "卓越的類別型特徵處理能力",
+        "B": "內置防止過擬合的 Ordered Boosting",
+        "C": "支援對稱樹結構",
+        "D": "訓練速度在所有數據集都最快"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP5.1",
+        "KP5.3",
+        "KP5.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "評估一個集成模型好壞的維度應包括？",
+      "options": {
+        "A": "驗證集上的精確度指標",
+        "B": "推理耗時與內存佔用",
+        "C": "特徵重要性的穩定性",
+        "D": "代碼的行數"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP5.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "貝氏優化相比隨機搜索 (Random Search) 的優點？",
+      "options": {
+        "A": "能利用歷史試驗資訊引導搜尋",
+        "B": "適合評估代價高昂的函數",
+        "C": "搜尋效率通常更高",
+        "D": "保證找到全域最優解"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP5.2",
+        "KP5.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些技術可以用於優化或壓縮大規模集成模型？",
+      "options": {
+        "A": "樹的剪枝 (Pruning)",
+        "B": "權重質化 (Quantization)",
+        "C": "知識蒸餾",
+        "D": "增加特徵數量"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "Boosting (",
+        "提升法)"
+      ],
+      "title": "__________ 是一種序列式集成方法，每一步都在擬合前一步模型的殘差或負梯度。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP5.2"
+      ],
+      "answer": [
+        "正則化 (",
+        "Regularization)"
+      ],
+      "title": "XGBoost 在損失函數中加入了 __________ 項，用以懲罰過於複雜的樹結構。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP5.3"
+      ],
+      "answer": [
+        "直方圖 (",
+        "Histogram)"
+      ],
+      "title": "LightGBM 使用基於 __________ 的算法，將連續特徵離散化以加速尋找分裂點。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": [
+        "OOF (",
+        "Out-of-fold)"
+      ],
+      "title": "在 Stacking 中，用來防止標籤滲漏的核心操作是 __________ 預測。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP5.3"
+      ],
+      "answer": [
+        "Boosting"
+      ],
+      "title": "CatBoost 是由 Category 和 __________ 兩個單字組合而成，強調其類別處理能力。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "方差 (",
+        "Variance)"
+      ],
+      "title": "誤差分解公式中，反映模型「不穩定、對數據擾動過於敏感」的部分稱為 __________。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP5.5"
+      ],
+      "answer": [
+        "貝氏 (",
+        "Bayesian)"
+      ],
+      "title": "__________ 優化是自動化尋找最優超參數的主流進階技術。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "自助 (",
+        "Bootstrap)"
+      ],
+      "title": "隨機森林中的每棵樹是透過 __________ 抽樣產生的樣本集訓練而成。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": [
+        "元 (",
+        "Meta)"
+      ],
+      "title": "在 Stacking 架構中，負責整合第一層預測結果的模型稱為 __________ 模型。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP5.2"
+      ],
+      "answer": [
+        "二"
+      ],
+      "title": "XGBoost 透過計算損失函數的 __________ 階導數資訊來提升收斂速度與精度。 ---"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "course_id": "calculus2",
   "week": 13,
-  "title": "微積分 中 第 13 週",
+  "title": "微積分 中 第 13 週測驗",
   "knowledge_points": {},
   "questions": [
     {
@@ -14,7 +14,7 @@
         "C": "1/2",
         "D": "-1/2"
       },
-      "answer": "",
+      "answer": "Q1",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -29,7 +29,7 @@
         "C": "0",
         "D": "1/3"
       },
-      "answer": "",
+      "answer": "Q2",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -44,7 +44,7 @@
         "C": "$0.01$",
         "D": "$1$"
       },
-      "answer": "",
+      "answer": "Q3",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -59,7 +59,7 @@
         "C": "$\\sum 1/n$",
         "D": "$\\sum 1/n!$"
       },
-      "answer": "",
+      "answer": "Q4",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -74,7 +74,7 @@
         "C": "$i$",
         "D": "$-i$"
       },
-      "answer": "",
+      "answer": "Q5",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -164,7 +164,7 @@
         "C": "$\\lim_{x \\to \\infty} \\frac{x^2}{e^x}$",
         "D": "$\\lim_{x \\to 0} \\frac{\\ln(1+x)}{x}$"
       },
-      "answer": "",
+      "answer": "Q11",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "積分值約為 0.946",
         "D": "該積分是發散的"
       },
-      "answer": "",
+      "answer": "Q12",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -234,7 +234,7 @@
       "type": "multiple",
       "title": "**Q16**: $x^2 e^x$ 的麥克勞林級數一般項為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q16",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -244,7 +244,7 @@
       "type": "multiple",
       "title": "**Q17**: $\\lim_{x \\to 0} \\frac{x - \\tan^{-1} x}{x^3}$ 的值為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q17",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
       "type": "multiple",
       "title": "**Q18**: $\\int_0^1 e^{-x^2} dx$ 的級數表示中，前三項為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q18",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -264,7 +264,7 @@
       "type": "multiple",
       "title": "**Q19**: $e^{i\\pi/4}$ 的實部為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q19",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -274,7 +274,7 @@
       "type": "multiple",
       "title": "**Q20**: 利用級數估計 $\\cos(1)$，若取前兩項 $1 - 1/2 = 0.5$，則誤差小於 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q20",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -284,7 +284,7 @@
       "type": "fill",
       "title": "**Q21**: $\\frac{d}{dx} \\sum \\frac{x^n}{n!} = $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q21",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -314,7 +314,7 @@
       "type": "fill",
       "title": "**Q24**: $\\sum_{n=0}^{\\infty} \\frac{(-1)^n \\pi^{2n}}{(2n)!}$ 的和為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q24",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -324,7 +324,7 @@
       "type": "fill",
       "title": "**Q25**: 複數 $z = 1 + i$ 的極座標形式 $re^{i\\theta}$ 中，$\\theta = $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q25",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -334,7 +334,7 @@
       "type": "fill",
       "title": "**Q26**: $\\lim_{x \\to 0} \\frac{\\ln(1+x) - x + x^2/2}{x^3}$ 為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q26",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -344,7 +344,7 @@
       "type": "fill",
       "title": "**Q27**: $f(x) = \\sin x$ 在 $x=\\pi/2$ 處的泰勒級數首項為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q27",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -354,7 +354,7 @@
       "type": "fill",
       "title": "**Q28**: 被稱為「數學界最美公式」的是 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q28",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -374,7 +374,7 @@
       "type": "fill",
       "title": "**Q30**: 泰勒級數將微積分運算轉化成了更簡單的 __________ 運算。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP13.1 | KP13.2 | KP13.3 | KP13.4 | KP13.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,0,0,1,0 | 0,1,0,0,0 | 0,0,0,0,0 | 0,0,1,0,0 | 0,0,0,0,1 |\n| Q6-Q10 | 1,0,1,1,0 | 0,1,0,0,0 | 1,0,0,0,0 | 0,0,0,1,0 | 0,0,0,0,1 |\n| Q11-Q30| ... | ... | ... | ... | ... |\n*(註：詳細對應請參閱教師手冊)*",
       "options": {},
-      "answer": "",
+      "answer": "Q30",
       "kp": "",
       "explanation": "",
       "q_vector": []

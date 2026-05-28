@@ -1,0 +1,493 @@
+{
+  "courseId": "big-data",
+  "week": 4,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": "C",
+      "title": "當數據的缺失與該特徵本身的值有關（如高收入者不願透露收入），這屬於哪種缺失機制？",
+      "options": {
+        "A": "MCAR",
+        "B": "MAR",
+        "C": "MNAR",
+        "D": "隨機噪聲"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": "C",
+      "title": "下列哪種編碼方式最適合處理類別數量極多（如數萬個商品 ID）的特徵？",
+      "options": {
+        "A": "One-Hot Encoding",
+        "B": "Label Encoding",
+        "C": "Hash Encoding",
+        "D": "Binary Encoding"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": "B",
+      "title": "Target Encoding 最致命的風險是？",
+      "options": {
+        "A": "計算太慢",
+        "B": "數據滲漏 (Data Leakage) 導致嚴重過擬合",
+        "C": "維度過高",
+        "D": "忽略了標籤"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP4.3"
+      ],
+      "answer": "A",
+      "title": "Box-Cox 轉換的主要限制是它要求輸入數據必須為？",
+      "options": {
+        "A": "正數",
+        "B": "負數",
+        "C": "整數",
+        "D": "類別型"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP4.4"
+      ],
+      "answer": "B",
+      "title": "RFE (遞迴特徵消除) 屬於特徵選擇中的哪一類方法？",
+      "options": {
+        "A": "Filter (過濾法)",
+        "B": "Wrapper (包裹法)",
+        "C": "Embedded (嵌入法)",
+        "D": "Unsupervised"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP4.5"
+      ],
+      "answer": "B",
+      "title": "SHAP 值的理論基礎源自於？",
+      "options": {
+        "A": "資訊論",
+        "B": "博弈論",
+        "C": "幾何學",
+        "D": "線性代數"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP4.4"
+      ],
+      "answer": "B",
+      "title": "下列哪種降維技術專注於「保持局部結構」，非常適合用於高維數據的可視化？",
+      "options": {
+        "A": "PCA",
+        "B": "t-SNE",
+        "C": "SVD",
+        "D": "LDA"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP4.4"
+      ],
+      "answer": "A",
+      "title": "使用 Lasso 回歸進行特徵選擇，是利用了其損失函數中的哪一項特性？",
+      "options": {
+        "A": "L1 懲罰項使係數稀疏化",
+        "B": "L2 懲罰項使係數平滑",
+        "C": "均方誤差最小化",
+        "D": "餘弦相似度"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": "B",
+      "title": "在類別編碼中，為了防止 Target Encoding 過擬合，通常會加入？",
+      "options": {
+        "A": "更多特徵",
+        "B": "平滑項 (Smoothing) 或噪聲",
+        "C": "更多樣本",
+        "D": "深度層"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP4.5"
+      ],
+      "answer": "B",
+      "title": "Permutation Importance 的核心操作是？",
+      "options": {
+        "A": "刪除一個特徵",
+        "B": "隨機打亂一個特徵的數值順序",
+        "C": "增加特徵的權重",
+        "D": "改變標籤"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "高級缺失值填充工具 IterativeImputer 的特點包括？",
+      "options": {
+        "A": "它是多元填充 (Multivariate)",
+        "B": "利用其他特徵構建模型預測缺失",
+        "C": "比均值填充保留更多變異資訊",
+        "D": "計算量極小"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP4.3"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "特徵工程中「分桶」(Binning) 的好處有？",
+      "options": {
+        "A": "增強模型對離群值的魯棒性",
+        "B": "引入非線性關係",
+        "C": "降低計算複雜度",
+        "D": "提高數據解析度"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP4.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些方法可以用來評估特徵的重要性？",
+      "options": {
+        "A": "樹模型的內建 Gini 重要性",
+        "B": "SHAP 值",
+        "C": "互資訊 (Mutual Information)",
+        "D": "Permutation Importance"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP4.2",
+        "KP4.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於數據滲漏 (Data Leakage) 的表現，正確的有？",
+      "options": {
+        "A": "訓練集準確率異常高",
+        "B": "在劃分訓練測試集前進行了全局 Target Encoding",
+        "C": "使用了未來資訊",
+        "D": "測試集準確率遠高於訓練集"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP4.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "SHAP 摘要圖 (Summary Plot) 可以展示哪些資訊？",
+      "options": {
+        "A": "特徵的重要性排名",
+        "B": "特徵值高低對預測值的正負影響",
+        "C": "數據的分佈密度",
+        "D": "模型的層數"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP4.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "處理時間序列特徵時，常見的衍生手法包括？",
+      "options": {
+        "A": "滯後特徵 (Lag features)",
+        "B": "滾動窗口均值 (Rolling mean)",
+        "C": "週期性特徵 (Sine/Cosine 轉換)",
+        "D": "隨機打亂時間軸"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP4.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 t-SNE 的敘述，下列正確的有？",
+      "options": {
+        "A": "適合降維到 2D/3D 觀察",
+        "B": "降維後的相對距離不代表原始數據的絕對距離",
+        "C": "運算複雜度較高",
+        "D": "是線性降維工具"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP4.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "特徵選擇的主要目標包括？",
+      "options": {
+        "A": "簡化模型，提升解釋性",
+        "B": "縮短訓練時間",
+        "C": "提升模型的泛化能力",
+        "D": "增加過擬合風險"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "下列哪些是處理「高基數」類別特徵的有效手段？",
+      "options": {
+        "A": "Target Encoding",
+        "B": "Hash Encoding",
+        "C": "One-Hot Encoding",
+        "D": "降維後編碼"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP4.1",
+        "KP4.2",
+        "KP4.3",
+        "KP4.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "在 Scikit-Learn Pipeline 中整合特徵工程的好處？",
+      "options": {
+        "A": "防止驗證集資訊滲漏",
+        "B": "方便進行網格搜索超參數調優",
+        "C": "確保預處理邏輯在訓練與推理時完全一致",
+        "D": "一定能提高模型精度"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "隨機"
+      ],
+      "title": "__________ 缺失 (MAR) 是指數據的缺失與已觀測到的其他特徵有關。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": [
+        "目標 (",
+        "Target)"
+      ],
+      "title": "利用類別對應的標籤平均值進行編碼的技術稱為 __________ 編碼。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP4.4"
+      ],
+      "answer": [
+        "稀疏"
+      ],
+      "title": "Lasso 回歸產生的係數具有 __________ 性，使其具備自動特徵選擇的功能。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP4.5"
+      ],
+      "answer": [
+        "正向 (",
+        "增加)"
+      ],
+      "title": "SHAP 值中，正值代表該特徵將預測結果往 __________ (方向) 推動。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP4.3"
+      ],
+      "answer": [
+        "Yeo-Johnson"
+      ],
+      "title": "__________ 轉換是用於處理非正數數據的正態化變換（比 Box-Cox 更通用）。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP4.5"
+      ],
+      "answer": [
+        "排列 (",
+        "Permutation)"
+      ],
+      "title": "__________ 重要性是透過觀察打亂特徵後模型效能的下降程度來評估。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP4.3"
+      ],
+      "answer": [
+        "離散化"
+      ],
+      "title": "將連續數值切分為區間（Binning）的操作稱為特徵 __________。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP4.4"
+      ],
+      "answer": [
+        "UMAP"
+      ],
+      "title": "__________ 是一種比 t-SNE 更快、且能更好保留全局結構的降維技術。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": [
+        "平滑 (",
+        "Smoothing)"
+      ],
+      "title": "在 Target Encoding 中，為了防止過擬合而加入全局均值的操作稱為 __________。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "ColumnTransformer"
+      ],
+      "title": "Scikit-Learn 中用於對不同列套用不同轉換器的工具是 __________。 ---"
+    }
+  ]
+}

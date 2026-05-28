@@ -1,375 +1,489 @@
 {
-  "course": "python-office-quant",
-  "week": "week1",
-  "title": "Excel 與 CSV 自動化處理 (Pandas 核心應用)",
-  "knowledge_points": {
-    "KP1.1": "DataFrame 核心概念：Index, Columns 與數據對齊",
-    "KP1.2": "pd.read_csv 與 pd.read_excel 資料加載編碼及設定",
-    "KP1.3": "標籤切片 loc 與位置切片 iloc 高級操作",
-    "KP1.4": "多重條件布林過濾與 query 類 SQL 篩選",
-    "KP1.5": "缺失值偵測 isnull、dropna 刪除及 fillna 填充策略",
-    "KP1.6": "to_excel 與 to_csv 資料表合併導出及佈局優化"
-  },
+  "courseId": "python-office-quant",
+  "week": 1,
   "questions": [
     {
       "id": "Q1",
+      "num": 1,
       "type": "single",
-      "title": "在 Pandas 中，若要選取 DataFrame df 中第 0 到 5 行、第 2 欄的數據，最合適的方法是？",
-      "options": {
-        "A": "df.loc[0:5, 2]",
-        "B": "df.iloc[0:6, 2]",
-        "C": "df.head(5)[2]",
-        "D": "df.select(0:5, 2)"
-      },
+      "kps": [
+        "KP1.3"
+      ],
       "answer": "B",
-      "kp": "KP1.3",
-      "q_vector": [0, 0, 1, 0, 0, 0]
+      "title": "在 Pandas 中，若要選取 DataFrame `df` 中第 0 到 5 行、第 2 欄的數據，最合適的方法是？",
+      "options": {
+        "A": "`df.loc[0:5, 2]`",
+        "B": "`df.iloc[0:6, 2]`",
+        "C": "`df.head(5)[2]`",
+        "D": "`df.select(0:5, 2)`"
+      }
     },
     {
       "id": "Q2",
+      "num": 2,
       "type": "single",
-      "title": "若要讀取一個使用 Tab 鍵分隔的文本檔案，應在 read_csv 中設置哪個參數？",
-      "options": {
-        "A": "delim='\\t'",
-        "B": "sep='\\t'",
-        "C": "tab=True",
-        "D": "format='tsv'"
-      },
+      "kps": [
+        "KP1.2"
+      ],
       "answer": "B",
-      "kp": "KP1.2",
-      "q_vector": [0, 1, 0, 0, 0, 0]
+      "title": "若要讀取一個使用 Tab 鍵分隔的文本檔案，應在 `read_csv` 中設置哪個參數？",
+      "options": {
+        "A": "`delim='\\t'`",
+        "B": "`sep='\\t'`",
+        "C": "`tab=True`",
+        "D": "`format='tsv'`"
+      }
     },
     {
       "id": "Q3",
+      "num": 3,
       "type": "single",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": "C",
       "title": "下列哪個方法可以用來查看 DataFrame 的前 10 筆數據？",
       "options": {
-        "A": "df.show(10)",
-        "B": "df.top(10)",
-        "C": "df.head(10)",
-        "D": "df.display(10)"
-      },
-      "answer": "C",
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+        "A": "`df.show(10)`",
+        "B": "`df.top(10)`",
+        "C": "`df.head(10)`",
+        "D": "`df.display(10)`"
+      }
     },
     {
       "id": "Q4",
+      "num": 4,
       "type": "single",
-      "title": "Pandas 中，df.shape 回傳的是什麼？",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": "B",
+      "title": "Pandas 中，`df.shape` 回傳的是什麼？",
       "options": {
         "A": "總元素個數",
         "B": "行數與列數的元組",
         "C": "數據類型列表",
         "D": "內存佔用大小"
-      },
-      "answer": "B",
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+      }
     },
     {
       "id": "Q5",
+      "num": 5,
       "type": "single",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": "D",
       "title": "若要將某欄位設為 DataFrame 的索引，應使用？",
       "options": {
-        "A": "df.reindex()",
-        "B": "df.set_index()",
-        "C": "df.index_set()",
-        "D": "df.add_index()"
-      },
-      "answer": "B",
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+        "A": "`df.reindex()`",
+        "B": "`df.set_index()`",
+        "C": "`df.index_set()`",
+        "D": "`df.add_index()`"
+      }
     },
     {
       "id": "Q6",
+      "num": 6,
       "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": "D",
       "title": "處理中文亂碼時，常用的編碼參數不包括？",
       "options": {
-        "A": "utf-8",
-        "B": "gbk",
-        "C": "cp950",
-        "D": "base64"
-      },
-      "answer": "D",
-      "kp": "KP1.2",
-      "q_vector": [0, 1, 0, 0, 0, 0]
+        "A": "`utf-8`",
+        "B": "`gbk`",
+        "C": "`cp950`",
+        "D": "`base64`"
+      }
     },
     {
       "id": "Q7",
+      "num": 7,
       "type": "single",
-      "title": "df.iloc[:3, :2] 選取的是？",
+      "kps": [
+        "KP1.3"
+      ],
+      "answer": "B",
+      "title": "`df.iloc[:3, :2]` 選取的是？",
       "options": {
         "A": "前 3 行前 2 欄",
         "B": "第 3 行第 2 欄",
         "C": "第 4 行第 3 欄",
         "D": "前 2 行前 3 欄"
-      },
-      "answer": "A",
-      "kp": "KP1.3",
-      "q_vector": [0, 0, 1, 0, 0, 0]
+      }
     },
     {
       "id": "Q8",
+      "num": 8,
       "type": "single",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": "C",
       "title": "如何獲取 DataFrame 中所有列的名稱？",
       "options": {
-        "A": "df.names",
-        "B": "df.columns",
-        "C": "df.headers",
-        "D": "df.fields"
-      },
-      "answer": "B",
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+        "A": "`df.names`",
+        "B": "`df.columns`",
+        "C": "`df.headers`",
+        "D": "`df.fields`"
+      }
     },
     {
       "id": "Q9",
+      "num": 9,
       "type": "single",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": "B",
       "title": "下列哪個方法可以用來重命名列名？",
       "options": {
-        "A": "df.rename()",
-        "B": "df.replace()",
-        "C": "df.name_change()",
-        "D": "df.update()"
-      },
-      "answer": "A",
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+        "A": "`df.rename()`",
+        "B": "`df.replace()`",
+        "C": "`df.name_change()`",
+        "D": "`df.update()`"
+      }
     },
     {
       "id": "Q10",
+      "num": 10,
       "type": "single",
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": "D",
       "title": "若要刪除包含任何空值的行，應使用？",
       "options": {
-        "A": "df.dropna(axis=1)",
-        "B": "df.dropna(how='any')",
-        "C": "df.dropna(how='all')",
-        "D": "df.fill_null()"
-      },
-      "answer": "B",
-      "kp": "KP1.5",
-      "q_vector": [0, 0, 0, 0, 1, 0]
+        "A": "`df.dropna(axis=1)`",
+        "B": "`df.dropna(how='any')`",
+        "C": "`df.dropna(how='all')`",
+        "D": "`df.fill_null()`"
+      }
     },
     {
       "id": "Q11",
+      "num": 11,
       "type": "multiple",
-      "title": "關於 pd.read_excel() 的描述，下列哪些正確？",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 `pd.read_excel()` 的描述，下列哪些正確？",
       "options": {
-        "A": "可以通過 sheet_name 參數讀取特定的工作表。",
+        "A": "可以通過 `sheet_name` 參數讀取特定的工作表。",
         "B": "它能自動識別所有數據類型，不需要手動調整。",
-        "C": "可以通過 usecols 參數只讀取特定的欄位以節省內存。",
-        "D": "必須安裝 openpyxl 或 xlrd 等引擎才能支持 xlsx。"
-      },
-      "answer": ["A", "C", "D"],
-      "kp": "KP1.2",
-      "q_vector": [0, 1, 0, 0, 0, 0]
+        "C": "可以通過 `usecols` 參數只讀取特定的欄位以節省內存。",
+        "D": "必須安裝 `openpyxl` 或 `xlrd` 等引擎才能支持 xlsx。"
+      }
     },
     {
       "id": "Q12",
+      "num": 12,
       "type": "multiple",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
       "title": "下列哪些是 Pandas 的數據結構？",
       "options": {
         "A": "Series",
         "B": "DataFrame",
-        "C": "Panel (面板數據)",
-        "D": "Array (NumPy 陣列)"
-      },
-      "answer": ["A", "B", "C"],
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+        "C": "Panel",
+        "D": "Array (NumPy)"
+      }
     },
     {
       "id": "Q13",
+      "num": 13,
       "type": "multiple",
-      "title": "關於 loc 與 iloc 的區別，正確的是？",
+      "kps": [
+        "KP1.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 `loc` 與 `iloc` 的區別，正確的是？",
       "options": {
-        "A": "loc 是基於標籤 (Label-based) 進行定位選取。",
-        "B": "iloc 是基於整數位置索引 (Integer-based) 進行定位選取。",
-        "C": "loc 進行切片時，包含結束邊界的值。",
-        "D": "iloc 進行切片時，不包含結束邊界的值。"
-      },
-      "answer": ["A", "B", "C", "D"],
-      "kp": "KP1.3",
-      "q_vector": [0, 0, 1, 0, 0, 0]
+        "A": "`loc` 是基於標籤",
+        "B": "`iloc` 是基於整數索引",
+        "C": "`loc` 切片包含結束邊界",
+        "D": "`iloc` 切片不包含結束邊界"
+      }
     },
     {
       "id": "Q14",
+      "num": 14,
       "type": "multiple",
-      "title": "合併數據時，pd.concat() 的優點包括？",
+      "kps": [
+        "KP1.6"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "合併數據時，`pd.concat()` 的優點包括？",
       "options": {
-        "A": "適合簡單的垂直或水平拼接堆疊。",
-        "B": "支援不同欄位名稱的自動對齊合併。",
-        "C": "合併速度絕對慢於資料庫的 SQL join。",
-        "D": "可以傳入清單同時合併多個 DataFrame 對象。"
-      },
-      "answer": ["A", "B", "D"],
-      "kp": "KP1.6",
-      "q_vector": [0, 0, 0, 0, 0, 1]
+        "A": "簡單垂直堆疊",
+        "B": "支援不同欄位的自動對齊",
+        "C": "速度比 merge 快",
+        "D": "可以同時合併多個對象"
+      }
     },
     {
       "id": "Q15",
+      "num": 15,
       "type": "multiple",
-      "title": "處理缺失值時，fillna() 可以填充什麼內容？",
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "處理缺失值時，`fillna()` 可以填充什麼內容？",
       "options": {
-        "A": "自定義固定數值 (如 0 或 'Unknown')",
-        "B": "該欄位數據的統計值 (如平均值 mean、中位數)",
-        "C": "使用前一行的數值進行前向填充 (method='ffill')",
-        "D": "使用後一行的數值進行後向填充 (method='bfill')"
-      },
-      "answer": ["A", "B", "C", "D"],
-      "kp": "KP1.5",
-      "q_vector": [0, 0, 0, 0, 1, 0]
+        "A": "固定數值",
+        "B": "該欄位的平均值",
+        "C": "前一行的值 (ffill)",
+        "D": "後一行的值 (bfill)"
+      }
     },
     {
       "id": "Q16",
+      "num": 16,
       "type": "multiple",
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
       "title": "篩選數據時，下列語法正確的有？",
       "options": {
-        "A": "df[df['age'] > 20]",
-        "B": "df[(df['A'] > 0) & (df['B'] < 0)]",
-        "C": "df[df['A'] > 0 | df['B'] < 0]",
-        "D": "df.query('age > 20')"
-      },
-      "answer": ["A", "B", "D"],
-      "kp": "KP1.4",
-      "q_vector": [0, 0, 0, 1, 0, 0]
+        "A": "`df[df['age'] > 20]`",
+        "B": "`df[(df['A']>0) & (df['B']<0)]`",
+        "C": "`df[df['A']>0 | df['B']<0]`",
+        "D": "`df.query('age > 20')`"
+      }
     },
     {
       "id": "Q17",
+      "num": 17,
       "type": "multiple",
-      "title": "導出 Excel 時，to_excel() 支援的參數有？",
+      "kps": [
+        "KP1.6"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "導出 Excel 時，`to_excel()` 支援的參數有？",
       "options": {
-        "A": "index=False (排除導出列索引)",
-        "B": "sheet_name='工作表名稱' (設置工作表名)",
-        "C": "columns=['A', 'B'] (指定要導出的欄位)",
-        "D": "encoding='utf-8' (Excel 導出時用以調整 CSV 編碼)"
-      },
-      "answer": ["A", "B", "C"],
-      "kp": "KP1.6",
-      "q_vector": [0, 0, 0, 0, 0, 1]
+        "A": "`index=False`",
+        "B": "`sheet_name='Data'`",
+        "C": "`columns=['A', 'B']`",
+        "D": "`encoding='utf-8'`"
+      }
     },
     {
       "id": "Q18",
+      "num": 18,
       "type": "multiple",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
       "title": "下列哪些方法可以用來檢查 DataFrame 的基本資訊？",
       "options": {
-        "A": "df.info()",
-        "B": "df.describe()",
-        "C": "df.check()",
-        "D": "df.dtypes"
-      },
-      "answer": ["A", "B", "D"],
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+        "A": "`df.info()`",
+        "B": "`df.describe()`",
+        "C": "`df.check()`",
+        "D": "`df.dtypes`"
+      }
     },
     {
       "id": "Q19",
+      "num": 19,
       "type": "multiple",
-      "title": "對數據進行排序時，sort_values() 支援？",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "對數據進行排序時，`sort_values()` 支援？",
       "options": {
-        "A": "基於單一欄位進行排序",
-        "B": "傳入列表進行多欄位優先級排序",
-        "C": "通過 ascending 參數配置升序或降序",
-        "D": "配置 inplace=True 直接就地修改原數據"
-      },
-      "answer": ["A", "B", "C", "D"],
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+        "A": "單欄位排序",
+        "B": "多欄位排序",
+        "C": "升序與降序配置",
+        "D": "就地修改 (inplace=True)"
+      }
     },
     {
       "id": "Q20",
+      "num": 20,
       "type": "multiple",
-      "title": "刪除重複數據時，drop_duplicates() 可以？",
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "刪除重複數據時，`drop_duplicates()` 可以？",
       "options": {
-        "A": "指定 subset 參數依據特定欄位去重",
-        "B": "保留重複項的第一筆數據 (keep='first')",
-        "C": "保留重複項的最後一筆數據 (keep='last')",
-        "D": "將 keep 設為 False 刪除所有含有重複特徵的項目"
-      },
-      "answer": ["A", "B", "C", "D"],
-      "kp": "KP1.5",
-      "q_vector": [0, 0, 0, 0, 1, 0]
+        "A": "指定特定欄位",
+        "B": "保留最後一筆 (keep='last')",
+        "C": "保留第一筆 (keep='first')",
+        "D": "刪除所有重複項"
+      }
     },
     {
       "id": "Q21",
+      "num": 21,
       "type": "fill",
-      "title": "若要刪除 DataFrame df 中所有包含空值的行，應調用的方法是：__________ (不需加括號)。",
-      "answer": "dropna",
-      "kp": "KP1.5",
-      "q_vector": [0, 0, 0, 0, 1, 0]
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": [
+        "dropna"
+      ],
+      "title": "若要刪除 DataFrame `df` 中所有包含空值的行，應調用的方法是：__________。"
     },
     {
       "id": "Q22",
+      "num": 22,
       "type": "fill",
-      "title": "在 Pandas 條件過濾篩選中，符號「&」代表 __________ 邏輯運算 (請填英文字)。",
-      "answer": "and",
-      "kp": "KP1.4",
-      "q_vector": [0, 0, 0, 1, 0, 0]
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": [
+        "inplace"
+      ],
+      "title": "在 `loc` 篩選中，`&` 代表 __________ 邏輯運算。"
     },
     {
       "id": "Q23",
+      "num": 23,
       "type": "fill",
-      "title": "pd.read_csv() 若讀取中文 CSV 時出現 UnicodeDecodeError，通常需要調整 __________ 參數設定編碼方式。",
-      "answer": "encoding",
-      "kp": "KP1.2",
-      "q_vector": [0, 1, 0, 0, 0, 0]
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": [
+        "columns"
+      ],
+      "title": "`pd.read_csv()` 若讀取時出現 UnicodeDecodeError，通常需要調整 __________ 參數。"
     },
     {
       "id": "Q24",
+      "num": 24,
       "type": "fill",
-      "title": "查看 DataFrame 最後 5 筆數據的函數是 __________ (不需加括號)。",
-      "answer": "tail",
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": [
+        "read_excel"
+      ],
+      "title": "查看 DataFrame 最後 5 筆數據的函數是 __________。"
     },
     {
       "id": "Q25",
+      "num": 25,
       "type": "fill",
-      "title": "要獲取 DataFrame 的行數，可以使用內建函數 len(df) 或屬性 df.__________[0]。",
-      "answer": "shape",
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": [
+        "iloc"
+      ],
+      "title": "要獲取 DataFrame 的行數，可以使用內建函數 `len(df)` 或屬性 `df.________[0]`。"
     },
     {
       "id": "Q26",
+      "num": 26,
       "type": "fill",
-      "title": "將 DataFrame 保存並匯出為 Excel 檔案的函數是 __________ (不需加括號)。",
-      "answer": "to_excel",
-      "kp": "KP1.6",
-      "q_vector": [0, 0, 0, 0, 0, 1]
+      "kps": [
+        "KP1.6"
+      ],
+      "answer": [
+        "fillna"
+      ],
+      "title": "將 DataFrame 保存為 Excel 檔案的函數是 __________。"
     },
     {
       "id": "Q27",
+      "num": 27,
       "type": "fill",
-      "title": "若要在 read_csv 讀取時，只加載前 100 行數據以節省內存，應設置參數 nrows=__________ (請填整數)。",
-      "answer": "100",
-      "kp": "KP1.2",
-      "q_vector": [0, 1, 0, 0, 0, 0]
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": [
+        "to_excel"
+      ],
+      "title": "若要在不讀取整張表的情況下只讀取前 100 行，應設置參數 `nrows=__________`。"
     },
     {
       "id": "Q28",
+      "num": 28,
       "type": "fill",
-      "title": "篩選某欄位是否在給定列表中的方法是 isin()，例如篩選 ID 在清單中：df[df['ID'].__________([1, 2, 3])] (不需加括號)。",
-      "answer": "isin",
-      "kp": "KP1.4",
-      "q_vector": [0, 0, 0, 1, 0, 0]
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": [
+        "concat"
+      ],
+      "title": "篩選某欄位是否在給定列表中的方法是 `isin()`，例如 `df[df['ID'].________([1, 2, 3])]`。"
     },
     {
       "id": "Q29",
+      "num": 29,
       "type": "fill",
-      "title": "重設索引時，`df.reset_index(__________=True)` 可以避免舊的索引變成 DataFrame 的一列欄位。",
-      "answer": "drop",
-      "kp": "KP1.1",
-      "q_vector": [1, 0, 0, 0, 0, 0]
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": [
+        "merge"
+      ],
+      "title": "`df.reset_index(________=True)` 可以避免將舊索引變為新的一欄。"
     },
     {
       "id": "Q30",
+      "num": 30,
       "type": "fill",
-      "title": "統計每一欄位各自有多少個缺失值，可使用 `df.isna().__________()` (不需加括號)。",
-      "answer": "sum",
-      "kp": "KP1.5",
-      "q_vector": [0, 0, 0, 0, 1, 0]
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": [
+        "values"
+      ],
+      "title": "`df.isna().________()` 可以統計每一欄各有多少個缺失值。 ---"
     }
   ]
 }

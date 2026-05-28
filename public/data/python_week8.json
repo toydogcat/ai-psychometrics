@@ -1,0 +1,490 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "B",
+      "title": "Lambda 函數的核心特點是？",
+      "options": {
+        "A": "可以有多行程式碼",
+        "B": "匿名且只能包含一個表達式",
+        "C": "執行速度比 def 快很多",
+        "D": "不需要參數"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP8.2"
+      ],
+      "answer": "C",
+      "title": "`map(lambda x: x*2, [1, 2, 3])` 在 Python 3 的直接回傳值型態是？",
+      "options": {
+        "A": "[2, 4, 6]",
+        "B": "(2, 4, 6)",
+        "C": "map object (iterator)",
+        "D": "None"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": "C",
+      "title": "想要從串列中過濾出偶數，應使用哪個函數？",
+      "options": {
+        "A": "map",
+        "B": "reduce",
+        "C": "filter",
+        "D": "apply"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": "B",
+      "title": "`reduce` 函數位於哪個標準庫模組中？",
+      "options": {
+        "A": "itertools",
+        "B": "functools",
+        "C": "math",
+        "D": "collections"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "C",
+      "title": "產生器表達式使用哪種括號？",
+      "options": {
+        "A": "[]",
+        "B": "{}",
+        "C": "()",
+        "D": "<>"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "B",
+      "title": "關於延遲計算 (Lazy Evaluation)，下列描述正確的是？",
+      "options": {
+        "A": "程式執行變慢了",
+        "B": "僅在需要時才計算下一個值",
+        "C": "會佔用更多記憶體",
+        "D": "只適用於小數據"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "B",
+      "title": "`(lambda x, y: x if x > y else y)(5, 10)` 的結果是？",
+      "options": {
+        "A": "5",
+        "B": "10",
+        "C": "True",
+        "D": "False"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "B",
+      "title": "如何手動取得疊代器的下一個元素？",
+      "options": {
+        "A": "get()",
+        "B": "next()",
+        "C": "continue()",
+        "D": "move()"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": "B",
+      "title": "`list(filter(None, [0, 1, False, True]))` 的結果是？",
+      "options": {
+        "A": "[0, 1, False, True]",
+        "B": "[1, True]",
+        "C": "[0, False]",
+        "D": "[]"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": "A",
+      "title": "關於 `reduce(lambda x, y: x + y, [1, 2, 3, 4])` 的執行過程，第一個運算是？",
+      "options": {
+        "A": "1 + 2",
+        "B": "1 + 2 + 3 + 4",
+        "C": "1 + 4",
+        "D": "0 + 1"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "A, B, C, D",
+      "title": "哪些是 Lambda 函數的合法寫法？",
+      "options": {
+        "A": "`lambda: \"Hello\"`",
+        "B": "`lambda x, y: x + y`",
+        "C": "`lambda x: print(x)`",
+        "D": "`lambda x: x > 0`"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP8.2",
+        "KP8.3"
+      ],
+      "answer": "A, B, C",
+      "title": "關於 `map` 與 `filter` 的共同點，哪些正確？",
+      "options": {
+        "A": "都回傳疊代器",
+        "B": "都不會修改原始資料",
+        "C": "都接受一個函數作為參數",
+        "D": "執行結果長度一定相同"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "A, B, D",
+      "title": "產生器 (Generator) 的優點包括？",
+      "options": {
+        "A": "節省記憶體",
+        "B": "支持無限序列",
+        "C": "可以反向疊代",
+        "D": "代碼通常比傳統迴圈簡潔"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP8.1",
+        "KP8.2",
+        "KP8.3",
+        "KP8.4"
+      ],
+      "answer": "A, B, C, D",
+      "title": "下列哪些函數屬於「高階函數」(Higher-order functions)？",
+      "options": {
+        "A": "map",
+        "B": "filter",
+        "C": "sorted",
+        "D": "reduce"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": "A, B, C",
+      "title": "關於 `reduce` 的 `initializer` 參數，哪些正確？",
+      "options": {
+        "A": "是選用參數",
+        "B": "若提供，則作為運算的起始值",
+        "C": "若串列為空且有提供，則直接回傳它",
+        "D": "必須是整數"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "A, B, C",
+      "title": "下列哪些操作會將產生器「耗盡」(Exhausted)？",
+      "options": {
+        "A": "將其轉為 list",
+        "B": "使用 for 迴圈遍歷完畢",
+        "C": "使用 next() 直到報錯",
+        "D": "印出產生器物件本身"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "A, B, C",
+      "title": "哪些場景適合使用 Lambda？",
+      "options": {
+        "A": "簡單的數學轉換",
+        "B": "串列排序的 key 參數",
+        "C": "GUI 介面的事件回呼 (Callback)",
+        "D": "複雜的業務邏輯處理"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP8.2"
+      ],
+      "answer": "A, B, C",
+      "title": "關於 `list(map(str, [1, 2, 3]))`，哪些正確？",
+      "options": {
+        "A": "結果是 [\"1\", \"2\", \"3\"]",
+        "B": "使用了內建函數 str",
+        "C": "這是將數字串列轉為字串串列的常用方法",
+        "D": "map 會立即執行所有轉換"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "A, B, C",
+      "title": "產生器與串列 (List) 的差異有哪些？",
+      "options": {
+        "A": "產生器不支持索引訪問 (如 `g[0]`)",
+        "B": "產生器只能遍歷一次",
+        "C": "產生器使用 `len()` 會報錯",
+        "D": "產生器可以使用 `append()`"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "A, B, C, D (Lecture contents)",
+      "title": "閉包 (Closure) 的特徵包括？",
+      "options": {
+        "A": "必須有巢狀函數",
+        "B": "內層函數引用了外層變數",
+        "C": "外層函數回傳了內層函數",
+        "D": "變數會被保存在記憶體中"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "匿名",
+      "title": "Lambda 函數又被稱為 __________ 函數。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q22",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP8.2"
+      ],
+      "answer": "映射 (或 應用)",
+      "title": "`map` 函數的作用是將一個函數 __________ 到序列的每個元素上。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q23",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": "reduce",
+      "title": "想要將 `[1, 2, 3]` 累加成 `6`，除了用 `sum`，也可以用 `__________` 函數。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q24",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "疊代器",
+      "title": "產生器物件在 Python 中屬於 __________ (Iterator) 的一種。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q25",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": "[6, 9]",
+      "title": "`filter(lambda x: x > 5, [3, 6, 9])` 過濾後的結果（轉為 list）是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q26",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "記憶體",
+      "title": "產生器表達式比串列生成式更省 __________ (空間資源)。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q28",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "partial (Lecture contents)",
+      "title": "想要固定一個函數的某些參數，可以使用 `functools.__________`。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q29",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "16",
+      "title": "`(lambda x: x**2)(4)` 的結果是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q30",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "StopIteration",
+      "title": "當疊代器沒有下一個值時，呼叫 `next()` 會引發 __________ 異常。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q30",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "閉包 (Lecture contents)",
+      "title": "函數內部定義了另一個函數，且引用了外部變數，這種結構稱為 __________ (Closure)。 ---",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    }
+  ]
+}

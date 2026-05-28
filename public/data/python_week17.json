@@ -1,0 +1,426 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 17,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP 17.2"
+      ],
+      "answer": null,
+      "title": "下列哪一個區塊不論是否發生錯誤都會執行？",
+      "options": {
+        "A": "`try`",
+        "B": "`else`",
+        "C": "`finally`",
+        "D": "`except`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP 17.1"
+      ],
+      "answer": null,
+      "title": "手動拋出一個例外的關鍵字是？",
+      "options": {
+        "A": "`throw`",
+        "B": "`raise`",
+        "C": "`emit`",
+        "D": "`trigger`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP 17.4"
+      ],
+      "answer": null,
+      "title": "自定義異常類別通常應該繼承自哪一個類別？",
+      "options": {
+        "A": "`BaseException`",
+        "B": "`Exception`",
+        "C": "`Error`",
+        "D": "`Object`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP 17.3"
+      ],
+      "answer": null,
+      "title": "預設情況下，`logging` 模組的過濾等級是？",
+      "options": {
+        "A": "`DEBUG`",
+        "B": "`INFO`",
+        "C": "`WARNING`",
+        "D": "`ERROR`"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP 17.3"
+      ],
+      "answer": null,
+      "title": "`logging.critical(\"System crash!\")` 的權重比 `logging.error()` 來的？",
+      "options": {
+        "A": "高",
+        "B": "低",
+        "C": "相等",
+        "D": "不確定"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP 17.1"
+      ],
+      "answer": null,
+      "title": "`try` 語句中的 `else` 區塊會在何時執行？",
+      "options": {
+        "A": "發生錯誤時",
+        "B": "沒有發生錯誤時",
+        "C": "程式結束前",
+        "D": "每次都執行"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP 17.5"
+      ],
+      "answer": null,
+      "title": "獲取完整的錯誤堆疊資訊，可以使用哪個模組？",
+      "options": {
+        "A": "`sys`",
+        "B": "`os`",
+        "C": "`traceback`",
+        "D": "`logging`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP 17.5"
+      ],
+      "answer": null,
+      "title": "關於 `assert` 語句，下列敘述何者正確？",
+      "options": {
+        "A": "它用於生產環境的錯誤處理",
+        "B": "若條件為 False，拋出 `AssertionError`",
+        "C": "它會自動嘗試修復錯誤",
+        "D": "它是 `try` 的替代方案"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP 17.1"
+      ],
+      "answer": null,
+      "title": "在 `except` 區塊中，若想獲取例外物件本身，應寫為？",
+      "options": {
+        "A": "`except ValueError(e):`",
+        "B": "`except ValueError as e:`",
+        "C": "`except e from ValueError:`",
+        "D": "`except ValueError(get e):`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP 17.3"
+      ],
+      "answer": null,
+      "title": "哪一個日誌等級適合紀錄程式運行的詳細偵錯資訊？",
+      "options": {
+        "A": "`DEBUG`",
+        "B": "`INFO`",
+        "C": "`WARNING`",
+        "D": "`ERROR`"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 17.1"
+      ],
+      "answer": null,
+      "title": "關於 `try...except` 的使用建議，哪些正確？",
+      "options": {
+        "A": "應盡量縮小 `try` 區塊的範圍",
+        "B": "應捕捉具體的異常類別",
+        "C": "可以在一個 `try` 後接多個 `except`",
+        "D": "必須包含 `finally` 區塊"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 17.3"
+      ],
+      "answer": null,
+      "title": "哪些是 `logging` 模組的核心組件？",
+      "options": {
+        "A": "Logger",
+        "B": "Handler",
+        "C": "Formatter",
+        "D": "Filter"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 17.4"
+      ],
+      "answer": null,
+      "title": "關於自定義例外，哪些敘述正確？",
+      "options": {
+        "A": "可以包含自定義屬性與方法",
+        "B": "名字通常以 `Error` 結尾",
+        "C": "必須實作 `__init__`",
+        "D": "提升了程式碼的可讀性"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 17.1"
+      ],
+      "answer": null,
+      "title": "下列哪些屬於 Python 內建的例外？",
+      "options": {
+        "A": "`KeyError`",
+        "B": "`IndexError`",
+        "C": "`AttributeError`",
+        "D": "`LogicError`"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 17.3"
+      ],
+      "answer": null,
+      "title": "哪些方法可以用於配置日誌系統？",
+      "options": {
+        "A": "`logging.basicConfig()`",
+        "B": "使用設定檔 (JSON/YAML)",
+        "C": "直接在程式中建立 Logger 物件",
+        "D": "`print` 重導向"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 17.2"
+      ],
+      "answer": null,
+      "title": "`finally` 區塊常見的用途包括？",
+      "options": {
+        "A": "關閉檔案指標",
+        "B": "釋放網路連線",
+        "C": "回傳函式最終結果",
+        "D": "重置全域變數"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 17.1"
+      ],
+      "answer": null,
+      "title": "關於 `raise` 語句，哪些正確？",
+      "options": {
+        "A": "可以不帶參數（在 except 中重新拋出）",
+        "B": "可以拋出一個異常類別",
+        "C": "可以拋出一個異常實例",
+        "D": "只能在函式內使用"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 17.3"
+      ],
+      "answer": null,
+      "title": "哪些情況會導致日誌訊息不顯示？",
+      "options": {
+        "A": "訊息等級低於 Logger 設定的等級",
+        "B": "未配置任何 Handler",
+        "C": "程式崩潰太快",
+        "D": "Logger 名稱不正確"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 17.5"
+      ],
+      "answer": null,
+      "title": "防禦性程式設計 (Defensive Programming) 包含？",
+      "options": {
+        "A": "嚴格的輸入驗證",
+        "B": "詳盡的日誌紀錄",
+        "C": "適當的例外處理",
+        "D": "使用斷言檢查程式狀態"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 17.3"
+      ],
+      "answer": null,
+      "title": "關於 `logging.StreamHandler()`，哪些正確？",
+      "options": {
+        "A": "它將日誌輸出到流（如 sys.stderr）",
+        "B": "它可以設定自己的格式 (Formatter)",
+        "C": "它可以設定獨立的過濾等級",
+        "D": "它會自動將日誌寫入磁碟"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 17.1"
+      ],
+      "answer": null,
+      "title": "在 `except` 區塊中使用單獨的 __________ 關鍵字可以將目前的錯誤重新拋出。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 17.3"
+      ],
+      "answer": null,
+      "title": "`logging.__________` 等級通常用於紀錄系統正常運作的里程碑事件。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 17.1"
+      ],
+      "answer": null,
+      "title": "捕捉所有類型的例外通常會使用 `except __________:` (雖然不建議)。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 17.1"
+      ],
+      "answer": null,
+      "title": "當 `try` 區塊中發生錯誤時，程式會跳過剩餘代碼並進入匹配的 __________ 區塊。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 17.5"
+      ],
+      "answer": null,
+      "title": "執行 `python -O myscript.py` 會停用程式中的 __________ 語句。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 17.3"
+      ],
+      "answer": null,
+      "title": "日誌格式字串 `%(asctime)s` 代表日誌產生的 __________。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 17.3"
+      ],
+      "answer": null,
+      "title": "一個 Logger 可以擁有多個 __________，分別將訊息送到不同的目的地。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 17.1"
+      ],
+      "answer": null,
+      "title": "`ZeroDivisionError` 是繼承自 __________ 類別。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 17.2"
+      ],
+      "answer": null,
+      "title": "`with` 語句相較於 `try...finally` 在處理檔案時更加 __________ (簡潔/高效)。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 17.4"
+      ],
+      "answer": null,
+      "title": "自定義例外類別的定義範例：`class MyError(__________): pass`。 ---"
+    }
+  ]
+}

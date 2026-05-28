@@ -1,0 +1,492 @@
+{
+  "courseId": "python-office-quant",
+  "week": 11,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP11.2"
+      ],
+      "answer": "C",
+      "title": "若要根據 `key` 欄位將 `df1` 與 `df2` 進行合併，保留 `df1` 的所有行（即左連接），代碼是？",
+      "options": {
+        "A": "`pd.concat([df1, df2])`",
+        "B": "`df1.merge(df2, on='key', how='left')`",
+        "C": "`df1.join(df2)`",
+        "D": "`pd.merge(df1, df2, how='outer')`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP11.5"
+      ],
+      "answer": "A",
+      "title": "將數值欄位 `score` 按指定邊界分為 0-60, 60-80, 80-100 三組，應使用？",
+      "options": {
+        "A": "`pd.split()`",
+        "B": "`pd.cut()`",
+        "C": "`pd.qcut()`",
+        "D": "`pd.divide()`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP11.5"
+      ],
+      "answer": "D",
+      "title": "如何將字串欄位 `name` 中的所有字母轉為大寫？",
+      "options": {
+        "A": "`df['name'].upper()`",
+        "B": "`df['name'].str.upper()`",
+        "C": "`df['name'].apply(upper)`",
+        "D": "`df['name'].to_upper()`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP11.1"
+      ],
+      "answer": "B",
+      "title": "`df.drop_duplicates(subset=['id'], keep='last')` 代表什麼？",
+      "options": {
+        "A": "刪除所有重複行",
+        "B": "保留 id 重複行中的最後一筆",
+        "C": "只檢查最後一筆數據",
+        "D": "刪除 id 相同的行"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP11.5"
+      ],
+      "answer": "C",
+      "title": "下列哪個方法可以將類別型數據轉換為 One-Hot 編碼的 Dummy 變量？",
+      "options": {
+        "A": "`pd.to_dummies()`",
+        "B": "`pd.get_dummies()`",
+        "C": "`df.encode()`",
+        "D": "`df.categorical()`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP11.1"
+      ],
+      "answer": "B",
+      "title": "`df.reset_index(drop=True)` 的作用是？",
+      "options": {
+        "A": "重置索引並丟棄舊索引",
+        "B": "將索引變為第一列",
+        "C": "刪除所有索引",
+        "D": "清空數據"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP11.3"
+      ],
+      "answer": "D",
+      "title": "關於 `df.apply()`，下列敘述何者錯誤？",
+      "options": {
+        "A": "支援自定義函數",
+        "B": "只能作用於列",
+        "C": "速度通常慢於原生向量化運算",
+        "D": "可以傳遞參數給函數"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP11.1"
+      ],
+      "answer": "C",
+      "title": "如何檢測 DataFrame 中是否有重複的行？",
+      "options": {
+        "A": "`df.is_duplicate()`",
+        "B": "`df.duplicated()`",
+        "C": "`df.repeat()`",
+        "D": "`df.check()`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP11.2"
+      ],
+      "answer": "A",
+      "title": "`pd.concat([df1, df2], axis=1)` 會進行什麼方向的拼接？",
+      "options": {
+        "A": "垂直",
+        "B": "水平",
+        "C": "交叉",
+        "D": "遞迴"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP11.4"
+      ],
+      "answer": "D",
+      "title": "若要將 DataFrame 中的某個值 `NaN` 替換為該欄位的平均值，最簡便的方式是？",
+      "options": {
+        "A": "`df.fillna(df.mean())`",
+        "B": "`df.replace(nan, mean)`",
+        "C": "`df.dropna()`",
+        "D": "`df.update(mean)`"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP11.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 `df.apply()`，正確的有？",
+      "options": {
+        "A": "可以作用於行 (axis=1) 或列 (axis=0)",
+        "B": "適合執行複雜邏輯",
+        "C": "執行速度比向量化快",
+        "D": "返回值可以是標量或序列"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP11.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "數據合併時，`merge` 的 `how` 參數可選值包括？",
+      "options": {
+        "A": "`left`",
+        "B": "`right`",
+        "C": "`inner`",
+        "D": "`outer`"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP11.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "下列哪些是 `.str` 方法鏈提供的功能？",
+      "options": {
+        "A": "`contains()`",
+        "B": "`extract()`",
+        "C": "`split()`",
+        "D": "`replace()`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP11.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 `pd.cut` 與 `pd.qcut` 的區別，正確的有？",
+      "options": {
+        "A": "`cut` 基於數值邊界",
+        "B": "`qcut` 基於數據分位數",
+        "C": "`cut` 每組寬度相同",
+        "D": "`qcut` 每組樣本數量基本相同"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP11.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "處理異常值時，常用的判斷標準包括？",
+      "options": {
+        "A": "超過 3 倍標準差",
+        "B": "位於 [Q1 - 1.5IQR, Q3 + 1.5IQR] 範圍外",
+        "C": "數值為 0",
+        "D": "數值為空"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP11.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 `MultiIndex` (多層索引)，正確的有？",
+      "options": {
+        "A": "可以有多個層級",
+        "B": "支援 `stack()` 與 `unstack()` 轉換",
+        "C": "適合展示透視後的數據",
+        "D": "只能在行上設置"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP11.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "下列哪些操作會修改原始 DataFrame (若不指定 inplace)？",
+      "options": {
+        "A": "`drop()`",
+        "B": "`rename()`",
+        "C": "`fillna()`",
+        "D": "`replace()`"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP11.2"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "合併多個 DataFrame 的方法有？",
+      "options": {
+        "A": "`pd.concat()`",
+        "B": "`df.append()` (已棄用但仍常見)",
+        "C": "`pd.merge()`",
+        "D": "`df.join()`"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP11.3"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "關於 `transform()` 方法，正確的有？",
+      "options": {
+        "A": "返回與原對象形狀相同的對象",
+        "B": "常用於分組後的數據填充",
+        "C": "比 `apply` 更受限但有時更快",
+        "D": "可以同時聚合多個指標"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP11.1",
+        "KP11.2",
+        "KP11.3",
+        "KP11.4",
+        "KP11.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "清洗數據時常見的步驟包括？",
+      "options": {
+        "A": "處理缺失值",
+        "B": "去除重複項",
+        "C": "數據類型轉換",
+        "D": "異常值處理"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP11.4"
+      ],
+      "answer": [
+        "groupby"
+      ],
+      "title": "將 DataFrame 中的 `NaN` 填充為 0 的函數是 `df.________(0)`。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP11.1"
+      ],
+      "answer": [
+        "merge"
+      ],
+      "title": "`df.rename(columns={'old': '________'})` 可以修改列名。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP11.4"
+      ],
+      "answer": [
+        "concat"
+      ],
+      "title": "若要刪除含有空值的行，應調用 `df.________()`。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP11.5"
+      ],
+      "answer": [
+        "apply"
+      ],
+      "title": "在 Pandas 中，使用正則表達式提取字串應調用 `df['col'].str.________(regex)`。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP11.2"
+      ],
+      "answer": [
+        "pivot_table"
+      ],
+      "title": "`pd.merge(df1, df2, on='ID')` 預設執行的是 __________ 連接 (Inner Join)。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP11.3"
+      ],
+      "answer": [
+        "shift"
+      ],
+      "title": "`df['price'].apply(lambda x: x * ________)` 可將價格翻倍。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP11.5"
+      ],
+      "answer": [
+        "pct_change"
+      ],
+      "title": "將數據按 10% 分位數切分為 10 組，應使用 `pd.________(df['data'], 10)`。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP11.1"
+      ],
+      "answer": [
+        "rolling"
+      ],
+      "title": "`df.index` 返回的是行索引，`df.________` 返回的是列名。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP11.1"
+      ],
+      "answer": [
+        "datetime"
+      ],
+      "title": "`df.astype('________')` 可以將整數欄位轉換為浮點數。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP11.1"
+      ],
+      "answer": [
+        "set_index"
+      ],
+      "title": "`MultiIndex.from_________()` 是創建多層索引常用的類方法之一。 ---"
+    }
+  ]
+}

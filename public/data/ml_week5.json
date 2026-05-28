@@ -1,644 +1,489 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 5,
-  "title": "機器學習第 5 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP5.1": "概念基礎",
-    "KP5.2": "數學原理",
-    "KP5.3": "Python 實作",
-    "KP5.4": "模型評估",
-    "KP5.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W5-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP5.2",
-      "title": "這是第 5 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.5.1"
+      ],
+      "answer": "C",
+      "title": "如果一個資料集包含兩個類別，且比例各佔 50%，則其熵 (Entropy) 為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "0",
+        "B": "0.5",
+        "C": "1",
+        "D": "無窮大"
+      }
     },
     {
-      "id": "ML-W5-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP5.3",
-      "title": "這是第 5 週的第 2 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.5.1"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "Scikit-Learn 的 `DecisionTreeClassifier` 預設使用哪種不純度指標？",
+      "options": {
+        "A": "Entropy",
+        "B": "Gini",
+        "C": "MSE",
+        "D": "MAE"
+      }
     },
     {
-      "id": "ML-W5-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP5.4",
-      "title": "這是第 5 週的第 3 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.5.2"
+      ],
+      "answer": "D",
+      "title": "決策樹中，不再進行切分並給出最終預測結果的節點稱為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "根節點",
+        "B": "內部節點",
+        "C": "葉節點",
+        "D": "分支"
+      }
     },
     {
-      "id": "ML-W5-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP5.5",
-      "title": "這是第 5 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.5.3",
+        "KP 3.5.5"
+      ],
+      "answer": "B",
+      "title": "增加決策樹的 `max_depth`（最大深度）通常會導致？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "偏差增加，方差減少",
+        "B": "偏差減少，方差增加",
+        "C": "兩者都減少",
+        "D": "模型欠擬合"
+      }
     },
     {
-      "id": "ML-W5-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP5.1",
-      "title": "這是第 5 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.5.3"
+      ],
+      "answer": "C",
+      "title": "下列哪一個超參數可以用來「預剪枝」以防止過擬合？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`n_estimators`",
+        "B": "`learning_rate`",
+        "C": "`min_samples_leaf`",
+        "D": "`random_state`"
+      }
     },
     {
-      "id": "ML-W5-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP5.2",
-      "title": "這是第 5 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.5.1"
+      ],
+      "answer": "B",
+      "title": "資訊增益 (Information Gain) 是透過什麼減去什麼得到的？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "父節點熵 - 子節點加權熵",
+        "B": "子節點熵 - 父節點熵",
+        "C": "訓練誤差 - 測試誤差",
+        "D": "特徵數 - 樣本數"
+      }
     },
     {
-      "id": "ML-W5-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP5.3",
-      "title": "這是第 5 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.5.5"
+      ],
+      "answer": "D",
+      "title": "決策樹在處理資料前，是否必須進行特徵縮放（如標準化）？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "是，否則無法收斂",
+        "B": "否，樹模型對特徵量級不敏感",
+        "C": "視情況而定",
+        "D": "僅在分類時需要"
+      }
     },
     {
-      "id": "ML-W5-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP5.4",
-      "title": "這是第 5 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.5.2"
+      ],
+      "answer": "C",
+      "title": "CART 算法構建的是哪種型式的樹？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "多叉樹",
+        "B": "二元樹",
+        "C": "森林",
+        "D": "循環圖"
+      }
     },
     {
-      "id": "ML-W5-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP5.5",
-      "title": "這是第 5 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.5.4"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "特徵重要性 (Feature Importance) 的數值總和為？",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "100",
+        "D": "不固定"
+      }
     },
     {
-      "id": "ML-W5-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP5.1",
-      "title": "這是第 5 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.5.5"
+      ],
+      "answer": "D",
+      "title": "哪種情況下決策樹會展現出極高的方差 (Variance)？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "樹被深度剪枝",
+        "B": "樹完全生長且未受限制",
+        "C": "資料經過 PCA 處理",
+        "D": "使用了 L2 正則化"
+      }
     },
     {
-      "id": "ML-W5-Q11",
-      "type": "single",
-      "kp": "KP5.2",
-      "title": "這是第 5 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.5.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於熵 (Entropy) 與 基尼不純度 (Gini)，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "兩者都用於衡量資料的純度",
+        "B": "當資料完全純淨時，兩者皆為 0",
+        "C": "Gini 的計算速度通常比 Entropy 快（不需 log）",
+        "D": "兩者的取值範圍完全相同"
+      }
     },
     {
-      "id": "ML-W5-Q12",
-      "type": "single",
-      "kp": "KP5.3",
-      "title": "這是第 5 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.5.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "決策樹的優點包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "計算速度極快",
+        "B": "不需要資料預處理（如縮放）",
+        "C": "模型具備高度可解釋性",
+        "D": "不容易產生過擬合"
+      }
     },
     {
-      "id": "ML-W5-Q13",
-      "type": "single",
-      "kp": "KP5.4",
-      "title": "這是第 5 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.5.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "預防決策樹過擬合的策略有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "設定最大深度",
+        "B": "設定葉節點最小樣本數",
+        "C": "移除無關特徵",
+        "D": "增加訓練數據"
+      }
     },
     {
-      "id": "ML-W5-Q14",
-      "type": "single",
-      "kp": "KP5.5",
-      "title": "這是第 5 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.5.4"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於特徵重要性的描述，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "它衡量特徵對降低不純度的貢獻",
+        "B": "重要性越高的特徵通常越靠近根節點",
+        "C": "同一特徵在不同的樹中重要性可能不同",
+        "D": "它能告訴我們特徵是正相關還是負相關"
+      }
     },
     {
-      "id": "ML-W5-Q15",
-      "type": "single",
-      "kp": "KP5.1",
-      "title": "這是第 5 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.5.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Scikit-Learn 的決策樹支持哪些任務？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "分類 (`DecisionTreeClassifier`)",
+        "B": "回歸 (`DecisionTreeRegressor`)",
+        "C": "聚類",
+        "D": "異常檢測"
+      }
     },
     {
-      "id": "ML-W5-Q16",
-      "type": "single",
-      "kp": "KP5.2",
-      "title": "這是第 5 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.5.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "導致決策樹不穩定的原因包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "貪婪算法搜尋局部最優",
+        "B": "資料微小變動導致根節點改變",
+        "C": "使用了交叉熵損失",
+        "D": "樹的結構過於複雜"
+      }
     },
     {
-      "id": "ML-W5-Q17",
-      "type": "single",
-      "kp": "KP5.3",
-      "title": "這是第 5 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.5.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "處理類別型特徵時，決策樹可以？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "直接處理（某些實現如 R 語言）",
+        "B": "透過 One-hot 編碼處理",
+        "C": "透過 Label Encoding 處理",
+        "D": "忽略這些特徵"
+      }
     },
     {
-      "id": "ML-W5-Q18",
-      "type": "single",
-      "kp": "KP5.4",
-      "title": "這是第 5 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.5.3",
+        "KP 3.5.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於剪枝 (Pruning)，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "預剪枝在樹構建過程中停止",
+        "B": "後剪枝在樹構建完成後修剪",
+        "C": "剪枝旨在提高訓練集準確率",
+        "D": "剪枝旨在提高泛化能力"
+      }
     },
     {
-      "id": "ML-W5-Q19",
-      "type": "single",
-      "kp": "KP5.5",
-      "title": "這是第 5 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.5.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在 `DecisionTreeRegressor` 中，通常使用什麼作為切分標準？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "Gini",
+        "B": "Entropy",
+        "C": "MSE",
+        "D": "MAE"
+      }
     },
     {
-      "id": "ML-W5-Q20",
-      "type": "single",
-      "kp": "KP5.1",
-      "title": "這是第 5 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.5.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "決策樹可以處理的資料類型包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "數值型",
+        "B": "類別型",
+        "C": "圖像（需展平）",
+        "D": "文字（需向量化）"
+      }
     },
     {
-      "id": "ML-W5-Q21",
-      "type": "single",
-      "kp": "KP5.2",
-      "title": "這是第 5 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.5.2"
+      ],
+      "answer": [
+        "決策樹"
+      ],
+      "title": "決策樹最頂層的節點稱為 __________ 節點。"
     },
     {
-      "id": "ML-W5-Q22",
-      "type": "single",
-      "kp": "KP5.3",
-      "title": "這是第 5 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.5.1"
+      ],
+      "answer": [
+        "熵"
+      ],
+      "title": "衡量集合純度最常用的兩個指標是基尼不純度與 __________。"
     },
     {
-      "id": "ML-W5-Q23",
-      "type": "single",
-      "kp": "KP5.4",
-      "title": "這是第 5 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.5.1"
+      ],
+      "answer": [
+        "資訊增益"
+      ],
+      "title": "如果一個節點的所有樣本都屬於同一類別，則該節點的熵為 __________。"
     },
     {
-      "id": "ML-W5-Q24",
-      "type": "single",
-      "kp": "KP5.5",
-      "title": "這是第 5 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.5.3"
+      ],
+      "answer": [
+        "Gini"
+      ],
+      "title": "在 Scikit-Learn 中，限制樹的最大深度應設置參數 __________。"
     },
     {
-      "id": "ML-W5-Q25",
-      "type": "single",
-      "kp": "KP5.1",
-      "title": "這是第 5 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.5.2"
+      ],
+      "answer": [
+        "剪枝"
+      ],
+      "title": "CART 算法在切分時總是將節點一分為 __________。"
     },
     {
-      "id": "ML-W5-Q26",
-      "type": "single",
-      "kp": "KP5.2",
-      "title": "這是第 5 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.5.2"
+      ],
+      "answer": [
+        "DecisionTreeClassifier"
+      ],
+      "title": "決策樹在分類時，葉節點的預測值通常是該節點中樣本佔比最多的 __________。"
     },
     {
-      "id": "ML-W5-Q27",
-      "type": "single",
-      "kp": "KP5.3",
-      "title": "這是第 5 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.5.5"
+      ],
+      "answer": [
+        "max_depth"
+      ],
+      "title": "透過觀察模型在訓練集與測試集上的表現差異，可以判斷模型是否發生 __________。"
     },
     {
-      "id": "ML-W5-Q28",
-      "type": "single",
-      "kp": "KP5.4",
-      "title": "這是第 5 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.5.4"
+      ],
+      "answer": [
+        "特徵重要性"
+      ],
+      "title": "決策樹的一大優點是其 __________ 性 (Interpretability)，可以直接畫出判斷流程。"
     },
     {
-      "id": "ML-W5-Q29",
-      "type": "single",
-      "kp": "KP5.5",
-      "title": "這是第 5 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.5.4"
+      ],
+      "answer": [
+        "根節點"
+      ],
+      "title": "使用 __________ 函式可以方便地在筆記本中繪製出樹的構造。"
     },
     {
-      "id": "ML-W5-Q30",
-      "type": "single",
-      "kp": "KP5.1",
-      "title": "這是第 5 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.5.5"
+      ],
+      "answer": [
+        "葉節點"
+      ],
+      "title": "為了降低單棵決策樹的不穩定性，實務上常使用多棵樹組成 __________。 ---"
     }
   ]
 }

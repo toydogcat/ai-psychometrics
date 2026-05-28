@@ -1,644 +1,489 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 13,
-  "title": "機器學習第 13 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP13.1": "概念基礎",
-    "KP13.2": "數學原理",
-    "KP13.3": "Python 實作",
-    "KP13.4": "模型評估",
-    "KP13.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W13-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP13.2",
-      "title": "這是第 13 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.13.1"
+      ],
+      "answer": "C",
+      "title": "異常檢測（Anomaly Detection）通常屬於哪一類學習範式？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "監督式",
+        "B": "非監督式",
+        "C": "強化學習",
+        "D": "遷移學習"
+      }
     },
     {
-      "id": "ML-W13-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP13.3",
-      "title": "這是第 13 週的第 2 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.13.2"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "孤立森林 (Isolation Forest) 中，異常樣本在樹中的路徑通常？",
+      "options": {
+        "A": "較長",
+        "B": "較短",
+        "C": "不確定",
+        "D": "始終為 1"
+      }
     },
     {
-      "id": "ML-W13-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP13.4",
-      "title": "這是第 13 週的第 3 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.13.3"
+      ],
+      "answer": "D",
+      "title": "LOF (局部異常因子) 主要基於什麼樣的概念來判斷異常？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "距離原點的距離",
+        "B": "數據的局部密度",
+        "C": "樣本的權重",
+        "D": "樣本的標籤"
+      }
     },
     {
-      "id": "ML-W13-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP13.5",
-      "title": "這是第 13 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.13.4"
+      ],
+      "answer": "B",
+      "title": "在 Scikit-Learn 的異常檢測模型中，預測結果為 `-1` 通常代表？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "正常樣本",
+        "B": "異常樣本",
+        "C": "資料缺失",
+        "D": "運算報錯"
+      }
     },
     {
-      "id": "ML-W13-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP13.1",
-      "title": "這是第 13 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.13.2"
+      ],
+      "answer": "C",
+      "title": "下列哪一個參數決定了孤立森林中樹的數量？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`max_depth`",
+        "B": "`n_estimators`",
+        "C": "`contamination`",
+        "D": "`random_state`"
+      }
     },
     {
-      "id": "ML-W13-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP13.2",
-      "title": "這是第 13 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.13.4"
+      ],
+      "answer": "B",
+      "title": "對於類別極度不平衡的異常檢測任務，哪種指標最具參考價值？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "Accuracy",
+        "B": "F1-Score",
+        "C": "MSE",
+        "D": "$R^2$"
+      }
     },
     {
-      "id": "ML-W13-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP13.3",
-      "title": "這是第 13 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.13.3"
+      ],
+      "answer": "D",
+      "title": "LOF 算法中的 $K$ 參數代表什麼？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "異常值的數量",
+        "B": "考慮鄰居的數量",
+        "C": "樹的深度",
+        "D": "迭代次數"
+      }
     },
     {
-      "id": "ML-W13-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP13.4",
-      "title": "這是第 13 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.13.2"
+      ],
+      "answer": "C",
+      "title": "孤立森林在處理大規模、高維度資料時，效率表現如何？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "非常緩慢",
+        "B": "非常高效",
+        "C": "無法運行",
+        "D": "取決於標籤數量"
+      }
     },
     {
-      "id": "ML-W13-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP13.5",
-      "title": "這是第 13 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.13.5"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "當我們預期資料中有 5% 的異常時，`contamination` 應設為？",
+      "options": {
+        "A": "0.5",
+        "B": "0.05",
+        "C": "5",
+        "D": "0.005"
+      }
     },
     {
-      "id": "ML-W13-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP13.1",
-      "title": "這是第 13 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.13.1"
+      ],
+      "answer": "D",
+      "title": "一類 SVM (One-Class SVM) 的目標是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "分隔兩個類別",
+        "B": "尋找包含正常點的最小區域邊界",
+        "C": "預測連續數值",
+        "D": "降維"
+      }
     },
     {
-      "id": "ML-W13-Q11",
-      "type": "single",
-      "kp": "KP13.2",
-      "title": "這是第 13 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.13.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "異常檢測的應用場景包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "銀行卡盜刷偵測",
+        "B": "工廠設備故障預警",
+        "C": "網路侵入檢測",
+        "D": "房價趨勢預測 (這是回歸)"
+      }
     },
     {
-      "id": "ML-W13-Q12",
-      "type": "single",
-      "kp": "KP13.3",
-      "title": "這是第 13 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.13.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於孤立森林的描述，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "它基於決策樹結構",
+        "B": "不需要計算點與點之間的距離",
+        "C": "運算複雜度與樣本數呈線性關係",
+        "D": "只能處理二維資料"
+      }
     },
     {
-      "id": "ML-W13-Q13",
-      "type": "single",
-      "kp": "KP13.4",
-      "title": "這是第 13 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.13.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "LOF 算法的優點包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "考慮了局部密度差異",
+        "B": "適合檢測不同密度的簇中的異常",
+        "C": "不需要預設污染率 (預測時需要)",
+        "D": "能夠處理非監督數據"
+      }
     },
     {
-      "id": "ML-W13-Q14",
-      "type": "single",
-      "kp": "KP13.5",
-      "title": "這是第 13 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.13.4"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "為什麼準確率 (Accuracy) 不是異常檢測的好指標？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "因為異常點太少，即使全預測為正常，準確率也很高",
+        "B": "準確率無法反映模型對異常的敏感度",
+        "C": "異常點沒有標籤",
+        "D": "準確率計算太複雜"
+      }
     },
     {
-      "id": "ML-W13-Q15",
-      "type": "single",
-      "kp": "KP13.1",
-      "title": "這是第 13 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.13.2",
+        "KP 3.13.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "哪些超參數會影響孤立森林的預測結果？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`n_estimators`",
+        "B": "`max_samples`",
+        "C": "`contamination`",
+        "D": "`kernel`"
+      }
     },
     {
-      "id": "ML-W13-Q16",
-      "type": "single",
-      "kp": "KP13.2",
-      "title": "這是第 13 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.13.3"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "局部密度 (Local Density) 低的點一定是異常點嗎？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "是",
+        "B": "不一定，可能該點本身就屬於一個稀疏的正常簇",
+        "C": "需與其鄰居比較",
+        "D": "取決於座標軸"
+      }
     },
     {
-      "id": "ML-W13-Q17",
-      "type": "single",
-      "kp": "KP13.3",
-      "title": "這是第 13 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.13.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於評估異常檢測，下列哪些指標是有意義的？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "Recall (召回率)",
+        "B": "Precision (精準率)",
+        "C": "ROC-AUC",
+        "D": "MAE"
+      }
     },
     {
-      "id": "ML-W13-Q18",
-      "type": "single",
-      "kp": "KP13.4",
-      "title": "這是第 13 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.13.1"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "異常檢測中常見的數據預處理包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "特徵標準化 (對距離法模型如 LOF 重要)",
+        "B": "缺失值填充",
+        "C": "標籤平衡 (通常不可行，因為沒標籤)",
+        "D": "降維"
+      }
     },
     {
-      "id": "ML-W13-Q19",
-      "type": "single",
-      "kp": "KP13.5",
-      "title": "這是第 13 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.13.1"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "下列哪些算法屬於基於統計的異常檢測？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "Z-score 檢測",
+        "B": "箱線圖 IQR 檢測",
+        "C": "孤立森林",
+        "D": "局部異常因子"
+      }
     },
     {
-      "id": "ML-W13-Q20",
-      "type": "single",
-      "kp": "KP13.1",
-      "title": "這是第 13 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.13.1",
+        "KP 3.13.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "面對標籤缺失的異常檢測，我們可以？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "使用非監督式算法",
+        "B": "手動標記少量樣本進行驗證",
+        "C": "將其視為聚類問題",
+        "D": "放棄檢測"
+      }
     },
     {
-      "id": "ML-W13-Q21",
-      "type": "single",
-      "kp": "KP13.2",
-      "title": "這是第 13 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.13.2"
+      ],
+      "answer": [
+        "關聯規則"
+      ],
+      "title": "孤立森林英文縮寫是 __________ Forest。"
     },
     {
-      "id": "ML-W13-Q22",
-      "type": "single",
-      "kp": "KP13.3",
-      "title": "這是第 13 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.13.1"
+      ],
+      "answer": [
+        "支持度"
+      ],
+      "title": "異常檢測旨在尋找那些在資料分佈中極其 __________ (Rare) 的樣本。"
     },
     {
-      "id": "ML-W13-Q23",
-      "type": "single",
-      "kp": "KP13.4",
-      "title": "這是第 13 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.13.3"
+      ],
+      "answer": [
+        "置信度"
+      ],
+      "title": "LOF 算法通過計算 __________ 密度比值來衡量異常程度。"
     },
     {
-      "id": "ML-W13-Q24",
-      "type": "single",
-      "kp": "KP13.5",
-      "title": "這是第 13 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.13.2"
+      ],
+      "answer": [
+        "提升度"
+      ],
+      "title": "在 Isolation Forest 中，路徑越 __________ 的樣本異常機率越高。"
     },
     {
-      "id": "ML-W13-Q25",
-      "type": "single",
-      "kp": "KP13.1",
-      "title": "這是第 13 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.13.5"
+      ],
+      "answer": [
+        "Apriori"
+      ],
+      "title": "參數 __________ 決定了模型判定異常的閾值比例。"
     },
     {
-      "id": "ML-W13-Q26",
-      "type": "single",
-      "kp": "KP13.2",
-      "title": "這是第 13 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.13.1"
+      ],
+      "answer": [
+        "頻繁項集"
+      ],
+      "title": "一種簡單的統計異常檢測方法是檢查數值是否超出均值加減 3 倍的 __________。"
     },
     {
-      "id": "ML-W13-Q27",
-      "type": "single",
-      "kp": "KP13.3",
-      "title": "這是第 13 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.13.3"
+      ],
+      "answer": [
+        "剪枝"
+      ],
+      "title": "LOF 在預測時需要搜尋最近的 __________ (Neighbors)。"
     },
     {
-      "id": "ML-W13-Q28",
-      "type": "single",
-      "kp": "KP13.4",
-      "title": "這是第 13 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.13.1"
+      ],
+      "answer": [
+        "關聯分析"
+      ],
+      "title": "信用卡交易中的 __________ 偵測是異常檢測最典型的應用。"
     },
     {
-      "id": "ML-W13-Q29",
-      "type": "single",
-      "kp": "KP13.5",
-      "title": "這是第 13 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.13.4"
+      ],
+      "answer": [
+        "transaction"
+      ],
+      "title": "在 sklearn 中，異常檢測模型的 `predict` 方法輸出 1 代表 __________ 樣本。"
     },
     {
-      "id": "ML-W13-Q30",
-      "type": "single",
-      "kp": "KP13.1",
-      "title": "這是第 13 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.13.2"
+      ],
+      "answer": [
+        "association_rules"
+      ],
+      "title": "孤立森林隨機切分空間時，異常點更容易在較 __________ 的次數內被分離出來。 ---"
     }
   ]
 }

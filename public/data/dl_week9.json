@@ -1,224 +1,2045 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 9,
-  "title": "深度學習第 9 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP9.1": "理論基礎",
-    "KP9.2": "架構原理",
-    "KP9.3": "PyTorch 實作",
-    "KP9.4": "模型調優",
-    "KP9.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W9-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP9.2",
-      "title": "這是第 9 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.9.1"
+      ],
+      "answer": "B",
+      "title": "1969 年哪一本書指出單層感知器無法解決 XOR 問題？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "《人工智慧》",
+        "B": "《感知器》",
+        "C": "《深度學習》",
+        "D": "《圖靈傳》"
+      }
     },
     {
-      "id": "DL-W9-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP9.3",
-      "title": "這是第 9 週的第 2 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.9.1"
+      ],
+      "answer": "C",
+      "title": "反向傳播算法的核心數學基礎是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "貝氏定理",
+        "B": "連鎖律",
+        "C": "泰勒展開",
+        "D": "傅立葉變換"
+      }
     },
     {
-      "id": "DL-W9-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP9.4",
-      "title": "這是第 9 週的第 3 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP4.9.1"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "下列哪一個激活函數輸出範圍在 (0, 1)？",
+      "options": {
+        "A": "ReLU",
+        "B": "Tanh",
+        "C": "Sigmoid",
+        "D": "Leaky ReLU"
+      }
     },
     {
-      "id": "DL-W9-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP9.5",
-      "title": "這是第 9 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.9.1"
+      ],
+      "answer": "D",
+      "title": "PyTorch 中負責自動微分的引擎是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "Autograd",
+        "B": "Optimizer",
+        "C": "Module",
+        "D": "Tensor"
+      }
     },
     {
-      "id": "DL-W9-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP9.1",
-      "title": "這是第 9 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.9.1"
+      ],
+      "answer": "C",
+      "title": "CNN 的「權重共享」主要是為了減少？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "計算精度",
+        "B": "參數量",
+        "C": "隱藏層數",
+        "D": "數據增強"
+      }
     },
     {
-      "id": "DL-W9-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP9.2",
-      "title": "這是第 9 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.9.1"
+      ],
+      "answer": "D",
+      "title": "歷史上第一個大獲成功的卷積神經網路是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "AlexNet",
+        "B": "LeNet-5",
+        "C": "ResNet",
+        "D": "VGG"
+      }
     },
     {
-      "id": "DL-W9-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP9.3",
-      "title": "這是第 9 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.9.1"
+      ],
+      "answer": "B",
+      "title": "ResNet 引入 Skip Connection 是為了解決？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "顯存不足",
+        "B": "推理速度慢",
+        "C": "深層網路的退化與梯度問題",
+        "D": "數據量不足"
+      }
     },
     {
-      "id": "DL-W9-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP9.4",
-      "title": "這是第 9 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.9.1"
+      ],
+      "answer": "C",
+      "title": "遷移學習中，若新數據集非常小且相似，應優先？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "微調所有權重",
+        "B": "固定卷積層只練分類層",
+        "C": "隨機初始化",
+        "D": "增加層數"
+      }
     },
     {
-      "id": "DL-W9-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP9.5",
-      "title": "這是第 9 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP4.9.1"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "YOLO 算法屬於哪一類檢測器？",
+      "options": {
+        "A": "一階段 (One-stage)",
+        "B": "兩階段 (Two-stage)",
+        "C": "像素級",
+        "D": "森林級"
+      }
     },
     {
-      "id": "DL-W9-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP9.1",
-      "title": "這是第 9 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.9.1"
+      ],
+      "answer": "D",
+      "title": "U-Net 因其什麼特性常被用於醫療分割？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "速度最快",
+        "B": "參數量最少",
+        "C": "跳躍連接保留高頻細節",
+        "D": "不需要卷積"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP4.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "符號主義 AI (Symbolic AI) 又被稱為？",
+      "options": {
+        "A": "黑箱 AI",
+        "B": "專家系統",
+        "C": "聯結主義",
+        "D": "強化學習"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP4.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "多層感知器 (MLP) 的隱藏層必須使用 __________ 才能擬合非線性。",
+      "options": {
+        "A": "線性映射",
+        "B": "激活函數",
+        "C": "池化",
+        "D": "歸一化"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP4.9.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "ReLU 在負半軸的導數為？",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "隨機",
+        "D": "-1"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP4.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "PyTorch 中將張量移至 GPU 的代碼是？",
+      "options": {
+        "A": "`.to(\"cuda\")`",
+        "B": "`.move(\"gpu\")`",
+        "C": "`.gpu()`",
+        "D": "`.set_device(1)`"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP4.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "卷積操作中的 Padding 主要是為了？",
+      "options": {
+        "A": "增加非線性",
+        "B": "保持空間維度或處理邊緣",
+        "C": "減少參數",
+        "D": "加快速度"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP4.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "2012 年奪下 ImageNet 冠軍並引發熱潮的模型是？",
+      "options": {
+        "A": "VGG",
+        "B": "ResNet",
+        "C": "AlexNet",
+        "D": "GoogLeNet"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP4.9.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "數據增強中，「水平翻轉」最適合哪種場景？",
+      "options": {
+        "A": "數字辨識",
+        "B": "自然風景或動物",
+        "C": "文本分類",
+        "D": "錄音分析"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP4.9.2"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "目標檢測評估指標 IoU 代表？",
+      "options": {
+        "A": "交併比",
+        "B": "準確率",
+        "C": "損失函數",
+        "D": "學習率"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP4.9.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "語義分割 (Semantic Segmentation) 與實例分割的區別在於？",
+      "options": {
+        "A": "速度",
+        "B": "是否區分同類別的不同個體",
+        "C": "分辨率",
+        "D": "激活函數"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP4.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "梯度消失 (Vanishing Gradient) 會導致？",
+      "options": {
+        "A": "權重爆炸",
+        "B": "底層網路停止更新",
+        "C": "預測過快",
+        "D": "過擬合"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "感知器"
+      ],
+      "title": "萬有逼近定理 (Universal Approximation Theorem) 針對的是？ (A) CNN (B) MLP (C) RNN (D) Transformer"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "卷積"
+      ],
+      "title": "交叉熵損失 (Cross-Entropy) 常用於？ (A) 回歸 (B) 分類 (C) 聚類 (D) 降維"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "池化"
+      ],
+      "title": "PyTorch 中 `optimizer.step()` 的作用是？ (A) 計算梯度 (B) 更新參數權重 (C) 清空梯度 (D) 計算損失"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "ResNet"
+      ],
+      "title": "池化層 (Pooling) 通常跟在 __________ 之後。 (A) 全連接層 (B) 卷積層 (C) 輸入層 (D) 損失函數"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "遷移學習"
+      ],
+      "title": "VGG 網路統一使用什麼尺寸的卷積核？ (A) 1x1 (B) 3x3 (C) 5x5 (D) 7x7"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "過擬合"
+      ],
+      "title": "ImageNet 資料集大約包含多少個類別？ (A) 10 (B) 100 (C) 1000 (D) 10000"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "Optimizer"
+      ],
+      "title": "NMS (非極大值抑制) 用於？ (A) 圖像分類 (B) 檢測結果去重 (C) 梯度裁剪 (D) 數據加載"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "backward"
+      ],
+      "title": "U-Net 的形狀是？ (A) 圓形 (B) U型 (C) 階梯型 (D) 隨機"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "Dataset"
+      ],
+      "title": "單層感知器相當於一個？ (A) 線性分類器 (B) 複雜資料庫 (C) 隨機發生器 (D) 非線性函數"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "CUDA"
+      ],
+      "title": "Dropout 在測試 (Inference) 階段應該？ (A) 保持開啟 (B) 關閉 (C) 增加比例 (D) 隨機切換"
+    },
+    {
+      "id": "Q31",
+      "num": 31,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Softmax 輸出的所有值之和等於？ (A) 0 (B) 1 (C) 類別數 (D) 不固定"
+    },
+    {
+      "id": "Q32",
+      "num": 32,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 張量的 `requires_grad` 屬性預設為？ (A) True (B) False (C) None (D) 隨機"
+    },
+    {
+      "id": "Q33",
+      "num": 33,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "CNN 相比 MLP 處理圖像的優點是？ (A) 參數更少 (B) 空間局部特徵提取更好 (C) 具有平移不變性 (D) 以上皆是"
+    },
+    {
+      "id": "Q34",
+      "num": 34,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GoogLeNet 的核心創新是？ (A) 殘差塊 (B) Inception 模組 (C) 門控單元 (D) 詞嵌入"
+    },
+    {
+      "id": "Q35",
+      "num": 35,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "遷移學習中的 Fine-tuning 意為？ (A) 重新訓練 (B) 載入權重並以低學習率微調 (C) 手動設置權重 (D) 壓縮模型"
+    },
+    {
+      "id": "Q36",
+      "num": 36,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "衡量檢測模型精度的 mAP 是 __________ 的平均。 (A) 損失 (B) AP (Average Precision) (C) 速度 (D) 內存"
+    },
+    {
+      "id": "Q37",
+      "num": 37,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "U-Net 常用於 __________。 (A) 文本生成 (B) 影像分割 (C) 語音合成 (D) 強化學習"
+    },
+    {
+      "id": "Q38",
+      "num": 38,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "感知器的激活函數通常是 __________。 (A) Sigmoid (B) ReLU (C) 階梯函數 (D) Tanh"
+    },
+    {
+      "id": "Q39",
+      "num": 39,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "梯度下降的更新公式中，$\\eta$ 代表 __________。 (A) 誤差 (B) 權重 (C) 學習率 (D) 步長"
+    },
+    {
+      "id": "Q40",
+      "num": 40,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "交叉熵損失對 __________ 預測的懲罰非常重。 (A) 正確 (B) 錯誤且信心十足 (C) 接近均值 (D) 所有"
+    },
+    {
+      "id": "Q41",
+      "num": 41,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 中 `nn.Sequential` 的作用是？ (A) 平行運算 (B) 按順序包裝多個層 (C) 隨機打亂 (D) 儲存模型"
+    },
+    {
+      "id": "Q42",
+      "num": 42,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "卷積步長 (Stride) 為 2 會導致特徵圖尺寸？ (A) 變大 (B) 變小 (約一半) (C) 不變 (D) 變為零"
+    },
+    {
+      "id": "Q43",
+      "num": 43,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ResNet 的作者是？ (A) 辛頓 (B) 何愷明 (C) 李飛飛 (D) 楊立昆"
+    },
+    {
+      "id": "Q44",
+      "num": 44,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ImageNet 競賽 ILSVRC 的首屆舉辦年份是？ (A) 1998 (B) 2010 (C) 2012 (D) 2015"
+    },
+    {
+      "id": "Q45",
+      "num": 45,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "一個 3x3 卷積核在 5x5 圖像上無 Padding 步長 1 的輸出是？ (A) 5x5 (B) 3x3 (C) 1x1 (D) 7x7"
+    },
+    {
+      "id": "Q46",
+      "num": 46,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "深度學習中的「張量」通常是指？ (A) 向量 (B) 矩陣 (C) 多維數組 (D) 以上皆是"
+    },
+    {
+      "id": "Q47",
+      "num": 47,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Batch Normalization 應該放在激活函數 __________。 (A) 之前或之後 (B) 只在之後 (C) 損失函數中 (D) 輸入層之前"
+    },
+    {
+      "id": "Q48",
+      "num": 48,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "1x1 卷積的主要作用不包括？ (A) 跨通道交互 (B) 升降維 (C) 擴大感受野 (D) 增加非線性"
+    },
+    {
+      "id": "Q49",
+      "num": 49,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "遷移學習若產生「負遷移」是因為？ (A) 資料太多 (B) 任務差異過大 (C) 模型太深 (D) GPU 壞了"
+    },
+    {
+      "id": "Q50",
+      "num": 50,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "現代 CV 技術中 YOLO 系列目前由 __________ 維護最活躍。 (A) Google (B) Meta (C) Ultralytics (D) Apple"
+    },
+    {
+      "id": "Q51",
+      "num": 51,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "深度學習成功的三要素？ (A) 大數據 (B) 強算力 (C) 深度網路算法 (D) 專家規則"
+    },
+    {
+      "id": "Q52",
+      "num": 52,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "反向傳播中，權重更新受哪些影響？ (A) 學習率 (B) 損失函數的梯度 (C) 特徵值 (D) 模型的深度"
+    },
+    {
+      "id": "Q53",
+      "num": 53,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "非線性激發函數的價值？ (A) 防止層級退化 (B) 擬合非線性數據 (C) 提供梯度 (D) 減少運算"
+    },
+    {
+      "id": "Q54",
+      "num": 54,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 張量的屬性包含？ (A) shape (B) device (C) dtype (D) requires_grad"
+    },
+    {
+      "id": "Q55",
+      "num": 55,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "卷積層的核心參數？ (A) kernel_size (B) stride (C) padding (D) dilation"
+    },
+    {
+      "id": "Q56",
+      "num": 56,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "經典 CNN 架構包含？ (A) VGG (B) ResNet (C) GoogLeNet (D) YOLO (這是檢測)"
+    },
+    {
+      "id": "Q57",
+      "num": 57,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ResNet 為什麼能訓練極深？ (A) 緩解梯度消失 (B) 恆等映射保護 (C) 減少參數 (D) 自動數據增強"
+    },
+    {
+      "id": "Q58",
+      "num": 58,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "遷移學習策略？ (A) Feature Extraction (B) Fine-tuning (C) Random Init (D) Zero Init"
+    },
+    {
+      "id": "Q59",
+      "num": 59,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "目標檢測中的後處理？ (A) NMS (B) IoU 計算 (C) 閾值過濾 (D) 激活函數"
+    },
+    {
+      "id": "Q60",
+      "num": 60,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "分割任務的類型？ (A) 語義分割 (B) 實例分割 (C) 全景分割 (D) 分類分割"
+    },
+    {
+      "id": "Q61",
+      "num": 61,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 的兩個流派？ (A) 符號主義 (B) 連接主義 (C) 行為主義 (D) 復古主義"
+    },
+    {
+      "id": "Q62",
+      "num": 62,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "解決 XOR 問題的模型？ (A) MLP (B) CNN (C) 二層神經網路 (D) 單層感知器"
+    },
+    {
+      "id": "Q63",
+      "num": 63,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "常見的分類損失函數？ (A) Cross-Entropy (B) BCELoss (C) MSE (D) MAE"
+    },
+    {
+      "id": "Q64",
+      "num": 64,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 構建模型的組件？ (A) nn.Module (B) forward 方法 (C) Tensor (D) JSON"
+    },
+    {
+      "id": "Q65",
+      "num": 65,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "池化的優點？ (A) 減少計算量 (B) 平移不變性 (C) 防止過擬合 (D) 增加解析度"
+    },
+    {
+      "id": "Q66",
+      "num": 66,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AlexNet 的亮點？ (A) ReLU (B) Dropout (C) GPU 加速 (D) Residual Connection"
+    },
+    {
+      "id": "Q67",
+      "num": 67,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ImageNet 對 AI 的貢獻？ (A) 提供基準測試 (B) 驗證深度模型能力 (C) 推動遷移學習 (D) 解決所有 AI 問題"
+    },
+    {
+      "id": "Q68",
+      "num": 68,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "目標檢測的難點？ (A) 尺度變化 (B) 遮擋 (C) 背景干擾 (D) 類別不平衡"
+    },
+    {
+      "id": "Q69",
+      "num": 69,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "U-Net 的應用？ (A) 衛星地圖分割 (B) 醫學腫瘤檢測 (C) 車道線識別 (D) 機器翻譯"
+    },
+    {
+      "id": "Q70",
+      "num": 70,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "梯度消失的解決方法？ (A) ReLU (B) Batch Norm (C) 殘差連接 (D) Sigmoid"
+    },
+    {
+      "id": "Q71",
+      "num": 71,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "反向傳播與前向傳播的區別？ (A) 方向相反 (B) 前向算損失，後向算梯度 (C) 運算量一致 (D) 先前向再後向"
+    },
+    {
+      "id": "Q72",
+      "num": 72,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Softmax 與 Sigmoid 的關係？ (A) Softmax 是多維推廣 (B) Sigmoid 是二維特殊情況 (C) 都用於分類 (D) 都用於回歸"
+    },
+    {
+      "id": "Q73",
+      "num": 73,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 中常見的優化器？ (A) SGD (B) Adam (C) RMSprop (D) ReLU"
+    },
+    {
+      "id": "Q74",
+      "num": 74,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "卷積核的選擇原則？ (A) 奇數尺寸 (B) 多個小核優於一個大核 (C) 隨機打亂 (D) 與輸入通道一致"
+    },
+    {
+      "id": "Q75",
+      "num": 75,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "VGG 的規整性體現在？ (A) 3x3 卷積 (B) 2x2 池化 (C) 通道數翻倍 (D) 隨機跳轉"
+    },
+    {
+      "id": "Q76",
+      "num": 76,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "數據增強的種類？ (A) 幾何變換 (B) 色彩變換 (C) 混合樣本 (Mixup) (D) 刪除標籤"
+    },
+    {
+      "id": "Q77",
+      "num": 77,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "一階段檢測器的優點？ (A) 速度快 (B) 實時性好 (C) 結構簡單 (D) 準確度絕對最高"
+    },
+    {
+      "id": "Q78",
+      "num": 78,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "圖像分割與檢測的共同點？ (A) 都需要特徵提取 (B) 都是計算機視覺任務 (C) 都輸出邊界框 (D) 都依賴卷積"
+    },
+    {
+      "id": "Q79",
+      "num": 79,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "欠擬合的解決手段？ (A) 增加模型複雜度 (B) 增加特徵 (C) 減少正則化 (D) 增加數據 (通常無效)"
+    },
+    {
+      "id": "Q80",
+      "num": 80,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "遷移學習的適用性？ (A) 小數據集 (B) 相似任務 (C) 快速原型 (D) 沒硬體時"
+    },
+    {
+      "id": "Q81",
+      "num": 81,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "哪些技術屬於正則化？ (A) L1/L2 (B) Dropout (C) Early Stopping (D) 增加層數"
+    },
+    {
+      "id": "Q82",
+      "num": 82,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "MLP 適合處理什麼？ (A) 特徵工程後的表格數據 (B) 小型分類任務 (C) 簡單函數擬合 (D) 高清视频流"
+    },
+    {
+      "id": "Q83",
+      "num": 83,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch `DataLoader` 的參數？ (A) batch_size (B) shuffle (C) num_workers (D) device"
+    },
+    {
+      "id": "Q84",
+      "num": 84,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "CNN 如何捕捉形狀？ (A) 淺層學線條 (B) 中層學組件 (C) 深層學物體 (D) 全靠隨機"
+    },
+    {
+      "id": "Q85",
+      "num": 85,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "殘差模塊的變體？ (A) Bottleneck (B) BasicBlock (C) Inception (D) DenseBlock"
+    },
+    {
+      "id": "Q86",
+      "num": 86,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "數據集劃分的標準？ (A) 訓練集 (B) 驗證集 (C) 測試集 (D) 臨時集"
+    },
+    {
+      "id": "Q87",
+      "num": 87,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "YOLO 輸出張量的維度含義？ (A) 框的中心座標 (B) 框的寬高 (C) 置信度 (D) 類別概率"
+    },
+    {
+      "id": "Q88",
+      "num": 88,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "分割任務的 Loss 函數？ (A) Dice Loss (B) Cross Entropy (C) MSE (D) Focal Loss"
+    },
+    {
+      "id": "Q89",
+      "num": 89,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "感知器學習算法的收斂前提？ (A) 線性可分 (B) 學習率不為零 (C) 資料打亂 (D) GPU 運算"
+    },
+    {
+      "id": "Q90",
+      "num": 90,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "反向傳播中「鏈式法則」的計算路徑？ (A) 從 Loss 到 輸出層 (B) 從 輸出層 到 隱藏層 (C) 從 隱藏層 到 權重 (D) 從 權重 到 樣本"
+    },
+    {
+      "id": "Q91",
+      "num": 91,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "激活函數的性質要求？ (A) 連續可導 (B) 非線性 (C) 單調性 (D) 周期性"
+    },
+    {
+      "id": "Q92",
+      "num": 92,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "訓練 PyTorch 模型的必要步驟？ (A) `model.train()` (B) `zero_grad()` (C) `backward()` (D) `step()`"
+    },
+    {
+      "id": "Q93",
+      "num": 93,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "最大池化的作用？ (A) 特徵選擇 (B) 降維 (C) 平移不變性 (D) 提取背景"
+    },
+    {
+      "id": "Q94",
+      "num": 94,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "經典網絡架構中屬於「何愷明」團隊的作品？ (A) ResNet (B) Faster R-CNN (C) Mask R-CNN (D) VGG"
+    },
+    {
+      "id": "Q95",
+      "num": 95,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "遷移學習中「凍結層」的好處？ (A) 訓練變快 (B) 減少內存佔用 (C) 保護預訓練知識 (D) 防止過擬合"
+    },
+    {
+      "id": "Q96",
+      "num": 96,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "目標檢測的指標？ (A) mAP (B) FPS (C) Recall (D) Top-1 Accuracy (這是分類的)"
+    },
+    {
+      "id": "Q97",
+      "num": 97,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "U-Net 的層級組件？ (A) 下採樣 (B) 上採樣 (C) 跳躍連接 (D) 循環層"
+    },
+    {
+      "id": "Q98",
+      "num": 98,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "深度學習框架除了 PyTorch 還有？ (A) TensorFlow (B) JAX (C) Caffe (D) Flask"
+    },
+    {
+      "id": "Q99",
+      "num": 99,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "如何判斷模型過擬合？ (A) 訓練 Loss 下降，驗證 Loss 上升 (B) 訓練準確率 100%，測試 60% (C) 模型太深 (D) 數據太少"
+    },
+    {
+      "id": "Q100",
+      "num": 100,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "計算機視覺的子領域？ (A) 圖像識別 (B) 视频分析 (C) 3D 視覺 (D) 語音克隆"
+    },
+    {
+      "id": "Q101",
+      "num": 101,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "機器學習三要素：資料、算力與 __________。"
+    },
+    {
+      "id": "Q102",
+      "num": 102,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "單層感知器無法解決 __________ 邏輯問題。"
+    },
+    {
+      "id": "Q103",
+      "num": 103,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "權重更新公式中，梯度方向前加負號是因為我們要 __________ 損失。"
+    },
+    {
+      "id": "Q104",
+      "num": 104,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "反向傳播計算的是損失函數對 __________ 的偏導。"
+    },
+    {
+      "id": "Q105",
+      "num": 105,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "激發函數 ReLU 的公式是 $max(0, __________)$。"
+    },
+    {
+      "id": "Q106",
+      "num": 106,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "回歸問題的輸出層一般不加 __________ 函數。"
+    },
+    {
+      "id": "Q107",
+      "num": 107,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 的核心數據對象是 __________ (Tensor)。"
+    },
+    {
+      "id": "Q108",
+      "num": 108,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "在 PyTorch 中，一鍵求導的方法名是 __________。"
+    },
+    {
+      "id": "Q109",
+      "num": 109,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "CNN 中減少參數量最核心的技術是 __________ 共享。"
+    },
+    {
+      "id": "Q110",
+      "num": 110,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "一個 3x3x3 的卷積核代表輸入圖像有 __________ 個通道。"
+    },
+    {
+      "id": "Q111",
+      "num": 111,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "LeNet-5 最早被用於辨識 __________ 數字。"
+    },
+    {
+      "id": "Q112",
+      "num": 112,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "VGG 證明了 __________ (深度/寬度) 的重要性。"
+    },
+    {
+      "id": "Q113",
+      "num": 113,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ResNet 通過 __________ 連接解決了網路退化問題。"
+    },
+    {
+      "id": "Q114",
+      "num": 114,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "李飛飛教授建立的著名視覺資料集是 __________。"
+    },
+    {
+      "id": "Q115",
+      "num": 115,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "在已有權重基礎上進行二次訓練的過程稱為 __________ (Fine-tuning)。"
+    },
+    {
+      "id": "Q116",
+      "num": 116,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "YOLO 算法的全稱是 You Only __________ Once。"
+    },
+    {
+      "id": "Q117",
+      "num": 117,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "檢測指標 mAP 中，AP 代表 __________ Precision。"
+    },
+    {
+      "id": "Q118",
+      "num": 118,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "U-Net 是為了 __________ 影像分割而設計的對稱架構。"
+    },
+    {
+      "id": "Q119",
+      "num": 119,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "分割任務中，判定每個 __________ 的類別。"
+    },
+    {
+      "id": "Q120",
+      "num": 120,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "XOR 問題證明了 __________ 層神經網路的必要性。"
+    },
+    {
+      "id": "Q121",
+      "num": 121,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "學習率過大會導致損失函數 __________。"
+    },
+    {
+      "id": "Q122",
+      "num": 122,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "激活函數提供了神經網路的 __________ 性表達能力。"
+    },
+    {
+      "id": "Q123",
+      "num": 123,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 中將梯度歸零的方法是 `optimizer.zero___________()`。"
+    },
+    {
+      "id": "Q124",
+      "num": 124,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "卷積層輸出的矩陣通常稱為 __________ 圖。"
+    },
+    {
+      "id": "Q125",
+      "num": 125,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "1x1 卷積可以改變特徵圖的 __________ 數。"
+    },
+    {
+      "id": "Q126",
+      "num": 126,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": null,
+      "title": "*答案*: N/A (KP4.9.3)"
+    },
+    {
+      "id": "Q127",
+      "num": 127,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "遷移學習利用了特徵的 __________ 性。"
+    },
+    {
+      "id": "Q128",
+      "num": 128,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "目標檢測的預測結果包含邊界框與 __________。"
+    },
+    {
+      "id": "Q129",
+      "num": 129,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "NMS 的意思是非 __________ 值抑制。"
+    },
+    {
+      "id": "Q130",
+      "num": 130,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "圖像分割中，區分個體的任務叫 __________ 分割。"
+    },
+    {
+      "id": "Q131",
+      "num": 131,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "反向傳播算法是在 __________ 年代被推廣開來的。"
+    },
+    {
+      "id": "Q132",
+      "num": 132,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "損失函數 MSE 的 M 代表 __________。"
+    },
+    {
+      "id": "Q133",
+      "num": 133,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Sigmoid 函數輸出的中心值（輸入為0時）是 __________。"
+    },
+    {
+      "id": "Q134",
+      "num": 134,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 預設在 __________ (CPU/GPU) 上建立張量。"
+    },
+    {
+      "id": "Q135",
+      "num": 135,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "最大池化通常使用 __________ 的步長。"
+    },
+    {
+      "id": "Q136",
+      "num": 136,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AlexNet 使用了兩塊 __________ 顯卡進行並行訓練。"
+    },
+    {
+      "id": "Q137",
+      "num": 137,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "VGG-16 模型中有 __________ 個全連接層。"
+    },
+    {
+      "id": "Q138",
+      "num": 138,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "數據增強是為了防止模型 __________。"
+    },
+    {
+      "id": "Q139",
+      "num": 139,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "IoU 計算的是 A 與 B 的交集除以 __________。"
+    },
+    {
+      "id": "Q140",
+      "num": 140,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "U-Net 的橫向連接稱為 __________ 連接。"
+    },
+    {
+      "id": "Q141",
+      "num": 141,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "連接主義 AI 認為神經元之間的 __________ 是智慧的關鍵。"
+    },
+    {
+      "id": "Q142",
+      "num": 142,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "MLP 的最後一層稱為 __________ 層。"
+    },
+    {
+      "id": "Q143",
+      "num": 143,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Tanh 函數的輸出均值為 __________，比 Sigmoid 更優。"
+    },
+    {
+      "id": "Q144",
+      "num": 144,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "執行模型預測前，應調用 `model.__________()` 將模型設為評估模式。"
+    },
+    {
+      "id": "Q145",
+      "num": 145,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "卷積核的大小通常為 __________ 數。"
+    },
+    {
+      "id": "Q146",
+      "num": 146,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ResNet 的跳躍連接是透過 __________ 運算結合的。"
+    },
+    {
+      "id": "Q147",
+      "num": 147,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "遷移學習中「解凍」層數越多，需要的新數據量就越 __________。"
+    },
+    {
+      "id": "Q148",
+      "num": 148,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "目標檢測的邊界框通常由 4 個 __________ 決定。"
+    },
+    {
+      "id": "Q149",
+      "num": 149,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "YOLOv8 是目前 __________ 視覺任務的常用工具。"
+    },
+    {
+      "id": "Q150",
+      "num": 150,
+      "type": "fill",
+      "kps": [
+        "KP4.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "深度學習的核心目的是利用數據自動提取 __________。 ---"
     }
   ]
 }

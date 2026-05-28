@@ -1,0 +1,426 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 14,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP 14.1"
+      ],
+      "answer": null,
+      "title": "執行 `python myscript.py input.txt output.txt`，`sys.argv[1]` 的值是？",
+      "options": {
+        "A": "`myscript.py`",
+        "B": "`input.txt`",
+        "C": "`output.txt`",
+        "D": "`python`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP 14.3"
+      ],
+      "answer": null,
+      "title": "下列哪一個方法可以用來獲取目前的執行目錄？",
+      "options": {
+        "A": "`os.cwd()`",
+        "B": "`os.getcwd()`",
+        "C": "`sys.path`",
+        "D": "`os.path.abspath('.')`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "想要安全地拼接路徑 `folder` 與 `file.txt`，應使用？",
+      "options": {
+        "A": "`folder + \"/\" + file.txt`",
+        "B": "`folder + \"\\\\\" + file.txt`",
+        "C": "`os.path.join(folder, file.txt)`",
+        "D": "`os.path.combine(folder, file.txt)`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP 14.5"
+      ],
+      "answer": null,
+      "title": "哪一個模組提供存取 Python 搜尋模組的路徑列表？",
+      "options": {
+        "A": "`os`",
+        "B": "`pathlib`",
+        "C": "`sys`",
+        "D": "`importlib`"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP 14.5"
+      ],
+      "answer": null,
+      "title": "如何在 Python 中結束程式並回傳錯誤代碼 1？",
+      "options": {
+        "A": "`exit(1)`",
+        "B": "`sys.exit(1)`",
+        "C": "`os.exit(1)`",
+        "D": "`quit(1)`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "檢查路徑是否存在且為資料夾，應使用？",
+      "options": {
+        "A": "`os.path.exists()`",
+        "B": "`os.path.isfile()`",
+        "C": "`os.path.isdir()`",
+        "D": "`os.path.checkdir()`"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "獲取檔案副檔名的最佳方法是？",
+      "options": {
+        "A": "`filename.split('.')[-1]`",
+        "B": "`os.path.splitext(filename)[1]`",
+        "C": "`os.path.extension(filename)`",
+        "D": "`sys.get_ext(filename)`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP 14.4"
+      ],
+      "answer": null,
+      "title": "若要獲取環境變數 `PATH` 的值，正確語法是？",
+      "options": {
+        "A": "`os.environ['PATH']`",
+        "B": "`os.get_env('PATH')`",
+        "C": "`sys.env['PATH']`",
+        "D": "`os.path.env('PATH')`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP 14.3"
+      ],
+      "answer": null,
+      "title": "下列哪一個指令可以建立多層嵌套目錄（如 `a/b/c`）？",
+      "options": {
+        "A": "`os.mkdir()`",
+        "B": "`os.mkdirs()`",
+        "C": "`os.makedirs()`",
+        "D": "`sys.mkdir()`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "`os.path.abspath('..')` 的作用是？",
+      "options": {
+        "A": "刪除上一層目錄",
+        "B": "獲取上一層目錄的絕對路徑",
+        "C": "檢查上一層目錄是否存在",
+        "D": "將目前路徑切換到上一層"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 14.1"
+      ],
+      "answer": null,
+      "title": "關於 `sys.argv`，哪些敘述正確？",
+      "options": {
+        "A": "它是一個串列 (List)",
+        "B": "`sys.argv[0]` 是腳本路徑",
+        "C": "它包含了 `python` 命令本身",
+        "D": "參數皆以字串形式儲存"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 14.3"
+      ],
+      "answer": null,
+      "title": "哪些方法可以用於檔案或目錄的重新命名或搬移？",
+      "options": {
+        "A": "`os.rename()`",
+        "B": "`os.move()`",
+        "C": "`os.replace()`",
+        "D": "`os.copy()`"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "下列哪些屬於 `os.path` 模組提供的功能？",
+      "options": {
+        "A": "檢查檔案大小",
+        "B": "獲取路徑中的檔名",
+        "C": "刪除目錄",
+        "D": "判斷絕對路徑"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 14.4"
+      ],
+      "answer": null,
+      "title": "關於環境變數，哪些是正確的？",
+      "options": {
+        "A": "可以用來儲存敏感資訊",
+        "B": "程式重啟後 `os.environ` 的修改會永久保存在作業系統中",
+        "C": "`os.environ.get()` 可以避免 `KeyError`",
+        "D": "它們是鍵值對結構"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 14.3"
+      ],
+      "answer": null,
+      "title": "若要遍歷一個資料夾下的所有子資料夾與檔案，可以使用？",
+      "options": {
+        "A": "`os.listdir()` 配合遞迴",
+        "B": "`os.walk()`",
+        "C": "`sys.walk()`",
+        "D": "`glob.glob()`"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 14.5"
+      ],
+      "answer": null,
+      "title": "關於 `sys.path`，哪些正確？",
+      "options": {
+        "A": "它決定了 `import` 語句的搜尋範圍",
+        "B": "第一個元素通常是目前的腳本目錄",
+        "C": "它是唯讀的，不可修改",
+        "D": "可以透過 `sys.path.append()` 新增路徑"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 14.5"
+      ],
+      "answer": null,
+      "title": "下列哪些操作涉及 `os` 模組？",
+      "options": {
+        "A": "獲取目前程序 ID",
+        "B": "獲取 CPU 核心數",
+        "C": "獲取 Python 版本號",
+        "D": "變更目前工作目錄"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "關於跨平台開發，應注意？",
+      "options": {
+        "A": "路徑分隔符號的差異",
+        "B": "換行符號的差異 (`\\n` vs `\\r\\n`)",
+        "C": "檔案名稱的大小寫敏感度",
+        "D": "命令列工具的可用性"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "下列哪些是 `os.path.split()` 回傳的結果組成？",
+      "options": {
+        "A": "目錄部分",
+        "B": "檔案部分",
+        "C": "副檔名部分",
+        "D": "磁碟代號部分"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 14.5"
+      ],
+      "answer": null,
+      "title": "關於 `sys.stdin`, `sys.stdout`, `sys.stderr`，哪些敘述正確？",
+      "options": {
+        "A": "它們是類檔案物件 (File-like objects)",
+        "B": "`print()` 預設輸出到 `sys.stdout`",
+        "C": "它們可以被重導向 (Redirection)",
+        "D": "它們只能處理純文字"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 14.1"
+      ],
+      "answer": null,
+      "title": "`sys.argv` 的資料型別是 __________。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "若要檢查路徑是否存在，應呼叫 `os.path.__________`。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "`os.path.__________` 方法可以將路徑拆分為「目錄」與「檔名」兩部分。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "在 Windows 上，路徑分隔符號通常是 `\\`，在 Linux 上則是 `/`，我們應使用 `__________` 來取得目前的系統分隔符號。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 14.5"
+      ],
+      "answer": null,
+      "title": "`sys.__________` 屬性儲存了 Python 直譯器的版本資訊。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 14.3"
+      ],
+      "answer": null,
+      "title": "刪除空資料夾應使用 `os.__________`。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "獲取檔案大小（位元組）可以使用 `os.path.__________`。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 14.4"
+      ],
+      "answer": null,
+      "title": "`os.environ` 的資料結構類似 Python 中的 __________。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 14.2"
+      ],
+      "answer": null,
+      "title": "`os.path.__________` 用於判斷一個路徑是否為絕對路徑。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 14.5"
+      ],
+      "answer": null,
+      "title": "若要執行一條 Shell 指令並獲取其退出狀態碼，最簡單的方法是使用 `os.__________`。 ---"
+    }
+  ]
+}

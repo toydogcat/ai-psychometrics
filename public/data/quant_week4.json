@@ -1,0 +1,488 @@
+{
+  "courseId": "python-office-quant",
+  "week": 4,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": "A",
+      "title": "發送帶有 Excel 附件的郵件時，應該使用哪種 MIME 類型對象作為容器？",
+      "options": {
+        "A": "MIMEText",
+        "B": "MIMEMultipart",
+        "C": "MIMEImage",
+        "D": "MIMEAudio"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": "C",
+      "title": "在 SMTP 發送郵件時，調用 `server.login(user, password)` 的 `password` 對於 Gmail 等服務，通常需要使用？",
+      "options": {
+        "A": "登入密碼",
+        "B": "應用程式密碼",
+        "C": "二次驗證碼",
+        "D": "授權 Token"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": "B",
+      "title": "下列哪個模組主要負責連接郵件伺服器？",
+      "options": {
+        "A": "`smtplib`",
+        "B": "`email`",
+        "C": "`imaplib`",
+        "D": "`requests`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": "D",
+      "title": "預設的 SMTP SSL 端口通常是？",
+      "options": {
+        "A": "25",
+        "B": "465",
+        "C": "587",
+        "D": "80"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP4.2",
+        "KP4.3"
+      ],
+      "answer": "C",
+      "title": "在 `email.mime.text` 中，發送 HTML 格式應設置第二個參數為？",
+      "options": {
+        "A": "'plain'",
+        "B": "'html'",
+        "C": "'xml'",
+        "D": "'text'"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP4.5"
+      ],
+      "answer": "B",
+      "title": "如何向郵件中添加抄送人 (CC)？",
+      "options": {
+        "A": "在 `msg['Cc']` 中設置",
+        "B": "在 `sendmail` 的第二個參數中包含",
+        "C": "兩者皆需設置",
+        "D": "無法實現"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP4.4"
+      ],
+      "answer": "D",
+      "title": "附件內容在加入郵件前，通常需要進行哪種編碼？",
+      "options": {
+        "A": "UTF-8",
+        "B": "Base64",
+        "C": "ASCII",
+        "D": "Hex"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": "C",
+      "title": "若要啟動 TLS 加密通信，應調用哪個方法？",
+      "options": {
+        "A": "`server.starttls()`",
+        "B": "`server.encrypt()`",
+        "C": "`server.secure()`",
+        "D": "`server.connect_ssl()`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": "A",
+      "title": "`msg.as_string()` 的作用是？",
+      "options": {
+        "A": "保存郵件到本地",
+        "B": "將郵件對象轉換為符合協議的字串",
+        "C": "只提取正文",
+        "D": "翻譯郵件內容"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": "B",
+      "title": "SMTP 協議的全稱是？",
+      "options": {
+        "A": "Simple Mail Transfer Protocol",
+        "B": "Smart Mail Text Process",
+        "C": "Secure Mail Transfer Port",
+        "D": "System Mail Type Program"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "下列哪些是發送郵件自動化時常見的安全隱患？",
+      "options": {
+        "A": "代碼中明文保存密碼",
+        "B": "頻繁發送導致 IP 被封禁",
+        "C": "使用 `starttls()`",
+        "D": "傳輸敏感數據未加密"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 `MIMEMultipart` 的子類型，正確的有？",
+      "options": {
+        "A": "`mixed`: 用於包含附件",
+        "B": "`related`: 用於內嵌資源",
+        "C": "`alternative`: 用於同時包含純文本與 HTML",
+        "D": "`simple`: 用於單一部分"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些郵件服務商通常需要特定的 SMTP 設置？",
+      "options": {
+        "A": "Gmail",
+        "B": "Outlook",
+        "C": "Yahoo",
+        "D": "私有公司郵箱"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP4.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "附件處理時，哪些步驟是必要的？",
+      "options": {
+        "A": "讀取檔案二進制內容",
+        "B": "創建 `MIMEApplication` 對象",
+        "C": "設置 `Content-Disposition`",
+        "D": "必須壓縮檔案"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP4.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "HTML 郵件中引用圖片的常見方式包括？",
+      "options": {
+        "A": "使用遠端圖片 URL",
+        "B": "使用 Base64 編碼內嵌",
+        "C": "使用 `cid` 引用附件圖片",
+        "D": "直接插入二進制流"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "`smtplib` 可能拋出的異常包括？",
+      "options": {
+        "A": "`SMTPAuthenticationError`",
+        "B": "`SMTPConnectError`",
+        "C": "`SMTPSenderRefused`",
+        "D": "`FileNotFoundError`"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP4.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於多收件人發送，下列描述正確的有？",
+      "options": {
+        "A": "`msg['To']` 應為逗號分隔的字串",
+        "B": "`sendmail` 的收件人參數應為列表",
+        "C": "CC 與 BCC 都不會出現在 `sendmail` 參數中",
+        "D": "BCC 收件人不會出現在郵件頭中"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP4.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些是防止郵件被歸類為垃圾郵件的建議？",
+      "options": {
+        "A": "設置正確的寄件者名稱",
+        "B": "避免過度頻繁發送",
+        "C": "內容不要包含大量敏感詞",
+        "D": "隱藏真實 IP"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "郵件主題 (Subject) 若包含中文，應？",
+      "options": {
+        "A": "直接寫入",
+        "B": "使用 `Header` 對象編碼",
+        "C": "轉換為拼音",
+        "D": "使用 `utf-8` 設置"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "`email` 模組可以幫助我們？",
+      "options": {
+        "A": "解析郵件",
+        "B": "構建郵件",
+        "C": "管理聯絡人",
+        "D": "搜索郵件伺服器"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "smtplib"
+      ],
+      "title": "在 Python 中發送郵件的核心標準庫模組是 __________。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "SMTP_SSL"
+      ],
+      "title": "SMTP 預設的不加密端口是 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": [
+        "login"
+      ],
+      "title": "若要發送帶有附件的郵件，必須使用 `MIME________` 作為根容器。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": [
+        "sendmail"
+      ],
+      "title": "添加郵件主題的語法是 `msg['________'] = \"主題內容\"`。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "MIMEMultipart"
+      ],
+      "title": "`server.________()` 應在郵件發送完畢後調用以關閉連接。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "attachment"
+      ],
+      "title": "對於 Gmail 服務，通常需要在 Google 帳戶設置中開啟 __________ 以獲取專用密碼。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP4.2"
+      ],
+      "answer": [
+        "imaplib"
+      ],
+      "title": "`MIMEText(content, 'html', '________')` 建議指定字符集。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP4.4"
+      ],
+      "answer": [
+        "SELECT"
+      ],
+      "title": "附件的 `Content-Disposition` 通常設置為 \"attachment; filename=____\"。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP4.1",
+        "KP4.2"
+      ],
+      "answer": [
+        "fetch"
+      ],
+      "title": "`sendmail(from, to, msg.________())` 是發送郵件的關鍵調用。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP4.1"
+      ],
+      "answer": [
+        "quit"
+      ],
+      "title": "SMTP 加密通信中，常用的兩種方式是 SSL 和 __________。 ---"
+    }
+  ]
+}

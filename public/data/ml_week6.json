@@ -1,644 +1,493 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 6,
-  "title": "機器學習第 6 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP6.1": "概念基礎",
-    "KP6.2": "數學原理",
-    "KP6.3": "Python 實作",
-    "KP6.4": "模型評估",
-    "KP6.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W6-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP6.2",
-      "title": "這是第 6 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.6.1"
+      ],
+      "answer": "B",
+      "title": "Bagging 算法主要旨在減少模型的哪一部分誤差？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "偏差 (Bias)",
+        "B": "方差 (Variance)",
+        "C": "雜訊",
+        "D": "計算複雜度"
+      }
     },
     {
-      "id": "ML-W6-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP6.3",
-      "title": "這是第 6 週的第 2 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.6.3"
+      ],
+      "answer": "C",
+      "title": "隨機森林中的「森林」指的是什麼？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "許多神經網路",
+        "B": "許多決策樹",
+        "C": "許多線性回歸模型",
+        "D": "許多數據集"
+      }
     },
     {
-      "id": "ML-W6-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP6.4",
-      "title": "這是第 6 週的第 3 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.6.2"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "自助抽樣 (Bootstrapping) 的特點是？",
+      "options": {
+        "A": "無放回抽樣",
+        "B": "有放回抽樣",
+        "C": "等距抽樣",
+        "D": "分層抽樣"
+      }
     },
     {
-      "id": "ML-W6-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP6.5",
-      "title": "這是第 6 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.6.3"
+      ],
+      "answer": "D",
+      "title": "隨機森林中，每個節點分裂時會考慮？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "所有特徵",
+        "B": "隨機選擇的一個特徵子集",
+        "C": "只有最重要的特徵",
+        "D": "上一個節點用過的特徵"
+      }
     },
     {
-      "id": "ML-W6-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP6.1",
-      "title": "這是第 6 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.6.2"
+      ],
+      "answer": "C",
+      "title": "關於 OOB (Out-of-Bag) 數據，下列敘述何者正確？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "它們是測試集的一部分",
+        "B": "它們是從未被抽樣用於訓練某棵樹的數據",
+        "C": "它們是用於特徵工程的數據",
+        "D": "它們是異常值"
+      }
     },
     {
-      "id": "ML-W6-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP6.2",
-      "title": "這是第 6 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.6.1"
+      ],
+      "answer": "D",
+      "title": "隨機森林模型中，增加 `n_estimators`（樹的數量）通常會？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "導致過擬合",
+        "B": "使模型更穩定且效能趨於上限",
+        "C": "增加偏差",
+        "D": "減少預測時間"
+      }
     },
     {
-      "id": "ML-W6-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP6.3",
-      "title": "這是第 6 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.6.1"
+      ],
+      "answer": "B",
+      "title": "隨機森林對異常值 (Outliers) 的鲁棒性 (Robustness) 表現如何？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "非常差",
+        "B": "較好，因為多棵樹平均了影響",
+        "C": "與單棵樹一樣",
+        "D": "完全不受影響"
+      }
     },
     {
-      "id": "ML-W6-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP6.4",
-      "title": "這是第 6 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.6.3"
+      ],
+      "answer": "C",
+      "title": "下列哪一個不是隨機森林的超參數？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "`n_estimators`",
+        "B": "`max_features`",
+        "C": "`learning_rate` (這是 Boosting 參數)",
+        "D": "`min_samples_leaf`"
+      }
     },
     {
-      "id": "ML-W6-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP6.5",
-      "title": "這是第 6 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.6.3"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "在隨機森林中，分類結果是由多棵樹進行什麼操作得到的？",
+      "options": {
+        "A": "求平均值",
+        "B": "投票 (Voting)",
+        "C": "疊加",
+        "D": "隨機挑選一棵"
+      }
     },
     {
-      "id": "ML-W6-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP6.1",
-      "title": "這是第 6 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.6.2"
+      ],
+      "answer": "D",
+      "title": "大約有多少比例的原始訓練數據在一次 Bootstrap 抽樣中不會被選中？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "10%",
+        "B": "25%",
+        "C": "36.8%",
+        "D": "50%"
+      }
     },
     {
-      "id": "ML-W6-Q11",
-      "type": "single",
-      "kp": "KP6.2",
-      "title": "這是第 6 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.6.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "集成學習的兩大主流類別是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "Bagging",
+        "B": "Boosting",
+        "C": "Clustering",
+        "D": "Dimensionality Reduction"
+      }
     },
     {
-      "id": "ML-W6-Q12",
-      "type": "single",
-      "kp": "KP6.3",
-      "title": "這是第 6 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.6.3",
+        "KP 3.6.4",
+        "KP 3.6.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "隨機森林的優點包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "對缺失值不敏感",
+        "B": "能夠處理高維特徵且不需特徵選擇",
+        "C": "訓練過程可以並行化",
+        "D": "可以給出特徵重要性排名"
+      }
     },
     {
-      "id": "ML-W6-Q13",
-      "type": "single",
-      "kp": "KP6.4",
-      "title": "這是第 6 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.6.1"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "導致單棵決策樹失效，但隨機森林卻能處理的情況有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "資料包含大量雜訊",
+        "B": "資料量太少",
+        "C": "特徵之間存在複雜的交互作用",
+        "D": "單一特徵權重過大導致的偏差"
+      }
     },
     {
-      "id": "ML-W6-Q14",
-      "type": "single",
-      "kp": "KP6.5",
-      "title": "這是第 6 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.6.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於隨機森林的「隨機性」，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "樣本抽樣隨機",
+        "B": "特徵選擇隨機",
+        "C": "標籤隨機",
+        "D": "每棵樹的參數（如深度）可以隨機"
+      }
     },
     {
-      "id": "ML-W6-Q15",
-      "type": "single",
-      "kp": "KP6.1",
-      "title": "這是第 6 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.6.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些方法可以進一步提升隨機森林的效能？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "增加樹的數量",
+        "B": "調整 `max_features` 子集的大小",
+        "C": "對資料進行極端的標準化",
+        "D": "結合不同的基學習器（雖然 RF 固定用樹）"
+      }
     },
     {
-      "id": "ML-W6-Q16",
-      "type": "single",
-      "kp": "KP6.2",
-      "title": "這是第 6 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.6.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 OOB 評估的價值，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "省去了留出驗證集的需要",
+        "B": "可以防止過擬合",
+        "C": "計算成本低",
+        "D": "準確度接近交叉驗證"
+      }
     },
     {
-      "id": "ML-W6-Q17",
-      "type": "single",
-      "kp": "KP6.3",
-      "title": "這是第 6 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.6.3"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "隨機森林在回歸任務中的預測方式是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "取所有樹預測值的平均",
+        "B": "取所有樹預測值的眾數",
+        "C": "取所有樹預測值的中位數",
+        "D": "加權平均"
+      }
     },
     {
-      "id": "ML-W6-Q18",
-      "type": "single",
-      "kp": "KP6.4",
-      "title": "這是第 6 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.6.3",
+        "KP 3.6.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些 Scikit-Learn 類別屬於 Bagging 範疇？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "`RandomForestClassifier`",
+        "B": "`BaggingClassifier`",
+        "C": "`ExtraTreesClassifier`",
+        "D": "`AdaBoostClassifier` (這是 Boosting)"
+      }
     },
     {
-      "id": "ML-W6-Q19",
-      "type": "single",
-      "kp": "KP6.5",
-      "title": "這是第 6 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.6.1",
+        "KP 3.6.3"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "如果隨機森林表現不佳，可能的原因有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "基學習器（樹）太弱（如深度太淺）",
+        "B": "樹的數量太少",
+        "C": "特徵子集太小導致資訊遺失",
+        "D": "資料本身不具備預測性"
+      }
     },
     {
-      "id": "ML-W6-Q20",
-      "type": "single",
-      "kp": "KP6.1",
-      "title": "這是第 6 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.6.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "特徵隨機化中 `max_features` 的常用設置有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`sqrt`（特徵數開根號）",
+        "B": "`log2`",
+        "C": "`None`（使用所有特徵，退化為 Bagging）",
+        "D": "0"
+      }
     },
     {
-      "id": "ML-W6-Q21",
-      "type": "single",
-      "kp": "KP6.2",
-      "title": "這是第 6 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.6.2"
+      ],
+      "answer": [
+        "隨機森林"
+      ],
+      "title": "Bagging 的全稱是 __________ Aggregating。"
     },
     {
-      "id": "ML-W6-Q22",
-      "type": "single",
-      "kp": "KP6.3",
-      "title": "這是第 6 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.6.3"
+      ],
+      "answer": [
+        "Bagging"
+      ],
+      "title": "隨機森林中的基學習器是 __________。"
     },
     {
-      "id": "ML-W6-Q23",
-      "type": "single",
-      "kp": "KP6.4",
-      "title": "這是第 6 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.6.2"
+      ],
+      "answer": [
+        "自助採樣"
+      ],
+      "title": "透過有放回抽樣產生的未被選中的數據稱為 __________ 數據。"
     },
     {
-      "id": "ML-W6-Q24",
-      "type": "single",
-      "kp": "KP6.5",
-      "title": "這是第 6 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.6.3",
+        "KP 3.6.5"
+      ],
+      "answer": [
+        "袋外誤差"
+      ],
+      "title": "在 Scikit-Learn 中，控制隨機森林中樹的數量的參數是 __________。"
     },
     {
-      "id": "ML-W6-Q25",
-      "type": "single",
-      "kp": "KP6.1",
-      "title": "這是第 6 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.6.1"
+      ],
+      "answer": [
+        "RandomForestClassifier"
+      ],
+      "title": "隨機森林透過降低模型的 __________ (Variance) 來提升穩定性。"
     },
     {
-      "id": "ML-W6-Q26",
-      "type": "single",
-      "kp": "KP6.2",
-      "title": "這是第 6 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.6.3"
+      ],
+      "answer": [
+        "n_estimators"
+      ],
+      "title": "RF 每個節點分裂時只從隨機選取的 __________ 中尋找最佳切分。"
     },
     {
-      "id": "ML-W6-Q27",
-      "type": "single",
-      "kp": "KP6.3",
-      "title": "這是第 6 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.6.5"
+      ],
+      "answer": [
+        "基學習器"
+      ],
+      "title": "並行訓練意味著每棵樹的構建是相互 __________ 的。"
     },
     {
-      "id": "ML-W6-Q28",
-      "type": "single",
-      "kp": "KP6.4",
-      "title": "這是第 6 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.6.4"
+      ],
+      "answer": [
+        "投票"
+      ],
+      "title": "隨機森林輸出的特徵排名是基於 __________ 減少量的總和。"
     },
     {
-      "id": "ML-W6-Q29",
-      "type": "single",
-      "kp": "KP6.5",
-      "title": "這是第 6 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.6.1"
+      ],
+      "answer": [
+        "隨機性"
+      ],
+      "title": "集成學習的目標是將多個 __________ 學習器組合為一個強學習器。"
     },
     {
-      "id": "ML-W6-Q30",
-      "type": "single",
-      "kp": "KP6.1",
-      "title": "這是第 6 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.6.1"
+      ],
+      "answer": [
+        "泛化誤差"
+      ],
+      "title": "偏差反映了模型 __________ 的準確性，而方差反映了模型的穩定性。 ---"
     }
   ]
 }

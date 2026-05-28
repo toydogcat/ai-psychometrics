@@ -1,224 +1,488 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 14,
-  "title": "深度學習第 14 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP14.1": "理論基礎",
-    "KP14.2": "架構原理",
-    "KP14.3": "PyTorch 實作",
-    "KP14.4": "模型調優",
-    "KP14.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W14-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP14.2",
-      "title": "這是第 14 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.14.5"
+      ],
+      "answer": "C",
+      "title": "Transformer 架構最初是在哪一篇著名的論文中提出的？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "Deep Residual Learning",
+        "B": "Attention is All You Need",
+        "C": "BERT: Pre-training of Deep Bidirectional Transformers",
+        "D": "GPT-3"
+      }
     },
     {
-      "id": "DL-W14-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP14.3",
-      "title": "這是第 14 週的第 2 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.14.1"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "Transformer 中解決「注意力機制對語序不敏感」問題的組件是？",
+      "options": {
+        "A": "殘差連接",
+        "B": "位置編碼 (Positional Encoding)",
+        "C": "層歸一化",
+        "D": "激活函數"
+      }
     },
     {
-      "id": "DL-W14-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP14.4",
-      "title": "這是第 14 週的第 3 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.14.3"
+      ],
+      "answer": "D",
+      "title": "在 Transformer 解碼器中，預防預測當前詞時看到「未來詞」的機制是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Dropout",
+        "B": "Masked Self-Attention",
+        "C": "Encoder-Decoder Attention",
+        "D": "Linear Layer"
+      }
     },
     {
-      "id": "DL-W14-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP14.5",
-      "title": "這是第 14 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.14.2"
+      ],
+      "answer": "B",
+      "title": "Transformer 使用的是哪種歸一化方式？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "Batch Norm",
+        "B": "Layer Norm",
+        "C": "Group Norm",
+        "D": "Instance Norm"
+      }
     },
     {
-      "id": "DL-W14-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP14.1",
-      "title": "這是第 14 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.14.5"
+      ],
+      "answer": "C",
+      "title": "關於 Transformer 的並行化，正確的是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "它比 RNN 更難並行",
+        "B": "它允許整句話的所有詞同時進行計算",
+        "C": "它依賴串行處理",
+        "D": "它只能在 CPU 運行"
+      }
     },
     {
-      "id": "DL-W14-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP14.2",
-      "title": "這是第 14 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.14.4"
+      ],
+      "answer": "B",
+      "title": "Transformer 中的前饋網路（Feed Forward）通常包含幾個線性層？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "1",
+        "B": "2 (中間夾一個激活函數)",
+        "C": "10",
+        "D": "不固定"
+      }
     },
     {
-      "id": "DL-W14-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP14.3",
-      "title": "這是第 14 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.14.4"
+      ],
+      "answer": "D",
+      "title": "自注意力機制（Self-Attention）的計算複雜度與序列長度 $L$ 的關係是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "$O(L)$",
+        "B": "$O(L \\log L)$",
+        "C": "$O(L^2)$",
+        "D": "$O(1)$"
+      }
     },
     {
-      "id": "DL-W14-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP14.4",
-      "title": "這是第 14 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.14.3"
+      ],
+      "answer": "C",
+      "title": "Transformer 解碼器中的 Cross-Attention，其 Query 來自？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "編碼器",
+        "B": "前一層解碼器的輸出",
+        "C": "隨機初始化",
+        "D": "外部文件"
+      }
     },
     {
-      "id": "DL-W14-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP14.5",
-      "title": "這是第 14 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.14.1"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "位置編碼通常是透過什麼操作與 Embedding 合併的？",
+      "options": {
+        "A": "矩陣乘法",
+        "B": "向量加法",
+        "C": "卷積",
+        "D": "拼接"
+      }
     },
     {
-      "id": "DL-W14-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP14.1",
-      "title": "這是第 14 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.14.5"
+      ],
+      "answer": "D",
+      "title": "現代 LLM（如 GPT-4）主要採用的是 Transformer 的哪個部分？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "只有 Encoder",
+        "B": "只有 Decoder",
+        "C": "完整的 Encoder-Decoder",
+        "D": "只有全連接層"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 4.14.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Transformer 編碼器（Encoder）的一個層級組件包含？",
+      "options": {
+        "A": "Multi-head Self-Attention",
+        "B": "Add & Norm",
+        "C": "Position-wise Feed Forward",
+        "D": "Masked Attention"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 4.14.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於多頭注意力（Multi-head Attention），描述正確的有？",
+      "options": {
+        "A": "它可以同時關注不同位置的信息",
+        "B": "它將 Q, K, V 投影到多個子空間",
+        "C": "它是 Transformer 唯一的非線性來源",
+        "D": "它可以增加模型的魯棒性"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 4.14.4",
+        "KP 4.14.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Transformer 相比於 RNN 的優勢包括？",
+      "options": {
+        "A": "訓練速度更快（高度並行）",
+        "B": "解決了長距離依賴問題",
+        "C": "推理時顯存佔用更小 (其實更大)",
+        "D": "參數利用率更高"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 4.14.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "殘差連接（Residual Connection）在 Transformer 中的作用？",
+      "options": {
+        "A": "防止梯度消失",
+        "B": "加速收斂",
+        "C": "允許模型訓練得更深",
+        "D": "增加計算時間"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 4.14.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "位置編碼可以使用哪些方式實現？",
+      "options": {
+        "A": "固定函數式（Sine/Cosine）",
+        "B": "可學習式（Learned Positional Embeddings）",
+        "C": "隨機設置",
+        "D": "不需要編碼"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 4.14.3"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "Transformer 解碼器包含哪幾種注意力？",
+      "options": {
+        "A": "Masked Self-Attention",
+        "B": "Encoder-Decoder Attention",
+        "C": "雙向 Attention",
+        "D": "卷積 Attention"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 4.14.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些因素會限制 Transformer 處理超長文本（如一本書）？",
+      "options": {
+        "A": "顯存隨長度平方增長",
+        "B": "注意力權重變得過於稀疏",
+        "C": "計算時間",
+        "D": "硬碟容量"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 4.14.2"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 Layer Normalization，正確的是？",
+      "options": {
+        "A": "對單個樣本的所有特徵進行歸一化",
+        "B": "不依賴 Batch Size",
+        "C": "非常適合變長的 NLP 任務",
+        "D": "必須在 GPU 運算"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 4.14.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "Transformer 的應用現在擴展到了哪些非 NLP 領域？",
+      "options": {
+        "A": "電腦視覺 (ViT)",
+        "B": "音訊處理",
+        "C": "蛋白質結構預測",
+        "D": "推薦系統"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 4.14.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "在 PyTorch 中構建 Transformer 時，通常需要考慮？",
+      "options": {
+        "A": "`d_model` (維度)",
+        "B": "`nhead` (頭數)",
+        "C": "`num_layers`",
+        "D": "`dim_feedforward`"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 4.14.5"
+      ],
+      "answer": [
+        "BERT"
+      ],
+      "title": "Transformer 是完全捨棄了 __________ 結構而僅使用注意力機制的模型。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 4.14.5"
+      ],
+      "answer": [
+        "GPT"
+      ],
+      "title": "標題為《__________ is All You Need》的論文定義了 Transformer。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 4.14.1"
+      ],
+      "answer": [
+        "預訓練"
+      ],
+      "title": "為了區分序列中的位置，Transformer 使用了 __________ 編碼。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 4.14.3"
+      ],
+      "answer": [
+        "微調"
+      ],
+      "title": "解碼器中的 __________ 機制防止模型在生成時偷看未來的資訊。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 4.14.2"
+      ],
+      "answer": [
+        "遮罩語言模型"
+      ],
+      "title": "__________ Connection 是將輸入直接跳過某層加到輸出的技術。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 4.14.4"
+      ],
+      "answer": [
+        "自回歸"
+      ],
+      "title": "Transformer 每層包含多頭注意力和 __________ 前饋網絡。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 4.14.4"
+      ],
+      "answer": [
+        "自編碼"
+      ],
+      "title": "注意力計算中的 $d_k$ 通常是為了保證點積結果不要過 __________。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 4.14.2"
+      ],
+      "answer": [
+        "Transformer"
+      ],
+      "title": "__________ 歸一化是在特徵維度上進行的，而非樣本維度。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 4.14.3"
+      ],
+      "answer": [
+        "下游任務"
+      ],
+      "title": "Transformer 編碼器的輸出被作為解碼器的 __________ 與 Value。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 4.14.5"
+      ],
+      "answer": [
+        "生成"
+      ],
+      "title": "Transformer 成功的一個關鍵原因是它在現代 __________ 硬體上具備極高的運算效率。 ---"
     }
   ]
 }

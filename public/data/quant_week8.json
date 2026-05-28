@@ -1,0 +1,491 @@
+{
+  "courseId": "python-office-quant",
+  "week": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": "C",
+      "title": "在 Scrapy 架構中，負責過濾重複 URL 並管理待爬取隊列的組件是？",
+      "options": {
+        "A": "Engine",
+        "B": "Spider",
+        "C": "Scheduler",
+        "D": "Item Pipeline"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "A",
+      "title": "下列哪種技術常用於識別圖片中的文字內容？",
+      "options": {
+        "A": "NLP",
+        "B": "OCR",
+        "C": "CNN",
+        "D": "SQL"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": "D",
+      "title": "Scrapy 框架底層是基於哪個異步網絡庫開發的？",
+      "options": {
+        "A": "asyncio",
+        "B": "Twisted",
+        "C": "Gevent",
+        "D": "Tornado"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP8.3",
+        "KP8.5"
+      ],
+      "answer": "B",
+      "title": "在 Scrapy 中，保存爬取結果到資料庫或檔案的組件是？",
+      "options": {
+        "A": "Item Pipeline",
+        "B": "Downloader",
+        "C": "Middleware",
+        "D": "Engine"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP8.2"
+      ],
+      "answer": "C",
+      "title": "如果網頁顯示的數字是 '123'，但在 HTML 源碼中對應的是亂碼，這通常是遇到了？",
+      "options": {
+        "A": "JavaScript 加密",
+        "B": "自定義字體加密",
+        "C": "CSS 隱藏",
+        "D": "圖片偽裝"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": "B",
+      "title": "`scrapy startproject myproject` 指令的作用是？",
+      "options": {
+        "A": "運行爬蟲",
+        "B": "創建一個新的 Scrapy 專案",
+        "C": "部署爬蟲到雲端",
+        "D": "查看 Scrapy 版本"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "D",
+      "title": "處理 OCR 識別前，將圖片轉換為只有黑白兩色的過程稱為？",
+      "options": {
+        "A": "灰度化",
+        "B": "二值化",
+        "C": "去噪",
+        "D": "銳化"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": "A",
+      "title": "在 Scrapy 中，Spider 返回的數據對象通常被稱為？",
+      "options": {
+        "A": "Result",
+        "B": "Data",
+        "C": "Item",
+        "D": "Entry"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "D",
+      "title": "負責在請求發送到伺服器前修改請求頭信息的 Scrapy 組件是？",
+      "options": {
+        "A": "Downloader Middleware",
+        "B": "Spider Middleware",
+        "C": "Engine",
+        "D": "Scheduler"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": "C",
+      "title": "`scrapy crawl myspider` 指令中的 `myspider` 指的是？",
+      "options": {
+        "A": "專案名稱",
+        "B": "檔案名稱",
+        "C": "Spider 類別中的 `name` 屬性",
+        "D": "類別名稱"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP8.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "處理網頁字體加密的常用步驟包括哪些？",
+      "options": {
+        "A": "下載 `.woff` 字體文件",
+        "B": "使用 `fontTools` 解析字體映射",
+        "C": "直接用 OCR 識別網頁截圖",
+        "D": "重新整理頁面 100 次"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP8.3",
+        "KP8.4"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "Scrapy 的主要優點包括？",
+      "options": {
+        "A": "異步高併發，速度快",
+        "B": "模組化設計，易於維護",
+        "C": "內建強大的選擇器 (Selectors)",
+        "D": "自動處理 Cookies 與 Session"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "下列哪些是常見的驗證碼類型？",
+      "options": {
+        "A": "文字輸入式",
+        "B": "滑動拼圖式",
+        "C": "點選特定物品式",
+        "D": "語音驗證碼"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Scrapy 的數據流向中，哪些組件會參與其中？",
+      "options": {
+        "A": "Engine",
+        "B": "Scheduler",
+        "C": "Downloader",
+        "D": "Spiders"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "進行 OCR 識別時，為了提高準確率，可以對圖片進行哪些預處理？",
+      "options": {
+        "A": "調整大小",
+        "B": "去除背景干擾線",
+        "C": "提高對比度",
+        "D": "旋轉糾偏"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 Scrapy 的 Item，正確的有？",
+      "options": {
+        "A": "類似於 Python 字典",
+        "B": "可以進行數據驗證",
+        "C": "定義在 `items.py` 中",
+        "D": "必須繼承 `scrapy.Item`"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Scrapy Middleware 可以實現的功能包括？",
+      "options": {
+        "A": "設置隨機 User-Agent",
+        "B": "自動切換代理 IP",
+        "C": "處理特定的 HTTP 錯誤碼",
+        "D": "將數據存入資料庫"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些庫與 OCR 或驗證碼處理相關？",
+      "options": {
+        "A": "`pytesseract`",
+        "B": "`PIL` (Pillow)",
+        "C": "`onnxruntime`",
+        "D": "`pandas`"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 Scrapy 與 Selenium 的結合，正確的有？",
+      "options": {
+        "A": "可以通過 Middleware 調用 Selenium",
+        "B": "適合處理 Scrapy 無法直接抓取的動態頁面",
+        "C": "會顯著降低爬取速度",
+        "D": "不需要安裝任何驅動"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP8.1",
+        "KP8.2"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "反爬蟲技術不斷演進，目前較難處理的包括？",
+      "options": {
+        "A": "行為軌跡檢測",
+        "B": "指紋瀏覽器識別",
+        "C": "複雜的加密算法",
+        "D": "限制請求速度"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": [
+        "USER_AGENT"
+      ],
+      "title": "在 Scrapy 中，提取數據主要使用 __________ (或 XPath) 選擇器。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": [
+        "robots.txt"
+      ],
+      "title": "`pytesseract` 需要依賴本地安裝的 __________ 引擎才能運行。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": [
+        "download_delay"
+      ],
+      "title": "Scrapy 中設置並發請求數量的參數是 `CONCURRENT_________`。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP8.2"
+      ],
+      "answer": [
+        "referer"
+      ],
+      "title": "字體加密的核心是通過修改字體文件中的 __________ 碼點與字符的映射。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": [
+        "cookie"
+      ],
+      "title": "在 Spider 中，`parse` 方法通常使用 `________` 關鍵字回傳 Item 或 Request。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": [
+        "Proxy"
+      ],
+      "title": "如果要將爬取結果保存為 JSON，可以使用指令 `scrapy crawl spider -o result.________`。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": [
+        "captcha"
+      ],
+      "title": "Scrapy 專案的全局配置文件名稱是 __________。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": [
+        "Session"
+      ],
+      "title": "處理圖片的 Python 核心庫通常使用 __________ (原名 PIL)。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": [
+        "Selenium"
+      ],
+      "title": "Scrapy 異步機制的核心是基於事件驅動的 __________ 模型。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP8.3",
+        "KP8.5"
+      ],
+      "answer": [
+        "API"
+      ],
+      "title": "當 Item 被 Spider 拋出後，首先進入的是 __________ 組件。 ---"
+    }
+  ]
+}

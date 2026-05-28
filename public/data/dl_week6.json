@@ -1,224 +1,493 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 6,
-  "title": "深度學習第 6 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP6.1": "理論基礎",
-    "KP6.2": "架構原理",
-    "KP6.3": "PyTorch 實作",
-    "KP6.4": "模型調優",
-    "KP6.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W6-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP6.2",
-      "title": "這是第 6 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": "C",
+      "title": "下列哪一個模型是第一個證明「深度學習在 ImageNet 上極其強大」的轉折點？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "LeNet",
+        "B": "AlexNet",
+        "C": "VGG",
+        "D": "ResNet"
+      }
     },
     {
-      "id": "DL-W6-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP6.3",
-      "title": "這是第 6 週的第 2 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.6.3"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "ResNet 引入「跳躍連接」(Skip Connection) 的主要目的是解決？",
+      "options": {
+        "A": "計算速度太慢",
+        "B": "內存佔用過大",
+        "C": "深層網路的退化 (Degradation) 問題",
+        "D": "解析度不足"
+      }
     },
     {
-      "id": "DL-W6-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP6.4",
-      "title": "這是第 6 週的第 3 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.6.1"
+      ],
+      "answer": "D",
+      "title": "VGG 網絡的主要特點是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "使用了多種尺寸的卷積核",
+        "B": "統一使用 3x3 卷積核",
+        "C": "捨棄了池化層",
+        "D": "只有 5 層"
+      }
     },
     {
-      "id": "DL-W6-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP6.5",
-      "title": "這是第 6 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.6.2"
+      ],
+      "answer": "B",
+      "title": "GoogLeNet (Inception) 模組中使用 1x1 卷積的主要作用是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "增加圖像亮度",
+        "B": "降低特徵通道數（降維），減少計算量",
+        "C": "增加感受野",
+        "D": "取代激活函數"
+      }
     },
     {
-      "id": "DL-W6-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP6.1",
-      "title": "這是第 6 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": "C",
+      "title": "下列哪一個網絡結構首次使用了「批量歸一化」(Batch Normalization)？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "AlexNet",
+        "B": "Inception v2",
+        "C": "LeNet",
+        "D": "VGG"
+      }
     },
     {
-      "id": "DL-W6-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP6.2",
-      "title": "這是第 6 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.6.3"
+      ],
+      "answer": "B",
+      "title": "ResNet-50 代表該網絡總共有多少個權重層？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "50",
+        "B": "100",
+        "C": "152",
+        "D": "18"
+      }
     },
     {
-      "id": "DL-W6-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP6.3",
-      "title": "這是第 6 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.6.1"
+      ],
+      "answer": "D",
+      "title": "兩個 3x3 卷積層串聯後的「有效感受野」相當於一個？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "3x3",
+        "B": "5x5",
+        "C": "7x7",
+        "D": "9x9"
+      }
     },
     {
-      "id": "DL-W6-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP6.4",
-      "title": "這是第 6 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": "C",
+      "title": "AlexNet 奪冠是在哪一年？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "1998",
+        "B": "2010",
+        "C": "2012",
+        "D": "2015"
+      }
     },
     {
-      "id": "DL-W6-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP6.5",
-      "title": "這是第 6 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.6.2",
+        "KP 4.6.5"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "下列哪一個架構對參數量的控制最為精簡（效能功耗比高）？",
+      "options": {
+        "A": "VGG16",
+        "B": "GoogLeNet",
+        "C": "AlexNet",
+        "D": "ResNet-101"
+      }
     },
     {
-      "id": "DL-W6-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP6.1",
-      "title": "這是第 6 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.6.2",
+        "KP 4.6.3"
+      ],
+      "answer": "D",
+      "title": "在 ResNet 中，當輸入與輸出維度不一致時，Shortcut 路徑通常使用？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "填充 (Padding)",
+        "B": "1x1 卷積",
+        "C": "插值",
+        "D": "直接拋棄多餘維度"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "AlexNet 相比於 LeNet 的改進包括？",
+      "options": {
+        "A": "使用 ReLU 取代 Sigmoid",
+        "B": "使用 Dropout 防止過擬合",
+        "C": "多 GPU 並行訓練",
+        "D": "數據增強 (Data Augmentation)"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 4.6.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 VGG 網絡的缺點，正確的是？",
+      "options": {
+        "A": "參數量巨大（尤其是末端全連接層）",
+        "B": "運算量大",
+        "C": "結構過於複雜 (其實很規整)",
+        "D": "容易產生梯度問題"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 4.6.2",
+        "KP 4.6.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "GoogLeNet (Inception) 的設計哲學包括？",
+      "options": {
+        "A": "增加網絡的「寬度」",
+        "B": "減少計算預算",
+        "C": "移除全連接層",
+        "D": "使用多尺度卷積"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 4.6.3"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "殘差連接 (Residual Connection) 為什麼有效？",
+      "options": {
+        "A": "它讓梯度可以直接流向較淺的層",
+        "B": "它保護了資訊不被非線性變換破壞",
+        "C": "它讓網絡至少能學到恆等映射",
+        "D": "它減少了參數量"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 4.6.3",
+        "KP 4.6.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "哪些網絡屬於「模組化」設計（堆疊重複的 Block）？",
+      "options": {
+        "A": "VGG",
+        "B": "ResNet",
+        "C": "Inception",
+        "D": "AlexNet"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 4.6.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "1x1 卷積的價值體現在？",
+      "options": {
+        "A": "跨通道的訊息融合",
+        "B": "通道數的升維或降維",
+        "C": "增加非線性激活的機會",
+        "D": "改變特徵圖寬高"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 4.6.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "深度學習中的「退化問題」表現為？",
+      "options": {
+        "A": "訓練誤差隨深度增加反而變大",
+        "B": "測試誤差隨深度增加變大",
+        "C": "梯度變為 0",
+        "D": "內存溢出"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 Batch Normalization，正確的有？",
+      "options": {
+        "A": "加速訓練收斂",
+        "B": "允許使用更大的學習率",
+        "C": "起到一定的正則化作用",
+        "D": "必須在測試時使用訓練集的統計量"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 4.6.2",
+        "KP 4.6.3",
+        "KP 4.6.4"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "下列哪些技術在 ResNet 中被廣泛應用？",
+      "options": {
+        "A": "Skip Connection",
+        "B": "瓶頸層 (Bottleneck)",
+        "C": "全域平均池化",
+        "D": "LRN 層 (AlexNet 用，ResNet 不用)"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "CNN 演進的主旋律包括？",
+      "options": {
+        "A": "越來越深",
+        "B": "越來越高效",
+        "C": "計算量越來越大",
+        "D": "手工設計成分越來越少"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": [
+        "LeNet"
+      ],
+      "title": "__________ 是 1998 年由 Yann LeCun 提出用於識別手寫數字的網絡。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": [
+        "AlexNet"
+      ],
+      "title": "AlexNet 成功解決過擬合的關鍵正則化技術是 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 4.6.3"
+      ],
+      "answer": [
+        "VGG"
+      ],
+      "title": "ResNet 的核心模塊稱為 __________ (Residual Block)。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 4.6.1"
+      ],
+      "answer": [
+        "感受野"
+      ],
+      "title": "VGG 網絡證明了使用多個 __________ 核比單個大核更有效。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": [
+        "池化"
+      ],
+      "title": "GoogLeNet 網絡中，負責在多個尺度提取特徵的模塊叫 __________。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 4.6.2"
+      ],
+      "answer": [
+        "卷積"
+      ],
+      "title": "1x1 卷積層也常被稱為 __________ 卷積，用於跨通道交互。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 4.6.4"
+      ],
+      "answer": [
+        "激活函數"
+      ],
+      "title": "現代網絡常用 __________ 代替最後的 Dense 層以減少參數。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 4.6.3"
+      ],
+      "answer": [
+        "全連接"
+      ],
+      "title": "殘差學習中，模型擬合的目標是 $F(x) = H(x) - __________$。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": [
+        "ReLU"
+      ],
+      "title": "ImageNet 競賽的縮寫是 __________。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 4.6.5"
+      ],
+      "answer": [
+        "Dropout"
+      ],
+      "title": "VGG-16 模型中有 __________ 個帶權重的層。 ---"
     }
   ]
 }

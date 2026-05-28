@@ -1,7 +1,7 @@
 {
   "course_id": "calculus3",
   "week": 3,
-  "title": "微積分 下 第 3 週",
+  "title": "微積分 下 第 3 週測驗",
   "knowledge_points": {},
   "questions": [
     {
@@ -14,7 +14,7 @@
         "C": "螺旋線",
         "D": "拋物線"
       },
-      "answer": "",
+      "answer": "Q1",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -29,7 +29,7 @@
         "C": "$t + t^2 + t^3$",
         "D": "$\\sqrt{1+4t^2+9t^4}$"
       },
-      "answer": "",
+      "answer": "Q2",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -44,7 +44,7 @@
         "C": "$t$",
         "D": "不固定"
       },
-      "answer": "",
+      "answer": "Q3",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -59,7 +59,7 @@
         "C": "$\\infty$",
         "D": "與斜率有關"
       },
-      "answer": "",
+      "answer": "Q4",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -74,7 +74,7 @@
         "C": "$\\mathbf{r}''(t)$",
         "D": "$\\kappa$"
       },
-      "answer": "",
+      "answer": "Q5",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -89,7 +89,7 @@
         "C": "5",
         "D": "7"
       },
-      "answer": "",
+      "answer": "Q6",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -104,7 +104,7 @@
         "C": "相同",
         "D": "無關"
       },
-      "answer": "",
+      "answer": "Q7",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -119,7 +119,7 @@
         "C": "0.2",
         "D": "0"
       },
-      "answer": "",
+      "answer": "Q8",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -134,7 +134,7 @@
         "C": "$\\ln t$",
         "D": "$1$"
       },
-      "answer": "",
+      "answer": "Q9",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -149,7 +149,7 @@
         "C": "為常數",
         "D": "不存在\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
       },
-      "answer": "",
+      "answer": "Q10",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -164,7 +164,7 @@
         "C": "$\\frac{d}{dt}[f(t)\\mathbf{u}(t)] = f'(t)\\mathbf{u} + f(t)\\mathbf{u}'$\n    -",
         "D": "$\\frac{d}{dt}|\\mathbf{u}(t)| = |\\mathbf{u}'(t)|$"
       },
-      "answer": "",
+      "answer": "Q11",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "$\\mathbf{N}(t)$ 與 $\\mathbf{B}(t)$",
         "D": "$\\mathbf{T}(t)$ 與 $\\mathbf{B}(t)$"
       },
-      "answer": "",
+      "answer": "Q12",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -194,7 +194,7 @@
         "C": "$|\\mathbf{r}' \\times \\mathbf{r}''|/|\\mathbf{r}'|^3$",
         "D": "$1/\\rho$ ($\\rho$ 為曲率半徑)"
       },
-      "answer": "",
+      "answer": "Q13",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -209,7 +209,7 @@
         "C": "起點的坐標",
         "D": "加速度的方向"
       },
-      "answer": "",
+      "answer": "Q14",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -224,7 +224,7 @@
         "C": "它的法向量 $\\mathbf{N}$ 在 $z$ 方向為 0",
         "D": "曲率恆為 0"
       },
-      "answer": "",
+      "answer": "Q15",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -239,7 +239,7 @@
         "C": "曲率為常數",
         "D": "它是直線"
       },
-      "answer": "",
+      "answer": "Q16",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
         "C": "$s$ 與 $t$ 無關",
         "D": "使用 $s$ 參數化時，切向量即為單位切向量"
       },
-      "answer": "",
+      "answer": "Q17",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -269,7 +269,7 @@
         "C": "加速度垂直於速度",
         "D": "曲率為 0"
       },
-      "answer": "",
+      "answer": "Q18",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -284,7 +284,7 @@
         "C": "$\\mathbf{r}(s) = \\langle s^2, s^4, s^6 \\rangle$\n    -",
         "D": "$\\mathbf{r}(w) = \\langle \\sin w, \\sin^2 w, \\sin^3 w \\rangle$"
       },
-      "answer": "",
+      "answer": "Q19",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -299,7 +299,7 @@
         "C": "求解參數方程組",
         "D": "只需考慮 $x$ 坐標相等\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
       },
-      "answer": "",
+      "answer": "Q20",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -309,7 +309,7 @@
       "type": "fill",
       "title": "**Q21**: 若 $\\mathbf{r}(t) = \\langle 2t, t^2, \\ln t \\rangle$，則 $\\mathbf{r}(1) = \\langle 2, 1, $ __________ $\\rangle$。",
       "options": {},
-      "answer": "",
+      "answer": "Q21",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -319,7 +319,7 @@
       "type": "fill",
       "title": "**Q23**: 圓 $x^2 + y^2 = 1$ 的曲率 $\\kappa = $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q23",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -329,7 +329,7 @@
       "type": "fill",
       "title": "**Q23**: 向量函數 $\\mathbf{r}(t)$ 的二階導數 $\\mathbf{r}''(t)$ 在物理上代表 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q23",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -339,7 +339,7 @@
       "type": "fill",
       "title": "**Q24**: 計算 $\\int_0^1 \\langle t, t^2, t^3 \\rangle dt = \\langle 1/2, 1/3, $ __________ $\\rangle$。",
       "options": {},
-      "answer": "",
+      "answer": "Q24",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -349,7 +349,7 @@
       "type": "fill",
       "title": "**Q25**: 單位切向量 $\\mathbf{T}(t)$ 的微分 $\\mathbf{T}'(t)$ 始終與 $\\mathbf{T}(t)$ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q25",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -359,7 +359,7 @@
       "type": "fill",
       "title": "**Q26**: 弧長 $L = \\int_a^b \\sqrt{ (x')^2 + (y')^2 + (z')^2 } dt$。其中 $x', y', z'$ 是對 __________ 的導數。",
       "options": {},
-      "answer": "",
+      "answer": "Q26",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -369,7 +369,7 @@
       "type": "fill",
       "title": "**Q27**: 曲率半徑 $\\rho$ 與曲率 $\\kappa$ 的關係為 $\\rho = $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q27",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -379,7 +379,7 @@
       "type": "fill",
       "title": "**Q28**: 螺旋線 $\\mathbf{r}(t) = \\langle \\cos t, \\sin t, t \\rangle$ 的速度大小 $|\\mathbf{r}'(t)| = $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q28",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -389,7 +389,7 @@
       "type": "fill",
       "title": "**Q29**: 若曲線的曲率恆為 0，則該曲線必為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q29",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -399,7 +399,7 @@
       "type": "fill",
       "title": "**Q30**: 單位法向量 $\\mathbf{N}$ 的長度為 __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP3.1 | KP3.2 | KP3.3 | KP3.4 | KP3.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 1, 10 | 2, 9 | 5, 6 | 3, 7 | 4, 8 |\n| Q11-Q20| 15, 19, 20 | 11, 18 | 14, 17 | 12 | 13, 16 |\n| Q21-Q30| 21 | 23, 24 | 26, 28 | 25, 30 | 22, 27, 29 |",
       "options": {},
-      "answer": "",
+      "answer": "Q30",
       "kp": "",
       "explanation": "",
       "q_vector": []

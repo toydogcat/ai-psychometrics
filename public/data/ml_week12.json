@@ -1,644 +1,491 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 12,
-  "title": "機器學習第 12 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP12.1": "概念基礎",
-    "KP12.2": "數學原理",
-    "KP12.3": "Python 實作",
-    "KP12.4": "模型評估",
-    "KP12.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W12-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP12.2",
-      "title": "這是第 12 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": "B",
+      "title": "SVD 分解公式 $A = U \\Sigma V^T$ 中，$\\Sigma$ 矩陣通常是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "單位矩陣",
+        "B": "對角矩陣",
+        "C": "零矩陣",
+        "D": "隨機矩陣"
+      }
     },
     {
-      "id": "ML-W12-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP12.3",
-      "title": "這是第 12 週的第 2 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.12.2",
+        "KP 3.12.4"
+      ],
+      "answer": "C",
+      "title": "在影像壓縮應用中，我們應該保留哪些奇異值來維持影像主體？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "最小的",
+        "B": "最大的",
+        "C": "中間的",
+        "D": "全部移除"
+      }
     },
     {
-      "id": "ML-W12-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP12.4",
-      "title": "這是第 12 週的第 3 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.12.1"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "SVD 中的 $U$ 矩陣和 $V$ 矩陣都是什麼類型的矩陣？",
+      "options": {
+        "A": "正交矩陣",
+        "B": "對角矩陣",
+        "C": "奇異矩陣",
+        "D": "對稱矩陣"
+      }
     },
     {
-      "id": "ML-W12-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP12.5",
-      "title": "這是第 12 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.12.2"
+      ],
+      "answer": "D",
+      "title": "奇異值 (Singular Value) 的數值順序通常是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "從小到大",
+        "B": "從大到小",
+        "C": "隨機排列",
+        "D": "與索引無關"
+      }
     },
     {
-      "id": "ML-W12-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP12.1",
-      "title": "這是第 12 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.12.3"
+      ],
+      "answer": "C",
+      "title": "SVD 相比於特徵分解 (Eigen Decomposition) 的最大優點是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "運算更快",
+        "B": "可以分解非方陣",
+        "C": "不需矩陣乘法",
+        "D": "精度更高"
+      }
     },
     {
-      "id": "ML-W12-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP12.2",
-      "title": "這是第 12 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.12.5"
+      ],
+      "answer": "D",
+      "title": "截斷式 SVD (Truncated SVD) 常用於處理哪種特性的數據？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "小型資料",
+        "B": "稀疏矩陣",
+        "C": "標籤資料",
+        "D": "循環資料"
+      }
     },
     {
-      "id": "ML-W12-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP12.3",
-      "title": "這是第 12 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": "B",
+      "title": "若矩陣 $A$ 維度為 $100 \\times 50$，則 $U$ 矩陣的維度是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "$50 \\times 50$",
+        "B": "$100 \\times 100$",
+        "C": "$100 \\times 50$",
+        "D": "$50 \\times 100$"
+      }
     },
     {
-      "id": "ML-W12-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP12.4",
-      "title": "這是第 12 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.12.5"
+      ],
+      "answer": "C",
+      "title": "在潛在語義分析 (LSA) 中，SVD 用於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "糾正拼字錯誤",
+        "B": "將詞與文檔映射到潛在主題空間",
+        "C": "加密文字",
+        "D": "翻譯語言"
+      }
     },
     {
-      "id": "ML-W12-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP12.5",
-      "title": "這是第 12 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.12.2"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "奇異值的平方與協方差矩陣的什麼相對應？",
+      "options": {
+        "A": "均值",
+        "B": "特徵值 (方差)",
+        "C": "權重",
+        "D": "學習率"
+      }
     },
     {
-      "id": "ML-W12-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP12.1",
-      "title": "這是第 12 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": "D",
+      "title": "SVD 分解出的 $\\Sigma$ 矩陣上的元素稱為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "特徵值",
+        "B": "奇異值",
+        "C": "殘差",
+        "D": "權重"
+      }
     },
     {
-      "id": "ML-W12-Q11",
-      "type": "single",
-      "kp": "KP12.2",
-      "title": "這是第 12 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.12.4",
+        "KP 3.12.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "SVD 的典型應用領域包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "影像壓縮",
+        "B": "推薦系統",
+        "C": "搜尋引擎排名 (LSA)",
+        "D": "分類樹構建"
+      }
     },
     {
-      "id": "ML-W12-Q12",
-      "type": "single",
-      "kp": "KP12.3",
-      "title": "這是第 12 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 SVD 分解後的矩陣，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "$U$ 的列向量互不正交",
+        "B": "$U$ 的列向量是 $AA^T$ 的特徵向量",
+        "C": "$V$ 的列向量是 $A^TA$ 的特徵向量",
+        "D": "$\\Sigma$ 包含非負實數"
+      }
     },
     {
-      "id": "ML-W12-Q13",
-      "type": "single",
-      "kp": "KP12.4",
-      "title": "這是第 12 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.12.4"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "為什麼 SVD 可以用作資料去噪？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "雜訊通常對應較小的奇異值",
+        "B": "雜訊對應最大的奇異值",
+        "C": "丟棄較小的奇異值可以過濾細微雜訊",
+        "D": "它是非線性變換"
+      }
     },
     {
-      "id": "ML-W12-Q14",
-      "type": "single",
-      "kp": "KP12.5",
-      "title": "這是第 12 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.12.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於矩陣低秩逼近，敘述正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "秩 (Rank) 越低，壓縮程度越高",
+        "B": "秩越低，資訊損失越多",
+        "C": "它可以看作是資料的簡化版",
+        "D": "只有方陣才能進行低秩逼近"
+      }
     },
     {
-      "id": "ML-W12-Q15",
-      "type": "single",
-      "kp": "KP12.1",
-      "title": "這是第 12 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.12.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Scikit-Learn 中處理降維的 SVD 相關類別有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`PCA` (預設使用 SVD)",
+        "B": "`TruncatedSVD`",
+        "C": "`LinearRegression`",
+        "D": "`KMeans`"
+      }
     },
     {
-      "id": "ML-W12-Q16",
-      "type": "single",
-      "kp": "KP12.2",
-      "title": "這是第 12 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "SVD 的幾何變換過程包含？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "旋轉",
+        "B": "投影",
+        "C": "縮放",
+        "D": "剪切"
+      }
     },
     {
-      "id": "ML-W12-Q17",
-      "type": "single",
-      "kp": "KP12.3",
-      "title": "這是第 12 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.12.4",
+        "KP 3.12.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "在推薦系統中，利用 SVD 可以？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "預測用戶對未評分物品的分數",
+        "B": "提取物品的隱含屬性",
+        "C": "發現用戶的潛在興趣",
+        "D": "加速網頁載入"
+      }
     },
     {
-      "id": "ML-W12-Q18",
-      "type": "single",
-      "kp": "KP12.4",
-      "title": "這是第 12 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.12.2"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "奇異值的特性包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "非負",
+        "B": "排列有序",
+        "C": "決定了矩陣變換的拉伸程度",
+        "D": "總是等於 1"
+      }
     },
     {
-      "id": "ML-W12-Q19",
-      "type": "single",
-      "kp": "KP12.5",
-      "title": "這是第 12 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "使用 NumPy 進行 SVD 分解時，回傳的內容通常包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "`u`",
+        "B": "`s` (一維向量形式的奇異值)",
+        "C": "`vh` (V 的共軛轉置)",
+        "D": "`A`"
+      }
     },
     {
-      "id": "ML-W12-Q20",
-      "type": "single",
-      "kp": "KP12.1",
-      "title": "這是第 12 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.12.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "SVD 與 PCA 的區別在於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "PCA 通常需要先去均值，SVD 不一定",
+        "B": "SVD 是一種純數學矩陣分解工具",
+        "C": "PCA 是一種統計學降維方法",
+        "D": "兩者毫無關係"
+      }
     },
     {
-      "id": "ML-W12-Q21",
-      "type": "single",
-      "kp": "KP12.2",
-      "title": "這是第 12 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": [
+        "DBSCAN"
+      ],
+      "title": "SVD 的全稱是 __________ Value Decomposition。"
     },
     {
-      "id": "ML-W12-Q22",
-      "type": "single",
-      "kp": "KP12.3",
-      "title": "這是第 12 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": [
+        "核心點"
+      ],
+      "title": "在 $A = U \\Sigma V^T$ 中，$\\Sigma$ 是個 __________ 矩陣。"
     },
     {
-      "id": "ML-W12-Q23",
-      "type": "single",
-      "kp": "KP12.4",
-      "title": "這是第 12 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.12.4"
+      ],
+      "answer": [
+        "邊界點"
+      ],
+      "title": "影像壓縮本質上是利用 SVD 進行低 __________ 近似。"
     },
     {
-      "id": "ML-W12-Q24",
-      "type": "single",
-      "kp": "KP12.5",
-      "title": "這是第 12 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": [
+        "噪聲點"
+      ],
+      "title": "SVD 將一個複雜變換分解為旋轉、__________、再旋轉。"
     },
     {
-      "id": "ML-W12-Q25",
-      "type": "single",
-      "kp": "KP12.1",
-      "title": "這是第 12 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.12.5"
+      ],
+      "answer": [
+        "Eps"
+      ],
+      "title": "在推薦系統中，分解用戶評分矩陣得到的隱含維度稱為 __________ 因子。"
     },
     {
-      "id": "ML-W12-Q26",
-      "type": "single",
-      "kp": "KP12.2",
-      "title": "這是第 12 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": [
+        "MinPts"
+      ],
+      "title": "NumPy 中執行 SVD 的函式位於 `numpy.linalg.__________`。"
     },
     {
-      "id": "ML-W12-Q27",
-      "type": "single",
-      "kp": "KP12.3",
-      "title": "這是第 12 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.12.2"
+      ],
+      "answer": [
+        "密度"
+      ],
+      "title": "奇異值的數值越大，代表該方向承載的資料資訊越 __________。"
     },
     {
-      "id": "ML-W12-Q28",
-      "type": "single",
-      "kp": "KP12.4",
-      "title": "這是第 12 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.12.5"
+      ],
+      "answer": [
+        "DBSCAN"
+      ],
+      "title": "處理大型稀疏資料時，應使用 sklearn 中的 __________ SVD。"
     },
     {
-      "id": "ML-W12-Q29",
-      "type": "single",
-      "kp": "KP12.5",
-      "title": "這是第 12 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.12.1"
+      ],
+      "answer": [
+        "距離"
+      ],
+      "title": "SVD 分解後的 $U$ 矩陣和 $V$ 矩陣都是 __________ 矩陣。"
     },
     {
-      "id": "ML-W12-Q30",
-      "type": "single",
-      "kp": "KP12.1",
-      "title": "這是第 12 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.12.4"
+      ],
+      "answer": [
+        "聚類"
+      ],
+      "title": "只有保留前 $k$ 個奇異值進行矩陣重構的過程稱為 __________ SVD。 ---"
     }
   ]
 }

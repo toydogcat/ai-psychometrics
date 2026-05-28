@@ -1,0 +1,428 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 13,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "下列哪一個內建函式可以將「可疊代物件」轉換為「疊代器」？",
+      "options": {
+        "A": "`iter()`",
+        "B": "`next()`",
+        "C": "`list()`",
+        "D": "`map()`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "當疊代器中沒有更多元素時，會拋出哪種例外？",
+      "options": {
+        "A": "`IndexError`",
+        "B": "`EOFError`",
+        "C": "`StopIteration`",
+        "D": "`StopAsyncIteration`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP 13.3"
+      ],
+      "answer": null,
+      "title": "包含 `yield` 關鍵字的函式，其呼叫的回傳值是？",
+      "options": {
+        "A": "第一個 yield 的值",
+        "B": "函式最後的 return 值",
+        "C": "一個產生器物件",
+        "D": "None"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP 13.4"
+      ],
+      "answer": null,
+      "title": "執行 `gen = (x for x in range(3))`，呼叫 `next(gen)` 兩次後，`gen` 剩餘的內容是？",
+      "options": {
+        "A": "0, 1, 2",
+        "B": "1, 2",
+        "C": "2",
+        "D": "為空"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP 13.3",
+        "KP 13.5"
+      ],
+      "answer": null,
+      "title": "關於產生器，下列敘述何者正確？",
+      "options": {
+        "A": "產生器比列表更佔記憶體",
+        "B": "產生器可以透過索引 `gen[0]` 存取",
+        "C": "產生器只能疊代一遍",
+        "D": "產生器必須包含 `return` 語句"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "想要手動從疊代器獲取下一個元素，應使用？",
+      "options": {
+        "A": "`obj.get_next()`",
+        "B": "`next(obj)`",
+        "C": "`obj++`",
+        "D": "`get(obj)`"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP 13.4"
+      ],
+      "answer": null,
+      "title": "哪種括號用於定義產生器表達式？",
+      "options": {
+        "A": "`[]`",
+        "B": "`{}`",
+        "C": "`()`",
+        "D": "`<>`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "下列哪一個物件不是可疊代的 (Iterable)？",
+      "options": {
+        "A": "`12345`",
+        "B": "`\"12345\"`",
+        "C": "`[1, 2, 3]`",
+        "D": "`range(5)`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP 13.3"
+      ],
+      "answer": null,
+      "title": "執行 `yield from [1, 2, 3]` 的效果相當於？",
+      "options": {
+        "A": "拋出錯誤",
+        "B": "`yield [1, 2, 3]`",
+        "C": "在迴圈中逐一 `yield` 列表元素",
+        "D": "回傳一個列表"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP 13.5"
+      ],
+      "answer": null,
+      "title": "為什麼產生器適合處理大型檔案？",
+      "options": {
+        "A": "它們會預先載入所有資料",
+        "B": "它們逐行載入資料，保持低記憶體消耗",
+        "C": "它們的讀取速度比 `readlines()` 快",
+        "D": "它們會自動壓縮檔案內容"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "關於疊代器 (Iterator) 與可疊代物件 (Iterable) 的關係，哪些正確？",
+      "options": {
+        "A": "疊代器一定是可疊代物件",
+        "B": "可疊代物件一定是疊代器",
+        "C": "疊代器必須實作 `__next__`",
+        "D": "呼叫可疊代物件的 `__iter__` 會回傳疊代器"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 13.3",
+        "KP 13.5"
+      ],
+      "answer": null,
+      "title": "產生器 (Generator) 的優點包括？",
+      "options": {
+        "A": "節省記憶體",
+        "B": "程式碼簡潔",
+        "C": "支援隨機存取",
+        "D": "適合處理無限序列"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 13.4"
+      ],
+      "answer": null,
+      "title": "下列哪些操作會耗盡 (Exhaust) 一個產生器？",
+      "options": {
+        "A": "`list(gen)`",
+        "B": "`for x in gen:`",
+        "C": "`sum(gen)`",
+        "D": "`isinstance(gen, Generator)`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 13.3"
+      ],
+      "answer": null,
+      "title": "關於 `yield` 關鍵字，哪些描述是正確的？",
+      "options": {
+        "A": "它會保存函式的局部變數",
+        "B": "它會暫停函式的執行",
+        "C": "它可以接收外部傳入的值 (配合 `send`)",
+        "D": "一個函式只能有一個 `yield`"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 13.5"
+      ],
+      "answer": null,
+      "title": "下列哪些是延遲求值 (Lazy Evaluation) 的體現？",
+      "options": {
+        "A": "`range()`",
+        "B": "`map()`",
+        "C": "`filter()`",
+        "D": "`zip()`"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "自定義疊代器類別必須包含哪些方法？",
+      "options": {
+        "A": "`__init__`",
+        "B": "`__iter__`",
+        "C": "`__next__`",
+        "D": "`__len__`"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 13.4"
+      ],
+      "answer": null,
+      "title": "關於產生器表達式，哪些敘述正確？",
+      "options": {
+        "A": "語法類似串列生成式",
+        "B": "回傳一個產生日物件",
+        "C": "可以在定義時指定型別",
+        "D": "常作為函式參數使用"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "若要在函式中處理潛在的 `StopIteration`，可以？",
+      "options": {
+        "A": "使用 `try...except` 捕捉",
+        "B": "在 `for` 迴圈中自動處理",
+        "C": "使用 `next(it, default)` 提供預設值",
+        "D": "忽略它，Python 會自動重啟疊代"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 13.3"
+      ],
+      "answer": null,
+      "title": "下列哪些是建立產生器的方式？",
+      "options": {
+        "A": "使用 `yield` 定義函式",
+        "B": "使用圓括號推導式",
+        "C": "呼叫 `generator()` 內建函式",
+        "D": "類別實作 `__iter__` 並傳回自身"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 13.5"
+      ],
+      "answer": null,
+      "title": "關於 `sys.getsizeof()` 在產生器上的表現，哪些正確？",
+      "options": {
+        "A": "產生器物件的大小通常很小且固定",
+        "B": "它反映了產生器目前儲存的所有數據大小",
+        "C": "無論產生器能產生多少數據，其物件本身佔用空間很小",
+        "D": "它與產生的數據量成正比"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "實作疊代器協定必須定義兩個魔術方法：`__________` 與 `__________`。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 13.3"
+      ],
+      "answer": null,
+      "title": "產生器函式使用 __________ 關鍵字來回傳資料。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 13.2"
+      ],
+      "answer": null,
+      "title": "呼叫產生器物件的 `__________` 方法可以從外部向產生器內部傳遞值。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 13.5"
+      ],
+      "answer": null,
+      "title": "__________ (Lazy) Evaluation 指的是只在需要時才計算結果。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 13.4"
+      ],
+      "answer": null,
+      "title": "`g = (x*x for x in range(10))` 的物件類型是 __________。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "疊代器中的 `__iter__` 方法通常回傳 __________ (self/None)。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "Python 內建的 __________ 函式可以用於手動觸發一次疊代。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "當產生器函式執行到末尾或遇到 `return` 時，會觸發 __________ 例外。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 13.3"
+      ],
+      "answer": null,
+      "title": "使用 `yield __________` 語法可以簡化從另一個可疊代物件中逐一產出值的邏輯。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 13.1"
+      ],
+      "answer": null,
+      "title": "產生器物件在被耗盡後，再次呼叫 `next()` 會 __________。 ---"
+    }
+  ]
+}

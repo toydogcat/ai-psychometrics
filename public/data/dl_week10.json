@@ -1,224 +1,488 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 10,
-  "title": "深度學習第 10 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP10.1": "理論基礎",
-    "KP10.2": "架構原理",
-    "KP10.3": "PyTorch 實作",
-    "KP10.4": "模型調優",
-    "KP10.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W10-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP10.2",
-      "title": "這是第 10 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.10.4"
+      ],
+      "answer": "C",
+      "title": "RNN 相比於普通 MLP，其最核心的特徵是具有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "卷積核",
+        "B": "隱藏層的循環連接",
+        "C": "更多的神經元",
+        "D": "殘差連接"
+      }
     },
     {
-      "id": "DL-W10-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP10.3",
-      "title": "這是第 10 週的第 2 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.10.2"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "隨時間反向傳播（BPTT）的主要挑戰在於？",
+      "options": {
+        "A": "內存不足",
+        "B": "長序列導致的梯度消失或爆炸",
+        "C": "無法並行",
+        "D": "數據預處理太慢"
+      }
     },
     {
-      "id": "DL-W10-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP10.4",
-      "title": "這是第 10 週的第 3 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.10.3"
+      ],
+      "answer": "D",
+      "title": "GRU 相比於 LSTM，主要的改進點是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "增加門的數量",
+        "B": "簡化結構，減少參數量",
+        "C": "提高預測精度",
+        "D": "支持圖像處理"
+      }
     },
     {
-      "id": "DL-W10-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP10.5",
-      "title": "這是第 10 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.10.3"
+      ],
+      "answer": "B",
+      "title": "GRU 中用於控制保留多少「舊記憶」的門是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "重置門 (Reset Gate)",
+        "B": "更新門 (Update Gate)",
+        "C": "遺忘門",
+        "D": "輸入門"
+      }
     },
     {
-      "id": "DL-W10-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP10.1",
-      "title": "這是第 10 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.10.5"
+      ],
+      "answer": "C",
+      "title": "對一句話進行「情感分析」（正評/負評），屬於哪種任務架構？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "One-to-Many",
+        "B": "Many-to-One",
+        "C": "Many-to-Many",
+        "D": "One-to-One"
+      }
     },
     {
-      "id": "DL-W10-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP10.2",
-      "title": "這是第 10 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.10.2"
+      ],
+      "answer": "B",
+      "title": "梯度裁剪 (Gradient Clipping) 的主要作用是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "防止梯度消失",
+        "B": "防止梯度爆炸",
+        "C": "減少參數",
+        "D": "增加層數"
+      }
     },
     {
-      "id": "DL-W10-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP10.3",
-      "title": "這是第 10 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.10.1"
+      ],
+      "answer": "D",
+      "title": "RNN 隱藏狀態 $h_t$ 同時包含哪些資訊？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "只有當前輸入 $x_t$",
+        "B": "當前輸入 $x_t$ 與過去狀態 $h_{t-1}$ 的融合",
+        "C": "只有過去狀態 $h_{t-1}$",
+        "D": "未來資訊"
+      }
     },
     {
-      "id": "DL-W10-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP10.4",
-      "title": "這是第 10 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.10.5"
+      ],
+      "answer": "C",
+      "title": "在 PyTorch 中，RNN 的輸入張量預設形狀通常包含？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Batch, Channel, Height, Width",
+        "B": "Sequence Length, Batch Size, Input Size",
+        "C": "Batch, Features",
+        "D": "只有維度 1"
+      }
     },
     {
-      "id": "DL-W10-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP10.5",
-      "title": "這是第 10 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.10.5"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "下列哪一個不是序列數據？",
+      "options": {
+        "A": "每天的收盤價",
+        "B": "一篇文章",
+        "C": "一張靜態照片",
+        "D": "語音信號"
+      }
     },
     {
-      "id": "DL-W10-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP10.1",
-      "title": "這是第 10 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.10.3"
+      ],
+      "answer": "D",
+      "title": "GRU 的重置門主要決定了？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "哪些舊資訊對當前候選狀態不重要",
+        "B": "是否輸出結果",
+        "C": "權重的正負",
+        "D": "模型深度"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 4.10.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "RNN 常見的變體包括？",
+      "options": {
+        "A": "GRU",
+        "B": "LSTM",
+        "C": "Bi-RNN (雙向)",
+        "D": "ResNet (這是 CNN)"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 4.10.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "導致 RNN 梯度消失的原因包括？",
+      "options": {
+        "A": "序列過長",
+        "B": "激活函數的飽和區",
+        "C": "權重矩陣特徵值小於 1 的連乘",
+        "D": "硬件不足"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 4.10.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 GRU 的描述，正確的有？",
+      "options": {
+        "A": "包含兩個門控",
+        "B": "參數量比 LSTM 少約 1/3",
+        "C": "計算效率通常更高",
+        "D": "只能處理數值數據"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 4.10.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "循環神經網路的應用場景有？",
+      "options": {
+        "A": "機器翻譯",
+        "B": "股價預測",
+        "C": "語音合成",
+        "D": "基因序列分析"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 4.10.2",
+        "KP 4.10.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "處理 RNN 訓練不穩定的手段有？",
+      "options": {
+        "A": "梯度裁剪",
+        "B": "權重初始化優化",
+        "C": "使用更長序列",
+        "D": "使用門控機制 (GRU/LSTM)"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 4.10.1"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "隱藏狀態 (Hidden State) 的作用？",
+      "options": {
+        "A": "存儲歷史資訊",
+        "B": "作為下一時間步的輸入",
+        "C": "取代損失函數",
+        "D": "代表模型的記憶"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 4.10.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 BPTT 的敘述，正確的有？",
+      "options": {
+        "A": "需要將網路按時間步展開",
+        "B": "本質上仍是鏈式法則",
+        "C": "隨著時間增加，導流路徑變長",
+        "D": "不需要反向傳播"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 4.10.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Many-to-Many 任務包含？",
+      "options": {
+        "A": "同時輸入輸出（如零件打標）",
+        "B": "異步輸入輸出（如機器翻譯）",
+        "C": "情感分類",
+        "D": "圖像生成"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 4.10.3"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在實務中，為什麼 GRU 很受歡迎？",
+      "options": {
+        "A": "訓練速度相對快",
+        "B": "代碼實現簡單",
+        "C": "效果往往與 LSTM 相當",
+        "D": "可以直接識別圖像"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 4.10.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "RNN 權重共享（Weight Sharing）的好處？",
+      "options": {
+        "A": "減少模型參數量",
+        "B": "使模型能處理變長序列",
+        "C": "學習時間不變的統計規律",
+        "D": "加速收斂"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 4.10.5"
+      ],
+      "answer": [
+        "RNN"
+      ],
+      "title": "RNN 的全稱是 __________ Neural Network。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 4.10.4"
+      ],
+      "answer": [
+        "隱狀態"
+      ],
+      "title": "循環網路在各個時間步使用的權重是 __________ 的。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 4.10.3"
+      ],
+      "answer": [
+        "序列數據"
+      ],
+      "title": "為了解決 RNN 難以學習長期依賴的問題，出現了 LSTM 和 __________。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 4.10.3"
+      ],
+      "answer": [
+        "時間步"
+      ],
+      "title": "GRU 包含重置門與 __________ 門。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 4.10.2"
+      ],
+      "answer": [
+        "共享權重"
+      ],
+      "title": "反向傳播在時間維度展開的算法縮寫為 __________。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 4.10.2"
+      ],
+      "answer": [
+        "梯度消失"
+      ],
+      "title": "解決梯度爆炸的一種粗暴但有效的手段是梯度 __________。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 4.10.5"
+      ],
+      "answer": [
+        "梯度爆炸"
+      ],
+      "title": "將一句話翻譯成另一句話的任務架構叫 __________-to-Many。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 4.10.1"
+      ],
+      "answer": [
+        "nn.RNN"
+      ],
+      "title": "RNN 中負責存儲過去訊息的向量稱為 __________ 狀態。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 4.10.5"
+      ],
+      "answer": [
+        "輸入"
+      ],
+      "title": "在 PyTorch 中，GRU 模組的名稱是 `nn.__________`。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 4.10.2"
+      ],
+      "answer": [
+        "輸出"
+      ],
+      "title": "如果序列長度為 100，BPTT 最遠需要回溯到第 __________ 個時間步。 ---"
     }
   ]
 }

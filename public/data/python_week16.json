@@ -1,0 +1,427 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 16,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP 16.5"
+      ],
+      "answer": null,
+      "title": "下列哪一個模式用於「追加內容」到文字檔案末尾？",
+      "options": {
+        "A": "`'r'`",
+        "B": "`'w'`",
+        "C": "`'a'`",
+        "D": "`'x'`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP 16.1"
+      ],
+      "answer": null,
+      "title": "`with open('data.txt') as f:` 執行完畢後，`f.closed` 的值是？",
+      "options": {
+        "A": "`True`",
+        "B": "`False`",
+        "C": "`None`",
+        "D": "拋出錯誤"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP 16.2"
+      ],
+      "answer": null,
+      "title": "JSON 格式中的物件 (Object) 在 Python 中會轉換為什麼型別？",
+      "options": {
+        "A": "`list`",
+        "B": "`tuple`",
+        "C": "`dict`",
+        "D": "`set`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP 16.2",
+        "KP 16.5"
+      ],
+      "answer": null,
+      "title": "`json.dumps()` 與 `json.dump()` 的主要區別是？",
+      "options": {
+        "A": "前者轉為字串，後者寫入檔案",
+        "B": "前者寫入檔案，後者轉為字串",
+        "C": "前者處理列表，後者處理字典",
+        "D": "沒有區別"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP 16.3"
+      ],
+      "answer": null,
+      "title": "CSV 模組中，哪一個類別可以直接透過標題名稱存取資料？",
+      "options": {
+        "A": "`csv.reader`",
+        "B": "`csv.DictReader`",
+        "C": "`csv.NamedReader`",
+        "D": "`csv.HeaderReader`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP 16.4"
+      ],
+      "answer": null,
+      "title": "開啟二進位讀取模式應使用？",
+      "options": {
+        "A": "`'r'`",
+        "B": "`'read'`",
+        "C": "`'rb'`",
+        "D": "`'br'`"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP 16.4"
+      ],
+      "answer": null,
+      "title": "`f.seek(0)` 的作用是？",
+      "options": {
+        "A": "刪除檔案內容",
+        "B": "將檔案指標移回檔案開頭",
+        "C": "獲取目前指標位置",
+        "D": "關閉檔案"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP 16.2"
+      ],
+      "answer": null,
+      "title": "下列哪一個不是 JSON 支援的基礎資料型別？",
+      "options": {
+        "A": "`string`",
+        "B": "`number`",
+        "C": "`boolean`",
+        "D": "`tuple`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP 16.3"
+      ],
+      "answer": null,
+      "title": "在 `csv.writer` 中，哪一個方法可以一次寫入多行資料？",
+      "options": {
+        "A": "`write()`",
+        "B": "`writerow()`",
+        "C": "`writerows()`",
+        "D": "`writelines()`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP 16.5"
+      ],
+      "answer": null,
+      "title": "執行 `open('file.txt', 'w')` 時，若檔案已存在會發生什麼？",
+      "options": {
+        "A": "報錯",
+        "B": "內容被清空覆蓋",
+        "C": "在末尾追加內容",
+        "D": "什麼都不發生"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 16.1"
+      ],
+      "answer": null,
+      "title": "關於 `with` 語句的優點，哪些正確？",
+      "options": {
+        "A": "自動關閉檔案",
+        "B": "程式碼更簡潔",
+        "C": "即使發生例外也能確保資源釋放",
+        "D": "提升檔案讀取速度"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 16.2"
+      ],
+      "answer": null,
+      "title": "哪些是 `json` 模組提供的函式？",
+      "options": {
+        "A": "`load`",
+        "B": "`loads`",
+        "C": "`dump`",
+        "D": "`dumps`"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 16.3"
+      ],
+      "answer": null,
+      "title": "關於 CSV 格式，哪些敘述正確？",
+      "options": {
+        "A": "以純文字儲存表格資料",
+        "B": "分隔符號一定是逗號",
+        "C": "可以用 Excel 開啟",
+        "D": "支援多種資料型別（如數字、布林）"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 16.5"
+      ],
+      "answer": null,
+      "title": "下列哪些模式可以進行「讀取」操作？",
+      "options": {
+        "A": "`'r'`",
+        "B": "`'r+'`",
+        "C": "`'w+'`",
+        "D": "`'a+'`"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 16.5"
+      ],
+      "answer": null,
+      "title": "處理大檔案時，哪些做法是推薦的？",
+      "options": {
+        "A": "使用 `f.read()` 一次載入",
+        "B": "使用 `for line in f:` 疊代讀取",
+        "C": "使用 `f.read(1024)` 分塊讀取",
+        "D": "使用 `f.readlines()`"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 16.4"
+      ],
+      "answer": null,
+      "title": "下列哪些字元編碼在 Python 檔案處理中常見？",
+      "options": {
+        "A": "`utf-8`",
+        "B": "`ascii`",
+        "C": "`cp950`",
+        "D": "`json`"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 16.2"
+      ],
+      "answer": null,
+      "title": "關於 `json.loads(s)`，哪些正確？",
+      "options": {
+        "A": "`s` 必須是字串",
+        "B": "回傳 Python 資料結構",
+        "C": "可以處理 JSON 檔案物件",
+        "D": "常用於處理 API 回傳值"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 16.1"
+      ],
+      "answer": null,
+      "title": "哪些屬於類檔案物件 (File-like objects)？",
+      "options": {
+        "A": "`sys.stdout`",
+        "B": "`io.StringIO`",
+        "C": "開啟的檔案物件",
+        "D": "字串變數"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 16.3"
+      ],
+      "answer": null,
+      "title": "在 `csv.DictWriter` 中，哪些步驟是必須的？",
+      "options": {
+        "A": "指定 `fieldnames`",
+        "B": "呼叫 `writeheader()` (非強制但建議)",
+        "C": "使用字典寫入資料",
+        "D": "手動關閉檔案"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 16.4"
+      ],
+      "answer": null,
+      "title": "關於 `f.tell()`，哪些敘述正確？",
+      "options": {
+        "A": "回傳目前檔案指標的位置",
+        "B": "以位元組 (Bytes) 為單位",
+        "C": "可以修改指標位置",
+        "D": "常用於斷點續傳邏輯"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 16.1"
+      ],
+      "answer": null,
+      "title": "使用 `with` 語句背後實作了 __________ 與 `__exit__` 兩個魔術方法。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 16.5"
+      ],
+      "answer": null,
+      "title": "將 Python 物件轉換為 JSON 字串的過程稱為 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 16.2"
+      ],
+      "answer": null,
+      "title": "`json.load()` (不帶 s) 的參數通常是一個 __________ 物件。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 16.4"
+      ],
+      "answer": null,
+      "title": "在 `open()` 函式中，參數 `encoding='__________'` 是最常用的編碼設定。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 16.3"
+      ],
+      "answer": null,
+      "title": "CSV 檔案預設使用 __________ 符號作為資料欄位的分隔。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 16.4"
+      ],
+      "answer": null,
+      "title": "若要移動檔案指標到檔案末尾，可以使用 `f.seek(0, __________ )`。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 16.4"
+      ],
+      "answer": null,
+      "title": "`b'hello'` 的資料型別是 __________。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 16.3"
+      ],
+      "answer": null,
+      "title": "`csv.DictReader` 會將每一行轉換為一個 __________ 物件。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 16.1"
+      ],
+      "answer": null,
+      "title": "若要在開啟檔案時同時確保寫入緩衝區立即重新整理，可以使用 `f.__________()` 方法。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 16.2"
+      ],
+      "answer": null,
+      "title": "JSON 標準中，字串必須使用 __________ 引號包裹。 ---"
+    }
+  ]
+}

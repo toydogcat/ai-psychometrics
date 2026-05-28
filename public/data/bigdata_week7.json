@@ -1,0 +1,496 @@
+{
+  "courseId": "big-data",
+  "week": 7,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": "B",
+      "title": "在 CNN 中，若要不增加參數數量而擴大模型的感受野 (Receptive Field)，應使用？",
+      "options": {
+        "A": "池化層",
+        "B": "空洞卷積 (Dilated Convolution)",
+        "C": "全連接層",
+        "D": "激活函數"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": "B",
+      "title": "ResNet 引入「跳躍連接」(Skip Connection) 的主要目的是為了解決什麼問題？",
+      "options": {
+        "A": "運算太慢",
+        "B": "梯度消失與網路退化問題",
+        "C": "數據量不足",
+        "D": "分辨率太低"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": "B",
+      "title": "下列哪種技術常被用來取代 CNN 末端昂貴的全連接層，以減少參數量？",
+      "options": {
+        "A": "隨機森林",
+        "B": "全域平均池化 (GAP)",
+        "C": "局部最大值池化",
+        "D": "Dropout"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": "B",
+      "title": "Vision Transformer (ViT) 在處理影像前，必須先進行哪項操作？",
+      "options": {
+        "A": "將影像二值化",
+        "B": "將影像切分為補丁 (Patches) 並扁平化",
+        "C": "移除所有色彩",
+        "D": "增加噪聲"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": "B",
+      "title": "GAN 架構中，負責產出虛假數據以嘗試欺騙對手的組件是？",
+      "options": {
+        "A": "判別器",
+        "B": "生成器 (Generator)",
+        "C": "編碼器",
+        "D": "解碼器"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "B",
+      "title": "對比學習 (Contrastive Learning) 的核心目標是？",
+      "options": {
+        "A": "預測下一幀影像",
+        "B": "學習如何將相似樣本的表徵拉近，不相似的推開",
+        "C": "計算影像的面積",
+        "D": "進行精確的物件標註"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": "B",
+      "title": "為什麼 GAN 的訓練過程通常被描述為「不穩定」？",
+      "options": {
+        "A": "因為電腦性能不夠",
+        "B": "因為生成器與判別器處於零和博弈，難以達成納許均衡",
+        "C": "因為數據太少",
+        "D": "因為模型層數太少"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "B",
+      "title": "CLIP 模型的核心價值在於？",
+      "options": {
+        "A": "提高影像生成速度",
+        "B": "將影像與文字對齊在同一個特徵空間",
+        "C": "壓縮影像體積",
+        "D": "移除影像背景"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": "B",
+      "title": "ViT 的「全局注意力」相對於 CNN 的「局部卷積」，最大的優勢在於？",
+      "options": {
+        "A": "運算量極小",
+        "B": "能直接捕捉影像中遠距離像素間的關聯",
+        "C": "適合處理小尺寸影像",
+        "D": "不需預訓練"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "B",
+      "title": "在自監督學習中，透過對同一張圖進行旋轉、剪裁產生的不同樣本對被稱為？",
+      "options": {
+        "A": "負樣本對",
+        "B": "正樣本對 (Positive Pairs)",
+        "C": "標籤對",
+        "D": "殘差對"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於感受野 (Receptive Field)，下列敘述正確的有？",
+      "options": {
+        "A": "隨著網路加深，感受野會逐漸擴大",
+        "B": "步長 (Stride) 大於 1 會增加感受野",
+        "C": "空洞卷積能有效增加感受野",
+        "D": "感受野越大，能看到的全局資訊越多"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "全域平均池化 (GAP) 的優點包括？",
+      "options": {
+        "A": "顯著減少模型參數量",
+        "B": "強化了特徵圖與類別間的映射關係",
+        "C": "具備平移不變性",
+        "D": "能徹底取代卷積層"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Vision Transformer (ViT) 相比 CNN 的特點有？",
+      "options": {
+        "A": "缺乏感官偏好 (Inductive Bias)",
+        "B": "需要大量的預訓練數據才能發揮效能",
+        "C": "運算複雜度與圖像像素成線性關係",
+        "D": "支援多頭注意力機制"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "GAN 的常見變體有哪些？",
+      "options": {
+        "A": "DCGAN",
+        "B": "CycleGAN",
+        "C": "StyleGAN",
+        "D": "ResNet"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "對比學習中常用的數據增強手段包括？",
+      "options": {
+        "A": "隨機裁剪",
+        "B": "顏色抖動",
+        "C": "高斯模糊",
+        "D": "手動修改標籤"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP7.3",
+        "KP7.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "多模態模型的應用場景包括？",
+      "options": {
+        "A": "視覺問答 (VQA)",
+        "B": "文本生成影像",
+        "C": "影像描述 (Captioning)",
+        "D": "純文字翻譯"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "導致 CNN 模型退化的原因可能包括？",
+      "options": {
+        "A": "梯度消失",
+        "B": "梯度爆炸",
+        "C": "過度增加深度而無殘差結構",
+        "D": "使用了 ReLU"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "訓練 GAN 時常見的問題有？",
+      "options": {
+        "A": "模式崩潰 (Mode Collapse)",
+        "B": "判別器過強導致生成器無法學習",
+        "C": "梯度消失",
+        "D": "模型準確率恆等於 100%"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP7.1",
+        "KP7.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些模型屬於視覺領域的里程碑？",
+      "options": {
+        "A": "AlexNet",
+        "B": "VGG",
+        "C": "ResNet",
+        "D": "ViT"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP7.1",
+        "KP7.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "對於中級 AI 工程師，選擇視覺模型時應考慮？",
+      "options": {
+        "A": "推理延遲",
+        "B": "顯存佔用",
+        "C": "數據量是否支撐 Transformer",
+        "D": "模型的顏色"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": [
+        "空洞 (",
+        "Dilated)"
+      ],
+      "title": "__________ 卷積透過在卷積核元素間插入空隙來擴大感受野。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": [
+        "殘差"
+      ],
+      "title": "ResNet 核心的跳躍連接結構又被稱為 __________ 學習塊。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": [
+        "Average"
+      ],
+      "title": "GAP 的全稱是 Global __________ Pooling。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": [
+        "Patches (",
+        "補丁)"
+      ],
+      "title": "ViT 將圖像切分成的固定大小小塊被稱為 __________。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": [
+        "注意力 (",
+        "Attention)"
+      ],
+      "title": "Transformer 內部的核心運算機制是多頭 __________ 機制。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": [
+        "納許 (",
+        "Nash)"
+      ],
+      "title": "GAN 的目標是讓生成器與判別器達到 __________ 均衡。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": [
+        "負"
+      ],
+      "title": "在對比學習中，不同圖像的視圖對被視為 __________ 樣本對。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": [
+        "自監督"
+      ],
+      "title": "__________ 學習是一種不需要人工標注、利用數據自身特徵進行訓練的方法。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": [
+        "模式 (",
+        "Mode)"
+      ],
+      "title": "當 GAN 的生成器只會產生單一種類的影像時，這現象稱為 __________ 崩潰。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": [
+        "對比"
+      ],
+      "title": "CLIP 利用 __________ 預訓練技術將視覺與語言資訊結合。 ---"
+    }
+  ]
+}

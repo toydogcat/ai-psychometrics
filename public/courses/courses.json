@@ -39,7 +39,7 @@
           "內建函數len/round"
         ],
         "mdPath": "week2.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week2.json",
         "estimatedMinutes": 30
       },
       {
@@ -54,7 +54,7 @@
           "Guard Clauses最佳實踐"
         ],
         "mdPath": "week3.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week3.json",
         "estimatedMinutes": 30
       },
       {
@@ -69,7 +69,7 @@
           "巢狀迴圈"
         ],
         "mdPath": "week4.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week4.json",
         "estimatedMinutes": 30
       },
       {
@@ -84,7 +84,7 @@
           "常用內建函數"
         ],
         "mdPath": "week5.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week5.json",
         "estimatedMinutes": 30
       },
       {
@@ -99,7 +99,7 @@
           "frozenset"
         ],
         "mdPath": "week6.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week6.json",
         "estimatedMinutes": 30
       },
       {
@@ -114,7 +114,7 @@
           "命名空間作用域"
         ],
         "mdPath": "week7.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week7.json",
         "estimatedMinutes": 30
       },
       {
@@ -129,7 +129,7 @@
           "純函數設計"
         ],
         "mdPath": "week8.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week8.json",
         "estimatedMinutes": 30
       },
       {
@@ -142,7 +142,7 @@
           "面試題型演練"
         ],
         "mdPath": "week9.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week9.json",
         "estimatedMinutes": 60
       },
       {
@@ -157,7 +157,7 @@
           "property裝飾器"
         ],
         "mdPath": "week10.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week10.json",
         "estimatedMinutes": 30
       },
       {
@@ -172,7 +172,7 @@
           "抽象類別ABC"
         ],
         "mdPath": "week11.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week11.json",
         "estimatedMinutes": 30
       },
       {
@@ -187,7 +187,7 @@
           "實戰：計時/日誌裝飾器"
         ],
         "mdPath": "week12.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week12.json",
         "estimatedMinutes": 30
       },
       {
@@ -202,7 +202,7 @@
           "itertools模組"
         ],
         "mdPath": "week13.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week13.json",
         "estimatedMinutes": 30
       },
       {
@@ -217,7 +217,7 @@
           "環境變數管理"
         ],
         "mdPath": "week14.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week14.json",
         "estimatedMinutes": 30
       },
       {
@@ -232,7 +232,7 @@
           "實戰：Email/電話驗證"
         ],
         "mdPath": "week15.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week15.json",
         "estimatedMinutes": 30
       },
       {
@@ -247,7 +247,7 @@
           "二進位檔案處理"
         ],
         "mdPath": "week16.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week16.json",
         "estimatedMinutes": 30
       },
       {
@@ -262,7 +262,7 @@
           "多模組日誌整合"
         ],
         "mdPath": "week17.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week17.json",
         "estimatedMinutes": 30
       },
       {
@@ -277,7 +277,7 @@
           "職涯發展建議"
         ],
         "mdPath": "week18.md",
-        "quizPath": "python_week1.json",
+        "quizPath": "python_week18.json",
         "estimatedMinutes": 60
       }
     ]
@@ -322,7 +322,7 @@
           "批量報表輸出"
         ],
         "mdPath": "week2.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week2.json",
         "estimatedMinutes": 30
       },
       {
@@ -337,7 +337,7 @@
           "批量簡報生成"
         ],
         "mdPath": "week3.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week3.json",
         "estimatedMinutes": 30
       },
       {
@@ -352,7 +352,7 @@
           "群發策略"
         ],
         "mdPath": "week4.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week4.json",
         "estimatedMinutes": 30
       },
       {
@@ -367,7 +367,7 @@
           "爬蟲禮儀robots.txt"
         ],
         "mdPath": "week5.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week5.json",
         "estimatedMinutes": 30
       },
       {
@@ -382,7 +382,7 @@
           "JSON API爬取"
         ],
         "mdPath": "week6.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week6.json",
         "estimatedMinutes": 30
       },
       {
@@ -397,7 +397,7 @@
           "無頭瀏覽器Headless"
         ],
         "mdPath": "week7.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week7.json",
         "estimatedMinutes": 30
       },
       {
@@ -412,7 +412,7 @@
           "數據持久化"
         ],
         "mdPath": "week8.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week8.json",
         "estimatedMinutes": 30
       },
       {
@@ -425,7 +425,7 @@
           "綜合挑戰題"
         ],
         "mdPath": "week9.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week9.json",
         "estimatedMinutes": 60
       },
       {
@@ -440,7 +440,7 @@
           "索引進階操作"
         ],
         "mdPath": "week10.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week10.json",
         "estimatedMinutes": 30
       },
       {
@@ -455,7 +455,7 @@
           "dtype轉換優化"
         ],
         "mdPath": "week11.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week11.json",
         "estimatedMinutes": 30
       },
       {
@@ -470,7 +470,7 @@
           "時區處理"
         ],
         "mdPath": "week12.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week12.json",
         "estimatedMinutes": 30
       },
       {
@@ -485,7 +485,7 @@
           "互動圖表Plotly"
         ],
         "mdPath": "week13.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week13.json",
         "estimatedMinutes": 30
       },
       {
@@ -500,7 +500,7 @@
           "多股票比較分析"
         ],
         "mdPath": "week14.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week14.json",
         "estimatedMinutes": 30
       },
       {
@@ -515,7 +515,7 @@
           "信號回測邏輯"
         ],
         "mdPath": "week15.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week15.json",
         "estimatedMinutes": 30
       },
       {
@@ -530,7 +530,7 @@
           "最大回撤計算"
         ],
         "mdPath": "week16.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week16.json",
         "estimatedMinutes": 30
       },
       {
@@ -545,7 +545,7 @@
           "風險調整後報酬"
         ],
         "mdPath": "week17.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week17.json",
         "estimatedMinutes": 30
       },
       {
@@ -560,7 +560,7 @@
           "職涯發展建議"
         ],
         "mdPath": "week18.md",
-        "quizPath": "quant_week1.json",
+        "quizPath": "quant_week18.json",
         "estimatedMinutes": 60
       }
     ]
@@ -1416,6 +1416,284 @@
         ],
         "mdPath": "week18.md",
         "quizPath": "ai_week18.json",
+        "estimatedMinutes": 45
+      }
+    ]
+  },
+  {
+    "id": "big-data",
+    "title": "大數據生態系與分散式運算實踐",
+    "description": "專為中級 AI 工程師設計的大數據架構課程。從 Hadoop HDFS、MapReduce 到 Apache Spark 記憶體分散式計算，並深入探討海量數據特徵工程與雲端 AI 基礎建設最佳實踐。",
+    "category": "大數據開發",
+    "tags": [
+      "推薦",
+      "中級證照",
+      "分散式計算"
+    ],
+    "totalWeeks": 18,
+    "totalQuestions": 540,
+    "syllabus": [
+      {
+        "week": 1,
+        "title": "大數據生態系與架構基礎 (Big Data Ecosystem)",
+        "topics": [
+          "大數據 4V 特性及其挑戰",
+          "數據生命週期管理 (DLM)",
+          "分散式架構：Hadoop 生態",
+          "現代核心：Apache Spark 計算框架",
+          "雲端 AI 基礎建設",
+          "：PySpark 環境搭建與大規模數據載入"
+        ],
+        "mdPath": "week1.md",
+        "quizPath": "bigdata_week1.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 2,
+        "title": "數據採集、ETL 與 流水線自動化 (ETL Pipelines)",
+        "topics": [
+          "ETL 流程深度拆解",
+          "數據規範化與任務相依性",
+          "流水線自動化：Apache Airflow",
+          "數據架構選型：Lambda vs. Kappa",
+          "資料血緣 (Data Lineage) 與治理",
+          "：Python 自動化數據清理腳本"
+        ],
+        "mdPath": "week2.md",
+        "quizPath": "bigdata_week2.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 3,
+        "title": "分散式運算與雲端 AI 實戰 (Cloud AI Infrastructure)",
+        "topics": [
+          "雲端 AI 工作流全生命週期",
+          "分散式訓練兩大核心策略",
+          "雲端成本管理與資源優化",
+          "容器化技術對 AI 部署的必要性",
+          "網路延遲與存儲優化",
+          "：配置雲端 AI 訓練集群"
+        ],
+        "mdPath": "week3.md",
+        "quizPath": "bigdata_week3.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 4,
+        "title": "中級特徵工程：結構化數據深度處理 (Advanced Feature Engineering)",
+        "topics": [
+          "缺失機制分析與高級填充",
+          "高基數類別特徵處理",
+          "數值變換與分桶策略",
+          "特徵選擇與降維進階",
+          "特徵重要性評估",
+          "：構建 Scikit-Learn 特徵工程流水線"
+        ],
+        "mdPath": "week4.md",
+        "quizPath": "bigdata_week4.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 5,
+        "title": "進階機器學習：集成學習與模型融合 (Advanced Ensemble Learning)",
+        "topics": [
+          "集成學習核心思想與偏差-方差權衡",
+          "GBDT 與 XGBoost 的數學優化",
+          "三大 Boosting 框架技術對抗",
+          "模型融合策略：Stacking 與 Blending",
+          "自動化超參數調優",
+          "：實作多層 Stacking 模型融合"
+        ],
+        "mdPath": "week5.md",
+        "quizPath": "bigdata_week5.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 6,
+        "title": "不平衡分類與評估指標深度解析 (Imbalanced Classification)",
+        "topics": [
+          "數據不平衡挑戰與評估陷阱",
+          "數據層面：採樣技術與風險",
+          "算法層面：代價敏感學習與損失函數",
+          "進階評估指標與曲線選型",
+          "概率校準 (Probability Calibration)",
+          "：信用卡欺詐偵測與 SMOTE 採樣"
+        ],
+        "mdPath": "week6.md",
+        "quizPath": "bigdata_week6.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 7,
+        "title": "深度學習架構深挖：視覺與多模態 (Advanced Computer Vision)",
+        "topics": [
+          "卷積神經網路的深度演進",
+          "Vision Transformer (ViT) 革命",
+          "生成對抗網路 (GAN) 深度剖析",
+          "對比學習 (Contrastive Learning)",
+          "多模態 AI 初探",
+          "：使用預訓練 ViT 進行圖像分類"
+        ],
+        "mdPath": "week7.md",
+        "quizPath": "bigdata_week7.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 8,
+        "title": "自然語言處理進階：Transformer 與 語言理解 (Advanced NLP)",
+        "topics": [
+          "Transformer 核心架構解構",
+          "掩碼機制與解碼邏輯",
+          "BERT vs. GPT：理解與生成的兩條路徑",
+          "模型優化與部署技術",
+          "實戰應用挑戰",
+          "：實作 BERT 命名實體識別"
+        ],
+        "mdPath": "week8.md",
+        "quizPath": "bigdata_week8.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 9,
+        "title": "期中考試 (技術應用與數據處理)",
+        "topics": [
+          "前八週核心知識點大串聯",
+          "期中考場規則與答題技巧"
+        ],
+        "mdPath": "week9.md",
+        "quizPath": "bigdata_week9.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 10,
+        "title": "統計學分析：推論統計與實驗設計 (Inferential Statistics)",
+        "topics": [
+          "推論統計基礎與參數估計",
+          "假設檢定的邏輯與錯誤類型",
+          "A/B Testing 與隨機對照實驗",
+          "樣本量估算與檢定力",
+          "常用統計分佈應用",
+          "：Python 計算置信區間與 t 檢定"
+        ],
+        "mdPath": "week10.md",
+        "quizPath": "bigdata_week10.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 11,
+        "title": "假設檢定與推論統計進階 (Advanced Hypothesis Testing)",
+        "topics": [
+          "多組對比與方差分析 (ANOVA)",
+          "自由度與分佈特性",
+          "類別型數據的關聯分析",
+          "貝氏統計思維初步",
+          "效應值與實務意義",
+          "：多組均值對比 (ANOVA) 與事後檢定"
+        ],
+        "mdPath": "week11.md",
+        "quizPath": "bigdata_week11.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 12,
+        "title": "回歸分析與時間序列預測 (Regression & Time Series)",
+        "topics": [
+          "多元線性回歸與診斷",
+          "時間序列基礎與組成",
+          "時間序列特徵工程",
+          "統計預測模型：ARIMA",
+          "現代預測框架：Facebook Prophet",
+          "：多元回歸診斷與 VIF 分析"
+        ],
+        "mdPath": "week12.md",
+        "quizPath": "bigdata_week12.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 13,
+        "title": "AI 策略與架構設計 (Enterprise AI Architecture)",
+        "topics": [
+          "企業數據中台與 AI 平台",
+          "AI 推理服務與微服務集成",
+          "分散式系統的 CAP 定理應用",
+          "算力成本與 ROI 估算",
+          "供應商鎖定與多雲策略",
+          "：繪製企業級 AI 解決方案架構圖"
+        ],
+        "mdPath": "week13.md",
+        "quizPath": "bigdata_week13.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 14,
+        "title": "MLOps：模型部署、版本與監控 (MLOps & Lifecycle)",
+        "topics": [
+          "MLOps 成熟度模型",
+          "模型管理：Registry 與 Feature Store",
+          "進階部署策略",
+          "模型衰退與偏移監控",
+          "模型可觀察性與日誌",
+          "：使用 MLflow 進行實驗追蹤"
+        ],
+        "mdPath": "week14.md",
+        "quizPath": "bigdata_week14.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 15,
+        "title": "數據隱私保護與聯邦學習 (Privacy & Federated Learning)",
+        "topics": [
+          "AI 隱私風險與攻擊類型",
+          "差異隱私 (Differential Privacy, DP)",
+          "聯邦學習 (Federated Learning, FL) 架構",
+          "安全計算與加密技術",
+          "合規治理與隱私平衡",
+          "：模擬聯邦學習訓練流程"
+        ],
+        "mdPath": "week15.md",
+        "quizPath": "bigdata_week15.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 16,
+        "title": "垂直行業 AI 案例分析 (Vertical Industry Case Studies)",
+        "topics": [
+          "智慧醫療：精準醫療與診斷輔助",
+          "新零售：供應鏈優化與智慧行銷",
+          "金融科技：風控與量化投資",
+          "智慧城市與智慧製造",
+          "垂直行業 AI 導入框架與失敗反思",
+          "：設計智慧零售需求預測架構"
+        ],
+        "mdPath": "week16.md",
+        "quizPath": "bigdata_week16.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 17,
+        "title": "管理 AI 風險、安全與治理 (Risk, Security & Governance)",
+        "topics": [
+          "對抗性攻擊：神經網路的「視覺幻覺」",
+          "模型防禦與對抗性訓練",
+          "AI 治理：責任、透明與審計",
+          "AI 網絡安全 (Cybersecurity for AI)",
+          "倫理、偏見與公平性",
+          "：實踐 FGSM 對抗攻擊"
+        ],
+        "mdPath": "week17.md",
+        "quizPath": "bigdata_week17.json",
+        "estimatedMinutes": 45
+      },
+      {
+        "week": 18,
+        "title": "期末綜合測驗 (Final Comprehensive Exam)",
+        "topics": [
+          "大數據架構",
+          "分散式運算",
+          "案例分析"
+        ],
+        "mdPath": "week18.md",
+        "quizPath": "bigdata_week18.json",
         "estimatedMinutes": 45
       }
     ]

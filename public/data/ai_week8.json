@@ -1,224 +1,491 @@
 {
-  "course_id": "artificial-intelligence",
+  "courseId": "artificial-intelligence",
   "week": 8,
-  "title": "人工智慧第 8 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP8.1": "歷史背景",
-    "KP8.2": "核心定義",
-    "KP8.3": "算法邏輯",
-    "KP8.4": "倫理法律",
-    "KP8.5": "未來趨勢"
-  },
   "questions": [
     {
-      "id": "AI-W8-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP8.2",
-      "title": "這是第 8 週的第 1 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP 5.8.1"
+      ],
+      "answer": "C",
+      "title": "擴散模型 (Diffusion Model) 生成影像的核心過程是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "隨機塗鴉",
+        "B": "逐步去噪",
+        "C": "拼貼剪下",
+        "D": "濾鏡處理"
+      }
     },
     {
-      "id": "AI-W8-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP8.3",
-      "title": "這是第 8 週的第 2 個人工智慧練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 5.8.3"
+      ],
       "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "下列哪一個模型主要負責將「文字描述」與「影像內容」進行語義對齊？",
+      "options": {
+        "A": "BERT",
+        "B": "CLIP",
+        "C": "ResNet",
+        "D": "YOLO"
+      }
     },
     {
-      "id": "AI-W8-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP8.4",
-      "title": "這是第 8 週的第 3 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP 5.8.4"
+      ],
+      "answer": "D",
+      "title": "在 Stable Diffusion 中，為了避免生成「多出的手指」，應將該需求寫在？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "正向提示詞",
+        "B": "負面提示詞 (Negative Prompt)",
+        "C": "檔案名稱",
+        "D": "郵件裡"
+      }
     },
     {
-      "id": "AI-W8-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP8.5",
-      "title": "這是第 8 週的第 4 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP 5.8.2"
+      ],
+      "answer": "B",
+      "title": "Stable Diffusion 相比於傳統擴散模型，其「Latent」特性是指它在什麼空間運算？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "原始像素空間",
+        "B": "壓縮後的潛在空間",
+        "C": "雲端硬碟",
+        "D": "記憶體"
+      }
     },
     {
-      "id": "AI-W8-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP8.1",
-      "title": "這是第 8 週的第 5 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP 5.8.2",
+        "KP 5.8.4"
+      ],
+      "answer": "C",
+      "title": "下列哪種技術可以讓我們精準控制生成人物的「姿勢」（如骨架控制）？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "CNN",
+        "B": "ControlNet",
+        "C": "Word2Vec",
+        "D": "Dropout"
+      }
     },
     {
-      "id": "AI-W8-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP8.2",
-      "title": "這是第 8 週的第 6 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP 5.8.5"
+      ],
+      "answer": "B",
+      "title": "多模態 (Multimodal) AI 是指模型可以同時處理？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "多個用戶的請求",
+        "B": "多種不同類型的數據（如圖、文、音）",
+        "C": "多種編程語言",
+        "D": "多個硬體設備"
+      }
     },
     {
-      "id": "AI-W8-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP8.3",
-      "title": "這是第 8 週的第 7 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP 5.8.1"
+      ],
+      "answer": "D",
+      "title": "擴散模型中的「前向過程」是指？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "生成高品質圖片",
+        "B": "給圖片逐步增加高斯噪聲",
+        "C": "縮小圖片尺寸",
+        "D": "增加圖片對比度"
+      }
     },
     {
-      "id": "AI-W8-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP8.4",
-      "title": "這是第 8 週的第 8 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP 5.8.5"
+      ],
+      "answer": "C",
+      "title": "所謂的「深度偽造」(Deepfake) 最常使用的底層技術之一是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "決策樹",
+        "B": "GAN (生成對抗網路)",
+        "C": "邏輯回歸",
+        "D": "A/B 測試"
+      }
     },
     {
-      "id": "AI-W8-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP8.5",
-      "title": "這是第 8 週的第 9 個人工智慧練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 5.8.3"
+      ],
       "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "CLIP 模型的訓練方式主要是？",
+      "options": {
+        "A": "監督式分類",
+        "B": "對比式學習 (Contrastive Learning)",
+        "C": "強化學習",
+        "D": "非監督聚類"
+      }
     },
     {
-      "id": "AI-W8-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP8.1",
-      "title": "這是第 8 週的第 10 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP 5.8.4"
+      ],
+      "answer": "D",
+      "title": "在圖像生成中，設置較高的「Guidance Scale」(或稱 CFG Scale) 會導致？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "生成速度變快",
+        "B": "生成結果更嚴格遵循 Prompt，但可能降低多樣性",
+        "C": "圖片變黑白",
+        "D": "分辨率降低"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 5.8.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "生成式影像模型的代表作包括？",
+      "options": {
+        "A": "Midjourney",
+        "B": "Stable Diffusion",
+        "C": "DALL-E",
+        "D": "ImageNet"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 5.8.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "多模態 AI 的應用場景有？",
+      "options": {
+        "A": "以圖搜圖。",
+        "B": "根據影像內容自動產生描述。",
+        "C": "語音驅動的虛擬人說話。",
+        "D": "單純的檔案格式轉換。"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 5.8.1",
+        "KP 5.8.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "擴散模型的優點有哪些？",
+      "options": {
+        "A": "相比 GAN，訓練更不容易崩潰。",
+        "B": "生成的影像細節更豐富。",
+        "C": "運算速度比 CNN 快得多。",
+        "D": "支援多樣化的引導控制。"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 5.8.4"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 Prompt Engineering（影像版），哪些是提高品質的關鍵？",
+      "options": {
+        "A": "指定風格（如：皮克斯風、油畫）。",
+        "B": "指定光影（如：柔光、夕陽）。",
+        "C": "指定解析度詞彙（如：8k, masterpiece）。",
+        "D": "提示詞越短越好。"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 5.8.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "哪些行為有助於防範 Deepfake 帶來的社會風險？",
+      "options": {
+        "A": "開發 AI 檢測工具。",
+        "B": "推行「內容憑證」（如 C2PA 標準）。",
+        "C": "提高大眾對偽造技術的認知。",
+        "D": "永久關閉所有攝像頭。"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 5.8.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "關於潛在空間 (Latent Space)，正確的有？",
+      "options": {
+        "A": "它是數據特徵的高維抽象表示。",
+        "B": "維度比原始圖像低。",
+        "C": "相似的概念在潛在空間中位置相近。",
+        "D": "它是一片雪花。"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 5.8.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "影像生成模型可能面臨的法律問題？",
+      "options": {
+        "A": "訓練數據的版權爭議。",
+        "B": "生成內容的著作權歸屬。",
+        "C": "深度偽造導致的侵權與詐騙。",
+        "D": "電費太貴。"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 5.8.2",
+        "KP 5.8.4"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "ControlNet 支持的控制類型包括？",
+      "options": {
+        "A": "Canny 邊緣檢測。",
+        "B": "Depth 深度圖。",
+        "C": "OpenPose 人體骨架。",
+        "D": "用戶的心情。"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 5.8.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "下列屬於多模態大型語言模型 (MLLM) 的有？",
+      "options": {
+        "A": "GPT-4o",
+        "B": "Gemini",
+        "C": "Claude 3.5 Sonnet",
+        "D": "BERT (這是單模態文本)"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 5.8.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "生成式 AI 在藝術創作中的角色？",
+      "options": {
+        "A": "快速生成靈感草圖。",
+        "B": "輔助完成繁瑣的著色或背景工作。",
+        "C": "完全取代人類藝術家。",
+        "D": "降低了創作的技術門檻。"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 5.8.1"
+      ],
+      "answer": [
+        "生成式工具"
+      ],
+      "title": "__________ 模型透過學習從噪聲中還原數據來生成影像。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 5.8.3"
+      ],
+      "answer": [
+        "ChatGPT"
+      ],
+      "title": "CLIP 模型實現了影像與 __________ 之間的跨模態對齊。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 5.8.4"
+      ],
+      "answer": [
+        "Midjourney"
+      ],
+      "title": "影像生成中，告訴模型「不要畫出什麼」的指令叫 __________ 提示詞。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 5.8.2"
+      ],
+      "answer": [
+        "Copilot"
+      ],
+      "title": "Stable Diffusion 透過在 __________ 空間運算來節省顯存。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 5.8.1"
+      ],
+      "answer": [
+        "API"
+      ],
+      "title": "__________ 是一類透過生成器與判別器相互對抗來學習的模型。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 5.8.5"
+      ],
+      "answer": [
+        "擴展插件"
+      ],
+      "title": "影像生成工具 __________ 以其卓越的藝術感和社區氛圍聞名。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 5.8.2",
+        "KP 5.8.4"
+      ],
+      "answer": [
+        "語音助理"
+      ],
+      "title": "__________ 技術可以用於精準控制生成圖片的構圖與姿態。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 5.8.5"
+      ],
+      "answer": [
+        "自動寫作"
+      ],
+      "title": "用於識別 Deepfake 的關鍵點在於觀察其在視覺上的 __________ (Artifacts)。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 5.8.5"
+      ],
+      "answer": [
+        "代碼生成"
+      ],
+      "title": "AI 能夠理解圖片內容並用文字描述，這屬於 __________ 模態任務。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 5.8.4"
+      ],
+      "answer": [
+        "設計工具"
+      ],
+      "title": "提示詞中，增加詞彙的 __________ (Weight) 可以讓該特徵在生成圖中更明顯。 ---"
     }
   ]
 }

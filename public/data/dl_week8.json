@@ -1,224 +1,493 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 8,
-  "title": "深度學習第 8 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP8.1": "理論基礎",
-    "KP8.2": "架構原理",
-    "KP8.3": "PyTorch 實作",
-    "KP8.4": "模型調優",
-    "KP8.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W8-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP8.2",
-      "title": "這是第 8 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.8.1"
+      ],
+      "answer": "C",
+      "title": "下列哪一個任務旨在為影像中的物體畫出「矩形邊界框」？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "圖像分類",
+        "B": "目標檢測",
+        "C": "語義分割",
+        "D": "風格遷移"
+      }
     },
     {
-      "id": "DL-W8-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP8.3",
-      "title": "這是第 8 週的第 2 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.8.2"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "YOLO 算法之所以被稱為「實時檢測器」，是因為它採用了？",
+      "options": {
+        "A": "兩階段處理",
+        "B": "一階段回歸處理",
+        "C": "雲端計算",
+        "D": "隨機森林"
+      }
     },
     {
-      "id": "DL-W8-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP8.4",
-      "title": "這是第 8 週的第 3 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.8.3"
+      ],
+      "answer": "D",
+      "title": "交併比 (IoU) 的取值範圍是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "[-1, 1]",
+        "B": "[0, 1]",
+        "C": "[0, 100]",
+        "D": "無限制"
+      }
     },
     {
-      "id": "DL-W8-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP8.5",
-      "title": "這是第 8 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.8.3"
+      ],
+      "answer": "B",
+      "title": "非極大值抑制 (NMS) 的主要目的是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "加快運算速度",
+        "B": "消除針對同一物體的重複冗餘框",
+        "C": "增加特徵數量",
+        "D": "提高圖像解析度"
+      }
     },
     {
-      "id": "DL-W8-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP8.1",
-      "title": "這是第 8 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.8.1",
+        "KP 4.8.4"
+      ],
+      "answer": "C",
+      "title": "語義分割 (Semantic Segmentation) 的輸出是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "類別標籤",
+        "B": "座標點",
+        "C": "與原圖大小相同的像素分類圖",
+        "D": "向量"
+      }
     },
     {
-      "id": "DL-W8-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP8.2",
-      "title": "這是第 8 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.8.4"
+      ],
+      "answer": "B",
+      "title": "U-Net 網絡架構中著名的「跳躍連接」是為了？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "減少參數",
+        "B": "讓解碼器獲得編碼器的高解析度細節資訊",
+        "C": "防止欠擬合",
+        "D": "增加計算量"
+      }
     },
     {
-      "id": "DL-W8-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP8.3",
-      "title": "這是第 8 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.8.1",
+        "KP 4.8.4"
+      ],
+      "answer": "D",
+      "title": "實例分割 (Instance Segmentation) 相比語義分割多做了什麼？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "辨識顏色",
+        "B": "區分同類別的不同個體",
+        "C": "提高 FPS",
+        "D": "減少層數"
+      }
     },
     {
-      "id": "DL-W8-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP8.4",
-      "title": "這是第 8 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.8.5"
+      ],
+      "answer": "C",
+      "title": "目標檢測評估指標 mAP 的全稱是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Mean Average Precision",
+        "B": "Maximum Accuracy Point",
+        "C": "Minimum Attrition Percentage",
+        "D": "Model Analysis Process"
+      }
     },
     {
-      "id": "DL-W8-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP8.5",
-      "title": "這是第 8 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.8.2"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "下列哪一個模型屬於「兩階段」(Two-stage) 目標檢測器？",
+      "options": {
+        "A": "YOLO",
+        "B": "SSD",
+        "C": "Faster R-CNN",
+        "D": "RetinaNet"
+      }
     },
     {
-      "id": "DL-W8-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP8.1",
-      "title": "這是第 8 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.8.2"
+      ],
+      "answer": "D",
+      "title": "錨框 (Anchor Boxes) 的作用是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "儲存資料",
+        "B": "作為不同尺寸物體的預設參考形狀",
+        "C": "加密數據",
+        "D": "減少卷積核數量"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 4.8.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "目標檢測任務中的預測輸出通常包含哪些資訊？",
+      "options": {
+        "A": "物體類別",
+        "B": "邊界框座標 (x, y, w, h)",
+        "C": "置信度分數 (Confidence)",
+        "D": "像素遮罩 (Mask)"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 4.8.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 IoU 指標，正確的有？",
+      "options": {
+        "A": "IoU = 交集面積 / 並集面積",
+        "B": "IoU 越大代表預測越精準",
+        "C": "IoU 為 1 代表完全重合",
+        "D": "IoU 為 0 代表完全沒碰觸"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 4.8.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "一階段 (One-stage) 檢測器的優點包括？",
+      "options": {
+        "A": "速度極快",
+        "B": "結構簡單",
+        "C": "適合嵌入式設備實時運行",
+        "D": "精度總是高於兩階段"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 4.8.1",
+        "KP 4.8.4"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "圖像分割的應用場景有？",
+      "options": {
+        "A": "自動駕駛的路徑識別",
+        "B": "醫療影像中的腫瘤勾勒",
+        "C": "視訊會議的背景虛化",
+        "D": "垃圾郵件過濾 (不相關)"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 4.8.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "YOLO 系列模型不斷迭代的目標通常是？",
+      "options": {
+        "A": "提高 mAP",
+        "B": "提高 FPS",
+        "C": "減少模型體積",
+        "D": "增加層數"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 4.8.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "導致目標檢測失敗的常見因素？",
+      "options": {
+        "A": "物體太小",
+        "B": "物體重疊嚴重",
+        "C": "光照極端",
+        "D": "背景過於複雜"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 4.8.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 U-Net，正確的有？",
+      "options": {
+        "A": "呈 U 型對稱結構",
+        "B": "被廣泛應用於醫學影像",
+        "C": "包含收縮路徑與擴張路徑",
+        "D": "不需要卷積操作"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 4.8.3"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "檢測模型中的「置信度閾值」作用是？",
+      "options": {
+        "A": "過濾掉機率太低的預測",
+        "B": "決定是否顯示邊界框",
+        "C": "改變圖像大小",
+        "D": "減少誤報"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 4.8.1",
+        "KP 4.8.4"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "下列屬於計算機視覺進階任務的有？",
+      "options": {
+        "A": "姿態估計 (Pose Estimation)",
+        "B": "關鍵點檢測",
+        "C": "圖像描述 (Image Captioning)",
+        "D": "三維重建"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 4.8.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "在 PyTorch 中，實現分割任務常用的損失函數包括？",
+      "options": {
+        "A": "Dice Loss",
+        "B": "Binary Cross Entropy (BCE)",
+        "C": "MSE",
+        "D": "IoU Loss"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 4.8.1"
+      ],
+      "answer": [
+        "遷移學習"
+      ],
+      "title": "__________ 檢測任務需要同時完成分類與定位兩件事。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 4.8.2"
+      ],
+      "answer": [
+        "微調"
+      ],
+      "title": "YOLO 算法的全稱是 You Only __________ Once。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 4.8.3"
+      ],
+      "answer": [
+        "預訓練模型"
+      ],
+      "title": "判斷預測框好壞的幾何指標是 __________。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 4.8.3"
+      ],
+      "answer": [
+        "特徵提取"
+      ],
+      "title": "在檢測後處理中，利用 __________ 技術可以過濾重疊的框。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 4.8.1",
+        "KP 4.8.4"
+      ],
+      "answer": [
+        "凍結"
+      ],
+      "title": "語義分割是對圖像中的每一個 __________ 進行分類。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 4.8.1",
+        "KP 4.8.4"
+      ],
+      "answer": [
+        "ImageNet"
+      ],
+      "title": "區分同類別個體的分割任務稱為 __________ 分割。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 4.8.4"
+      ],
+      "answer": [
+        "models"
+      ],
+      "title": "__________ 網絡因其形狀對稱且具備跳躍連接而在分割領域聞名。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 4.8.5"
+      ],
+      "answer": [
+        "pretrained"
+      ],
+      "title": "檢測任務中最權威的綜合指標是 __________ (請寫縮寫)。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 4.8.2"
+      ],
+      "answer": [
+        "權重"
+      ],
+      "title": "相對於一階段檢測器，兩階段檢測器通常在準確度上 __________ (高/低) 一點。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 4.8.1"
+      ],
+      "answer": [
+        "分類頭"
+      ],
+      "title": "目標檢測中的 Bounding Box 通常縮寫為 __________。 ---"
     }
   ]
 }

@@ -1,0 +1,497 @@
+{
+  "courseId": "big-data",
+  "week": 2,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": "C",
+      "title": "ETL 流程中，負責將清理後的數據寫入目標儲存空間的步驟是？",
+      "options": {
+        "A": "Extract",
+        "B": "Transform",
+        "C": "Load",
+        "D": "Analysis"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": "B",
+      "title": "Apache Airflow 中，用於定義任務先後順序與依賴關係的結構稱為？",
+      "options": {
+        "A": "SQL",
+        "B": "DAG",
+        "C": "API",
+        "D": "RDD"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": "B",
+      "title": "下列哪種架構建議將所有數據處理視為「流處理」，而不設置獨立的批次層？",
+      "options": {
+        "A": "Lambda",
+        "B": "Kappa",
+        "C": "Monolithic",
+        "D": "Client-Server"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": "B",
+      "title": "在處理高頻率實時數據攝取（如每秒萬筆）時，常用的中間緩衝技術是？",
+      "options": {
+        "A": "Excel",
+        "B": "Kafka",
+        "C": "Word",
+        "D": "FTP"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": "B",
+      "title": "「資料血緣」(Data Lineage) 的核心作用在於？",
+      "options": {
+        "A": "加快運算速度",
+        "B": "追蹤數據來源與變更歷史",
+        "C": "增加參數量",
+        "D": "壓縮數據"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": "B",
+      "title": "若要將多個不同來源的數據整合在一起並統一格式，這主要屬於 ETL 的哪一個階段？",
+      "options": {
+        "A": "Extract",
+        "B": "Transform",
+        "C": "Load",
+        "D": "Archive"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": "B",
+      "title": "Lambda 架構中的「Speed Layer」主要解決的是數據處理的什麼需求？",
+      "options": {
+        "A": "歷史準確性",
+        "B": "實時性 (Low Latency)",
+        "C": "存儲成本",
+        "D": "資料備份"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": "B",
+      "title": "Airflow 的優點之一是「代碼即工作流」，這意味著任務流程是用什麼編寫的？",
+      "options": {
+        "A": "SQL",
+        "B": "Python",
+        "C": "XML",
+        "D": "YAML"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": "B",
+      "title": "在 ETL 中，處理「資料單位不統一」或「日期格式不一致」的動作稱為？",
+      "options": {
+        "A": "提取",
+        "B": "轉換",
+        "C": "載入",
+        "D": "刪除"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": "B",
+      "title": "元數據 (Metadata) 通常被描述為？",
+      "options": {
+        "A": "處理完的特徵",
+        "B": "關於數據的數據",
+        "C": "原始日誌",
+        "D": "訓練好的模型"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些是 ETL 中 Transform (轉換) 階段的典型任務？",
+      "options": {
+        "A": "數據去重",
+        "B": "填補缺失值",
+        "C": "格式轉換",
+        "D": "數據備份"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 Apache Airflow 的主要組件，包含下列哪些？",
+      "options": {
+        "A": "Scheduler",
+        "B": "Web Server",
+        "C": "Worker",
+        "D": "Database (Metadata Store)"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "選擇 Lambda 架構的主要原因包括？",
+      "options": {
+        "A": "需要極高的實時反應",
+        "B": "需要對海量歷史數據進行精準批次分析",
+        "C": "架構極度簡單",
+        "D": "可容忍實時層的微小誤差由批次層修正"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "數據攝取 (Ingestion) 常見的技術挑戰？",
+      "options": {
+        "A": "數據源格式突然變更",
+        "B": "網路延遲或中斷",
+        "C": "流量爆增導致下游崩潰",
+        "D": "數據冗餘"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "元數據 (Metadata) 管理通常包含哪些內容？",
+      "options": {
+        "A": "欄位定義",
+        "B": "資料擁有者",
+        "C": "數據敏感度等級",
+        "D": "資料表更新頻率"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP2.3",
+        "KP2.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "實施流水線自動化的好處包括？",
+      "options": {
+        "A": "減少人工操作失誤",
+        "B": "提高任務執行的一致性",
+        "C": "方便進行故障告警",
+        "D": "提升數據的可追溯性"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於資料血緣 (Lineage)，下列敘述正確的有？",
+      "options": {
+        "A": "幫助故障診斷",
+        "B": "滿足法規稽核要求",
+        "C": "提升模型可解釋性",
+        "D": "僅能手動維護"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "常見的雲端 ETL 工具（或服務）包括？",
+      "options": {
+        "A": "AWS Glue",
+        "B": "Azure Data Factory",
+        "C": "Google Cloud Dataflow",
+        "D": "Apache Airflow"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "在設計 DAG 時，應遵循哪些原則？",
+      "options": {
+        "A": "避免循環依賴",
+        "B": "任務應保持原子性",
+        "C": "必須具備冪等性 (Idempotency)",
+        "D": "任務越多越好"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Kafka 在數據流水線中的角色通常有？",
+      "options": {
+        "A": "訊息緩衝 (Buffering)",
+        "B": "解耦生產者與消費者",
+        "C": "持久化存儲",
+        "D": "最終的數據展示"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": [
+        "轉換 (",
+        "Transform)"
+      ],
+      "title": "ETL 的三大步驟分別是提取、__________ 與載入。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": [
+        "DAG"
+      ],
+      "title": "在 Airflow 中，用於定義任務相依關係的結構簡稱為 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": [
+        "Lambda"
+      ],
+      "title": "__________ 架構透過結合批次處理與流處理來平衡準確性與延遲。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": [
+        "Kafka"
+      ],
+      "title": "__________ 是一種用於分散式系統、高吞吐量的訊息隊列框架，常作為數據攝取的緩衝。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": [
+        "血緣 (",
+        "Lineage)"
+      ],
+      "title": "記錄數據從源頭到終點所有變更路徑的技術稱為資料 __________。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": [
+        "元 (",
+        "Metadata)"
+      ],
+      "title": "關於數據的數據（如定義、類型、擁有者）被稱為 __________ 數據。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": [
+        "反 (",
+        "De-)"
+      ],
+      "title": "在數據庫設計中，為了提升查詢效率而故意引入冗餘的操作稱為 __________ 正規化。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": [
+        "Scheduler (",
+        "調度器)"
+      ],
+      "title": "Airflow 中負責監視 DAG 目錄並觸發任務執行的組件是 __________。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": [
+        "重試 (",
+        "Retry)"
+      ],
+      "title": "當一個任務失敗後，流水線應具備自動 __________ 機制以提高健壯性。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": [
+        "Kappa"
+      ],
+      "title": "__________ 架構將所有數據處理簡化為流處理，不設獨立的批次層。 ---"
+    }
+  ]
+}

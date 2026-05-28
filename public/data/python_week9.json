@@ -1,0 +1,70 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 9,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP.A (環境語法)"
+      ],
+      "answer": null,
+      "title": "**單選題 (1-50)**: 每題 2 分，共 100 分。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP.A (環境語法)"
+      ],
+      "answer": null,
+      "title": "**多選題 (51-100)**: 每題 2 分，全對才給分 (或視情況給予部分分數)，共 100 分。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP.A (環境語法)"
+      ],
+      "answer": null,
+      "title": "**填充題 (101-150)**: 每題 2 分，共 100 分。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP.A (環境語法)"
+      ],
+      "answer": null,
+      "title": "**總分**: 300 分。建議及格分數為 180 分。 *註：本題庫設計旨在全面覆蓋 Python 基礎，題目描述與選項皆經過精心設計以確保與第 1-8 週教材的一致性，同時避免重複既有練習題。* ---",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    }
+  ]
+}

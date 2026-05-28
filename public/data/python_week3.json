@@ -1,0 +1,486 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 3,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": "C",
+      "title": "Python 中用來區分代碼塊 (Block) 的主要手段是？",
+      "options": {
+        "A": "大括號 `{}`",
+        "B": "括號 `()`",
+        "C": "縮進 (Indentation)",
+        "D": "分號 `;`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "B",
+      "title": "下列哪個關鍵字用於檢查某個元素是否在列表或字串中？",
+      "options": {
+        "A": "is",
+        "B": "in",
+        "C": "at",
+        "D": "with"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP3.3"
+      ],
+      "answer": "B",
+      "title": "在 `True or print(\"Hello\")` 中，會輸出 \"Hello\" 嗎？",
+      "options": {
+        "A": "會",
+        "B": "不會",
+        "C": "報錯",
+        "D": "取決於 Python 版本"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP3.4"
+      ],
+      "answer": "A",
+      "title": "`x = 10; result = \"Even\" if x % 2 == 0 else \"Odd\"`，`result` 的值是？",
+      "options": {
+        "A": "Even",
+        "B": "Odd",
+        "C": "True",
+        "D": "False"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP3.5"
+      ],
+      "answer": "C",
+      "title": "`match-case` 是在 Python 哪個版本中引入的？",
+      "options": {
+        "A": "3.6",
+        "B": "3.8",
+        "C": "3.10",
+        "D": "3.12"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "B",
+      "title": "想要同時檢查 `a` 是否大於 5 且小於 10，最簡潔的 Python 寫法是？",
+      "options": {
+        "A": "`a > 5 and a < 10`",
+        "B": "`5 < a < 10`",
+        "C": "`a in range(6, 10)`",
+        "D": "以上皆可"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "D",
+      "title": "下列哪一個條件在 Python 中被視為 False？",
+      "options": {
+        "A": "[0]",
+        "B": "\"False\"",
+        "C": "-1",
+        "D": "None"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP3.5"
+      ],
+      "answer": "C",
+      "title": "在 `match-case` 中，用來代表「預設/其他」情況的符號是？",
+      "options": {
+        "A": "*",
+        "B": "?",
+        "C": "_",
+        "D": "default"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "A",
+      "title": "下列表達式 `1 < 2 < 3` 的結果是？",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "報錯",
+        "D": "2"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "C",
+      "title": "關於 `is` 與 `==` 的區別，哪項正確？",
+      "options": {
+        "A": "沒有區別",
+        "B": "`is` 檢查值是否相等，`==` 檢查地址",
+        "C": "`==` 檢查值是否相等，`is` 檢查記憶體地址",
+        "D": "`is` 只能用於字串"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": "A, C, D",
+      "title": "下列哪些是有效的 Python 條件語句關鍵字？",
+      "options": {
+        "A": "if",
+        "B": "then",
+        "C": "elif",
+        "D": "else"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP3.3"
+      ],
+      "answer": "A, B, C",
+      "title": "邏輯運算符的執行順序 (由高到低) 是？",
+      "options": {
+        "A": "not",
+        "B": "and",
+        "C": "or",
+        "D": "括號除外，順序由左至右"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP3.3"
+      ],
+      "answer": "A, B, D",
+      "title": "關於邏輯短路，哪些描述正確？",
+      "options": {
+        "A": "可以提高效率",
+        "B": "可以避免執行危險代碼 (如除零)",
+        "C": "只適用於 `and` 運算",
+        "D": "`False and 1/0` 不會報錯"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP3.5"
+      ],
+      "answer": "A, B, C, D",
+      "title": "下列哪些可以用於 `match-case` 中的模式匹配？",
+      "options": {
+        "A": "具體數值",
+        "B": "多個值 (使用 `|`)",
+        "C": "變數捕捉",
+        "D": "帶有 if 的條件過濾 (Guards)"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP3.6"
+      ],
+      "answer": "A, B, C",
+      "title": "為了避免過深的巢狀 (Nested) 結構，可以採取哪些做法？",
+      "options": {
+        "A": "使用 `elif` 替代 `else: if:`",
+        "B": "使用衛句 (Guard Clauses)",
+        "C": "將邏輯拆分為函數",
+        "D": "強制寫在同一行"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "A, C",
+      "title": "下列哪些表達式的結果為 `False`？",
+      "options": {
+        "A": "`not (10 > 5)`",
+        "B": "`5 > 3 or 2 > 10`",
+        "C": "`bool([])`",
+        "D": "`3 in [1, 2, 3]`"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP3.4"
+      ],
+      "answer": "A, B, C",
+      "title": "關於三元運算子 `val = a if condition else b`，正確的有？",
+      "options": {
+        "A": "它是一個表達式 (Expression)",
+        "B": "它必須有 `else` 部分",
+        "C": "它可以用來簡化 if-else",
+        "D": "它是 Python 專有的語法"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": "A, B, C",
+      "title": "下列哪些情況會觸發 `IndentationError`？",
+      "options": {
+        "A": "`if` 語句下一行沒有縮進",
+        "B": "`elif` 縮進位置與 `if` 不對齊",
+        "C": "同一區塊內混用 2 空格與 4 空格",
+        "D": "註解沒有縮進"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "A, B, C, D",
+      "title": "在 Python 中，下列哪些值會被 eval 為 True？",
+      "options": {
+        "A": "\" \" (帶空格的字串)",
+        "B": "[None]",
+        "C": "0.0001",
+        "D": "-1"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP3.5"
+      ],
+      "answer": "A, B, C",
+      "title": "`match x:` 下方的 `case [a, b]:` 這種寫法表示？",
+      "options": {
+        "A": "檢查 x 是否為一個包含兩個元素的列表",
+        "B": "將兩個元素分別賦值給 a 和 b",
+        "C": "這是解構賦值 (Destructuring)",
+        "D": "這會導致語法錯誤"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": "冒號 (或 :)",
+      "title": "Python 中 `if` 語句末尾必須加上 __________ 號。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q22",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "True",
+      "title": "表達式 `5 > 3 and 10 < 20` 的結果是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q23",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP3.4"
+      ],
+      "answer": "if",
+      "title": "三元運算子的基本語法是：`[結果1] __________ [條件] else [結果2]`。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q24",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP3.3"
+      ],
+      "answer": "False",
+      "title": "在邏輯運算中，`not True` 的結果是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q25",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP3.6"
+      ],
+      "answer": "衛句",
+      "title": "想要提早退出不符合條件的分支，這種技巧稱為 __________ 語句 (Guard Clauses)。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q26",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "is",
+      "title": "判斷 `a` 是否指向與 `b` 相同的記憶體地址應使用 __________ 關鍵字。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q27",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP3.3"
+      ],
+      "answer": "True",
+      "title": "`False or True` 的運算結果是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q28",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP3.5"
+      ],
+      "answer": "| (或 垂直線/or)",
+      "title": "在 `match-case` 中，若想在一個 case 中匹配多個可能的值，中間應使用 __________ 符號。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q29",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": "4",
+      "title": "條件語句中的縮進標準通常建議為 __________ 個空格。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q30",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "True",
+      "title": "表達式 `bool(\"0\")` 的結果是 __________。 ---",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    }
+  ]
+}

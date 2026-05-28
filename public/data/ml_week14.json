@@ -1,644 +1,488 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 14,
-  "title": "機器學習第 14 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP14.1": "概念基礎",
-    "KP14.2": "數學原理",
-    "KP14.3": "Python 實作",
-    "KP14.4": "模型評估",
-    "KP14.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W14-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP14.2",
-      "title": "這是第 14 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.14.2"
+      ],
+      "answer": "B",
+      "title": "對於具有明顯離群值的資料，下列哪種縮放方式通常更健壯 (Robust)？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "MinMaxScaler",
+        "B": "StandardScaler",
+        "C": "RobustScaler",
+        "D": "不做縮放"
+      }
     },
     {
-      "id": "ML-W14-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP14.3",
-      "title": "這是第 14 週的第 2 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.14.3"
+      ],
+      "answer": "C",
+      "title": "獨熱編碼 (One-Hot Encoding) 主要用於處理哪種型態的資料？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "連續數值",
+        "B": "無序類別特徵",
+        "C": "時間序列",
+        "D": "目標標籤"
+      }
     },
     {
-      "id": "ML-W14-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP14.4",
-      "title": "這是第 14 週的第 3 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.14.2"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "執行 Z-score 標準化後，資料的平均值應為？",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "100",
+        "D": "與原始資料相同"
+      }
     },
     {
-      "id": "ML-W14-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP14.5",
-      "title": "這是第 14 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.14.1"
+      ],
+      "answer": "D",
+      "title": "下列哪種缺失值處理方式在樣本量非常少時最不推薦？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "均值填充",
+        "B": "刪除該樣本",
+        "C": "眾數填充",
+        "D": "預測填充"
+      }
     },
     {
-      "id": "ML-W14-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP14.1",
-      "title": "這是第 14 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.14.5"
+      ],
+      "answer": "C",
+      "title": "為了處理「長尾分佈」的數值特徵，使其更符合常態分佈，常用的方法是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "平方運算",
+        "B": "對數轉換 (Log)",
+        "C": "加法運算",
+        "D": "乘法運算"
+      }
     },
     {
-      "id": "ML-W14-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP14.2",
-      "title": "這是第 14 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.14.4"
+      ],
+      "answer": "D",
+      "title": "資料滲漏 (Data Leakage) 通常發生在什麼時候？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "測試集資訊在訓練過程中被模型得知",
+        "B": "模型運算太慢",
+        "C": "資料庫損毀",
+        "D": "網路連線中斷"
+      }
     },
     {
-      "id": "ML-W14-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP14.3",
-      "title": "這是第 14 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.14.3"
+      ],
+      "answer": "B",
+      "title": "Label Encoding 最大的缺點是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "計算太慢",
+        "B": "可能引入不必要的數值大小關係",
+        "C": "只能處理數值",
+        "D": "減少維度"
+      }
     },
     {
-      "id": "ML-W14-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP14.4",
-      "title": "這是第 14 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.14.5"
+      ],
+      "answer": "C",
+      "title": "特徵工程中，將連續特徵變為「高、中、低」三檔的操作稱為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "歸一化",
+        "B": "標準化",
+        "C": "離散化 (分桶)",
+        "D": "向量化"
+      }
     },
     {
-      "id": "ML-W14-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP14.5",
-      "title": "這是第 14 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.14.1"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "在 Scikit-Learn 中，用於特徵轉換的類別通常具備哪兩個方法？",
+      "options": {
+        "A": "`fit` 與 `predict`",
+        "B": "`fit` 與 `transform`",
+        "C": "`load` 與 `save`",
+        "D": "`run` 與 `stop`"
+      }
     },
     {
-      "id": "ML-W14-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP14.1",
-      "title": "這是第 14 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.14.5"
+      ],
+      "answer": "D",
+      "title": "將日期特徵轉化為「是否為週末」屬於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "資料清洗",
+        "B": "特徵降維",
+        "C": "特徵衍生",
+        "D": "缺失值處理"
+      }
     },
     {
-      "id": "ML-W14-Q11",
-      "type": "single",
-      "kp": "KP14.2",
-      "title": "這是第 14 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.14.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "資料預處理的核心步驟通常包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "處理缺失值",
+        "B": "特徵編碼",
+        "C": "特徵縮放",
+        "D": "資料打亂"
+      }
     },
     {
-      "id": "ML-W14-Q12",
-      "type": "single",
-      "kp": "KP14.3",
-      "title": "這是第 14 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.14.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些模型對特徵縮放 (Feature Scaling) 非常敏感？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "KNN",
+        "B": "SVM",
+        "C": "決策樹",
+        "D": "梯度下降優化模型"
+      }
     },
     {
-      "id": "ML-W14-Q13",
-      "type": "single",
-      "kp": "KP14.4",
-      "title": "這是第 14 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.14.3"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於獨熱編碼 (One-Hot Encoding)，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "增加資料維度",
+        "B": "解決類別特徵的賦值問題",
+        "C": "適合樹模型 (雖然樹模型不一定需要)",
+        "D": "避免了數值權重誤導"
+      }
     },
     {
-      "id": "ML-W14-Q14",
-      "type": "single",
-      "kp": "KP14.5",
-      "title": "這是第 14 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.14.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "預防資料滲漏的方法包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "先 Split 資料再 Fit Scaler",
+        "B": "確保測試集完全隔離",
+        "C": "使用 Pipeline",
+        "D": "在所有資料上先做標準化"
+      }
     },
     {
-      "id": "ML-W14-Q15",
-      "type": "single",
-      "kp": "KP14.1",
-      "title": "這是第 14 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.14.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "缺失值產生的原因可能有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "設備故障遺漏錄入",
+        "B": "用戶拒絕回答敏感問題",
+        "C": "系統合併錯誤",
+        "D": "數據過大"
+      }
     },
     {
-      "id": "ML-W14-Q16",
-      "type": "single",
-      "kp": "KP14.2",
-      "title": "這是第 14 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.14.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "特徵縮放的好處包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "加速模型收斂",
+        "B": "提高距離度量的準確性",
+        "C": "讓模型更容易解釋",
+        "D": "防止權重過大導致的數值不穩定"
+      }
     },
     {
-      "id": "ML-W14-Q17",
-      "type": "single",
-      "kp": "KP14.3",
-      "title": "這是第 14 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.14.3"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "處理類別型特徵時，如果類別數極多（如 1000 個國家），One-hot 的缺點是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "記憶體崩潰",
+        "B": "維度災難",
+        "C": "模型過擬合",
+        "D": "計算太快"
+      }
     },
     {
-      "id": "ML-W14-Q18",
-      "type": "single",
-      "kp": "KP14.4",
-      "title": "這是第 14 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.14.1"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "特徵工程的目標包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "提高預測準確率",
+        "B": "減少訓練時間",
+        "C": "使模型更具魯棒性",
+        "D": "縮短代碼長度"
+      }
     },
     {
-      "id": "ML-W14-Q19",
-      "type": "single",
-      "kp": "KP14.5",
-      "title": "這是第 14 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.14.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "哪些情況下建議使用對數轉換？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "資料分佈呈高度右偏",
+        "B": "數值跨越好幾個量級",
+        "C": "資料中包含負數 (需先偏移)",
+        "D": "資料是均勻分佈"
+      }
     },
     {
-      "id": "ML-W14-Q20",
-      "type": "single",
-      "kp": "KP14.1",
-      "title": "這是第 14 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.14.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "在 Scikit-Learn 中，可以處理缺失值的類別有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`SimpleImputer`",
+        "B": "`KNNImputer`",
+        "C": "`IterativeImputer`",
+        "D": "`StandardScaler`"
+      }
     },
     {
-      "id": "ML-W14-Q21",
-      "type": "single",
-      "kp": "KP14.2",
-      "title": "這是第 14 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.14.1"
+      ],
+      "answer": [
+        "特徵工程"
+      ],
+      "title": "特徵工程的口號是：垃圾進，__________ 出。"
     },
     {
-      "id": "ML-W14-Q22",
-      "type": "single",
-      "kp": "KP14.3",
-      "title": "這是第 14 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.14.2"
+      ],
+      "answer": [
+        "標準化"
+      ],
+      "title": "將特徵值映射到 [0, 1] 區間的操作稱為 __________。"
     },
     {
-      "id": "ML-W14-Q23",
-      "type": "single",
-      "kp": "KP14.4",
-      "title": "這是第 14 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.14.2"
+      ],
+      "answer": [
+        "歸一化"
+      ],
+      "title": "Z-score 標準化的公式是 $(x - \\mu) / __________$。"
     },
     {
-      "id": "ML-W14-Q24",
-      "type": "single",
-      "kp": "KP14.5",
-      "title": "這是第 14 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.14.1"
+      ],
+      "answer": [
+        "獨熱編碼"
+      ],
+      "title": "處理缺失值時，數值型常用均值填充，類別型常用 __________ 填充。"
     },
     {
-      "id": "ML-W14-Q25",
-      "type": "single",
-      "kp": "KP14.1",
-      "title": "這是第 14 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.14.3"
+      ],
+      "answer": [
+        "標籤編碼"
+      ],
+      "title": "__________ 編碼會為每個類別建立一個新的二進位特徵。"
     },
     {
-      "id": "ML-W14-Q26",
-      "type": "single",
-      "kp": "KP14.2",
-      "title": "這是第 14 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.14.2"
+      ],
+      "answer": [
+        "StandardScaler"
+      ],
+      "title": "機器學習中，$z = (x - \\mu) / \\sigma$ 後得到的數值稱為 __________ 分數。"
     },
     {
-      "id": "ML-W14-Q27",
-      "type": "single",
-      "kp": "KP14.3",
-      "title": "這是第 14 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.14.4"
+      ],
+      "answer": [
+        "MinMaxScaler"
+      ],
+      "title": "嚴禁在劃分訓練集和測試集之前進行全局 Fit，是為了防止資料 __________。"
     },
     {
-      "id": "ML-W14-Q28",
-      "type": "single",
-      "kp": "KP14.4",
-      "title": "這是第 14 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.14.5"
+      ],
+      "answer": [
+        "OneHotEncoder"
+      ],
+      "title": "__________ 轉換可以壓縮較大數值的間距，拉伸較小數值的間距。"
     },
     {
-      "id": "ML-W14-Q29",
-      "type": "single",
-      "kp": "KP14.5",
-      "title": "這是第 14 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.14.1"
+      ],
+      "answer": [
+        "擬合"
+      ],
+      "title": "sklearn 中合併多個預處理步驟的工具是 __________。"
     },
     {
-      "id": "ML-W14-Q30",
-      "type": "single",
-      "kp": "KP14.1",
-      "title": "這是第 14 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.14.2"
+      ],
+      "answer": [
+        "轉換"
+      ],
+      "title": "當模型對不同單位的特徵產生不公平權重時，代表需要進行特徵 __________。 ---"
     }
   ]
 }

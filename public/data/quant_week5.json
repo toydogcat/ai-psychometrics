@@ -1,0 +1,487 @@
+{
+  "courseId": "python-office-quant",
+  "week": 5,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP5.2"
+      ],
+      "answer": "B",
+      "title": "執行 `requests.get(url)` 後返回對象為 `res`，若該 URL 返回的是 JSON 格式，最簡便的解析方法是？",
+      "options": {
+        "A": "`json.loads(res.text)`",
+        "B": "`res.json()`",
+        "C": "`res.content.to_json()`",
+        "D": "`BeautifulSoup(res.text)`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": "C",
+      "title": "HTML 中用於唯一標識一個元素的屬性通常是？",
+      "options": {
+        "A": "`class`",
+        "B": "`id`",
+        "C": "`name`",
+        "D": "`src`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP5.5"
+      ],
+      "answer": "A",
+      "title": "在 BeautifulSoup 中，獲取標籤 `<a href=\"test.html\">` 的連結地址，假設該標籤對象為 `tag`，代碼為？",
+      "options": {
+        "A": "`tag.href`",
+        "B": "`tag['href']`",
+        "C": "`tag.get('link')`",
+        "D": "`tag.url`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": "D",
+      "title": "HTTP 狀態碼 403 代表什麼意思？",
+      "options": {
+        "A": "頁面不存在",
+        "B": "伺服器內部錯誤",
+        "C": "禁止訪問 (Forbidden)",
+        "D": "請求成功"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": "A",
+      "title": "下列哪個參數可以用來偽裝瀏覽器？",
+      "options": {
+        "A": "`timeout`",
+        "B": "`proxies`",
+        "C": "`headers`",
+        "D": "`params`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP5.3"
+      ],
+      "answer": "B",
+      "title": "`BeautifulSoup(html, 'lxml')` 中的 'lxml' 是什麼？",
+      "options": {
+        "A": "解析器",
+        "B": "網址",
+        "C": "數據格式",
+        "D": "變數名"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": "C",
+      "title": "`requests.get(url, params={'id': 1})` 發送的實際 URL 是？",
+      "options": {
+        "A": "`url?id=1`",
+        "B": "`url/id/1`",
+        "C": "`url`",
+        "D": "`url#id=1`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": "D",
+      "title": "`find_all()` 返回的對象型態是？",
+      "options": {
+        "A": "字串",
+        "B": "列表 (ResultSet)",
+        "C": "字典",
+        "D": "單個標籤對象"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP5.5"
+      ],
+      "answer": "B",
+      "title": "如何獲取標籤內的所有純文本內容（去除 HTML 標籤）？",
+      "options": {
+        "A": "`.string`",
+        "B": "`.get_text()`",
+        "C": "`.content`",
+        "D": "`.val()`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": "C",
+      "title": "Robots 協議通常存放在網站的哪個路徑？",
+      "options": {
+        "A": "`/robots.txt`",
+        "B": "`/admin/robots`",
+        "C": "`/crawl/config`",
+        "D": "`/security`"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些是常見的 HTTP 請求方法？",
+      "options": {
+        "A": "GET",
+        "B": "POST",
+        "C": "DELETE",
+        "D": "PUT"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP5.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 `requests.Response` 對象，正確的有？",
+      "options": {
+        "A": "`status_code` 查看狀態碼",
+        "B": "`text` 獲取 Unicode 文本",
+        "C": "`content` 獲取字節流",
+        "D": "`headers` 獲取響應頭"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "BeautifulSoup 定位元素的方法包括？",
+      "options": {
+        "A": "`find()`",
+        "B": "`find_all()`",
+        "C": "`select()` (CSS 選擇器)",
+        "D": "`get_element_by_id()`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些標籤特徵可以用來識別一個 HTML 元素？",
+      "options": {
+        "A": "標籤名",
+        "B": "Class 屬性",
+        "C": "ID 屬性",
+        "D": "標籤內的文字"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "爬蟲實戰中，為了防止被封禁，可以採取的措施有？",
+      "options": {
+        "A": "設置 User-Agent",
+        "B": "設置請求間隔",
+        "C": "使用代理 IP",
+        "D": "同時開啟 1000 個線程爬取"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP5.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 HTML 屬性獲取，正確的有？",
+      "options": {
+        "A": "`tag['class']` 通常返回列表",
+        "B": "`tag['id']` 返回字串",
+        "C": "若屬性不存在會報錯",
+        "D": "可以使用 `tag.get('attr')` 避免報錯"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些是 BeautifulSoup 的導航屬性？",
+      "options": {
+        "A": "`.parent`",
+        "B": "`.children`",
+        "C": "`.next_sibling`",
+        "D": "`.previous_sibling`"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "HTTP 200 狀態碼意味著？",
+      "options": {
+        "A": "請求成功",
+        "B": "數據已緩存",
+        "C": "伺服器正常響應",
+        "D": "頁面已跳轉"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP5.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "處理網頁編碼時，若 `res.text` 顯示亂碼，可以？",
+      "options": {
+        "A": "設置 `res.encoding = 'utf-8'`",
+        "B": "使用 `res.content` 自行解碼",
+        "C": "換一個瀏覽器爬取",
+        "D": "檢查 `res.apparent_encoding`"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "`requests.post()` 與 `requests.get()` 的區別包括？",
+      "options": {
+        "A": "POST 的參數放在 Body 中",
+        "B": "GET 的參數顯示在 URL 中",
+        "C": "POST 更適合發送敏感數據",
+        "D": "GET 速度一定更快"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "requests"
+      ],
+      "title": "在 Requests 中，設置超時時間以防止程序卡死的參數是 __________。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP5.4"
+      ],
+      "answer": [
+        "status_code"
+      ],
+      "title": "BeautifulSoup 中使用 CSS 選擇器尋找元素的方法是 `soup.________()`。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "text"
+      ],
+      "title": "獲取 Response 對象狀態碼的屬性是 `res.________`。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP5.5"
+      ],
+      "answer": [
+        "BeautifulSoup"
+      ],
+      "title": "在 HTML 中，`<a>` 標籤的 __________ 屬性通常存放跳轉連結。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP5.2"
+      ],
+      "answer": [
+        "find_all"
+      ],
+      "title": "`requests.get(url).________` 可以獲取該響應對象的二進制內容。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP5.3"
+      ],
+      "answer": [
+        "select"
+      ],
+      "title": "BeautifulSoup 對象建立時，如果不指定解析器，Python 會使用內建的 \"__________\"。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP5.5"
+      ],
+      "answer": [
+        "headers"
+      ],
+      "title": "若要獲取標籤 `tag` 的 Class 列表，代碼為 `tag.get('________')`。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "params"
+      ],
+      "title": "在請求頭中，用來標識客戶端設備與瀏覽器版本的欄位是 __________。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "json"
+      ],
+      "title": "`time.________(1)` 可以讓爬蟲暫停一秒。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP5.1"
+      ],
+      "answer": [
+        "encoding"
+      ],
+      "title": "URL 中 `?` 之後的部分通常被稱為 __________ (Query String)。 ---"
+    }
+  ]
+}

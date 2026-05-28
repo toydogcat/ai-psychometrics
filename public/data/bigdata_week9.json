@@ -1,0 +1,491 @@
+{
+  "courseId": "big-data",
+  "week": 9,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP9.1"
+      ],
+      "answer": "B",
+      "title": "在構建 AI 數據流水線時，若需要同時處理歷史海量數據並確保極低延遲的即時更新，應選擇？",
+      "options": {
+        "A": "傳統 SQL 架構",
+        "B": "Lambda 架構",
+        "C": "單一批次處理",
+        "D": "手動更新"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP9.2"
+      ],
+      "answer": "B",
+      "title": "分散式訓練中，Ring-AllReduce 主要是為了解決哪一個核心問題？",
+      "options": {
+        "A": "顯存不足",
+        "B": "中央節點通訊帶寬瓶頸",
+        "C": "數據標註錯誤",
+        "D": "模型層數過多"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP9.3"
+      ],
+      "answer": "B",
+      "title": "對於極端不平衡（如 1:1000）的分類任務，下列哪一個指標最能客觀反映模型性能？",
+      "options": {
+        "A": "準確率 (Accuracy)",
+        "B": "AUC-PR (精準率-召回率曲線下面積)",
+        "C": "均方誤差",
+        "D": "R-squared"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP9.4"
+      ],
+      "answer": "B",
+      "title": "XGBoost 相比於傳統 GBDT，最重要的數學改進是引入了？",
+      "options": {
+        "A": "一階導數",
+        "B": "二階泰勒展開與正則化",
+        "C": "隨機森林",
+        "D": "卷積層"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP9.5"
+      ],
+      "answer": "B",
+      "title": "Vision Transformer (ViT) 與傳統 CNN 最大的不同點在於？",
+      "options": {
+        "A": "ViT 使用卷積核提取局部特徵",
+        "B": "ViT 利用自注意力機制捕捉全局聯繫",
+        "C": "ViT 不支持 GPU 加速",
+        "D": "ViT 只能處理黑白影像"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP9.4"
+      ],
+      "answer": "B",
+      "title": "實施 Stacking 模型融合時，為了避免標籤滲漏，必須採用？",
+      "options": {
+        "A": "隨機打亂數據",
+        "B": "OOF (Out-of-fold) 交叉驗證預測",
+        "C": "使用同樣的基模型",
+        "D": "增加 DropOut"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP9.2"
+      ],
+      "answer": "B",
+      "title": "雲端 AI 服務中的「Spot Instances」最適合用於下列哪種場景？",
+      "options": {
+        "A": "對延遲極度敏感的在線推理",
+        "B": "具備 Checkpoint 機制的大規模模型訓練",
+        "C": "核心資料庫存儲",
+        "D": "公司官網託管"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP9.3"
+      ],
+      "answer": "C",
+      "title": "下列哪種缺失值處理機制是指「缺失本身與未觀測到的特徵值高度相關」？",
+      "options": {
+        "A": "MCAR",
+        "B": "MAR",
+        "C": "MNAR",
+        "D": "隨機噪聲"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP9.5"
+      ],
+      "answer": "B",
+      "title": "BERT 模型在預訓練時採用的「遮蔽語言模型 (MLM)」屬於哪一類學習？",
+      "options": {
+        "A": "監督學習",
+        "B": "自監督學習",
+        "C": "強化學習",
+        "D": "遷移學習"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP9.4"
+      ],
+      "answer": "B",
+      "title": "進行超參數優化時，Optuna 採用的「剪枝 (Pruning)」技術其主要作用是？",
+      "options": {
+        "A": "刪除不重要的特徵",
+        "B": "提前停止表現不佳的試驗以節省資源",
+        "C": "增加模型深度",
+        "D": "壓縮模型權重"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP9.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "大數據的 4V 特性對 AI 系統設計的具體挑戰包括？",
+      "options": {
+        "A": "Volume: 存儲與運算的擴展性",
+        "B": "Velocity: 數據處理的即時性要求",
+        "C": "Variety: 多模態數據的特徵融合",
+        "D": "Veracity: 數據品質與噪音控管"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於數據並行 (Data Parallel) 與 模型並行 (Model Parallel)，正確的有？",
+      "options": {
+        "A": "數據並行適合模型小但數據量大的場景",
+        "B": "模型並行適合單卡顯存放不下的大模型",
+        "C": "兩者可以同時結合使用",
+        "D": "數據並行不需要任何網路通訊"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP9.3"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "處理高基數 (High Cardinality) 類別特徵時，有效的工程手段包括？",
+      "options": {
+        "A": "One-Hot Encoding (不推薦)",
+        "B": "Target Encoding",
+        "C": "Hash Encoding",
+        "D": "頻率編碼 (Frequency Encoding)"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP9.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些技術能有效防止集成學習模型產生「過擬合」？",
+      "options": {
+        "A": "增加樹的正則化係數 (lambda/alpha)",
+        "B": "調小學習率並增加樹的數量",
+        "C": "減少每棵樹採樣的特徵比例",
+        "D": "移除所有限制讓樹無限生長"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP9.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "現代 NLP 架構中，關於 Transformer 的敘述正確的有？",
+      "options": {
+        "A": "拋棄了遞歸結構，支援高效並行",
+        "B": "位置編碼是理解序列順序的關鍵",
+        "C": "自注意力機制運算複雜度與序列長度成平方關係",
+        "D": "只能處理英文"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP9.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "數據生命週期管理 (DLM) 包含哪些階段？",
+      "options": {
+        "A": "數據攝取與採集",
+        "B": "數據存儲與處理",
+        "C": "數據分析與建模",
+        "D": "數據歸檔與銷毀"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "容器化技術 (Docker/K8s) 對 AI 專案的價值在於？",
+      "options": {
+        "A": "確保開發與生產環境的一致性",
+        "B": "方便快速擴展推理服務",
+        "C": "提升模型運算速度",
+        "D": "簡化多版本 CUDA 環境切換"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP9.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "評價一個分類模型在不平衡數據下表現的進階工具包括？",
+      "options": {
+        "A": "混淆矩陣 (Confusion Matrix)",
+        "B": "精準率-召回率曲線 (PR Curve)",
+        "C": "MCC 指標",
+        "D": "準確率 (Accuracy)"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP9.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "LightGBM 相比 XGBoost 的優勢技術包含？",
+      "options": {
+        "A": "GOSS (單邊梯度採樣)",
+        "B": "EFB (互斥特徵綑綁)",
+        "C": "Leaf-wise 帶深度限制的生長",
+        "D": "二階泰勒展開"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP9.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "多模態模型（如 CLIP）的訓練通常需要？",
+      "options": {
+        "A": "成對的圖像與文本數據",
+        "B": "對比學習損失函數",
+        "C": "跨模態特徵對齊",
+        "D": "僅使用單一模態進行預訓練"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP9.1"
+      ],
+      "answer": [
+        "Transform (",
+        "轉換)"
+      ],
+      "title": "ETL 流程中，負責將數據從原始格式轉換為模型友善格式的階段是 __________。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP9.1"
+      ],
+      "answer": [
+        "Serverless"
+      ],
+      "title": "雲端 AI 運算中，按需付費且具備高度彈性的無伺服器架構稱為 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP9.2"
+      ],
+      "answer": [
+        "Ring-AllReduce"
+      ],
+      "title": "在分散式訓練中，當所有節點都需要同步梯度資訊時，__________ 演算法能最小化通訊開銷。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP9.3"
+      ],
+      "answer": [
+        "線性"
+      ],
+      "title": "SMOTE 技術是透過在特徵空間中進行 __________ 插值來生成少數類樣本。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP9.3"
+      ],
+      "answer": [
+        "排列 (",
+        "Permutation)"
+      ],
+      "title": "__________ 重要性是透過觀察打亂特徵後模型效能的下降程度來評估特徵貢獻。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP9.4"
+      ],
+      "answer": [
+        "Stacking"
+      ],
+      "title": "在模型融合中，將多個基模型的輸出作為輸入來訓練一個最終決策模型的技術稱為 __________。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP9.5"
+      ],
+      "answer": [
+        "自 (",
+        "Self-)"
+      ],
+      "title": "Transformer 的核心數學機制是 __________ 注意力機制。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP9.5"
+      ],
+      "answer": [
+        "MLM"
+      ],
+      "title": "BERT 預訓練中，透過預測被遮蔽的詞彙來學習上下文資訊的任務簡稱為 __________。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP9.4"
+      ],
+      "answer": [
+        "Optuna"
+      ],
+      "title": "使用貝氏優化來尋找模型最佳參數的常用開源工具是 __________。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP9.5"
+      ],
+      "answer": [
+        "殘差"
+      ],
+      "title": "__________ 學習塊是 ResNet 能夠訓練數百層網路而不退化的核心設計。 ---"
+    }
+  ]
+}

@@ -1,0 +1,487 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 6,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP6.1",
+        "KP6.2"
+      ],
+      "answer": "C",
+      "title": "下列哪一個不是定義字典的正確方式？",
+      "options": {
+        "A": "`d = {}`",
+        "B": "`d = dict()`",
+        "C": "`d = {1, 2, 3}`",
+        "D": "`d = {1: \"a\"}`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP6.1"
+      ],
+      "answer": "A",
+      "title": "字典中透過 Key 搜尋 Value 的平均時間複雜度是？",
+      "options": {
+        "A": "O(1)",
+        "B": "O(n)",
+        "C": "O(log n)",
+        "D": "O(n^2)"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": "B",
+      "title": "集合 `s = {1, 2, 2, 3}` 執行後，`len(s)` 的結果是？",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "1"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP6.5"
+      ],
+      "answer": "D",
+      "title": "下列哪種物件**不能**作為字典的 Key？",
+      "options": {
+        "A": "\"Name\"",
+        "B": "100",
+        "C": "(1, 2)",
+        "D": "[1, 2]"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP6.1"
+      ],
+      "answer": "B",
+      "title": "`d = {\"a\": 1}; print(d.get(\"b\", 0))` 的輸出是？",
+      "options": {
+        "A": "None",
+        "B": "0",
+        "C": "KeyError",
+        "D": "1"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": "B",
+      "title": "集合運算中，`{1, 2} & {2, 3}` 的結果是？",
+      "options": {
+        "A": "{1, 2, 3}",
+        "B": "{2}",
+        "C": "{1, 3}",
+        "D": "{1}"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP6.3"
+      ],
+      "answer": "A",
+      "title": "哪種生成式可以產生 `{0: 0, 1: 1, 2: 4}`？",
+      "options": {
+        "A": "`{x: x**2 for x in range(3)}`",
+        "B": "`{x**2 for x in range(3)}`",
+        "C": "`[x: x**2 for x in range(3)]`",
+        "D": "`{x, x**2 for x in range(3)}`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": "C",
+      "title": "使用哪個模組可以獲得 `defaultdict`？",
+      "options": {
+        "A": "sys",
+        "B": "os",
+        "C": "collections",
+        "D": "math"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": "C",
+      "title": "`d1 = {\"a\": 1}; d2 = {\"b\": 2}; d3 = d1 | d2` (Python 3.9+)，`d3` 是？",
+      "options": {
+        "A": "{\"a\": 1}",
+        "B": "{\"b\": 2}",
+        "C": "{\"a\": 1, \"b\": 2}",
+        "D": "報錯"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP6.1"
+      ],
+      "answer": "B",
+      "title": "如何刪除字典 `d` 中鍵為 \"key\" 的元素？",
+      "options": {
+        "A": "`d.remove(\"key\")`",
+        "B": "`del d[\"key\"]`",
+        "C": "`d.discard(\"key\")`",
+        "D": "`d.delete(\"key\")`"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": "A, C, D",
+      "title": "關於集合 (Set) 的描述，哪些正確？",
+      "options": {
+        "A": "元素是無序的",
+        "B": "元素可以重複",
+        "C": "可以用來快速去重",
+        "D": "使用 `{}` 定義 (空集合除外)"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP6.1"
+      ],
+      "answer": "A, B, C",
+      "title": "哪些方法可以用於遍歷字典？",
+      "options": {
+        "A": ".keys()",
+        "B": ".values()",
+        "C": ".items()",
+        "D": ".list()"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": "A, B, C",
+      "title": "關於 `defaultdict`，哪些正確？",
+      "options": {
+        "A": "可以避免 `KeyError`",
+        "B": "初始化時需要提供一個工廠函數 (如 `int`, `list`)",
+        "C": "它繼承自內建的 `dict`",
+        "D": "只能儲存字串"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": "A, B, C",
+      "title": "下列哪些是集合的合法數學運算符？",
+      "options": {
+        "A": "`|` (聯集)",
+        "B": "`&` (交集)",
+        "C": "`-` (差集)",
+        "D": "`+` (相加)"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP6.5"
+      ],
+      "answer": "A, B",
+      "title": "關於雜湊 (Hashable)，哪些正確？",
+      "options": {
+        "A": "不可變物件通常是 Hashable 的",
+        "B": "可變物件 (如 List) 是 Unhashable 的",
+        "C": "字典的 Value 必須是 Hashable 的",
+        "D": "`id()` 相同的物件雜湊值一定相同"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP6.3"
+      ],
+      "answer": "A, B, C, D",
+      "title": "字典生成式的應用包括？",
+      "options": {
+        "A": "交換 Key 和 Value",
+        "B": "過濾符合條件的鍵值對",
+        "C": "將 Tuple 串列轉為字典",
+        "D": "執行數學運算"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP6.1"
+      ],
+      "answer": "A, C",
+      "title": "關於 Python 字典的順序性，哪些正確？",
+      "options": {
+        "A": "在 3.7+ 版本保證插入順序",
+        "B": "在所有 Python 版本都沒有順序",
+        "C": "可以使用 `OrderedDict` 顯式保證順序",
+        "D": "排序後會永久改變儲存順序"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": "A, B",
+      "title": "如何清空一個集合 `s`？",
+      "options": {
+        "A": "`s.clear()`",
+        "B": "`s = set()`",
+        "C": "`del s[:]`",
+        "D": "`s.remove_all()`"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": "A, B, C",
+      "title": "`collections.Counter` 提供的功能有哪些？",
+      "options": {
+        "A": "統計頻率",
+        "B": "`most_common()` 方法",
+        "C": "支持集合風格的加減運算",
+        "D": "自動排序"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": "B, C",
+      "title": "下列哪些可以用來建立空集合？",
+      "options": {
+        "A": "`{}`",
+        "B": "`set()`",
+        "C": "`set([])`",
+        "D": "`collections.set()`"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP6.1"
+      ],
+      "answer": "雜湊",
+      "title": "字典是透過 __________ 表 (Hash Table) 來實現快速查找的。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q22",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP6.1"
+      ],
+      "answer": "items()",
+      "title": "想要取得字典中所有的鍵值對，應使用 __________ 方法。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q23",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": "對稱",
+      "title": "集合運算符 `^` 代表的是 __________ 差集。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q24",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": "set()",
+      "title": "空字典的定義是 `{}`，但空集合必須使用 __________ 來定義。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q25",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": "串列 (或 List)",
+      "title": "在 `defaultdict(list)` 中，若查詢一個不存在的鍵，會自動回傳一個空的 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q26",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": "in",
+      "title": "想要檢查一個元素是否存在於集合中，應使用 __________ 運算子。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q27",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP6.3"
+      ],
+      "answer": "{1: 2, 2: 4}",
+      "title": "字典生成式 `{x: x*2 for x in (1, 2)}` 的結果是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q28",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP6.5"
+      ],
+      "answer": "可雜湊",
+      "title": "一個物件若要能作為字典的鍵，它必須是 __________ (Hashable) 的。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q29",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP6.1"
+      ],
+      "answer": "值 (或 Value)",
+      "title": "使用 `d.pop(\"name\")` 會移除鍵為 \"name\" 的元素並回傳其 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q30",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": "[('a', 2)]",
+      "title": "`Counter(\"abac\").most_common(1)` 的結果是 __________。 ---",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    }
+  ]
+}

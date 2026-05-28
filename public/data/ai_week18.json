@@ -1,224 +1,2047 @@
 {
-  "course_id": "artificial-intelligence",
+  "courseId": "artificial-intelligence",
   "week": 18,
-  "title": "人工智慧第 18 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP18.1": "歷史背景",
-    "KP18.2": "核心定義",
-    "KP18.3": "算法邏輯",
-    "KP18.4": "倫理法律",
-    "KP18.5": "未來趨勢"
-  },
   "questions": [
     {
-      "id": "AI-W18-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP18.2",
-      "title": "這是第 18 週的第 1 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP5.18.1"
+      ],
+      "answer": "C",
+      "title": "下列哪一項被公認為「人工智慧」學科正式誕生的標誌性事件？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "圖靈測試發表",
+        "B": "達特茅斯會議",
+        "C": "AlphaGo 獲勝",
+        "D": "iPhone 發表"
+      }
     },
     {
-      "id": "AI-W18-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP18.3",
-      "title": "這是第 18 週的第 2 個人工智慧練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP5.18.1"
+      ],
       "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "Siri 或 Google Assistant 屬於哪種級別的 AI？",
+      "options": {
+        "A": "AGI",
+        "B": "Narrow AI",
+        "C": "ASI",
+        "D": "符號 AI"
+      }
     },
     {
-      "id": "AI-W18-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP18.4",
-      "title": "這是第 18 週的第 3 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP5.18.1"
+      ],
+      "answer": "D",
+      "title": "被稱為「深度學習之父」之一，獲得圖靈獎的科學家是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "馬斯克",
+        "B": "傑弗里·辛頓 (Geoffrey Hinton)",
+        "C": "阿特曼",
+        "D": "庫克"
+      }
     },
     {
-      "id": "AI-W18-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP18.5",
-      "title": "這是第 18 週的第 4 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP5.18.1"
+      ],
+      "answer": "B",
+      "title": "預測房價（連續數值）屬於監督式學習中的哪一類？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "分類",
+        "B": "回歸",
+        "C": "聚類",
+        "D": "降維"
+      }
     },
     {
-      "id": "AI-W18-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP18.1",
-      "title": "這是第 18 週的第 5 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP5.18.1"
+      ],
+      "answer": "C",
+      "title": "在信用卡交易中識別異常盜刷行為，最適合使用？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "情感分析",
+        "B": "異常檢測",
+        "C": "語音合成",
+        "D": "繪圖模型"
+      }
     },
     {
-      "id": "AI-W18-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP18.2",
-      "title": "這是第 18 週的第 6 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP5.18.1"
+      ],
+      "answer": "B",
+      "title": "強化學習中，模型透過與什麼互動來獲得獎勵？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "老師",
+        "B": "環境",
+        "C": "法律",
+        "D": "標籤"
+      }
     },
     {
-      "id": "AI-W18-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP18.3",
-      "title": "這是第 18 週的第 7 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP5.18.1"
+      ],
+      "answer": "D",
+      "title": "邏輯回歸實質上是用於處理？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "回歸",
+        "B": "分類",
+        "C": "降維",
+        "D": "聚類"
+      }
     },
     {
-      "id": "AI-W18-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP18.4",
-      "title": "這是第 18 週的第 8 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP5.18.1"
+      ],
+      "answer": "C",
+      "title": "當模型在訓練集表現極好，但在未知數據表現極差，這叫？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "欠擬合",
+        "B": "過擬合",
+        "C": "收斂",
+        "D": "數據缺失"
+      }
     },
     {
-      "id": "AI-W18-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP18.5",
-      "title": "這是第 18 週的第 9 個人工智慧練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP5.18.1"
+      ],
       "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "決策樹的切分依据通常是為了減少？",
+      "options": {
+        "A": "參數量",
+        "B": "熵 (Entropy)",
+        "C": "計算時間",
+        "D": "數據行數"
+      }
     },
     {
-      "id": "AI-W18-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP18.1",
-      "title": "這是第 18 週的第 10 個人工智慧練習題。請選擇正確答案。",
+      "kps": [
+        "KP5.18.1"
+      ],
+      "answer": "D",
+      "title": "CNN 的「權重共享」主要是為了減少？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是人工智慧 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "準確度",
+        "B": "參數量",
+        "C": "圖片解析度",
+        "D": "電費"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP5.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪種激發函數解決了梯度消失問題，是現代 DL 的標準？",
+      "options": {
+        "A": "Sigmoid",
+        "B": "Tanh",
+        "C": "ReLU",
+        "D": "Step"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP5.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "專門處理具有時間序列或文字脈絡數據的傳統模型是？",
+      "options": {
+        "A": "CNN",
+        "B": "RNN",
+        "C": "MLP",
+        "D": "GAN"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP5.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "AI 偏見的主要根源往往在於？",
+      "options": {
+        "A": "電腦速度慢",
+        "B": "訓練數據的不平衡與歷史歧視",
+        "C": "硬碟損壞",
+        "D": "程式碼太長"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP5.18.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "歐盟推出的全球領先 AI 法案簡稱為？",
+      "options": {
+        "A": "GDPR",
+        "B": "EU AI Act",
+        "C": "HIPAA",
+        "D": "DMCA"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP5.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "讓 AI 決策過程透明化、可被理解的技術稱為？",
+      "options": {
+        "A": "XAI",
+        "B": "AGI",
+        "C": "NLP",
+        "D": "CV"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP5.18.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "Python 處理矩陣運算最核心的庫是？",
+      "options": {
+        "A": "Pandas",
+        "B": "NumPy",
+        "C": "OS",
+        "D": "Requests"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP5.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Google Colab 吸引開發者的核心免費資源是？",
+      "options": {
+        "A": "無限硬碟",
+        "B": "免費 GPU/TPU",
+        "C": "域名",
+        "D": "郵箱"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP5.18.2"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "LLM 計費最常用的單位是？",
+      "options": {
+        "A": "檔案大小",
+        "B": "Token",
+        "C": "秒數",
+        "D": "像素"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP5.18.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "Transformer 論文標題是？",
+      "options": {
+        "A": "Attention is All You Need",
+        "B": "Deep Learning",
+        "C": "GPT-4 Report",
+        "D": "BERT"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP5.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "BERT 模型的強項在於？",
+      "options": {
+        "A": "生成創意故事",
+        "B": "雙向上下文理解與分類",
+        "C": "繪畫",
+        "D": "唱歌"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "人工智慧"
+      ],
+      "title": "GPT 模型家族的核心特性是？ (A) 雙向 (B) 自回歸生成 (C) 卷積 (D) 非線性回歸"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "機器學習"
+      ],
+      "title": "擴散模型生成影像的核心過程是？ (A) 拼貼 (B) 反向去噪 (C) 隨機濾鏡 (D) 二值化"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "深度學習"
+      ],
+      "title": "CLIP 模型的作用是將哪兩個模態聯繫起來？ (A) 圖與音 (B) 圖與文 (C) 文與音 (D) 數與圖"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "生成式AI"
+      ],
+      "title": "在 Prompt 中設定角色（如：你是資深醫師）屬於提示工程中的？ (A) Objective (B) Persona (C) Constraint (D) Format"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "提示工程"
+      ],
+      "title": "讓模型展示解題步驟以提高準確度的技術叫？ (A) RAG (B) CoT (C) Few-shot (D) Zero-shot"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "思維鏈"
+      ],
+      "title": "RAG 技術解決了模型哪項痛點？ (A) 算力不足 (B) 知識截斷與幻覺 (C) 模型太大 (D) 無法連網"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "AI倫理"
+      ],
+      "title": "製造業利用 AI 預測設備故障的應用稱為？ (A) AOI (B) 預測性維護 (C) 智慧排班 (D) 生成式設計"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "法律法規"
+      ],
+      "title": "金融領域攔截盜刷行為的應用屬於？ (A) 信用評分 (B) 欺詐偵測 (C) 智慧投顧 (D) 反洗錢"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "專案規劃"
+      ],
+      "title": "電商網站推薦「買過 A 的人也買過 B」屬於？ (A) 內容過濾 (B) 協同過濾 (C) 隨機推薦 (D) 標籤過濾"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "導入策略"
+      ],
+      "title": "不需要寫代碼，透過視覺化介面開發 AI 應用的方式叫？ (A) Hard-code (B) No-code (C) Assembly (D) Binary"
+    },
+    {
+      "id": "Q31",
+      "num": 31,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "目前法律（如美、台）對「純 AI 生成」作品的態度多半是？ (A) 給予著作權 (B) 不受著作權保護 (C) 著作權歸模型公司 (D) 著作權歸用戶"
+    },
+    {
+      "id": "Q32",
+      "num": 32,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "提示詞注入 (Prompt Injection) 的主要危害是？ (A) 損壞顯卡 (B) 繞過安全限制，操控模型行為 (C) 網路斷線 (D) 電腦中毒"
+    },
+    {
+      "id": "Q33",
+      "num": 33,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "識別 Deepfake 影片時，哪種特徵常露出破綻？ (A) 衣服顏色 (B) 眼睛不自然閃爍與邊緣模糊 (C) 背景背景 (D) 字體"
+    },
+    {
+      "id": "Q34",
+      "num": 34,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 專案生命週期的起點應是？ (A) 買硬體 (B) 問題定義與需求評估 (C) 數據標記 (D) 模型測試"
+    },
+    {
+      "id": "Q35",
+      "num": 35,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "用於驗證 AI 技術在特定場景是否可行的小型實驗叫？ (A) MVP (B) PoC (C) Final (D) Alpha"
+    },
+    {
+      "id": "Q36",
+      "num": 36,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "將「林大明」改為「林先生」或「ID_123」的操作稱為？ (A) 數據增強 (B) 去識別化 (C) 降維 (D) 過擬合"
+    },
+    {
+      "id": "Q37",
+      "num": 37,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "所謂模型能力的「湧現」通常與什麼成正比？ (A) 顏色 (B) 規模 (參數與數據) (C) 用戶數 (D) 代碼行數"
+    },
+    {
+      "id": "Q38",
+      "num": 38,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "LLM 產出看似合理但事實錯誤的內容稱為？ (A) 幻覺 (B) 錯覺 (C) 誤導 (D) 噪聲"
+    },
+    {
+      "id": "Q39",
+      "num": 39,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "在 Prompt 中要求輸出 JSON 格式，這是設定？ (A) Tone (B) Response Format (C) Audience (D) Style"
+    },
+    {
+      "id": "Q40",
+      "num": 40,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ControlNet 技術在影像生成中用於？ (A) 改變風格 (B) 精準控制構圖與姿態 (C) 縮小檔案 (D) 加快速度"
+    },
+    {
+      "id": "Q41",
+      "num": 41,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 第二次寒冬的主因是專家系統的？ (A) 數據太多 (B) 維護成本高且難以應對複雜性 (C) 算力太強 (D) 專家太少"
+    },
+    {
+      "id": "Q42",
+      "num": 42,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "深度學習與 ML 最大的差異是深度學習可以自動？ (A) 標數據 (B) 提取特徵 (C) 修電腦 (D) 開會"
+    },
+    {
+      "id": "Q43",
+      "num": 43,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "回歸模型預測的是？ (A) 標籤 (B) 連續數值 (C) 分組 (D) 密碼"
+    },
+    {
+      "id": "Q44",
+      "num": 44,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "隨機森林主要用於降低決策樹的？ (A) 偏差 (B) 方差 (C) 深度 (D) 參數量"
+    },
+    {
+      "id": "Q45",
+      "num": 45,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "衡量模型「找回正類樣本」能力的指標是？ (A) Precision (B) Recall (C) Accuracy (D) Loss"
+    },
+    {
+      "id": "Q46",
+      "num": 46,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RNN 著名的缺陷是？ (A) 無法並行且易梯度消失 (B) 參數太少 (C) 只能處理圖片 (D) 不需要激活函數"
+    },
+    {
+      "id": "Q47",
+      "num": 47,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GDPR 的主要保護對象是？ (A) 企業利益 (B) 個人數據隱私 (C) 機器人權利 (D) 硬體商"
+    },
+    {
+      "id": "Q48",
+      "num": 48,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "MaaS 在雲端 AI 中代表？ (A) 媒體服務 (B) 模型即服務 (C) 內存共享 (D) 管理系統"
+    },
+    {
+      "id": "Q49",
+      "num": 49,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "一個 Token 在英文中大約等於幾個單詞？ (A) 0.75 (B) 10 (C) 100 (D) 0.1"
+    },
+    {
+      "id": "Q50",
+      "num": 50,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "現代 AI 規劃師應具備的跨領域素養包括？ (A) 技術、業務、倫理 (B) 只有代碼 (C) 只有推銷 (D) 只有法律"
+    },
+    {
+      "id": "Q51",
+      "num": 51,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "現代 AI 大爆發的三大推力？ (A) 海量數據 (B) 算力革命 (C) 算法突破 (D) 專家規則"
+    },
+    {
+      "id": "Q52",
+      "num": 52,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 基礎範式包含？ (A) 監督式 (B) 非監督式 (C) 強化學習 (D) 生成式"
+    },
+    {
+      "id": "Q53",
+      "num": 53,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "哪些是解決過擬合的手段？ (A) 增加數據 (B) 正則化 (C) 簡化模型 (D) 增加層數"
+    },
+    {
+      "id": "Q54",
+      "num": 54,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "卷積神經網路 (CNN) 的特色？ (A) 局部感知 (B) 權重共享 (C) 池化降維 (D) 遞迴記憶"
+    },
+    {
+      "id": "Q55",
+      "num": 55,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 偏見的可能來源？ (A) 數據採樣不均 (B) 標籤帶有主觀色彩 (C) 歷史歧視殘留 (D) 模型太深"
+    },
+    {
+      "id": "Q56",
+      "num": 56,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "負責任 AI 的核心維度？ (A) 公平性 (B) 透明度 (C) 可靠性 (D) 隱私保護"
+    },
+    {
+      "id": "Q57",
+      "num": 57,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "生成式 AI 的代表架構？ (A) Transformer (B) Diffusion (C) GAN (D) SVM"
+    },
+    {
+      "id": "Q58",
+      "num": 58,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "提示工程 (Prompt Engineering) 的技巧？ (A) 角色扮演 (B) 少樣本範例 (C) 思維鏈 (D) 格式限制"
+    },
+    {
+      "id": "Q59",
+      "num": 59,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RAG 系統的組成部分？ (A) 外部文檔庫 (B) 向量資料庫 (C) 檢索算法 (D) LLM"
+    },
+    {
+      "id": "Q60",
+      "num": 60,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 在製造業的典型應用？ (A) 瑕疵檢測 (B) 預測性維護 (C) 供應鏈優化 (D) 合約撰寫"
+    },
+    {
+      "id": "Q61",
+      "num": 61,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "金融業對 AI 的高度要求？ (A) 安全性 (B) 可解釋性 (C) 實時性 (D) 越高越好的隨機性"
+    },
+    {
+      "id": "Q62",
+      "num": 62,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "哪些屬於多模態 AI 的功能？ (A) 影像理解 (B) 語音轉文字 (C) 文本生成影像 (D) 硬體散熱"
+    },
+    {
+      "id": "Q63",
+      "num": 63,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "低代碼/無代碼 AI 工具的優點？ (A) 降低開發門檻 (B) 快速驗證 MVP (C) 節省成本 (D) 完全不需要人審核"
+    },
+    {
+      "id": "Q64",
+      "num": 64,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 法律爭議的焦點？ (A) 數據版權 (B) 生成物著作權 (C) 責任歸屬 (D) 模型重量"
+    },
+    {
+      "id": "Q65",
+      "num": 65,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "常見的 AI 安全威脅？ (A) 提示詞注入 (B) 深度偽造 (C) 數據投毒 (D) 螢幕反光"
+    },
+    {
+      "id": "Q66",
+      "num": 66,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "設定成功的 AI 專案 KPI 應包含？ (A) 技術精度 (B) 業務轉化率 (C) 客戶滿意度 (D) 代碼整潔度"
+    },
+    {
+      "id": "Q67",
+      "num": 67,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於變革管理，正確的做法？ (A) 透明溝通 AI 定位 (B) 提供員工轉型培訓 (C) 設定分階段目標 (D) 全面自動化不需解釋"
+    },
+    {
+      "id": "Q68",
+      "num": 68,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Python AI 生態中的核心庫？ (A) Scikit-Learn (B) PyTorch (C) TensorFlow (D) NumPy"
+    },
+    {
+      "id": "Q69",
+      "num": 69,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GPT 演進的特徵？ (A) 模型越來越大 (B) 能力湧現 (C) 從微調轉向 Prompt (D) 只能處理英文"
+    },
+    {
+      "id": "Q70",
+      "num": 70,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Deepfake 的偵測方法？ (A) 視覺瑕疵分析 (B) 生物特徵一致性檢驗 (C) 頻譜分析 (D) 檔案日期"
+    },
+    {
+      "id": "Q71",
+      "num": 71,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "強 AI (AGI) 的特徵？ (A) 自我意識 (B) 跨領域遷移 (C) 邏輯推理 (D) 只能玩圍棋"
+    },
+    {
+      "id": "Q72",
+      "num": 72,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "非監督學習的特點？ (A) 沒標籤 (B) 發現結構 (C) 分群 (D) 降維"
+    },
+    {
+      "id": "Q73",
+      "num": 73,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "強化學習的要素？ (A) 代理人 (B) 獎勵 (C) 環境 (D) 標籤"
+    },
+    {
+      "id": "Q74",
+      "num": 74,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "深度學習與 ML 的差異？ (A) 深度學習自動提特徵 (B) ML 依賴人工設計 (C) 數據量需求不同 (D) 都不需要算力"
+    },
+    {
+      "id": "Q75",
+      "num": 75,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "欠擬合的原因？ (A) 模型太簡單 (B) 數據不足 (C) 迭代不夠 (D) 數據太乾淨"
+    },
+    {
+      "id": "Q76",
+      "num": 76,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "精準率與召回率？ (A) 通常此消彼長 (B) 與閾值有關 (C) 反映預測品質 (D) 與法律無關"
+    },
+    {
+      "id": "Q77",
+      "num": 77,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "常用激活函數？ (A) ReLU (B) Sigmoid (C) Tanh (D) Softmax"
+    },
+    {
+      "id": "Q78",
+      "num": 78,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "池化的好處？ (A) 降維 (B) 平移不變性 (C) 特徵選擇 (D) 增加解析度"
+    },
+    {
+      "id": "Q79",
+      "num": 79,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "數據偏見後果？ (A) 損害名譽 (B) 法律訴訟 (C) 社會不公 (D) 加快訓練"
+    },
+    {
+      "id": "Q80",
+      "num": 80,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "實現 XAI 的方法？ (A) 特徵重要性視覺化 (B) 局部解釋模型 (C) 簡化結構 (D) 刪除標記"
+    },
+    {
+      "id": "Q81",
+      "num": 81,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "去識別化方法？ (A) 掩碼 (B) 擾動 (C) 泛化 (D) 刪除"
+    },
+    {
+      "id": "Q82",
+      "num": 82,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "MaaS 層級？ (A) API (B) UI (C) Data (D) Model"
+    },
+    {
+      "id": "Q83",
+      "num": 83,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "HuggingFace 功能？ (A) 模型下載 (B) 數據加載 (C) 專案展示 (D) 咖啡配送"
+    },
+    {
+      "id": "Q84",
+      "num": 84,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "導致湧現的變量？ (A) 參數規模 (B) 算力規模 (C) 數據質量 (D) 標題長度"
+    },
+    {
+      "id": "Q85",
+      "num": 85,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Stable Diffusion 控制？ (A) Prompt (B) LoRA (C) ControlNet (D) CPU"
+    },
+    {
+      "id": "Q86",
+      "num": 86,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Deepfake 危害？ (A) 詐騙 (B) 假新聞 (C) 色情侵權 (D) 加快收發信"
+    },
+    {
+      "id": "Q87",
+      "num": 87,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 安全領域？ (A) 防注入 (B) 防偽鑑定 (C) 模型合規 (D) 代碼重構"
+    },
+    {
+      "id": "Q88",
+      "num": 88,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "規劃師職責？ (A) 需求定義 (B) 方案規劃 (C) 倫理審核 (D) 手工組裝顯卡"
+    },
+    {
+      "id": "Q89",
+      "num": 89,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "未來 AI 趨勢？ (A) 邊緣端 AI (B) 多模態 (C) 負責任 AI (D) 專家系統回歸"
+    },
+    {
+      "id": "Q90",
+      "num": 90,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "學習心理學應用？ (A) 鷹架 (B) 間隔重複 (C) 診斷評量 (D) 越多越好"
+    },
+    {
+      "id": "Q91",
+      "num": 91,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "符號 vs 連接主義？ (A) 規則 vs 數據 (B) 邏輯 vs 統計 (C) 白箱 vs 黑箱 (D) 兩者已融合"
+    },
+    {
+      "id": "Q92",
+      "num": 92,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "決策樹參數？ (A) depth (B) leaf_size (C) criterion (D) gpu"
+    },
+    {
+      "id": "Q93",
+      "num": 93,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "回歸指標？ (A) MSE (B) R2 (C) MAE (D) Accuracy"
+    },
+    {
+      "id": "Q94",
+      "num": 94,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "卷積參數？ (A) Kernel (B) Stride (C) Padding (D) Batch"
+    },
+    {
+      "id": "Q95",
+      "num": 95,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BERT 場景？ (A) 分類 (B) NER (C) QA (D) 生成短片"
+    },
+    {
+      "id": "Q96",
+      "num": 96,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GenAI 風險？ (A) 版權 (B) 幻覺 (C) 濫用 (D) 過度理解"
+    },
+    {
+      "id": "Q97",
+      "num": 97,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "提示工程原則？ (A) 具體 (B) 結構 (C) 迭代 (D) 越短越好 (其實不然)"
+    },
+    {
+      "id": "Q98",
+      "num": 98,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "向量資料庫？ (A) Pinecone (B) Chroma (C) Milvus (D) Oracle (傳統)"
+    },
+    {
+      "id": "Q99",
+      "num": 99,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "安全防護？ (A) 權限 (B) 監控 (C) 護欄 (D) 禁用"
+    },
+    {
+      "id": "Q100",
+      "num": 100,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "深度學習未來？ (A) 省能 (B) 通用 (C) 安全 (D) 複雜化"
+    },
+    {
+      "id": "Q101",
+      "num": 101,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "機器學習三要素：任務、績效與 __________。"
+    },
+    {
+      "id": "Q102",
+      "num": 102,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "1956 年達特茅斯會議提出了 __________ 這個辭彙。"
+    },
+    {
+      "id": "Q103",
+      "num": 103,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 第二次寒冬發生在 __________ 年代。"
+    },
+    {
+      "id": "Q104",
+      "num": 104,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "__________ 學習是沒有標籤的數據學習方式。"
+    },
+    {
+      "id": "Q105",
+      "num": 105,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "強化學習透過 __________ 機制來導向正確行為。"
+    },
+    {
+      "id": "Q106",
+      "num": 106,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "預測分類使用邏輯回歸，預測數值使用 __________ 回歸。"
+    },
+    {
+      "id": "Q107",
+      "num": 107,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "模型記住噪音導致泛化能力差，稱為 __________。"
+    },
+    {
+      "id": "Q108",
+      "num": 108,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "混淆矩陣中 FN 代表 __________ 性。"
+    },
+    {
+      "id": "Q109",
+      "num": 109,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "模擬大腦多層結構的技術叫 __________。"
+    },
+    {
+      "id": "Q110",
+      "num": 110,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ReLU 在輸入小於 0 時輸出為 __________。"
+    },
+    {
+      "id": "Q111",
+      "num": 111,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "CNN 核心技術是局部連接與 __________。"
+    },
+    {
+      "id": "Q112",
+      "num": 112,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RNN 適合處理具備 __________ 性質的數據。"
+    },
+    {
+      "id": "Q113",
+      "num": 113,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "歐盟最嚴隱私法規縮寫是 __________。"
+    },
+    {
+      "id": "Q114",
+      "num": 114,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "讓模型可被理解的 AI 叫 __________。"
+    },
+    {
+      "id": "Q115",
+      "num": 115,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "NumPy 用於矩陣與 __________ 運算。"
+    },
+    {
+      "id": "Q116",
+      "num": 116,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Pandas 的主要數據結構是 __________。"
+    },
+    {
+      "id": "Q117",
+      "num": 117,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "MaaS 意為 __________ 作為服務。"
+    },
+    {
+      "id": "Q118",
+      "num": 118,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "LLM 生成文本的計費單位是 __________。"
+    },
+    {
+      "id": "Q119",
+      "num": 119,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Transformer 引入了著名的 __________ 機制。"
+    },
+    {
+      "id": "Q120",
+      "num": 120,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BERT 是 __________ (單向/雙向) 結構。"
+    },
+    {
+      "id": "Q121",
+      "num": 121,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GPT 是 __________ (單向/雙向) 結構。"
+    },
+    {
+      "id": "Q122",
+      "num": 122,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "擴散模型的前向過程是 __________。"
+    },
+    {
+      "id": "Q123",
+      "num": 123,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "CLIP 是影像與 __________ 的橋樑。"
+    },
+    {
+      "id": "Q124",
+      "num": 124,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "影像生成中精準控制姿態的技術叫 __________。"
+    },
+    {
+      "id": "Q125",
+      "num": 125,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "深度偽造影像技術英文是 __________。"
+    },
+    {
+      "id": "Q126",
+      "num": 126,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "垃圾進，__________ 出。"
+    },
+    {
+      "id": "Q127",
+      "num": 127,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "衡量預測誤差平方的指標是 __________。"
+    },
+    {
+      "id": "Q128",
+      "num": 128,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "決策樹的頂端是 __________。"
+    },
+    {
+      "id": "Q129",
+      "num": 129,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "模型在測試集表現差，代表 __________ 能力差。"
+    },
+    {
+      "id": "Q130",
+      "num": 130,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "激發函數中，S 型曲線叫 __________。"
+    },
+    {
+      "id": "Q131",
+      "num": 131,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "池化層通常有最大池化與 __________ 池化。"
+    },
+    {
+      "id": "Q132",
+      "num": 132,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "長短期記憶網路縮寫是 __________。"
+    },
+    {
+      "id": "Q133",
+      "num": 133,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "符號主義 AI 的全盛期在第 __________ 波浪潮。"
+    },
+    {
+      "id": "Q134",
+      "num": 134,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "資料隱私中，遮蓋姓名的操作叫 __________。"
+    },
+    {
+      "id": "Q135",
+      "num": 135,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "API 授權的憑證稱為 API __________。"
+    },
+    {
+      "id": "Q136",
+      "num": 136,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "控制模型隨機性的參數是 __________。"
+    },
+    {
+      "id": "Q137",
+      "num": 137,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "零樣本提示叫 __________-shot。"
+    },
+    {
+      "id": "Q138",
+      "num": 138,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "少樣本提示叫 __________-shot。"
+    },
+    {
+      "id": "Q139",
+      "num": 139,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "注意力機制解决了 __________ 依賴問題。"
+    },
+    {
+      "id": "Q140",
+      "num": 140,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ChatGPT 的開發公司是 __________。"
+    },
+    {
+      "id": "Q141",
+      "num": 141,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Llama 來自 __________ 科技。"
+    },
+    {
+      "id": "Q142",
+      "num": 142,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AGI 實現後可能出現的超級智能叫 __________。"
+    },
+    {
+      "id": "Q143",
+      "num": 143,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "模型信心十足地說謊叫 __________。"
+    },
+    {
+      "id": "Q144",
+      "num": 144,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "如果 P 值 __________ 0.05 則具顯著性。"
+    },
+    {
+      "id": "Q145",
+      "num": 145,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "數據缺失處理叫 __________。"
+    },
+    {
+      "id": "Q146",
+      "num": 146,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Python 縮進是 __________ 空格。"
+    },
+    {
+      "id": "Q147",
+      "num": 147,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "生成式模型學數據 __________。"
+    },
+    {
+      "id": "Q148",
+      "num": 148,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "公平性要防範 __________ 歧視。"
+    },
+    {
+      "id": "Q149",
+      "num": 149,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "影像生成 Prompt 的修飾詞叫 __________。"
+    },
+    {
+      "id": "Q150",
+      "num": 150,
+      "type": "fill",
+      "kps": [
+        "KP5.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "IPAS 是 __________ 部發證的認證。 ---"
     }
   ]
 }

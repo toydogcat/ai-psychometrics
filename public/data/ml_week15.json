@@ -1,644 +1,488 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 15,
-  "title": "機器學習第 15 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP15.1": "概念基礎",
-    "KP15.2": "數學原理",
-    "KP15.3": "Python 實作",
-    "KP15.4": "模型評估",
-    "KP15.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W15-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP15.2",
-      "title": "這是第 15 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.15.2"
+      ],
+      "answer": "C",
+      "title": "在癌症篩查中，我們最擔心的情況是「有病卻沒驗出來」，因此應優先提高？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "精準率 (Precision)",
+        "B": "召回率 (Recall)",
+        "C": "準確率 (Accuracy)",
+        "D": "運算速度"
+      }
     },
     {
-      "id": "ML-W15-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP15.3",
-      "title": "這是第 15 週的第 2 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.15.3"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "下列哪一個指標是精準率與召回率的調和平均數？",
+      "options": {
+        "A": "F1-Score",
+        "B": "MAE",
+        "C": "AUC",
+        "D": "$R^2$"
+      }
     },
     {
-      "id": "ML-W15-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP15.4",
-      "title": "這是第 15 週的第 3 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.15.4"
+      ],
+      "answer": "D",
+      "title": "若模型 A 的 AUC 為 0.9，模型 B 的 AUC 為 0.6，則哪一個模型的分類排序能力更好？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "A",
+        "B": "B",
+        "C": "一樣好",
+        "D": "無法判斷"
+      }
     },
     {
-      "id": "ML-W15-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP15.5",
-      "title": "這是第 15 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.15.1"
+      ],
+      "answer": "B",
+      "title": "混淆矩陣中，FP (False Positive) 代表什麼意思？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "預測為正，實際上也是正",
+        "B": "預測為正，實際上是負",
+        "C": "預測為負，實際上是負",
+        "D": "預測為負，實際上是正"
+      }
     },
     {
-      "id": "ML-W15-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP15.1",
-      "title": "這是第 15 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.15.5"
+      ],
+      "answer": "C",
+      "title": "回歸模型中，MSE 與 MAE 的主要區別在於 MSE？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "對小誤差更敏感",
+        "B": "對大誤差（離群值）懲罰更重",
+        "C": "計算更簡單",
+        "D": "單位與 y 相同"
+      }
     },
     {
-      "id": "ML-W15-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP15.2",
-      "title": "這是第 15 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.15.1"
+      ],
+      "answer": "B",
+      "title": "當資料集正負類比例為 1:999 時，一個「恆預測負類」的分類器準確率為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "0.1%",
+        "B": "50%",
+        "C": "99.9%",
+        "D": "100%"
+      }
     },
     {
-      "id": "ML-W15-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP15.3",
-      "title": "這是第 15 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.15.4"
+      ],
+      "answer": "D",
+      "title": "ROC 曲線的橫軸 (X-axis) 是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "TPR",
+        "B": "FPR",
+        "C": "Precision",
+        "D": "Recall"
+      }
     },
     {
-      "id": "ML-W15-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP15.4",
-      "title": "這是第 15 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.15.5"
+      ],
+      "answer": "C",
+      "title": "下列哪一個指標越小代表模型效果越好？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "AUC",
+        "B": "$R^2$",
+        "C": "MSE",
+        "D": "Precision"
+      }
     },
     {
-      "id": "ML-W15-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP15.5",
-      "title": "這是第 15 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.15.5"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "學習曲線中，如果訓練誤差與驗證誤差都很高且平平行，這通常意味著？",
+      "options": {
+        "A": "過擬合",
+        "B": "欠擬合",
+        "C": "模型完美",
+        "D": "運算資源不足"
+      }
     },
     {
-      "id": "ML-W15-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP15.1",
-      "title": "這是第 15 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.15.1"
+      ],
+      "answer": "D",
+      "title": "在 Scikit-Learn 中，用於獲取分類報告（P, R, F1 匯總）的函式是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`accuracy_score`",
+        "B": "`classification_report`",
+        "C": "`confusion_matrix`",
+        "D": "`roc_auc_score`"
+      }
     },
     {
-      "id": "ML-W15-Q11",
-      "type": "single",
-      "kp": "KP15.2",
-      "title": "這是第 15 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.15.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 Recall (召回率)，敘述正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "它是真陽性佔所有真陽性與偽陰性之和的比例",
+        "B": "又稱為靈敏度 (Sensitivity)",
+        "C": "衡量的是捕捉正類的能力",
+        "D": "越高代表誤判率越低"
+      }
     },
     {
-      "id": "ML-W15-Q12",
-      "type": "single",
-      "kp": "KP15.3",
-      "title": "這是第 15 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.15.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "ROC 曲線中，最理想的點位於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "左上角 (0, 1)",
+        "B": "右下角 (1, 0)",
+        "C": "TPR=1",
+        "D": "FPR=0"
+      }
     },
     {
-      "id": "ML-W15-Q13",
-      "type": "single",
-      "kp": "KP15.4",
-      "title": "這是第 15 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.15.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "哪些因素會導致 F1-Score 很低？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Precision 極低",
+        "B": "Recall 極低",
+        "C": "模型沒有預測能力",
+        "D": "準確率太高"
+      }
     },
     {
-      "id": "ML-W15-Q14",
-      "type": "single",
-      "kp": "KP15.5",
-      "title": "這是第 15 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.15.4"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 AUC 的特點，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "數值介於 0.5 到 1 之間",
+        "B": "對類別分佈不敏感",
+        "C": "隨機猜測的 AUC 為 0.5",
+        "D": "只能用於回歸任務"
+      }
     },
     {
-      "id": "ML-W15-Q15",
-      "type": "single",
-      "kp": "KP15.1",
-      "title": "這是第 15 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.15.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "回歸問題中常見的評估指標包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "MAE",
+        "B": "RMSE",
+        "C": "$R^2$",
+        "D": "Log Loss"
+      }
     },
     {
-      "id": "ML-W15-Q16",
-      "type": "single",
-      "kp": "KP15.2",
-      "title": "這是第 15 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.15.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "導致過擬合 (Overfitting) 的徵兆包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "訓練誤差極低",
+        "B": "測試誤差極高",
+        "C": "模型過於複雜",
+        "D": "資料量太大"
+      }
     },
     {
-      "id": "ML-W15-Q17",
-      "type": "single",
-      "kp": "KP15.3",
-      "title": "這是第 15 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.15.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 $R^2$ (決定係數) 的正確敘述有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "反映模型對變異的解釋程度",
+        "B": "越接近 1 越好",
+        "C": "可能為負數",
+        "D": "數值代表預測準確率"
+      }
     },
     {
-      "id": "ML-W15-Q18",
-      "type": "single",
-      "kp": "KP15.4",
-      "title": "這是第 15 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.15.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "解決「高方差」問題的手段有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "增加訓練數據",
+        "B": "減小模型複雜度",
+        "C": "增加正則化強度",
+        "D": "增加特徵維度"
+      }
     },
     {
-      "id": "ML-W15-Q19",
-      "type": "single",
-      "kp": "KP15.5",
-      "title": "這是第 15 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.15.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在哪些場景下，精準率 (Precision) 比召回率重要？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "廣告點擊預測",
+        "B": "垃圾郵件過濾",
+        "C": "刑事判刑",
+        "D": "銀行貸款批准"
+      }
     },
     {
-      "id": "ML-W15-Q20",
-      "type": "single",
-      "kp": "KP15.1",
-      "title": "這是第 15 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.15.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "評估分類模型時，除了指標，還應觀察？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "預測機率的分佈",
+        "B": "混淆矩陣的細節",
+        "C": "特徵重要性",
+        "D": "訓練時間"
+      }
     },
     {
-      "id": "ML-W15-Q21",
-      "type": "single",
-      "kp": "KP15.2",
-      "title": "這是第 15 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.15.1"
+      ],
+      "answer": [
+        "特徵選擇"
+      ],
+      "title": "準確率的英文是 __________。"
     },
     {
-      "id": "ML-W15-Q22",
-      "type": "single",
-      "kp": "KP15.3",
-      "title": "這是第 15 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.15.2"
+      ],
+      "answer": [
+        "過濾法"
+      ],
+      "title": "精準率又稱為 __________ 率 (查準率)。"
     },
     {
-      "id": "ML-W15-Q23",
-      "type": "single",
-      "kp": "KP15.4",
-      "title": "這是第 15 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.15.2"
+      ],
+      "answer": [
+        "包裝法"
+      ],
+      "title": "召回率又稱為 __________ 率 (查全率)。"
     },
     {
-      "id": "ML-W15-Q24",
-      "type": "single",
-      "kp": "KP15.5",
-      "title": "這是第 15 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.15.1",
+        "KP 3.15.3"
+      ],
+      "answer": [
+        "嵌入法"
+      ],
+      "title": "在不平衡分類中，應重點關注 __________ 指標而非準確率。"
     },
     {
-      "id": "ML-W15-Q25",
-      "type": "single",
-      "kp": "KP15.1",
-      "title": "這是第 15 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.15.4"
+      ],
+      "answer": [
+        "方差過濾"
+      ],
+      "title": "AUC 曲線下的全稱是 Area Under __________。"
     },
     {
-      "id": "ML-W15-Q26",
-      "type": "single",
-      "kp": "KP15.2",
-      "title": "這是第 15 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.15.5"
+      ],
+      "answer": [
+        "SelectKBest"
+      ],
+      "title": "MAE 指的是平均 __________ 誤差。"
     },
     {
-      "id": "ML-W15-Q27",
-      "type": "single",
-      "kp": "KP15.3",
-      "title": "這是第 15 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.15.2"
+      ],
+      "answer": [
+        "RFE"
+      ],
+      "title": "將分類閾值從 0.5 降到 0.1，召回率會 __________。"
     },
     {
-      "id": "ML-W15-Q28",
-      "type": "single",
-      "kp": "KP15.4",
-      "title": "這是第 15 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.15.4"
+      ],
+      "answer": [
+        "L1"
+      ],
+      "title": "完美的分類器 AUC 應該等於 __________。"
     },
     {
-      "id": "ML-W15-Q29",
-      "type": "single",
-      "kp": "KP15.5",
-      "title": "這是第 15 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.15.5"
+      ],
+      "answer": [
+        "特徵重要性"
+      ],
+      "title": "決定係數的符號是 __________。"
     },
     {
-      "id": "ML-W15-Q30",
-      "type": "single",
-      "kp": "KP15.1",
-      "title": "這是第 15 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.15.5"
+      ],
+      "answer": [
+        "降維"
+      ],
+      "title": "如果模型在訓練集和測試集上的表現都很差，這稱為 __________ (Underfitting)。 ---"
     }
   ]
 }

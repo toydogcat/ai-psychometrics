@@ -1,7 +1,7 @@
 {
   "course_id": "calculus3",
   "week": 9,
-  "title": "微積分 下 第 9 週",
+  "title": "微積分 下 第 9 週測驗",
   "knowledge_points": {},
   "questions": [
     {
@@ -459,7 +459,7 @@
       "type": "fill",
       "title": "**Q31**: 極座標下，點 $(r, \\theta)$ 與 $(-r, \\theta + \\pi)$ 代表 __________ 的位置。",
       "options": {},
-      "answer": "",
+      "answer": "Q31",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -469,7 +469,7 @@
       "type": "fill",
       "title": "**Q32**: 向量函數 $\\mathbf{r}(t)$ 的弧長參數常用符號 __________ 表示。",
       "options": {},
-      "answer": "",
+      "answer": "Q32",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -479,7 +479,7 @@
       "type": "fill",
       "title": "**Q33**: 若 $|\\mathbf{r}(t)|$ 為常數，則 $\\mathbf{r}(t)$ 與 $\\mathbf{r}'(t)$ 必 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q33",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -489,7 +489,7 @@
       "type": "fill",
       "title": "**Q34**: $f(x, y)$ 在點 $P$ 沿向量 $\\mathbf{v}$ 的方向導數公式為 $D_{\\mathbf{u}}f = \\nabla f \\cdot $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q34",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -499,7 +499,7 @@
       "type": "fill",
       "title": "**Q35**: 鞍點的 Hessian 行列式 $D$ 的正負號為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q35",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -509,7 +509,7 @@
       "type": "fill",
       "title": "**Q36**: 極座標積分中的面積元素 $dA = $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q36",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -519,7 +519,7 @@
       "type": "fill",
       "title": "**Q37**: $x^2 + y^2 = 9$ 在極座標下的方程式為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q37",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -529,7 +529,7 @@
       "type": "fill",
       "title": "**Q38**: 兩個約束條件下的拉格朗日法方程式為 $\\nabla f = \\lambda \\nabla g + $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q38",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -539,7 +539,7 @@
       "type": "fill",
       "title": "**Q39**: 計算 $\\int_0^1 \\int_0^2 dy dx = $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q39",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -549,7 +549,7 @@
       "type": "fill",
       "title": "**Q40**: 拋體運動在忽略阻力時，軌跡是一個 __________。\n\n---\n\n## 三、 Python 實作加分題 (Optional Lab)\n**題目**：寫一段 Python 程式，利用 SymPy 驗證函數 $f(x, y) = x^2 + y^2$ 在點 $(1, 1)$ 的梯度向量垂直於經過該點的等值線（圓）。\n*(提示：求出梯度的方向，並求出該點切線的方向，檢查點積是否為零。)*",
       "options": {},
-      "answer": "",
+      "answer": "Q40",
       "kp": "",
       "explanation": "",
       "q_vector": []

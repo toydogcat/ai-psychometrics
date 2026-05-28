@@ -1,644 +1,489 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 7,
-  "title": "機器學習第 7 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP7.1": "概念基礎",
-    "KP7.2": "數學原理",
-    "KP7.3": "Python 實作",
-    "KP7.4": "模型評估",
-    "KP7.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W7-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP7.2",
-      "title": "這是第 7 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.7.1"
+      ],
+      "answer": "C",
+      "title": "Boosting 算法主要旨在減少模型的哪一部分誤差？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "方差 (Variance)",
+        "B": "偏差 (Bias)",
+        "C": "雜訊",
+        "D": "運算複雜度"
+      }
     },
     {
-      "id": "ML-W7-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP7.3",
-      "title": "這是第 7 週的第 2 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.7.4"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "AdaBoost 中，如果一個樣本被目前的弱學習器分類錯誤，下一個學習器會？",
+      "options": {
+        "A": "忽略該樣本",
+        "B": "調高該樣本的權重",
+        "C": "調低該樣本的權重",
+        "D": "刪除該樣本"
+      }
     },
     {
-      "id": "ML-W7-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP7.4",
-      "title": "這是第 7 週的第 3 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.7.2"
+      ],
+      "answer": "D",
+      "title": "GBDT 的每一棵樹是在擬合損失函數的？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "原始標籤",
+        "B": "負梯度 (殘差)",
+        "C": "權重",
+        "D": "隨機值"
+      }
     },
     {
-      "id": "ML-W7-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP7.5",
-      "title": "這是第 7 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": "B",
+      "title": "下列哪一個模型使用了二階泰勒展開來優化損失函數？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "AdaBoost",
+        "B": "傳統 GBDT",
+        "C": "XGBoost",
+        "D": "隨機森林"
+      }
     },
     {
-      "id": "ML-W7-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP7.1",
-      "title": "這是第 7 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": "C",
+      "title": "XGBoost 相比傳統 GBDT，額外引入了什麼來防止過擬合？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "更多訓練數據",
+        "B": "$L1/L2$ 正則項",
+        "C": "更多樹的深度",
+        "D": "隨機種子"
+      }
     },
     {
-      "id": "ML-W7-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP7.2",
-      "title": "這是第 7 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.7.3"
+      ],
+      "answer": "B",
+      "title": "Boosting 模型中，學習率 (Learning Rate) 的作用是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "決定每棵樹的投票權重",
+        "B": "縮減每棵樹的貢獻以防止過擬合",
+        "C": "增加樹的深度",
+        "D": "減少特徵數量"
+      }
     },
     {
-      "id": "ML-W7-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP7.3",
-      "title": "這是第 7 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": "D",
+      "title": "哪一個 Boosting 框架以「直方圖算法」和「Leaf-wise 生長」著稱？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "AdaBoost",
+        "B": "XGBoost",
+        "C": "LightGBM",
+        "D": "CatBoost"
+      }
     },
     {
-      "id": "ML-W7-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP7.4",
-      "title": "這是第 7 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.7.4"
+      ],
+      "answer": "C",
+      "title": "關於 Boosting 與並行訓練，敘述正確的是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "它可以完全並行，因為樹之間互相獨立",
+        "B": "樹的生成是序列化的，通常難以像 Bagging 那樣並行",
+        "C": "它不需要並行",
+        "D": "它只能在單核 CPU 運行"
+      }
     },
     {
-      "id": "ML-W7-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP7.5",
-      "title": "這是第 7 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.7.1"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "「早停機制 (Early Stopping)」的主要目的是？",
+      "options": {
+        "A": "節省電力",
+        "B": "防止在訓練集上過擬合",
+        "C": "增加模型複雜度",
+        "D": "取代特徵選擇"
+      }
     },
     {
-      "id": "ML-W7-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP7.1",
-      "title": "這是第 7 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": "D",
+      "title": "在 Boosting 中，弱學習器通常是指？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "深度非常大的樹",
+        "B": "深度非常淺的樹（如樹樁）",
+        "C": "隨機猜測",
+        "D": "線性回歸"
+      }
     },
     {
-      "id": "ML-W7-Q11",
-      "type": "single",
-      "kp": "KP7.2",
-      "title": "這是第 7 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.7.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些屬於 Boosting 範疇的模型？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "AdaBoost",
+        "B": "GBDT",
+        "C": "XGBoost",
+        "D": "Random Forest"
+      }
     },
     {
-      "id": "ML-W7-Q12",
-      "type": "single",
-      "kp": "KP7.3",
-      "title": "這是第 7 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.7.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 AdaBoost，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "它是加法模型",
+        "B": "它動態調整樣本權重",
+        "C": "它動態調整學習器權重",
+        "D": "它只能處理二分類"
+      }
     },
     {
-      "id": "ML-W7-Q13",
-      "type": "single",
-      "kp": "KP7.4",
-      "title": "這是第 7 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.7.1",
+        "KP 3.7.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "GBDT 的優點包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "預測精度高",
+        "B": "能處理各種類型的數據",
+        "C": "對異常值非常魯棒 (不如 RF)",
+        "D": "能靈活應用各種損失函數"
+      }
     },
     {
-      "id": "ML-W7-Q14",
-      "type": "single",
-      "kp": "KP7.5",
-      "title": "這是第 7 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "XGBoost 的系統級優化包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "特徵預排序 (Pre-sorting)",
+        "B": "支持稀疏矩陣",
+        "C": "分塊並行運算",
+        "D": "緩存優化"
+      }
     },
     {
-      "id": "ML-W7-Q15",
-      "type": "single",
-      "kp": "KP7.1",
-      "title": "這是第 7 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.7.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "哪些超參數可以調節 Boosting 模型的複雜度？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`learning_rate`",
+        "B": "`n_estimators`",
+        "C": "`max_depth`",
+        "D": "`reg_lambda`"
+      }
     },
     {
-      "id": "ML-W7-Q16",
-      "type": "single",
-      "kp": "KP7.2",
-      "title": "這是第 7 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "關於 LightGBM 的 Leaf-wise 策略，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "每次分裂增益最大的葉子節點",
+        "B": "可能長出非常深的樹",
+        "C": "相比 Level-wise 更容易過擬合",
+        "D": "計算效率更低"
+      }
     },
     {
-      "id": "ML-W7-Q17",
-      "type": "single",
-      "kp": "KP7.3",
-      "title": "這是第 7 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "處理極大規模數據時，首選的 Boosting 工具通常是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "AdaBoost",
+        "B": "LightGBM",
+        "C": "XGBoost",
+        "D": "CatBoost"
+      }
     },
     {
-      "id": "ML-W7-Q18",
-      "type": "single",
-      "kp": "KP7.4",
-      "title": "這是第 7 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.7.1",
+        "KP 3.7.4"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Boosting 與 Bagging 的對比，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Boosting 降低偏差，Bagging 降低方差",
+        "B": "Boosting 串行，Bagging 並行",
+        "C": "Boosting 基學習器通常較弱，Bagging 較強",
+        "D": "兩者目標一致"
+      }
     },
     {
-      "id": "ML-W7-Q19",
-      "type": "single",
-      "kp": "KP7.5",
-      "title": "這是第 7 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.7.3"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在 GBDT 中，Shrinkage（收縮）技術是指？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "減少樣本數量",
+        "B": "使用學習率乘以每棵樹的輸出",
+        "C": "剪枝",
+        "D": "減少特徵維度"
+      }
     },
     {
-      "id": "ML-W7-Q20",
-      "type": "single",
-      "kp": "KP7.1",
-      "title": "這是第 7 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.7.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Boosting 模型的缺點可能有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "對雜訊敏感（容易擬合錯分樣本）",
+        "B": "訓練時間相對較長",
+        "C": "難以解釋",
+        "D": "容易欠擬合 (通常是容易過擬合)"
+      }
     },
     {
-      "id": "ML-W7-Q21",
-      "type": "single",
-      "kp": "KP7.2",
-      "title": "這是第 7 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.7.1"
+      ],
+      "answer": [
+        "支持向量機"
+      ],
+      "title": "Boosting 模型透過迭代降低整體的 __________ (Bias)。"
     },
     {
-      "id": "ML-W7-Q22",
-      "type": "single",
-      "kp": "KP7.3",
-      "title": "這是第 7 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.7.2"
+      ],
+      "answer": [
+        "超平面"
+      ],
+      "title": "GBDT 是 Gradient Boosting __________ Tree 的縮寫。"
     },
     {
-      "id": "ML-W7-Q23",
-      "type": "single",
-      "kp": "KP7.4",
-      "title": "這是第 7 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": [
+        "間隔"
+      ],
+      "title": "XGBoost 在損失函數中加入了 __________ 項以防止模型過於複雜。"
     },
     {
-      "id": "ML-W7-Q24",
-      "type": "single",
-      "kp": "KP7.5",
-      "title": "這是第 7 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.7.4"
+      ],
+      "answer": [
+        "支持向量"
+      ],
+      "title": "AdaBoost 的核心是根據誤差率調整樣本的 __________。"
     },
     {
-      "id": "ML-W7-Q25",
-      "type": "single",
-      "kp": "KP7.1",
-      "title": "這是第 7 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": [
+        "核函數"
+      ],
+      "title": "現代框架中，利用 __________ 算法將連續特徵分桶以加速運算。"
     },
     {
-      "id": "ML-W7-Q26",
-      "type": "single",
-      "kp": "KP7.2",
-      "title": "這是第 7 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.7.1"
+      ],
+      "answer": [
+        "RBF"
+      ],
+      "title": "當驗證集分數不再進步時停止訓練的技術稱為 __________。"
     },
     {
-      "id": "ML-W7-Q27",
-      "type": "single",
-      "kp": "KP7.3",
-      "title": "這是第 7 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.7.2"
+      ],
+      "answer": [
+        "SVC"
+      ],
+      "title": "在 GBDT 中，新樹擬合的目標是損失函數的 __________。"
     },
     {
-      "id": "ML-W7-Q28",
-      "type": "single",
-      "kp": "KP7.4",
-      "title": "這是第 7 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": [
+        "C"
+      ],
+      "title": "LightGBM 採用的生長方式是 __________-wise，而非 Level-wise。"
     },
     {
-      "id": "ML-W7-Q29",
-      "type": "single",
-      "kp": "KP7.5",
-      "title": "這是第 7 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.7.1"
+      ],
+      "answer": [
+        "對偶"
+      ],
+      "title": "集成學習中，「弱學習器」是指性能僅略優於 __________ 的模型。"
     },
     {
-      "id": "ML-W7-Q30",
-      "type": "single",
-      "kp": "KP7.1",
-      "title": "這是第 7 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.7.5"
+      ],
+      "answer": [
+        "鬆弛變數"
+      ],
+      "title": "XGBoost 由華人學者 __________ 開發，並在多項數據競賽中成名。 ---"
     }
   ]
 }

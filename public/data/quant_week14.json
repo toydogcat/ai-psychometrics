@@ -1,0 +1,497 @@
+{
+  "courseId": "python-office-quant",
+  "week": 14,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP14.3"
+      ],
+      "answer": "B",
+      "title": "在量化分析中，為了消除股票除權除息導致的價格跳空，應該使用哪種價格進行回測？",
+      "options": {
+        "A": "原始收盤價 (Close)",
+        "B": "最高價 (High)",
+        "C": "調整收盤價 (Adj Close)",
+        "D": "開盤價 (Open)"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP14.2"
+      ],
+      "answer": "C",
+      "title": "`yfinance` 下載蘋果公司 (AAPL) 數據的正確代碼是？",
+      "options": {
+        "A": "`yf.get(\"AAPL\")`",
+        "B": "`yf.download(\"AAPL\")`",
+        "C": "`yf.pull(\"AAPL\")`",
+        "D": "`yf.stock(\"AAPL\")`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP14.4"
+      ],
+      "answer": "A",
+      "title": "下列哪個指標常用來衡量金融資產的風險？",
+      "options": {
+        "A": "平均值",
+        "B": "波動率 (標準差)",
+        "C": "累積收益",
+        "D": "偏度"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP14.4"
+      ],
+      "answer": "D",
+      "title": "對數收益率相比簡單收益率的最大優點是？",
+      "options": {
+        "A": "計算更簡單",
+        "B": "數值更大",
+        "C": "具有時間上的可累加性",
+        "D": "直觀易懂"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP14.1"
+      ],
+      "answer": "C",
+      "title": "在 yfinance 中獲取台積電數據，Ticker 應設為？",
+      "options": {
+        "A": "2330",
+        "B": "2330.TW",
+        "C": "TSMC",
+        "D": "2330.T"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP14.5"
+      ],
+      "answer": "D",
+      "title": "Tushare Pro 獲取數據前必須進行的操作是？",
+      "options": {
+        "A": "支付訂閱費",
+        "B": "設置 Token 認證",
+        "C": "安裝瀏覽器驅動",
+        "D": "註冊公司帳號"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP14.1",
+        "KP14.2"
+      ],
+      "answer": "B",
+      "title": "金融數據中的 OHLCV 分別代表？",
+      "options": {
+        "A": "開高低收量",
+        "B": "開高收低量",
+        "C": "收高低開量",
+        "D": "量開高低收"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP14.4"
+      ],
+      "answer": "C",
+      "title": "兩支股票的相關係數為 0.9，代表？",
+      "options": {
+        "A": "它們完全無關",
+        "B": "它們高度正相關",
+        "C": "它們反向運動",
+        "D": "其中一支股票會領漲"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP14.4"
+      ],
+      "answer": "A",
+      "title": "計算收益率時，Pandas 中常用的方法是？",
+      "options": {
+        "A": "`diff()`",
+        "B": "`pct_change()`",
+        "C": "`shift()`",
+        "D": "`rolling()`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP14.2"
+      ],
+      "answer": "D",
+      "title": "`yfinance` 獲取的數據預設類型是？",
+      "options": {
+        "A": "Dictionary",
+        "B": "DataFrame",
+        "C": "NumPy Array",
+        "D": "List"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP14.2",
+        "KP14.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "金融數據獲取的來源常見的有？",
+      "options": {
+        "A": "yfinance",
+        "B": "Tushare",
+        "C": "Bloomberg API",
+        "D": "網站爬蟲"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP14.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於對數收益率 (Log Return)，正確的有？",
+      "options": {
+        "A": "具有時間可加性",
+        "B": "數值通常與簡單收益率接近",
+        "C": "適合處理極端波動數據",
+        "D": "直接相加即可得到總收益率"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP14.1",
+        "KP14.2",
+        "KP14.3",
+        "KP14.4",
+        "KP14.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些屬於量化投資的流程環節？",
+      "options": {
+        "A": "策略開發",
+        "B": "數據清洗",
+        "C": "績效回測",
+        "D": "實盤交易"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP14.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 Tushare 的描述，正確的有？",
+      "options": {
+        "A": "國內最受歡迎的開源金融數據接口之一",
+        "B": "採集了 A 股、期貨等多維度數據",
+        "C": "需要積分機制來獲取高級權限",
+        "D": "只能獲取美股數據"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP14.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "處理金融數據缺失值時，下列哪些做法是合理的？",
+      "options": {
+        "A": "直接刪除 (Dropna)",
+        "B": "前向填充 (Ffill)",
+        "C": "使用移動平均值填充",
+        "D": "隨機填充"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP14.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "下列哪些是 `yfinance` 可以獲取的內容？",
+      "options": {
+        "A": "歷史股價",
+        "B": "股息分配",
+        "C": "拆股歷史",
+        "D": "公司新聞摘要"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP14.3"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於復權處理，正確的有？",
+      "options": {
+        "A": "前復權 (保持最新價格不變)",
+        "B": "後復權 (保持起始價格不變)",
+        "C": "不復權會導致收益計算錯誤",
+        "D": "只對期貨有效"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP14.4"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些指標可以通過行情數據計算得出？",
+      "options": {
+        "A": "日收益率",
+        "B": "累積收益率",
+        "C": "波動率",
+        "D": "月度回報率"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP14.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "關於限流 (Rate Limiting)，正確的有？",
+      "options": {
+        "A": "為了保護數據供應方的伺服器",
+        "B": "超過限制會導致 429 錯誤或被暫時禁封",
+        "C": "可以通過增加休眠時間來避免",
+        "D": "是非法操作"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP14.1",
+        "KP14.2",
+        "KP14.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "金融時間序列的特點包括？",
+      "options": {
+        "A": "高噪聲",
+        "B": "波動聚集性",
+        "C": "隨機行走",
+        "D": "絕對穩定"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP14.1",
+        "KP14.2"
+      ],
+      "answer": [
+        "yfinance"
+      ],
+      "title": "在量化投資中，OHLCV 的 'V' 代表 __________。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP14.1"
+      ],
+      "answer": [
+        "Ticker"
+      ],
+      "title": "使用 yfinance 下載美股 Tesla 數據，Ticker 是 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP14.4"
+      ],
+      "answer": [
+        "history"
+      ],
+      "title": "`(df['Adj Close'].pct_change() + 1).________()` 可計算累積收益率。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP14.4"
+      ],
+      "answer": [
+        "download"
+      ],
+      "title": "計算對數收益率的公式是 `np.________(df['Close'] / df['Close'].shift(1))`。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP14.5"
+      ],
+      "answer": [
+        "pandas_datareader"
+      ],
+      "title": "Tushare 設置 Token 的函數是 `ts.set_________('your_token')`。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP14.4"
+      ],
+      "answer": [
+        "API"
+      ],
+      "title": "日收益率的標準差在金融學中常用來定義 __________ (Volatility)。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP14.5"
+      ],
+      "answer": [
+        "json"
+      ],
+      "title": "將數據按日期對齊，若出現缺失值，通常使用 __________ (填英文方法名) 進行前向填充。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP14.2"
+      ],
+      "answer": [
+        "CSV"
+      ],
+      "title": "`yfinance` 的 API 本質上是從 __________ 財經獲取數據的。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP14.1"
+      ],
+      "answer": [
+        "resample"
+      ],
+      "title": "A 股股票在 Tushare 中通常帶有 `.SH` 或 `.________` 後綴。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP14.1"
+      ],
+      "answer": [
+        "dropna"
+      ],
+      "title": "量化策略的第一步始終是 __________。 ---"
+    }
+  ]
+}

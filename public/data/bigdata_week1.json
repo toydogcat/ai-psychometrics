@@ -1,0 +1,494 @@
+{
+  "courseId": "big-data",
+  "week": 1,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": "C",
+      "title": "下列哪一個 V 代表大數據中「數據生成速度極快，需即時處理」的特性？",
+      "options": {
+        "A": "Volume",
+        "B": "Variety",
+        "C": "Velocity",
+        "D": "Veracity"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": "B",
+      "title": "Hadoop 生態中，專門負責「分散式資源調度與管理」的組件是？",
+      "options": {
+        "A": "HDFS",
+        "B": "YARN",
+        "C": "MapReduce",
+        "D": "Hive"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": "B",
+      "title": "Spark 相比於 Hadoop MapReduce 運算速度大幅提升的最主要原因是？",
+      "options": {
+        "A": "代碼更短",
+        "B": "使用內存計算 (In-memory)",
+        "C": "硬碟更貴",
+        "D": "只支援 Python"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": "D",
+      "title": "下列哪種雲端服務模式讓開發者只需寫代碼而無需管伺服器維護？",
+      "options": {
+        "A": "IaaS",
+        "B": "PaaS",
+        "C": "SaaS",
+        "D": "Serverless"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": "B",
+      "title": "RDD (彈性分散式數據集) 是哪一個框架的核心抽象？",
+      "options": {
+        "A": "PyTorch",
+        "B": "Apache Spark",
+        "C": "MySQL",
+        "D": "Kafka"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": "B",
+      "title": "對於「非結構化數據」，下列哪一項是正確的例子？",
+      "options": {
+        "A": "銀行轉帳紀錄",
+        "B": "電子郵件本文",
+        "C": "Excel 銷售表",
+        "D": "身分證字號"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP1.3"
+      ],
+      "answer": "B",
+      "title": "數據生命週期管理 (DLM) 的最後一個階段通常是？",
+      "options": {
+        "A": "數據清理",
+        "B": "數據歸檔與銷毀",
+        "C": "數據標記",
+        "D": "特徵工程"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": "B",
+      "title": "在分散式系統中，為了防止單點故障 (Single Point of Failure)，HDFS 採用了什麼機制？",
+      "options": {
+        "A": "數據壓縮",
+        "B": "副本機制 (Replication)",
+        "C": "加密",
+        "D": "刪除"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP1.3"
+      ],
+      "answer": "B",
+      "title": "資料倉儲 (Data Warehouse) 與 資料湖 (Data Lake) 的主要區別在於資料湖可以儲存？",
+      "options": {
+        "A": "只有 SQL 資料",
+        "B": "原始且未經處理的多樣化資料",
+        "C": "只有圖表",
+        "D": "只有 0 與 1"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": "C",
+      "title": "MaaS (Model-as-a-Service) 通常被歸類為哪種雲端層級？",
+      "options": {
+        "A": "IaaS",
+        "B": "PaaS",
+        "C": "SaaS 或 API",
+        "D": "物理層"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP1.1",
+        "KP1.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於大數據 4V，下列描述正確的有？",
+      "options": {
+        "A": "Volume 僅指硬碟空間的大小。",
+        "B": "Variety 包含影片、圖像與傳感器數據。",
+        "C": "Veracity 關注數據的雜訊與可信度。",
+        "D": "Velocity 與實時推薦系統密切相關。"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "雲端 AI 平台（如 AWS, Azure, GCP）提供的組件通常包括？",
+      "options": {
+        "A": "分散式訓練集群。",
+        "B": "模型版本控制。",
+        "C": "資料標注工具。",
+        "D": "自動擴展的推理介面。"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "分散式計算面臨的典型挑戰包括？",
+      "options": {
+        "A": "節點間的網路延遲。",
+        "B": "數據一致性問題。",
+        "C": "負載平衡。",
+        "D": "軟體版權費。"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Spark 生態系中包含哪些組件？",
+      "options": {
+        "A": "Spark SQL",
+        "B": "Spark Streaming",
+        "C": "MLlib",
+        "D": "GraphX"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "數據品質 (Data Quality) 的評估維度包括？",
+      "options": {
+        "A": "完整性 (Completeness)",
+        "B": "精確性 (Accuracy)",
+        "C": "一致性 (Consistency)",
+        "D": "顏色美觀度"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP1.3"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "哪些場景適合將資料存儲在「冷存儲」(Cold Storage) 中？",
+      "options": {
+        "A": "五年前的財務稽核紀錄。",
+        "B": "需要每秒更新的股價數據。",
+        "C": "法律規定的備份數據。",
+        "D": "已結案的歷史專案原始圖檔。"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 Serverless AI，正確的有？",
+      "options": {
+        "A": "使用者按調用量付費。",
+        "B": "彈性極佳。",
+        "C": "適合事件驅動的任務。",
+        "D": "開發者需要維護底層作業系統。"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "導致大數據專案失敗的原因可能包含？",
+      "options": {
+        "A": "算力不足。",
+        "B": "數據雜訊過多。",
+        "C": "缺乏明確的商業目標。",
+        "D": "部門間的數據孤島。"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "HDFS 的特點包括？",
+      "options": {
+        "A": "高容錯。",
+        "B": "適合存儲大檔案。",
+        "C": "支援高頻率的隨機寫入。",
+        "D": "跑在廉價的通用硬體上。"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "中級 AI 工程師在架構規劃時應考慮？",
+      "options": {
+        "A": "技術選型的長遠性。",
+        "B": "預算與成本控制。",
+        "C": "資料安全與隱私合規。",
+        "D": "雲端服務商的服務等級協議 (SLA)。"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": [
+        "Variety"
+      ],
+      "title": "大數據 4V 中的 __________ 指的是數據的多樣性。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": [
+        "MLlib"
+      ],
+      "title": "Spark 中用於實現分散式機器學習的庫名稱是 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": [
+        "3"
+      ],
+      "title": "HDFS 為了保證數據不丟失，預設會保存 __________ 個副本。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": [
+        "邊緣 (",
+        "Edge)"
+      ],
+      "title": "__________ 運算是指將運算盡可能移近數據產生源（如工廠感測器）的模式。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP1.3"
+      ],
+      "answer": [
+        "採集 (",
+        "Ingestion)"
+      ],
+      "title": "資料生命週期中的 __________ 階段負責從多個數據源提取資訊。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": [
+        "MapReduce"
+      ],
+      "title": "Hadoop 原始的運算模型稱為 __________，包含兩個階段。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": [
+        "IaaS"
+      ],
+      "title": "__________ 是雲端運算中最底層的架構服務，提供虛擬機與網路。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": [
+        "1024"
+      ],
+      "title": "PB 等級的數據量大約是 __________ 個 TB。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": [
+        "記憶體"
+      ],
+      "title": "Spark 的運算基礎是將數據載入到 __________ (Memory) 中執行。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP1.3",
+        "KP1.5"
+      ],
+      "answer": [
+        "銷毀 (",
+        "Disposal)"
+      ],
+      "title": "符合隱私合規的數據處理方式中，刪除數據的動作常在 __________ 階段執行。 ---"
+    }
+  ]
+}

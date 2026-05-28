@@ -1,0 +1,426 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 11,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP 11.2"
+      ],
+      "answer": null,
+      "title": "在 Python 3 中，查看一個類別 MRO 順序的方法是？",
+      "options": {
+        "A": "`obj.mro()`",
+        "B": "`ClassName.__mro__`",
+        "C": "`ClassName.path()`",
+        "D": "`help(ClassName)`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP 11.3"
+      ],
+      "answer": null,
+      "title": "關於 `super()`，下列敘述何者正確？",
+      "options": {
+        "A": "它總是指向父類別",
+        "B": "它指向 MRO 列表中的下一個類別",
+        "C": "它只能在 `__init__` 中使用",
+        "D": "呼叫 `super()` 不需要括號"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP 11.5"
+      ],
+      "answer": null,
+      "title": "哪一個裝飾器用於定義不需要存取實體或類別屬性的方法？",
+      "options": {
+        "A": "`@classmethod`",
+        "B": "`@staticmethod`",
+        "C": "`@property`",
+        "D": "`@abstractmethod`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP 11.2"
+      ],
+      "answer": null,
+      "title": "若 `class C(A, B): pass`，且 A, B 都有 `f()`，呼叫 `C().f()` 時優先呼叫哪一個？",
+      "options": {
+        "A": "A 的 `f()`",
+        "B": "B 的 `f()`",
+        "C": "報錯",
+        "D": "兩者同時呼叫"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP 11.4"
+      ],
+      "answer": null,
+      "title": "鴨子型別 (Duck Typing) 的核心思想是？",
+      "options": {
+        "A": "強型別檢查",
+        "B": "關注物件的行為而非其類別",
+        "C": "必須繼承自特定基類",
+        "D": "鴨子物件優先權最高"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP 11.5"
+      ],
+      "answer": null,
+      "title": "類別方法 (`@classmethod`) 的第一個參數約定俗稱為？",
+      "options": {
+        "A": "self",
+        "B": "this",
+        "C": "cls",
+        "D": "base"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "如果子類別想要完全取代父類別的方法，應該怎麼做？",
+      "options": {
+        "A": "使用不同的方法名",
+        "B": "在子類別定義同名方法且不呼叫 `super()`",
+        "C": "刪除父類別的方法",
+        "D": "使用 `global` 關鍵字"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "哪一個內建函式可以檢查一個類別是否為另一個類別的子類別？",
+      "options": {
+        "A": "`isinstance()`",
+        "B": "`issubclass()`",
+        "C": "`hasattr()`",
+        "D": "`type()`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP 11.3"
+      ],
+      "answer": null,
+      "title": "在多重繼承中，若出現菱形繼承 (Diamond Inheritance)，Python 如何避免父類別被重複初始化？",
+      "options": {
+        "A": "使用 `super()`",
+        "B": "禁制多重繼承",
+        "C": "自動忽略重複項",
+        "D": "手動刪除冗餘路徑"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP 11.5"
+      ],
+      "answer": null,
+      "title": "靜態方法的主要用途是？",
+      "options": {
+        "A": "修改類別狀態",
+        "B": "實現工廠模式",
+        "C": "將邏輯上屬於該類別但不需要存取狀態的函式進行分組",
+        "D": "提高程式執行速度"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "繼承的主要目的是？",
+      "options": {
+        "A": "程式碼重用",
+        "B": "建立層級關係",
+        "C": "增加程式碼複雜度",
+        "D": "減少重複定義"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 11.5"
+      ],
+      "answer": null,
+      "title": "關於 `classmethod` 與 `staticmethod` 的差異，哪些正確？",
+      "options": {
+        "A": "`classmethod` 可以存取類別變數",
+        "B": "`staticmethod` 不能存取實體變數",
+        "C": "`classmethod` 常被用來實作 Factory Methods",
+        "D": "兩者都可以透過實例或類別名呼叫"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 11.2"
+      ],
+      "answer": null,
+      "title": "關於 MRO，哪些描述是正確的？",
+      "options": {
+        "A": "它是 Method Resolution Order 的縮寫",
+        "B": "它保證了搜尋的單調性",
+        "C": "Python 2 與 Python 3 的 MRO 演算法完全相同",
+        "D": "它是線性化的搜尋列表"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 11.4"
+      ],
+      "answer": null,
+      "title": "下列哪些是「多型」的例子？",
+      "options": {
+        "A": "不同物件都有 `draw()` 方法，呼叫時呈現不同圖形",
+        "B": "`+` 號可以用於數字加法與字串拼接",
+        "C": "同一個函式可以接收不同類型的物件並執行其方法",
+        "D": "一個類別繼承多個父類別"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 11.3"
+      ],
+      "answer": null,
+      "title": "使用 `super()` 的優點包括？",
+      "options": {
+        "A": "避免硬編碼父類別名稱",
+        "B": "支援協同多重繼承",
+        "C": "執行效率比直接呼叫類別名快",
+        "D": "簡化程式碼維護"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "哪些情況下應該避免使用多重繼承？",
+      "options": {
+        "A": "類別關係過於複雜",
+        "B": "會產生意義不明的命名衝突",
+        "C": "僅為了獲取一個小功能",
+        "D": "所有 OOP 專案都應該全面禁止多重繼承"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 11.4"
+      ],
+      "answer": null,
+      "title": "關於 Duck Typing，哪些敘述正確？",
+      "options": {
+        "A": "它增加了程式碼的靈活性",
+        "B": "它可能會導致執行時期錯誤（如果方法不存在）",
+        "C": "它與 Java 的介面 (Interface) 機制完全相同",
+        "D": "它是動態語言的特徵"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "若類別 B 繼承自 A，則？",
+      "options": {
+        "A": "B 擁有 A 的所有公有方法",
+        "B": "`issubclass(B, A)` 為 True",
+        "C": "`isinstance(B(), A)` 為 True",
+        "D": "B 必須實作 A 的所有方法"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 11.4"
+      ],
+      "answer": null,
+      "title": "在 Python 中，哪些可以視為「可呼叫物件」(Callable)？",
+      "options": {
+        "A": "函式",
+        "B": "定義了 `__call__` 的類別實例",
+        "C": "類別本身",
+        "D": "字串"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "關於抽象基類 (ABC)，哪些是正確的？（預習題）",
+      "options": {
+        "A": "它們不能被實例化",
+        "B": "它們用於定義介面規範",
+        "C": "使用 `abc` 模組實作",
+        "D": "旨在強制子類別實作特定方法"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 11.2"
+      ],
+      "answer": null,
+      "title": "Python 3 採用的 MRO 演算法名稱是 __________。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 11.3"
+      ],
+      "answer": null,
+      "title": "想要在子類別中呼叫父類別的 `__init__`，標準語法是 `super().__________(...)`。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 11.5"
+      ],
+      "answer": null,
+      "title": "使用裝飾器 __________ 建立的方法，其第一個參數通常命名為 `cls`。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 11.4"
+      ],
+      "answer": null,
+      "title": "在多型中，不同物件對同一訊息做出不同響應的能力稱為 __________。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "__________ 繼承是指一個子類別同時擁有多個父類別。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "如果想禁止某個方法在子類別被覆蓋，Python 原生 __________ (支援/不支援) 此關鍵字（如 Java 的 final）。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "檢查 `a` 是否為 `list` 型別的推薦方法是 `isinstance(a, __________)`。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "混入類別 (Mixin) 通常旨在提供 __________ (單一/全部) 功能，且不建議單獨實例化。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 11.2"
+      ],
+      "answer": null,
+      "title": "在 MRO 列表中，最末端的類別永遠是 __________。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 11.1"
+      ],
+      "answer": null,
+      "title": "如果子類別定義了與父類別同名的方法，這稱為方法 __________ (Overriding)。 ---"
+    }
+  ]
+}

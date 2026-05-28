@@ -1,0 +1,487 @@
+{
+  "courseId": "python-office-quant",
+  "week": 10,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP10.5"
+      ],
+      "answer": "B",
+      "title": "對於一個形狀為 (3, 4) 的二維數組，執行 `arr.sum(axis=0)` 後，結果的形狀是？",
+      "options": {
+        "A": "(3,)",
+        "B": "(4,)",
+        "C": "(12,)",
+        "D": "(3, 4)"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP10.2"
+      ],
+      "answer": "C",
+      "title": "下列哪個方法可以用來將多維數組完全展開為一維數組？",
+      "options": {
+        "A": "`reshape(-1)`",
+        "B": "`flatten()`",
+        "C": "`ravel()`",
+        "D": "以上皆是"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": "A",
+      "title": "NumPy 中創建一個 0 到 10（不含 10）、步長為 2 的數組，語法是？",
+      "options": {
+        "A": "`np.arange(0, 10, 2)`",
+        "B": "`np.linspace(0, 10, 2)`",
+        "C": "`np.array(0, 10, 2)`",
+        "D": "`np.range(10, step=2)`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP10.3"
+      ],
+      "answer": "D",
+      "title": "兩個形狀分別為 (3, 1) 和 (1, 4) 的數組進行加法運算，結果的形狀是？",
+      "options": {
+        "A": "無法運算",
+        "B": "(3, 4)",
+        "C": "(3, 1)",
+        "D": "(1, 4)"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP10.4"
+      ],
+      "answer": "C",
+      "title": "矩陣乘法（點積）在 Python 3.5+ 中可以使用哪個運算符？",
+      "options": {
+        "A": "`*`",
+        "B": "`**`",
+        "C": "`@`",
+        "D": "`&`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": "D",
+      "title": "`arr.dtype` 屬性的作用是？",
+      "options": {
+        "A": "查看數組維度",
+        "B": "查看數組元素類型",
+        "C": "查看數組總個數",
+        "D": "修改數組名稱"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": "B",
+      "title": "下列哪種方式創建的是單位矩陣？",
+      "options": {
+        "A": "`np.ones((3, 3))`",
+        "B": "`np.eye(3)`",
+        "C": "`np.zeros((3, 3))`",
+        "D": "`np.empty((3, 3))`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": "C",
+      "title": "`np.linspace(0, 1, 5)` 產生的數組包含幾個元素？",
+      "options": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "無數個"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP10.5"
+      ],
+      "answer": "A",
+      "title": "如何獲取數組中最大值的「索引」位置？",
+      "options": {
+        "A": "`max()`",
+        "B": "`argmax()`",
+        "C": "`where_max()`",
+        "D": "`top()`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP10.2"
+      ],
+      "answer": "B",
+      "title": "`arr.T` 的作用等同於？",
+      "options": {
+        "A": "`arr.transpose()`",
+        "B": "`arr.reshape()`",
+        "C": "`arr.inverse()`",
+        "D": "`arr.copy()`"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP10.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "NumPy 廣播機制在哪些情況下會生效？",
+      "options": {
+        "A": "兩個數組維度完全相同",
+        "B": "其中一個數組的維度為 1",
+        "C": "兩個數組維度數量不等，但後緣維度長度相符",
+        "D": "任何形狀的兩個數組都可以廣播"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 `ndarray` 的屬性，正確的有？",
+      "options": {
+        "A": "`ndim`: 維度數量",
+        "B": "`shape`: 各維度的長度",
+        "C": "`size`: 元素總數",
+        "D": "`itemsize`: 每個元素佔用的字節數"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP10.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些函數可以用來組合數組？",
+      "options": {
+        "A": "`np.vstack()`",
+        "B": "`np.hstack()`",
+        "C": "`np.concatenate()`",
+        "D": "`np.append()`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於布林索引，正確的有？",
+      "options": {
+        "A": "可以使用 `&`, `|`, `~` 運算符",
+        "B": "索引數組必須是布林類型",
+        "C": "返回的是符合條件的原數組視圖",
+        "D": "返回的是符合條件的數據拷貝"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP10.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "NumPy 常用的統計聚合函數包括？",
+      "options": {
+        "A": "`mean()`",
+        "B": "`median()`",
+        "C": "`std()`",
+        "D": "`var()`"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP10.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些方法會改變數組本身的形狀？",
+      "options": {
+        "A": "`reshape()` (返回新數組)",
+        "B": "`resize()`",
+        "C": "`transpose()` (返回視圖)",
+        "D": "修改 `.shape` 屬性"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 NumPy 的數據類型 (dtype)，正確的有？",
+      "options": {
+        "A": "支援 `int64`",
+        "B": "支援 `float32`",
+        "C": "支援 `complex` (複數)",
+        "D": "一個數組內可以混用不同類型"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些操作屬於「通用函數 (ufunc)」？",
+      "options": {
+        "A": "`np.sin()`",
+        "B": "`np.exp()`",
+        "C": "`np.add()`",
+        "D": "`np.log()`"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "關於 `np.nan` (Not a Number)，正確的有？",
+      "options": {
+        "A": "它的類型是 float",
+        "B": "`nan == nan` 結果為 False",
+        "C": "常用於表示缺失數據",
+        "D": "`np.isnan()` 可以檢測它"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "使用 NumPy 相比 Python List 的優勢有？",
+      "options": {
+        "A": "更省內存",
+        "B": "運算速度更快",
+        "C": "代碼更簡潔",
+        "D": "支援更豐富的數學函數"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP10.4"
+      ],
+      "answer": [
+        "numpy"
+      ],
+      "title": "在 NumPy 中，計算兩個數組 `A` 與 `B` 的矩陣內積應使用 `np.________(A, B)`。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "array"
+      ],
+      "title": "獲取數組各維度長度的屬性是 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "ndim"
+      ],
+      "title": "`np.zeros((2, 3))` 創建的是一個 __________ 行 __________ 列的零矩陣。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP10.5"
+      ],
+      "answer": [
+        "shape"
+      ],
+      "title": "計算數組標準差的函數是 `np.________()`。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP10.5"
+      ],
+      "answer": [
+        "dtype"
+      ],
+      "title": "要將數組中的 `nan` 替換為 0，可以使用 `np.________(arr, 0)`。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP10.2"
+      ],
+      "answer": [
+        "arange"
+      ],
+      "title": "數組轉置的快捷屬性是 __________。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "reshape"
+      ],
+      "title": "`np.arange(1, 5)` 產生的數組內容是 __________。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "dot"
+      ],
+      "title": "若要獲取符合條件 `arr > 5` 的所有元素，代碼為 `arr[________]`。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP10.2"
+      ],
+      "answer": [
+        "mean"
+      ],
+      "title": "合併數組時，`axis=0` 代表 __________ 方向的合併。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP10.1"
+      ],
+      "answer": [
+        "std"
+      ],
+      "title": "NumPy 數組要求所有元素的 __________ 必須相同。 ---"
+    }
+  ]
+}

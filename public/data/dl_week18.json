@@ -1,224 +1,2047 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 18,
-  "title": "深度學習第 18 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP18.1": "理論基礎",
-    "KP18.2": "架構原理",
-    "KP18.3": "PyTorch 實作",
-    "KP18.4": "模型調優",
-    "KP18.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W18-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP18.2",
-      "title": "這是第 18 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.18.1"
+      ],
+      "answer": "C",
+      "title": "1969 年導致 AI 第一個寒冬的著作《感知器》由誰編寫？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "辛頓",
+        "B": "明斯基",
+        "C": "李飛飛",
+        "D": "楊立昆"
+      }
     },
     {
-      "id": "DL-W18-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP18.3",
-      "title": "這是第 18 週的第 2 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP4.18.1"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "反向傳播算法（Backprop）的核心數學工具是？",
+      "options": {
+        "A": "卷積",
+        "B": "鏈式法則",
+        "C": "傅立葉變換",
+        "D": "歐拉公式"
+      }
     },
     {
-      "id": "DL-W18-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP18.4",
-      "title": "這是第 18 週的第 3 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.18.1"
+      ],
+      "answer": "D",
+      "title": "下列哪種激發函數解決了 ReLU 負半軸神經元死亡的問題？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Sigmoid",
+        "B": "Tanh",
+        "C": "Leaky ReLU",
+        "D": "Step"
+      }
     },
     {
-      "id": "DL-W18-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP18.5",
-      "title": "這是第 18 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.18.1"
+      ],
+      "answer": "B",
+      "title": "PyTorch 中將計算圖歷史清零的方法是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "`.clear()`",
+        "B": "`.zero_grad()`",
+        "C": "`.reset()`",
+        "D": "`.stop()`"
+      }
     },
     {
-      "id": "DL-W18-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP18.1",
-      "title": "這是第 18 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.18.1"
+      ],
+      "answer": "C",
+      "title": "CNN 的哪一機制大幅減少了影像處理中的參數？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "全連接",
+        "B": "權重共享",
+        "C": "殘差連接",
+        "D": "激活函數"
+      }
     },
     {
-      "id": "DL-W18-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP18.2",
-      "title": "這是第 18 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.18.1"
+      ],
+      "answer": "B",
+      "title": "2012 年 AlexNet 獲勝的三大關鍵：GPU、ImageNet 以及？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "LSTM",
+        "B": "ReLU",
+        "C": "Transformer",
+        "D": "Word2Vec"
+      }
     },
     {
-      "id": "DL-W18-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP18.3",
-      "title": "這是第 18 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.18.1"
+      ],
+      "answer": "D",
+      "title": "遷移學習中，凍結卷積基座只練分類層，這適合？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "數據量極大",
+        "B": "數據量極小且相似",
+        "C": "數據完全不同",
+        "D": "不需要算力"
+      }
     },
     {
-      "id": "DL-W18-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP18.4",
-      "title": "這是第 18 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.18.1"
+      ],
+      "answer": "C",
+      "title": "YOLO 算法的全稱中，最後一個 O 代表？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Only",
+        "B": "Once",
+        "C": "Object",
+        "D": "Optimization"
+      }
     },
     {
-      "id": "DL-W18-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP18.5",
-      "title": "這是第 18 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP4.18.1"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "RNN 處理長序列時最大的數學困難是？",
+      "options": {
+        "A": "內存不足",
+        "B": "梯度消失/爆炸",
+        "C": "維度災難",
+        "D": "數據過大"
+      }
     },
     {
-      "id": "DL-W18-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP18.1",
-      "title": "這是第 18 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP4.18.1"
+      ],
+      "answer": "D",
+      "title": "LSTM 中負責決定「保留哪些舊資訊」的門是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "遺忘門",
+        "B": "輸入門",
+        "C": "輸出門",
+        "D": "更新門"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP4.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Word2Vec 中透過上下文預測中心詞的模式是？",
+      "options": {
+        "A": "Skip-gram",
+        "B": "CBOW",
+        "C": "CNN",
+        "D": "RNN"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP4.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Attention 機制中，$Q$ 乘以 $K$ 的轉置後通常要除以？",
+      "options": {
+        "A": "$\\sqrt{d_k}$",
+        "B": "100",
+        "C": "步長",
+        "D": "類別數"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP4.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Transformer 架構中，編碼器與解碼器共有的核心是？",
+      "options": {
+        "A": "卷積",
+        "B": "多頭自注意力",
+        "C": "循環連接",
+        "D": "專家規則"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP4.18.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "BERT 模型的預訓練任務之一是預測？",
+      "options": {
+        "A": "股票價格",
+        "B": "被掩蓋的單詞 (MLM)",
+        "C": "圖像類別",
+        "D": "下一個詞"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP4.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "GPT 模型家族的基礎架構是 Transformer 的？",
+      "options": {
+        "A": "Encoder",
+        "B": "Decoder",
+        "C": "Encoder-Decoder",
+        "D": "以上皆非"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP4.18.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "RLHF 旨在讓 LLM 的輸出與什麼「對齊」？",
+      "options": {
+        "A": "電腦性能",
+        "B": "人類價值觀與偏好",
+        "C": "數學邏輯",
+        "D": "程式碼語法"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP4.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "RAG 技術解決了 LLM 的哪項痛點？",
+      "options": {
+        "A": "訓練太慢",
+        "B": "知識截斷與事實幻覺",
+        "C": "參數太少",
+        "D": "無法處理英文"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP4.18.2"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "提示工程中，「讓模型一步步思考」的技巧叫？",
+      "options": {
+        "A": "RAG",
+        "B": "CoT",
+        "C": "Few-shot",
+        "D": "Zero-shot"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP4.18.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "萬有逼近定理說明幾層隱藏層的神經網路就能擬合複雜函數？",
+      "options": {
+        "A": "1 層",
+        "B": "至少 10 層",
+        "C": "至少 100 層",
+        "D": "無窮多層"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP4.18.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪一個損失函數最適合多分類任務？",
+      "options": {
+        "A": "MSE",
+        "B": "Cross-Entropy",
+        "C": "L1 Loss",
+        "D": "MAE"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "感知器"
+      ],
+      "title": "PyTorch 中 `requires_grad=True` 代表？ (A) 張量不可變 (B) 需要計算並儲存梯度 (C) 數據加密 (D) 移至 GPU"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "卷積"
+      ],
+      "title": "卷積核尺寸通常為奇數，是因為？ (A) 算得快 (B) 有中心像素點方便定位 (C) 顯存佔用低 (D) 隨機選擇"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "池化"
+      ],
+      "title": "ResNet 的關鍵模塊名稱是？ (A) Inception (B) Residual Block (C) Dense Block (D) LSTM Block"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "ResNet"
+      ],
+      "title": "ImageNet 競賽 ILSVRC 主要評估模型的？ (A) Top-5 錯誤率 (B) 訓練時間 (C) 代碼長度 (D) 內存佔用"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "RNN"
+      ],
+      "title": "YOLO 輸出結果中的置信度 (Confidence) 代表？ (A) 顏色亮度 (B) 物體存在的機率與框的準確度 (C) 運算速度 (D) 學習率"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "LSTM"
+      ],
+      "title": "語義分割中 U-Net 的主要特色是？ (A) 只有編碼器 (B) 只有解碼器 (C) 對稱結構與跳躍連接 (D) 隨機森林"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "Transformer"
+      ],
+      "title": "GRU 比起 LSTM 減少了？ (A) 計算精度 (B) 一個門（重置門與更新門） (C) 特徵維度 (D) 數據量"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "BERT"
+      ],
+      "title": "機器翻譯中，標記 `<SOS>` 通常放在？ (A) 句首 (B) 句尾 (C) 中間 (D) 隨機位置"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "GPT"
+      ],
+      "title": "餘弦相似度的取值範圍是？ (A) [0, 1] (B) [-1, 1] (C) [0, 100] (D) 無限制"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "RAG"
+      ],
+      "title": "Transformer 論文標題是？ (A) Deep Learning (B) Attention is All You Need (C) ImageNet (D) BERT"
+    },
+    {
+      "id": "Q31",
+      "num": 31,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BERT 處理文本時將單詞拆分為更小單元的技術叫？ (A) One-hot (B) Word2Vec (C) Tokenization (Subwords) (D) Pooling"
+    },
+    {
+      "id": "Q32",
+      "num": 32,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GPT-2 證明了模型具備強大的 __________ 學習能力。 (A) 監督式 (B) 零樣本 (Zero-shot) (C) 圖像 (D) 聲音"
+    },
+    {
+      "id": "Q33",
+      "num": 33,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "當 AI 自信地給出虛假事實，這被稱為？ (A) 過擬合 (B) 幻覺 (Hallucination) (C) 收斂 (D) 梯度爆炸"
+    },
+    {
+      "id": "Q34",
+      "num": 34,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "下列哪種 AI 安全攻擊是通過 Prompt 引導模型違規？ (A) 注入攻擊 (B) 越獄 (Jailbreak) (C) DDOS (D) 釣魚"
+    },
+    {
+      "id": "Q35",
+      "num": 35,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "聯結主義 AI 認為智能來自於？ (A) 符號推演 (B) 神經元間的連接權重 (C) 手寫規則 (D) 存儲空間"
+    },
+    {
+      "id": "Q36",
+      "num": 36,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "梯度下降優化中，更新步伐由什麼控制？ (A) 偏置 (B) 權重 (C) 學習率 (D) 數據量"
+    },
+    {
+      "id": "Q37",
+      "num": 37,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Tanh 函數的輸出中心位於？ (A) 0.5 (B) 0 (C) 1 (D) -1"
+    },
+    {
+      "id": "Q38",
+      "num": 38,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 構建模型的類別必須繼承自？ (A) `nn.Layer` (B) `nn.Module` (C) `nn.Base` (D) `nn.Tensor`"
+    },
+    {
+      "id": "Q39",
+      "num": 39,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "最大池化 (Max Pooling) 的主要好處是？ (A) 增加解析度 (B) 提取顯著特徵並降維 (C) 減少層數 (D) 取代卷積"
+    },
+    {
+      "id": "Q40",
+      "num": 40,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "VGG 網路統一使用什麼尺寸的卷積核？ (A) 1x1 (B) 3x3 (C) 5x5 (D) 7x7"
+    },
+    {
+      "id": "Q41",
+      "num": 41,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "數據增強是為了緩解？ (A) 欠擬合 (B) 過擬合 (C) 計算慢 (D) 數據丟失"
+    },
+    {
+      "id": "Q42",
+      "num": 42,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "mAP 是衡量什麼任務的主流指標？ (A) 分類 (B) 目標檢測 (C) 降維 (D) 聚類"
+    },
+    {
+      "id": "Q43",
+      "num": 43,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RNN 的維度 `(seq_len, batch, input_size)` 中，`batch` 通常放在？ (A) 第一維或第二維 (B) 隨機 (C) 最後一維 (D) 不存在"
+    },
+    {
+      "id": "Q44",
+      "num": 44,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "束搜索 (Beam Search) 用於？ (A) 訓練優化 (B) 推理生成 (C) 數據清洗 (D) 卷積計算"
+    },
+    {
+      "id": "Q45",
+      "num": 45,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "FastText 相比 Word2Vec 的優點是？ (A) 速度慢 (B) 處理子詞，解決 OOV (C) 只有一層 (D) 不需要語料"
+    },
+    {
+      "id": "Q46",
+      "num": 46,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Transformer 中的 Positional Encoding 是為了？ (A) 增加特徵 (B) 補足缺乏語序資訊的缺陷 (C) 降低複雜度 (D) 壓縮數據"
+    },
+    {
+      "id": "Q47",
+      "num": 47,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "HuggingFace 的模型載入方法是？ (A) `load_model()` (B) `from_pretrained()` (C) `get_weights()` (D) `download()`"
+    },
+    {
+      "id": "Q48",
+      "num": 48,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RLHF 中 PPO 算法的作用是？ (A) 數據標註 (B) 強化學習優化策略 (C) 圖像分割 (D) 詞嵌入"
+    },
+    {
+      "id": "Q49",
+      "num": 49,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AGI 指的是？ (A) 人工通用智能 (B) 人工繪圖 (C) 人工全球索引 (D) 人工分組"
+    },
+    {
+      "id": "Q50",
+      "num": 50,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "CNN 捕捉到的淺層特徵通常是？ (A) 貓臉 (B) 邊緣與顏色點 (C) 複雜場景 (D) 文本邏輯"
+    },
+    {
+      "id": "Q51",
+      "num": 51,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "深度學習的三大支柱？ (A) 大數據 (B) 強算力 (C) 優秀架構 (D) 專家系統"
+    },
+    {
+      "id": "Q52",
+      "num": 52,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "反向傳播涉及的步驟？ (A) 前向計算 (B) 損失評估 (C) 後向求導 (D) 參數更新"
+    },
+    {
+      "id": "Q53",
+      "num": 53,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "非線性激發函數的必要性？ (A) 增加模型容量 (B) 防止多層退化 (C) 擬合非線性數據 (D) 節省算力"
+    },
+    {
+      "id": "Q54",
+      "num": 54,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch Tensor 的操作？ (A) `view` (B) `to` (C) `grad` (D) `numpy`"
+    },
+    {
+      "id": "Q55",
+      "num": 55,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "CNN 的組成層？ (A) Conv (B) Pooling (C) Dense (D) Dropout"
+    },
+    {
+      "id": "Q56",
+      "num": 56,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "經典網絡架構及其作者？ (A) ResNet-何愷明 (B) LeNet-楊立昆 (C) AlexNet-辛頓團隊 (D) Transformer-Google"
+    },
+    {
+      "id": "Q57",
+      "num": 57,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "遷移學習的適用情境？ (A) 數據少 (B) 時間緊 (C) 硬體差 (D) 需要極高精度"
+    },
+    {
+      "id": "Q58",
+      "num": 58,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "YOLO 系列的版本特點？ (A) v1-開創一階段 (B) v3-多尺度 (C) v8-全能工具 (D) v10-無 NMS 訓練"
+    },
+    {
+      "id": "Q59",
+      "num": 59,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "循環神經網路的問題？ (A) 梯度消失 (B) 長依賴遺忘 (C) 訓練慢 (D) 參數共享"
+    },
+    {
+      "id": "Q60",
+      "num": 60,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "LSTM 的三個門？ (A) 遺忘門 (B) 輸入門 (C) 輸出門 (D) 更新門"
+    },
+    {
+      "id": "Q61",
+      "num": 61,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "詞嵌入的優點？ (A) 稠密 (B) 包含語義關係 (C) 降維 (D) 完全精確"
+    },
+    {
+      "id": "Q62",
+      "num": 62,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Attention 的要素？ (A) Q (B) K (C) V (D) T"
+    },
+    {
+      "id": "Q63",
+      "num": 63,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Transformer Encoder 組件？ (A) Self-Attention (B) FFN (C) LayerNorm (D) MaxPool"
+    },
+    {
+      "id": "Q64",
+      "num": 64,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BERT 的預訓練目標？ (A) MLM (B) NSP (C) 下一個詞預測 (D) 圖像分類"
+    },
+    {
+      "id": "Q65",
+      "num": 65,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GPT 家族的里程碑？ (A) GPT-2 零樣本 (B) GPT-3 湧現 (C) ChatGPT 聊天 (D) BERT 理解"
+    },
+    {
+      "id": "Q66",
+      "num": 66,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RLHF 的階段？ (A) SFT (B) RM (C) PPO (D) CNN"
+    },
+    {
+      "id": "Q67",
+      "num": 67,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Prompt 的技巧？ (A) CoT (B) Few-shot (C) Role-play (D) RAG"
+    },
+    {
+      "id": "Q68",
+      "num": 68,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 倫理考量？ (A) 公平性 (B) 安全性 (C) 隱私性 (D) 創造力"
+    },
+    {
+      "id": "Q69",
+      "num": 69,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "解決過擬合的方法？ (A) Dropout (B) 正則化 (C) 數據增強 (D) 增加層數"
+    },
+    {
+      "id": "Q70",
+      "num": 70,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "目標檢測的難點？ (A) 小物體 (B) 遮擋 (C) 背景干擾 (D) 參數量"
+    },
+    {
+      "id": "Q71",
+      "num": 71,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "激活函數的選擇建議？ (A) 隱藏層用 ReLU (B) 輸出層分類用 Softmax (C) 輸出層二分類用 Sigmoid (D) 全部用 Sigmoid"
+    },
+    {
+      "id": "Q72",
+      "num": 72,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "權重初始化的重要性？ (A) 打破對稱性 (B) 預防梯度問題 (C) 加速收斂 (D) 取代反向傳播"
+    },
+    {
+      "id": "Q73",
+      "num": 73,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "1x1 卷積的功能？ (A) 通道降維 (B) 增加非線性 (C) 控制參數 (D) 放大圖像"
+    },
+    {
+      "id": "Q74",
+      "num": 74,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "池化層的參數？ (A) window size (B) stride (C) padding (D) dilation"
+    },
+    {
+      "id": "Q75",
+      "num": 75,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ResNet Block 的變體？ (A) Basic (B) Bottleneck (C) Inception (D) Dense"
+    },
+    {
+      "id": "Q76",
+      "num": 76,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "數據增強技術？ (A) 裁切 (B) 顏色抖動 (C) 混合樣本 (D) 刪除樣本"
+    },
+    {
+      "id": "Q77",
+      "num": 77,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "一階段與兩階段檢測器？ (A) YOLO (B) SSD (C) Faster R-CNN (D) VGG"
+    },
+    {
+      "id": "Q78",
+      "num": 78,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "U-Net 的結構特點？ (A) 收縮路徑 (B) 擴張路徑 (C) 跳躍連接 (D) 門控單元"
+    },
+    {
+      "id": "Q79",
+      "num": 79,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "梯度爆炸的應對？ (A) 梯度裁剪 (B) 權重衰減 (C) Batch Norm (D) 學習率調小"
+    },
+    {
+      "id": "Q80",
+      "num": 80,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RNN 任務類型？ (A) 一對一 (B) 一對多 (C) 多對一 (D) 多對多"
+    },
+    {
+      "id": "Q81",
+      "num": 81,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "分布式假說的核心？ (A) 語境決定意義 (B) 統計鄰近性 (C) 字典定義 (D) 隨機分佈"
+    },
+    {
+      "id": "Q82",
+      "num": 82,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "多頭注意力的意義？ (A) 並行特徵提取 (B) 多個視角理解 (C) 減少顯存 (D) 取代 RNN"
+    },
+    {
+      "id": "Q83",
+      "num": 83,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Transformer Decoder 獨有的？ (A) Masked Self-Attention (B) Cross Attention (C) 卷積 (D) 殘差"
+    },
+    {
+      "id": "Q84",
+      "num": 84,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "NLP 的子任務？ (A) 分類 (B) 摘要 (C) 翻譯 (D) 命名實體識別"
+    },
+    {
+      "id": "Q85",
+      "num": 85,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "大模型的挑戰？ (A) 算力昂貴 (B) 環境成本 (C) 社會不公 (D) 代碼太長"
+    },
+    {
+      "id": "Q86",
+      "num": 86,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "負責任 AI 準則？ (A) 透明 (B) 可解釋 (C) 有責 (D) 閉源"
+    },
+    {
+      "id": "Q87",
+      "num": 87,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch `Dataset` 需實現？ (A) `__len__` (B) `__getitem__` (C) `__init__` (D) `forward`"
+    },
+    {
+      "id": "Q88",
+      "num": 88,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "卷積後的維度受哪些影響？ (A) 輸入尺寸 (B) 核尺寸 (C) Stride (D) Padding"
+    },
+    {
+      "id": "Q89",
+      "num": 89,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Batch Norm 的好處？ (A) 穩定數據分佈 (B) 允許大學習率 (C) 預防過擬合 (D) 減少層數"
+    },
+    {
+      "id": "Q90",
+      "num": 90,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "下游任務微調的設定？ (A) 載入權重 (B) 設置低學習率 (C) 修改頂層 (D) 增加 GPU"
+    },
+    {
+      "id": "Q91",
+      "num": 91,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "目標檢測的評估指標？ (A) mAP (B) FPS (C) IoU (D) MAE"
+    },
+    {
+      "id": "Q92",
+      "num": 92,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "圖像分割與目標檢測的交集？ (A) 實例分割 (B) 特徵提取 (C) 框回歸 (D) 語音合成"
+    },
+    {
+      "id": "Q93",
+      "num": 93,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "序列數據包含？ (A) 音頻 (B) 心電圖 (C) 股市走勢 (D) 產品目錄"
+    },
+    {
+      "id": "Q94",
+      "num": 94,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "注意力計算的變體？ (A) 點積 (B) 加法 (C) 縮放點積 (D) 隨機"
+    },
+    {
+      "id": "Q95",
+      "num": 95,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BERT 微調的場景？ (A) 影評情感 (B) 垃圾郵件 (C) 法律文檔 (D) 圖像生成 (不適合)"
+    },
+    {
+      "id": "Q96",
+      "num": 96,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GPT 的湧現能力？ (A) 數學 (B) 翻譯 (C) 代碼 (D) 手工"
+    },
+    {
+      "id": "Q97",
+      "num": 97,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "提示工程的重要性？ (A) 降低開發門檻 (B) 快速原型 (C) 精準控制 AI (D) 取代所有工程師"
+    },
+    {
+      "id": "Q98",
+      "num": 98,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "向量資料庫的成員？ (A) Pinecone (B) Milvus (C) Chroma (D) MySQL"
+    },
+    {
+      "id": "Q99",
+      "num": 99,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 安全防護？ (A) 指令隔離 (B) 輸過過濾 (C) 權限控制 (D) 全部禁言"
+    },
+    {
+      "id": "Q100",
+      "num": 100,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "深度學習的未來？ (A) 多模態 (B) 推理成本降低 (C) 邊緣端運行 (D) 符號主義回歸"
+    },
+    {
+      "id": "Q101",
+      "num": 101,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "機器學習三要素：模型、資料與 __________。"
+    },
+    {
+      "id": "Q102",
+      "num": 102,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "感知器學習法則的核心是根據 __________ 調整權重。"
+    },
+    {
+      "id": "Q103",
+      "num": 103,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "非線性激發函數解決了神經網路 __________ 退化的問題。"
+    },
+    {
+      "id": "Q104",
+      "num": 104,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "反向傳播計算的是損失函數對 __________ 的導數。"
+    },
+    {
+      "id": "Q105",
+      "num": 105,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "激發函數 ReLU 在輸入大於 0 時的導數為 __________。"
+    },
+    {
+      "id": "Q106",
+      "num": 106,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "損失函數 MSE 的中文名稱是 __________。"
+    },
+    {
+      "id": "Q107",
+      "num": 107,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 的自動求導引擎叫 __________。"
+    },
+    {
+      "id": "Q108",
+      "num": 108,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "在 PyTorch 中，一鍵更新權重的代碼是 `optimizer.__________()`。"
+    },
+    {
+      "id": "Q109",
+      "num": 109,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "CNN 利用 __________ 共享和局部連接來提取特徵。"
+    },
+    {
+      "id": "Q110",
+      "num": 110,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "一個 5x5 卷積核在 32x32 影像上（步長1，無 Padding）的輸出尺寸是 __________。"
+    },
+    {
+      "id": "Q111",
+      "num": 111,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AlexNet 在 2012 年奪冠的比賽名稱縮寫是 __________。"
+    },
+    {
+      "id": "Q112",
+      "num": 112,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "VGG 網路偏好使用 __________ 尺寸的卷積核。"
+    },
+    {
+      "id": "Q113",
+      "num": 113,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "ResNet 的關鍵技術是 __________ 連接。"
+    },
+    {
+      "id": "Q114",
+      "num": 114,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "李飛飛教授對 AI 的重大貢獻是建立了 __________ 資料集。"
+    },
+    {
+      "id": "Q115",
+      "num": 115,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "在現有模型基礎上進行特定任務微調的過程叫 __________。"
+    },
+    {
+      "id": "Q116",
+      "num": 116,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "YOLO 算法因其 __________ 性好而在安防、自動駕駛中普及。"
+    },
+    {
+      "id": "Q117",
+      "num": 117,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "衡量預測框與真實框重疊程度的指標是 __________。"
+    },
+    {
+      "id": "Q118",
+      "num": 118,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "圖像分割中，區分同一類別不同個體的任務叫 __________ 分割。"
+    },
+    {
+      "id": "Q119",
+      "num": 119,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "U-Net 網絡在醫療影像 __________ 領域表現卓越。"
+    },
+    {
+      "id": "Q120",
+      "num": 120,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RNN 出現梯度消失是因為長路徑中的 __________ 效應。"
+    },
+    {
+      "id": "Q121",
+      "num": 121,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "LSTM 相比 GRU 多了一個門且具備 __________ 狀態。"
+    },
+    {
+      "id": "Q122",
+      "num": 122,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Seq2Seq 由編碼器和 __________ 組成。"
+    },
+    {
+      "id": "Q123",
+      "num": 123,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Word2Vec 中「詞以類聚」的基礎是 __________ 假說。"
+    },
+    {
+      "id": "Q124",
+      "num": 124,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "衡量詞向量語義相近程度的最常用指標是 __________。"
+    },
+    {
+      "id": "Q125",
+      "num": 125,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Attention 機制中，$Q$、$K$、$V$ 分別代表查詢、__________ 和值。"
+    },
+    {
+      "id": "Q126",
+      "num": 126,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Transformer 完全取代了循環結構，僅依賴 __________ 機制。"
+    },
+    {
+      "id": "Q127",
+      "num": 127,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Transformer 的並行運算能力源於其 __________ 注意力結構。"
+    },
+    {
+      "id": "Q128",
+      "num": 128,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "為了區分順序，Transformer 給每個 Token 加上了 __________。"
+    },
+    {
+      "id": "Q129",
+      "num": 129,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BERT 是 Transformer 的 __________ (Encoder/Decoder) 堆疊。"
+    },
+    {
+      "id": "Q130",
+      "num": 130,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "GPT 是 Transformer 的 __________ (Encoder/Decoder) 堆疊。"
+    },
+    {
+      "id": "Q131",
+      "num": 131,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BERT 的遮蓋語言模型（MLM）類似於 __________ 測驗。"
+    },
+    {
+      "id": "Q132",
+      "num": 132,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "模型能力的「湧現」通常出現在 __________ 超過一定閾值後。"
+    },
+    {
+      "id": "Q133",
+      "num": 133,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RLHF 透過訓練一個 __________ 模型來模擬人類的評分。"
+    },
+    {
+      "id": "Q134",
+      "num": 134,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "用戶引導 AI 展示思考過程的提示詞是「請 __________」。"
+    },
+    {
+      "id": "Q135",
+      "num": 135,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "RAG 技術需要將文檔片段存儲在 __________ 資料庫中。"
+    },
+    {
+      "id": "Q136",
+      "num": 136,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 伦理中的 __________ 問題是指模型對特定群體存在歧視。"
+    },
+    {
+      "id": "Q137",
+      "num": 137,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "第一個在 ImageNet 引起轟動的深度模型是 __________。"
+    },
+    {
+      "id": "Q138",
+      "num": 138,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "PyTorch 獲取張量形狀的方法是 `._________()`。"
+    },
+    {
+      "id": "Q139",
+      "num": 139,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "梯度下降的終點通常是損失函數的 __________。"
+    },
+    {
+      "id": "Q140",
+      "num": 140,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "卷積神經網路中負責降維的層是 __________。"
+    },
+    {
+      "id": "Q141",
+      "num": 141,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "VGG-16 模型中有 __________ 個全連接層。"
+    },
+    {
+      "id": "Q142",
+      "num": 142,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "下游任務訓練時，保持骨幹網路權重不變的操作叫 __________。"
+    },
+    {
+      "id": "Q143",
+      "num": 143,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "YOLO 檢測框過濾冗餘框的方法是 __________。"
+    },
+    {
+      "id": "Q144",
+      "num": 144,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "語義分割是對每一個 __________ 進行分類。"
+    },
+    {
+      "id": "Q145",
+      "num": 145,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "雙向 RNN (Bi-RNN) 可以獲取當前詞 __________ 的上下文。"
+    },
+    {
+      "id": "Q146",
+      "num": 146,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Word2Vec 生成的向量是 __________ 的（稠密/稀疏）。"
+    },
+    {
+      "id": "Q147",
+      "num": 147,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Transformer 的計算複雜度與序列長度的 __________ 次方成正比。"
+    },
+    {
+      "id": "Q148",
+      "num": 148,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BERT 的 [CLS] 向量通常代表整句的 __________。"
+    },
+    {
+      "id": "Q149",
+      "num": 149,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "OpenAI 創辦人之一是目前著名的企業家 __________。"
+    },
+    {
+      "id": "Q150",
+      "num": 150,
+      "type": "fill",
+      "kps": [
+        "KP4.18.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "AI 領域的「黑盒」問題是指模型缺乏 __________。 ---"
     }
   ]
 }

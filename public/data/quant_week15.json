@@ -1,0 +1,490 @@
+{
+  "courseId": "python-office-quant",
+  "week": 15,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP15.3"
+      ],
+      "answer": "C",
+      "title": "在編寫回測腳本時，若今天的買入信號是基於今天的收盤價生成的，那麼實際成交應該發生在哪個價格以避免未來函數？",
+      "options": {
+        "A": "今天的收盤價",
+        "B": "昨天的收盤價",
+        "C": "明天的開盤價",
+        "D": "以上皆可"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP15.3"
+      ],
+      "answer": "A",
+      "title": "在 Pandas 中，將數據向下移動一格以進行對比的函數是？",
+      "options": {
+        "A": "`move()`",
+        "B": "`shift()`",
+        "C": "`offset()`",
+        "D": "`lag()`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP15.1"
+      ],
+      "answer": "D",
+      "title": "雙均線策略中，「短週期均線」向上穿過「長週期均線」通常被稱為？",
+      "options": {
+        "A": "黃金交叉",
+        "B": "死亡交叉",
+        "C": "支撐線",
+        "D": "壓力線"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP15.2"
+      ],
+      "answer": "B",
+      "title": "`np.where(condition, A, B)` 的作用是？",
+      "options": {
+        "A": "若條件滿足則返回 A，否則返回 B",
+        "B": "尋找滿足條件的索引",
+        "C": "刪除不滿足條件的行",
+        "D": "合併 A 與 B"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP15.1"
+      ],
+      "answer": "C",
+      "title": "EMA 指標相比 SMA 的主要特點是？",
+      "options": {
+        "A": "計算更簡單",
+        "B": "對近期價格變動反應更靈敏",
+        "C": "會過濾掉所有噪音",
+        "D": "只能用於月線"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP15.5"
+      ],
+      "answer": "B",
+      "title": "RSI 指標的值域範圍是？",
+      "options": {
+        "A": "[-1, 1]",
+        "B": "[0, 100]",
+        "C": "[-100, 100]",
+        "D": "無限制"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP15.1"
+      ],
+      "answer": "D",
+      "title": "若要計算 20 日布林帶的中軌，實際上就是計算？",
+      "options": {
+        "A": "20 日累計和",
+        "B": "20 日移動平均線",
+        "C": "20 日最高價",
+        "D": "20 日最低價"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP15.2"
+      ],
+      "answer": "C",
+      "title": "策略邏輯中的「Position」通常取值 1 代表？",
+      "options": {
+        "A": "空手",
+        "B": "做多（持倉）",
+        "C": "做空",
+        "D": "報錯"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP15.3"
+      ],
+      "answer": "A",
+      "title": "為什麼要在生成信號後執行 `signal.shift(1)`？",
+      "options": {
+        "A": "提高運算速度",
+        "B": "模擬信號產生與實際下單的時間差",
+        "C": "數據去噪",
+        "D": "視覺化需要"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP15.1"
+      ],
+      "answer": "D",
+      "title": "下列哪個指標不屬於「趨勢類」指標？",
+      "options": {
+        "A": "MA",
+        "B": "MACD",
+        "C": "RSI",
+        "D": "均線系統"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP15.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於移動平均線 (MA)，正確的有？",
+      "options": {
+        "A": "SMA 是簡單算術平均",
+        "B": "EMA 考慮了時間權重",
+        "C": "均線具有滯後性",
+        "D": "均線越平滑，信號越頻繁"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP15.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些屬於雙均線策略的組成部分？",
+      "options": {
+        "A": "短週期均線參數",
+        "B": "長週期均線參數",
+        "C": "買入/賣出觸發條件",
+        "D": "止盈止損邏輯"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP15.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於「未來函數 (Look-ahead bias)」，描述正確的有？",
+      "options": {
+        "A": "使用了決策當下無法獲得的數據",
+        "B": "會導致回測收益虛高",
+        "C": "在實盤中無法復現",
+        "D": "可以通過 `shift()` 有效避免"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP15.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "策略信號 (Signal) 的生成方式包括？",
+      "options": {
+        "A": "基於數值大小",
+        "B": "基於指標交叉",
+        "C": "基於型態識別",
+        "D": "基於隨機數"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP15.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "布林帶 (Bollinger Bands) 由哪些線組成？",
+      "options": {
+        "A": "中軌 (MA)",
+        "B": "上軌 (Standard Deviation +)",
+        "C": "下軌 (Standard Deviation -)",
+        "D": "隨機線"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP15.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在 Pandas 中實現 RSI 的步驟包含？",
+      "options": {
+        "A": "計算價格差 (diff)",
+        "B": "分離上漲與下跌",
+        "C": "計算平均上漲與平均下跌",
+        "D": "計算相對強度比值"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP15.2",
+        "KP15.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於信號與持倉的轉換，正確的有？",
+      "options": {
+        "A": "Signal 是觸發動作 (買/賣)",
+        "B": "Position 是狀態 (持倉/空倉)",
+        "C": "持倉可以通過對 Signal 進行累加或邏輯判斷得到",
+        "D": "Signal 必須是布林值"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP15.4"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些指標可以用來過濾偽信號？",
+      "options": {
+        "A": "成交量",
+        "B": "ADX 趨勢強度",
+        "C": "波動率",
+        "D": "股票名稱"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP15.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "關於自定義指標函數的建議，正確的有？",
+      "options": {
+        "A": "參數應包含 DataFrame 與週期",
+        "B": "應返回一個新的 Series 或 DataFrame",
+        "C": "內部盡量使用向量化操作",
+        "D": "函數應處理好開頭的空值 (NaN)"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP15.1",
+        "KP15.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "金融技術指標的局限性包括？",
+      "options": {
+        "A": "歷史不代表未來",
+        "B": "在盤整行情中易失靈",
+        "C": "指標間可能存在高度共線性",
+        "D": "計算太複雜"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP15.1"
+      ],
+      "answer": [
+        "rolling"
+      ],
+      "title": "短期均線跌破長期均線，稱為 __________ 交叉。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP15.5"
+      ],
+      "answer": [
+        "mean"
+      ],
+      "title": "在 Pandas 中，計算移動平均線的函數組合是 `rolling().________()`。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP15.2"
+      ],
+      "answer": [
+        "std"
+      ],
+      "title": "`df['signal'] = np.where(df['ma5'] > df['ma20'], ____, 0)` 可生成簡單買入信號。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP15.5"
+      ],
+      "answer": [
+        "RSI"
+      ],
+      "title": "RSI 的全稱是 __________ 指標 (Relative Strength Index)。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP15.3"
+      ],
+      "answer": [
+        "MACD"
+      ],
+      "title": "為了消除信號產生後立即以收盤價成交的偏差，回測通常將持倉數據向下 __________ 一格。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP15.1"
+      ],
+      "answer": [
+        "EMA"
+      ],
+      "title": "布林帶的寬度由數據的 __________ (Standard Deviation) 決定。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP15.1"
+      ],
+      "answer": [
+        "signal"
+      ],
+      "title": "指數移動平均線的英文縮寫是 __________。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP15.1",
+        "KP15.4"
+      ],
+      "answer": [
+        "Bollinger"
+      ],
+      "title": "趨勢追蹤策略在 __________ (填市場狀態：趨勢/盤整) 行情中表現最佳。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP15.5"
+      ],
+      "answer": [
+        "upper"
+      ],
+      "title": "`df['close'].diff()` 會計算當前收盤價與 __________ 收盤價的差值。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP15.1"
+      ],
+      "answer": [
+        "lower"
+      ],
+      "title": "MACD 指標是基於 __________ 均線的差值構建的。 ---"
+    }
+  ]
+}

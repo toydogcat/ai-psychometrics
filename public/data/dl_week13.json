@@ -1,224 +1,494 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 13,
-  "title": "深度學習第 13 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP13.1": "理論基礎",
-    "KP13.2": "架構原理",
-    "KP13.3": "PyTorch 實作",
-    "KP13.4": "模型調優",
-    "KP13.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W13-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP13.2",
-      "title": "這是第 13 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.13.3",
+        "KP 4.13.4"
+      ],
+      "answer": "B",
+      "title": "Attention 機制最直接解決了 Seq2Seq 模型的什麼問題？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "算力不足",
+        "B": "固定長度上下文向量導致的資訊丟失",
+        "C": "特徵過多",
+        "D": "顯存溢出"
+      }
     },
     {
-      "id": "DL-W13-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP13.3",
-      "title": "這是第 13 週的第 2 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.13.1"
+      ],
+      "answer": "C",
+      "title": "在 Attention 公式中，用於表示「我要找什麼」的向量是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "Key",
+        "B": "Query",
+        "C": "Value",
+        "D": "Mask"
+      }
     },
     {
-      "id": "DL-W13-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP13.4",
-      "title": "這是第 13 週的第 3 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.13.1"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "注意力計算的最後一步是將權重與哪個向量相乘？",
+      "options": {
+        "A": "Query",
+        "B": "Key",
+        "C": "Value",
+        "D": "激活函數"
+      }
     },
     {
-      "id": "DL-W13-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP13.5",
-      "title": "這是第 13 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.13.2"
+      ],
+      "answer": "D",
+      "title": "為什麼 Scaled Dot-product 要除以 $\\sqrt{d_k}$？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "為了減少參數量",
+        "B": "防止點積結果過大導致 Softmax 進入梯度消失區",
+        "C": "增加非線性",
+        "D": "縮小圖像尺寸"
+      }
     },
     {
-      "id": "DL-W13-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP13.1",
-      "title": "這是第 13 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.13.1"
+      ],
+      "answer": "C",
+      "title": "自注意力（Self-Attention）中，Q, K, V 的來源是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "不同的數據集",
+        "B": "全部來自同一個輸入序列",
+        "C": "手動設置的常數",
+        "D": "隨機噪聲"
+      }
     },
     {
-      "id": "DL-W13-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP13.2",
-      "title": "這是第 13 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.13.5"
+      ],
+      "answer": "D",
+      "title": "多頭注意力（Multi-head Attention）的主要目的是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "增加模型深度",
+        "B": "讓模型能從多個子空間同時學習資訊",
+        "C": "減少計算量",
+        "D": "代替全連接層"
+      }
     },
     {
-      "id": "DL-W13-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP13.3",
-      "title": "這是第 13 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.13.1",
+        "KP 4.13.3"
+      ],
+      "answer": "B",
+      "title": "Attention 機制中，得分最高的 K 對應的 V 將會？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "被丟棄",
+        "B": "佔據輸出的最大權重",
+        "C": "變為 0",
+        "D": "變成負數"
+      }
     },
     {
-      "id": "DL-W13-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP13.4",
-      "title": "這是第 13 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.13.3"
+      ],
+      "answer": "C",
+      "title": "下列哪一個不是注意力機制的常見評估方式？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "繪製注意力熱力圖",
+        "B": "觀察對齊效果",
+        "C": "參數量統計",
+        "D": "計算梯度大小"
+      }
     },
     {
-      "id": "DL-W13-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP13.5",
-      "title": "這是第 13 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.13.4"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "注意力機制在哪一年的論文中被正式用於提升機器翻譯效果？",
+      "options": {
+        "A": "2012",
+        "B": "2014 (Bahdanau et al.)",
+        "C": "2017",
+        "D": "2020"
+      }
     },
     {
-      "id": "DL-W13-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP13.1",
-      "title": "這是第 13 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.13.3"
+      ],
+      "answer": "D",
+      "title": "軟注意力 (Soft Attention) 與 硬注意力 (Hard Attention) 的區別在於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "硬注意力是不可微的，需要強化學習訓練",
+        "B": "軟注意力不使用權重",
+        "C": "計算速度",
+        "D": "參數量"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 4.13.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "注意力機制的核心組成部分包括？",
+      "options": {
+        "A": "Query",
+        "B": "Key",
+        "C": "Value",
+        "D": "Bias"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 4.13.4",
+        "KP 4.13.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "自注意力機制 (Self-Attention) 的優勢有？",
+      "options": {
+        "A": "計算路徑短（一步到位）",
+        "B": "完美並行",
+        "C": "能夠捕捉語法結構",
+        "D": "對序列順序極其敏感 (其實不敏感，需位置編碼)"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 4.13.1",
+        "KP 4.13.2",
+        "KP 4.13.3"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "縮放點積注意力 (Scaled Dot-Product Attention) 的步驟？",
+      "options": {
+        "A": "矩陣乘法 $QK^T$",
+        "B": "除以縮放因子",
+        "C": "Softmax",
+        "D": "與 V 相乘"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 4.13.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 Attention 圖 (Attention Map)，正確的有？",
+      "options": {
+        "A": "它是正方形矩陣",
+        "B": "反映了輸入與輸出的關聯度",
+        "C": "顏色越深權重越高",
+        "D": "是黑箱模型無法視覺化"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 4.13.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些領域現在廣泛使用注意力機制？",
+      "options": {
+        "A": "NLP 翻譯與生成",
+        "B": "CV 圖像識別 (ViT)",
+        "C": "語音辨識",
+        "D": "藥物分子發現"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 4.13.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "多頭注意力中「頭」的數量增加？",
+      "options": {
+        "A": "增加計算複雜度",
+        "B": "提高模型表達能力",
+        "C": "減少模型參數量",
+        "D": "加強特徵提取的多樣性"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 4.13.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 Masking 在注意力中的應用？",
+      "options": {
+        "A": "遮蓋 Padding 的資訊",
+        "B": "解碼時遮蓋未來資訊",
+        "C": "刪除權重",
+        "D": "加密資料"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 4.13.4"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "與 RNN 相比，Attention 的缺點可能包括？",
+      "options": {
+        "A": "計算複雜度與序列長度平方成正比 ($O(L^2)$)",
+        "B": "需要更多的顯存處理長序列",
+        "C": "無法訓練",
+        "D": "容易過擬合"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 4.13.1"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "下列哪些是計算相似度 Score 的方法？",
+      "options": {
+        "A": "點積 (Dot product)",
+        "B": "加法注意力 (Additive)",
+        "C": "多層感知器",
+        "D": "歐氏距離"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 4.13.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "注意力機制的思想本質上是？",
+      "options": {
+        "A": "資源優化配置",
+        "B": "一種動態特徵提取",
+        "C": "全局信息的非線性權重化",
+        "D": "取代卷積"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 4.13.1"
+      ],
+      "answer": [
+        "Transformer"
+      ],
+      "title": "Attention 公式中，$Q$ 乘以 __________ 的轉置來計算相似度。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 4.13.3"
+      ],
+      "answer": [
+        "自注意力"
+      ],
+      "title": "為了保證權重之和為 1，必須對原始得分進行 __________ 運算。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 4.13.1"
+      ],
+      "answer": [
+        "多頭注意力"
+      ],
+      "title": "__________ 注意力讓序列中的每個位置都能關注到序列中的所有其他位置。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 4.13.4"
+      ],
+      "answer": [
+        "位置編碼"
+      ],
+      "title": "注意力機制打破了傳統 RNN 的 __________ 依賴遺忘問題。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 4.13.2"
+      ],
+      "answer": [
+        "前饋神經網絡"
+      ],
+      "title": "在 Scaled Dot-product 中，縮放因子是 $\\sqrt{d_k}$，其中 $d_k$ 代表向量的 __________。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 4.13.3"
+      ],
+      "answer": [
+        "層歸一化"
+      ],
+      "title": "可視化注意力權重的矩陣通常稱為 __________ 圖 (Alignment map)。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 4.13.5"
+      ],
+      "answer": [
+        "殘差連接"
+      ],
+      "title": "__________ Attention 將注意力分散到多個並行的頭中。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 4.13.4"
+      ],
+      "answer": [
+        "並行計算"
+      ],
+      "title": "當我們處理長句子時，Attention 比 RNN 具備更短的 __________ 路徑。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 4.13.5"
+      ],
+      "answer": [
+        "QKV"
+      ],
+      "title": "在機器翻譯解碼時，我們不希望模型看到「未來的詞」，需要使用 __________。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 4.13.3",
+        "KP 4.13.4"
+      ],
+      "answer": [
+        "Scaled"
+      ],
+      "title": "注意力機制的發明是從 2014 年的論文《Neural Machine Translation by Jointly Learning to __________ and Translate》開始的。 ---"
     }
   ]
 }

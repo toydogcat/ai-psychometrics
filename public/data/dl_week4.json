@@ -1,224 +1,487 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 4,
-  "title": "深度學習第 4 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP4.1": "理論基礎",
-    "KP4.2": "架構原理",
-    "KP4.3": "PyTorch 實作",
-    "KP4.4": "模型調優",
-    "KP4.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W4-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP4.2",
-      "title": "這是第 4 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.4.2"
+      ],
+      "answer": "C",
+      "title": "PyTorch 的計算圖類型主要是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "靜態圖",
+        "B": "動態圖",
+        "C": "二叉圖",
+        "D": "循環圖"
+      }
     },
     {
-      "id": "DL-W4-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP4.3",
-      "title": "這是第 4 週的第 2 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.4.1"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "將 PyTorch 張量 `t` 轉回 NumPy 數組的方法是？",
+      "options": {
+        "A": "`t.to_numpy()`",
+        "B": "`t.numpy()`",
+        "C": "`t.value()`",
+        "D": "`np.array(t)`"
+      }
     },
     {
-      "id": "DL-W4-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP4.4",
-      "title": "這是第 4 週的第 3 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.4.2"
+      ],
+      "answer": "D",
+      "title": "若要計算某個張量的梯度，必須在建立時設置？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "`grad=True`",
+        "B": "`requires_grad=True`",
+        "C": "`track=True`",
+        "D": "`diff=True`"
+      }
     },
     {
-      "id": "DL-W4-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP4.5",
-      "title": "這是第 4 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.4.1"
+      ],
+      "answer": "B",
+      "title": "哪一個方法可以用於重塑張量維度而不改變其元素總數？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "`squeeze()`",
+        "B": "`reshape()`",
+        "C": "`cat()`",
+        "D": "`chunk()`"
+      }
     },
     {
-      "id": "DL-W4-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP4.1",
-      "title": "這是第 4 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.4.3"
+      ],
+      "answer": "C",
+      "title": "在訓練循環中，`optimizer.zero_grad()` 的作用是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "將模型權重歸零",
+        "B": "清空上一次迭代殘留的梯度",
+        "C": "將損失歸零",
+        "D": "停止梯度更新"
+      }
     },
     {
-      "id": "DL-W4-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP4.2",
-      "title": "這是第 4 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.4.4"
+      ],
+      "answer": "B",
+      "title": "PyTorch 中負責所有神經網路模組的基類是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "`nn.Base`",
+        "B": "`nn.Module`",
+        "C": "`nn.Network`",
+        "D": "`nn.Object`"
+      }
     },
     {
-      "id": "DL-W4-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP4.3",
-      "title": "這是第 4 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.4.5"
+      ],
+      "answer": "D",
+      "title": "執行 `x.to(\"cuda\")` 的前提是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "內存足夠",
+        "B": "安裝了 NVIDIA GPU 及對應驅動",
+        "C": "安裝了 CPU",
+        "D": "代碼沒有 Bug"
+      }
     },
     {
-      "id": "DL-W4-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP4.4",
-      "title": "這是第 4 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.4.1"
+      ],
+      "answer": "C",
+      "title": "張量的廣播機制（Broadcasting）允許不同形狀的張量在什麼條件下運算？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "維度完全相同",
+        "B": "末尾維度長度相符或其中之一為 1",
+        "C": "元素總數相同",
+        "D": "隨機"
+      }
     },
     {
-      "id": "DL-W4-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP4.5",
-      "title": "這是第 4 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.4.3"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "下列哪一個模組包含了常用的優化算法如 Adam, SGD？",
+      "options": {
+        "A": "`torch.nn`",
+        "B": "`torch.optim`",
+        "C": "`torch.autograd`",
+        "D": "`torch.utils`"
+      }
     },
     {
-      "id": "DL-W4-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP4.1",
-      "title": "這是第 4 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.4.2"
+      ],
+      "answer": "D",
+      "title": "執行 `loss.backward()` 後，梯度儲存在變數的哪個屬性中？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`.gradient`",
+        "B": "`.grad`",
+        "C": "`.d`",
+        "D": "`.delta`"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 4.4.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "PyTorch 張量的常見維度 (Shape) 操作包括？",
+      "options": {
+        "A": "`view`",
+        "B": "`permute`",
+        "C": "`unsqueeze`",
+        "D": "`append`"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 4.4.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 `nn.Module` 的描述，正確的有？",
+      "options": {
+        "A": "必須實現 `forward` 方法",
+        "B": "初始化時需調用 `super().__init__()`",
+        "C": "可以嵌套其他 Module",
+        "D": "自動管理內部的 Parameters"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 4.4.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "哪些情況下不需要計算梯度？",
+      "options": {
+        "A": "訓練模型時",
+        "B": "測試模型（推理）時",
+        "C": "特徵提取時",
+        "D": "設置了 `with torch.no_grad():`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 4.4.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "PyTorch 的優點有？",
+      "options": {
+        "A": "社群資源豐富",
+        "B": "調試與 Python 一樣簡單",
+        "C": "支持分佈式訓練",
+        "D": "靜態圖優化比動態圖更容易"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 4.4.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "深度學習中的常用數據類型 (Dtype) 包括？",
+      "options": {
+        "A": "`torch.float32`",
+        "B": "`torch.int64`",
+        "C": "`torch.bool`",
+        "D": "`torch.string` (PyTorch 不直接支持字串張量)"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 4.4.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "`DataLoader` 的功能包括？",
+      "options": {
+        "A": "批量加載",
+        "B": "數據打亂",
+        "C": "多線程讀取",
+        "D": "損失計算"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 4.4.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "廣播機制（Broadcasting）的規則？",
+      "options": {
+        "A": "從最後一個維度往前對齊",
+        "B": "長度相同則匹配",
+        "C": "長度不同但其中一個為 1 則擴展",
+        "D": "長度不同且都不為 1 則報錯"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 4.4.1"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "常見的張量合併操作有？",
+      "options": {
+        "A": "`torch.cat`",
+        "B": "`torch.stack`",
+        "C": "`torch.merge`",
+        "D": "`torch.join`"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 4.4.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在 GPU 上運算的正確流程？",
+      "options": {
+        "A": "將模型移至 GPU",
+        "B": "將輸入數據移至 GPU",
+        "C": "計算結果後若需打印需移回 CPU",
+        "D": "必須使用雙显卡"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 4.4.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "`optim.Adam` 相比 `optim.SGD` 的特點？",
+      "options": {
+        "A": "內建動量機制",
+        "B": "自適應學習率",
+        "C": "收斂通常更快",
+        "D": "絕對不會陷入局部最優"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 4.4.1"
+      ],
+      "answer": [
+        "Dataset"
+      ],
+      "title": "PyTorch 中的基本數據結構是 __________。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 4.4.5"
+      ],
+      "answer": [
+        "DataLoader"
+      ],
+      "title": "檢測系統是否支持 GPU 運算的代碼是 `torch.cuda.is____________()`。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 4.4.1"
+      ],
+      "answer": [
+        "batch_size"
+      ],
+      "title": "獲取張量維度大小的方法是 `._________()`。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 4.4.2"
+      ],
+      "answer": [
+        "shuffle"
+      ],
+      "title": "在 PyTorch 中，一鍵計算梯度的函式是 `.___________()`。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 4.4.2"
+      ],
+      "answer": [
+        "Epoch"
+      ],
+      "title": "__________ 是 PyTorch 用於自動求導的底層引擎。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 4.4.2"
+      ],
+      "answer": [
+        "Iteration"
+      ],
+      "title": "如果不希望某個操作被紀錄在計算圖中，應使用 `torch.no__________`。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 4.4.1"
+      ],
+      "answer": [
+        "transforms"
+      ],
+      "title": "將張量展平為一維的快捷方法是 `.__________()`。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 4.4.4"
+      ],
+      "answer": [
+        "Normalize"
+      ],
+      "title": "`nn.__________Loss` 是多分類任務中最常用的損失函數類別。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 4.4.3"
+      ],
+      "answer": [
+        "device"
+      ],
+      "title": "更新參數的代碼是 `optimizer.__________()`。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 4.4.1"
+      ],
+      "answer": [
+        "cuda"
+      ],
+      "title": "PyTorch 的核心庫名稱是 __________。 ---"
     }
   ]
 }

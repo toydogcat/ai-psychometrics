@@ -1,0 +1,427 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 12,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP 12.1"
+      ],
+      "answer": null,
+      "title": "關於閉包 (Closure)，下列哪項敘述是錯誤的？",
+      "options": {
+        "A": "必須有巢狀函式",
+        "B": "內部函式必須引用外部函式的變數",
+        "C": "外部函式必須回傳內部函式",
+        "D": "外部函式的變數必須是全域變數"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP 12.3"
+      ],
+      "answer": null,
+      "title": "在裝飾器中，為了讓它能裝飾任何參數數量的函式，通常會使用？",
+      "options": {
+        "A": "`(args, kwargs)`",
+        "B": "`(*args, **kwargs)`",
+        "C": "`(self, *args)`",
+        "D": "`(func)`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "執行 `@dec\\ndef func(): pass` 相當於執行？",
+      "options": {
+        "A": "`func = dec(func)`",
+        "B": "`dec = func(dec)`",
+        "C": "`dec(func())`",
+        "D": "`func = dec()`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP 12.1"
+      ],
+      "answer": null,
+      "title": "`nonlocal` 關鍵字的作用是？",
+      "options": {
+        "A": "聲明一個全域變數",
+        "B": "修改上一層非全域作用域中的變數",
+        "C": "在類別中定義私有屬性",
+        "D": "讓變數在模組間共享"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP 12.4"
+      ],
+      "answer": null,
+      "title": "為什麼推薦在裝飾器內使用 `functools.wraps`？",
+      "options": {
+        "A": "提升執行速度",
+        "B": "防止記憶體洩漏",
+        "C": "保留原始函式的名稱與文件字串",
+        "D": "讓裝飾器支援異步呼叫"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "若一個函式被兩個裝飾器 `@a` 與 `@b` 修飾（`@a` 在上），其執行包裝順序為？",
+      "options": {
+        "A": "`a(b(func))`",
+        "B": "`b(a(func))`",
+        "C": "同時執行",
+        "D": "隨機執行"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP 12.5"
+      ],
+      "answer": null,
+      "title": "帶參數的裝飾器（如 `@repeat(3)`）通常需要幾層巢狀函式？",
+      "options": {
+        "A": "1 層",
+        "B": "2 層",
+        "C": "3 層",
+        "D": "4 層"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "下列何者不是裝飾器的典型應用場景？",
+      "options": {
+        "A": "紀錄日誌",
+        "B": "權限驗證",
+        "C": "效能測試",
+        "D": "數值計算核心邏輯"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP 12.1"
+      ],
+      "answer": null,
+      "title": "在閉包中，被引用的外部變數存放在函式物件的哪一個屬性裡？",
+      "options": {
+        "A": "`__globals__`",
+        "B": "`__closure__`",
+        "C": "`__dict__`",
+        "D": "`__code__`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "裝飾器是在什麼時候被執行的？",
+      "options": {
+        "A": "模組匯入時",
+        "B": "函式定義時",
+        "C": "第一次呼叫函式時",
+        "D": "每次呼叫函式時"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 12.1"
+      ],
+      "answer": null,
+      "title": "閉包形成的必要條件包括？",
+      "options": {
+        "A": "存在於巢狀函式結構中",
+        "B": "內部函式引用了外部函式的局部變數",
+        "C": "外部函式回傳了內部函式",
+        "D": "外部函式必須使用 `lambda`"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "關於裝飾器的描述，哪些正確？",
+      "options": {
+        "A": "它是一種設計模式",
+        "B": "它可以修改函式的回傳值",
+        "C": "它可以完全取代原始函式",
+        "D": "它只能用於函式，不能用於類別"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 12.4"
+      ],
+      "answer": null,
+      "title": "使用 `@functools.wraps` 可以保留原始函式的哪些資訊？",
+      "options": {
+        "A": "`__name__`",
+        "B": "`__doc__`",
+        "C": "`__annotations__`",
+        "D": "區域變數"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 12.1",
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "下列哪些是高階函式的特徵？",
+      "options": {
+        "A": "接收函式作為參數",
+        "B": "回傳一個函式",
+        "C": "函式內部定義另一個函式",
+        "D": "函式名稱是大寫開頭"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 12.1"
+      ],
+      "answer": null,
+      "title": "關於 `nonlocal` 與 `global`，哪些正確？",
+      "options": {
+        "A": "`global` 作用於模組層級",
+        "B": "`nonlocal` 至少需要兩層巢狀函式",
+        "C": "它們都可以解決作用域遮蔽 (Shadowing) 問題",
+        "D": "兩者可以同時作用於同一個變數"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "裝飾器可以用於哪些物件？",
+      "options": {
+        "A": "普通函式",
+        "B": "類別方法",
+        "C": "類別本身",
+        "D": "內建關鍵字"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 12.5"
+      ],
+      "answer": null,
+      "title": "帶參數的裝飾器結構中，各層職責描述正確的是？",
+      "options": {
+        "A": "最外層：接收裝飾器參數",
+        "B": "中間層：接收被裝飾的函式",
+        "C": "最內層：實作包裝邏輯",
+        "D": "每一層都必須使用 `*args`"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "關於多重裝飾器的執行順序，哪些敘述正確？",
+      "options": {
+        "A": "包裝順序是由下而上",
+        "B": "包裝順序是由上而下",
+        "C": "呼叫時的進入順序是由上而下",
+        "D": "呼叫時的離開順序是由下而上"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 12.1"
+      ],
+      "answer": null,
+      "title": "閉包的主要用途包括？",
+      "options": {
+        "A": "資料隱藏（類似私有變數）",
+        "B": "減少全域變數的使用",
+        "C": "實作裝飾器",
+        "D": "提高迴圈執行效率"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "下列哪些裝飾器是 Python 內建的？",
+      "options": {
+        "A": "`@property`",
+        "B": "`@classmethod`",
+        "C": "`@wraps`",
+        "D": "`@timer`"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 12.1"
+      ],
+      "answer": null,
+      "title": "當內部函式想要修改外部函式的變數時，必須使用 __________ 關鍵字。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "裝飾器的本質是一個 __________ (High-order) 函式。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 12.4"
+      ],
+      "answer": null,
+      "title": "為了獲取原始函式 `f` 的名稱，可以使用 `f.__________` 屬性。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 12.5"
+      ],
+      "answer": null,
+      "title": "在帶參數的裝飾器中，最外層函式回傳的是 __________ 函式。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "若裝飾器不回傳任何物件，則被裝飾的函式名將變為 __________。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 12.1"
+      ],
+      "answer": null,
+      "title": "閉包中的「自由變數」是指那些被引用但未在 __________ 函式中定義的變數。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "`@` 符號在裝飾器語境下被稱為 __________ (Syntactic Sugar)。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 12.4"
+      ],
+      "answer": null,
+      "title": "匯入 `wraps` 裝飾器需要從 __________ 模組中匯入。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "如果裝飾器 `dec` 裡面定義了 `wrapper` 函式，通常最後要執行 `return __________`。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 12.2"
+      ],
+      "answer": null,
+      "title": "類別方法 `@classmethod` 本質上也是一種 __________。 ---"
+    }
+  ]
+}

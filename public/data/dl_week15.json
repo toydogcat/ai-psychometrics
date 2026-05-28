@@ -1,224 +1,489 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 15,
-  "title": "深度學習第 15 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP15.1": "理論基礎",
-    "KP15.2": "架構原理",
-    "KP15.3": "PyTorch 實作",
-    "KP15.4": "模型調優",
-    "KP15.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W15-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP15.2",
-      "title": "這是第 15 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.15.1"
+      ],
+      "answer": "B",
+      "title": "BERT 模型主要由 Transformer 的哪個部分堆疊而成？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "Encoder",
+        "B": "Decoder",
+        "C": "Encoder-Decoder",
+        "D": "Feed Forward"
+      }
     },
     {
-      "id": "DL-W15-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP15.3",
-      "title": "這是第 15 週的第 2 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.15.2"
+      ],
+      "answer": "C",
+      "title": "BERT 預訓練任務中，隨機遮蓋詞語讓模型預測的任務稱為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "NSP",
+        "B": "MLM",
+        "C": "Seq2Seq",
+        "D": "CNN"
+      }
     },
     {
-      "id": "DL-W15-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP15.4",
-      "title": "這是第 15 週的第 3 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.15.3"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "在 BERT 的輸入中，用於代表整句話分類特徵的特殊符號是？",
+      "options": {
+        "A": "[SEP]",
+        "B": "[PAD]",
+        "C": "[CLS]",
+        "D": "[MASK]"
+      }
     },
     {
-      "id": "DL-W15-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP15.5",
-      "title": "這是第 15 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.15.1"
+      ],
+      "answer": "D",
+      "title": "BERT 相比於傳統 GPT-1 的最大區別在於其具備？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "更多參數",
+        "B": "雙向上下文理解能力",
+        "C": "圖像處理能力",
+        "D": "翻譯功能"
+      }
     },
     {
-      "id": "DL-W15-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP15.1",
-      "title": "這是第 15 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": "C",
+      "title": "下列哪一個模型是 BERT 的蒸餾版本，參數量更少且速度更快？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "RoBERTa",
+        "B": "DistilBERT",
+        "C": "ALBERT",
+        "D": "T5"
+      }
     },
     {
-      "id": "DL-W15-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP15.2",
-      "title": "這是第 15 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.15.2"
+      ],
+      "answer": "D",
+      "title": "預訓練（Pre-training）通常在什麼樣的資料集上進行？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "手動標註的小型資料集",
+        "B": "大規模的無標籤語料庫 (如維基百科)",
+        "C": "加密數據",
+        "D": "只有數字的數據"
+      }
     },
     {
-      "id": "DL-W15-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP15.3",
-      "title": "這是第 15 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.15.2"
+      ],
+      "answer": "B",
+      "title": "BERT 的 NSP 任務主要是為了讓模型理解？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "詞的拼寫",
+        "B": "句子之間的邏輯關係",
+        "C": "標點符號",
+        "D": "情感傾向"
+      }
     },
     {
-      "id": "DL-W15-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP15.4",
-      "title": "這是第 15 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": "C",
+      "title": "在 HuggingFace 庫中，將文字轉化為模型可接受 ID 序列的工具是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Transformer",
+        "B": "Tokenizer",
+        "C": "Trainer",
+        "D": "Pipeline"
+      }
     },
     {
-      "id": "DL-W15-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP15.5",
-      "title": "這是第 15 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.15.5"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "RoBERTa 相比 BERT 做了哪些改進？",
+      "options": {
+        "A": "移除 NSP 任務、使用更大的數據量",
+        "B": "減少層數",
+        "C": "增加權重",
+        "D": "變為單向"
+      }
     },
     {
-      "id": "DL-W15-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP15.1",
-      "title": "這是第 15 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.15.4"
+      ],
+      "answer": "D",
+      "title": "執行 BERT 微調時，我們通常會？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "只訓練第一層",
+        "B": "固定預訓練權重，只更新最後的新增層 (或更新全部)",
+        "C": "隨機打亂權重",
+        "D": "不需要損失函數"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "BERT 預訓練時使用的輸入 Embeddings 包含哪些部分的加和？",
+      "options": {
+        "A": "Token Embedding",
+        "B": "Segment Embedding",
+        "C": "Position Embedding",
+        "D": "Color Embedding"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 4.15.3",
+        "KP 4.15.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "BERT 可以應用於下游的哪些 NLP 任務？",
+      "options": {
+        "A": "情感分類",
+        "B": "命名實體辨識 (NER)",
+        "C": "閱讀理解 (QA)",
+        "D": "文本生成 (雖然不擅長)"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 4.15.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於遮蓋語言模型 (MLM)，正確的有？",
+      "options": {
+        "A": "隨機遮住 15% 的詞",
+        "B": "80% 替換為 [MASK]",
+        "C": "10% 替換為隨機詞",
+        "D": "10% 保持不變"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 4.15.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "為什麼 BERT 是雙向的？",
+      "options": {
+        "A": "它使用了 Transformer Encoder",
+        "B": "自注意力機制允許關注序列中任意位置",
+        "C": "它需要預測下一個詞",
+        "D": "它的目標是深刻理解上下文"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "BERT 家族中追求「輕量化」的模型有？",
+      "options": {
+        "A": "ALBERT",
+        "B": "DistilBERT",
+        "C": "TinyBERT",
+        "D": "GPT-4"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 4.15.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "預訓練 + 微調（Fine-tuning）模式的優點？",
+      "options": {
+        "A": "避免從零開始訓練",
+        "B": "只需要少量標注數據即可獲得好效果",
+        "C": "具有強大的知識遷移能力",
+        "D": "運算量完全為零"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 BERT 中的 [SEP] 標記，正確的是？",
+      "options": {
+        "A": "用於區分兩個句子",
+        "B": "置於句子末尾",
+        "C": "輔助 NSP 任務",
+        "D": "代表分類結果"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 4.15.4"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "BERT 模型在訓練中可能遇到的挑戰？",
+      "options": {
+        "A": "顯存消耗巨大",
+        "B": "預訓練與微調的數據分佈不一致",
+        "C": "無法並行",
+        "D": "對短句子無效"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "下列屬於 HuggingFace `transformers` 庫核心對象的有？",
+      "options": {
+        "A": "`Config`",
+        "B": "`Model`",
+        "C": "`Tokenizer`",
+        "D": "`Trainer`"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 4.15.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "BERT 預訓練任務 NSP 被部分後續研究（如 RoBERTa）認為？",
+      "options": {
+        "A": "不夠有效",
+        "B": "是多餘的",
+        "C": "可以被移除",
+        "D": "是最重要的部分"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 4.15.1"
+      ],
+      "answer": [
+        "大語言模型"
+      ],
+      "title": "BERT 的全稱中，最後一個 B 代表 __________ (Bidirectional)。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 4.15.1"
+      ],
+      "answer": [
+        "湧現能力"
+      ],
+      "title": "BERT 使用 __________ (Encoder/Decoder) 作為基礎結構。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 4.15.2"
+      ],
+      "answer": [
+        "Scaling"
+      ],
+      "title": "隨機遮蓋詞語的任務全稱是 __________ Language Model。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": [
+        "參數量"
+      ],
+      "title": "BERT 的輸入由 Token、Segment 和 __________ 三種嵌入組成。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": [
+        "Transformer"
+      ],
+      "title": "用於微調 BERT 的主流 Python 函式庫名稱是 __________。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 4.15.3"
+      ],
+      "answer": [
+        "提示工程"
+      ],
+      "title": "[CLS] 標記通常用於 __________ 任務。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": [
+        "少樣本學習"
+      ],
+      "title": "BERT 在 2018 年由 __________ 團隊提出。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": [
+        "零樣本學習"
+      ],
+      "title": "將大模型的知識轉移給小模型的技術稱為模型 __________。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 4.15.5"
+      ],
+      "answer": [
+        "幻覺"
+      ],
+      "title": "Tokenizer 負責將原始字串切分為最小的語義單元，這在 BERT 中通常是 __________ (Subwords)。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 4.15.4"
+      ],
+      "answer": [
+        "微調"
+      ],
+      "title": "BERT 宣告了 NLP 領域 __________ 學習時代的全面到來。 ---"
     }
   ]
 }

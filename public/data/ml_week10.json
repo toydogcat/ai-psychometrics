@@ -1,644 +1,489 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 10,
-  "title": "機器學習第 10 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP10.1": "概念基礎",
-    "KP10.2": "數學原理",
-    "KP10.3": "Python 實作",
-    "KP10.4": "模型評估",
-    "KP10.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W10-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP10.2",
-      "title": "這是第 10 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.10.1"
+      ],
+      "answer": "B",
+      "title": "K-Means 算法中的 \"K\" 代表什麼？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "樣本數量",
+        "B": "特徵數量",
+        "C": "預期的聚類數量",
+        "D": "迭代次數"
+      }
     },
     {
-      "id": "ML-W10-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP10.3",
-      "title": "這是第 10 週的第 2 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.10.1"
+      ],
+      "answer": "C",
+      "title": "K-Means 算法在每一步更新質心時，使用的是該簇內所有點的？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "中位數",
+        "B": "均值",
+        "C": "眾數",
+        "D": "最小值"
+      }
     },
     {
-      "id": "ML-W10-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP10.4",
-      "title": "這是第 10 週的第 3 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.10.2"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "下列哪一個指標被稱為「簇內誤差平方和」，用於衡量聚類緊密度？",
+      "options": {
+        "A": "Silhouette Score",
+        "B": "Inertia",
+        "C": "Accuracy",
+        "D": "Entropy"
+      }
     },
     {
-      "id": "ML-W10-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP10.5",
-      "title": "這是第 10 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.10.5"
+      ],
+      "answer": "D",
+      "title": "肘部法中，最佳的 K 值通常位於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "曲線下降最快的地方",
+        "B": "曲線開始變得平緩的轉折點",
+        "C": "曲線的最低點",
+        "D": "$K=1$"
+      }
     },
     {
-      "id": "ML-W10-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP10.1",
-      "title": "這是第 10 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.10.5"
+      ],
+      "answer": "C",
+      "title": "輪廓係數 (Silhouette Coefficient) 的取值範圍是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "[0, 1]",
+        "B": "[-1, 1]",
+        "C": "[-100, 100]",
+        "D": "無限制"
+      }
     },
     {
-      "id": "ML-W10-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP10.2",
-      "title": "這是第 10 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.10.3"
+      ],
+      "answer": "D",
+      "title": "K-Means++ 主要改進了標準 K-Means 的哪一個環節？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "距離計算",
+        "B": "質心初始化",
+        "C": "收斂判斷",
+        "D": "特徵選擇"
+      }
     },
     {
-      "id": "ML-W10-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP10.3",
-      "title": "這是第 10 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.10.4"
+      ],
+      "answer": "B",
+      "title": "執行 K-Means 聚類前，如果特徵 A 的範圍是 0-1，特徵 B 的範圍是 0-1000，會發生什麼？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "特徵 A 將主導聚類結果",
+        "B": "特徵 B 將主導聚類結果",
+        "C": "算法會自動平衡",
+        "D": "算法無法運行"
+      }
     },
     {
-      "id": "ML-W10-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP10.4",
-      "title": "這是第 10 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.10.1"
+      ],
+      "answer": "C",
+      "title": "K-Means 算法是否保證一定能找到全域最優解？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "是",
+        "B": "否，容易陷入局部最優",
+        "C": "取決於樣本量",
+        "D": "取決於特徵維度"
+      }
     },
     {
-      "id": "ML-W10-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP10.5",
-      "title": "這是第 10 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.10.4"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "下列哪種資料形狀 K-Means 最難處理？",
+      "options": {
+        "A": "緊密的圓形簇",
+        "B": "長條形或環形簇",
+        "C": "大小一致的球體",
+        "D": "高維資料"
+      }
     },
     {
-      "id": "ML-W10-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP10.1",
-      "title": "這是第 10 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.10.3"
+      ],
+      "answer": "D",
+      "title": "在 Scikit-Learn 的 `KMeans` 中，預設的初始化方法是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`random`",
+        "B": "`k-means++`",
+        "C": "`grid`",
+        "D": "`pca`"
+      }
     },
     {
-      "id": "ML-W10-Q11",
-      "type": "single",
-      "kp": "KP10.2",
-      "title": "這是第 10 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.10.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "非監督式學習的應用場景包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "用戶畫像分群",
+        "B": "新聞主題聚類",
+        "C": "影像降維",
+        "D": "垃圾郵件過濾 (這是監督式)"
+      }
     },
     {
-      "id": "ML-W10-Q12",
-      "type": "single",
-      "kp": "KP10.3",
-      "title": "這是第 10 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.10.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "K-Means 算法收斂的標誌包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "質心不再變化",
+        "B": "樣本分配不再變化",
+        "C": "達到預設最大迭代次數",
+        "D": "準確率達到 100%"
+      }
     },
     {
-      "id": "ML-W10-Q13",
-      "type": "single",
-      "kp": "KP10.4",
-      "title": "這是第 10 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.10.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 Inertia 的描述，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "數值越小代表簇內越緊密",
+        "B": "隨著 K 值增加，Inertia 一定會單調遞減",
+        "C": "$K=N$ 時 Inertia 為 0",
+        "D": "Inertia 越小聚類效果一定越好（不一定，需考慮 K 過大）"
+      }
     },
     {
-      "id": "ML-W10-Q14",
-      "type": "single",
-      "kp": "KP10.5",
-      "title": "這是第 10 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.10.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "為了提升 K-Means 的效果，建議的做法有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "資料標準化",
+        "B": "多次嘗試不同的初始種子",
+        "C": "移除離群值",
+        "D": "增加特徵數量"
+      }
     },
     {
-      "id": "ML-W10-Q15",
-      "type": "single",
-      "kp": "KP10.1",
-      "title": "這是第 10 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.10.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於輪廓係數 (Silhouette Score)，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "越接近 1 代表聚類效果越好",
+        "B": "負值代表樣本被誤分到了鄰近簇",
+        "C": "接近 0 代表樣本位於兩個簇的邊界上",
+        "D": "它是監督式指標"
+      }
     },
     {
-      "id": "ML-W10-Q16",
-      "type": "single",
-      "kp": "KP10.2",
-      "title": "這是第 10 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.10.4",
+        "KP 3.10.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "K-Means 的缺點有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "需要事先指定 K 值",
+        "B": "對雜訊點敏感",
+        "C": "難以處理非凸形狀",
+        "D": "無法處理高維資料（可以處理，但有效率挑戰）"
+      }
     },
     {
-      "id": "ML-W10-Q17",
-      "type": "single",
-      "kp": "KP10.3",
-      "title": "這是第 10 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.10.1"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "哪些因素會影響 K-Means 的運行速度？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "樣本總數 $N$",
+        "B": "特徵維度 $D$",
+        "C": "聚類數量 $K$",
+        "D": "迭代次數 $I$"
+      }
     },
     {
-      "id": "ML-W10-Q18",
-      "type": "single",
-      "kp": "KP10.4",
-      "title": "這是第 10 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.10.3"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 K-Means 的初始化，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "`random` 模式下每次結果可能不同",
+        "B": "`k-means++` 增加了初始計算開銷但減少了總迭代次數",
+        "C": "可以手動指定初始質心",
+        "D": "初始化不重要"
+      }
     },
     {
-      "id": "ML-W10-Q19",
-      "type": "single",
-      "kp": "KP10.5",
-      "title": "這是第 10 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.10.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在實務中，聚類後的下一步通常是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "觀察各簇的統計特徵（畫畫標籤）",
+        "B": "將簇 ID 作為新的特徵輸入到監督模型中",
+        "C": "視覺化分佈",
+        "D": "直接上線不需評估"
+      }
     },
     {
-      "id": "ML-W10-Q20",
-      "type": "single",
-      "kp": "KP10.1",
-      "title": "這是第 10 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.10.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "除了 K-Means，常見的聚類算法還有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "DBSCAN (基於密度)",
+        "B": "階層聚類 (Hierarchical)",
+        "C": "高斯混合模型 (GMM)",
+        "D": "邏輯回歸"
+      }
     },
     {
-      "id": "ML-W10-Q21",
-      "type": "single",
-      "kp": "KP10.2",
-      "title": "這是第 10 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.10.1"
+      ],
+      "answer": [
+        "非監督學習"
+      ],
+      "title": "K-Means 算法中的質心在數學上是該簇所有點的 __________ 向量。"
     },
     {
-      "id": "ML-W10-Q22",
-      "type": "single",
-      "kp": "KP10.3",
-      "title": "這是第 10 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.10.1"
+      ],
+      "answer": [
+        "K-Means"
+      ],
+      "title": "算法第一步通常是隨機選擇初始 __________。"
     },
     {
-      "id": "ML-W10-Q23",
-      "type": "single",
-      "kp": "KP10.4",
-      "title": "這是第 10 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.10.2"
+      ],
+      "answer": [
+        "質心"
+      ],
+      "title": "肘部法利用的是 __________ (Inertia) 隨 K 變化的曲線。"
     },
     {
-      "id": "ML-W10-Q24",
-      "type": "single",
-      "kp": "KP10.5",
-      "title": "這是第 10 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.10.1"
+      ],
+      "answer": [
+        "SSE"
+      ],
+      "title": "當樣本點被分配給最近質心時，這是優化流程中的 __________ (Assignment) 步驟。"
     },
     {
-      "id": "ML-W10-Q25",
-      "type": "single",
-      "kp": "KP10.1",
-      "title": "這是第 10 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.10.5"
+      ],
+      "answer": [
+        "Elbow"
+      ],
+      "title": "__________ 係數是同時考慮簇內凝聚度與簇間分離度的指標。"
     },
     {
-      "id": "ML-W10-Q26",
-      "type": "single",
-      "kp": "KP10.2",
-      "title": "這是第 10 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.10.4"
+      ],
+      "answer": [
+        "輪廓係數"
+      ],
+      "title": "K-Means 算法對 __________ (Outliers) 非常敏感。"
     },
     {
-      "id": "ML-W10-Q27",
-      "type": "single",
-      "kp": "KP10.3",
-      "title": "這是第 10 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.10.4"
+      ],
+      "answer": [
+        "KMeans"
+      ],
+      "title": "為了使不同量級的特徵公平貢獻距離，必須進行 __________。"
     },
     {
-      "id": "ML-W10-Q28",
-      "type": "single",
-      "kp": "KP10.4",
-      "title": "這是第 10 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.10.3"
+      ],
+      "answer": [
+        "n_clusters"
+      ],
+      "title": "K-Means++ 的核心是讓初始質心相互之間 __________。"
     },
     {
-      "id": "ML-W10-Q29",
-      "type": "single",
-      "kp": "KP10.5",
-      "title": "這是第 10 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.10.1"
+      ],
+      "answer": [
+        "局部最優"
+      ],
+      "title": "在 sklearn 中，聚類後的類別標籤存儲在模型的 __________ 屬性中。"
     },
     {
-      "id": "ML-W10-Q30",
-      "type": "single",
-      "kp": "KP10.1",
-      "title": "這是第 10 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.10.5"
+      ],
+      "answer": [
+        "距離"
+      ],
+      "title": "非監督式學習處理的是沒有 __________ (Labels) 的數據。 ---"
     }
   ]
 }

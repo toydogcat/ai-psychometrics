@@ -1,0 +1,488 @@
+{
+  "courseId": "python-office-quant",
+  "week": 12,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": "B",
+      "title": "在時間序列分析中，將「日數據」轉換為「月數據」並求平均值的操作稱為？",
+      "options": {
+        "A": "升採樣",
+        "B": "降採樣",
+        "C": "移動平均",
+        "D": "數據對齊"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP12.1"
+      ],
+      "answer": "C",
+      "title": "`df.groupby('city')['sales'].mean()` 的回傳結果類型通常是？",
+      "options": {
+        "A": "DataFrame",
+        "B": "Series",
+        "C": "List",
+        "D": "Scalar"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP12.3"
+      ],
+      "answer": "A",
+      "title": "在 `pivot_table` 中，預設的聚合函數 `aggfunc` 是什麼？",
+      "options": {
+        "A": "`sum`",
+        "B": "`mean`",
+        "C": "`count`",
+        "D": "`median`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": "D",
+      "title": "如何將字串 '2023-01-01' 轉換為 Pandas 的 Timestamp 對象？",
+      "options": {
+        "A": "`pd.to_date()`",
+        "B": "`pd.to_datetime()`",
+        "C": "`pd.as_time()`",
+        "D": "`Timestamp()`"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP12.5"
+      ],
+      "answer": "C",
+      "title": "計算 30 日移動平均線，代碼應為：`df['close'].rolling(window=____).mean()`。",
+      "options": {
+        "A": "1",
+        "B": "7",
+        "C": "30",
+        "D": "365"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": "D",
+      "title": "`df.resample('W').sum()` 中的 'W' 代表什麼頻率？",
+      "options": {
+        "A": "日",
+        "B": "月",
+        "C": "週",
+        "D": "年"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP12.1"
+      ],
+      "answer": "B",
+      "title": "分組後若要過濾掉總成交額小於 1000 的組，應使用？",
+      "options": {
+        "A": "`df.query()`",
+        "B": "`grouped.filter()`",
+        "C": "`grouped.select()`",
+        "D": "`df.dropna()`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP12.3"
+      ],
+      "answer": "C",
+      "title": "`pd.crosstab(df['A'], df['B'])` 主要用於？",
+      "options": {
+        "A": "計算 A 與 B 的相關係數",
+        "B": "計算 A 與 B 出現次數的頻次表",
+        "C": "計算 A 減 B 的差值",
+        "D": "合併 A 與 B"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": "A",
+      "title": "時間序列索引獲取 2023 年 1 月的所有數據，語法是？",
+      "options": {
+        "A": "`df['2023-01']`",
+        "B": "`df.loc['2023-01']`",
+        "C": "以上皆可",
+        "D": "`df.filter('2023-01')`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP12.5"
+      ],
+      "answer": "D",
+      "title": "`rolling(window=5).mean()` 的前 4 筆數據結果通常是？",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "NaN",
+        "D": "該行之前的平均值"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP12.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些操作可以用 `pivot_table` 實現？",
+      "options": {
+        "A": "統計不同地區、產品類別的總銷售額",
+        "B": "計算各班級各科目的平均分",
+        "C": "處理缺失值填充",
+        "D": "生成類似 Excel 透視表的報表"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP12.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 `GroupBy` 對象，正確的有？",
+      "options": {
+        "A": "是延遲計算的 (Lazy Evaluation)",
+        "B": "可以迭代",
+        "C": "可以通過 `get_group()` 獲取特定組",
+        "D": "會自動排序分組鍵"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "時間序列重採樣中，處理缺失值的填充方法有？",
+      "options": {
+        "A": "`ffill()` (前向填充)",
+        "B": "`bfill()` (後向填充)",
+        "C": "`interpolate()` (線性插值)",
+        "D": "`dropna()`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 `pd.to_datetime` 的優點，正確的有？",
+      "options": {
+        "A": "自動識別多種日期格式",
+        "B": "支援毫秒級精度",
+        "C": "支援時區處理",
+        "D": "解析速度快"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP12.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "移動窗口函數 `rolling()` 支援的運算包括？",
+      "options": {
+        "A": "`mean()`",
+        "B": "`sum()`",
+        "C": "`std()`",
+        "D": "`max()`"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "下列哪些是有效的頻率縮寫 (Offsets)？",
+      "options": {
+        "A": "'D' (日)",
+        "B": "'M' (月底)",
+        "C": "'MS' (月初)",
+        "D": "'B' (工作日)"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP12.1"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 `transform()` 與 `apply()` 的區別，正確的有？",
+      "options": {
+        "A": "`transform` 返回與原對象形狀相同的對象",
+        "B": "`apply` 可以返回聚合後的單一值",
+        "C": "`transform` 常用於數據標準化",
+        "D": "`apply` 不能處理分組數據"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP12.3"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "透視表 `pivot_table` 的核心參數包括？",
+      "options": {
+        "A": "`index`",
+        "B": "`columns`",
+        "C": "`values`",
+        "D": "`aggfunc`"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP12.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "如何向 `agg()` 傳遞多個聚合函數？",
+      "options": {
+        "A": "列表形式 `['mean', 'sum']`",
+        "B": "字典形式 `{'sales': 'sum', 'price': 'mean'}`",
+        "C": "逗號分隔 `mean, sum`",
+        "D": "只能傳遞一個"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "時間序列數據分析的常見應用場景包括？",
+      "options": {
+        "A": "股票價格預測",
+        "B": "氣溫變化趨勢",
+        "C": "網站日誌流量分析",
+        "D": "員工名單分類"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": [
+        "matplotlib"
+      ],
+      "title": "將數據按「日」重採樣為「月」，語法為 `df.resample('____')`。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": [
+        "pyplot"
+      ],
+      "title": "`pd.to_datetime()` 返回的對象類型通常是 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP12.1"
+      ],
+      "answer": [
+        "plot"
+      ],
+      "title": "`df.groupby('A').________()` 可以直接查看分組後的各項描述性統計。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP12.5"
+      ],
+      "answer": [
+        "scatter"
+      ],
+      "title": "計算指數加權移動平均，函數名稱是 `df.________()`。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": [
+        "bar"
+      ],
+      "title": "獲取時間對象中的「年份」屬性，代碼為 `df['date'].dt.________`。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP12.3"
+      ],
+      "answer": [
+        "hist"
+      ],
+      "title": "透視表中如果要同時計算總和與平均，`aggfunc` 應設置為 `['sum', '________']`。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP12.5"
+      ],
+      "answer": [
+        "xlabel"
+      ],
+      "title": "滾動窗口中，若要求至少有 1 個非空值即可計算，應設置 `min_periods=____`。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP12.4"
+      ],
+      "answer": [
+        "ylabel"
+      ],
+      "title": "將時間索引移動 2 天，應使用 `df.________(periods=2, freq='D')`。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP12.3"
+      ],
+      "answer": [
+        "title"
+      ],
+      "title": "`pd.crosstab` 預設計算的是 __________ (頻率)。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP12.1"
+      ],
+      "answer": [
+        "legend"
+      ],
+      "title": "GroupBy 的核心思想是「拆分-應用-__________」。 ---"
+    }
+  ]
+}

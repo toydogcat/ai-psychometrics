@@ -1,7 +1,7 @@
 {
   "course_id": "calculus3",
   "week": 4,
-  "title": "微積分 下 第 4 週",
+  "title": "微積分 下 第 4 週測驗",
   "knowledge_points": {},
   "questions": [
     {
@@ -14,7 +14,7 @@
         "C": "加速度向量",
         "D": "法向量"
       },
-      "answer": "",
+      "answer": "Q1",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -29,7 +29,7 @@
         "C": "不變",
         "D": "變為 0"
       },
-      "answer": "",
+      "answer": "Q2",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -44,7 +44,7 @@
         "C": "$|\\mathbf{a}|$",
         "D": "$\\mathbf{a} \\cdot \\mathbf{N}$"
       },
-      "answer": "",
+      "answer": "Q3",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -59,7 +59,7 @@
         "C": "$\\mathbf{T} \\cdot \\mathbf{N}$",
         "D": "$\\mathbf{a} \\times \\mathbf{v}$"
       },
-      "answer": "",
+      "answer": "Q4",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -74,7 +74,7 @@
         "C": "所有方向",
         "D": "運動切線方向"
       },
-      "answer": "",
+      "answer": "Q5",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -89,7 +89,7 @@
         "C": "$\\mathbf{B}$",
         "D": "$\\mathbf{v}$"
       },
-      "answer": "",
+      "answer": "Q6",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -104,7 +104,7 @@
         "C": "直線",
         "D": "拋物線"
       },
-      "answer": "",
+      "answer": "Q7",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -119,7 +119,7 @@
         "C": "角動量",
         "D": "質量"
       },
-      "answer": "",
+      "answer": "Q8",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -134,7 +134,7 @@
         "C": "能量",
         "D": "時間"
       },
-      "answer": "",
+      "answer": "Q9",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -149,7 +149,7 @@
         "C": "加速度",
         "D": "扭率\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
       },
-      "answer": "",
+      "answer": "Q10",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -164,7 +164,7 @@
         "C": "$a_N = \\sqrt{|\\mathbf{a}|^2 - a_T^2}$\n    -",
         "D": "$a_T$ 永遠為正值"
       },
-      "answer": "",
+      "answer": "Q11",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "隨時間（位置）而變",
         "D": "是右手系"
       },
-      "answer": "",
+      "answer": "Q12",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -194,7 +194,7 @@
         "C": "重力加速度",
         "D": "質點質量"
       },
-      "answer": "",
+      "answer": "Q13",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -209,7 +209,7 @@
         "C": "變速曲線運動",
         "D": "自由落體"
       },
-      "answer": "",
+      "answer": "Q14",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -224,7 +224,7 @@
         "C": "與副法向量垂直",
         "D": "是曲線最貼近的平面"
       },
-      "answer": "",
+      "answer": "Q15",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -239,7 +239,7 @@
         "C": "$a_N$ 恆指向彎曲圓心",
         "D": "$a_N$ 可能為負"
       },
-      "answer": "",
+      "answer": "Q16",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
         "C": "$a_T = 0$",
         "D": "$a_N = 0$"
       },
-      "answer": "",
+      "answer": "Q17",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -269,7 +269,7 @@
         "C": "$d\\mathbf{B}/ds$ 與 $\\mathbf{N}$ 平行",
         "D": "$\\mathbf{B}$ 垂直於 $\\mathbf{T}$"
       },
-      "answer": "",
+      "answer": "Q18",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -284,7 +284,7 @@
         "C": "運動在一個平面內",
         "D": "速率恆定"
       },
-      "answer": "",
+      "answer": "Q19",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -299,7 +299,7 @@
         "C": "切線加速度分量 $a_T$",
         "D": "速度\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
       },
-      "answer": "",
+      "answer": "Q20",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -309,7 +309,7 @@
       "type": "fill",
       "title": "**Q21**: 若 $\\mathbf{v} = \\langle 3, 4, 0 \\rangle$，則速率 $v = $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q21",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -319,7 +319,7 @@
       "type": "fill",
       "title": "**Q22**: 加速度向量 $\\mathbf{a}$ 在 $\\mathbf{N}$ 方向的分量大小稱為 __________ 加速度。",
       "options": {},
-      "answer": "",
+      "answer": "Q22",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -329,7 +329,7 @@
       "type": "fill",
       "title": "**Q23**: 在圓周運動中，若半徑為 2，速率為 4，則法線加速度 $a_N = $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q23",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -339,7 +339,7 @@
       "type": "fill",
       "title": "**Q24**: 密切平面的方程式可以用點與法向量 __________ 來建立。",
       "options": {},
-      "answer": "",
+      "answer": "Q24",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -349,7 +349,7 @@
       "type": "fill",
       "title": "**Q25**: 拋體運動的水平軌跡在 $xy$ 平面上是一條 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q25",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -359,7 +359,7 @@
       "type": "fill",
       "title": "**Q26**: 若質點做直線運動，則其副法向量 $\\mathbf{B}$ 是 __________ (填「確定的」或「不確定的」)。",
       "options": {},
-      "answer": "",
+      "answer": "Q26",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -369,7 +369,7 @@
       "type": "fill",
       "title": "**Q27**: $a_T$ 的正負取決於速率是 __________ 還是減小。",
       "options": {},
-      "answer": "",
+      "answer": "Q27",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -379,7 +379,7 @@
       "type": "fill",
       "title": "**Q28**: 單位切向量對時間的導數 $\\mathbf{T}'(t)$ 的方向與向量 __________ 相同。",
       "options": {},
-      "answer": "",
+      "answer": "Q28",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -389,7 +389,7 @@
       "type": "fill",
       "title": "**Q29**: 克卜勒第一定律指出行星軌道形狀為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q29",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -399,7 +399,7 @@
       "type": "fill",
       "title": "**Q30**: 加速度的長度平方滿足 $|\\mathbf{a}|^2 = a_T^2 + $ __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP4.1 | KP4.2 | KP4.3 | KP4.4 | KP4.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 1, 2 | 3, 7, 9 | 4, 6, 10 | 5 | 8 |\n| Q11-Q20| 14, 17, 20 | 11, 16 | 12, 15, 18 | 13 | 19 |\n| Q21-Q30| 21 | 22, 23, 27, 30 | 24, 26, 28 | 25 | 29 |",
       "options": {},
-      "answer": "",
+      "answer": "Q30",
       "kp": "",
       "explanation": "",
       "q_vector": []

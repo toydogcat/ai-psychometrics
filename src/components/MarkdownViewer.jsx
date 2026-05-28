@@ -258,7 +258,7 @@ export default function MarkdownViewer({ rawText }) {
           if (nextBacktick !== -1) {
             const codeText = text.substring(index + 1, nextBacktick);
             tokens.push(
-              <code key={`code-${index}`} className={`px-1.5 py-0.5 rounded bg-slate-950/70 border border-white/5 text-pink-400 font-mono ${sizes.code} mx-0.5 shadow-inner`}>
+              <code key={`code-${index}`} className={`px-1.5 py-0.5 rounded bg-slate-950/70 border border-white/10 text-cyan-400 font-mono ${sizes.code} mx-0.5 shadow-inner font-medium`}>
                 {codeText}
               </code>
             );
@@ -272,11 +272,25 @@ export default function MarkdownViewer({ rawText }) {
           const nextBold = text.indexOf('**', index + 2);
           if (nextBold !== -1) {
             const boldText = text.substring(index + 2, nextBold);
-            tokens.push(
-              <strong key={`bold-${index}`} className="text-pink-400 font-extrabold">
-                {parseInlineStyles(boldText)}
-              </strong>
-            );
+            const kpMatch = boldText.match(/\((KP\d+(?:\.\d+)*)\)/i);
+            
+            if (kpMatch) {
+              const cleanText = boldText.replace(/\((?:KP\d+(?:\.\d+)*)\)/i, '').trim();
+              tokens.push(
+                <strong key={`bold-${index}`} className="text-white font-bold tracking-wide inline-flex items-center gap-1.5 flex-wrap">
+                  {parseInlineStyles(cleanText)}
+                  <span className="inline-flex items-center px-2 py-0.5 rounded bg-indigo-500/10 border border-indigo-500/35 text-[9px] font-extrabold text-indigo-300 ml-1 shadow-[0_0_8px_rgba(99,102,241,0.15)] tracking-wider select-none animate-pulse hover:scale-105 active:scale-95 transition-all">
+                    {kpMatch[1].toUpperCase()}
+                  </span>
+                </strong>
+              );
+            } else {
+              tokens.push(
+                <strong key={`bold-${index}`} className="text-white font-bold tracking-wide">
+                  {parseInlineStyles(boldText)}
+                </strong>
+              );
+            }
             index = nextBold + 2;
             continue;
           }
@@ -338,8 +352,8 @@ export default function MarkdownViewer({ rawText }) {
         const workspaceTitle = codeLanguage.toUpperCase() === 'PYTHON' ? 'PYTHON CODE WORKSPACE' : 'BASH SHELL ENVIRONMENT';
 
         blocks.push(
-          <div key={`code-${currentCounter}`} className="relative my-6 rounded-2xl border border-white/5 bg-[#04060f] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.45)] backdrop-blur-md">
-            <div className="flex items-center justify-between px-5 py-3 bg-[#070914]/80 border-b border-white/5 text-xs text-slate-400 font-mono select-none">
+          <div key={`code-${currentCounter}`} className="relative my-14 rounded-2xl border border-white/10 bg-[#03050b] overflow-hidden shadow-[0_30px_70px_rgba(0,0,0,0.6)] backdrop-blur-md">
+            <div className="flex items-center justify-between px-5 py-3 bg-[#070914]/90 border-b border-white/5 text-xs text-slate-400 font-mono select-none">
               <div className="flex items-center gap-4">
                 <div className="flex gap-1.5 select-none shrink-0">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f56] inline-block shadow-[0_0_6px_rgba(255,95,86,0.25)]"></span>
@@ -350,7 +364,7 @@ export default function MarkdownViewer({ rawText }) {
               </div>
               <button
                 onClick={() => handleCopy(codeString, currentCounter)}
-                className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/50 hover:bg-slate-800 text-slate-300 hover:text-white border border-white/5 transition active:scale-95 text-[10px] font-semibold"
+                className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-900/60 hover:bg-slate-800 text-slate-300 hover:text-white border border-white/5 transition active:scale-95 text-[10px] font-semibold"
               >
                 {copiedIndex === currentCounter ? (
                   <>
@@ -365,7 +379,10 @@ export default function MarkdownViewer({ rawText }) {
                 )}
               </button>
             </div>
-            <div className={`p-4 overflow-x-auto ${sizes.code} w-full table select-text custom-scrollbar font-mono leading-6`}>
+            <div 
+              className={`py-6 px-7 overflow-x-auto ${sizes.code} w-full table select-text custom-scrollbar font-mono leading-7`}
+              style={{ fontFamily: "'JetBrains Mono', 'Fira Code', monospace" }}
+            >
               {highlightPython(codeString)}
             </div>
           </div>
@@ -383,21 +400,21 @@ export default function MarkdownViewer({ rawText }) {
 
           if (depth === 1) {
             blocks.push(
-              <h1 key={`h-${blockCounter++}`} className={`font-extrabold text-white mt-10 mb-6 border-b border-indigo-900/20 pb-4 bg-gradient-to-r from-pink-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent select-text tracking-tight ${sizes.h1}`}>
+              <h1 key={`h-${blockCounter++}`} className={`font-extrabold text-white mt-20 mb-10 border-b border-indigo-900/35 pb-5 bg-gradient-to-r from-pink-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent select-text tracking-tight ${sizes.h1}`}>
                 {text}
               </h1>
             );
           } else if (depth === 2) {
             blocks.push(
-              <h2 id={id} key={`h-${blockCounter++}`} className={`font-extrabold text-white mt-12 mb-6 flex items-center gap-3.5 scroll-mt-24 select-text ${sizes.h2}`}>
-                <span className="w-1 h-6 rounded-full bg-gradient-to-b from-pink-500 to-indigo-500 shrink-0 shadow-[0_0_10px_rgba(236,72,153,0.5)]"></span>
-                <span className="bg-gradient-to-r from-indigo-200 to-slate-100 bg-clip-text text-transparent">{text}</span>
+              <h2 id={id} key={`h-${blockCounter++}`} className={`font-extrabold text-white mt-24 mb-8 flex items-center gap-3.5 scroll-mt-24 select-text ${sizes.h2}`}>
+                <span className="w-1.5 h-6 rounded-full bg-gradient-to-b from-pink-500 via-indigo-500 to-cyan-400 shrink-0 shadow-[0_0_12px_rgba(236,72,153,0.4)]"></span>
+                <span className="bg-gradient-to-r from-indigo-100 via-slate-100 to-slate-200 bg-clip-text text-transparent">{text}</span>
               </h2>
             );
           } else {
             blocks.push(
-              <h3 id={id} key={`h-${blockCounter++}`} className={`font-extrabold text-slate-100 mt-8 mb-4 flex items-center gap-2 scroll-mt-24 select-text ${sizes.h3}`}>
-                <span className="w-1.5 h-1.5 rounded-full bg-pink-500/80 inline-block shadow-[0_0_6px_rgba(236,72,153,0.3)]"></span>
+              <h3 id={id} key={`h-${blockCounter++}`} className={`font-extrabold text-slate-100 mt-16 mb-6 flex items-center gap-2.5 scroll-mt-24 select-text ${sizes.h3}`}>
+                <span className="w-2 h-2 rounded-full bg-pink-500/80 inline-block shadow-[0_0_8px_rgba(236,72,153,0.35)]"></span>
                 <span>{text}</span>
               </h3>
             );
@@ -409,7 +426,9 @@ export default function MarkdownViewer({ rawText }) {
 
       // 3. Horizontal rule
       if (trimmed === '---') {
-        blocks.push(<hr key={`hr-${blockCounter++}`} className="my-8 border-slate-800/50" />);
+        blocks.push(
+          <hr key={`hr-${blockCounter++}`} className="my-20 border-0 h-px bg-gradient-to-r from-transparent via-slate-800/60 to-transparent" />
+        );
         idx++;
         continue;
       }
@@ -476,23 +495,28 @@ export default function MarkdownViewer({ rawText }) {
 
         const currentCounter = blockCounter++;
         blocks.push(
-          <ul key={`list-${currentCounter}`} className="space-y-3.5 my-5 pl-1 flex flex-col list-none">
+          <ul key={`list-${currentCounter}`} className="my-10 pl-1 flex flex-col list-none">
             {listItems.map((item, lIdx) => {
-              const paddingLeftVal = item.indent * 6; // Proportional indent: 6px per space of indent
+              const paddingLeftVal = item.indent * 7; // Proportional indent: 7px per space of indent
+              const isNested = item.indent > 0;
+              
+              const liClass = isNested 
+                ? `flex items-start leading-7 md:leading-[1.9] ${sizes.li} text-slate-300/90 tracking-wide border-l border-indigo-500/20 pl-6 ml-2.5 mt-3.5 mb-2 bg-white/[0.005] hover:bg-white/[0.012] py-2 pr-4 rounded-r-lg transition-colors duration-150`
+                : `flex items-start leading-7 md:leading-[1.95] ${sizes.li} text-slate-200 tracking-wide mt-6 mb-2.5 first:mt-1`;
 
               return (
                 <li
                   key={lIdx}
-                  className={`flex items-start leading-relaxed md:leading-loose ${sizes.li} text-slate-300 tracking-wide`}
+                  className={liClass}
                   style={{ paddingLeft: `${paddingLeftVal}px` }}
                 >
                   {item.type === 'unordered' ? (
-                    item.indent > 0 ? (
-                      // Nested bullet: slightly smaller, elegant hollow or bordered dot
-                      <span className="w-1.5 h-1.5 rounded-full border border-pink-400 mr-3.5 shrink-0 mt-2.5 shadow-[0_0_4px_rgba(236,72,153,0.3)]"></span>
+                    isNested ? (
+                      // Nested bullet: gorgeous cyan ring with a dark center
+                      <span className="w-2 h-2 rounded-full border-2 border-cyan-400/80 mr-3.5 shrink-0 mt-2 bg-[#060814] shadow-[0_0_5px_rgba(34,211,238,0.2)]"></span>
                     ) : (
-                      // Top-level bullet: classic pink gradient dot
-                      <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 mr-3.5 shrink-0 mt-2 shadow-[0_0_6px_rgba(236,72,153,0.45)]"></span>
+                      // Top-level bullet: classic pink gradient dot with glow
+                      <span className="w-2 h-2 rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 mr-3.5 shrink-0 mt-2.5 shadow-[0_0_6px_rgba(236,72,153,0.45)]"></span>
                     )
                   ) : (
                     // Ordered bullet: styled pink/gradient number
@@ -530,7 +554,7 @@ export default function MarkdownViewer({ rawText }) {
       if (paragraphLines.length > 0) {
         const paraText = paragraphLines.join('\n');
         blocks.push(
-          <p key={`p-${blockCounter++}`} className={`leading-relaxed md:leading-loose text-slate-300 ${sizes.body} mb-6 select-text tracking-wide`}>
+          <p key={`p-${blockCounter++}`} className={`leading-8 md:leading-[2.0] text-slate-300/90 ${sizes.body} mb-12 select-text tracking-wide`}>
             {parseInlineStyles(paraText)}
           </p>
         );
@@ -550,7 +574,7 @@ export default function MarkdownViewer({ rawText }) {
   return (
     <div className="flex gap-8 relative flex-col lg:flex-row items-start w-full">
       {/* Markdown Content Frame */}
-      <div ref={containerRef} className="flex-1 max-w-4xl w-full bg-[#090b16]/25 border border-slate-800/60 p-6 md:p-10 rounded-3xl backdrop-blur-md text-slate-100 shadow-xl overflow-hidden select-text">
+      <div ref={containerRef} className="flex-1 max-w-4xl w-full bg-[#090b16]/45 border border-slate-800/80 p-6 md:p-10 rounded-3xl backdrop-blur-xl text-slate-100 shadow-[0_30px_100px_rgba(0,0,0,0.55)] overflow-hidden select-text">
         {/* Font Control Bar */}
         <div className="flex items-center justify-between pb-6 mb-8 border-b border-slate-800/40 select-none">
           <div className="flex items-center gap-2.5">

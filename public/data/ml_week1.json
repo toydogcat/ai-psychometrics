@@ -1,644 +1,485 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 1,
-  "title": "機器學習第 1 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP1.1": "概念基礎",
-    "KP1.2": "數學原理",
-    "KP1.3": "Python 實作",
-    "KP1.4": "模型評估",
-    "KP1.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W1-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP1.2",
-      "title": "這是第 1 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.1.2"
+      ],
+      "answer": "C",
+      "title": "機器學習中，$P, T, E$ 定義裡的 $E$ 代表？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "效能",
+        "B": "任務",
+        "C": "經驗",
+        "D": "評估"
+      }
     },
     {
-      "id": "ML-W1-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP1.3",
-      "title": "這是第 1 週的第 2 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.1.1"
+      ],
+      "answer": "B",
+      "title": "哪一個歷史事件標誌著人工智慧作為一個學術領域的正式誕生？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "圖靈測試發表",
+        "B": "達特茅斯會議",
+        "C": "擊敗西洋棋王",
+        "D": "AlphaGo 誕生"
+      }
     },
     {
-      "id": "ML-W1-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP1.4",
-      "title": "這是第 1 週的第 3 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.1.3"
+      ],
+      "answer": "B",
+      "title": "下列哪一個應用最適合使用「非監督式學習」？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "預測明天的股價",
+        "B": "根據購買紀錄將客戶自動分類",
+        "C": "辨識圖片中的貓狗",
+        "D": "過濾垃圾郵件"
+      }
     },
     {
-      "id": "ML-W1-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP1.5",
-      "title": "這是第 1 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.1.4"
+      ],
+      "answer": "C",
+      "title": "機器學習模型在訓練數據上表現極佳，但在新數據上表現極差，這稱為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "欠擬合",
+        "B": "過擬合",
+        "C": "泛化能力強",
+        "D": "收斂"
+      }
     },
     {
-      "id": "ML-W1-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP1.1",
-      "title": "這是第 1 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.1.5"
+      ],
+      "answer": "B",
+      "title": "Scikit-Learn 中，用於模型訓練的方法通常是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`train()`",
+        "B": "`fit()`",
+        "C": "`learn()`",
+        "D": "`update()`"
+      }
     },
     {
-      "id": "ML-W1-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP1.2",
-      "title": "這是第 1 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.1.1"
+      ],
+      "answer": "B",
+      "title": "圖靈測試的主要目的是評估機器是否具備？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "計算能力",
+        "B": "智慧行為",
+        "C": "存儲容量",
+        "D": "感知能力"
+      }
     },
     {
-      "id": "ML-W1-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP1.3",
-      "title": "這是第 1 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.1.3"
+      ],
+      "answer": "D",
+      "title": "預測一個人的年薪是 5 萬還是 10 萬，這屬於監督式學習中的哪一類？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "分類",
+        "B": "聚類",
+        "C": "回歸",
+        "D": "降維"
+      }
     },
     {
-      "id": "ML-W1-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP1.4",
-      "title": "這是第 1 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.1.5"
+      ],
+      "answer": "C",
+      "title": "下列哪一個不是機器學習工作流中的步驟？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "特徵提取",
+        "B": "資料清理",
+        "C": "手工編寫所有規則",
+        "D": "模型評估"
+      }
     },
     {
-      "id": "ML-W1-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP1.5",
-      "title": "這是第 1 週的第 9 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.1.5"
+      ],
+      "answer": "C",
+      "title": "`train_test_split` 函數位於 sklearn 的哪一個模組下？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "`datasets`",
+        "B": "`metrics`",
+        "C": "`model_selection`",
+        "D": "`preprocessing`"
+      }
     },
     {
-      "id": "ML-W1-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP1.1",
-      "title": "這是第 1 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.1.1"
+      ],
+      "answer": "C",
+      "title": "現代機器學習的復興，主要歸功於什麼？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "演算法完全革新",
+        "B": "數據量與算力的提升",
+        "C": "符號邏輯的突破",
+        "D": "人類大腦結構的完全破解"
+      }
     },
     {
-      "id": "ML-W1-Q11",
-      "type": "single",
-      "kp": "KP1.2",
-      "title": "這是第 1 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.1.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於監督式學習，正確的敘述有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "資料必須包含標籤",
+        "B": "主要包含分類與回歸",
+        "C": "模型不需要訓練",
+        "D": "旨在預測目標變數"
+      }
     },
     {
-      "id": "ML-W1-Q12",
-      "type": "single",
-      "kp": "KP1.3",
-      "title": "這是第 1 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.1.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "引起 AI 寒冬的原因可能包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "理論模型過於複雜",
+        "B": "電腦運算能力不足",
+        "C": "數據量太少",
+        "D": "過高的預期與實際表現的落差"
+      }
     },
     {
-      "id": "ML-W1-Q13",
-      "type": "single",
-      "kp": "KP1.4",
-      "title": "這是第 1 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.1.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "哪些是典型的非監督式學習任務？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "客戶分群",
+        "B": "異常檢測",
+        "C": "房價預測",
+        "D": "降維降噪"
+      }
     },
     {
-      "id": "ML-W1-Q14",
-      "type": "single",
-      "kp": "KP1.5",
-      "title": "這是第 1 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.1.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於訓練集與測試集的劃分，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "訓練集用於調整模型參數",
+        "B": "測試集用於最終評估",
+        "C": "測試集絕對不能參與訓練",
+        "D": "比例通常為 1:1"
+      }
     },
     {
-      "id": "ML-W1-Q15",
-      "type": "single",
-      "kp": "KP1.1",
-      "title": "這是第 1 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.1.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "Scikit-Learn 的優點包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "豐富的演算法庫",
+        "B": "接口高度統一",
+        "C": "文檔詳盡",
+        "D": "支援深度神經網路大規模訓練 (主要由 PyTorch/TF 負責)"
+      }
     },
     {
-      "id": "ML-W1-Q16",
-      "type": "single",
-      "kp": "KP1.2",
-      "title": "這是第 1 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.1.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些屬於機器學習的核心要素？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "演算法",
+        "B": "資料",
+        "C": "算力",
+        "D": "程式碼長度"
+      }
     },
     {
-      "id": "ML-W1-Q17",
-      "type": "single",
-      "kp": "KP1.3",
-      "title": "這是第 1 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.1.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "泛化能力 (Generalization) 受到哪些因素影響？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "模型複雜度",
+        "B": "資料量大小",
+        "C": "特徵質量",
+        "D": "螢幕解析度"
+      }
     },
     {
-      "id": "ML-W1-Q18",
-      "type": "single",
-      "kp": "KP1.4",
-      "title": "這是第 1 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.1.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於標籤 (Label) 的描述，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "分類問題的標籤是類別",
+        "B": "回歸問題的標籤是連續數值",
+        "C": "非監督學習也有標籤",
+        "D": "標籤即為 y 值"
+      }
     },
     {
-      "id": "ML-W1-Q19",
-      "type": "single",
-      "kp": "KP1.5",
-      "title": "這是第 1 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.1.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在實務中，為什麼要設置 `random_state`？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "確保結果的可重複性",
+        "B": "提高運算速度",
+        "C": "方便與他人對齊實驗結果",
+        "D": "防止模型崩潰"
+      }
     },
     {
-      "id": "ML-W1-Q20",
-      "type": "single",
-      "kp": "KP1.1",
-      "title": "這是第 1 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.1.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些是常見的機器學習任務？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "人臉辨識",
+        "B": "機器翻譯",
+        "C": "推薦系統",
+        "D": "字串反轉 (傳統編程即可)"
+      }
     },
     {
-      "id": "ML-W1-Q21",
-      "type": "single",
-      "kp": "KP1.2",
-      "title": "這是第 1 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.1.2"
+      ],
+      "answer": [
+        "Performance"
+      ],
+      "title": "機器學習定義中的 $P$ 代表 __________ (Performance)。"
     },
     {
-      "id": "ML-W1-Q22",
-      "type": "single",
-      "kp": "KP1.3",
-      "title": "這是第 1 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.1.1"
+      ],
+      "answer": [
+        "圖靈"
+      ],
+      "title": "艾倫·圖靈提出的 __________ 測試是用來衡量機器是否展現智慧的標準。"
     },
     {
-      "id": "ML-W1-Q23",
-      "type": "single",
-      "kp": "KP1.4",
-      "title": "這是第 1 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.1.3"
+      ],
+      "answer": [
+        "監督式"
+      ],
+      "title": "有標籤的學習稱為 __________ 學習。"
     },
     {
-      "id": "ML-W1-Q24",
-      "type": "single",
-      "kp": "KP1.5",
-      "title": "這是第 1 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.1.5"
+      ],
+      "answer": [
+        "split"
+      ],
+      "title": "隨機拆分資料的函數名稱是 `train_test___________`。"
     },
     {
-      "id": "ML-W1-Q25",
-      "type": "single",
-      "kp": "KP1.1",
-      "title": "這是第 1 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.1.5"
+      ],
+      "answer": [
+        "predict"
+      ],
+      "title": "在 sklearn 中，呼叫模型物件的 __________ 方法可以對新數據進行預測。"
     },
     {
-      "id": "ML-W1-Q26",
-      "type": "single",
-      "kp": "KP1.2",
-      "title": "這是第 1 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.1.3"
+      ],
+      "answer": [
+        "回規"
+      ],
+      "title": "解決房價預測這種連續數值預測的問題屬於 __________ 任務。"
     },
     {
-      "id": "ML-W1-Q27",
-      "type": "single",
-      "kp": "KP1.3",
-      "title": "這是第 1 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.1.3"
+      ],
+      "answer": [
+        "降維"
+      ],
+      "title": "將高維數據壓縮為低維數據且儘量保留資訊的任務稱為 __________。"
     },
     {
-      "id": "ML-W1-Q28",
-      "type": "single",
-      "kp": "KP1.4",
-      "title": "這是第 1 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.1.4"
+      ],
+      "answer": [
+        "測試"
+      ],
+      "title": "機器學習追求的是在 __________ 集上的效能，而非僅僅在訓練集。"
     },
     {
-      "id": "ML-W1-Q29",
-      "type": "single",
-      "kp": "KP1.5",
-      "title": "這是第 1 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.1.5"
+      ],
+      "answer": [
+        "經典"
+      ],
+      "title": "Iris 資料集是一個經典的 __________ 資料集，常用於教學。"
     },
     {
-      "id": "ML-W1-Q30",
-      "type": "single",
-      "kp": "KP1.1",
-      "title": "這是第 1 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.1.2"
+      ],
+      "answer": [
+        "Experience"
+      ],
+      "title": "訓練數據在統計學中常被稱為 __________ (Experience)。 ---"
     }
   ]
 }

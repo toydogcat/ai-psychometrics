@@ -1,644 +1,489 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 3,
-  "title": "機器學習第 3 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP3.1": "概念基礎",
-    "KP3.2": "數學原理",
-    "KP3.3": "Python 實作",
-    "KP3.4": "模型評估",
-    "KP3.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W3-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP3.2",
-      "title": "這是第 3 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.3.1"
+      ],
+      "answer": "B",
+      "title": "梯度下降法中，參數更新的方向應該是梯度的？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "相同方向",
+        "B": "垂直方向",
+        "C": "相反方向",
+        "D": "隨機方向"
+      }
     },
     {
-      "id": "ML-W3-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP3.3",
-      "title": "這是第 3 週的第 2 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.3.3"
+      ],
+      "answer": "C",
+      "title": "學習率（Learning Rate）通常用哪一個希臘字母表示？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "$\\alpha$",
+        "B": "$\\beta$",
+        "C": "$\\eta$",
+        "D": "$\\gamma$"
+      }
     },
     {
-      "id": "ML-W3-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP3.4",
-      "title": "這是第 3 週的第 3 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.3.3"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "若學習率設置得非常大，損失函數的變化最可能是？",
+      "options": {
+        "A": "快速降至零",
+        "B": "緩慢下降",
+        "C": "在最小值附近劇烈震盪或發散",
+        "D": "保持不變"
+      }
     },
     {
-      "id": "ML-W3-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP3.5",
-      "title": "這是第 3 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.3.4"
+      ],
+      "answer": "D",
+      "title": "每一步只使用「一個隨機樣本」來更新權重的算法是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "BGD",
+        "B": "SGD",
+        "C": "Mini-batch GD",
+        "D": "OLS"
+      }
     },
     {
-      "id": "ML-W3-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP3.1",
-      "title": "這是第 3 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.3.5"
+      ],
+      "answer": "C",
+      "title": "執行梯度下降前，若特徵 A 的範圍是 [0, 1]，特徵 B 的範圍是 [0, 10000]，最推薦的操作是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "刪除特徵 B",
+        "B": "增加特徵 A 的權重",
+        "C": "特徵縮放",
+        "D": "忽略差異"
+      }
     },
     {
-      "id": "ML-W3-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP3.2",
-      "title": "這是第 3 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.3.1"
+      ],
+      "answer": "D",
+      "title": "梯度下降停止的常見條件是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "損失函數降至負數",
+        "B": "梯度接近於零或達到最大迭代次數",
+        "C": "學習率變為零",
+        "D": "資料全部用完"
+      }
     },
     {
-      "id": "ML-W3-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP3.3",
-      "title": "這是第 3 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.3.1"
+      ],
+      "answer": "B",
+      "title": "損失函數 $J(w)$ 對 $w$ 的導數代表了什麼？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "函數的最小值",
+        "B": "函數在該點的切線斜率",
+        "C": "資料的標準差",
+        "D": "學習的速度"
+      }
     },
     {
-      "id": "ML-W3-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP3.4",
-      "title": "這是第 3 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.3.4"
+      ],
+      "answer": "C",
+      "title": "在小批量梯度下降 (Mini-batch GD) 中，Batch Size 通常設定為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "1",
+        "B": "總樣本數",
+        "C": "2 的次方（如 32, 64, 128）",
+        "D": "隨機數"
+      }
     },
     {
-      "id": "ML-W3-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP3.5",
-      "title": "這是第 3 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.3.4"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "下列哪一個不是梯度下降法的優點？",
+      "options": {
+        "A": "適合大規模數據",
+        "B": "能處理非線性模型",
+        "C": "總能一步到位找到最優解",
+        "D": "記憶體佔用可控"
+      }
     },
     {
-      "id": "ML-W3-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP3.1",
-      "title": "這是第 3 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.3.4"
+      ],
+      "answer": "B",
+      "title": "隨機梯度下降 (SGD) 的「隨機性」主要來源於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "隨機的學習率",
+        "B": "隨機選擇樣本計算梯度",
+        "C": "隨機的損失函數",
+        "D": "隨機的硬體運算"
+      }
     },
     {
-      "id": "ML-W3-Q11",
-      "type": "single",
-      "kp": "KP3.2",
-      "title": "這是第 3 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.3.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於學習率 $\\eta$，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "它決定了每一步走多遠",
+        "B": "它是一個超參數",
+        "C": "可以隨著迭代過程逐漸減小",
+        "D": "應該設置為大於 1 的正整數"
+      }
     },
     {
-      "id": "ML-W3-Q12",
-      "type": "single",
-      "kp": "KP3.3",
-      "title": "這是第 3 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.3.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "哪些情況下梯度下降會比正規方程更有優勢？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "特徵數量 $n$ 非常大（如超過 100,000）",
+        "B": "資料量 $m$ 極大",
+        "C": "模型不是線性回歸",
+        "D": "需要在線上 (Online) 環境不斷更新模型"
+      }
     },
     {
-      "id": "ML-W3-Q13",
-      "type": "single",
-      "kp": "KP3.4",
-      "title": "這是第 3 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.3.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "特徵縮放的方法包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Z-score 標準化 (Standardization)",
+        "B": "Min-Max 歸一化 (Normalization)",
+        "C": "對數轉換",
+        "D": "隨機打亂"
+      }
     },
     {
-      "id": "ML-W3-Q14",
-      "type": "single",
-      "kp": "KP3.5",
-      "title": "這是第 3 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.3.1",
+        "KP 3.3.3",
+        "KP 3.3.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "導致梯度下降「卡住」或失敗的原因可能有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "陷入局部最小值（對於非凸函數）",
+        "B": "陷入鞍點 (Saddle Points)",
+        "C": "學習率太小導致收斂過慢",
+        "D": "特徵未進行縮放導致路徑曲折"
+      }
     },
     {
-      "id": "ML-W3-Q15",
-      "type": "single",
-      "kp": "KP3.1",
-      "title": "這是第 3 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.3.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於隨機梯度下降 (SGD) 的描述，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "損失曲線會有很多噪音（波動）",
+        "B": "比批量梯度下降更容易跳出局部最小值",
+        "C": "在大數據集下速度極快",
+        "D": "最終一定會停在全域最小值點（不一定，可能在附近震盪）"
+      }
     },
     {
-      "id": "ML-W3-Q16",
-      "type": "single",
-      "kp": "KP3.2",
-      "title": "這是第 3 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.3.1",
+        "KP 3.3.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "梯度的組成部分包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "對 $w$ 的偏導數",
+        "B": "對 $b$ 的偏導數",
+        "C": "學習率",
+        "D": "隨機種子"
+      }
     },
     {
-      "id": "ML-W3-Q17",
-      "type": "single",
-      "kp": "KP3.3",
-      "title": "這是第 3 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.3.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "哪些 Scikit-Learn 的類別使用了梯度下降思想？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "`SGDRegressor`",
+        "B": "`SGDClassifier`",
+        "C": "`LinearRegression` (預設使用 OLS/SVD)",
+        "D": "`MLPClassifier`"
+      }
     },
     {
-      "id": "ML-W3-Q18",
-      "type": "single",
-      "kp": "KP3.4",
-      "title": "這是第 3 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.3.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "初始化權重時，為什麼通常不建議全設為零？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "會導致對稱性問題（在神經網路中較明顯）",
+        "B": "梯度可能為零導致無法更新",
+        "C": "會增加運算負擔",
+        "D": "模型會報錯"
+      }
     },
     {
-      "id": "ML-W3-Q19",
-      "type": "single",
-      "kp": "KP3.5",
-      "title": "這是第 3 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.3.1"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "優化過程中的「收斂」是指？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "損失函數不再明顯下降",
+        "B": "參數更新量非常小",
+        "C": "準確率達到 100%",
+        "D": "梯度接近於零"
+      }
     },
     {
-      "id": "ML-W3-Q20",
-      "type": "single",
-      "kp": "KP3.1",
-      "title": "這是第 3 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.3.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於小批量梯度下降 (Mini-batch GD)，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "取 BGD 與 SGD 的折衷",
+        "B": "適合矩陣運算加速",
+        "C": "是目前深度學習最主流的優化方式",
+        "D": "Batch Size 越大越好"
+      }
     },
     {
-      "id": "ML-W3-Q21",
-      "type": "single",
-      "kp": "KP3.2",
-      "title": "這是第 3 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.3.2"
+      ],
+      "answer": [
+        "反"
+      ],
+      "title": "梯度下降的核心目的是最小化 __________ 函數。"
     },
     {
-      "id": "ML-W3-Q22",
-      "type": "single",
-      "kp": "KP3.3",
-      "title": "這是第 3 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.3.1"
+      ],
+      "answer": [
+        "學習率"
+      ],
+      "title": "函數下降最快的方向是梯度的 __________ 方向。"
     },
     {
-      "id": "ML-W3-Q23",
-      "type": "single",
-      "kp": "KP3.4",
-      "title": "這是第 3 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.3.4"
+      ],
+      "answer": [
+        "隨機"
+      ],
+      "title": "SGD 是 __________ 梯度下降的縮寫。"
     },
     {
-      "id": "ML-W3-Q24",
-      "type": "single",
-      "kp": "KP3.5",
-      "title": "這是第 3 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.3.3"
+      ],
+      "answer": [
+        "小批量"
+      ],
+      "title": "在更新公式 $w = w - \\eta \\cdot g$ 中，$\\eta$ 代表 __________。"
     },
     {
-      "id": "ML-W3-Q25",
-      "type": "single",
-      "kp": "KP3.1",
-      "title": "這是第 3 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.3.5"
+      ],
+      "answer": [
+        "凸"
+      ],
+      "title": "執行梯度下降前對特徵進行統一量級的操作稱為特徵 __________。"
     },
     {
-      "id": "ML-W3-Q26",
-      "type": "single",
-      "kp": "KP3.2",
-      "title": "這是第 3 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.3.1"
+      ],
+      "answer": [
+        "縮放"
+      ],
+      "title": "當損失函數是 __________ 函數時，梯度下降保證能找到全域最優解。"
     },
     {
-      "id": "ML-W3-Q27",
-      "type": "single",
-      "kp": "KP3.3",
-      "title": "這是第 3 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.3.4"
+      ],
+      "answer": [
+        "SGDRegressor"
+      ],
+      "title": "BGD 使用 __________ 樣本來計算一次梯度。"
     },
     {
-      "id": "ML-W3-Q28",
-      "type": "single",
-      "kp": "KP3.4",
-      "title": "這是第 3 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.3.1"
+      ],
+      "answer": [
+        "fit"
+      ],
+      "title": "梯度是損失函數對參數的 __________ 導數構成的向量。"
     },
     {
-      "id": "ML-W3-Q29",
-      "type": "single",
-      "kp": "KP3.5",
-      "title": "這是第 3 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.3.3"
+      ],
+      "answer": [
+        "梯度"
+      ],
+      "title": "如果學習率太小，模型 __________ 速度會太慢。"
     },
     {
-      "id": "ML-W3-Q30",
-      "type": "single",
-      "kp": "KP3.1",
-      "title": "這是第 3 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.3.4"
+      ],
+      "answer": [
+        "局部"
+      ],
+      "title": "`sklearn.linear_model.__________` 是 sklearn 提供的隨機梯度下降回歸器。 ---"
     }
   ]
 }

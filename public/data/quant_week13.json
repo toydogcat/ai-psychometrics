@@ -1,0 +1,489 @@
+{
+  "courseId": "python-office-quant",
+  "week": 13,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP13.3"
+      ],
+      "answer": "C",
+      "title": "在 Seaborn 中，最適合用來展示多變量之間相關係數矩陣的圖表是？",
+      "options": {
+        "A": "Scatter Plot",
+        "B": "Box Plot",
+        "C": "Heatmap",
+        "D": "Violin Plot"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP13.5"
+      ],
+      "answer": "A",
+      "title": "Matplotlib 中創建一個 2 行 2 列的子圖佈局，應使用代碼？",
+      "options": {
+        "A": "`plt.figure(2, 2)`",
+        "B": "`plt.subplots(2, 2)`",
+        "C": "`plt.grid(2, 2)`",
+        "D": "`plt.add_axes(2, 2)`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP13.4"
+      ],
+      "answer": "D",
+      "title": "哪種圖表最適合用來觀察連續數組的分佈情況與是否存在異常值？",
+      "options": {
+        "A": "Pie Chart",
+        "B": "Box Plot",
+        "C": "Line Chart",
+        "D": "Bar Chart"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP13.1"
+      ],
+      "answer": "B",
+      "title": "如何在畫圖後顯示圖表窗口？",
+      "options": {
+        "A": "`plt.display()`",
+        "B": "`plt.show()`",
+        "C": "`plt.render()`",
+        "D": "`plt.open()`"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP2.13.1"
+      ],
+      "answer": "C",
+      "title": "Seaborn 是基於哪個庫封裝而成的？",
+      "options": {
+        "A": "Pandas",
+        "B": "NumPy",
+        "C": "Matplotlib",
+        "D": "Plotly"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP13.2"
+      ],
+      "answer": "B",
+      "title": "設置圖表標題的函數是？",
+      "options": {
+        "A": "`plt.title()`",
+        "B": "`plt.header()`",
+        "C": "`plt.label()`",
+        "D": "`plt.text()`"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP13.2"
+      ],
+      "answer": "D",
+      "title": "在散點圖中，若要設置點的透明度，應調整哪個參數？",
+      "options": {
+        "A": "`alpha`",
+        "B": "`opacity`",
+        "C": "`transparent`",
+        "D": "`beta`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP13.2"
+      ],
+      "answer": "C",
+      "title": "`sns.set_theme(style='whitegrid')` 的作用是？",
+      "options": {
+        "A": "清空畫布",
+        "B": "設置全局圖表風格",
+        "C": "修改背景顏色為白色",
+        "D": "顯示網格線"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP13.1"
+      ],
+      "answer": "A",
+      "title": "如何保存生成的圖表到本地？",
+      "options": {
+        "A": "`plt.save()`",
+        "B": "`plt.write_image()`",
+        "C": "`plt.savefig()`",
+        "D": "`plt.export()`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP13.4"
+      ],
+      "answer": "D",
+      "title": "箱線圖中的中心橫線代表什麼？",
+      "options": {
+        "A": "平均值",
+        "B": "中位數",
+        "C": "眾數",
+        "D": "最大值"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP13.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 Matplotlib 的中文字體顯示，下列哪些方法可行？",
+      "options": {
+        "A": "修改 `rcParams['font.sans-serif']`",
+        "B": "直接使用中文 (不設置字體)",
+        "C": "繪圖時指定 `fontproperties`",
+        "D": "使用英文標籤"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP13.3",
+        "KP13.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些屬於 Seaborn 的圖表類型？",
+      "options": {
+        "A": "`sns.boxplot()`",
+        "B": "`sns.heatmap()`",
+        "C": "`sns.pairplot()`",
+        "D": "`sns.kdeplot()`"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP13.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "圖表構成元素包含哪些？",
+      "options": {
+        "A": "Legend (圖例)",
+        "B": "Ticks (刻度)",
+        "C": "Grid (網格)",
+        "D": "Label (標籤)"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP13.3"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 `sns.pairplot()`，正確的有？",
+      "options": {
+        "A": "快速生成特徵間的兩兩關係圖",
+        "B": "對角線上通常顯示分佈圖",
+        "C": "適合處理特徵數量極多的數據",
+        "D": "支援按類別 (hue) 上色"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP13.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "如何優化多子圖的間距？",
+      "options": {
+        "A": "`plt.tight_layout()`",
+        "B": "`plt.subplots_adjust()`",
+        "C": "手動調整每個子圖位置",
+        "D": "縮小字體"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP13.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "折線圖 `plt.plot()` 支援哪些樣式參數？",
+      "options": {
+        "A": "`color`",
+        "B": "`linestyle`",
+        "C": "`marker`",
+        "D": "`linewidth`"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP13.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於箱線圖 (Boxplot) 的組成，正確的有？",
+      "options": {
+        "A": "箱子部分代表四分位距 (IQR)",
+        "B": "鬚線 (Whiskers) 通常延伸至 1.5 倍 IQR",
+        "C": "點狀物代表異常值 (Outliers)",
+        "D": "只能展示正數"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP13.4"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些操作屬於探索性數據分析 (EDA)？",
+      "options": {
+        "A": "繪製分佈直方圖",
+        "B": "觀察變量間的相關性",
+        "C": "清理異常數據",
+        "D": "構建機器學習模型"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP13.1",
+        "KP13.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "關於 Matplotlib 的 Figure 與 Axes，正確的有？",
+      "options": {
+        "A": "Figure 是最大的容器 (畫布)",
+        "B": "Axes 是具體的子圖區域",
+        "C": "一個 Figure 可以包含多個 Axes",
+        "D": "Axes 就是 Axis (座標軸)"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP2.13.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "`sns.countplot()` 的作用是？",
+      "options": {
+        "A": "統計每個類別的出現頻次",
+        "B": "自動繪製柱狀圖",
+        "C": "計算平均值",
+        "D": "處理缺失值"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP13.1"
+      ],
+      "answer": [
+        "sqlite3"
+      ],
+      "title": "繪製散點圖的函數是 `plt.________()`。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP13.2"
+      ],
+      "answer": [
+        "connect"
+      ],
+      "title": "在 Seaborn 中，使用 __________ 參數可以根據類別對數據進行上色區分。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP13.2"
+      ],
+      "answer": [
+        "cursor"
+      ],
+      "title": "`plt.xlabel('____')` 用於設置 X 軸標籤。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP13.3"
+      ],
+      "answer": [
+        "execute"
+      ],
+      "title": "繪製熱力圖的 Seaborn 函數名稱是 `sns.________()`。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP13.1"
+      ],
+      "answer": [
+        "fetchall"
+      ],
+      "title": "想要在同一個子圖中顯示多條線，只需連續調用 __________ 函數。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP13.1"
+      ],
+      "answer": [
+        "commit"
+      ],
+      "title": "獲取當前畫布對象的函數是 `plt.________()`。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP13.2"
+      ],
+      "answer": [
+        "close"
+      ],
+      "title": "設置圖例顯示的函數是 `plt.________()`。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP13.3"
+      ],
+      "answer": [
+        "SQLAlchemy"
+      ],
+      "title": "Seaborn 繪圖時，傳入數據的參數通常是 `data=____`。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP13.4"
+      ],
+      "answer": [
+        "create_engine"
+      ],
+      "title": "箱線圖中，第一四分位數 (Q1) 與第三四分位數 (Q3) 之間的距離稱為 __________ (英文縮寫)。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP13.1"
+      ],
+      "answer": [
+        "session"
+      ],
+      "title": "設置畫布尺寸的參數是 `figsize=(width, ________)`。 ---"
+    }
+  ]
+}

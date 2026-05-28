@@ -1,0 +1,489 @@
+{
+  "courseId": "python-office-quant",
+  "week": 3,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP3.1",
+        "KP3.2"
+      ],
+      "answer": "B",
+      "title": "在 `python-pptx` 中，幻燈片的所有內容（文字、圖片、圖表）統一被視為哪種對象？",
+      "options": {
+        "A": "Slide",
+        "B": "Shape",
+        "C": "Content",
+        "D": "Layout"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": "C",
+      "title": "如何創建一個新的 PPT 簡報對象？",
+      "options": {
+        "A": "`ppt = Presentation()`",
+        "B": "`ppt = PowerPoint()`",
+        "C": "`ppt = NewSlide()`",
+        "D": "`ppt = Document()`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": "B",
+      "title": "向 PPT 演示文稿添加一張新幻燈片，需要調用 `prs.slides.________(layout)`。",
+      "options": {
+        "A": "`new()`",
+        "B": "`append()`",
+        "C": "`add_slide()`",
+        "D": "`insert()`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": "A",
+      "title": "在 `python-pptx` 中，位置和尺寸的基礎單位是？",
+      "options": {
+        "A": "Pixel",
+        "B": "Point",
+        "C": "Emu",
+        "D": "Mm"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP3.4"
+      ],
+      "answer": "C",
+      "title": "如何獲取幻燈片母版中第 1 個佈局？",
+      "options": {
+        "A": "`prs.slide_layouts[0]`",
+        "B": "`prs.master[0]`",
+        "C": "`prs.templates[0]`",
+        "D": "`prs.layouts.get(0)`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "B",
+      "title": "若要在幻燈片中添加一個文字框，應使用哪個方法？",
+      "options": {
+        "A": "`slide.shapes.add_textbox()`",
+        "B": "`slide.add_text()`",
+        "C": "`slide.shapes.new_text()`",
+        "D": "`slide.insert_box()`"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": "D",
+      "title": "修改文字框內容應訪問哪個屬性？",
+      "options": {
+        "A": "`shape.content`",
+        "B": "`shape.text`",
+        "C": "`shape.value`",
+        "D": "`shape.string`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP3.3"
+      ],
+      "answer": "C",
+      "title": "圖表數據對象通常使用哪個類別？",
+      "options": {
+        "A": "`ChartData`",
+        "B": "`TableData`",
+        "C": "`DataPoint`",
+        "D": "`SeriesData`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP3.3"
+      ],
+      "answer": "A",
+      "title": "下列哪個常量代表柱狀圖類型？",
+      "options": {
+        "A": "`XL_CHART_TYPE.COLUMN_CLUSTERED`",
+        "B": "`XL_CHART_TYPE.PIE`",
+        "C": "`XL_CHART_TYPE.LINE`",
+        "D": "`XL_CHART_TYPE.BAR`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": "D",
+      "title": "保存 PPT 檔案的方法是？",
+      "options": {
+        "A": "`prs.save('test.pptx')`",
+        "B": "`prs.write('test.pptx')`",
+        "C": "`prs.export('test.pptx')`",
+        "D": "`prs.close()`"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP3.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於自動化生成 PPT，下列哪些是正確的應用？",
+      "options": {
+        "A": "定時抓取股市數據並生成每日分析 PPT",
+        "B": "將 Excel 信息轉化為多頁產品手冊",
+        "C": "自動修改現有 PPT 的動畫效果",
+        "D": "根據模板快速生成會議邀請"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP3.1",
+        "KP3.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "`slide.shapes` 集合中可能包含哪些類型的 Shape？",
+      "options": {
+        "A": "AutoShape",
+        "B": "Picture",
+        "C": "GraphicFrame (包含圖表)",
+        "D": "GroupShape"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於文字格式設置，正確的有？",
+      "options": {
+        "A": "`run.font.size = Pt(24)`",
+        "B": "`run.font.bold = True`",
+        "C": "`run.font.color.rgb = RGBColor(255, 0, 0)`",
+        "D": "`run.alignment = CENTER`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些單位可以用來設置尺寸？",
+      "options": {
+        "A": "`Inches`",
+        "B": "`Cm`",
+        "C": "`Pt`",
+        "D": "`Emu`"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 PPT 表格操作，正確的有？",
+      "options": {
+        "A": "`slide.shapes.add_table()`",
+        "B": "可以通過 `table.cell(r, c)` 訪問單元格",
+        "C": "單元格內部的文字通過 `cell.text_frame` 操作",
+        "D": "不支援合併單元格"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "如何向幻燈片添加圖片？",
+      "options": {
+        "A": "需要指定圖片路徑",
+        "B": "可以設置 left, top 座標",
+        "C": "可以設置 width, height 尺寸",
+        "D": "圖片會自動拉伸以填滿幻燈片"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP3.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "幻燈片母版 (Slide Master) 的作用包括？",
+      "options": {
+        "A": "定義背景圖案",
+        "B": "定義默認字體樣式",
+        "C": "定義佔位符位置",
+        "D": "保存具體的幻燈片數據"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP3.3"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列關於圖表的操作正確的有？",
+      "options": {
+        "A": "可以動態更新數據",
+        "B": "支援設置圖表標題",
+        "C": "支援顯示數據標籤",
+        "D": "支援所有 3D 圖表效果"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "關於 `python-pptx` 的依賴與環境，正確的有？",
+      "options": {
+        "A": "需要安裝 `lxml`",
+        "B": "支援 `.pptx` 格式",
+        "C": "支援舊版 `.ppt` 格式",
+        "D": "跨平台支持 (Win/Mac/Linux)"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "`text_frame` 對象可以？",
+      "options": {
+        "A": "設置垂直對齊方式",
+        "B": "設置文字自動換行",
+        "C": "包含多個 Paragraph",
+        "D": "設置文字旋轉角度"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": [
+        "add_slide"
+      ],
+      "title": "向 PPT 演示文稿添加一張新幻燈片，需要調用 `prs.slides.________(layout)`。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP3.1",
+        "KP3.2"
+      ],
+      "answer": [
+        "prs.save"
+      ],
+      "title": "訪問幻燈片中所有形狀的集合是 `slide.________`。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": [
+        "left"
+      ],
+      "title": "設置文字顏色為紅色，應使用 `RGBColor(255, ____, ____)`。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": [
+        "add_picture"
+      ],
+      "title": "在 `python-pptx` 中，設置寬度為 10 英吋需要使用 `________(10)`。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": [
+        "width"
+      ],
+      "title": "要清除幻燈片上的某個形狀，應調用 `shape.________()`。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP3.1",
+        "KP3.3"
+      ],
+      "answer": [
+        "placeholder"
+      ],
+      "title": "圖表對象在 Shape 集合中的類型是 `________`。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": [
+        "text"
+      ],
+      "title": "表格的行數在創建時通過參數 `________` 指定。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": [
+        "add_paragraph"
+      ],
+      "title": "獲取當前簡報中幻燈片的總數：`len(prs.________)`。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP3.2"
+      ],
+      "answer": [
+        "styles"
+      ],
+      "title": "修改段落對齊方式需設置 `paragraph.________ = PP_ALIGN.CENTER`。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP3.1"
+      ],
+      "answer": [
+        "font"
+      ],
+      "title": "`python-pptx` 主要是基於 __________ 格式標準開發的。 ---"
+    }
+  ]
+}

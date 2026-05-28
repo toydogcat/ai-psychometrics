@@ -1,644 +1,488 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 17,
-  "title": "機器學習第 17 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP17.1": "概念基礎",
-    "KP17.2": "數學原理",
-    "KP17.3": "Python 實作",
-    "KP17.4": "模型評估",
-    "KP17.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W17-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP17.2",
-      "title": "這是第 17 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.17.1"
+      ],
+      "answer": "C",
+      "title": "下列哪一個屬於「超參數」而非模型參數？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "線性回歸的權重 $w$",
+        "B": "神經網路的偏置 $b$",
+        "C": "隨機森林中的樹木數量",
+        "D": "支持向量機的支援向量"
+      }
     },
     {
-      "id": "ML-W17-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP17.3",
-      "title": "這是第 17 週的第 2 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.17.2"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "網格搜索 (GridSearch) 的主要缺點是？",
+      "options": {
+        "A": "可能漏掉最優解",
+        "B": "計算開銷隨參數數量呈指數增長",
+        "C": "只能處理數值參數",
+        "D": "不支持交叉驗證"
+      }
     },
     {
-      "id": "ML-W17-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP17.4",
-      "title": "這是第 17 週的第 3 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.17.2"
+      ],
+      "answer": "D",
+      "title": "對於搜尋空間極大的情況，哪種搜索方式通常效率更高？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Grid Search",
+        "B": "Randomized Search",
+        "C": "窮舉法",
+        "D": "手動調參"
+      }
     },
     {
-      "id": "ML-W17-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP17.5",
-      "title": "這是第 17 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.17.3"
+      ],
+      "answer": "B",
+      "title": "Scikit-Learn Pipeline 的 `fit` 方法依序呼叫了內部轉換器的？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "`fit` 與 `transform`",
+        "B": "`predict`",
+        "C": "`score`",
+        "D": "`save`"
+      }
     },
     {
-      "id": "ML-W17-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP17.1",
-      "title": "這是第 17 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.17.3"
+      ],
+      "answer": "C",
+      "title": "Pipeline 中最後一個組件通常必須是一個？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "Transformer (轉換器)",
+        "B": "Estimator (預測器/模型)",
+        "C": "Imputer",
+        "D": "Scaler"
+      }
     },
     {
-      "id": "ML-W17-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP17.2",
-      "title": "這是第 17 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.17.4"
+      ],
+      "answer": "B",
+      "title": "在 Pipeline 中設置參數網格時，引用子組件 `rf` 的參數 `n_estimators` 應寫為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "`rf.n_estimators`",
+        "B": "`rf_n_estimators`",
+        "C": "`rf__n_estimators`",
+        "D": "`rf[n_estimators]`"
+      }
     },
     {
-      "id": "ML-W17-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP17.3",
-      "title": "這是第 17 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.17.3"
+      ],
+      "answer": "D",
+      "title": "為了防止資料滲漏 (Data Leakage)，特徵縮放應在何時進行？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "資料讀取時",
+        "B": "整個資料集上",
+        "C": "交叉驗證的每一折內部",
+        "D": "模型訓練完成後"
+      }
     },
     {
-      "id": "ML-W17-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP17.4",
-      "title": "這是第 17 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.17.5"
+      ],
+      "answer": "C",
+      "title": "下列哪一個函式庫最適合用於保存大型、包含大量 NumPy 數組的 sklearn 模型？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "`json`",
+        "B": "`csv`",
+        "C": "`joblib`",
+        "D": "`txt`"
+      }
     },
     {
-      "id": "ML-W17-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP17.5",
-      "title": "這是第 17 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.17.2"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "如果網格搜索的最佳參數位於你設定的邊界上（例如最大深度設為 10，結果也是 10），你應該？",
+      "options": {
+        "A": "停止搜索",
+        "B": "擴大邊界繼續搜索",
+        "C": "縮小邊界",
+        "D": "更換模型"
+      }
     },
     {
-      "id": "ML-W17-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP17.1",
-      "title": "這是第 17 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.17.2"
+      ],
+      "answer": "D",
+      "title": "隨機搜索相比網格搜索，其預算（迭代次數）是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "固定的",
+        "B": "由用戶透過 `n_iter` 指定的",
+        "C": "自動決定的",
+        "D": "無窮大的"
+      }
     },
     {
-      "id": "ML-W17-Q11",
-      "type": "single",
-      "kp": "KP17.2",
-      "title": "這是第 17 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.17.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "超參數調優的目標包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "尋找使模型泛化能力最強的配置",
+        "B": "降低過擬合或欠擬合",
+        "C": "自動優化模型權重",
+        "D": "節省人工試錯時間"
+      }
     },
     {
-      "id": "ML-W17-Q12",
-      "type": "single",
-      "kp": "KP17.3",
-      "title": "這是第 17 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.17.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Scikit-Learn Pipeline 的核心價值有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "防止資料滲漏",
+        "B": "代碼組織整潔",
+        "C": "一次性對整個流水線進行調參",
+        "D": "提高預測速度"
+      }
     },
     {
-      "id": "ML-W17-Q13",
-      "type": "single",
-      "kp": "KP17.4",
-      "title": "這是第 17 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.17.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "哪些參數適合放入隨機搜索的分佈中？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "正則化強度 $C$",
+        "B": "學習率",
+        "C": "隱藏層神經元數量",
+        "D": "是否包含截距 (布林值)"
+      }
     },
     {
-      "id": "ML-W17-Q14",
-      "type": "single",
-      "kp": "KP17.5",
-      "title": "這是第 17 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.17.1",
+        "KP 3.17.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於 `GridSearchCV` 輸出的結果，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "`best_params_` 儲存最佳組合",
+        "B": "`best_score_` 儲存最高分數",
+        "C": "`cv_results_` 儲存詳細搜索過程",
+        "D": "它會自動在最後用全量訓練集重新擬合最優模型"
+      }
     },
     {
-      "id": "ML-W17-Q15",
-      "type": "single",
-      "kp": "KP17.1",
-      "title": "這是第 17 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.17.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "模型持久化 (Serialization) 的常見場景包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "將模型從開發環境遷移到生產伺服器",
+        "B": "保存耗時較長的訓練結果",
+        "C": "進行版本控制",
+        "D": "與前端 JavaScript 直接通訊 (需額外轉換)"
+      }
     },
     {
-      "id": "ML-W17-Q16",
-      "type": "single",
-      "kp": "KP17.2",
-      "title": "這是第 17 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.17.1"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "超參數搜索中常見的評價指標（Scoring）有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "`accuracy`",
+        "B": "`f1`",
+        "C": "`neg_mean_squared_error`",
+        "D": "`r2`"
+      }
     },
     {
-      "id": "ML-W17-Q17",
-      "type": "single",
-      "kp": "KP17.3",
-      "title": "這是第 17 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.17.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 RandomizedSearchCV 的敘述，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "它不保證能找到網格點上的最優解",
+        "B": "它能探索網格點之外的數值",
+        "C": "它對非重要參數浪費的時間較少",
+        "D": "它完全不需要交叉驗證"
+      }
     },
     {
-      "id": "ML-W17-Q18",
-      "type": "single",
-      "kp": "KP17.4",
-      "title": "這是第 17 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.17.3"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "設計 Pipeline 時，可以包含哪些步驟？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "缺失值填充",
+        "B": "特徵選擇",
+        "C": "降維 (PCA)",
+        "D": "最終分類器"
+      }
     },
     {
-      "id": "ML-W17-Q19",
-      "type": "single",
-      "kp": "KP17.5",
-      "title": "這是第 17 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.17.3"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "哪些行為可能導致資料滲漏？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "在劃分資料前計算全局均值並填補缺失值",
+        "B": "在訓練集上選擇特徵，但在測試集上應用",
+        "C": "根據測試集的分布來調整超參數",
+        "D": "使用 Pipeline 封裝預處理"
+      }
     },
     {
-      "id": "ML-W17-Q20",
-      "type": "single",
-      "kp": "KP17.1",
-      "title": "這是第 17 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.17.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "在模型部署時，除了模型文件，通常還需要保存？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "預處理器對象 (如 Scaler)",
+        "B": "特徵名稱清單",
+        "C": "環境依賴版本",
+        "D": "訓練時的所有日誌"
+      }
     },
     {
-      "id": "ML-W17-Q21",
-      "type": "single",
-      "kp": "KP17.2",
-      "title": "這是第 17 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.17.1"
+      ],
+      "answer": [
+        "混淆矩陣"
+      ],
+      "title": "訓練前需要手動設置的參數稱為 __________ 參數。"
     },
     {
-      "id": "ML-W17-Q22",
-      "type": "single",
-      "kp": "KP17.3",
-      "title": "這是第 17 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.17.2"
+      ],
+      "answer": [
+        "準確率"
+      ],
+      "title": "窮舉所有參數組合的搜索方法是 __________ 搜索 (Grid Search)。"
     },
     {
-      "id": "ML-W17-Q23",
-      "type": "single",
-      "kp": "KP17.4",
-      "title": "這是第 17 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.17.2"
+      ],
+      "answer": [
+        "精確率"
+      ],
+      "title": "隨機搜索中，可以通過參數 __________ 來控制嘗試多少組組合。"
     },
     {
-      "id": "ML-W17-Q24",
-      "type": "single",
-      "kp": "KP17.5",
-      "title": "這是第 17 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.17.4"
+      ],
+      "answer": [
+        "召回率"
+      ],
+      "title": "Pipeline 利用雙 __________ (__) 符號來指定子組件的參數。"
     },
     {
-      "id": "ML-W17-Q25",
-      "type": "single",
-      "kp": "KP17.1",
-      "title": "這是第 17 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.17.5"
+      ],
+      "answer": [
+        "F1"
+      ],
+      "title": "__________ 工具比 Python 內建的 pickle 更適合處理大型數組模型。"
     },
     {
-      "id": "ML-W17-Q26",
-      "type": "single",
-      "kp": "KP17.2",
-      "title": "這是第 17 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.17.3"
+      ],
+      "answer": [
+        "ROC"
+      ],
+      "title": "確保模型不會提前看到測試集資訊，是為了防止資料 __________。"
     },
     {
-      "id": "ML-W17-Q27",
-      "type": "single",
-      "kp": "KP17.3",
-      "title": "這是第 17 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.17.3"
+      ],
+      "answer": [
+        "AUC"
+      ],
+      "title": "Pipeline 的優點之一是將複雜的工作流封裝成一個 __________ (Estimator) 對象。"
     },
     {
-      "id": "ML-W17-Q28",
-      "type": "single",
-      "kp": "KP17.4",
-      "title": "這是第 17 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.17.1"
+      ],
+      "answer": [
+        "PR"
+      ],
+      "title": "`GridSearchCV` 預設會執行 __________ 折交叉驗證。"
     },
     {
-      "id": "ML-W17-Q29",
-      "type": "single",
-      "kp": "KP17.5",
-      "title": "這是第 17 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.17.1"
+      ],
+      "answer": [
+        "真實類別"
+      ],
+      "title": "尋找最優超參數的過程在機器學習中常被稱為 __________。"
     },
     {
-      "id": "ML-W17-Q30",
-      "type": "single",
-      "kp": "KP17.1",
-      "title": "這是第 17 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.17.1"
+      ],
+      "answer": [
+        "預測類別"
+      ],
+      "title": "最佳超參數組合存儲在搜索對象的 __________ 屬性中。 ---"
     }
   ]
 }

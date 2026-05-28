@@ -1,224 +1,487 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 16,
-  "title": "深度學習第 16 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP16.1": "理論基礎",
-    "KP16.2": "架構原理",
-    "KP16.3": "PyTorch 實作",
-    "KP16.4": "模型調優",
-    "KP16.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W16-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP16.2",
-      "title": "這是第 16 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.16.1"
+      ],
+      "answer": "C",
+      "title": "GPT 模型架構與 BERT 的最主要區別在於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "GPT 基於 Encoder，BERT 基於 Decoder",
+        "B": "GPT 基於 Decoder，BERT 基於 Encoder",
+        "C": "GPT 參數更少",
+        "D": "BERT 只有單向注意力"
+      }
     },
     {
-      "id": "DL-W16-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP16.3",
-      "title": "這是第 16 週的第 2 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.16.1"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "下列哪一個術語描述了「根據前文預測下一個詞」的過程？",
+      "options": {
+        "A": "自回歸 (Autoregressive)",
+        "B": "自編碼 (Autoencoding)",
+        "C": "卷積",
+        "D": "池化"
+      }
     },
     {
-      "id": "DL-W16-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP16.4",
-      "title": "這是第 16 週的第 3 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.16.2"
+      ],
+      "answer": "D",
+      "title": "GPT-3 的參數量大約是多少？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "1 億",
+        "B": "10 億",
+        "C": "1750 億",
+        "D": "1 兆"
+      }
     },
     {
-      "id": "DL-W16-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP16.5",
-      "title": "這是第 16 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.16.3"
+      ],
+      "answer": "B",
+      "title": "哪種學習方式是在提示 (Prompt) 中提供少量範例來引導模型？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "Zero-shot",
+        "B": "One-shot",
+        "C": "Few-shot",
+        "D": "No-shot"
+      }
     },
     {
-      "id": "DL-W16-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP16.1",
-      "title": "這是第 16 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.16.4"
+      ],
+      "answer": "C",
+      "title": "RLHF 中的 RL 代表什麼？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "人工語言",
+        "B": "強化學習 (Reinforcement Learning)",
+        "C": "殘差連接",
+        "D": "循環邏輯"
+      }
     },
     {
-      "id": "DL-W16-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP16.2",
-      "title": "這是第 16 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.16.5"
+      ],
+      "answer": null,
+      "title": "",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "過擬合",
+        "B": "幻覺 (Hallucination)",
+        "C": "欠擬合",
+        "D": "噪聲 - *答案*: B (KP 4.16.5)"
+      }
     },
     {
-      "id": "DL-W16-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP16.3",
-      "title": "這是第 16 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.16.4"
+      ],
+      "answer": "D",
+      "title": "指令微調 (Instruction Tuning) 的主要目的是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "增加模型知識",
+        "B": "讓模型學會按照用戶的指令形式給出回答",
+        "C": "減少計算量",
+        "D": "增加參數"
+      }
     },
     {
-      "id": "DL-W16-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP16.4",
-      "title": "這是第 16 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.16.5"
+      ],
+      "answer": "C",
+      "title": "下列哪一個是 Meta 推出的知名開源 LLM 系列？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "GPT",
+        "B": "Gemini",
+        "C": "Llama",
+        "D": "Claude"
+      }
     },
     {
-      "id": "DL-W16-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP16.5",
-      "title": "這是第 16 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.16.2"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "所謂模型能力的「湧現」(Emergence) 是指當模型達到一定規模後？",
+      "options": {
+        "A": "運算變慢",
+        "B": "突然具備了之前沒有的複雜任務解決能力",
+        "C": "參數量自動減少",
+        "D": "模型失效"
+      }
     },
     {
-      "id": "DL-W16-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP16.1",
-      "title": "這是第 16 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.16.5"
+      ],
+      "answer": "D",
+      "title": "OpenAI 推出 ChatGPT 是在哪一年年底？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "2018",
+        "B": "2020",
+        "C": "2022",
+        "D": "2023"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 4.16.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "GPT 系列模型的演進趨勢包括？",
+      "options": {
+        "A": "模型參數越來越大",
+        "B": "訓練數據量越來越多",
+        "C": "任務普適性越來越強",
+        "D": "結構越來越複雜 (其實基本結構很穩)"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 4.16.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 RLHF (人類反饋強化學習) 的步驟，正確的有？",
+      "options": {
+        "A": "收集人類對回答的排序數據",
+        "B": "訓練一個獎勵模型",
+        "C": "利用 PPO 算法優化模型權重",
+        "D": "完全不需要人類參與"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 4.16.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "大語言模型可以完成的任務包括？",
+      "options": {
+        "A": "代碼編寫",
+        "B": "創意寫作",
+        "C": "邏輯推理",
+        "D": "扮演特定角色"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 4.16.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "導致大模型產生幻覺的原因可能有哪些？",
+      "options": {
+        "A": "訓練數據中包含錯誤資訊",
+        "B": "解碼時的機率抽樣隨機性",
+        "C": "模型追求流暢度而非事實準確性",
+        "D": "模型太深了"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 4.16.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "指令微調 (Instruction Tuning) 數據集的特點？",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 4.16.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "關於 Scaling Law 的啟示？",
+      "options": {
+        "A": "只要堆算力和數據，智能水平就會提升",
+        "B": "存在明顯的性能回報邊際遞減 (目前看來尚未到頭)",
+        "C": "硬體是第一生產力",
+        "D": "算法不再重要"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 4.16.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "生成式 AI 面臨的社會挑戰有？",
+      "options": {
+        "A": "版權爭議",
+        "B": "假新聞傳播",
+        "C": "學術作弊",
+        "D": "用電量巨大"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 4.16.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些模型屬於 GPT 架構的追隨者或變體？",
+      "options": {
+        "A": "Mistral",
+        "B": "Llama",
+        "C": "Qwen",
+        "D": "BERT"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 4.16.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在對話系統中，上下文窗口 (Context Window) 的大小決定了？",
+      "options": {
+        "A": "AI 能記住多久之前的對話",
+        "B": "一次能處理多長的文檔",
+        "C": "模型的推理成本",
+        "D": "模型的身高"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 4.16.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "ChatGPT 相對於 GPT-3 的主要改進點？",
+      "options": {
+        "A": "支持多輪對話",
+        "B": "更好地遵循指令",
+        "C": "拒絕有害請求",
+        "D": "去除了 Attention"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 4.16.1"
+      ],
+      "answer": [
+        "提示工程"
+      ],
+      "title": "GPT 模型主要基於 Transformer 的 __________-only 結構。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 4.16.1"
+      ],
+      "answer": [
+        "角色扮演"
+      ],
+      "title": "根據上文預測下一個 Token 的訓練模式稱為 __________ 預訓練。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 4.16.3"
+      ],
+      "answer": [
+        "思維鏈"
+      ],
+      "title": "GPT-3 展示了強大的 __________-shot 學習能力，即只需給幾個例子就能學會新任務。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 4.16.4"
+      ],
+      "answer": [
+        "少樣本提示"
+      ],
+      "title": "RLHF 技術的中文全稱是 __________ 反饋強化學習。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 4.16.4"
+      ],
+      "answer": [
+        "系統提示詞"
+      ],
+      "title": "讓 AI 生成符合人類道德與價值觀的內容，這門學科叫模型 __________ (Alignment)。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 4.16.2"
+      ],
+      "answer": [
+        "負面提示詞"
+      ],
+      "title": "隨著模型規模增大，能力突然飛躍的現象稱為 __________。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 4.16.5"
+      ],
+      "answer": [
+        "零樣本"
+      ],
+      "title": "OpenAI 公司最早是由埃隆·馬斯克與 __________ 等人共同創立的。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 4.16.5"
+      ],
+      "answer": [
+        "溫度"
+      ],
+      "title": "當前的 LLM 通常使用 __________ 表示文本。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 4.16.1"
+      ],
+      "answer": [
+        "Token"
+      ],
+      "title": "自回歸生成的缺點是無法同時考慮 __________ (左側/右側) 的上下文。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 4.16.4"
+      ],
+      "answer": [
+        "上下文"
+      ],
+      "title": "ChatGPT 的底層基礎模型是基於 GPT-__________ 系列進行指令微調的。 ---"
     }
   ]
 }

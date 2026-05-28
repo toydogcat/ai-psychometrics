@@ -1,0 +1,496 @@
+{
+  "courseId": "python-office-quant",
+  "week": 6,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP6.1",
+        "KP6.2"
+      ],
+      "answer": "C",
+      "title": "當我們需要連續請求多個頁面，且希望自動攜帶上次請求獲取的 Cookies 時，應該使用 Requests 中的哪個對象？",
+      "options": {
+        "A": "`requests.Request`",
+        "B": "`requests.Response`",
+        "C": "`requests.Session`",
+        "D": "`requests.Cookies`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP6.3"
+      ],
+      "answer": "B",
+      "title": "下列哪個 HTTP 首部欄位通常用來表示請求的來源頁面？",
+      "options": {
+        "A": "`User-Agent`",
+        "B": "`Referer`",
+        "C": "`Host`",
+        "D": "`Cookie`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP6.5"
+      ],
+      "answer": "D",
+      "title": "執行登入操作時，瀏覽器通常發送哪種類型的 HTTP 請求？",
+      "options": {
+        "A": "GET",
+        "B": "POST",
+        "C": "HEAD",
+        "D": "OPTIONS"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": "A",
+      "title": "在 Requests 中設置代理 IP 的正確語法是？",
+      "options": {
+        "A": "`requests.get(url, proxy=\"...\")`",
+        "B": "`requests.get(url, proxies={\"http\": \"...\"})`",
+        "C": "`requests.get(url, headers={\"proxy\": \"...\"})`",
+        "D": "`requests.proxy_set(\"...\")`"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP6.5"
+      ],
+      "answer": "C",
+      "title": "若登入請求需要發送 JSON 數據而非表單數據，應使用哪個參數？",
+      "options": {
+        "A": "`data=`",
+        "B": "`json=`",
+        "C": "`params=`",
+        "D": "`files=`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": "B",
+      "title": "HTTP 狀態碼 302 代表什麼？",
+      "options": {
+        "A": "永久移動",
+        "B": "臨時重定向",
+        "C": "語法錯誤",
+        "D": "伺服器拒絕"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP6.1",
+        "KP6.2"
+      ],
+      "answer": "C",
+      "title": "Session 對象相比多次獨立的 `get()` 請求，主要優點不包括？",
+      "options": {
+        "A": "自動處理 Cookies",
+        "B": "TCP 連接複用",
+        "C": "繞過所有反爬蟲機制",
+        "D": "代碼更簡潔"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP6.1",
+        "KP6.3"
+      ],
+      "answer": "D",
+      "title": "如何在 Session 中設置全局的 User-Agent？",
+      "options": {
+        "A": "`session.headers.update({'User-Agent': '...'})`",
+        "B": "`session.ua = '...'`",
+        "C": "`session.config('ua', '...')`",
+        "D": "`requests.set_global_ua('...')`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": "A",
+      "title": "下列哪種反爬蟲手段是通過檢測 IP 請求頻率來實現的？",
+      "options": {
+        "A": "UA 檢查",
+        "B": "驗證碼",
+        "C": "IP 封禁",
+        "D": "JavaScript 渲染"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": "C",
+      "title": "免費代理 IP 通常存在的主要問題是？",
+      "options": {
+        "A": "速度慢且不穩定",
+        "B": "價格太貴",
+        "C": "無法隱藏 IP",
+        "D": "必須使用 SSL"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP6.3",
+        "KP6.4",
+        "KP6.5"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "常見的反爬蟲手段包括哪些？",
+      "options": {
+        "A": "檢查 User-Agent",
+        "B": "監測單一 IP 請求頻率",
+        "C": "通過驗證碼攔截",
+        "D": "動態渲染數據 (JS)"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP6.1",
+        "KP6.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 `requests.Session()`，正確的有？",
+      "options": {
+        "A": "跨請求保持參數",
+        "B": "支援 Context Manager (with 語法)",
+        "C": "只能發送 GET 請求",
+        "D": "會自動處理 Cookie 的存儲與發送"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP6.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些是模擬登入時可能遇到的挑戰？",
+      "options": {
+        "A": "隱藏表單欄位 (如 CSRF Token)",
+        "B": "圖形驗證碼",
+        "C": "加密的密碼傳輸",
+        "D": "多因素驗證 (MFA)"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於代理 IP 的類型，正確的有？",
+      "options": {
+        "A": "透明代理 (暴露真實 IP)",
+        "B": "匿名代理 (隱藏真實 IP)",
+        "C": "高匿代理 (完全隱藏)",
+        "D": "靜態代理 (IP 固定)"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP6.3",
+        "KP6.4"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "爬蟲偽裝技術包括？",
+      "options": {
+        "A": "隨機 User-Agent",
+        "B": "隨機請求間隔",
+        "C": "設置合理的 Referer",
+        "D": "使用多線程高壓爬取"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "如何獲取 Session 對象中的 Cookies？",
+      "options": {
+        "A": "`session.cookies`",
+        "B": "`session.get_cookies()`",
+        "C": "`requests.utils.dict_from_cookiejar(session.cookies)`",
+        "D": "`session['cookies']`"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "處理重定向時，Requests 的默認行為是？",
+      "options": {
+        "A": "自動跟隨",
+        "B": "可以通過 `allow_redirects=False` 禁用",
+        "C": "只跟隨 GET 請求",
+        "D": "會在 `history` 屬性中保存跳轉紀錄"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP6.1",
+        "KP6.2",
+        "KP6.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些場景必須使用 Session 或手動處理 Cookies？",
+      "options": {
+        "A": "爬取購物車內容",
+        "B": "訪問個人後台頁面",
+        "C": "下載靜態壁紙",
+        "D": "發表論壇回覆"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "為什麼建議在請求間加入 `time.sleep()`？",
+      "options": {
+        "A": "防止伺服器過載",
+        "B": "避免 IP 被識別為異常流量",
+        "C": "讓網絡緩衝",
+        "D": "節省本地 CPU"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP6.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 User-Agent 池，正確的是？",
+      "options": {
+        "A": "應包含不同瀏覽器核心 (Chrome, Firefox, Safari)",
+        "B": "應包含移動端與桌面端標識",
+        "C": "越多越好",
+        "D": "可以直接從網上獲取公開列表"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP6.5"
+      ],
+      "answer": [
+        "selenium"
+      ],
+      "title": "當一個網站需要登入才能訪問數據時，我們通常先發送一個 __________ 請求獲取會話狀態。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP6.1",
+        "KP6.2"
+      ],
+      "answer": [
+        "webdriver"
+      ],
+      "title": "在 Session 中維持登入狀態的核心技術是 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": [
+        "get"
+      ],
+      "title": "若要禁用 Requests 的自動重定向，應設置參數 `allow_redirects=__________`。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP6.5"
+      ],
+      "answer": [
+        "find_element"
+      ],
+      "title": "通過開發者工具的 __________ 選項卡可以觀察網絡請求的詳細信息。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": [
+        "send_keys"
+      ],
+      "title": "用於隱藏真實 IP 地址的技術稱為 __________。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP6.5"
+      ],
+      "answer": [
+        "click"
+      ],
+      "title": "如果密碼在傳輸前被 JS 加密，爬蟲需要找出加密 __________ 並在 Python 中實現。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP6.2"
+      ],
+      "answer": [
+        "implicitly_wait"
+      ],
+      "title": "`requests.utils.__________` 函數可以將 CookieJar 轉換為字典。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP6.1"
+      ],
+      "answer": [
+        "WebDriverWait"
+      ],
+      "title": "Session 對象在完成所有請求後，應調用 `session.________()` 釋放資源。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP6.3"
+      ],
+      "answer": [
+        "page_source"
+      ],
+      "title": "User-Agent 通常屬於 HTTP 請求頭 (Headers) 中的一個 __________。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP6.4"
+      ],
+      "answer": [
+        "quit"
+      ],
+      "title": "反爬蟲檢測中，如果在極短時間內發送大量請求，容易觸發伺服器的 __________ 保護機制。 ---"
+    }
+  ]
+}

@@ -1,224 +1,489 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 11,
-  "title": "深度學習第 11 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP11.1": "理論基礎",
-    "KP11.2": "架構原理",
-    "KP11.3": "PyTorch 實作",
-    "KP11.4": "模型調優",
-    "KP11.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W11-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP11.2",
-      "title": "這是第 11 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.11.1"
+      ],
+      "answer": "B",
+      "title": "LSTM 中負責讓資訊在長序列中「流動」而不被劇烈改變的主要機制是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "隱藏狀態",
+        "B": "細胞狀態 (Cell State)",
+        "C": "激活函數",
+        "D": "全連接層"
+      }
     },
     {
-      "id": "DL-W11-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP11.3",
-      "title": "這是第 11 週的第 2 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.11.2"
+      ],
+      "answer": "C",
+      "title": "在 LSTM 結構中，決定哪些資訊「不再有用」並從記憶中移除的是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "遺忘門",
+        "B": "輸入門",
+        "C": "輸出門",
+        "D": "激活門"
+      }
     },
     {
-      "id": "DL-W11-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP11.4",
-      "title": "這是第 11 週的第 3 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.11.3"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "Seq2Seq 架構中，編碼器 (Encoder) 的最終作用是產生？",
+      "options": {
+        "A": "翻譯結果",
+        "B": "上下文向量 (Context Vector)",
+        "C": "損失函數",
+        "D": "隨機噪聲"
+      }
     },
     {
-      "id": "DL-W11-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP11.5",
-      "title": "這是第 11 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.11.4"
+      ],
+      "answer": "D",
+      "title": "哪種技術在訓練解碼器時，會使用真實的目標詞作為下一步輸入？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "束搜索",
+        "B": "教師強制 (Teacher Forcing)",
+        "C": "梯度裁剪",
+        "D": "數據增強"
+      }
     },
     {
-      "id": "DL-W11-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP11.1",
-      "title": "這是第 11 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.11.2"
+      ],
+      "answer": "C",
+      "title": "下列哪一個門使用了 Sigmoid 函數來決定資訊通過的比例？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "只有遺忘門",
+        "B": "只有輸入門",
+        "C": "三個門皆是",
+        "D": "不使用 Sigmoid"
+      }
     },
     {
-      "id": "DL-W11-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP11.2",
-      "title": "這是第 11 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.11.2"
+      ],
+      "answer": "D",
+      "title": "LSTM 相比 GRU 具有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "更少的參數量",
+        "B": "多了一個「細胞狀態」與額外的門控",
+        "C": "更快的運算速度",
+        "D": "只能做分類"
+      }
     },
     {
-      "id": "DL-W11-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP11.3",
-      "title": "這是第 11 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.11.4"
+      ],
+      "answer": "B",
+      "title": "束搜索 (Beam Search) 中的「束寬」(Beam Width) 越大，則？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "運算速度越快",
+        "B": "搜索範圍越廣，結果可能越好，但更耗時",
+        "C": "參數量越多",
+        "D": "模型越深"
+      }
     },
     {
-      "id": "DL-W11-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP11.4",
-      "title": "這是第 11 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.11.5"
+      ],
+      "answer": "C",
+      "title": "在機器翻譯中，標記 `<EOS>` 代表什麼意思？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "句子開始",
+        "B": "句子結束",
+        "C": "關鍵詞",
+        "D": "填充符號"
+      }
     },
     {
-      "id": "DL-W11-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP11.5",
-      "title": "這是第 11 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.11.3"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "Seq2Seq 模型的一個主要瓶頸是當輸入序列 __________ 時，效果會大幅下降。",
+      "options": {
+        "A": "過短",
+        "B": "過長",
+        "C": "包含數字",
+        "D": "包含標點"
+      }
     },
     {
-      "id": "DL-W11-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP11.1",
-      "title": "這是第 11 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.11.5"
+      ],
+      "answer": "D",
+      "title": "在 PyTorch `nn.LSTM` 的回傳值中，隱藏狀態 `h_n` 的維度通常是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "`(batch, seq_len)`",
+        "B": "`(num_layers, batch, hidden_size)`",
+        "C": "`(hidden_size,)`",
+        "D": "隨機"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 4.11.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "LSTM 的組成單元包括？",
+      "options": {
+        "A": "Forget Gate",
+        "B": "Input Gate",
+        "C": "Output Gate",
+        "D": "Update Gate (這是 GRU 的)"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 4.11.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Seq2Seq 模型可以應用於哪些領域？",
+      "options": {
+        "A": "機器翻譯",
+        "B": "文本摘要",
+        "C": "自動問答",
+        "D": "語音識別"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 4.11.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於遺忘門 (Forget Gate)，正確的有？",
+      "options": {
+        "A": "控制過去資訊的保留程度",
+        "B": "輸出範圍在 [0, 1]",
+        "C": "由 Sigmoid 激活",
+        "D": "越多越好"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 4.11.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "上下文向量 (Context Vector) 的缺陷有？",
+      "options": {
+        "A": "長度固定，限制了表達能力",
+        "B": "存在資訊瓶頸",
+        "C": "計算量太大",
+        "D": "無法訓練"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 4.11.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些設置可以提高 LSTM 翻譯模型的表現？",
+      "options": {
+        "A": "增加隱藏層層數",
+        "B": "使用雙向 LSTM",
+        "C": "添加 Attention 機制",
+        "D": "減小詞表"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 4.11.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於束搜索 (Beam Search)，正確的是？",
+      "options": {
+        "A": "是一種貪婪搜索的改進版",
+        "B": "在機率路徑上進行剪枝",
+        "C": "保留多個候選結果",
+        "D": "只適用於訓練階段"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 4.11.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "處理 NLP 序列時，為什麼需要 Padding？",
+      "options": {
+        "A": "為了讓不同長度的句子能組成一個 Batch 並行運算",
+        "B": "增加模型難度",
+        "C": "符合矩陣維度要求",
+        "D": "為了加密數據"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 4.11.1",
+        "KP 4.11.2"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "LSTM 如何緩解梯度消失？",
+      "options": {
+        "A": "細胞狀態的加法更新路徑",
+        "B": "門控機制對梯度的保護",
+        "C": "全部使用 ReLU",
+        "D": "減少參數"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 4.11.4"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在 Seq2Seq 訓練中，使用 Teacher Forcing 的缺點有？",
+      "options": {
+        "A": "推理時模型可能變得很脆弱",
+        "B": "收斂慢",
+        "C": "容易產生曝光偏差 (Exposure Bias)",
+        "D": "參數量增加"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 4.11.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些屬於 PyTorch `nn.LSTM` 初始化的重要參數？",
+      "options": {
+        "A": "`input_size`",
+        "B": "`hidden_size`",
+        "C": "`num_layers`",
+        "D": "`bidirectional`"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 4.11.1"
+      ],
+      "answer": [
+        "LSTM"
+      ],
+      "title": "LSTM 的全稱是 __________ Short-Term Memory。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 4.11.2"
+      ],
+      "answer": [
+        "遺忘門"
+      ],
+      "title": "LSTM 中負責過濾舊訊息的組件是 __________ 門。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 4.11.3"
+      ],
+      "answer": [
+        "輸入門"
+      ],
+      "title": "Seq2Seq 包含編碼器與 __________ 兩大部分。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 4.11.5"
+      ],
+      "answer": [
+        "輸出門"
+      ],
+      "title": "在翻譯模型中，`<SOS>` 代表 Sentence __________ (或 Start)。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 4.11.3"
+      ],
+      "answer": [
+        "細胞狀態"
+      ],
+      "title": "__________ 向量是編碼器對整個輸入序列的語義壓縮。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 4.11.4"
+      ],
+      "answer": [
+        "GRU"
+      ],
+      "title": "解決推理階段生成的路徑搜尋算法稱為 __________ Search。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 4.11.4"
+      ],
+      "answer": [
+        "更新門"
+      ],
+      "title": "訓練解碼器時，若不使用 Teacher Forcing，則下一步的輸入是 __________ 的預測結果。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 4.11.1"
+      ],
+      "answer": [
+        "重置門"
+      ],
+      "title": "LSTM 內部的關鍵狀態輸送帶被稱為 __________ State。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 4.11.2"
+      ],
+      "answer": [
+        "nn.LSTM"
+      ],
+      "title": "LSTM 使用 __________ 激活函數來控制「門」的開關比例。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 4.11.5"
+      ],
+      "answer": [
+        "nn.GRU"
+      ],
+      "title": "比起單向 LSTM，__________ (Bidirectional) LSTM 可以同時考慮過去與未來的上下文。 ---"
     }
   ]
 }

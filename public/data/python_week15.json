@@ -1,0 +1,427 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 15,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "正規表示式中，`.` 預設代表什麼？",
+      "options": {
+        "A": "點號字元",
+        "B": "任意一個字元",
+        "C": "數字",
+        "D": "空白"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "下列哪一個量詞代表「出現一次或多次」？",
+      "options": {
+        "A": "`*`",
+        "B": "`?`",
+        "C": "`+`",
+        "D": "`{1}`"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP 15.2"
+      ],
+      "answer": null,
+      "title": "`re.match('abc', '123abc')` 的回傳值是？",
+      "options": {
+        "A": "匹配物件",
+        "B": "`'abc'`",
+        "C": "`None`",
+        "D": "拋出異常"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP 15.2"
+      ],
+      "answer": null,
+      "title": "若要讓匹配不區分大小寫，應在 `re.search()` 中加入哪個旗標？",
+      "options": {
+        "A": "`re.I`",
+        "B": "`re.M`",
+        "C": "`re.S`",
+        "D": "`re.X`"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "如何在 Regex 中表示字串的結尾？",
+      "options": {
+        "A": "`^`",
+        "B": "`&`",
+        "C": "`$`",
+        "D": "`\\z`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP 15.2"
+      ],
+      "answer": null,
+      "title": "執行 `re.sub(r'\\d', '#', 'Age: 25')` 的結果是？",
+      "options": {
+        "A": "`'Age: ##'`",
+        "B": "`'Age: #'`",
+        "C": "`'#ge: 25'`",
+        "D": "`'Age: 25'`"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "Regex `\\w` 等價於下列哪一個集合？",
+      "options": {
+        "A": "`[0-9]`",
+        "B": "`[a-zA-Z]`",
+        "C": "`[a-zA-Z0-9_]`",
+        "D": "`[ \\t\\n]`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP 15.2"
+      ],
+      "answer": null,
+      "title": "哪一個函式會回傳所有匹配結果的疊代器 (Iterator)？",
+      "options": {
+        "A": "`re.findall()`",
+        "B": "`re.search()`",
+        "C": "`re.finditer()`",
+        "D": "`re.match()`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "想要匹配字面上的問號 `?`，應該寫成？",
+      "options": {
+        "A": "`?`",
+        "B": "`\\?`",
+        "C": "`[?]`",
+        "D": "B 或 C 均可"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP 15.5"
+      ],
+      "answer": null,
+      "title": "關於 `re.compile()`，下列敘述何者正確？",
+      "options": {
+        "A": "它會把字串轉為 Python 程式碼",
+        "B": "它可以加速重複使用的 Regex",
+        "C": "它只能用在 `match` 中",
+        "D": "它會自動加上旗標"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "下列哪些是表示「空白字元」的符號？",
+      "options": {
+        "A": "` ` (空格)",
+        "B": "`\\t` (Tab)",
+        "C": "`\\n` (換行)",
+        "D": "`\\s`"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 15.2",
+        "KP 15.3"
+      ],
+      "answer": null,
+      "title": "關於 `re.findall()`，哪些正確？",
+      "options": {
+        "A": "回傳列表",
+        "B": "若有分組，回傳分組後的內容",
+        "C": "若無匹配，回傳 `None`",
+        "D": "會掃描整個字串"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "下列哪些可以匹配字串 `\"apple\"`？",
+      "options": {
+        "A": "`ap+le`",
+        "B": "`ap*le`",
+        "C": "`ap?le`",
+        "D": "`a.le`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 15.3"
+      ],
+      "answer": null,
+      "title": "關於捕獲群組 (Capture Groups)，哪些描述正確？",
+      "options": {
+        "A": "使用圓括號 `()` 定義",
+        "B": "可以在 `re.sub` 中使用 `\\1`, `\\2` 引用",
+        "C": "會影響匹配的速度",
+        "D": "每個群組都有一個索引號"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 15.2"
+      ],
+      "answer": null,
+      "title": "下列哪些是 Regex 的旗標 (Flags)？",
+      "options": {
+        "A": "`re.IGNORECASE`",
+        "B": "`re.VERBOSE`",
+        "C": "`re.DEBUG`",
+        "D": "`re.UNICODE`"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 15.4"
+      ],
+      "answer": null,
+      "title": "下列哪些是「非貪婪」量詞？",
+      "options": {
+        "A": "`*?`",
+        "B": "`+?`",
+        "C": "`??`",
+        "D": "`{n,m}?`"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 15.2"
+      ],
+      "answer": null,
+      "title": "哪些方法可以從匹配物件 (Match Object) 獲取資訊？",
+      "options": {
+        "A": "`group()`",
+        "B": "`start()`",
+        "C": "`end()`",
+        "D": "`span()`"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "若要匹配一個台灣手機號碼（如 0912-345-678），哪些 Regex 可能是合理的？",
+      "options": {
+        "A": "`\\d{10}`",
+        "B": "`\\d{4}-\\d{3}-\\d{3}`",
+        "C": "`09\\d{2}-\\d{3}-\\d{3}`",
+        "D": "`^09[0-9]{8}$`"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 15.2"
+      ],
+      "answer": null,
+      "title": "關於 `re.split()`，哪些敘述正確？",
+      "options": {
+        "A": "可以根據 Regex 分隔字串",
+        "B": "支援指定最大分割次數",
+        "C": "只能使用單一字元分隔",
+        "D": "比 `str.split()` 更強大"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "下列哪些符號在 Regex 中有特殊含義（需要轉義才能匹配字面量）？",
+      "options": {
+        "A": "`(`",
+        "B": "`[`",
+        "C": "`{`",
+        "D": "`|`"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "正規表示式中，用於匹配行首的符號是 __________。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 15.2"
+      ],
+      "answer": null,
+      "title": "`re.__________` 函式用於將匹配到的子字串替換為指定內容。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 15.3"
+      ],
+      "answer": null,
+      "title": "使用 `(?P<name>...)` 定義的是 __________ 群組。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 15.2"
+      ],
+      "answer": null,
+      "title": "若要讓 `.` 匹配包含換行符在內的任意字元，應使用 `re.__________` 旗標。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "量詞 `{3,}` 代表該字元至少出現 __________ 次。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 15.3"
+      ],
+      "answer": null,
+      "title": "匹配物件的 `__________` 方法會回傳一個包含所有分組內容的元組 (Tuple)。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "Regex 中的 `\\d` 等同於集合 `__________`。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 15.1"
+      ],
+      "answer": null,
+      "title": "想要匹配字串中所有不重複的單字，可以使用 `\\b` 表示 __________。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 15.5"
+      ],
+      "answer": null,
+      "title": "在 Python 撰寫 Regex 字串時，建議在引號前加上 __________ 以避免反斜線轉義問題。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 15.2"
+      ],
+      "answer": null,
+      "title": "`re.search(r'a|b', 'banana')` 會匹配到字元 __________。 ---"
+    }
+  ]
+}

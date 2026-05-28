@@ -1,0 +1,2049 @@
+{
+  "courseId": "python-office-quant",
+  "week": 9,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP2.9.1"
+      ],
+      "answer": "B",
+      "title": "Pandas 篩選銷售額大於 500 且客戶等級為 A 的正確寫法？",
+      "options": {
+        "A": "`df[(df.sales > 500) & (df.level == 'A')]`",
+        "B": "`df[df.sales > 500 and df.level == 'A']`",
+        "C": "`df.query(sales > 500 & level == 'A')`",
+        "D": "`df.filter(sales > 500, level == 'A')`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP2.9.1"
+      ],
+      "answer": "C",
+      "title": "`python-docx` 中，調整段落縮進應操作哪個對象？",
+      "options": {
+        "A": "Run",
+        "B": "Paragraph",
+        "C": "Document",
+        "D": "Section"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP2.9.1"
+      ],
+      "answer": "D",
+      "title": "發送帶有 Excel 附件的郵件時，應使用？",
+      "options": {
+        "A": "MIMEText",
+        "B": "MIMEMultipart",
+        "C": "MIMEImage",
+        "D": "MIMEAudio"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP2.9.1"
+      ],
+      "answer": "A",
+      "title": "爬蟲中返回 403 狀態碼通常代表？",
+      "options": {
+        "A": "成功",
+        "B": "禁止訪問",
+        "C": "頁面未找到",
+        "D": "伺服器錯誤"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP2.9.1"
+      ],
+      "answer": "C",
+      "title": "BeautifulSoup 中獲取 `<a href=\"...\">` 的連結語法？",
+      "options": {
+        "A": "`tag.href`",
+        "B": "`tag['href']`",
+        "C": "`tag.get_text()`",
+        "D": "`tag.val()`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP2.9.1"
+      ],
+      "answer": "B",
+      "title": "Selenium 官方推薦的等待方式是？",
+      "options": {
+        "A": "`time.sleep`",
+        "B": "顯式等待",
+        "C": "隱式等待",
+        "D": "不等待"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP2.9.1"
+      ],
+      "answer": "D",
+      "title": "Scrapy 負責調度的組件是？",
+      "options": {
+        "A": "Engine",
+        "B": "Scheduler",
+        "C": "Downloader",
+        "D": "Pipeline"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP2.9.1"
+      ],
+      "answer": "C",
+      "title": "`pd.read_csv()` 出現亂碼時應調整？",
+      "options": {
+        "A": "`sep`",
+        "B": "`encoding`",
+        "C": "`header`",
+        "D": "`index_col`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP2.9.1"
+      ],
+      "answer": "A",
+      "title": "`python-pptx` 中幻燈片內容的基本單位是？",
+      "options": {
+        "A": "Slide",
+        "B": "Shape",
+        "C": "Frame",
+        "D": "Layout"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP2.9.1"
+      ],
+      "answer": "B",
+      "title": "SMTP 發送郵件通常使用的加密方法是？",
+      "options": {
+        "A": "`starttls()`",
+        "B": "`encrypt()`",
+        "C": "`md5()`",
+        "D": "`base64()`"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP2.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "執行 `requests.get(url, timeout=5)` 的作用是？",
+      "options": {
+        "A": "限制爬取速度",
+        "B": "防止程序無限期卡死",
+        "C": "定時任務",
+        "D": "緩存過期"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP2.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "如何獲取 DataFrame 的行數與列數？",
+      "options": {
+        "A": "`df.size`",
+        "B": "`df.shape`",
+        "C": "`df.count`",
+        "D": "`df.info`"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP2.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "`python-docx` 中添加內容的最高層級對象是？",
+      "options": {
+        "A": "Document",
+        "B": "Paragraph",
+        "C": "Run",
+        "D": "Section"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP2.9.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "Selenium 定位元素時，哪種方式最靈活？",
+      "options": {
+        "A": "By.ID",
+        "B": "By.NAME",
+        "C": "By.XPATH",
+        "D": "By.TAG_NAME"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP2.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Scrapy 中將數據存入資料庫應在何處編寫？",
+      "options": {
+        "A": "Spider",
+        "B": "Middleware",
+        "C": "Pipeline",
+        "D": "Settings"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP2.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "處理網頁自定義字體加密常用的庫是？",
+      "options": {
+        "A": "BeautifulSoup",
+        "B": "fontTools",
+        "C": "Requests",
+        "D": "NumPy"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP2.9.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "`requests.Session()` 的主要作用是？",
+      "options": {
+        "A": "提高下載速度",
+        "B": "自動保持 Cookies",
+        "C": "隱藏 IP",
+        "D": "解析 HTML"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP2.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "PPT 自動化中，`prs.slides[0].shapes` 返回的是？",
+      "options": {
+        "A": "幻燈片列表",
+        "B": "形狀集合",
+        "C": "佈局集合",
+        "D": "母版"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP2.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "郵件附件中文檔名亂碼的原因通常是？",
+      "options": {
+        "A": "文件太大",
+        "B": "未進行 Header 編碼",
+        "C": "伺服器拒收",
+        "D": "網路不穩定"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP2.9.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "`find_all()` 返回的是什麼類型？",
+      "options": {
+        "A": "單個標籤",
+        "B": "列表",
+        "C": "字典",
+        "D": "字串"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "pandas"
+      ],
+      "title": "Selenium 的「無頭模式」是指？ (A) 不加載圖片 (B) 不彈出瀏覽器窗口 (C) 不執行 JS (D) 不保存 Cookies"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "python-docx"
+      ],
+      "title": "Scrapy 框架基於哪個庫實現異步？ (A) asyncio (B) Twisted (C) Gevent (D) Flask"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "requests"
+      ],
+      "title": "`df.dropna(how='all')` 的作用是？ (A) 刪除包含任一空值的行 (B) 刪除整行皆為空值的行 (C) 刪除所有空值 (D) 不執行任何操作"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "BeautifulSoup"
+      ],
+      "title": "`python-docx` 中 `run.bold = True` 作用於？ (A) 段落 (B) 特定的文字塊 (C) 整個文檔 (D) 表格"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "selenium"
+      ],
+      "title": "獲取 Response 對象的 JSON 數據應調用？ (A) `res.text` (B) `res.json()` (C) `res.content` (D) `res.data`"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "scrapy"
+      ],
+      "title": "Selenium 切換 iframe 的指令？ (A) `switch_to.frame()` (B) `switch_to.window()` (C) `change_frame()` (D) `focus()`"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "Proxy"
+      ],
+      "title": "Robots.txt 的主要作用是？ (A) 阻擋黑客 (B) 告知爬蟲許可範圍 (C) 加速網頁訪問 (D) 存儲密碼"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "robots.txt"
+      ],
+      "title": "`pd.concat([df1, df2], axis=1)` 代表？ (A) 垂直合併 (B) 水平合併 (C) 數據去重 (D) 數據排序"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "DataFrame"
+      ],
+      "title": "`MIMEText(html, 'html', 'utf-8')` 中第二個參數的作用是？ (A) 設置字元集 (B) 指定內容為 HTML 格式 (C) 設置主題 (D) 設置寄件人"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "json"
+      ],
+      "title": "XPath 中 `//` 代表？ (A) 根節點 (B) 任意位置的節點 (C) 當前節點 (D) 父節點"
+    },
+    {
+      "id": "Q31",
+      "num": 31,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 創建專案的指令是？ (A) `scrapy new` (B) `scrapy startproject` (C) `scrapy create` (D) `scrapy init`"
+    },
+    {
+      "id": "Q32",
+      "num": 32,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 中按下鍵盤回車鍵應使用？ (A) `Keys.ENTER` (B) `Keys.RETURN` (C) 以上皆可 (D) 無法實現"
+    },
+    {
+      "id": "Q33",
+      "num": 33,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`df.fillna(0)` 的作用是？ (A) 刪除空值 (B) 將空值替換為 0 (C) 統計空值個數 (D) 檢查空值"
+    },
+    {
+      "id": "Q34",
+      "num": 34,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-pptx` 設置位置的單位通常是？ (A) Pt (B) Inches (C) Pixels (D) Cm"
+    },
+    {
+      "id": "Q35",
+      "num": 35,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "爬蟲遇到驗證碼時，基礎的自動化識別方案是？ (A) 忽略 (B) OCR (C) 手動輸入 (D) 重啟程序"
+    },
+    {
+      "id": "Q36",
+      "num": 36,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Requests 設置代理 IP 應使用參數？ (A) `proxy` (B) `proxies` (C) `agents` (D) `headers`"
+    },
+    {
+      "id": "Q37",
+      "num": 37,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BeautifulSoup 的 `select()` 方法使用什麼語法？ (A) XPath (B) CSS 選擇器 (C) Regex (D) SQL"
+    },
+    {
+      "id": "Q38",
+      "num": 38,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 數據清洗應在哪個組件中進行？ (A) Pipeline (B) Downloader (C) Scheduler (D) Settings"
+    },
+    {
+      "id": "Q39",
+      "num": 39,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`df.drop_duplicates()` 作用是？ (A) 刪除空值 (B) 刪除重複行 (C) 刪除指定列 (D) 數據合併"
+    },
+    {
+      "id": "Q40",
+      "num": 40,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-docx` 中 `doc.save()` 之後？ (A) 檔案被關閉 (B) 內容被寫入磁碟 (C) 程序結束 (D) 檔案被加密"
+    },
+    {
+      "id": "Q41",
+      "num": 41,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "如何獲取 Selenium 元素的 `href` 屬性？ (A) `.href` (B) `.get_attribute('href')` (C) `.text` (D) `.val()`"
+    },
+    {
+      "id": "Q42",
+      "num": 42,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "HTTP 狀態碼 302 代表？ (A) 成功 (B) 重定向 (C) 錯誤 (D) 禁止"
+    },
+    {
+      "id": "Q43",
+      "num": 43,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`pd.read_excel(..., sheet_name=1)` 代表？ (A) 讀取第一個工作表 (B) 讀取第二個工作表 (C) 讀取名為 '1' 的工作表 (D) 不讀取"
+    },
+    {
+      "id": "Q44",
+      "num": 44,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`msg['Subject']` 在郵件中代表？ (A) 主題 (B) 正文 (C) 收件人 (D) 附件"
+    },
+    {
+      "id": "Q45",
+      "num": 45,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 中 `yield scrapy.Request(url, callback=self.parse_detail)` 用於？ (A) 返回數據 (B) 發起下一個請求 (C) 結束程序 (D) 報錯"
+    },
+    {
+      "id": "Q46",
+      "num": 46,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "處理圖片二值化常用的 Python 庫是？ (A) Pillow (B) NumPy (C) Pandas (D) Requests"
+    },
+    {
+      "id": "Q47",
+      "num": 47,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`requests.post(url, data=payload)` 中 `data` 用於？ (A) URL 參數 (B) 表單數據 (C) JSON 數據 (D) Headers"
+    },
+    {
+      "id": "Q48",
+      "num": 48,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BeautifulSoup 中的 `.parent` 作用是？ (A) 獲取子節點 (B) 獲取父節點 (C) 獲取兄弟節點 (D) 獲取自己"
+    },
+    {
+      "id": "Q49",
+      "num": 49,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 的顯式等待通常配合哪個類別使用？ (A) `WebDriverWait` (B) `time` (C) `Thread` (D) `System`"
+    },
+    {
+      "id": "Q50",
+      "num": 50,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`df.iloc[0:5]` 選取的是？ (A) 第 0 到 4 行 (B) 第 0 到 5 行 (C) 第 5 行 (D) 前 5 列"
+    },
+    {
+      "id": "Q51",
+      "num": 51,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於 Pandas 數據讀取，正確的有？ (A) 支援 CSV (B) 支援 Excel (C) 支援 SQL (D) 支援 JSON"
+    },
+    {
+      "id": "Q52",
+      "num": 52,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-docx` 支援的操作包括？ (A) 添加段落 (B) 添加表格 (C) 添加圖片 (D) 修改頁首頁尾"
+    },
+    {
+      "id": "Q53",
+      "num": 53,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於 `requests.Session()`，描述正確的有？ (A) 維持會話狀態 (B) 自動處理 Cookie (C) 跨請求複用連接 (D) 必須配合 Selenium"
+    },
+    {
+      "id": "Q54",
+      "num": 54,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 的等待方式包括？ (A) 固定等待 (B) 隱式等待 (C) 顯式等待 (D) 隨機等待"
+    },
+    {
+      "id": "Q55",
+      "num": 55,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 的核心組件包括？ (A) Engine (B) Spider (C) Scheduler (D) Pipeline"
+    },
+    {
+      "id": "Q56",
+      "num": 56,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "哪些因素會導致爬蟲被封？ (A) 請求頻率過快 (B) 缺少 User-Agent (C) 單一 IP 持續訪問 (D) 內容包含敏感詞"
+    },
+    {
+      "id": "Q57",
+      "num": 57,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於 SMTP，正確的有？ (A) 用於發送郵件 (B) 預設端口 25 (C) 支援 TLS 加密 (D) 需要授權碼"
+    },
+    {
+      "id": "Q58",
+      "num": 58,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BeautifulSoup 定位元素的方法有？ (A) `find()` (B) `select()` (C) `find_all()` (D) `xpath()`"
+    },
+    {
+      "id": "Q59",
+      "num": 59,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "哪些是有效的 User-Agent 範例？ (A) Mozilla/5.0... (B) Chrome/91... (C) Python-requests... (D) robots.txt"
+    },
+    {
+      "id": "Q60",
+      "num": 60,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Pandas 處理空值的方法有？ (A) `dropna()` (B) `fillna()` (C) `isnull()` (D) `drop()`"
+    },
+    {
+      "id": "Q61",
+      "num": 61,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-pptx` 可以插入哪些內容？ (A) 文字框 (B) 圖表 (C) 圖片 (D) 表格"
+    },
+    {
+      "id": "Q62",
+      "num": 62,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於 HTTP 狀態碼，正確的有？ (A) 200 成功 (B) 404 未找到 (C) 500 伺服器錯誤 (D) 403 禁止"
+    },
+    {
+      "id": "Q63",
+      "num": 63,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "模擬登入常見的 Payload 格式有？ (A) Form Data (B) JSON (C) XML (D) Text"
+    },
+    {
+      "id": "Q64",
+      "num": 64,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 模擬操作包含？ (A) `click()` (B) `send_keys()` (C) `submit()` (D) `scroll()`"
+    },
+    {
+      "id": "Q65",
+      "num": 65,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy Middleware 可以實現？ (A) 設置代理 (B) 設置隨機 UA (C) 處理重定向 (D) 數據持久化"
+    },
+    {
+      "id": "Q66",
+      "num": 66,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於 OCR，正確的有？ (A) 識別圖片文字 (B) 需要預處理圖片 (C) 準確率受噪點影響 (D) 只能識別數字"
+    },
+    {
+      "id": "Q67",
+      "num": 67,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "郵件 MIME 類型包括？ (A) `MIMEText` (B) `MIMEMultipart` (C) `MIMEImage` (D) `MIMEApplication`"
+    },
+    {
+      "id": "Q68",
+      "num": 68,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "XPath 的定位語法包含？ (A) `@attr` (B) `text()` (C) `//` (D) `..`"
+    },
+    {
+      "id": "Q69",
+      "num": 69,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於 `df.merge()`，描述正確的有？ (A) 類似 SQL Join (B) 支援 Left Join (C) 支援 Inner Join (D) 只能按索引合併"
+    },
+    {
+      "id": "Q70",
+      "num": 70,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-docx` 的 `Run` 對象屬性有？ (A) `bold` (B) `italic` (C) `font.size` (D) `alignment`"
+    },
+    {
+      "id": "Q71",
+      "num": 71,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "爬蟲合規性建議包括？ (A) 遵守 Robots.txt (B) 限制抓取速度 (C) 標明爬蟲身份 (UA) (D) 抓取個人隱私數據"
+    },
+    {
+      "id": "Q72",
+      "num": 72,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 處理彈窗的方法有？ (A) `switch_to.alert` (B) `accept()` (C) `dismiss()` (D) `ignore()`"
+    },
+    {
+      "id": "Q73",
+      "num": 73,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy Spider 內的屬性包含？ (A) `name` (B) `start_urls` (C) `parse` (D) `pipeline`"
+    },
+    {
+      "id": "Q74",
+      "num": 74,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於代理 IP，正確的有？ (A) 隱藏真實 IP (B) 分為透明與匿名 (C) 免費代理通常不穩定 (D) 只能用於 GET 請求"
+    },
+    {
+      "id": "Q75",
+      "num": 75,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "辦公自動化的優點？ (A) 減少重複勞動 (B) 降低出錯率 (C) 提高效率 (D) 不需要寫代碼"
+    },
+    {
+      "id": "Q76",
+      "num": 76,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Pandas `df.info()` 可以看到？ (A) 每欄數據類型 (B) 空值數量 (C) 內存佔用 (D) 數據分佈情況"
+    },
+    {
+      "id": "Q77",
+      "num": 77,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於 CSS 選擇器，正確的有？ (A) `#id` 定位 ID (B) `.class` 定位類名 (C) `div > p` 定位子元素 (D) `div p` 定位後代元素"
+    },
+    {
+      "id": "Q78",
+      "num": 78,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy `ItemPipeline` 可以做？ (A) 數據清洗 (B) 數據驗證 (C) 存入數據庫 (D) 請求攔截"
+    },
+    {
+      "id": "Q79",
+      "num": 79,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "如何防止被反爬？ (A) 隨機 User-Agent (B) 隨機延時 (C) 代理池 (D) 模擬登入"
+    },
+    {
+      "id": "Q80",
+      "num": 80,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於 `requests.post()`，正確的有？ (A) 可以傳送 `data` (B) 可以傳送 `json` (C) 常用於提交表單 (D) 數據長度有限制"
+    },
+    {
+      "id": "Q81",
+      "num": 81,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium WebDriver 支援的瀏覽器？ (A) Chrome (B) Firefox (C) Edge (D) Safari"
+    },
+    {
+      "id": "Q82",
+      "num": 82,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "哪些是 `MIMEMultipart` 的子類型？ (A) `mixed` (B) `alternative` (C) `related` (D) `single`"
+    },
+    {
+      "id": "Q83",
+      "num": 83,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`pd.read_csv()` 的參數包括？ (A) `sep` (B) `header` (C) `names` (D) `usecols`"
+    },
+    {
+      "id": "Q84",
+      "num": 84,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Word 表格操作包含？ (A) `add_table()` (B) `cell(r, c).text` (C) `rows` (D) `columns`"
+    },
+    {
+      "id": "Q85",
+      "num": 85,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 中的 `Settings` 可以配置？ (A) 併發數 (B) 延遲時間 (C) Middleware 權重 (D) 數據庫路徑"
+    },
+    {
+      "id": "Q86",
+      "num": 86,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "網頁數據抓取的難點？ (A) 動態渲染 (B) 驗證碼 (C) 封 IP (D) 數據結構變化"
+    },
+    {
+      "id": "Q87",
+      "num": 87,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`df.sort_values()` 支援？ (A) 單列排序 (B) 多列排序 (C) 升序降序 (D) 隨機排序"
+    },
+    {
+      "id": "Q88",
+      "num": 88,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於 BeautifulSoup 解析器，正確的有？ (A) `html.parser` (B) `lxml` (C) `html5lib` (D) `json.parser`"
+    },
+    {
+      "id": "Q89",
+      "num": 89,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 的高級交互功能？ (A) `ActionChains` (B) `Drag and drop` (C) `Double click` (D) `Context click`"
+    },
+    {
+      "id": "Q90",
+      "num": 90,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 項目目錄結構包含？ (A) `spiders/` (B) `items.py` (C) `pipelines.py` (D) `settings.py`"
+    },
+    {
+      "id": "Q91",
+      "num": 91,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "關於郵件發送，正確的有？ (A) 主題需編碼 (B) 附件需編碼 (C) 收件人可是列表 (D) 內容可是 HTML"
+    },
+    {
+      "id": "Q92",
+      "num": 92,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`df.groupby()` 常用的聚合函數？ (A) `sum()` (B) `mean()` (C) `count()` (D) `max()`"
+    },
+    {
+      "id": "Q93",
+      "num": 93,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 切換標籤頁的方法？ (A) `window_handles` (B) `switch_to.window()` (C) `new_window()` (D) `close()`"
+    },
+    {
+      "id": "Q94",
+      "num": 94,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "反爬蟲的技術手段？ (A) IP 限流 (B) 字體加密 (C) 驗證碼 (D) 封禁 User-Agent"
+    },
+    {
+      "id": "Q95",
+      "num": 95,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy `Selector` 支援？ (A) XPath (B) CSS (C) 正則表達式 (D) SQL"
+    },
+    {
+      "id": "Q96",
+      "num": 96,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`pd.DataFrame()` 可以從什麼轉化而來？ (A) 字典 (B) 列表 (C) NumPy 數組 (D) 另一個 DataFrame"
+    },
+    {
+      "id": "Q97",
+      "num": 97,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Word 報表自動化的應用場景？ (A) 自動合同 (B) 定期報告 (C) 批量信封 (D) 在線遊戲"
+    },
+    {
+      "id": "Q98",
+      "num": 98,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "哪些是爬蟲框架？ (A) Scrapy (B) PySpider (C) Requests (D) Selenium"
+    },
+    {
+      "id": "Q99",
+      "num": 99,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 的等待條件 (EC) 有？ (A) `presence_of_element_located` (B) `element_to_be_clickable` (C) `title_is` (D) `text_to_be_present_in_element`"
+    },
+    {
+      "id": "Q100",
+      "num": 100,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "辦公自動化的學習路徑？ (A) 基礎語法 (B) 數據處理 (C) 文檔控制 (D) 通信自動化"
+    },
+    {
+      "id": "Q101",
+      "num": 101,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Pandas 中合併兩個 DataFrame 且依據共通欄位對齊的方法是 __________。"
+    },
+    {
+      "id": "Q102",
+      "num": 102,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-docx` 中獲取段落內容的屬性是 `p.________`。"
+    },
+    {
+      "id": "Q103",
+      "num": 103,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "在 SMTP 中，用於加密傳輸的指令通常是 `server.________()`。"
+    },
+    {
+      "id": "Q104",
+      "num": 104,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "獲取 HTTP 響應文本內容的屬性是 `res.________`。"
+    },
+    {
+      "id": "Q105",
+      "num": 105,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BeautifulSoup 中使用 CSS 選擇器查找所有匹配項的方法是 `soup.________()`。"
+    },
+    {
+      "id": "Q106",
+      "num": 106,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 中全局最長等待時間的設置方法是 `implicitly_________(seconds)`。"
+    },
+    {
+      "id": "Q107",
+      "num": 107,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 中負責過濾 URL 的組件是 __________。"
+    },
+    {
+      "id": "Q108",
+      "num": 108,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "將 DataFrame 保存為 Excel 的函數是 `to_________()`。"
+    },
+    {
+      "id": "Q109",
+      "num": 109,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-pptx` 中幻燈片母版的英文是 Slide __________。"
+    },
+    {
+      "id": "Q110",
+      "num": 110,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "發送 HTML 格式郵件，`MIMEText` 的第二個參數應設為 '________'。"
+    },
+    {
+      "id": "Q111",
+      "num": 111,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`requests.get()` 的預設超時是 __________（無限制）。"
+    },
+    {
+      "id": "Q112",
+      "num": 112,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "檢查 DataFrame 前 5 行的函數是 `df.________()`。"
+    },
+    {
+      "id": "Q113",
+      "num": 113,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "向 Word 文檔添加圖片的方法是 `doc.add_________()`。"
+    },
+    {
+      "id": "Q114",
+      "num": 114,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 定位元素的新版語法需要導入 __________ 類別。"
+    },
+    {
+      "id": "Q115",
+      "num": 115,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 的數據定義檔案通常名為 __________。"
+    },
+    {
+      "id": "Q116",
+      "num": 116,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`df.isnull().________()` 可以統計每一列的空值數量。"
+    },
+    {
+      "id": "Q117",
+      "num": 117,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "郵件附件中文檔名亂碼，應對檔名進行 __________ 編碼。"
+    },
+    {
+      "id": "Q118",
+      "num": 118,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "XPath 中選取父節點的語法是 __________。"
+    },
+    {
+      "id": "Q119",
+      "num": 119,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`requests.Session()` 物件會自動保存 __________。"
+    },
+    {
+      "id": "Q120",
+      "num": 120,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`BeautifulSoup(html, '________')` 推薦使用速度較快的解析器。"
+    },
+    {
+      "id": "Q121",
+      "num": 121,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 切換到 iframe 的方法是 `switch_to.________()`。"
+    },
+    {
+      "id": "Q122",
+      "num": 122,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 運行爬蟲的指令是 `scrapy ________ spider_name`。"
+    },
+    {
+      "id": "Q123",
+      "num": 123,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "處理圖片 OCR 前，通常先進行 __________ 化以提高對比。"
+    },
+    {
+      "id": "Q124",
+      "num": 124,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`pd.read_csv()` 忽略首行的參數是 `header=________`。"
+    },
+    {
+      "id": "Q125",
+      "num": 125,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-pptx` 中設置寬度為 5 英吋需使用 `________(5)`。"
+    },
+    {
+      "id": "Q126",
+      "num": 126,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "爬蟲中 Robots 協議檔案的完整名稱是 __________。"
+    },
+    {
+      "id": "Q127",
+      "num": 127,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`df.dropna()` 預設刪除包含空值的 __________。"
+    },
+    {
+      "id": "Q128",
+      "num": 128,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-docx` 中設置字體為斜體的屬性是 `run.________ = True`。"
+    },
+    {
+      "id": "Q129",
+      "num": 129,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`requests.post()` 的 Payload 參數名是 __________ 或 json。"
+    },
+    {
+      "id": "Q130",
+      "num": 130,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BeautifulSoup 中獲取標籤屬性的方法是 `tag['________']`。"
+    },
+    {
+      "id": "Q131",
+      "num": 131,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 驅動瀏覽器需要對應的 __________ 程式。"
+    },
+    {
+      "id": "Q132",
+      "num": 132,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 中負責將數據保存到資料庫的組件是 Item __________。"
+    },
+    {
+      "id": "Q133",
+      "num": 133,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "處理加密字體時，需要解析 __________ 檔案（副檔名）。"
+    },
+    {
+      "id": "Q134",
+      "num": 134,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`df.drop_duplicates(inplace=________)` 可以直接修改原對象。"
+    },
+    {
+      "id": "Q135",
+      "num": 135,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`MIMEMultipart()` 的對象需要調用 `________()` 方法來添加部分。"
+    },
+    {
+      "id": "Q136",
+      "num": 136,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "XPath 中 `@` 符號用於選取 __________。"
+    },
+    {
+      "id": "Q137",
+      "num": 137,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`requests.get()` 的狀態碼屬性是 `status_________`。"
+    },
+    {
+      "id": "Q138",
+      "num": 138,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "BeautifulSoup 中獲取標籤內所有純文本的方法是 `get_________()`。"
+    },
+    {
+      "id": "Q139",
+      "num": 139,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 模擬滑鼠懸停需要使用 __________ 類別。"
+    },
+    {
+      "id": "Q140",
+      "num": 140,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy 專案的配置文件是 __________。"
+    },
+    {
+      "id": "Q141",
+      "num": 141,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`df.groupby('col').________()` 可以計算各組的平均值。"
+    },
+    {
+      "id": "Q142",
+      "num": 142,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-docx` 添加表格的方法是 `add_________()`。"
+    },
+    {
+      "id": "Q143",
+      "num": 143,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "設置郵件的主題，代碼是 `msg['________'] = \"Subject\"`。"
+    },
+    {
+      "id": "Q144",
+      "num": 144,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`pd.concat()` 垂直堆疊時，`axis` 參數應設為 __________。"
+    },
+    {
+      "id": "Q145",
+      "num": 145,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Selenium 獲取當前頁面標題的屬性是 `driver.________`。"
+    },
+    {
+      "id": "Q146",
+      "num": 146,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "Scrapy Spider 中，預設的回調方法名是 __________。"
+    },
+    {
+      "id": "Q147",
+      "num": 147,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "OCR 引擎 Tesseract 的 Python 封裝庫名是 __________。"
+    },
+    {
+      "id": "Q148",
+      "num": 148,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`df.shape` 返回一個元組，第一個元素代表 __________ 數。"
+    },
+    {
+      "id": "Q149",
+      "num": 149,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "`python-pptx` 中添加一張幻燈片的方法是 `add_________()`。"
+    },
+    {
+      "id": "Q150",
+      "num": 150,
+      "type": "fill",
+      "kps": [
+        "KP2.9.3"
+      ],
+      "answer": [
+        "N",
+        "A"
+      ],
+      "title": "當我們需要模擬人為點擊按鈕，Selenium 應調用 `.________()` 方法。 ---"
+    }
+  ]
+}

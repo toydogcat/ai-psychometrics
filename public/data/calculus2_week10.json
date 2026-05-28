@@ -1,7 +1,7 @@
 {
   "course_id": "calculus2",
   "week": 10,
-  "title": "微積分 中 第 10 週",
+  "title": "微積分 中 第 10 週測驗",
   "knowledge_points": {},
   "questions": [
     {
@@ -14,7 +14,7 @@
         "C": "0",
         "D": "$\\infty$"
       },
-      "answer": "",
+      "answer": "Q1",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -29,7 +29,7 @@
         "C": "$a_n = \\frac{n}{n+1}$",
         "D": "$a_n = (-1)^n$"
       },
-      "answer": "",
+      "answer": "Q2",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -44,7 +44,7 @@
         "C": "$1/L$",
         "D": "不存在"
       },
-      "answer": "",
+      "answer": "Q3",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -59,7 +59,7 @@
         "C": "$\\infty$",
         "D": "$1$"
       },
-      "answer": "",
+      "answer": "Q4",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -74,7 +74,7 @@
         "C": "發散（震盪）",
         "D": "發散至 $\\infty$"
       },
-      "answer": "",
+      "answer": "Q5",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -164,7 +164,7 @@
         "C": "單調且有界數列必收斂",
         "D": "若 $\\lim a_n = 0$，則 $\\lim |a_n| = 0$"
       },
-      "answer": "",
+      "answer": "Q11",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "$a_n = 0.9^n$",
         "D": "$a_n = \\sin(n\\pi/2)$"
       },
-      "answer": "",
+      "answer": "Q12",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -209,7 +209,7 @@
         "C": "$(1.01)^n$",
         "D": "$\\frac{\\sin(n)}{n}$"
       },
-      "answer": "",
+      "answer": "Q14",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -234,7 +234,7 @@
       "type": "multiple",
       "title": "**Q16**: 數列 $a_n = \\frac{2n^3 - 1}{5n^3 + n^2}$ 的極限為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q16",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -244,7 +244,7 @@
       "type": "multiple",
       "title": "**Q17**: $\\lim_{n \\to \\infty} (1 + \\frac{2}{n})^n$ 的值為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q17",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
       "type": "multiple",
       "title": "**Q18**: 若 $a_n = \\sqrt{n^2 + n} - n$，則其極限為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q18",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -264,7 +264,7 @@
       "type": "multiple",
       "title": "**Q19**: 數列 $a_n = \\arctan(n)$ 當 $n \\to \\infty$ 時收斂至 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q19",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -274,7 +274,7 @@
       "type": "multiple",
       "title": "**Q20**: 數列 $a_n = \\frac{n^2}{e^n}$ 的極限為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q20",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -284,7 +284,7 @@
       "type": "fill",
       "title": "**Q21**: 利用夾擠定理，可求得 $\\lim_{n \\to \\infty} \\frac{n!}{n^n}$ 為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q21",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -294,7 +294,7 @@
       "type": "fill",
       "title": "**Q22**: 數列 $a_n = \\ln(n+1) - \\ln(n)$ 的極限為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q22",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -304,7 +304,7 @@
       "type": "fill",
       "title": "**Q23**: 若數列 $a_n = r^n$ 收斂至非零常數，則 $r$ 必須等於 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q23",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -314,7 +314,7 @@
       "type": "fill",
       "title": "**Q24**: 數列 $\\{1, 0, 1, 0, \\dots\\}$ 的一般項可寫為 $a_n = \\frac{1 + (-1)^{n+?}}{2}$，其中 $?$ 為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q24",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -324,7 +324,7 @@
       "type": "fill",
       "title": "**Q25**: 若 $a_n = \\frac{\\sin n}{n}$，則 $\\lim_{n \\to \\infty} a_n = $ __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q25",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -354,7 +354,7 @@
       "type": "fill",
       "title": "**Q28**: $\\lim_{n \\to \\infty} \\sqrt[n]{3^n + 2^n}$ 的值為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q28",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -364,7 +364,7 @@
       "type": "fill",
       "title": "**Q29**: 數列 $a_n = \\frac{(n+1)!}{n!}$ 的極限為 __________。",
       "options": {},
-      "answer": "",
+      "answer": "Q29",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -374,7 +374,7 @@
       "type": "fill",
       "title": "**Q30**: 根據 $\\epsilon-N$ 定義，極限 $L$ 代表當 $n$ 足夠大時，$a_n$ 與 $L$ 的 __________ 可以任意小。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP10.1 | KP10.2 | KP10.3 | KP10.4 | KP10.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,1,0,0,1 | 0,0,1,0,1 | 0,0,1,1,0 | 0,1,0,0,0 | 1,0,0,0,0 |\n| Q6-Q10 | 0,0,0,0,0 | 1,1,0,1,0 | 0,0,0,0,1 | 1,0,0,0,0 | 0,0,1,0,1 |\n| Q11-Q15| 0,0,1,0,1 | 1,1,0,1,0 | 0,0,1,1,1 | 1,0,0,0,0 | 0,0,0,0,0 |\n| Q16-Q30| ...隨題目分佈... | | | | |\n*(註：詳細對應請參閱教師手冊)*",
       "options": {},
-      "answer": "",
+      "answer": "Q30",
       "kp": "",
       "explanation": "",
       "q_vector": []

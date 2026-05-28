@@ -1,224 +1,488 @@
 {
-  "course_id": "deep-learning",
+  "courseId": "deep-learning",
   "week": 12,
-  "title": "深度學習第 12 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP12.1": "理論基礎",
-    "KP12.2": "架構原理",
-    "KP12.3": "PyTorch 實作",
-    "KP12.4": "模型調優",
-    "KP12.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "DL-W12-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP12.2",
-      "title": "這是第 12 週的第 1 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.12.1"
+      ],
+      "answer": "C",
+      "title": "One-hot 編碼在處理 5 萬個單詞的詞表時，每個詞向量的維度是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "300",
+        "B": "50000",
+        "C": "1",
+        "D": "不固定"
+      }
     },
     {
-      "id": "DL-W12-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP12.3",
-      "title": "這是第 12 週的第 2 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.12.5"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "Word2Vec 的核心假設「分布式假說」是說？",
+      "options": {
+        "A": "單詞的意義由其字母組成決定",
+        "B": "單詞的意義由其出現的上下文決定",
+        "C": "單詞的意義由字典定義決定",
+        "D": "單詞是隨機分佈的"
+      }
     },
     {
-      "id": "DL-W12-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP12.4",
-      "title": "這是第 12 週的第 3 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.12.3"
+      ],
+      "answer": "D",
+      "title": "在 Word2Vec 中，通過「中心詞預測上下文」的模式稱為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "CBOW",
+        "B": "Skip-gram",
+        "C": "CNN",
+        "D": "RNN"
+      }
     },
     {
-      "id": "DL-W12-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP12.5",
-      "title": "這是第 12 週的第 4 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.12.4"
+      ],
+      "answer": "B",
+      "title": "下列哪一個模型最擅長處理未登錄詞（OOV），因為它使用了子詞信息？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "Word2Vec",
+        "B": "GloVe",
+        "C": "FastText",
+        "D": "One-hot"
+      }
     },
     {
-      "id": "DL-W12-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP12.1",
-      "title": "這是第 12 週的第 5 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.12.2"
+      ],
+      "answer": "C",
+      "title": "衡量兩個詞向量方向是否一致（語義是否相近）的最常用指標是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "歐氏距離",
+        "B": "餘弦相似度",
+        "C": "曼哈頓距離",
+        "D": "點積"
+      }
     },
     {
-      "id": "DL-W12-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP12.2",
-      "title": "這是第 12 週的第 6 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.12.5"
+      ],
+      "answer": "B",
+      "title": "詞向量加減運算 $King - Man + Woman = Queen$ 展現了向量空間的？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "線性特徵",
+        "B": "非線性特徵",
+        "C": "隨機性",
+        "D": "複雜性"
+      }
     },
     {
-      "id": "DL-W12-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP12.3",
-      "title": "這是第 12 週的第 7 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.12.3"
+      ],
+      "answer": "D",
+      "title": "負採樣 (Negative Sampling) 的主要目的是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "增加數據難度",
+        "B": "降低訓練時計算 Softmax 的開銷",
+        "C": "防止模型過擬合",
+        "D": "增加詞表大小"
+      }
     },
     {
-      "id": "DL-W12-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP12.4",
-      "title": "這是第 12 週的第 8 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.12.4"
+      ],
+      "answer": "C",
+      "title": "下列哪一個詞向量模型主要是基於「全局矩陣分解」的思想？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "Word2Vec",
+        "B": "GloVe",
+        "C": "BERT",
+        "D": "CNN"
+      }
     },
     {
-      "id": "DL-W12-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP12.5",
-      "title": "這是第 12 週的第 9 個深度學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 4.12.2"
+      ],
       "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "在 t-SNE 視覺化中，相似意義的單詞應該呈現？",
+      "options": {
+        "A": "隨機分佈",
+        "B": "聚集在一起",
+        "C": "呈直線分佈",
+        "D": "消失"
+      }
     },
     {
-      "id": "DL-W12-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP12.1",
-      "title": "這是第 12 週的第 10 個深度學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 4.12.1"
+      ],
+      "answer": "D",
+      "title": "詞嵌入層在神經網絡中通常充當？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是深度學習 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "損失函數",
+        "B": "第一層（將 Index 轉為 Vector）",
+        "C": "輸出層",
+        "D": "激活函數"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 4.12.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "One-hot 編碼的缺點包括？",
+      "options": {
+        "A": "數據極其稀疏",
+        "B": "維度過大",
+        "C": "無法體現詞與詞之間的語義聯繫",
+        "D": "運算複雜度低"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 4.12.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "Word2Vec 的兩種主要訓練架構是？",
+      "options": {
+        "A": "CBOW",
+        "B": "Skip-gram",
+        "C": "GRU",
+        "D": "Encoder"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 4.12.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "下列哪些屬於預訓練詞向量模型？",
+      "options": {
+        "A": "GloVe",
+        "B": "Word2Vec",
+        "C": "FastText",
+        "D": "ReLU"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 4.12.1"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "關於稠密詞向量，正確的有？",
+      "options": {
+        "A": "節省內存",
+        "B": "支持語義搜索",
+        "C": "維度通常在 50-500 之間",
+        "D": "必須在測試集上重新訓練"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 4.12.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "哪些因素會影響 Word2Vec 模型的質量？",
+      "options": {
+        "A": "語料庫的大小",
+        "B": "上下文窗口的大小",
+        "C": "向量維度",
+        "D": "電腦螢幕亮度"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 4.12.2"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "餘弦相似度的特點？",
+      "options": {
+        "A": "取值在 [-1, 1] 之間",
+        "B": "1 代表方向完全一致",
+        "C": "關注的是向量的方向而非長度",
+        "D": "計算量非常大"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 4.12.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "FastText 相對於 Word2Vec 的進步之處？",
+      "options": {
+        "A": "考慮了形態學特徵",
+        "B": "處理拼寫錯誤更魯棒",
+        "C": "訓練速度慢",
+        "D": "能給出沒見過的詞的向量"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 4.12.4",
+        "KP 4.12.5"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "詞向量可以應用於？",
+      "options": {
+        "A": "找出「同義詞」",
+        "B": "文本分類的預處理",
+        "C": "推薦系統中的物品關聯",
+        "D": "圖像風格轉換"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 4.12.1"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在 PyTorch 中，實現詞嵌入的類別是？",
+      "options": {
+        "A": "`nn.Embedding`",
+        "B": "`nn.Linear`",
+        "C": "`nn.Conv1d`",
+        "D": "`nn.ReLU`"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 4.12.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "分布式表示 (Distributed Representation) 的意義在於？",
+      "options": {
+        "A": "特徵分佈在向量的多個維度上",
+        "B": "不是孤立的 0/1",
+        "C": "容錯性強",
+        "D": "方便加密"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 4.12.1"
+      ],
+      "answer": [
+        "Seq2Seq"
+      ],
+      "title": "詞嵌入將離散的標籤轉化為 __________ 維度的稠密向量。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 4.12.3"
+      ],
+      "answer": [
+        "編碼器"
+      ],
+      "title": "Word2Vec 中「猜中間詞」的模式縮寫為 __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 4.12.5"
+      ],
+      "answer": [
+        "解碼器"
+      ],
+      "title": "詞嵌入技術的數學靈感來源於 __________ 假說。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 4.12.2"
+      ],
+      "answer": [
+        "注意力機制"
+      ],
+      "title": "__________ 相似度常用於評估詞向量之間的親疏遠近。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 4.12.4"
+      ],
+      "answer": [
+        "上下文向量"
+      ],
+      "title": "解決 OOV 問題效果最好的經典詞向量模型是 __________。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 4.12.3"
+      ],
+      "answer": [
+        "對齊"
+      ],
+      "title": "Word2Vec 訓練中，隨機選取一些不相關詞作為干擾項的技術叫 __________ 採樣。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 4.12.2"
+      ],
+      "answer": [
+        "權重"
+      ],
+      "title": "將高維詞向量投影到平面觀察常用的算法是 __________ (或 PCA)。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 4.12.4"
+      ],
+      "answer": [
+        "Attention"
+      ],
+      "title": "GloVe 模型的全稱是 Global __________ for Word Representation。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 4.12.1"
+      ],
+      "answer": [
+        "機器翻譯"
+      ],
+      "title": "在 PyTorch 中，一個 (3, 300) 的 Embedding 矩陣代表有 3 個詞，每個詞 __________ 維。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 4.12.1"
+      ],
+      "answer": [
+        "動態"
+      ],
+      "title": "Embedding 矩陣的行數通常等於 __________ 的大小。 ---"
     }
   ]
 }

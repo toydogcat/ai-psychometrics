@@ -1,644 +1,490 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 16,
-  "title": "機器學習第 16 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP16.1": "概念基礎",
-    "KP16.2": "數學原理",
-    "KP16.3": "Python 實作",
-    "KP16.4": "模型評估",
-    "KP16.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W16-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP16.2",
-      "title": "這是第 16 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.16.1"
+      ],
+      "answer": "B",
+      "title": "K-折交叉驗證中，如果 $K=5$，模型會被訓練幾次？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "1",
+        "B": "5",
+        "C": "10",
+        "D": "25"
+      }
     },
     {
-      "id": "ML-W16-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP16.3",
-      "title": "這是第 16 週的第 2 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.16.2"
+      ],
+      "answer": "C",
+      "title": "對於分類問題，為了確保各折疊中正負類比例一致，應使用哪種 CV？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "Standard K-Fold",
+        "B": "Stratified K-Fold",
+        "C": "LOOCV",
+        "D": "ShuffleSplit"
+      }
     },
     {
-      "id": "ML-W16-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP16.4",
-      "title": "這是第 16 週的第 3 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.16.1"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "交叉驗證的主要目的是為了？",
+      "options": {
+        "A": "加速訓練",
+        "B": "獲得模型泛化能力的可靠估計",
+        "C": "減少特徵數量",
+        "D": "儲存模型"
+      }
     },
     {
-      "id": "ML-W16-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP16.5",
-      "title": "這是第 16 週的第 4 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.16.1"
+      ],
+      "answer": "D",
+      "title": "留一法 (LOOCV) 最適合應用於哪種資料規模？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "巨量資料",
+        "B": "中型資料",
+        "C": "極小樣本資料",
+        "D": "任何規模皆可"
+      }
     },
     {
-      "id": "ML-W16-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP16.1",
-      "title": "這是第 16 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.16.5"
+      ],
+      "answer": "C",
+      "title": "在 Scikit-Learn 的 `cross_val_score` 中，若 `cv=5` 且模型是回歸器，預設使用？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "KFold",
+        "B": "StratifiedKFold",
+        "C": "TimeSeriesSplit",
+        "D": "LeaveOneOut"
+      }
     },
     {
-      "id": "ML-W16-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP16.2",
-      "title": "這是第 16 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.16.5"
+      ],
+      "answer": "D",
+      "title": "時間序列資料在做交叉驗證時，最核心的限制是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "樣本數必須大於 100",
+        "B": "訓練集時間點必須早於驗證集",
+        "C": "必須進行去噪",
+        "D": "特徵必須是平穩的"
+      }
     },
     {
-      "id": "ML-W16-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP16.3",
-      "title": "這是第 16 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.16.1"
+      ],
+      "answer": "B",
+      "title": "交叉驗證結束後，我們通常取所有折疊分數的什麼值作為最終效能指標？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "最大值",
+        "B": "最小值",
+        "C": "平均值",
+        "D": "第一折的分數"
+      }
     },
     {
-      "id": "ML-W16-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP16.4",
-      "title": "這是第 16 週的第 8 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.16.4"
+      ],
+      "answer": "C",
+      "title": "下列哪一個不是模型選擇時考慮的因素？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "驗證分數的平均值",
+        "B": "驗證分數的標準差",
+        "C": "預測所需的時間",
+        "D": "代碼的主題顏色"
+      }
     },
     {
-      "id": "ML-W16-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP16.5",
-      "title": "這是第 16 週的第 9 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.16.4"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "如果一個模型的 CV 平均分數很高但標準差也很大，代表該模型？",
+      "options": {
+        "A": "非常穩定",
+        "B": "容易受訓練數據切分影響，不夠穩定",
+        "C": "必然過擬合",
+        "D": "必然欠擬合"
+      }
     },
     {
-      "id": "ML-W16-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP16.1",
-      "title": "這是第 16 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.16.5"
+      ],
+      "answer": "D",
+      "title": "驗證曲線 (Validation Curve) 的橫軸通常代表？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "樣本數量",
+        "B": "特徵數量",
+        "C": "某個超參數的值",
+        "D": "迭代次數"
+      }
     },
     {
-      "id": "ML-W16-Q11",
-      "type": "single",
-      "kp": "KP16.2",
-      "title": "這是第 16 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.16.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "交叉驗證的優點包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "充分利用每一筆資料",
+        "B": "減少單次切分的隨機誤差",
+        "C": "提供效能估計的置信區間（標準差）",
+        "D": "能夠直接訓練模型"
+      }
     },
     {
-      "id": "ML-W16-Q12",
-      "type": "single",
-      "kp": "KP16.3",
-      "title": "這是第 16 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.16.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於 K-Fold 中的 K 值選擇，敘述正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "K 越大，驗證集越小",
+        "B": "K 越大，計算開銷越高",
+        "C": "常用設置為 5 或 10",
+        "D": "K 必須是質數"
+      }
     },
     {
-      "id": "ML-W16-Q13",
-      "type": "single",
-      "kp": "KP16.4",
-      "title": "這是第 16 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.16.2"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "什麼情況下 Stratified K-Fold 是必須的？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "二分類且正負類比例為 1:100",
+        "B": "多分類且某些類別樣本極少",
+        "C": "回歸任務",
+        "D": "影像分割"
+      }
     },
     {
-      "id": "ML-W16-Q14",
-      "type": "single",
-      "kp": "KP16.5",
-      "title": "這是第 16 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.16.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "交叉驗證的變體包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "Repeated K-Fold",
+        "B": "Leave-P-Out",
+        "C": "Time Series Split",
+        "D": "Random Search"
+      }
     },
     {
-      "id": "ML-W16-Q15",
-      "type": "single",
-      "kp": "KP16.1",
-      "title": "這是第 16 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.16.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "進行模型選擇時，除了準確率，還應參考？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "訓練速度",
+        "B": "模型的大小（內存）",
+        "C": "指標的穩定性",
+        "D": "硬體配置"
+      }
     },
     {
-      "id": "ML-W16-Q16",
-      "type": "single",
-      "kp": "KP16.2",
-      "title": "這是第 16 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.16.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 `train_test_split` 與 `cross_val_score` 的區別？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "前者是單次切分",
+        "B": "後者是多次迭代切分",
+        "C": "前者主要用於最終測試",
+        "D": "後者主要用於開發階段驗證"
+      }
     },
     {
-      "id": "ML-W16-Q17",
-      "type": "single",
-      "kp": "KP16.3",
-      "title": "這是第 16 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.16.5"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "導致交叉驗證分數「虛高」的原因可能有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "特徵工程在 CV 外部執行（資料滲漏）",
+        "B": "樣本之間存在高度重複",
+        "C": "K 值太大",
+        "D": "模型太簡單"
+      }
     },
     {
-      "id": "ML-W16-Q18",
-      "type": "single",
-      "kp": "KP16.4",
-      "title": "這是第 16 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.16.1",
+        "KP 3.16.2",
+        "KP 3.16.3"
+      ],
+      "answer": [
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些 Scikit-Learn 類別用於手動控制 CV 行為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "`KFold`",
+        "B": "`StratifiedKFold`",
+        "C": "`ShuffleSplit`",
+        "D": "`LinearRegression`"
+      }
     },
     {
-      "id": "ML-W16-Q19",
-      "type": "single",
-      "kp": "KP16.5",
-      "title": "這是第 16 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.16.5"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在時間序列驗證中，驗證集通常是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "隨機選取的",
+        "B": "訓練集之後的一段連續時間",
+        "C": "第一筆資料",
+        "D": "滾動移動的窗口"
+      }
     },
     {
-      "id": "ML-W16-Q20",
-      "type": "single",
-      "kp": "KP16.1",
-      "title": "這是第 16 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.16.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於模型泛化能力，描述正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "它是模型對未知數據的處理能力",
+        "B": "交叉驗證是其良好的代理指標",
+        "C": "模型越複雜泛化能力一定越強",
+        "D": "它是機器學習的終極目標"
+      }
     },
     {
-      "id": "ML-W16-Q21",
-      "type": "single",
-      "kp": "KP16.2",
-      "title": "這是第 16 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.16.1"
+      ],
+      "answer": [
+        "交叉驗證"
+      ],
+      "title": "CV 是 __________ Validation 的縮寫。"
     },
     {
-      "id": "ML-W16-Q22",
-      "type": "single",
-      "kp": "KP16.3",
-      "title": "這是第 16 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.16.1"
+      ],
+      "answer": [
+        "K折"
+      ],
+      "title": "將數據平分成 $K$ 個子集進行驗證的方法稱為 __________ 交叉驗證。"
     },
     {
-      "id": "ML-W16-Q23",
-      "type": "single",
-      "kp": "KP16.4",
-      "title": "這是第 16 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.16.2"
+      ],
+      "answer": [
+        "留一法"
+      ],
+      "title": "在分類問題中，維持子集類別比例一致的方法是 __________ 折交叉驗證。"
     },
     {
-      "id": "ML-W16-Q24",
-      "type": "single",
-      "kp": "KP16.5",
-      "title": "這是第 16 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.16.1"
+      ],
+      "answer": [
+        "分層"
+      ],
+      "title": "當 $K$ 等於樣本量 $N$ 時，這種交叉驗證稱為 __________ (請寫中文或縮寫)。"
     },
     {
-      "id": "ML-W16-Q25",
-      "type": "single",
-      "kp": "KP16.1",
-      "title": "這是第 16 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.16.5"
+      ],
+      "answer": [
+        "cross_val_score"
+      ],
+      "title": "`cross_val_score` 函式回傳的是一個 __________，包含每一折的分數。"
     },
     {
-      "id": "ML-W16-Q26",
-      "type": "single",
-      "kp": "KP16.2",
-      "title": "這是第 16 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.16.4"
+      ],
+      "answer": [
+        "GridSearchCV"
+      ],
+      "title": "如果模型在不同折疊下的分數差異很大，代表模型 __________ (穩定/不穩定)。"
     },
     {
-      "id": "ML-W16-Q27",
-      "type": "single",
-      "kp": "KP16.3",
-      "title": "這是第 16 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.16.5"
+      ],
+      "answer": [
+        "超參數"
+      ],
+      "title": "對於股票預測資料，不可以使用隨機切分，應使用 __________ 驗證。"
     },
     {
-      "id": "ML-W16-Q28",
-      "type": "single",
-      "kp": "KP16.4",
-      "title": "這是第 16 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.16.3"
+      ],
+      "answer": [
+        "驗證集"
+      ],
+      "title": "為了讓他人重現你的數據切分結果，應設置參數 __________。"
     },
     {
-      "id": "ML-W16-Q29",
-      "type": "single",
-      "kp": "KP16.5",
-      "title": "這是第 16 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.16.5"
+      ],
+      "answer": [
+        "KFold"
+      ],
+      "title": "透過 __________ 曲線可以觀察模型是否隨著資料量增加而提高效能。"
     },
     {
-      "id": "ML-W16-Q30",
-      "type": "single",
-      "kp": "KP16.1",
-      "title": "這是第 16 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.16.4"
+      ],
+      "answer": [
+        "時間序列"
+      ],
+      "title": "交叉驗證可以用於調優 __________ 參數。 ---"
     }
   ]
 }

@@ -1,0 +1,494 @@
+{
+  "courseId": "big-data",
+  "week": 8,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "C",
+      "title": "Transformer 架構中，Query, Key, Value (Q, K, V) 三者主要用於哪種運算？",
+      "options": {
+        "A": "卷積",
+        "B": "循環",
+        "C": "自注意力 (Self-Attention)",
+        "D": "隨機森林"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "B",
+      "title": "為什麼 Transformer 需要「位置編碼」(Positional Encoding)？",
+      "options": {
+        "A": "為了減少參數量",
+        "B": "為了提供單詞在序列中的相對或絕對位置資訊",
+        "C": "為了加速訓練",
+        "D": "為了防止過擬合"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP8.2"
+      ],
+      "answer": "B",
+      "title": "在 GPT 模型的訓練中，為了防止模型在預測當前詞時看到後面的詞，必須使用？",
+      "options": {
+        "A": "Dropout",
+        "B": "因果掩碼 (Causal Mask)",
+        "C": "池化",
+        "D": "正則化"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": "B",
+      "title": "BERT 模型的核心架構屬於下列哪一種？",
+      "options": {
+        "A": "單向 Transformer 編碼器",
+        "B": "雙向 Transformer 編碼器",
+        "C": "單向 Transformer 解碼器",
+        "D": "卷積神經網路"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": "B",
+      "title": "下列哪種任務最適合使用「生成式」(GPT-style) 模型來完成？",
+      "options": {
+        "A": "垃圾郵件分類",
+        "B": "寫一段關於貓的冒險故事",
+        "C": "找出一段文字中的所有地名",
+        "D": "情感判斷"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": "B",
+      "title": "知識蒸餾 (Knowledge Distillation) 的主要目標是？",
+      "options": {
+        "A": "讓模型變大",
+        "B": "訓練一個較小的「學生」模型來模仿較大的「教師」模型",
+        "C": "增加數據量",
+        "D": "移除數據噪音"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": "B",
+      "title": "將模型的 32 位浮點數參數轉換為 8 位整數的操作稱為？",
+      "options": {
+        "A": "蒸餾",
+        "B": "量化 (Quantization)",
+        "C": "剪枝",
+        "D": "填充"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "C",
+      "title": "NER (命名實體識別) 任務的主要目的是從文本中識別出？",
+      "options": {
+        "A": "動詞的數量",
+        "B": "情感正負面",
+        "C": "人名、日期、地名等特定實體",
+        "D": "句子長度"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": "A",
+      "title": "下列哪種機制讓 Transformer 能夠並行計算，而不像 RNN 必須序列處理？",
+      "options": {
+        "A": "注意力機制取代了遞歸結構",
+        "B": "刪除了所有權重",
+        "C": "增加了 Batch Size",
+        "D": "使用了 CPU"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": "B",
+      "title": "情感分析中，處理「這電影真是不好...看才怪！」這類句子最需要的技術是？",
+      "options": {
+        "A": "單詞統計",
+        "B": "深度語境感知與長距離依賴處理",
+        "C": "拼字檢查",
+        "D": "翻譯"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "Transformer 的核心優勢包括？",
+      "options": {
+        "A": "支援並行訓練",
+        "B": "能有效捕捉長距離依賴關係",
+        "C": "參數量總是比 RNN 少",
+        "D": "通過多頭注意力學習多層語義"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "關於 BERT 的預訓練目標，包含下列哪些？",
+      "options": {
+        "A": "掩碼語言模型 (MLM)",
+        "B": "下一句預測 (NSP)",
+        "C": "隨機打亂句子",
+        "D": "下一個詞預測"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP8.2",
+        "KP8.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "掩碼機制 (Masking) 在 NLP 中的應用場景包括？",
+      "options": {
+        "A": "防止模型看到未來的預測目標",
+        "B": "處理 Batch 中不等長的序列填充",
+        "C": "故意遮蔽部分單詞讓模型練習填空",
+        "D": "隱藏使用者的個人資料"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "模型壓縮與優化的常見技術有？",
+      "options": {
+        "A": "剪枝 (Pruning)",
+        "B": "量化 (Quantization)",
+        "C": "知識蒸餾 (Distillation)",
+        "D": "增加層數"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "NER 任務在實際應用中可能面臨的挑戰？",
+      "options": {
+        "A": "實體歧義（如「蘋果」是水果還是公司）",
+        "B": "新出現的專有名詞",
+        "C": "長實體的邊界識別",
+        "D": "標點符號的顏色"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 GPT 系列模型，敘述正確的有？",
+      "options": {
+        "A": "採用 Decoder-only 架構",
+        "B": "適合 Zero-shot 或 Few-shot 學習",
+        "C": "訓練目標是預測下一個 Token",
+        "D": "是雙向理解模型"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "多頭注意力 (Multi-head Attention) 的作用？",
+      "options": {
+        "A": "增加模型的容量",
+        "B": "讓模型能同時關注文本中不同位置的資訊",
+        "C": "防止模型過擬合",
+        "D": "加速單次矩陣運算"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "知識蒸餾中的損失函數通常包含？",
+      "options": {
+        "A": "學生預測與真實標籤的差異",
+        "B": "學生預測與教師預測（軟標籤）的差異",
+        "C": "模型的內存佔用",
+        "D": "訓練時間"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "在情感分析中，會影響判斷準確性的語言特質包括？",
+      "options": {
+        "A": "雙重否定句",
+        "B": "諷刺與反話",
+        "C": "語氣助詞",
+        "D": "文本的字體大小"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP8.3",
+        "KP8.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列哪些是常見的 Transformer 變體？",
+      "options": {
+        "A": "RoBERTa",
+        "B": "T5",
+        "C": "ALBERT",
+        "D": "ResNet"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": [
+        "位置 (",
+        "Positional)"
+      ],
+      "title": "Transformer 中透過正弦函數實現的位置注入技術稱為 __________ 編碼。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": [
+        "Transformers"
+      ],
+      "title": "BERT 的全稱是 Bidirectional Encoder Representations from __________。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP8.2"
+      ],
+      "answer": [
+        "掩碼 (",
+        "Masking)"
+      ],
+      "title": "在生成式模型中，遮蔽後續資訊以符合因果律的機制稱為 __________。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": [
+        "知識蒸餾 (",
+        "Distillation)"
+      ],
+      "title": "將一個預訓練好的大型模型知識遷移到小型模型的過程叫 __________。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": [
+        "地名 (",
+        "LOC",
+        "地理位置)"
+      ],
+      "title": "在 NER 任務中，識別出「台北」屬於 __________ 類型的實體。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": [
+        "Decoder (",
+        "解碼器)"
+      ],
+      "title": "GPT 模型的架構設計屬於 Transformer 中的 __________-only 結構。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP8.4"
+      ],
+      "answer": [
+        "量化 (",
+        "Quantization)"
+      ],
+      "title": "使用 INT8 代替 FP32 來儲存權重，這屬於模型 __________ 技術。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP8.3"
+      ],
+      "answer": [
+        "掩碼 (",
+        "Masked)"
+      ],
+      "title": "BERT 預訓練中的 MLM 任務是指 __________ 語言模型。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP8.1"
+      ],
+      "answer": [
+        "遞歸 (",
+        "Recurrent)"
+      ],
+      "title": "Transformer 能夠並行處理序列數據，主要是因為拋棄了 RNN 中的 __________ 結構。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP8.5"
+      ],
+      "answer": [
+        "F1"
+      ],
+      "title": "__________ 分數常用於衡量 NER 模型的綜合性能（包含 Precision 與 Recall）。 ---"
+    }
+  ]
+}

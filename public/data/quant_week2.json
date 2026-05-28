@@ -1,0 +1,496 @@
+{
+  "courseId": "python-office-quant",
+  "week": 2,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": "B",
+      "title": "在 `python-docx` 中，若要在同一段落內設置不同的字體顏色（如部分紅字、部分黑字），應該如何操作？",
+      "options": {
+        "A": "創建多個 Paragraph",
+        "B": "在同一個 Paragraph 中創建多個 Run",
+        "C": "使用 HTML 標籤",
+        "D": "無法實現"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": "B",
+      "title": "下列哪個對象是 Word 文檔的最高層級？",
+      "options": {
+        "A": "Section",
+        "B": "Document",
+        "C": "Paragraph",
+        "D": "Body"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": "D",
+      "title": "添加一級標題的正確語法是？",
+      "options": {
+        "A": "`doc.add_title('Hello')`",
+        "B": "`doc.add_heading('Hello', level=1)`",
+        "C": "`doc.add_text('Hello', style='Heading1')`",
+        "D": "`doc.add_header('Hello')`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": "A",
+      "title": "如何獲取文檔中的所有段落列表？",
+      "options": {
+        "A": "`doc.paragraphs`",
+        "B": "`doc.get_paragraphs()`",
+        "C": "`doc.all_text`",
+        "D": "`doc.sections`"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": "B",
+      "title": "在表格操作中，`table.cell(0, 1).text = 'Data'` 代表？",
+      "options": {
+        "A": "第 0 行第 1 列",
+        "B": "第 1 行第 0 列",
+        "C": "第 1 行第 1 列",
+        "D": "第 0 行第 0 列"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": "A",
+      "title": "插入圖片時，若要設置寬度為 5 英吋，需要從哪個模組導入 `Inches`？",
+      "options": {
+        "A": "`docx.enum`",
+        "B": "`docx.shared`",
+        "C": "`docx.text`",
+        "D": "`docx.image`"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": "B",
+      "title": "如何保存文檔？",
+      "options": {
+        "A": "`doc.write('test.docx')`",
+        "B": "`doc.save('test.docx')`",
+        "C": "`doc.export('test.docx')`",
+        "D": "`doc.close(save=True)`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": "B",
+      "title": "獲取現有文檔並進行修改的語法是？",
+      "options": {
+        "A": "`Document.open('test.docx')`",
+        "B": "`Document('test.docx')`",
+        "C": "`docx.load('test.docx')`",
+        "D": "`open_docx('test.docx')`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": "A",
+      "title": "下列哪個屬性可以控制 Run 對象的字體加粗？",
+      "options": {
+        "A": "`run.bold = True`",
+        "B": "`run.font.bold = True`",
+        "C": "`run.style = 'Bold'`",
+        "D": "`run.weight = 700`"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": "A",
+      "title": "若要在文檔末尾添加一個新分頁，應使用？",
+      "options": {
+        "A": "`doc.new_page()`",
+        "B": "`doc.add_page_break()`",
+        "C": "`doc.break_page()`",
+        "D": "`doc.sections.add()`"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 `python-docx` 的表格處理，正確的有？",
+      "options": {
+        "A": "可以動態設置表格的行數和列數",
+        "B": "支持讀取現有 Word 文檔中的表格內容",
+        "C": "無法在表格中插入圖片",
+        "D": "可以通過 `table.rows` 獲取所有行"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些屬於 Run 對象的常見屬性？",
+      "options": {
+        "A": "`bold`",
+        "B": "`italic`",
+        "C": "`underline`",
+        "D": "`font.size`"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "關於段落對齊方式，下列哪些是有效的 `WD_ALIGN_PARAGRAPH` 常量？",
+      "options": {
+        "A": "`LEFT`",
+        "B": "`CENTER`",
+        "C": "`RIGHT`",
+        "D": "`JUSTIFY`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "使用 `python-docx` 批量生成報告的優勢包括？",
+      "options": {
+        "A": "格式統一",
+        "B": "節省人工複製貼上時間",
+        "C": "直接生成 PDF (需配合擴展)",
+        "D": "支援所有 Word 動畫效果"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於 `add_heading` 的 `level` 參數，下列描述正確的有？",
+      "options": {
+        "A": "0 代表文檔標題",
+        "B": "1 代表一級標題",
+        "C": "最大支援到 9 級標題",
+        "D": "不設置預設為 1"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP2.1",
+        "KP2.2",
+        "KP2.3",
+        "KP2.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些方法可以向文檔添加內容？",
+      "options": {
+        "A": "`add_paragraph()`",
+        "B": "`add_heading()`",
+        "C": "`add_table()`",
+        "D": "`add_picture()`"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "處理 Word 模板時，常見的策略包括？",
+      "options": {
+        "A": "預先在 Word 中定義好樣式",
+        "B": "使用特殊符號（如 `{{name}}`）作為佔位符",
+        "C": "直接修改 XML 源碼",
+        "D": "遍歷 Paragraphs 並檢查 text 屬性"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "下列關於 `Sections` 的說法正確的有？",
+      "options": {
+        "A": "一個文檔可以有多個 Section",
+        "B": "Section 控制頁面邊距",
+        "C": "Section 控制紙張方向 (橫向/縱向)",
+        "D": "Paragraph 屬於 Section"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "若要修改現有段落的樣式，可以？",
+      "options": {
+        "A": "`p.style = 'Normal'`",
+        "B": "`p.style = doc.styles['Heading 2']`",
+        "C": "`p.set_style('Heading 2')`",
+        "D": "直接修改 `p.text_format`"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP2.1",
+        "KP2.2",
+        "KP2.3",
+        "KP2.4",
+        "KP2.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "`python-docx` 不支援的操作包括？",
+      "options": {
+        "A": "插入超連結 (API 支持度有限)",
+        "B": "修改頁眉頁腳 (支援但較複雜)",
+        "C": "自動更新目錄 (不支援，需 Word 打開時更新)",
+        "D": "插入浮水印"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": [
+        "1"
+      ],
+      "title": "向 Word 文檔添加一級標題的方法是：`doc.add_heading('標題內容', level=____)`。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": [
+        "rows"
+      ],
+      "title": "若要獲取表格的第三行，代碼為 `table.________[2]`。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": [
+        "italic"
+      ],
+      "title": "設置 Run 為斜體，應使用 `run.________ = True`。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": [
+        "shared"
+      ],
+      "title": "控制圖片寬度的單位 `Inches` 需要從 `docx.________` 導入。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": [
+        "text"
+      ],
+      "title": "獲取段落中所有文本內容的屬性是 `p.________`。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": [
+        "2"
+      ],
+      "title": "添加表格時，語法為 `doc.add_table(rows=____, cols=____)`。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": [
+        "末尾"
+      ],
+      "title": "預設情況下，`add_paragraph()` 會將新段落添加到文檔的 __________。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": [
+        "CENTER"
+      ],
+      "title": "要將段落設為居中對齊，需設置 `p.alignment = WD_ALIGN_PARAGRAPH.________`。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": [
+        "docx"
+      ],
+      "title": "`python-docx` 處理的檔案副檔名必須是 __________。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": [
+        "text"
+      ],
+      "title": "遍歷單元格數據時，可以使用 `cell.________` 屬性獲取其中的文字。 ---"
+    }
+  ]
+}

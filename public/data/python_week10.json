@@ -1,0 +1,427 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 10,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP 10.2"
+      ],
+      "answer": null,
+      "title": "關於類別中的 `self` 參數，下列敘述何者正確？",
+      "options": {
+        "A": "`self` 是 Python 的保留關鍵字，不能換成其他名稱",
+        "B": "`self` 代表類別本身",
+        "C": "`self` 代表正在呼叫該方法的實體物件",
+        "D": "靜態方法也必須包含 `self`"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP 10.3"
+      ],
+      "answer": null,
+      "title": "執行 `class A: x = 1; a = A(); a.x = 2` 後，`A.x` 的值是？",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "None",
+        "D": "拋出錯誤"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP 10.4"
+      ],
+      "answer": null,
+      "title": "Python 中如何定義一個傳統意義上的「私有屬性」？",
+      "options": {
+        "A": "`private x`",
+        "B": "`_x`",
+        "C": "`__x`",
+        "D": "`x__`"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP 10.1"
+      ],
+      "answer": null,
+      "title": "哪一個魔術方法 (Magic Method) 負責物件的初始化？",
+      "options": {
+        "A": "`__new__`",
+        "B": "`__init__`",
+        "C": "`__call__`",
+        "D": "`__str__`"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP 10.5"
+      ],
+      "answer": null,
+      "title": "使用 `@property` 裝飾的方法，在呼叫時應如何撰寫？",
+      "options": {
+        "A": "`obj.method()`",
+        "B": "`obj.method`",
+        "C": "`obj@method`",
+        "D": "`Class.method(obj)`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP 10.3"
+      ],
+      "answer": null,
+      "title": "類別屬性通常存放在物件的哪一個屬性中？",
+      "options": {
+        "A": "`__dict__`",
+        "B": "`__class__`",
+        "C": "`__slots__`",
+        "D": "`__init__`"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP 10.4"
+      ],
+      "answer": null,
+      "title": "若類別 `Car` 有一個私有屬性 `__engine`，在實例 `c` 中，Python 內部將其改寫為何種名稱？",
+      "options": {
+        "A": "`c.engine`",
+        "B": "`c._Car__engine`",
+        "C": "`c.__Car_engine`",
+        "D": "`c.private_engine`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP 10.5"
+      ],
+      "answer": null,
+      "title": "在 `setter` 方法中，通常使用什麼裝飾器？",
+      "options": {
+        "A": "`@property.set`",
+        "B": "`@attribute.setter`",
+        "C": "`@setter`",
+        "D": "`@property.setter`"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP 10.3"
+      ],
+      "answer": null,
+      "title": "關於類別屬性的修改，下列何者會影響所有尚未擁有該實體屬性的物件？",
+      "options": {
+        "A": "`obj.class_attr = val`",
+        "B": "`type(obj).class_attr = val`",
+        "C": "`self.class_attr = val`",
+        "D": "以上皆是"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP 10.1"
+      ],
+      "answer": null,
+      "title": "下列何者是 OOP 的三大核心特性之一（本週重點）？",
+      "options": {
+        "A": "遞迴",
+        "B": "封裝",
+        "C": "併發",
+        "D": "動態定型"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 10.1"
+      ],
+      "answer": null,
+      "title": "物件導向程式設計的主要優點包括？",
+      "options": {
+        "A": "程式碼重用性高",
+        "B": "模組化易於維護",
+        "C": "執行速度絕對比程序化快",
+        "D": "資料安全性提升"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 10.1",
+        "KP 10.2"
+      ],
+      "answer": null,
+      "title": "關於 `__init__` 方法，哪些描述正確？",
+      "options": {
+        "A": "它不應該有 `return` 值",
+        "B": "它是類別中唯一可以定義屬性的地方",
+        "C": "它在 `obj = ClassName()` 時被觸發",
+        "D": "第一個參數必須接收實體引用"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 10.4"
+      ],
+      "answer": null,
+      "title": "哪些行為會觸發 Python 的名稱改寫 (Name Mangling)？",
+      "options": {
+        "A": "`_variable`",
+        "B": "`__variable`",
+        "C": "`__variable__`",
+        "D": "`__var_123`"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 10.5"
+      ],
+      "answer": null,
+      "title": "使用 `@property` 的好處有哪些？",
+      "options": {
+        "A": "可以進行輸入驗證",
+        "B": "實作唯讀屬性",
+        "C": "介面與實作分離",
+        "D": "讓程式碼看起來像屬性存取而非函式呼叫"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 10.3"
+      ],
+      "answer": null,
+      "title": "關於類別變數與實體變數，哪些敘述正確？",
+      "options": {
+        "A": "修改類別變數會自動反映在所有實例中（除非實例已覆蓋該屬性）",
+        "B": "實體變數使用 `self.` 定義",
+        "C": "類別變數在所有實例間共享記憶體",
+        "D": "實體變數的優先順序高於類別變數"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 10.1"
+      ],
+      "answer": null,
+      "title": "下列哪些是正確的類別定義語法？",
+      "options": {
+        "A": "`class MyClass:`",
+        "B": "`class MyClass():`",
+        "C": "`def MyClass:`",
+        "D": "`class MyClass(object):`"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 10.4"
+      ],
+      "answer": null,
+      "title": "關於屬性隱藏，哪些說法是正確的？",
+      "options": {
+        "A": "Python 沒有真正的私有屬性，只有名稱改寫",
+        "B": "單底線 `_attr` 是一種程式設計約定",
+        "C": "雙底線 `__attr` 旨在防止命名衝突",
+        "D": "外部絕對無法存取雙底線屬性"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 10.5"
+      ],
+      "answer": null,
+      "title": "若要讓屬性 `price` 成為唯讀，應該？",
+      "options": {
+        "A": "只定義 `@property` 裝飾的 `price` 方法",
+        "B": "不定義 `@price.setter`",
+        "C": "將屬性命名為 `__price`",
+        "D": "在 `__init__` 中刪除該屬性"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 10.3"
+      ],
+      "answer": null,
+      "title": "在類別方法中，可以使用哪些方式存取類別屬性？",
+      "options": {
+        "A": "`ClassName.attr`",
+        "B": "`self.attr`",
+        "C": "`self.__class__.attr`",
+        "D": "`global attr`"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 10.3"
+      ],
+      "answer": null,
+      "title": "下列哪些場景適合使用類別屬性？",
+      "options": {
+        "A": "紀錄目前已建立了多少個物件",
+        "B": "儲存所有物件共用的預設配置",
+        "C": "儲存每個使用者的密碼",
+        "D": "定義常數，如 `PI = 3.14`"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 10.2"
+      ],
+      "answer": null,
+      "title": "在類別定義中，定義方法的語法是 `def method_name(__________, param1):`。"
+    },
+    {
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 10.1"
+      ],
+      "answer": null,
+      "title": "若要檢查一個物件 `obj` 是否為 `Student` 類別的實例，應使用內建函式 `__________(obj, Student)`。"
+    },
+    {
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 10.5"
+      ],
+      "answer": null,
+      "title": "裝飾器 `@property` 必須放在一個 __________ (方法/變數) 的上方。"
+    },
+    {
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 10.3"
+      ],
+      "answer": null,
+      "title": "若 `a = 10` 是類別屬性，而在 `__init__` 中執行 `self.a = 20`，則此行為稱為屬性 __________ (Shadowing/Overriding)。"
+    },
+    {
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 10.1"
+      ],
+      "answer": null,
+      "title": "在 Python 中，`__str__` 方法回傳的是物件的 __________ 描述。"
+    },
+    {
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 10.5"
+      ],
+      "answer": null,
+      "title": "如果想在設定屬性時觸發邏輯，需使用 `@<attribute_name>.__________`。"
+    },
+    {
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 10.3"
+      ],
+      "answer": null,
+      "title": "Python 類別屬性是存放在 `ClassName.__________` 這個字典中。"
+    },
+    {
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 10.5"
+      ],
+      "answer": null,
+      "title": "封裝的英文術語是 __________。"
+    },
+    {
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 10.4"
+      ],
+      "answer": null,
+      "title": "將私有屬性 `__score` 改寫為 `_Student__score` 的機制稱為 __________。"
+    },
+    {
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 10.1"
+      ],
+      "answer": null,
+      "title": "若要獲取一個物件所有可存取的屬性與方法列表，可使用內建函式 `__________(obj)`。 ---"
+    }
+  ]
+}

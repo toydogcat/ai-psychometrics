@@ -1,644 +1,485 @@
 {
-  "course_id": "machine-learning",
+  "courseId": "machine-learning",
   "week": 2,
-  "title": "機器學習第 2 週 - 自我診斷評量",
-  "knowledge_points": {
-    "KP2.1": "概念基礎",
-    "KP2.2": "數學原理",
-    "KP2.3": "Python 實作",
-    "KP2.4": "模型評估",
-    "KP2.5": "進階應用"
-  },
   "questions": [
     {
-      "id": "ML-W2-Q1",
+      "id": "Q1",
+      "num": 1,
       "type": "single",
-      "kp": "KP2.2",
-      "title": "這是第 2 週的第 1 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.2.2"
+      ],
+      "answer": "B",
+      "title": "線性回歸的損失函數 MSE 是對殘差的什麼進行平均？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "絕對值",
+        "B": "平方",
+        "C": "立方",
+        "D": "對數"
+      }
     },
     {
-      "id": "ML-W2-Q2",
+      "id": "Q2",
+      "num": 2,
       "type": "single",
-      "kp": "KP2.3",
-      "title": "這是第 2 週的第 2 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.2.1"
+      ],
+      "answer": "B",
+      "title": "下列哪一個屬性用於獲取 Scikit-Learn 線性回歸模型的截距 $b$？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "`coef_`",
+        "B": "`intercept_`",
+        "C": "`params_`",
+        "D": "`bias_`"
+      }
     },
     {
-      "id": "ML-W2-Q3",
+      "id": "Q3",
+      "num": 3,
       "type": "single",
-      "kp": "KP2.4",
-      "title": "這是第 2 週的第 3 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.2.4"
+      ],
+      "answer": "D",
+      "title": "若 $R^2$ 等於 1，代表什麼意義？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "模型完全錯誤",
+        "B": "模型完美擬合數據",
+        "C": "模型有一半的誤差",
+        "D": "數據包含大量雜訊"
+      }
     },
     {
-      "id": "ML-W2-Q4",
+      "id": "Q4",
+      "num": 4,
       "type": "single",
-      "kp": "KP2.5",
-      "title": "這是第 2 週的第 4 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.2.3",
+        "KP 3.2.5"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "正規方程 $w = (X^T X)^{-1} X^T y$ 中，若 $X^T X$ 不可逆，通常是因為？",
+      "options": {
+        "A": "樣本數太多",
+        "B": "特徵之間存在高度相關 (多元共線性)",
+        "C": "資料已經過標準化",
+        "D": "目標值 $y$ 為零"
+      }
     },
     {
-      "id": "ML-W2-Q5",
+      "id": "Q5",
+      "num": 5,
       "type": "single",
-      "kp": "KP2.1",
-      "title": "這是第 2 週的第 5 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.2.2"
+      ],
+      "answer": "C",
+      "title": "均方誤差 (MSE) 的量綱（單位）與原始標籤 $y$ 相比是？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "相同",
+        "B": "標籤單位的平方",
+        "C": "沒有單位",
+        "D": "標籤單位的根號"
+      }
     },
     {
-      "id": "ML-W2-Q6",
+      "id": "Q6",
+      "num": 6,
       "type": "single",
-      "kp": "KP2.2",
-      "title": "這是第 2 週的第 6 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.2.1"
+      ],
+      "answer": "B",
+      "title": "線性回歸屬於哪一類機器學習任務？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "監督式分類",
+        "B": "監督式回歸",
+        "C": "非監督式聚類",
+        "D": "強化學習"
+      }
     },
     {
-      "id": "ML-W2-Q7",
+      "id": "Q7",
+      "num": 7,
       "type": "single",
-      "kp": "KP2.3",
-      "title": "這是第 2 週的第 7 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.2.1"
+      ],
+      "answer": "D",
+      "title": "為了預測房價，我們收集了屋齡、坪數等特徵。坪數增加，房價通常也增加，這代表權重 $w$ 為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "正值",
+        "B": "負值",
+        "C": "零",
+        "D": "無法判斷"
+      }
     },
     {
-      "id": "ML-W2-Q8",
+      "id": "Q8",
+      "num": 8,
       "type": "single",
-      "kp": "KP2.4",
-      "title": "這是第 2 週的第 8 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
+      "kps": [
+        "KP 3.2.2"
+      ],
       "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "下列哪一個指標最適合用來衡量回歸模型的預測誤差（與 y 單位相同）？",
+      "options": {
+        "A": "MSE",
+        "B": "RMSE (均方根誤差)",
+        "C": "$R^2$",
+        "D": "Accuracy"
+      }
     },
     {
-      "id": "ML-W2-Q9",
+      "id": "Q9",
+      "num": 9,
       "type": "single",
-      "kp": "KP2.5",
-      "title": "這是第 2 週的第 9 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.2.2"
+      ],
+      "answer": "D",
+      "title": "普通最小平方法 (OLS) 的核心思想是使什麼最小化？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "預測值的總和",
+        "B": "殘差平方和",
+        "C": "特徵的權重",
+        "D": "樣本的數量"
+      }
     },
     {
-      "id": "ML-W2-Q10",
+      "id": "Q10",
+      "num": 10,
       "type": "single",
-      "kp": "KP2.1",
-      "title": "這是第 2 週的第 10 個機器學習練習題。請選擇正確答案。",
+      "kps": [
+        "KP 3.2.1"
+      ],
+      "answer": "C",
+      "title": "在多元線性回歸中，若特徵數為 $n$，則權重向量 $w$ 的長度為？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "1",
+        "B": "$n$",
+        "C": "$n+1$ (若含截距)",
+        "D": "與樣本數相同"
+      }
     },
     {
-      "id": "ML-W2-Q11",
-      "type": "single",
-      "kp": "KP2.2",
-      "title": "這是第 2 週的第 11 個機器學習練習題。請選擇正確答案。",
+      "id": "Q11",
+      "num": 11,
+      "type": "multiple",
+      "kps": [
+        "KP 3.2.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "title": "關於線性回歸的假設，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "特徵與標籤應具備線性關係",
+        "B": "殘差應呈常態分佈",
+        "C": "樣本間應相互獨立",
+        "D": "模型必須通過原點"
+      }
     },
     {
-      "id": "ML-W2-Q12",
-      "type": "single",
-      "kp": "KP2.3",
-      "title": "這是第 2 週的第 12 個機器學習練習題。請選擇正確答案。",
+      "id": "Q12",
+      "num": 12,
+      "type": "multiple",
+      "kps": [
+        "KP 3.2.3"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "增加特徵數量對線性回歸的影響包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "訓練集的 $R^2$ 通常會增加",
+        "B": "可能導致過擬合",
+        "C": "計算正規方程的速度會變慢",
+        "D": "預測準確度一定會提升"
+      }
     },
     {
-      "id": "ML-W2-Q13",
-      "type": "single",
-      "kp": "KP2.4",
-      "title": "這是第 2 週的第 13 個機器學習練習題。請選擇正確答案。",
+      "id": "Q13",
+      "num": 13,
+      "type": "multiple",
+      "kps": [
+        "KP 3.2.2"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "哪些因素會導致 MSE 變大？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "模型擬合能力不足",
+        "B": "資料中包含異常值",
+        "C": "特徵與標籤完全無關",
+        "D": "增加更多高品質特徵"
+      }
     },
     {
-      "id": "ML-W2-Q14",
-      "type": "single",
-      "kp": "KP2.5",
-      "title": "這是第 2 週的第 14 個機器學習練習題。請選擇正確答案。",
+      "id": "Q14",
+      "num": 14,
+      "type": "multiple",
+      "kps": [
+        "KP 3.2.4"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "關於 $R^2$ 的敘述，正確的有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "它可能為負值（若模型比直接取平均值還差）",
+        "B": "它反映了模型對變異的解釋程度",
+        "C": "越接近 1 越好",
+        "D": "與 MSE 無關"
+      }
     },
     {
-      "id": "ML-W2-Q15",
-      "type": "single",
-      "kp": "KP2.1",
-      "title": "這是第 2 週的第 15 個機器學習練習題。請選擇正確答案。",
+      "id": "Q15",
+      "num": 15,
+      "type": "multiple",
+      "kps": [
+        "KP 3.2.3"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "正規方程法的缺點有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "特徵數過大時計算極慢",
+        "B": "容易陷入局部最小值 (線性回歸是凸的，所以不會)",
+        "C": "依賴矩陣可逆性",
+        "D": "不需要迭代優化"
+      }
     },
     {
-      "id": "ML-W2-Q16",
-      "type": "single",
-      "kp": "KP2.2",
-      "title": "這是第 2 週的第 16 個機器學習練習題。請選擇正確答案。",
+      "id": "Q16",
+      "num": 16,
+      "type": "multiple",
+      "kps": [
+        "KP 3.2.1"
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "title": "下列哪些屬於線性回歸的擴展或變體？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+        "A": "脊回歸 (Ridge)",
+        "B": "Lasso 回歸",
+        "C": "多項式回歸",
+        "D": "邏輯回歸 (本質是分類)"
+      }
     },
     {
-      "id": "ML-W2-Q17",
-      "type": "single",
-      "kp": "KP2.3",
-      "title": "這是第 2 週的第 17 個機器學習練習題。請選擇正確答案。",
+      "id": "Q17",
+      "num": 17,
+      "type": "multiple",
+      "kps": [
+        "KP 3.2.5"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "title": "處理多元共線性 (Multicollinearity) 的方法有？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+        "A": "刪除冗餘特徵",
+        "B": "使用正則化方法",
+        "C": "增加更多相關特徵",
+        "D": "進行 PCA 降維"
+      }
     },
     {
-      "id": "ML-W2-Q18",
-      "type": "single",
-      "kp": "KP2.4",
-      "title": "這是第 2 週的第 18 個機器學習練習題。請選擇正確答案。",
+      "id": "Q18",
+      "num": 18,
+      "type": "multiple",
+      "kps": [
+        "KP 3.2.4"
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "title": "在 Scikit-Learn 中，評估回歸模型的函式通常位於？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+        "A": "`sklearn.metrics`",
+        "B": "`sklearn.linear_model`",
+        "C": "`sklearn.preprocessing`",
+        "D": "`sklearn.model_selection`"
+      }
     },
     {
-      "id": "ML-W2-Q19",
-      "type": "single",
-      "kp": "KP2.5",
-      "title": "這是第 2 週的第 19 個機器學習練習題。請選擇正確答案。",
+      "id": "Q19",
+      "num": 19,
+      "type": "multiple",
+      "kps": [
+        "KP 3.2.1"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "title": "多元線性回歸的模型表達式中包含？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+        "A": "特徵變數",
+        "B": "權重係數",
+        "C": "偏差項 (Bias)",
+        "D": "激活函數 (這是神經網路)"
+      }
     },
     {
-      "id": "ML-W2-Q20",
-      "type": "single",
-      "kp": "KP2.1",
-      "title": "這是第 2 週的第 20 個機器學習練習題。請選擇正確答案。",
+      "id": "Q20",
+      "num": 20,
+      "type": "multiple",
+      "kps": [
+        "KP 3.2.1"
+      ],
+      "answer": [
+        "A",
+        "B"
+      ],
+      "title": "線性回歸的應用場景包括？",
       "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+        "A": "銷售額預測",
+        "B": "溫度預測",
+        "C": "股票漲跌分類",
+        "D": "身高預測"
+      }
     },
     {
-      "id": "ML-W2-Q21",
-      "type": "single",
-      "kp": "KP2.2",
-      "title": "這是第 2 週的第 21 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q21",
+      "num": 21,
+      "type": "fill",
+      "kps": [
+        "KP 3.2.2"
+      ],
+      "answer": [
+        "coef_"
+      ],
+      "title": "線性回歸最常用的損失函數是 __________ (請寫全名或縮寫)。"
     },
     {
-      "id": "ML-W2-Q22",
-      "type": "single",
-      "kp": "KP2.3",
-      "title": "這是第 2 週的第 22 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q22",
+      "num": 22,
+      "type": "fill",
+      "kps": [
+        "KP 3.2.4"
+      ],
+      "answer": [
+        "intercept_"
+      ],
+      "title": "決定係數的符號表示為 __________。"
     },
     {
-      "id": "ML-W2-Q23",
-      "type": "single",
-      "kp": "KP2.4",
-      "title": "這是第 2 週的第 23 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q23",
+      "num": 23,
+      "type": "fill",
+      "kps": [
+        "KP 3.2.3"
+      ],
+      "answer": [
+        "MSE"
+      ],
+      "title": "正規方程的求解公式中涉及對矩陣 $X^T X$ 進行 __________ 運算。"
     },
     {
-      "id": "ML-W2-Q24",
-      "type": "single",
-      "kp": "KP2.5",
-      "title": "這是第 2 週的第 24 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q24",
+      "num": 24,
+      "type": "fill",
+      "kps": [
+        "KP 3.2.1"
+      ],
+      "answer": [
+        "OLS"
+      ],
+      "title": "在多元線性回歸中，$y = w_0 + w_1x_1 + ... + w_nx_n$，其中 $w_0$ 稱為 __________ 項。"
     },
     {
-      "id": "ML-W2-Q25",
-      "type": "single",
-      "kp": "KP2.1",
-      "title": "這是第 2 週的第 25 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q25",
+      "num": 25,
+      "type": "fill",
+      "kps": [
+        "KP 3.2.1"
+      ],
+      "answer": [
+        "決定係數"
+      ],
+      "title": "獲取 Scikit-Learn 回歸模型權重係數的屬性是 `coef_`，截距是 __________。"
     },
     {
-      "id": "ML-W2-Q26",
-      "type": "single",
-      "kp": "KP2.2",
-      "title": "這是第 2 週的第 26 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      "id": "Q26",
+      "num": 26,
+      "type": "fill",
+      "kps": [
+        "KP 3.2.2"
+      ],
+      "answer": [
+        "共線性"
+      ],
+      "title": "如果模型預測值完全等於真實值，則 MSE 為 __________。"
     },
     {
-      "id": "ML-W2-Q27",
-      "type": "single",
-      "kp": "KP2.3",
-      "title": "這是第 2 週的第 27 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "id": "Q27",
+      "num": 27,
+      "type": "fill",
+      "kps": [
+        "KP 3.2.2"
+      ],
+      "answer": [
+        "殘差"
+      ],
+      "title": "將 MSE 取平方根後得到的指標稱為 __________。"
     },
     {
-      "id": "ML-W2-Q28",
-      "type": "single",
-      "kp": "KP2.4",
-      "title": "這是第 2 週的第 28 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "id": "Q28",
+      "num": 28,
+      "type": "fill",
+      "kps": [
+        "KP 3.2.3"
+      ],
+      "answer": [
+        "LinearRegression"
+      ],
+      "title": "正規方程法的計算複雜度主要取決於 __________ 的數量。"
     },
     {
-      "id": "ML-W2-Q29",
-      "type": "single",
-      "kp": "KP2.5",
-      "title": "這是第 2 週的第 29 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "id": "Q29",
+      "num": 29,
+      "type": "fill",
+      "kps": [
+        "KP 3.2.1"
+      ],
+      "answer": [
+        "fit"
+      ],
+      "title": "線性回歸屬於 __________ 式學習。"
     },
     {
-      "id": "ML-W2-Q30",
-      "type": "single",
-      "kp": "KP2.1",
-      "title": "這是第 2 週的第 30 個機器學習練習題。請選擇正確答案。",
-      "options": {
-        "A": "選項 A (正確)",
-        "B": "選項 B",
-        "C": "選項 C",
-        "D": "選項 D"
-      },
-      "answer": "A",
-      "explanation": "這是 placeholder 解析內容。",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "id": "Q30",
+      "num": 30,
+      "type": "fill",
+      "kps": [
+        "KP 3.2.5"
+      ],
+      "answer": [
+        "predict"
+      ],
+      "title": "當特徵之間存在高度線性相關時，稱為 __________ 問題。 ---"
     }
   ]
 }

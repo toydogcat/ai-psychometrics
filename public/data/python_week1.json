@@ -1,626 +1,489 @@
 {
-  "course": "python",
-  "week": "week1",
-  "title": "Python 環境生態、雲端開發與現代化工具鏈",
-  "knowledge_points": {
-    "KP1.1": "Python 直譯器運作原理",
-    "KP1.2": "雲端環境 (Colab, Jupyter)",
-    "KP1.3": "本地環境管理 (Anaconda, venv)",
-    "KP1.4": "uv 專案管理器高級應用",
-    "KP1.5": "print 與 input 進階互動",
-    "KP1.6": "PEP 8 規範與代碼縮進"
-  },
+  "courseId": "python-basic-advanced",
+  "week": 1,
   "questions": [
     {
       "id": "Q1",
+      "num": 1,
       "type": "single",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": "B",
       "title": "Python 是一種什麼類型的程式語言？",
       "options": {
         "A": "編譯式 (Compiled)",
         "B": "直譯式 (Interpreted)",
         "C": "組合語言",
         "D": "機器語言"
-      },
-      "answer": "B",
-      "kp": "KP1.1",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q2",
+      "num": 2,
       "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": "B",
       "title": "在 Google Colab 中，儲存格 (Cell) 執行後的輸出會顯示在哪裡？",
       "options": {
         "A": "另一個瀏覽器分頁",
         "B": "儲存格下方",
         "C": "終端機",
         "D": "不會顯示"
-      },
-      "answer": "B",
-      "kp": "KP1.2",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q3",
+      "num": 3,
       "type": "single",
+      "kps": [
+        "KP1.3",
+        "KP1.4"
+      ],
+      "answer": "C",
       "title": "下列哪一個工具是用 Rust 編寫，以速度極快著稱的現代 Python 包管理器？",
       "options": {
         "A": "pip",
         "B": "Conda",
         "C": "uv",
         "D": "Poetry"
-      },
-      "answer": "C",
-      "kp": "KP1.3, KP1.4",
-      "q_vector": [
-        0,
-        0,
-        1,
-        1,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q4",
+      "num": 4,
       "type": "single",
+      "kps": [
+        "KP1.6"
+      ],
+      "answer": "B",
       "title": "關於 PEP 8 規範，建議的一級縮進應使用幾個空格？",
       "options": {
         "A": "2",
         "B": "4",
         "C": "8",
         "D": "1 個 Tab"
-      },
-      "answer": "B",
-      "kp": "KP1.6",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      }
     },
     {
       "id": "Q5",
+      "num": 5,
       "type": "single",
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": "B",
       "title": "`print(\"Hello\", \"Python\", sep=\"*\")` 的輸出結果是？",
       "options": {
         "A": "Hello Python",
         "B": "Hello*Python",
         "C": "Hello* Python",
         "D": "HelloPython*"
-      },
-      "answer": "B",
-      "kp": "KP1.5",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      }
     },
     {
       "id": "Q6",
+      "num": 6,
       "type": "single",
+      "kps": [
+        "KP1.3",
+        "KP1.4"
+      ],
+      "answer": "D",
       "title": "想要在本地電腦安裝多個不同版本的 Python，下列哪種工具**不適合**用來管理？",
       "options": {
         "A": "uv",
         "B": "pyenv",
         "C": "Anaconda",
         "D": "記事本 (Notepad)"
-      },
-      "answer": "D",
-      "kp": "KP1.3, KP1.4",
-      "q_vector": [
-        0,
-        0,
-        1,
-        1,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q7",
+      "num": 7,
       "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": "C",
       "title": "Jupyter Notebook 文件的副檔名是？",
       "options": {
         "A": ".py",
         "B": ".txt",
         "C": ".ipynb",
         "D": ".json"
-      },
-      "answer": "C",
-      "kp": "KP1.2",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q8",
+      "num": 8,
       "type": "single",
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": "C",
       "title": "下列哪一行代碼可以正確將字串型態的輸入轉換為整數？",
       "options": {
         "A": "`str(input())`",
         "B": "`float(input())`",
         "C": "`int(input())`",
         "D": "`bool(input())`"
-      },
-      "answer": "C",
-      "kp": "KP1.5",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      }
     },
     {
       "id": "Q9",
+      "num": 9,
       "type": "single",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": "B",
       "title": "Python 之父是誰？",
       "options": {
         "A": "James Gosling",
         "B": "Guido van Rossum",
         "C": "Bjarne Stroustrup",
         "D": "Linus Torvalds"
-      },
-      "answer": "B",
-      "kp": "KP1.1",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q10",
+      "num": 10,
       "type": "single",
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": "B",
       "title": "在 `print()` 函數中，若不想在輸出末尾自動換行，應設定哪個參數？",
       "options": {
         "A": "sep",
         "B": "end",
         "C": "newline",
         "D": "stop"
-      },
-      "answer": "B",
-      "kp": "KP1.5",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      }
     },
     {
       "id": "Q11",
-      "type": "multiple",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": "A, B, C",
       "title": "關於 Google Colab 的優點，哪些描述正確？",
       "options": {
         "A": "免費提供 GPU/TPU 資源",
         "B": "無需配置本地環境",
         "C": "可與 Google Drive 整合",
         "D": "離線狀態下也能完美執行代碼"
-      },
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "kp": "KP1.2",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q12",
-      "type": "multiple",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP1.6"
+      ],
+      "answer": "A, C, D",
       "title": "下列哪些是 Python 正確的註解方式？",
       "options": {
         "A": "`# 這是單行註解`",
         "B": "`// 這是單行註解`",
         "C": "`\"\"\" 這是多行註解 \"\"\"`",
         "D": "`''' 這是多行註解 '''`"
-      },
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "kp": "KP1.6",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      }
     },
     {
       "id": "Q13",
-      "type": "multiple",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP1.4"
+      ],
+      "answer": "A, B, C, D",
       "title": "使用 `uv` 工具時，下列哪些指令是合法的 (假設已安裝 uv)？",
       "options": {
         "A": "`uv python install 3.12`",
         "B": "`uv init my_project`",
         "C": "`uv add pandas`",
         "D": "`uv run main.py`"
-      },
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "kp": "KP1.4",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q14",
-      "type": "multiple",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
+      "answer": "A, B, C",
       "title": "下列哪些環境屬於「互動式」開發環境？",
       "options": {
         "A": "Jupyter Notebook",
         "B": "Google Colab",
         "C": "Python 互動式終端 (REPL)",
         "D": "靜態 .py 腳本文件"
-      },
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "kp": "KP1.2",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q15",
-      "type": "multiple",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP1.6"
+      ],
+      "answer": "A, C, D",
       "title": "關於變數命名的 PEP 8 建議，哪些正確？",
       "options": {
         "A": "應使用小寫字母與下劃線組合 (如 `user_name`)",
         "B": "可以使用數字開頭",
         "C": "不建議使用 Python 保留字 (如 `if`, `for`)",
         "D": "變數名應具有描述性"
-      },
-      "answer": [
-        "A",
-        "C",
-        "D"
-      ],
-      "kp": "KP1.6",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      }
     },
     {
       "id": "Q16",
-      "type": "multiple",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": "A, B, C",
       "title": "`print()` 函數的格式化輸出方法有哪些？",
       "options": {
         "A": "f-string (如 `f\"{x}\"`)",
         "B": "`%` 操作符",
         "C": "`.format()` 方法",
         "D": "只能使用 `+` 拼接"
-      },
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "kp": "KP1.5",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      }
     },
     {
       "id": "Q17",
-      "type": "multiple",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP1.3"
+      ],
+      "answer": "A, B, C",
       "title": "Anaconda 發行版通常包含哪些工具？",
       "options": {
         "A": "Conda 包管理器",
         "B": "Jupyter Notebook",
         "C": "預裝的科學計算庫 (如 NumPy, Pandas)",
         "D": "Windows 操作系統"
-      },
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "kp": "KP1.3",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q18",
-      "type": "multiple",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP1.3",
+        "KP1.4"
+      ],
+      "answer": "A, B, D",
       "title": "為什麼要在開發中使用「虛擬環境」？",
       "options": {
         "A": "防止不同專案間的套件版本衝突",
         "B": "保持全局 Python 環境的整潔",
         "C": "讓程式執行得更快",
         "D": "方便導出依賴清單"
-      },
-      "answer": [
-        "A",
-        "B",
-        "D"
-      ],
-      "kp": "KP1.3, KP1.4",
-      "q_vector": [
-        0,
-        0,
-        1,
-        1,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q19",
-      "type": "multiple",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP1.3"
+      ],
+      "answer": "A, B, C",
       "title": "在 VS Code 中開發 Python，建議安裝哪些擴充功能 (Extensions)？",
       "options": {
         "A": "Python (by Microsoft)",
         "B": "Pylance",
         "C": "Jupyter",
         "D": "Adobe Photoshop"
-      },
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "kp": "KP1.3",
-      "q_vector": [
-        0,
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
+      }
     },
     {
       "id": "Q20",
-      "type": "multiple",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP1.6"
+      ],
+      "answer": "A, B, C",
       "title": "下列哪些行為會導致 Python 報出 `IndentationError` (縮進錯誤)？",
       "options": {
         "A": "同一層級的代碼縮進空格數不一致",
         "B": "在 if 語句後沒有縮進",
         "C": "混合使用 Tab 與空格",
         "D": "代碼行末尾多了一個空格"
-      },
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "kp": "KP1.6",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      }
     },
     {
       "id": "Q21",
-      "type": "fill",
-      "title": "Python 官方推薦的編碼風格指南代號為 __________。",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP1.6"
+      ],
       "answer": "PEP 8",
-      "kp": "KP1.6",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "Python 官方推薦的編碼風格指南代號為 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
     },
     {
       "id": "Q22",
-      "type": "fill",
-      "title": "Google Colab 底層執行的環境是基於 __________ 系統的虛擬機。",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
       "answer": "Linux",
-      "kp": "KP1.2",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "title": "Google Colab 底層執行的環境是基於 __________ 系統的虛擬機。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
     },
     {
       "id": "Q23",
-      "type": "fill",
-      "title": "在 `print()` 函數中，預設的 `end` 參數值是 __________ (請填寫轉義字符)。",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP1.5"
+      ],
       "answer": "\\n",
-      "kp": "KP1.5",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "在 `print()` 函數中，預設的 `end` 參數值是 __________ (請填寫轉義字符)。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
     },
     {
       "id": "Q24",
-      "type": "fill",
-      "title": "使用 `uv` 建立一個新專案的指令是 `uv __________ [專案名稱]`。",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP1.4"
+      ],
       "answer": "init",
-      "kp": "KP1.4",
-      "q_vector": [
-        0,
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
+      "title": "使用 `uv` 建立一個新專案的指令是 `uv __________ [專案名稱]`。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
     },
     {
       "id": "Q25",
-      "type": "fill",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP1.5"
+      ],
+      "answer": "float()",
       "title": "將輸入內容轉化為浮點數應使用 __________ 函數。",
-      "answer": "float",
-      "kp": "KP1.5",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
     },
     {
       "id": "Q26",
-      "type": "fill",
-      "title": "Jupyter Notebook 中的每一個可以寫程式的區塊被稱為一個 __________ (Cell)。",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP1.2"
+      ],
       "answer": "儲存格",
-      "kp": "KP1.2",
-      "q_vector": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
+      "title": "Jupyter Notebook 中的每一個可以寫程式的區塊被稱為一個 __________ (Cell)。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
     },
     {
       "id": "Q27",
-      "type": "fill",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP1.1"
+      ],
+      "answer": "直譯式 (或 Interpreted)",
       "title": "Python 這種不需要編譯成二進位制文件即可執行的語言稱為 __________ 語言。",
-      "answer": "直譯式",
-      "kp": "KP1.1",
-      "q_vector": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
     },
     {
       "id": "Q28",
-      "type": "fill",
-      "title": "在字串前面加上字母 __________ 即可定義一個 f-string 格式化字串。",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP1.5"
+      ],
       "answer": "f",
-      "kp": "KP1.5",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "在字串前面加上字母 __________ 即可定義一個 f-string 格式化字串。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
     },
     {
       "id": "Q29",
-      "type": "fill",
-      "title": "為代碼添加說明但不被執行的文字稱為 __________。",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP1.6"
+      ],
       "answer": "註解",
-      "kp": "KP1.6",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ]
+      "title": "為代碼添加說明但不被執行的文字稱為 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
     },
     {
       "id": "Q30",
-      "type": "fill",
-      "title": "執行 `print(1, 2, 3, sep=\"-\")` 後，控制台會顯示 __________。",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP1.5"
+      ],
       "answer": "1-2-3",
-      "kp": "KP1.5",
-      "q_vector": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
+      "title": "執行 `print(1, 2, 3, sep=\"-\")` 後，控制台會顯示 __________。 ---",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
     }
   ]
 }

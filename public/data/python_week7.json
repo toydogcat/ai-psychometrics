@@ -1,0 +1,487 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 7,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": "B",
+      "title": "下列哪一個關鍵字用於定義 Python 函數？",
+      "options": {
+        "A": "function",
+        "B": "def",
+        "C": "func",
+        "D": "lambda"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": "C",
+      "title": "若函數內沒有 `return` 語句，其返回值為？",
+      "options": {
+        "A": "0",
+        "B": "False",
+        "C": "None",
+        "D": "報錯"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": "B",
+      "title": "`def f(a, b=2, c=3):`，呼叫 `f(1, c=5)` 時，參數 `b` 的值是？",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "5",
+        "D": "報錯"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": "C",
+      "title": "關於 `*args`，它在函數內部會被轉換成什麼型態？",
+      "options": {
+        "A": "List",
+        "B": "Dictionary",
+        "C": "Tuple",
+        "D": "Set"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": "B",
+      "title": "在函數內部修改全域變數 `x`，必須先宣告？",
+      "options": {
+        "A": "`extern x`",
+        "B": "`global x`",
+        "C": "`public x`",
+        "D": "`local x`"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": "B",
+      "title": "LEGB 原則中的 **E** 代表什麼？",
+      "options": {
+        "A": "Exterior",
+        "B": "Enclosing",
+        "C": "Empty",
+        "D": "Element"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": "B",
+      "title": "如何從 `math` 模組中僅匯入 `sqrt` 函數？",
+      "options": {
+        "A": "`import math.sqrt`",
+        "B": "`from math import sqrt`",
+        "C": "`import sqrt from math`",
+        "D": "`math.import(sqrt)`"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "A",
+      "title": "哪一個標準庫可以用來生成隨機整數？",
+      "options": {
+        "A": "random",
+        "B": "math",
+        "C": "os",
+        "D": "sys"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": "B",
+      "title": "`__name__` 變數在模組被直接執行時，其值為？",
+      "options": {
+        "A": "\"module\"",
+        "B": "\"__main__\"",
+        "C": "\"filename\"",
+        "D": "\"python\""
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "B",
+      "title": "執行 `print(type(json.loads('{\"a\": 1}')))` 的結果是？",
+      "options": {
+        "A": "<class 'str'>",
+        "B": "<class 'dict'>",
+        "C": "<class 'json'>",
+        "D": "<class 'list'>"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": "A, B, C, D",
+      "title": "關於函數參數，哪些描述正確？",
+      "options": {
+        "A": "預設參數必須放在非預設參數之後",
+        "B": "呼叫時位置參數必須在關鍵字參數之前",
+        "C": "預設參數可以是任何型態",
+        "D": "同一個函數可以回傳不同型態的值"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": "A, B, C",
+      "title": "下列哪些是 `**kwargs` 的正確用法？",
+      "options": {
+        "A": "接收任意數量的關鍵字參數",
+        "B": "內部型態為字典",
+        "C": "必須定義在 `*args` 之後",
+        "D": "參數名必須叫 kwargs"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": "A, B, C, D",
+      "title": "關於 LEGB 作用域，哪些正確？",
+      "options": {
+        "A": "搜尋順序由內向外",
+        "B": "Built-in 是最後一層搜尋",
+        "C": "Local 變數在函數結束後消失",
+        "D": "在 Local 可以直接讀取 Global 變數"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": "A, B, C",
+      "title": "模組匯入的優點包括？",
+      "options": {
+        "A": "代碼重用",
+        "B": "邏輯分離",
+        "C": "避免命名衝突 (使用 alias)",
+        "D": "讓程式跑得更快"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP7.1",
+        "KP7.2"
+      ],
+      "answer": "B, C, D",
+      "title": "哪些方法可以將 `[1, 2, 3]` 作為參數傳給 `func(a, b, c)`？",
+      "options": {
+        "A": "`func([1, 2, 3])`",
+        "B": "`func(1, 2, 3)`",
+        "C": "`L=[1,2,3]; func(*L)`",
+        "D": "`func(a=1, b=2, c=3)`"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "A, B, C",
+      "title": "`os` 模組可以執行哪些操作？",
+      "options": {
+        "A": "取得當前工作目錄",
+        "B": "列出資料夾檔案",
+        "C": "修改檔案路徑",
+        "D": "計算三角函數"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": "B, C",
+      "title": "關於預設參數使用可變物件 (如 `L=[]`) 的後果？",
+      "options": {
+        "A": "每次呼叫都會建立新串列",
+        "B": "串列物件在函數定義時僅建立一次",
+        "C": "多次呼叫會共用同一個串列",
+        "D": "這是推薦的程式寫法"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": "A, B, C",
+      "title": "下列哪些屬於 Python 的 Built-in (內建) 作用域？",
+      "options": {
+        "A": "print",
+        "B": "len",
+        "C": "int",
+        "D": "自己定義的變數"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "B, C",
+      "title": "如何取得目前的日期與時間？",
+      "options": {
+        "A": "`datetime.now()`",
+        "B": "`datetime.datetime.now()` (需要正確匯入)",
+        "C": "`time.time()`",
+        "D": "`os.get_time()`"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": "B, C",
+      "title": "`if __name__ == \"__main__\":` 的作用？",
+      "options": {
+        "A": "防止模組內容被重複執行",
+        "B": "封裝模組的測試代碼",
+        "C": "讓檔案既可作為腳本執行也可作為模組匯入",
+        "D": "提高代碼安全性"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": "*args",
+      "title": "函數定義中，接收任意數量位置參數的語法是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q22",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": "global",
+      "title": "想要在區域作用域修改全域變數，需要使用 __________ 關鍵字。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q23",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP7.3"
+      ],
+      "answer": "LEGB",
+      "title": "Python 搜尋變數的順序規則簡稱為 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q24",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP7.2"
+      ],
+      "answer": "**d",
+      "title": "將字典 `d = {\"a\": 1, \"b\": 2}` 解包傳遞給函數的語法是 `func(__________)`。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q25",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "random()",
+      "title": "模組 `random` 中，產生 0 到 1 之間浮點數的函數是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q26",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": "as",
+      "title": "想要幫匯入的模組取別名，使用關鍵字 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q27",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "模組",
+      "title": "`sys.path` 是一個串列，包含了 Python 搜尋 __________ 的路徑。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q28",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP7.1"
+      ],
+      "answer": "return",
+      "title": "函數執行完畢後，可以使用 __________ 關鍵字將結果傳回給呼叫者。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q29",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP7.5"
+      ],
+      "answer": "dumps()",
+      "title": "JSON 模組中，將 Python 物件轉為 JSON 字串的方法是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q30",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP7.4"
+      ],
+      "answer": "模組",
+      "title": "一個包含 Python 代碼並以 `.py` 結尾的檔案稱為一個 __________。 ---",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    }
+  ]
+}

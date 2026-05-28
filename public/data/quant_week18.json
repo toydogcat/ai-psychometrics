@@ -1,0 +1,70 @@
+{
+  "courseId": "python-office-quant",
+  "week": 18,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP2.18.1"
+      ],
+      "answer": "B",
+      "title": "**單選題 (1-50)**: 每題 2 分，共 100 分。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP2.18.1"
+      ],
+      "answer": "C",
+      "title": "**多選題 (51-100)**: 每題 2 分，全對才給分，共 100 分。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP2.18.1"
+      ],
+      "answer": "A",
+      "title": "**填充題 (101-150)**: 每題 2 分，共 100 分。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP2.18.1"
+      ],
+      "answer": "D",
+      "title": "**總分**: 300 分。 ---",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    }
+  ]
+}

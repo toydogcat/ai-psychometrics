@@ -1,0 +1,492 @@
+{
+  "courseId": "python-basic-advanced",
+  "week": 2,
+  "questions": [
+    {
+      "id": "Q1",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": "A",
+      "title": "執行 `x = 5; y = x; x = 10` 後，`y` 的值是多少？",
+      "options": {
+        "A": "5",
+        "B": "10",
+        "C": "None",
+        "D": "報錯"
+      }
+    },
+    {
+      "id": "Q2",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": "C",
+      "title": "`type(3.14)` 的返回值是？",
+      "options": {
+        "A": "<class 'int'>",
+        "B": "<class 'str'>",
+        "C": "<class 'float'>",
+        "D": "<class 'bool'>"
+      }
+    },
+    {
+      "id": "Q3",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": "B",
+      "title": "表達式 `10 // 3` 的結果是？",
+      "options": {
+        "A": "3.333",
+        "B": "3",
+        "C": "1",
+        "D": "0"
+      }
+    },
+    {
+      "id": "Q4",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": "B",
+      "title": "若 `s = \"Python\"`, 則 `s[1:4]` 的結果是？",
+      "options": {
+        "A": "Pyt",
+        "B": "yth",
+        "C": "ytho",
+        "D": "ythn"
+      }
+    },
+    {
+      "id": "Q5",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP2.4",
+        "KP2.5"
+      ],
+      "answer": "C",
+      "title": "下列哪個值在 `bool()` 轉換後為 `True`？",
+      "options": {
+        "A": "0",
+        "B": "\"\"",
+        "C": "\"False\"",
+        "D": "None"
+      }
+    },
+    {
+      "id": "Q6",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": "C",
+      "title": "獲取物件記憶體地址的函數是？",
+      "options": {
+        "A": "address()",
+        "B": "loc()",
+        "C": "id()",
+        "D": "mem()"
+      }
+    },
+    {
+      "id": "Q7",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP2.2",
+        "KP2.6"
+      ],
+      "answer": "B",
+      "title": "`round(2.675, 2)` 在 Python 中的行為可能與預期不同，主要是因為？",
+      "options": {
+        "A": "四捨六入五成雙",
+        "B": "浮點數精度問題",
+        "C": "round 函數壞了",
+        "D": "它會無條件進位"
+      }
+    },
+    {
+      "id": "Q8",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": "B",
+      "title": "如何檢查字串 `s` 是否全為大寫？",
+      "options": {
+        "A": "s.isUpper()",
+        "B": "s.isupper()",
+        "C": "s.UPPER()",
+        "D": "s.upper()"
+      }
+    },
+    {
+      "id": "Q9",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": "B",
+      "title": "`2 ** 3` 的結果是？",
+      "options": {
+        "A": "6",
+        "B": "8",
+        "C": "9",
+        "D": "5"
+      }
+    },
+    {
+      "id": "Q10",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP2.6"
+      ],
+      "answer": "B",
+      "title": "`len(\"Hello\\n\")` 的長度是？",
+      "options": {
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "4"
+      }
+    },
+    {
+      "id": "Q11",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP2.1"
+      ],
+      "answer": "A, C, D",
+      "title": "關於 Python 變數，哪些描述正確？",
+      "options": {
+        "A": "變數名稱區分大小寫",
+        "B": "可以使用數字開頭",
+        "C": "變數是物件的引用",
+        "D": "無須宣告型別"
+      }
+    },
+    {
+      "id": "Q12",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": "A, B, C",
+      "title": "下列哪些是字串切片的正確語法？",
+      "options": {
+        "A": "s[0]",
+        "B": "s[::-1]",
+        "C": "s[1:5:2]",
+        "D": "s(0:5)"
+      }
+    },
+    {
+      "id": "Q13",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": "A, B, D",
+      "title": "下列哪些值被視為 Falsy (布林值為 False)？",
+      "options": {
+        "A": "0",
+        "B": "0.0",
+        "C": "\" \"",
+        "D": "[]"
+      }
+    },
+    {
+      "id": "Q14",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": "A, B, C, D",
+      "title": "字串方法中，哪些會回傳一個**新**字串 (而非修改原字串)？",
+      "options": {
+        "A": ".replace()",
+        "B": ".strip()",
+        "C": ".lower()",
+        "D": "所有的字串方法 (因為字串不可變)"
+      }
+    },
+    {
+      "id": "Q15",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": "A, C",
+      "title": "下列運算結果為 `True` 的有哪些？",
+      "options": {
+        "A": "3 > 2 and 5 < 10",
+        "B": "not (5 == 5)",
+        "C": "10 != 10 or 1 > 0",
+        "D": "True and False"
+      }
+    },
+    {
+      "id": "Q16",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": "A, B, D",
+      "title": "下列哪些可以用於將字串 \"123\" 轉換為數字？",
+      "options": {
+        "A": "int(\"123\")",
+        "B": "float(\"123\")",
+        "C": "str(\"123\")",
+        "D": "eval(\"123\")"
+      }
+    },
+    {
+      "id": "Q17",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": "B, C, D",
+      "title": "關於浮點數 `0.1 + 0.2 == 0.3`，哪些描述正確？",
+      "options": {
+        "A": "結果為 True",
+        "B": "結果為 False",
+        "C": "這是因為二進位表示法的精度限制",
+        "D": "應使用 math.isclose() 來比較"
+      }
+    },
+    {
+      "id": "Q18",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP2.1",
+        "KP2.2"
+      ],
+      "answer": "A, B, C",
+      "title": "下列哪些是有效的 Python 賦值語句？",
+      "options": {
+        "A": "x, y = 1, 2",
+        "B": "x = y = z = 0",
+        "C": "x += 5",
+        "D": "5 = x"
+      }
+    },
+    {
+      "id": "Q19",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP2.1",
+        "KP2.6"
+      ],
+      "answer": "A, B, C, D",
+      "title": "下列哪些函數屬於 Python 內建函數？",
+      "options": {
+        "A": "print()",
+        "B": "len()",
+        "C": "type()",
+        "D": "id()"
+      }
+    },
+    {
+      "id": "Q20",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": "A, B, D",
+      "title": "使用 `s.split(\",\")` 處理字串 `\"apple,banana,cherry\"`，結果會是？",
+      "options": {
+        "A": "一個串列 (List)",
+        "B": "包含三個元素",
+        "C": "原字串會被改變",
+        "D": "逗號會消失"
+      }
+    },
+    {
+      "id": "Q21",
+      "num": 1,
+      "type": "single",
+      "kps": [
+        "KP2.2"
+      ],
+      "answer": "1",
+      "title": "`10 % 3` 的餘數是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q22",
+      "num": 2,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": null,
+      "title": "*答案*: 是 (KP2.3)",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q23",
+      "num": 3,
+      "type": "single",
+      "kps": [
+        "KP2.5"
+      ],
+      "answer": "int()",
+      "title": "想要將 `3.9` 轉換為整數 `3`，應使用 __________ 函數。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q24",
+      "num": 4,
+      "type": "single",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": "and",
+      "title": "邏輯運算符中，表示「且」的關鍵字是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q25",
+      "num": 5,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": "startswith()",
+      "title": "字串方法 __________ 可以用來檢查字串是否以特定的子字串開頭。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q26",
+      "num": 6,
+      "type": "single",
+      "kps": [
+        "KP2.1",
+        "KP2.3"
+      ],
+      "answer": "<class 'str'>",
+      "title": "賦值語句 `x = \"100\"`，此時 `type(x)` 的結果是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q27",
+      "num": 7,
+      "type": "single",
+      "kps": [
+        "KP2.6"
+      ],
+      "answer": "10",
+      "title": "`abs(-10)` 的結果是 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q28",
+      "num": 8,
+      "type": "single",
+      "kps": [
+        "KP2.3"
+      ],
+      "answer": "step (或 步長)",
+      "title": "切片語句 `s[::2]` 中的數字 2 代表 __________ (步長)。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q29",
+      "num": 9,
+      "type": "single",
+      "kps": [
+        "KP2.4"
+      ],
+      "answer": "False",
+      "title": "布林值只有兩個，分別是 `True` 和 __________。",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    },
+    {
+      "id": "Q30",
+      "num": 10,
+      "type": "single",
+      "kps": [
+        "KP2.3",
+        "KP2.5"
+      ],
+      "answer": "10020",
+      "title": "`str(100) + \"20\"` 的結果是字串 __________。 ---",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      }
+    }
+  ]
+}
