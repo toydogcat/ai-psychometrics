@@ -319,6 +319,8 @@ export default function CourseStudyConsole({ course, user, onBackToLobby }) {
                     <PsychometricsReport 
                       reportData={showReport} 
                       userAbility={showReport.theta || 0}
+                      courseTitle={course.title}
+                      knowledgePoints={showReport.knowledgePoints || (courseProgress[activeWeek]?.report?.knowledgePoints)}
                     />
                   </div>
                 ) : (

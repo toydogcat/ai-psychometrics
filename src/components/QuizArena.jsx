@@ -272,6 +272,8 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
         attemptsCount: attemptsCount + 1,
         totalQuestionsInPool: quizData.questions.length,
         activeQuestions: activeQuestions,
+        knowledgePoints: quizData.knowledge_points,
+        courseTitle: quizData.title,
         created_at: new Date().toISOString()
       };
 
@@ -334,7 +336,7 @@ export default function QuizArena({ courseId, weekId, quizFileName, user, onComp
       </div>
 
       {/* Main Question Arena Card */}
-      <div ref={cardRef} className="p-8 md:p-10 rounded-3xl bg-gradient-to-b from-[#090b16]/40 to-[#05060c]/60 border border-slate-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-md min-h-[380px] flex flex-col justify-between">
+      <div ref={cardRef} key={currentQuestion.id} className="p-8 md:p-10 rounded-3xl bg-gradient-to-b from-[#090b16]/40 to-[#05060c]/60 border border-slate-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-md min-h-[380px] flex flex-col justify-between">
         <div>
           {/* Question Meta Info */}
           <div className="flex flex-wrap gap-2.5 items-center mb-6">

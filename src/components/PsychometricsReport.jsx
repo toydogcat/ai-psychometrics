@@ -26,7 +26,7 @@ ChartJS.register(
   Title
 );
 
-export default function PsychometricsReport({ report, reportData, onBackToDashboard }) {
+export default function PsychometricsReport({ report, reportData, onBackToDashboard, courseTitle, knowledgePoints }) {
   const [selectedItemId, setSelectedItemId] = useState('Q1');
   const reportRef = useRef(null);
 
@@ -60,7 +60,11 @@ export default function PsychometricsReport({ report, reportData, onBackToDashbo
   const studentCdm = cdmMetrics?.studentProfiles?.[0] || { profile: [0, 0, 0, 0, 0, 0] };
   const personalMastery = studentCdm.profile.map(x => x * 100);
   const cohortMastery = cdmMetrics?.classMasteryPercentages?.map(x => x.percentage) || [50, 50, 50, 50, 50, 50];
-  const attributeLabels = cdmMetrics?.classMasteryPercentages?.map(x => x.attribute) || [
+  const attributeLabels = cdmMetrics?.classMasteryPercentages?.map(x => {
+    const kpKey = x.attribute;
+    const kpDesc = (knowledgePoints && knowledgePoints[kpKey]) || (actualReport.knowledgePoints && actualReport.knowledgePoints[kpKey]);
+    return kpDesc ? `${kpKey} ${kpDesc}` : kpKey;
+  }) || [
     "KP1.1 直譯器原理",
     "KP1.2 Colab開發",
     "KP1.3 本地環境管理",
@@ -228,7 +232,7 @@ export default function PsychometricsReport({ report, reportData, onBackToDashbo
             測驗分析總覽
           </span>
           <h1 style={{ fontSize: '32px', fontWeight: '800', marginBottom: '12px' }} className="gradient-text">
-            Python 現代工具鏈與環境學力診斷
+            {courseTitle || actualReport.courseTitle || 'Python 現代工具鏈與環境'} 學力診斷
           </h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '15px', maxWidth: '600px', lineHeight: '1.6' }}>
             本報告採用<strong>古典測驗理論 (CTT)</strong>、<strong>項目反應理論 (IRT) 雙參數 2PL 模型</strong>與<strong>認知診斷模型 (CDM) DINA 模型</strong>對您的作答情況進行多維度交叉學術診斷。
@@ -303,7 +307,7 @@ export default function PsychometricsReport({ report, reportData, onBackToDashbo
             <div style={{ marginTop: '16px', fontSize: '12px', color: 'var(--text-muted)', display: 'flex', gap: '12px' }}>
               <span>折半信度 (Spearman-Brown): <strong>{(cttMetrics?.splitHalf ?? 0).toFixed(3)}</strong></span>
               <span>•</span>
-              <span>信度大於 0.7 說明此份評量對 Python 能力的測量誤差極小。</span>
+              <span>信度大於 0.7 說明此份評量對 {courseTitle ? courseTitle.replace(/\s*\(.*\)/g, '') : (actualReport.courseTitle ? actualReport.courseTitle.replace(/\s*\(.*\)/g, '') : '該學科')} 能力的測量誤差極小。</span>
             </div>
           </div>
 
