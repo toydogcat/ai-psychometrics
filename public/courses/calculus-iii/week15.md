@@ -1,4 +1,4 @@
-# 課程：微積分下 - 第 15 週 - 旋度與散度 (Curl and Divergence)
+# 課程：微積分下 - 第 15 週 - 旋度與散度 (Curl and Divergence) 🔥 高難度
 
 本週我們將學習向量分析中的兩個關鍵算子：**旋度 (Curl)** 與 **散度 (Divergence)**。這兩個概念是描述流體運動、電磁場（Maxwell 方程組）以及後續 Stokes 定理與散度定理的基礎。
 本週教學內容對應 **Stewart Calculus Ch 16.5**。
@@ -112,7 +112,27 @@ print(f"向量場 F: {F}")
 print(f"散度 div F: {div_F}")
 print(f"旋度 curl F: {curl_F}")
 
-# 3. 驗證 div(curl F) = 0
+# 4. 向量場視覺化 (Vector Field Visualization)
+import matplotlib.pyplot as plt
+import numpy as np
+
+def visualize_field():
+    x_v, y_v = np.meshgrid(np.linspace(-2, 2, 10), np.linspace(-2, 2, 10))
+    # 以 F = <-y, x> 為例（旋轉場）
+    u = -y_v
+    v = x_v
+    
+    plt.figure(figsize=(6, 6))
+    plt.quiver(x_v, y_v, u, v, color='blue')
+    plt.title("Visualization of Vector Field $\mathbf{F} = \\langle -y, x \\rangle$")
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.grid(True)
+    plt.show()
+
+visualize_field()
+
+# 5. 驗證 div(curl F) = 0
 curl_F_res = curl(F, [x, y, z])
 div_curl_F = divergence(curl_F_res, [x, y, z])
 print(f"驗證 div(curl F) = {sp.simplify(div_curl_F)}")
@@ -170,8 +190,37 @@ print(f"驗證 div(curl F) = {sp.simplify(div_curl_F)}")
 ---
 
 ## 五、 Q 矩陣 (Q-matrix)
-| 題號 | KP15.1 | KP15.2 | KP15.3 | KP15.4 | KP15.5 |
+
+| 題號 | KP15.1 | KP15.2 | KP15.3 | KP15.4 | KP15.5 | |
 |---|---|---|---|---|---|
-| Q1-Q10 | 1, 10 | 2, 4, 5, 9 | 3, 7 | 6, 8 | |
-| Q11-Q20| 11 | 12, 19 | 14, 16 | 20 | 13, 15, 17, 18 |
-| Q21-Q30| 22, 24, 28| 21, 23, 29| 26 | 25, 30 | 27 |
+| Q1 | 1 | 0 | 0 | 0 | 0 |
+| Q2 | 0 | 1 | 0 | 0 | 0 |
+| Q3 | 0 | 0 | 1 | 0 | 0 |
+| Q4 | 0 | 1 | 0 | 0 | 0 |
+| Q5 | 0 | 1 | 0 | 0 | 0 |
+| Q6 | 0 | 0 | 0 | 1 | 0 |
+| Q7 | 0 | 0 | 1 | 0 | 0 |
+| Q8 | 0 | 0 | 0 | 1 | 0 |
+| Q9 | 0 | 1 | 0 | 0 | 0 |
+| Q10| 1 | 0 | 0 | 0 | 0 |
+| Q11| 1 | 0 | 0 | 0 | 0 |
+| Q12| 0 | 1 | 0 | 0 | 0 |
+| Q13| 0 | 0 | 0 | 0 | 1 |
+| Q14| 0 | 0 | 1 | 0 | 0 |
+| Q15| 0 | 0 | 0 | 0 | 1 |
+| Q16| 0 | 0 | 1 | 0 | 0 |
+| Q17| 0 | 0 | 0 | 0 | 1 |
+| Q18| 0 | 0 | 0 | 0 | 1 |
+| Q19| 0 | 1 | 0 | 0 | 0 |
+| Q20| 0 | 0 | 0 | 1 | 0 |
+| Q21| 0 | 1 | 0 | 0 | 0 |
+| Q22| 1 | 0 | 0 | 0 | 0 |
+| Q23| 0 | 1 | 0 | 0 | 0 |
+| Q24| 1 | 0 | 0 | 0 | 0 |
+| Q25| 0 | 0 | 0 | 1 | 0 |
+| Q26| 0 | 0 | 1 | 0 | 0 |
+| Q27| 0 | 0 | 0 | 0 | 1 |
+| Q28| 1 | 0 | 0 | 0 | 0 |
+| Q29| 0 | 1 | 0 | 0 | 0 |
+| Q30| 0 | 0 | 0 | 1 | 0 |
+
