@@ -1723,7 +1723,7 @@
       "Python實作"
     ],
     "totalWeeks": 18,
-    "totalQuestions": 580,
+    "totalQuestions": 540,
     "syllabus": [
       {
         "week": 1,
@@ -1736,87 +1736,116 @@
           "反函數的求法與對數函數 $\\ln x$ 的基本運算律。"
         ],
         "mdPath": "week1.md",
-        "quizPath": "calculus1_week1.json",
+        "quizPath": "calculusi_week1.json",
         "estimatedMinutes": 45
       },
       {
         "week": 2,
-        "title": "Week 2 Review",
+        "title": "第 2 週 - 極限與連續性基礎 (Limits and Continuity Basics)",
         "topics": [
-          "進階學習"
+          "從割線到切線",
+          "極限的概念",
+          "極限定律",
+          "嚴格的極限定義",
+          "單側極限"
         ],
         "mdPath": "week2.md",
-        "quizPath": "calculus1_week2.json",
+        "quizPath": "calculusi_week2.json",
         "estimatedMinutes": 45
       },
       {
         "week": 3,
-        "title": "Week 3 Review",
+        "title": "第 3 週 - 極限的進階計算 (Advanced Limits and Continuity)",
         "topics": [
-          "進階學習"
+          "夾擠定理",
+          "重要三角函數極限",
+          "連續性",
+          "中間值定理"
         ],
         "mdPath": "week3.md",
-        "quizPath": "calculus1_week3.json",
+        "quizPath": "calculusi_week3.json",
         "estimatedMinutes": 45
       },
       {
         "week": 4,
-        "title": "Week 4 Review",
+        "title": "第 4 週 - 無窮極限與導數入門 (Limits at Infinity and Introduction to Derivatives)",
         "topics": [
-          "進階學習"
+          "無窮極限與垂直漸近線",
+          "無窮遠處的極限與水平漸近線",
+          "導數的定義",
+          "導數即函數",
+          "可微性與連續性的關係"
         ],
         "mdPath": "week4.md",
-        "quizPath": "calculus1_week4.json",
+        "quizPath": "calculusi_week4.json",
         "estimatedMinutes": 45
       },
       {
         "week": 5,
-        "title": "Week 5 Review",
+        "title": "第 5 週 - 基礎微分法則",
         "topics": [
-          "進階學習"
+          "導數的定義與幾何意義",
+          "常數函數與冪次法則",
+          "導數的線性性質",
+          "指數函數的導數",
+          "高階導數"
         ],
         "mdPath": "week5.md",
-        "quizPath": "calculus1_week5.json",
+        "quizPath": "calculusi_week5.json",
         "estimatedMinutes": 45
       },
       {
         "week": 6,
-        "title": "Week 6 Review",
+        "title": "第 6 週 - 三角函數與連鎖律",
         "topics": [
-          "進階學習"
+          "乘積法則與商法則",
+          "基本三角函數的導數",
+          "其他三角函數的導數",
+          "連鎖律",
+          "連鎖律的進階應用與組合"
         ],
         "mdPath": "week6.md",
-        "quizPath": "calculus1_week6.json",
+        "quizPath": "calculusi_week6.json",
         "estimatedMinutes": 45
       },
       {
         "week": 7,
-        "title": "Week 7 Review",
+        "title": "第 7 週 - 隱函數微分與對數微分",
         "topics": [
-          "進階學習"
+          "隱函數微分法",
+          "隱函數的高階導數與切線",
+          "反三角函數的導數",
+          "對數函數的導數",
+          "對數微分法"
         ],
         "mdPath": "week7.md",
-        "quizPath": "calculus1_week7.json",
+        "quizPath": "calculusi_week7.json",
         "estimatedMinutes": 45
       },
       {
         "week": 8,
-        "title": "Week 8 Review",
+        "title": "第 8 週 - 相關變率與線性逼近",
         "topics": [
-          "進階學習"
+          "相關變率的概念與建模",
+          "相關變率的解題策略",
+          "線性逼近與切線逼近",
+          "微分量",
+          "誤差估計"
         ],
         "mdPath": "week8.md",
-        "quizPath": "calculus1_week8.json",
+        "quizPath": "calculusi_week8.json",
         "estimatedMinutes": 45
       },
       {
         "week": 9,
         "title": "第 9 週 - 期中考試 (Midterm Exam)",
         "topics": [
-          "進階學習"
+          "全學期核心知識點綜合測驗",
+          "診斷學習成效",
+          "分析薄弱環節"
         ],
         "mdPath": "week9.md",
-        "quizPath": "calculus1_week9.json",
+        "quizPath": "calculusi_week9.json",
         "estimatedMinutes": 60
       },
       {
@@ -1830,7 +1859,7 @@
           "均值定理 (MVT) 的幾何意義與其在函數分析中的應用。"
         ],
         "mdPath": "week10.md",
-        "quizPath": "calculus1_week10.json",
+        "quizPath": "calculusi_week10.json",
         "estimatedMinutes": 45
       },
       {
@@ -1844,7 +1873,7 @@
           "綜合定義域、漸近線、增減性、凹向性繪製函數。"
         ],
         "mdPath": "week11.md",
-        "quizPath": "calculus1_week11.json",
+        "quizPath": "calculusi_week11.json",
         "estimatedMinutes": 45
       },
       {
@@ -1858,7 +1887,7 @@
           "微積分是驗證圖形工具正確性的最終標準。"
         ],
         "mdPath": "week12.md",
-        "quizPath": "calculus1_week12.json",
+        "quizPath": "calculusi_week12.json",
         "estimatedMinutes": 45
       },
       {
@@ -1872,7 +1901,7 @@
           "反導數的定義與初值問題的解法。"
         ],
         "mdPath": "week13.md",
-        "quizPath": "calculus1_week13.json",
+        "quizPath": "calculusi_week13.json",
         "estimatedMinutes": 45
       },
       {
@@ -1886,7 +1915,7 @@
           "學會使用比較定理來估計定積分的上下界。"
         ],
         "mdPath": "week14.md",
-        "quizPath": "calculus1_week14.json",
+        "quizPath": "calculusi_week14.json",
         "estimatedMinutes": 45
       },
       {
@@ -1900,7 +1929,7 @@
           "理解淨變化定理在物理上的意義，區分位移與總距離的計算。"
         ],
         "mdPath": "week15.md",
-        "quizPath": "calculus1_week15.json",
+        "quizPath": "calculusi_week15.json",
         "estimatedMinutes": 45
       },
       {
@@ -1914,7 +1943,7 @@
           "學會處理需要變形或多次處理的複雜代換題目。"
         ],
         "mdPath": "week16.md",
-        "quizPath": "calculus1_week16.json",
+        "quizPath": "calculusi_week16.json",
         "estimatedMinutes": 45
       },
       {
@@ -1928,17 +1957,19 @@
           "應用墊圈法處理空心旋轉體，精確識別內外半徑。"
         ],
         "mdPath": "week17.md",
-        "quizPath": "calculus1_week17.json",
+        "quizPath": "calculusi_week17.json",
         "estimatedMinutes": 45
       },
       {
         "week": 18,
         "title": "第 18 週 - 期末綜合考試 (Final Exam)",
         "topics": [
-          "進階學習"
+          "全學期核心知識點綜合測驗",
+          "診斷學習成效",
+          "分析薄弱環節"
         ],
         "mdPath": "week18.md",
-        "quizPath": "calculus1_week18.json",
+        "quizPath": "calculusi_week18.json",
         "estimatedMinutes": 60
       }
     ]
@@ -1954,7 +1985,7 @@
       "數值分析"
     ],
     "totalWeeks": 18,
-    "totalQuestions": 580,
+    "totalQuestions": 540,
     "syllabus": [
       {
         "week": 1,
@@ -1967,7 +1998,7 @@
           "微分方程 $\\frac{dy}{dt} = ky$ 的解與應用。"
         ],
         "mdPath": "week1.md",
-        "quizPath": "calculus2_week1.json",
+        "quizPath": "calculusii_week1.json",
         "estimatedMinutes": 45
       },
       {
@@ -1981,7 +2012,7 @@
           "羅必達法則適用條件與不定型分類。"
         ],
         "mdPath": "week2.md",
-        "quizPath": "calculus2_week2.json",
+        "quizPath": "calculusii_week2.json",
         "estimatedMinutes": 45
       },
       {
@@ -1995,7 +2026,7 @@
           "循環積分的方程解法。"
         ],
         "mdPath": "week3.md",
-        "quizPath": "calculus2_week3.json",
+        "quizPath": "calculusii_week3.json",
         "estimatedMinutes": 45
       },
       {
@@ -2009,7 +2040,7 @@
           "綜合各種積分工具的判斷流程。"
         ],
         "mdPath": "week4.md",
-        "quizPath": "calculus2_week4.json",
+        "quizPath": "calculusii_week4.json",
         "estimatedMinutes": 45
       },
       {
@@ -2023,7 +2054,7 @@
           "第二型瑕積分處理不連續點。"
         ],
         "mdPath": "week5.md",
-        "quizPath": "calculus2_week5.json",
+        "quizPath": "calculusii_week5.json",
         "estimatedMinutes": 45
       },
       {
@@ -2037,7 +2068,7 @@
           "函數平均值是積分值除以區間長度。"
         ],
         "mdPath": "week6.md",
-        "quizPath": "calculus2_week6.json",
+        "quizPath": "calculusii_week6.json",
         "estimatedMinutes": 45
       },
       {
@@ -2051,27 +2082,30 @@
           "消費者剩餘反映了市場定價下的消費者獲益。"
         ],
         "mdPath": "week7.md",
-        "quizPath": "calculus2_week7.json",
+        "quizPath": "calculusii_week7.json",
         "estimatedMinutes": 45
       },
       {
         "week": 8,
         "title": "第 8 週 - 期中總複習與綜合解題",
         "topics": [
+          "複習 W1-W7 所有核心公式。",
           "建立「觀察 $\\to$ 分類 $\\to$ 執行」的解題流程。"
         ],
         "mdPath": "week8.md",
-        "quizPath": "calculus2_week8.json",
+        "quizPath": "calculusii_week8.json",
         "estimatedMinutes": 45
       },
       {
         "week": 9,
         "title": "第 9 週 - 期中評量 (Midterm Exam)",
         "topics": [
-          "進階學習"
+          "全學期核心知識點綜合測驗",
+          "診斷學習成效",
+          "分析薄弱環節"
         ],
         "mdPath": "week9.md",
-        "quizPath": "calculus2_week9.json",
+        "quizPath": "calculusii_week9.json",
         "estimatedMinutes": 60
       },
       {
@@ -2085,7 +2119,7 @@
           "學會尋找適當的夾擠函數來解決包含震盪項或階乘項的數列極限。"
         ],
         "mdPath": "week10.md",
-        "quizPath": "calculus2_week10.json",
+        "quizPath": "calculusii_week10.json",
         "estimatedMinutes": 45
       },
       {
@@ -2099,7 +2133,7 @@
           "區分絕對收斂與條件收斂，並學會處理交錯號級數。"
         ],
         "mdPath": "week11.md",
-        "quizPath": "calculus2_week11.json",
+        "quizPath": "calculusii_week11.json",
         "estimatedMinutes": 45
       },
       {
@@ -2113,7 +2147,7 @@
           "能夠使用拉格朗日餘項進行數值誤差分析。"
         ],
         "mdPath": "week12.md",
-        "quizPath": "calculus2_week12.json",
+        "quizPath": "calculusii_week12.json",
         "estimatedMinutes": 45
       },
       {
@@ -2127,7 +2161,7 @@
           "理解歐拉公式如何將旋轉（三角）與增長（指數）聯繫起來。"
         ],
         "mdPath": "week13.md",
-        "quizPath": "calculus2_week13.json",
+        "quizPath": "calculusii_week13.json",
         "estimatedMinutes": 45
       },
       {
@@ -2141,7 +2175,7 @@
           "學會判斷分段定義函數在連接點的連續性。"
         ],
         "mdPath": "week14.md",
-        "quizPath": "calculus2_week14.json",
+        "quizPath": "calculusii_week14.json",
         "estimatedMinutes": 45
       },
       {
@@ -2155,7 +2189,7 @@
           "掌握隱函數微分公式 $\\frac{\\partial z}{\\partial x} = -F_x/F_z$。"
         ],
         "mdPath": "week15.md",
-        "quizPath": "calculus2_week15.json",
+        "quizPath": "calculusii_week15.json",
         "estimatedMinutes": 45
       },
       {
@@ -2169,7 +2203,7 @@
           "能應用全微分處理物理量測量的誤差傳遞問題。"
         ],
         "mdPath": "week16.md",
-        "quizPath": "calculus2_week16.json",
+        "quizPath": "calculusii_week16.json",
         "estimatedMinutes": 45
       },
       {
@@ -2183,17 +2217,19 @@
           "能將物理問題轉化為變數間的依賴關係並求解變化率。"
         ],
         "mdPath": "week17.md",
-        "quizPath": "calculus2_week17.json",
+        "quizPath": "calculusii_week17.json",
         "estimatedMinutes": 45
       },
       {
         "week": 18,
         "title": "第 18 週 - 期末總複習與期末考試 (Final Exam & Review)",
         "topics": [
-          "進階學習"
+          "全學期核心知識點綜合測驗",
+          "診斷學習成效",
+          "分析薄弱環節"
         ],
         "mdPath": "week18.md",
-        "quizPath": "calculus2_week18.json",
+        "quizPath": "calculusii_week18.json",
         "estimatedMinutes": 60
       }
     ]
@@ -2209,7 +2245,7 @@
       "3D視覺化"
     ],
     "totalWeeks": 18,
-    "totalQuestions": 580,
+    "totalQuestions": 540,
     "syllabus": [
       {
         "week": 1,
@@ -2222,7 +2258,7 @@
           "純量三重積與平行六面體體積。"
         ],
         "mdPath": "week1.md",
-        "quizPath": "calculus3_week1.json",
+        "quizPath": "calculusiii_week1.json",
         "estimatedMinutes": 45
       },
       {
@@ -2236,7 +2272,7 @@
           "常見二次曲面（柱面、橢球面、拋物面等）的識別。"
         ],
         "mdPath": "week2.md",
-        "quizPath": "calculus3_week2.json",
+        "quizPath": "calculusiii_week2.json",
         "estimatedMinutes": 45
       },
       {
@@ -2250,7 +2286,7 @@
           "曲率 $\\kappa$ 的幾何意義及其計算公式。"
         ],
         "mdPath": "week3.md",
-        "quizPath": "calculus3_week3.json",
+        "quizPath": "calculusiii_week3.json",
         "estimatedMinutes": 45
       },
       {
@@ -2264,7 +2300,7 @@
           "克卜勒定律在向量分析中的意義。"
         ],
         "mdPath": "week4.md",
-        "quizPath": "calculus3_week4.json",
+        "quizPath": "calculusiii_week4.json",
         "estimatedMinutes": 45
       },
       {
@@ -2278,7 +2314,7 @@
           "梯度垂直於等值曲線/曲面。"
         ],
         "mdPath": "week5.md",
-        "quizPath": "calculus3_week5.json",
+        "quizPath": "calculusiii_week5.json",
         "estimatedMinutes": 45
       },
       {
@@ -2292,7 +2328,7 @@
           "閉區域絕對極值的尋找步驟。"
         ],
         "mdPath": "week6.md",
-        "quizPath": "calculus3_week6.json",
+        "quizPath": "calculusiii_week6.json",
         "estimatedMinutes": 45
       },
       {
@@ -2306,7 +2342,7 @@
           "拉格朗日乘數 $\\lambda$ 的物理/經濟含義。"
         ],
         "mdPath": "week7.md",
-        "quizPath": "calculus3_week7.json",
+        "quizPath": "calculusiii_week7.json",
         "estimatedMinutes": 45
       },
       {
@@ -2320,17 +2356,19 @@
           "極座標變換公式 $dA = r dr d\\theta$。"
         ],
         "mdPath": "week8.md",
-        "quizPath": "calculus3_week8.json",
+        "quizPath": "calculusiii_week8.json",
         "estimatedMinutes": 45
       },
       {
         "week": 9,
         "title": "第 9 週 - 期中考試 (Midterm Exam)",
         "topics": [
-          "進階學習"
+          "全學期核心知識點綜合測驗",
+          "診斷學習成效",
+          "分析薄弱環節"
         ],
         "mdPath": "week9.md",
-        "quizPath": "calculus3_week9.json",
+        "quizPath": "calculusiii_week9.json",
         "estimatedMinutes": 60
       },
       {
@@ -2344,7 +2382,7 @@
           "理解慣性矩的定義及極座標在解決廣義積分（如高斯積分）中的威力。"
         ],
         "mdPath": "week10.md",
-        "quizPath": "calculus3_week10.json",
+        "quizPath": "calculusiii_week10.json",
         "estimatedMinutes": 45
       },
       {
@@ -2358,7 +2396,7 @@
           "理解對不同坐標軸的慣性矩定義。"
         ],
         "mdPath": "week11.md",
-        "quizPath": "calculus3_week11.json",
+        "quizPath": "calculusiii_week11.json",
         "estimatedMinutes": 45
       },
       {
@@ -2372,7 +2410,7 @@
           "根據問題特徵選擇最有效率的座標系統。"
         ],
         "mdPath": "week12.md",
-        "quizPath": "calculus3_week12.json",
+        "quizPath": "calculusiii_week12.json",
         "estimatedMinutes": 45
       },
       {
@@ -2386,7 +2424,7 @@
           "學會保守場的判定條件與位能函數的求解。"
         ],
         "mdPath": "week13.md",
-        "quizPath": "calculus3_week13.json",
+        "quizPath": "calculusiii_week13.json",
         "estimatedMinutes": 45
       },
       {
@@ -2400,7 +2438,7 @@
           "理解 Green 定理的旋度與散度物理意義。"
         ],
         "mdPath": "week14.md",
-        "quizPath": "calculus3_week14.json",
+        "quizPath": "calculusiii_week14.json",
         "estimatedMinutes": 45
       },
       {
@@ -2414,7 +2452,7 @@
           "靈活運用 $\\nabla$ 算子的運算性質。"
         ],
         "mdPath": "week15.md",
-        "quizPath": "calculus3_week15.json",
+        "quizPath": "calculusiii_week15.json",
         "estimatedMinutes": 45
       },
       {
@@ -2428,7 +2466,7 @@
           "辨識定向曲面與非定向曲面（如莫比烏斯帶）。"
         ],
         "mdPath": "week16.md",
-        "quizPath": "calculus3_week16.json",
+        "quizPath": "calculusiii_week16.json",
         "estimatedMinutes": 45
       },
       {
@@ -2442,17 +2480,19 @@
           "建立所有積分定理的統一框架（廣義 Stokes 定理）。"
         ],
         "mdPath": "week17.md",
-        "quizPath": "calculus3_week17.json",
+        "quizPath": "calculusiii_week17.json",
         "estimatedMinutes": 45
       },
       {
         "week": 18,
         "title": "第 18 週 - 期末總複習與題庫 (Final Exam Review & Item Bank)",
         "topics": [
-          "進階學習"
+          "全學期核心知識點綜合測驗",
+          "診斷學習成效",
+          "分析薄弱環節"
         ],
         "mdPath": "week18.md",
-        "quizPath": "calculus3_week18.json",
+        "quizPath": "calculusiii_week18.json",
         "estimatedMinutes": 60
       }
     ]
