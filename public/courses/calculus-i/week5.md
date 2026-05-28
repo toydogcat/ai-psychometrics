@@ -177,13 +177,13 @@ print("指數函數導數:", dg)
     (D) 函數在 $x=a$ 必定連續
 
 ### 填充題 (10題)
-21. $\frac{d}{dx} (5x^3 - 2x + 1) = \underline{15x^2 - 2}$。
+21. $\frac{d}{dx} (5x^3 - 2x + 1) = \underline{\hspace{1cm}}$。
 22. 函數 $f(x) = e^x + x^e$ 的導數為 $\underline{e^x + e x^{e-1}}$。
-23. 若 $y = x^{100}$，則 $y'(1) = \underline{100}$。
-24. $\lim_{h \to 0} \frac{e^h - 1}{h} = \underline{1}$。
-25. 已知 $f(x) = x^4$，則 $f'''(x) = \underline{24x}$。
-26. 曲線 $y = x^2$ 在 $x=2$ 處的切線斜率為 $\underline{4}$。
-27. 若位置 $s(t) = 5t^2 + 2t$，則時間 $t=3$ 時的加速度為 $\underline{10}$。
+23. 若 $y = x^{100}$，則 $y'(1) = \underline{\hspace{1cm}}$。
+24. $\lim_{h \to 0} \frac{e^h - 1}{h} = \underline{\hspace{1cm}}$。
+25. 已知 $f(x) = x^4$，則 $f'''(x) = \underline{\hspace{1cm}}$。
+26. 曲線 $y = x^2$ 在 $x=2$ 處的切線斜率為 $\underline{\hspace{1cm}}$。
+27. 若位置 $s(t) = 5t^2 + 2t$，則時間 $t=3$ 時的加速度為 $\underline{\hspace{1cm}}$。
 28. $\frac{d}{dx} (\frac{1}{x^4}) = \underline{-4x^{-5}}$。
-29. $\frac{d}{dx} (2\pi^3) = \underline{0}$。
+29. $\frac{d}{dx} (2\pi^3) = \underline{\hspace{1cm}}$。
 30. 冪次法則中，$\frac{d}{dx} x^n = \underline{nx^{n-1}}$。

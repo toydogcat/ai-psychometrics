@@ -1,4 +1,4 @@
-# 課程：微積分下 - 第 5 週 - 方向導數與梯度向量 (Directional Derivatives and Gradient Vectors)
+# 課程：微積分下 - 第 5 週 - 方向導數與梯度向量 (Directional Derivatives and Gradient Vectors) 🔥 高難度
 
 本週將深入探討多變數函數在特定方向上的變化率，並引入向量微積分中最重要的概念之一：**梯度 (Gradient)**。我們將學習如何計算任意方向的變化率、尋找函數增加最快的方向，以及利用梯度求取曲面的切平面與法線。
 

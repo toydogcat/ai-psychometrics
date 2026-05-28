@@ -182,13 +182,13 @@ plt.title('Linear Approximation')
     (D) $\sin(0.05) \approx 0.05$
 
 ### 填充題 (10題)
-21. 切線逼近公式 $L(x) = \underline{f(a) + f'(a)(x-a)}$。
-22. $y = x^4$，微分量 $dy = \underline{4x^3 dx}$。
+21. 切線逼近公式 $L(x) = \underline{\hspace{1cm}}$。
+22. $y = x^4$，微分量 $dy = \underline{\hspace{1cm}}$。
 23. 半徑變率為 $\frac{dr}{dt}$，則圓面積 $A=\pi r^2$ 變率 $\frac{dA}{dt} = \underline{2\pi r \frac{dr}{dt}}$。
-24. 利用 $L(x) = 1+x$ 估計 $e^{0.02}$，得值為 $\underline{1.02}$。
-25. 體積 $V=x^3$，邊長測量誤差為 $1\%$ ($\frac{dx}{x}=0.01$)，則體積最大相對誤差為 $\underline{3\%}$。
-26. 梯子問題中，若 $x \frac{dx}{dt} + y \frac{dy}{dt} = 0$，當 $x=y$ 且 $\frac{dx}{dt}=2$ 時，$\frac{dy}{dt} = \underline{-2}$。
-27. 若 $y = \sin x$，$dy = \underline{\cos x \, dx}$。
-28. 當 $x \approx 0$ 時，$\sin x \approx \underline{x}$。
-29. 微分量中，$\Delta x$ 與 $dx$ 的關係為 $\underline{\Delta x = dx}$。
+24. 利用 $L(x) = 1+x$ 估計 $e^{0.02}$，得值為 $\underline{\hspace{1cm}}$。
+25. 體積 $V=x^3$，邊長測量誤差為 $1\%$ ($\frac{dx}{x}=0.01$)，則體積最大相對誤差為 $\underline{\hspace{1cm}}$。
+26. 梯子問題中，若 $x \frac{dx}{dt} + y \frac{dy}{dt} = 0$，當 $x=y$ 且 $\frac{dx}{dt}=2$ 時，$\frac{dy}{dt} = \underline{\hspace{1cm}}$。
+27. 若 $y = \sin x$，$dy = \underline{\hspace{1cm}}$。
+28. 當 $x \approx 0$ 時，$\sin x \approx \underline{\hspace{1cm}}$。
+29. 微分量中，$\Delta x$ 與 $dx$ 的關係為 $\underline{\hspace{1cm}}$。
 30. 直角坐標中，點到原點距離平方 $D^2 = x^2 + y^2$，對時間微分得 $2D\frac{dD}{dt} = \underline{2x\frac{dx}{dt} + 2y\frac{dy}{dt}}$。

@@ -179,8 +179,8 @@ print("隱函數微分 dy/dx:", dy_dx)
 23. $\frac{d}{dx}(\ln x) = \underline{\frac{1}{x}}$。
 24. $\frac{d}{dx}(\sin^{-1} x) = \underline{\frac{1}{\sqrt{1-x^2}}}$。
 25. 函數 $y = \ln(5x)$ 的導數為 $\underline{\frac{1}{x}}$。
-26. 若 $y = x^{\sin x}$，取自然對數後得 $\ln y = \underline{\sin x \ln x}$。
-27. 對 $y^3$ 關於 $x$ 微分，結果為 $\underline{3y^2 y'}$。
+26. 若 $y = x^{\sin x}$，取自然對數後得 $\ln y = \underline{\hspace{1cm}}$。
+27. 對 $y^3$ 關於 $x$ 微分，結果為 $\underline{\hspace{1cm}}$。
 28. $\frac{d}{dx}(\ln(x^4)) = \underline{\frac{4}{x}}$。
 29. 方程式 $x^2 + y^2 = 1$ 的 $y'$ 隱函數表示為 $\underline{-\frac{x}{y}}$。
 30. 反餘弦函數的導數 $\frac{d}{dx}(\cos^{-1} x) = \underline{-\frac{1}{\sqrt{1-x^2}}}$。

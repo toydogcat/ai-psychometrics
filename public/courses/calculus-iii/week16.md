@@ -118,6 +118,33 @@ Z_p = 1 - R**2
 area_element = 1 # 因為 F . n = 1
 flux = np.sum(area_element * R * (r[1]-r[0]) * (theta[1]-theta[0]))
 print(f"數值通量計算結果: {flux:.6f} (理論值: {np.pi:.6f})")
+
+# 3. 法向量視覺化 (Normal Vector Visualization)
+def plot_surface_normal():
+    fig = plt.figure(figsize=(8, 8))
+    ax = fig.add_subplot(111, projection='3d')
+    
+    # 繪製拋物面
+    r_v = np.linspace(0, 1, 10)
+    theta_v = np.linspace(0, 2*np.pi, 20)
+    R_v, THETA_v = np.meshgrid(r_v, theta_v)
+    X_v = R_v * np.cos(THETA_v)
+    Y_v = R_v * np.sin(THETA_v)
+    Z_v = 1 - R_v**2
+    ax.plot_surface(X_v, Y_v, Z_v, alpha=0.5, cmap='coolwarm')
+    
+    # 繪製法向量 n = <2x, 2y, 1> (在拋物面上)
+    # 取部分點繪製
+    X_n = X_v[::3, ::3]
+    Y_n = Y_v[::3, ::3]
+    Z_n = Z_v[::3, ::3]
+    u_n, v_n, w_n = 2*X_n, 2*Y_n, np.ones_like(Z_n)
+    ax.quiver(X_n, Y_n, Z_n, u_n, v_n, w_n, length=0.2, color='black', label='Normal Vectors')
+    
+    ax.set_title("Parametric Surface with Normal Vectors")
+    plt.show()
+
+plot_surface_normal()
 ```
 
 ---

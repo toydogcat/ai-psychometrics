@@ -105,6 +105,31 @@ rho, phi, theta_s = sp.symbols('rho phi theta_s')
 rhs_div = sp.integrate(3 * rho**2 * sp.sin(phi), (rho, 0, 1), (phi, 0, sp.pi), (theta_s, 0, 2*sp.pi))
 
 print(f"Divergence Theorem RHS: {rhs_div} (應為 4*pi)")
+
+# 3. 向量場與閉曲面視覺化 (Divergence Visualization)
+import matplotlib.pyplot as plt
+import numpy as np
+
+def plot_flux():
+    fig = plt.figure(figsize=(8, 8))
+    ax = fig.add_subplot(111, projection='3d')
+    
+    # 繪製球體
+    u, v = np.mgrid[0:2*np.pi:20j, 0:np.pi:10j]
+    x_s = np.cos(u)*np.sin(v)
+    y_s = np.sin(u)*np.sin(v)
+    z_s = np.cos(v)
+    ax.plot_wireframe(x_s, y_s, z_s, color="gray", alpha=0.3)
+    
+    # 繪製向量場（發散場 F = <x, y, z>）
+    x_v, y_v, z_v = np.meshgrid(np.linspace(-1.5, 1.5, 5), 
+                                np.linspace(-1.5, 1.5, 5), 
+                                np.linspace(-1.5, 1.5, 5))
+    ax.quiver(x_v, y_v, z_v, x_v, y_v, z_v, length=0.3, color='red')
+    ax.set_title("Vector Field $\mathbf{F}=\\langle x,y,z \\rangle$ and Closed Surface")
+    plt.show()
+
+plot_flux()
 ```
 
 ---

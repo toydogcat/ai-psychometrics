@@ -132,6 +132,14 @@ plot_partial_sums(lambda n: 1/n, 100, 'Harmonic Series Summation (Divergent)')
 
 ---
 
+## 觀念補充：常見錯誤 (Common Misconceptions)
+
+1.  **$a_n \to 0$ 誤判收斂**：這是初學者最常犯的錯誤。$\lim_{n \to \infty} a_n = 0$ 只是級數收斂的**必要條件**，而非充分條件。典型的反例是調和級數 $\sum 1/n$，雖然每一項都趨近於 0，但總和卻是發散的。
+2.  **比值檢定法的盲區**：當比值檢定的極限 $L=1$ 時，檢定失效，無法判定收斂或發散。此時必須改用積分檢定法或比較檢定法。
+3.  **交錯級數漏看條件**：應用交錯級數檢定 (Leibniz Test) 時，除了正負交替，還必須確認 $|a_{n+1}| \le |a_n|$ 且 $\lim a_n = 0$。
+
+---
+
 ## 四、 課後測驗題庫 (Quiz)
 
 ### 1. 單選題 (Single Choice)
