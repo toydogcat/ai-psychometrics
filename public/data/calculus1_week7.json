@@ -147,7 +147,7 @@
         "A": "$\\frac{2}{\\sqrt{1-4x^2}}$",
         "B": "$\\frac{1}{\\sqrt{1-2x^2}}$",
         "C": "$\\frac{2}{\\sqrt{1-x^2}}$",
-        "D": "$\\frac{4x}{\\sqrt{1-4x^2}}$\n\n### 多選題 (10題)"
+        "D": "$\\frac{4x}{\\sqrt{1-4x^2}}$"
       },
       "answer": "",
       "kp": "",
@@ -297,7 +297,7 @@
         "A": "$\\sin(\\sin^{-1} x) = x$",
         "B": "$\\ln(e^x) = x$",
         "C": "$e^{\\ln x} = x$",
-        "D": "$\\tan^{-1}(\\tan x) = x$\n\n### 填充題 (10題)"
+        "D": "$\\tan^{-1}(\\tan x) = x$"
       },
       "answer": "",
       "kp": "",
@@ -307,7 +307,7 @@
     {
       "id": "Q21",
       "type": "fill",
-      "title": "$\\frac{d}{dx}(\\tan^{-1} x) = _______{1+x^2}}$。",
+      "title": "$\\frac{d}{dx}(\\tan^{-1} x) = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -317,7 +317,7 @@
     {
       "id": "Q22",
       "type": "fill",
-      "title": "若 $x y = 2$，則 $\\frac{dy}{dx} = _______{x}}$（或 $-\\frac{2}{x^2}$）。",
+      "title": "若 $x y = 2$，則 $\\frac{dy}{dx} = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -327,7 +327,7 @@
     {
       "id": "Q23",
       "type": "fill",
-      "title": "$\\frac{d}{dx}(\\ln x) = _______{x}}$。",
+      "title": "$\\frac{d}{dx}(\\ln x) = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -337,7 +337,7 @@
     {
       "id": "Q24",
       "type": "fill",
-      "title": "$\\frac{d}{dx}(\\sin^{-1} x) = _______{\\sqrt{1-x^2}}}$。",
+      "title": "$\\frac{d}{dx}(\\sin^{-1} x) = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -347,7 +347,7 @@
     {
       "id": "Q25",
       "type": "fill",
-      "title": "函數 $y = \\ln(5x)$ 的導數為 $\\underline{\\frac{1}{x}}$。",
+      "title": "函數 $y = \\ln(5x)$ 的導數為 $\\underline{\\hspace{1cm}}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -357,7 +357,7 @@
     {
       "id": "Q26",
       "type": "fill",
-      "title": "若 $y = x^{\\sin x}$，取自然對數後得 $\\ln y = _______$。",
+      "title": "若 $y = x^{\\sin x}$，取自然對數後得 $\\ln y = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -367,7 +367,7 @@
     {
       "id": "Q27",
       "type": "fill",
-      "title": "對 $y^3$ 關於 $x$ 微分，結果為 $\\underline{3y^2 y'}$。",
+      "title": "對 $y^3$ 關於 $x$ 微分，結果為 $\\underline{\\hspace{1cm}}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -377,7 +377,7 @@
     {
       "id": "Q28",
       "type": "fill",
-      "title": "$\\frac{d}{dx}(\\ln(x^4)) = _______{x}}$。",
+      "title": "$\\frac{d}{dx}(\\ln(x^4)) = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -387,7 +387,7 @@
     {
       "id": "Q29",
       "type": "fill",
-      "title": "方程式 $x^2 + y^2 = 1$ 的 $y'$ 隱函數表示為 $\\underline{-\\frac{x}{y}}$。",
+      "title": "方程式 $x^2 + y^2 = 1$ 的 $y'$ 隱函數表示為 $\\underline{\\hspace{1cm}}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -397,7 +397,7 @@
     {
       "id": "Q30",
       "type": "fill",
-      "title": "反餘弦函數的導數 $\\frac{d}{dx}(\\cos^{-1} x) = _______{\\sqrt{1-x^2}}}$。",
+      "title": "反餘弦函數的導數 $\\frac{d}{dx}(\\cos^{-1} x) = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",

@@ -147,7 +147,7 @@
         "A": "$e$",
         "B": "$\\pi$",
         "C": "$i$",
-        "D": "$\\gamma$ (歐拉常數)\n\n### 2. 多選題 (Multiple Choice)"
+        "D": "$\\gamma$ (歐拉常數)"
       },
       "answer": "",
       "kp": "",
@@ -164,7 +164,7 @@
         "C": "$\\lim_{x \\to \\infty} \\frac{x^2}{e^x}$",
         "D": "$\\lim_{x \\to 0} \\frac{\\ln(1+x)}{x}$"
       },
-      "answer": "Q11",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "積分值約為 0.946",
         "D": "該積分是發散的"
       },
-      "answer": "Q12",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -222,7 +222,7 @@
         "A": "級數非交錯項時",
         "B": "需要一個確定的誤差上限時",
         "C": "級數收斂極慢時",
-        "D": "級數是幾何級數時\n\n### 3. 填充題 (Fill-in-the-blank)"
+        "D": "級數是幾何級數時"
       },
       "answer": "",
       "kp": "",
@@ -234,7 +234,7 @@
       "type": "multiple",
       "title": "**Q16**: $x^2 e^x$ 的麥克勞林級數一般項為 __________。",
       "options": {},
-      "answer": "Q16",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -244,7 +244,7 @@
       "type": "multiple",
       "title": "**Q17**: $\\lim_{x \\to 0} \\frac{x - \\tan^{-1} x}{x^3}$ 的值為 __________。",
       "options": {},
-      "answer": "Q17",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
       "type": "multiple",
       "title": "**Q18**: $\\int_0^1 e^{-x^2} dx$ 的級數表示中，前三項為 __________。",
       "options": {},
-      "answer": "Q18",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -264,7 +264,7 @@
       "type": "multiple",
       "title": "**Q19**: $e^{i\\pi/4}$ 的實部為 __________。",
       "options": {},
-      "answer": "Q19",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -274,7 +274,7 @@
       "type": "multiple",
       "title": "**Q20**: 利用級數估計 $\\cos(1)$，若取前兩項 $1 - 1/2 = 0.5$，則誤差小於 __________。",
       "options": {},
-      "answer": "Q20",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -372,7 +372,7 @@
     {
       "id": "Q30",
       "type": "fill",
-      "title": "**Q30**: 泰勒級數將微積分運算轉化成了更簡單的 __________ 運算。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP13.1 | KP13.2 | KP13.3 | KP13.4 | KP13.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,0,0,1,0 | 0,1,0,0,0 | 0,0,0,0,0 | 0,0,1,0,0 | 0,0,0,0,1 |\n| Q6-Q10 | 1,0,1,1,0 | 0,1,0,0,0 | 1,0,0,0,0 | 0,0,0,1,0 | 0,0,0,0,1 |\n| Q11-Q30| ... | ... | ... | ... | ... |\n*(註：詳細對應請參閱教師手冊)*",
+      "title": "**Q30**: 泰勒級數將微積分運算轉化成了更簡單的 __________ 運算。",
       "options": {},
       "answer": "Q30",
       "kp": "",

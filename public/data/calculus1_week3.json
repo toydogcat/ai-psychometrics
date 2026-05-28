@@ -241,7 +241,7 @@
         "C": "$x^2$",
         "D": "$\\ln x$"
       },
-      "answer": "ABC",
+      "answer": "A,B,C",
       "kp": "KP3.1",
       "explanation": "A、B、C 的極限在 $x \\to 0$ 時均為 0，適合用來夾住震盪的有界函數。D $\\ln x$ 當 $x \\to 0^+$ 趨於 $-\\infty$，無法夾擠至 0。",
       "q_vector": [
@@ -263,7 +263,7 @@
         "C": "$\\lim_{x \\to 0} \\frac{\\sin ax}{bx} = \\frac{a}{b}$",
         "D": "$\\lim_{x \\to 0} \\sin x = 1$"
       },
-      "answer": "ABC",
+      "answer": "A,B,C",
       "kp": "KP3.2",
       "explanation": "D 錯，極限為 0。A、B、C 都是基本三角極限的正確變形。",
       "q_vector": [
@@ -285,7 +285,7 @@
         "C": "極限存在且有定義，但兩者不相等。",
         "D": "函數是多項式。"
       },
-      "answer": "ABC",
+      "answer": "A,B,C",
       "kp": "KP3.3",
       "explanation": "連續性三大條件的任一違背都會造成不連續。多項式 (D) 則是處處連續的。",
       "q_vector": [
@@ -307,7 +307,7 @@
         "C": "$e^x = 0$ 在任意區間內",
         "D": "$\\ln x = 0$ 在 $(0.5, 1.5)$ 內"
       },
-      "answer": "AB",
+      "answer": "A,B",
       "kp": "KP3.4",
       "explanation": "A 成立 (f(1)=-1, f(2)=31)。B 成立 (f(x)=cos(x)-x，f(0)=1, f(pi/2)=-pi/2)。C 錯，無解。D 錯，$ln(1)=0$，雖然可以說有根，但不符合「利用 IVT 證明端點異號」的情況，因為 $ln(0.5)<0$, $ln(1.5)>0$。\n    *(修正: D 符合 IVT，但通常直接解出 x=1。嚴格說來 IVT 也可以保證，但 AB 較為典型。若為嚴格的多選，ABD 皆可選。此處設定為 AB)*",
       "q_vector": [
@@ -329,7 +329,7 @@
         "C": "若 $P(a) = 0$ 且 $Q(a) = 0$，極限可能存在。",
         "D": "多項式函數本身處處連續。"
       },
-      "answer": "ACD",
+      "answer": "A,C,D",
       "kp": "KP3.3",
       "explanation": "B 錯。若 $Q(a)=0$ 但 $P(a)=0$ 且 $(x-a)$ 的次數分子不小於分母，則可能是可去不連續點，非垂直漸近線。",
       "q_vector": [
@@ -351,7 +351,7 @@
         "C": "$\\lim_{x \\to \\infty} \\frac{\\sin x}{x}$",
         "D": "$\\lim_{x \\to 0} \\frac{\\sin x}{x}$"
       },
-      "answer": "ABC",
+      "answer": "A,B,C",
       "kp": "KP3.1/3.2",
       "explanation": "A 由夾擠定理為 0。B 為 0。C 由夾擠定理 ($\\frac{-1}{x} \\le \\frac{\\sin x}{x} \\le \\frac{1}{x}$) 當 $x \\to \\infty$ 時兩端趨於 0，故極限為 0。D 極限為 1。",
       "q_vector": [
@@ -373,7 +373,7 @@
         "C": "$-1$",
         "D": "$1$"
       },
-      "answer": "AB",
+      "answer": "A,B",
       "kp": "KP3.1",
       "explanation": "因為 $-1 \\le \\sin(1/x) \\le 1$，同乘非負數 $x^2$，邊界即為 $-x^2$ 和 $x^2$。",
       "q_vector": [
@@ -395,7 +395,7 @@
         "C": "連續函數的商必定是連續函數 (分母不為零處)。",
         "D": "絕對值函數 $y=|x|$ 在 $x=0$ 是連續的。"
       },
-      "answer": "ABCD",
+      "answer": "A,B,C,D",
       "kp": "KP3.3",
       "explanation": "連續函數的四則運算 (分母不為0) 皆為連續。絕對值函數在頂點雖然不可微，但是連續的。",
       "q_vector": [
@@ -417,7 +417,7 @@
         "C": "$\\lim_{x \\to 2} f(x)$",
         "D": "無法讓它連續"
       },
-      "answer": "AC",
+      "answer": "A,C",
       "kp": "KP3.3",
       "explanation": "$f(x) = \\frac{(x-2)(x+1)}{x-2} = x+1$ ($x \\neq 2$)。極限為 3。為使連續，$f(2)$ 須等於極限 3。",
       "q_vector": [
@@ -439,7 +439,7 @@
         "C": "$c$ 點可以精確求出解析解。",
         "D": "若圖形不中斷地從一點連接到另一點，必穿過兩點間的任何水平線。\n\n**填空題 (10題)**"
       },
-      "answer": "AD",
+      "answer": "A,D",
       "kp": "KP3.4",
       "explanation": "B 錯，根可能不只一個。C 錯，IVT 只證明存在性，不保證能求出解析解。",
       "q_vector": [

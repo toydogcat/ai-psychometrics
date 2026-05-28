@@ -147,7 +147,7 @@
         "A": "$1.01$",
         "B": "$1.02$",
         "C": "$1.005$",
-        "D": "$1.04$\n\n### 多選題 (10題)"
+        "D": "$1.04$"
       },
       "answer": "",
       "kp": "",
@@ -297,7 +297,7 @@
         "A": "$f(0) = 0$",
         "B": "$f'(0) = 1$",
         "C": "$L(x) = x$",
-        "D": "$\\sin(0.05) \\approx 0.05$\n\n### 填充題 (10題)"
+        "D": "$\\sin(0.05) \\approx 0.05$"
       },
       "answer": "",
       "kp": "",
@@ -307,7 +307,7 @@
     {
       "id": "Q21",
       "type": "fill",
-      "title": "切線逼近公式 $L(x) = _______$。",
+      "title": "切線逼近公式 $L(x) = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -317,7 +317,7 @@
     {
       "id": "Q22",
       "type": "fill",
-      "title": "$y = x^4$，微分量 $dy = _______$。",
+      "title": "$y = x^4$，微分量 $dy = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -327,7 +327,7 @@
     {
       "id": "Q23",
       "type": "fill",
-      "title": "半徑變率為 $\\frac{dr}{dt}$，則圓面積 $A=\\pi r^2$ 變率 $\\frac{dA}{dt} = _______{dt}}$。",
+      "title": "半徑變率為 $\\frac{dr}{dt}$，則圓面積 $A=\\pi r^2$ 變率 $\\frac{dA}{dt} = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -337,7 +337,7 @@
     {
       "id": "Q24",
       "type": "fill",
-      "title": "利用 $L(x) = 1+x$ 估計 $e^{0.02}$，得值為 $\\underline{1.02}$。",
+      "title": "利用 $L(x) = 1+x$ 估計 $e^{0.02}$，得值為 $\\underline{\\hspace{1cm}}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -347,7 +347,7 @@
     {
       "id": "Q25",
       "type": "fill",
-      "title": "體積 $V=x^3$，邊長測量誤差為 $1\\%$ ($\\frac{dx}{x}=0.01$)，則體積最大相對誤差為 $\\underline{3\\%}$。",
+      "title": "體積 $V=x^3$，邊長測量誤差為 $1\\%$ ($\\frac{dx}{x}=0.01$)，則體積最大相對誤差為 $\\underline{\\hspace{1cm}}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -357,7 +357,7 @@
     {
       "id": "Q26",
       "type": "fill",
-      "title": "梯子問題中，若 $x \\frac{dx}{dt} + y \\frac{dy}{dt} = 0$，當 $x=y$ 且 $\\frac{dx}{dt}=2$ 時，$\\frac{dy}{dt} = _______$。",
+      "title": "梯子問題中，若 $x \\frac{dx}{dt} + y \\frac{dy}{dt} = 0$，當 $x=y$ 且 $\\frac{dx}{dt}=2$ 時，$\\frac{dy}{dt} = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -367,7 +367,7 @@
     {
       "id": "Q27",
       "type": "fill",
-      "title": "若 $y = \\sin x$，$dy = _______$。",
+      "title": "若 $y = \\sin x$，$dy = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -377,7 +377,7 @@
     {
       "id": "Q28",
       "type": "fill",
-      "title": "當 $x \\approx 0$ 時，$\\sin x \\approx \\underline{x}$。",
+      "title": "當 $x \\approx 0$ 時，$\\sin x \\approx \\underline{\\hspace{1cm}}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -387,7 +387,7 @@
     {
       "id": "Q29",
       "type": "fill",
-      "title": "微分量中，$\\Delta x$ 與 $dx$ 的關係為 $\\underline{\\Delta x = dx}$。",
+      "title": "微分量中，$\\Delta x$ 與 $dx$ 的關係為 $\\underline{\\hspace{1cm}}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -397,7 +397,7 @@
     {
       "id": "Q30",
       "type": "fill",
-      "title": "直角坐標中，點到原點距離平方 $D^2 = x^2 + y^2$，對時間微分得 $2D\\frac{dD}{dt} = _______{dt} + 2y\\frac{dy}{dt}}$。",
+      "title": "直角坐標中，點到原點距離平方 $D^2 = x^2 + y^2$，對時間微分得 $2D\\frac{dD}{dt} = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",

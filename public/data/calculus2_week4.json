@@ -14,9 +14,9 @@
         "C": "$x=4\\sin\\theta$",
         "D": "$x=2\\sec\\theta$"
       },
-      "answer": "",
+      "answer": "A",
       "kp": "",
-      "explanation": "",
+      "explanation": "形式為 $\\sqrt{a^2-x^2}$，其中 $a=2$。令 $x=2\\sin\\theta$ 可利用 $1-\\sin^2\\theta = \\cos^2\\theta$ 化簡。",
       "q_vector": []
     },
     {
@@ -29,9 +29,9 @@
         "C": "$a\\sec\\theta$",
         "D": "$a\\tan\\theta$"
       },
-      "answer": "",
+      "answer": "C",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\sqrt{a^2+a^2\\tan^2\\theta} = \\sqrt{a^2(1+\\tan^2\\theta)} = \\sqrt{a^2\\sec^2\\theta} = a\\sec\\theta$。",
       "q_vector": []
     },
     {
@@ -44,9 +44,9 @@
         "C": "$\\frac{Ax+B}{(x-1)(x-2)}$",
         "D": "$\\frac{A}{x-1} + \\frac{B}{(x-1)^2}$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "不重複線性因子應拆解為各自常數分子的分式之和。",
       "q_vector": []
     },
     {
@@ -59,9 +59,9 @@
         "C": "$\\ln(x^2+a^2)+C$",
         "D": "$\\sin^{-1}(x/a)+C$"
       },
-      "answer": "",
+      "answer": "A",
       "kp": "",
-      "explanation": "",
+      "explanation": "這是基本積分公式，也可透過 $x=a\\tan\\theta$ 推導得出。",
       "q_vector": []
     },
     {
@@ -74,9 +74,9 @@
         "C": "三角代換",
         "D": "直接觀察"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "將 $\\frac{1}{(x-1)(x+1)}$ 拆解為 $\\frac{1}{2}(\\frac{1}{x-1} - \\frac{1}{x+1})$，結果為對數函數。",
       "q_vector": []
     },
     {
@@ -89,9 +89,9 @@
         "C": "$\\sec\\theta\\tan\\theta$",
         "D": "$\\ln|\\cos\\theta|$"
       },
-      "answer": "",
+      "answer": "A",
       "kp": "",
-      "explanation": "",
+      "explanation": "這是微積分中必須熟記的標準積分結果。",
       "q_vector": []
     },
     {
@@ -104,9 +104,9 @@
         "C": "以上皆是",
         "D": "以上皆非"
       },
-      "answer": "",
+      "answer": "C",
       "kp": "",
-      "explanation": "",
+      "explanation": "包含線性因子對應的 $\\frac{A}{x-1}$ 以及不可約二次因子對應的 $\\frac{Bx+C}{x^2+1}$。",
       "q_vector": []
     },
     {
@@ -119,9 +119,9 @@
         "C": "三角代換",
         "D": "部分分式"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "分子次數 $\\ge$ 分母次數，屬於假分式，必須先用長除法簡化。",
       "q_vector": []
     },
     {
@@ -134,9 +134,9 @@
         "C": "使 $x$ 恆正",
         "D": "簡化 LaTeX 書寫"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "所有的三角代換都伴隨著對 $\\theta$ 的範圍限制，以確保代換過程是可逆的（一對一）。",
       "q_vector": []
     },
     {
@@ -147,11 +147,11 @@
         "A": "$x=a\\sin\\theta$",
         "B": "$x=a\\sec\\theta$",
         "C": "$x=a\\tan\\theta$",
-        "D": "$x=u^2$\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+        "D": "$x=u^2$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "形式為 $\\sqrt{x^2-a^2}$，令 $x=a\\sec\\theta$ 利用 $\\sec^2\\theta-1 = \\tan^2\\theta$。",
       "q_vector": []
     },
     {
@@ -164,9 +164,9 @@
         "C": "$\\sqrt{x^2-a^2} \\to a\\sec\\theta$",
         "D": "$x^2+a^2 \\to a\\tan\\theta$"
       },
-      "answer": "",
+      "answer": "A,B,C",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A, B, C) 分別對應三種標準根式型態。(D) $x^2+a^2$ 雖可用 $a\\tan\\theta$，但主要針對無根號時的情形，公式與 B 相同。",
       "q_vector": []
     },
     {
@@ -179,9 +179,9 @@
         "C": "$\\frac{e^x}{e^{2x}+1}$ (代換後)",
         "D": "$\\frac{\\ln x}{x}$"
       },
-      "answer": "",
+      "answer": "A,B,C",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A, B) 是標準有理函數；(C) 令 $u=e^x$ 後變為有理函數；(D) 應使用分部積分。",
       "q_vector": []
     },
     {
@@ -194,9 +194,9 @@
         "C": "結果為 $\\tan^{-1}(x+1)+C$",
         "D": "分母是不可約二次式"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "此題分母判別式 $D < 0$，不可約。配方後符合 $\\arctan$ 形式。",
       "q_vector": []
     },
     {
@@ -209,9 +209,9 @@
         "C": "$\\int \\frac{1}{\\sqrt{1-x^2}} dx = \\sin^{-1} x+C$",
         "D": "$\\int \\frac{x}{x^2+1} dx = \\frac{1}{2}\\ln(x^2+1)+C$"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "皆為有理函數與代換法中的核心基本積分。",
       "q_vector": []
     },
     {
@@ -224,9 +224,9 @@
         "C": "部分分式法只適用於真分式",
         "D": "$Q(x)$ 在實數範圍內必可分解為線性或二次因子"
       },
-      "answer": "",
+      "answer": "A,B,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "(C) 錯誤，假分式經長除法後產生的「多項式部分」可直接積分，「真分式部分」再用部分分式法。",
       "q_vector": []
     },
     {
@@ -239,9 +239,9 @@
         "C": "觀察是否為 $f'(x)/f(x)$ 形式",
         "D": "遇到 $\\sin, \\cos$ 的有理式使用 Weierstrass 代換 ($t=\\tan(x/2)$)"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "這些皆為 Stewart 教材第 7.5 節提到的專業解題策略。",
       "q_vector": []
     },
     {
@@ -254,9 +254,9 @@
         "C": "查表",
         "D": "直接把 $\\theta$ 換成 $\\sin^{-1}(x/a)$"
       },
-      "answer": "",
+      "answer": "A,B,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "畫三角形是最直觀的方法，恆等式是代數方法，直接代反三角函數則較不美觀。",
       "q_vector": []
     },
     {
@@ -269,9 +269,9 @@
         "C": "數值逼近",
         "D": "對原式求導"
       },
-      "answer": "",
+      "answer": "A,B",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A) Heaviside 掩蓋法適合線性因子；(B) 比較係數法適合包含二次因子的情況。",
       "q_vector": []
     },
     {
@@ -284,9 +284,9 @@
         "C": "可轉化為 $\\sec^3\\theta$ 型積分",
         "D": "結果包含雙曲函數形式"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A, B, C) 是三角代換的路徑；(D) 此積分亦可透過雙曲代換 $x = \\cosh t$ 輕鬆解決。",
       "q_vector": []
     },
     {
@@ -297,11 +297,11 @@
         "A": "所有有理函數皆有初等函數積分",
         "B": "三角代換能處理所有根式積分",
         "C": "分部積分與部分分式法可以併用",
-        "D": "部分分式拆解的係數是唯一的\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+        "D": "部分分式拆解的係數是唯一的"
       },
-      "answer": "",
+      "answer": "A,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "(B) 錯誤，並非所有根式都能透過三角代換解決（例如 $\\sqrt{1+x^3}$）。",
       "q_vector": []
     },
     {
@@ -311,7 +311,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$x^2-9 = (x-3)(x+3)$。",
       "q_vector": []
     },
     {
@@ -321,7 +321,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\sin\\theta = x/2$，建構三角形鄰邊為 $\\sqrt{2^2-x^2}$。",
       "q_vector": []
     },
     {
@@ -331,7 +331,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "基本公式。",
       "q_vector": []
     },
     {
@@ -341,7 +341,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "重複線性因子的拆解原則。",
       "q_vector": []
     },
     {
@@ -351,7 +351,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$x^2+2x+5 = (x^2+2x+1)+4$。",
       "q_vector": []
     },
     {
@@ -361,7 +361,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "微分 $\\tan \\theta$。",
       "q_vector": []
     },
     {
@@ -371,7 +371,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "拆開為 $\\int (1 + 1/x) dx$。",
       "q_vector": []
     },
     {
@@ -381,7 +381,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$u = x^2-1 \\implies du = 2x dx$。",
       "q_vector": []
     },
     {
@@ -391,17 +391,17 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "不可約二次因子的分子設法。",
       "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "$\\int \\frac{1}{\\sqrt{4+x^2}} dx$ 令 $x = 2\\tan\\theta$ 後變為 $\\int$ __________ $d\\theta$。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP4.1 | KP4.2 | KP4.3 | KP4.4 | KP4.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 1,4,9 | 2,6,10 | 3,5 | 7 | 8 |\n| Q11-Q20| 11 | 11,13,19 | 12,15,18 | 15,18 | 14,16,17,20 |\n| Q21-Q30| 22 | 23,25,26,30 | 21,24 | 29 | 27,28 |",
+      "title": "$\\int \\frac{1}{\\sqrt{4+x^2}} dx$ 令 $x = 2\\tan\\theta$ 後變為 $\\int$ __________ $d\\theta$。",
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "代換後 $\\int \\frac{2\\sec^2\\theta}{2\\sec\\theta} d\\theta$。",
       "q_vector": []
     }
   ]

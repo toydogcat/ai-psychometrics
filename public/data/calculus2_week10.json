@@ -147,7 +147,7 @@
         "A": "0",
         "B": "1",
         "C": "1/2",
-        "D": "2\n\n### 2. 多選題 (Multiple Choice)"
+        "D": "2"
       },
       "answer": "",
       "kp": "",
@@ -164,7 +164,7 @@
         "C": "單調且有界數列必收斂",
         "D": "若 $\\lim a_n = 0$，則 $\\lim |a_n| = 0$"
       },
-      "answer": "Q11",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "$a_n = 0.9^n$",
         "D": "$a_n = \\sin(n\\pi/2)$"
       },
-      "answer": "Q12",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -209,7 +209,7 @@
         "C": "$(1.01)^n$",
         "D": "$\\frac{\\sin(n)}{n}$"
       },
-      "answer": "Q14",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -222,7 +222,7 @@
         "A": "$L$ 必須滿足 $L = f(L)$",
         "B": "$f$ 必須在 $L$ 處連續",
         "C": "數列必須是單調的",
-        "D": "$L$ 可能是複數\n\n### 3. 填充題 (Fill-in-the-blank)"
+        "D": "$L$ 可能是複數"
       },
       "answer": "",
       "kp": "",
@@ -234,7 +234,7 @@
       "type": "multiple",
       "title": "**Q16**: 數列 $a_n = \\frac{2n^3 - 1}{5n^3 + n^2}$ 的極限為 __________。",
       "options": {},
-      "answer": "Q16",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -244,7 +244,7 @@
       "type": "multiple",
       "title": "**Q17**: $\\lim_{n \\to \\infty} (1 + \\frac{2}{n})^n$ 的值為 __________。",
       "options": {},
-      "answer": "Q17",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
       "type": "multiple",
       "title": "**Q18**: 若 $a_n = \\sqrt{n^2 + n} - n$，則其極限為 __________。",
       "options": {},
-      "answer": "Q18",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -264,7 +264,7 @@
       "type": "multiple",
       "title": "**Q19**: 數列 $a_n = \\arctan(n)$ 當 $n \\to \\infty$ 時收斂至 __________。",
       "options": {},
-      "answer": "Q19",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -274,7 +274,7 @@
       "type": "multiple",
       "title": "**Q20**: 數列 $a_n = \\frac{n^2}{e^n}$ 的極限為 __________。",
       "options": {},
-      "answer": "Q20",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -372,7 +372,7 @@
     {
       "id": "Q30",
       "type": "fill",
-      "title": "**Q30**: 根據 $\\epsilon-N$ 定義，極限 $L$ 代表當 $n$ 足夠大時，$a_n$ 與 $L$ 的 __________ 可以任意小。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP10.1 | KP10.2 | KP10.3 | KP10.4 | KP10.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,1,0,0,1 | 0,0,1,0,1 | 0,0,1,1,0 | 0,1,0,0,0 | 1,0,0,0,0 |\n| Q6-Q10 | 0,0,0,0,0 | 1,1,0,1,0 | 0,0,0,0,1 | 1,0,0,0,0 | 0,0,1,0,1 |\n| Q11-Q15| 0,0,1,0,1 | 1,1,0,1,0 | 0,0,1,1,1 | 1,0,0,0,0 | 0,0,0,0,0 |\n| Q16-Q30| ...隨題目分佈... | | | | |\n*(註：詳細對應請參閱教師手冊)*",
+      "title": "**Q30**: 根據 $\\epsilon-N$ 定義，極限 $L$ 代表當 $n$ 足夠大時，$a_n$ 與 $L$ 的 __________ 可以任意小。",
       "options": {},
       "answer": "Q30",
       "kp": "",

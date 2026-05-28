@@ -147,7 +147,7 @@
         "A": "羅必達法則",
         "B": "兩路徑測試法",
         "C": "夾擠定理或極座標",
-        "D": "畫圖\n\n### 2. 多選題 (Multiple Choice)"
+        "D": "畫圖"
       },
       "answer": "Q10",
       "kp": "",
@@ -164,7 +164,7 @@
         "C": "$f(x, y) = \\frac{1}{x+y}$",
         "D": "$f(x, y) = e^{x+y}$"
       },
-      "answer": "Q11",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "其圖形是一條曲線",
         "D": "等高線位於 $xy$ 平面"
       },
-      "answer": "Q12",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -194,7 +194,7 @@
         "C": "極限一定存在",
         "D": "可能需要改用極座標法證明"
       },
-      "answer": "Q13",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -209,7 +209,7 @@
         "C": "圓錐",
         "D": "圓柱面"
       },
-      "answer": "Q14",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -222,9 +222,9 @@
         "A": "$(x, y) \\to (0, 0)$ 等價於 $r \\to 0^+$",
         "B": "若極限結果與 $\\theta$ 有關，則極限不存在",
         "C": "若結果與 $\\theta$ 無關，則極限存在",
-        "D": "極限結果必須是常數\n\n### 3. 填充題 (Fill-in-the-blank)"
+        "D": "極限結果必須是常數"
       },
-      "answer": "Q15",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -234,7 +234,7 @@
       "type": "multiple",
       "title": "**Q16**: $f(x, y) = \\sqrt{y-x}$ 的定義域為 $y \\ge $ __________。",
       "options": {},
-      "answer": "Q16",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -244,7 +244,7 @@
       "type": "multiple",
       "title": "**Q17**: $\\lim_{(x, y) \\to (0, 0)} \\frac{x^2 y^2}{x^2 + y^2} = $ __________。",
       "options": {},
-      "answer": "Q17",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
       "type": "multiple",
       "title": "**Q18**: $z = x^2 + y^2$ 在 $z=4$ 處的等高線半徑為 __________。",
       "options": {},
-      "answer": "Q18",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -264,7 +264,7 @@
       "type": "multiple",
       "title": "**Q19**: 多項式函數在全平面均為 __________。",
       "options": {},
-      "answer": "Q19",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -274,7 +274,7 @@
       "type": "multiple",
       "title": "**Q20**: 沿 $y = x$ 路徑趨近 $(0, 0)$，函數 $f(x, y) = \\frac{xy}{x^2+y^2}$ 的值恆為 __________。",
       "options": {},
-      "answer": "Q20",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -372,7 +372,7 @@
     {
       "id": "Q30",
       "type": "fill",
-      "title": "**Q30**: 多元微積分中，$x, y$ 被稱為 __________ 變數。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP14.1 | KP14.2 | KP14.3 | KP14.4 | KP14.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,0,0,0,0 | 0,1,0,0,0 | 0,0,0,0,1 | 0,0,1,0,0 | 0,0,0,0,1 |\n| Q6-Q10 | 0,0,0,0,0 | 0,0,0,0,0 | 1,1,1,0,1 | 0,0,0,1,0 | 0,0,0,0,0 |\n| Q11-Q30| ... | ... | ... | ... | ... |",
+      "title": "**Q30**: 多元微積分中，$x, y$ 被稱為 __________ 變數。",
       "options": {},
       "answer": "Q30",
       "kp": "",

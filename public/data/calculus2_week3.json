@@ -14,9 +14,9 @@
         "C": "$uv + \\int v du$",
         "D": "$f'g + fg'$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\int u dv = uv - \\int v du$。",
       "q_vector": []
     },
     {
@@ -29,9 +29,9 @@
         "C": "$\\ln x$",
         "D": "$1/x$"
       },
-      "answer": "",
+      "answer": "C",
       "kp": "",
-      "explanation": "",
+      "explanation": "根據 LIATE，對數函數優先選為 $u$。令 $u = \\ln x, dv = dx$。",
       "q_vector": []
     },
     {
@@ -44,9 +44,9 @@
         "C": "對數",
         "D": "三角"
       },
-      "answer": "",
+      "answer": "C",
       "kp": "",
-      "explanation": "",
+      "explanation": "L (Logarithmic) > I (Inverse Trig) > A (Algebraic) > T (Trigonometric) > E (Exponential)。",
       "q_vector": []
     },
     {
@@ -59,9 +59,9 @@
         "C": "$x^2e^x/2+C$",
         "D": "$e^x+C$"
       },
-      "answer": "",
+      "answer": "A",
       "kp": "",
-      "explanation": "",
+      "explanation": "$u=x, dv=e^x dx \\implies uv - \\int v du = x e^x - \\int e^x dx = x e^x - e^x + C = (x-1)e^x + C$。",
       "q_vector": []
     },
     {
@@ -74,9 +74,9 @@
         "C": "$e^x \\cos x$",
         "D": "$\\tan^{-1} x$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "表格法適合多項式（次數有限，微分趨於 0）乘以指數或三角函數。",
       "q_vector": []
     },
     {
@@ -89,9 +89,9 @@
         "C": "$\\tan x$",
         "D": "$\\sin^2 x$"
       },
-      "answer": "",
+      "answer": "A",
       "kp": "",
-      "explanation": "",
+      "explanation": "因為 $\\cos$ 次數為奇數，保留一個 $\\cos x$，將 $\\cos^2$ 化為 $1-\\sin^2$，令 $u = \\sin x$。",
       "q_vector": []
     },
     {
@@ -104,9 +104,9 @@
         "C": "$\\ln|\\sec x|$",
         "D": "$\\sec x$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "這是基本導函數的反向運算：$(\\tan x)' = \\sec^2 x$。",
       "q_vector": []
     },
     {
@@ -119,9 +119,9 @@
         "C": "$2\\sin x \\cos x$",
         "D": "$\\cos^2 x - 1$"
       },
-      "answer": "",
+      "answer": "A",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\sin^2 x = \\frac{1-\\cos 2x}{2}$。",
       "q_vector": []
     },
     {
@@ -134,9 +134,9 @@
         "C": "$\\ln|\\sin x|+C$",
         "D": "$-\\sec^2 x$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\int \\frac{\\sin x}{\\cos x} dx = -\\ln|\\cos x| + C = \\ln|\\sec x| + C$。",
       "q_vector": []
     },
     {
@@ -147,11 +147,11 @@
         "A": "$x \\ln x$",
         "B": "$e^x \\sin x$",
         "C": "$x^2 e^x$",
-        "D": "$\\sin^3 x$\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+        "D": "$\\sin^3 x$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "指數函數乘以三角函數（如 $e^x \\sin x$）在兩次分部積分後會回到原式。",
       "q_vector": []
     },
     {
@@ -164,9 +164,9 @@
         "C": "$\\int \\tan^{-1} x dx$",
         "D": "$\\int e^{x^2} dx$"
       },
-      "answer": "",
+      "answer": "A,B,C",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A, B) 為典型的 LIATE 組合；(C) $\\arctan x \\cdot 1$；(D) $\\int e^{x^2} dx$ 無初等函數解，不可用分部積分求得。",
       "q_vector": []
     },
     {
@@ -179,9 +179,9 @@
         "C": "皆為偶數則用倍角公式",
         "D": "任何情況都能用代換 $u = \\tan x$ 解決"
       },
-      "answer": "",
+      "answer": "A,B,C",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A, B) 為奇數次方的提取策略；(C) 偶數次方需降次；(D) 錯誤，$u=\\tan x$ 通常用於 $\\sec$ 為偶數的情況。",
       "q_vector": []
     },
     {
@@ -194,9 +194,9 @@
         "C": "決定了計算能否完成",
         "D": "必須是多項式"
       },
-      "answer": "",
+      "answer": "A,B,C",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A) 這是分部積分的目的；(B) 如循環積分；(C) $v du$ 若無法積分則分部積分失敗；(D) 錯誤。",
       "q_vector": []
     },
     {
@@ -209,9 +209,9 @@
         "C": "$\\int \\sin^2 x dx = \\frac{x}{2} - \\frac{\\sin 2x}{4} + C$",
         "D": "$\\int \\sec x dx = \\ln|\\sec x + \\tan x| + C$"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "皆為課本常見的重要積分公式與基本題型結果。",
       "q_vector": []
     },
     {
@@ -224,9 +224,9 @@
         "C": "最後一行若不為 0 則需以積分形式結尾",
         "D": "只適用於多項式乘以指數"
       },
-      "answer": "",
+      "answer": "A,B,C",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A, B, C) 皆為表格法正確操作步驟；(D) 錯誤，不限於指數。",
       "q_vector": []
     },
     {
@@ -239,9 +239,9 @@
         "C": "$\\sin x \\cos x = \\frac{1}{2}\\sin 2x$",
         "D": "$2\\cos^2 x = 1 + \\cos 2x$"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "皆為三角函數降次與變換的核心公式。",
       "q_vector": []
     },
     {
@@ -254,9 +254,9 @@
         "C": "$u$ 選 $e^{2x}$ 或 $\\cos 3x$ 皆可",
         "D": "可以用表格法直接求出最終解"
       },
-      "answer": "",
+      "answer": "A,B,C",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A, B) 指數與三角組合具循環性；(C) 選誰為 $u$ 只影響中間過程；(D) 表格法需以積分結尾，不能「直接」求出，需列方程。",
       "q_vector": []
     },
     {
@@ -269,9 +269,9 @@
         "C": "將剩餘 $\\tan^2$ 化為 $\\sec^2 - 1$",
         "D": "令 $u = \\sec x$"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "tan 次數為奇數時，提取 $\\sec x \\tan x$ 並令 $u = \\sec x$ 是標準作法。",
       "q_vector": []
     },
     {
@@ -284,9 +284,9 @@
         "C": "常用於弧長計算",
         "D": "結果包含 $\\ln|\\sec x + \\tan x|$"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "這是三角積分中最著名的循環積分題型，常用於求曲線弧長。",
       "q_vector": []
     },
     {
@@ -297,11 +297,11 @@
         "A": "$[uv]_a^b - \\int_a^b v du$",
         "B": "必須先求出不定積分再代值",
         "C": "代換過程可能改變上下限",
-        "D": "幾何意義與區域面積相關\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+        "D": "幾何意義與區域面積相關"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "定積分公式 $[uv]_a^b - \\int_a^b v du$ 涵蓋了所有選項描述。",
       "q_vector": []
     },
     {
@@ -311,7 +311,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$u=x, dv=\\sin x dx \\implies -x \\cos x - \\int (-\\cos x) dx$。",
       "q_vector": []
     },
     {
@@ -321,7 +321,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "表格法正負交替。",
       "q_vector": []
     },
     {
@@ -331,7 +331,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\int \\frac{1+\\cos 2x}{2} dx = \\frac{x}{2} + \\frac{1}{2} \\cdot \\frac{\\sin 2x}{2}$。",
       "q_vector": []
     },
     {
@@ -341,7 +341,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\sec$ 次數為偶數，保留 $\\sec^2$ 給 $du$。",
       "q_vector": []
     },
     {
@@ -351,7 +351,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "LIATE 縮寫。",
       "q_vector": []
     },
     {
@@ -361,7 +361,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "與 $\\int \\ln x dx$ 類似。",
       "q_vector": []
     },
     {
@@ -371,7 +371,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\int \\frac{1}{2}\\sin 2x dx = -\\frac{1}{4}\\cos 2x$。",
       "q_vector": []
     },
     {
@@ -381,7 +381,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\int (\\sec^2 x - 1) dx$。",
       "q_vector": []
     },
     {
@@ -391,17 +391,17 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "根據分部積分公式開頭部分。",
       "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "$\\int_1^e \\ln x dx = $ __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP3.1 | KP3.2 | KP3.3 | KP3.4 | KP3.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 1,2,3,4 | 5 | 6,8 | 7,9 | 10 |\n| Q11-Q20| 11,13,14 | 15 | 12,16 | 18 | 17,19,20 |\n| Q21-Q30| 21,25,26,29 | 22 | 23,27 | 24,28 | 30 |",
+      "title": "$\\int_1^e \\ln x dx = $ __________。",
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$[x\\ln x - x]_1^e = (e-e) - (0-1) = 1$。",
       "q_vector": []
     }
   ]

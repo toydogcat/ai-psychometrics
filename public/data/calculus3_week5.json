@@ -147,7 +147,7 @@
         "A": "$\\frac{\\partial}{\\partial x} + \\frac{\\partial}{\\partial y}$",
         "B": "$\\langle \\frac{\\partial}{\\partial x}, \\frac{\\partial}{\\partial y}, \\frac{\\partial}{\\partial z} \\rangle$",
         "C": "$f_x + f_y$",
-        "D": "$dx + dy$\n\n### 2. 多選題 (Multiple Choice) - 10 題"
+        "D": "$dx + dy$"
       },
       "answer": "",
       "kp": "",
@@ -297,7 +297,7 @@
         "A": "$f_x, f_y, f_z$",
         "B": "$u_1, u_2, u_3$",
         "C": "加法與乘法",
-        "D": "外積 (Cross Product)\n\n### 3. 填充題 (Fill-in-the-blank) - 10 題"
+        "D": "外積 (Cross Product)"
       },
       "answer": "",
       "kp": "",
@@ -397,7 +397,7 @@
     {
       "id": "Q30",
       "type": "fill",
-      "title": "**Q30**: 梯度場中，積分曲線（流線）總是與等值線 __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP5.1 | KP5.2 | KP5.3 | KP5.4 | KP5.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 4, 7 | 6, 10 | 5, 9 | 2, 3 | 1, 8 |\n| Q11-Q20| 14 | 11, 16, 19 | 12, 18, 20 | 15 | 13, 17 |\n| Q21-Q30| 22 | 21 | 25 | 23, 27, 29 | 24, 26, 28, 30 |",
+      "title": "**Q30**: 梯度場中，積分曲線（流線）總是與等值線 __________。",
       "options": {},
       "answer": "Q30",
       "kp": "",

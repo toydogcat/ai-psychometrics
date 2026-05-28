@@ -14,9 +14,9 @@
         "C": "$\\pi$",
         "D": "$1$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "找一個角度 $\\theta \\in [-\\pi/2, \\pi/2]$ 使得 $\\sin \\theta = 1$。故 $\\theta = \\pi/2$。",
       "q_vector": []
     },
     {
@@ -29,9 +29,9 @@
         "C": "$\\sec^2 x$",
         "D": "$1/(1-x^2)$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "這是基本公式 $\\frac{d}{dx}(\\arctan x) = \\frac{1}{1+x^2}$。",
       "q_vector": []
     },
     {
@@ -44,9 +44,9 @@
         "C": "$e$",
         "D": "$1/2$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "根據定義 $\\cosh 0 = \\frac{e^0 + e^{-0}}{2} = \\frac{1+1}{2} = 1$。",
       "q_vector": []
     },
     {
@@ -59,9 +59,9 @@
         "C": "$\\cosh x$",
         "D": "$\\text{sech}^2 x$"
       },
-      "answer": "",
+      "answer": "A",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\frac{d}{dx}(\\frac{e^x+e^{-x}}{2}) = \\frac{e^x-e^{-x}}{2} = \\sinh x$。",
       "q_vector": []
     },
     {
@@ -74,9 +74,9 @@
         "C": "微分方程",
         "D": "函數定義域"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "羅必達法則是處理不定型極限的強大工具。",
       "q_vector": []
     },
     {
@@ -89,9 +89,9 @@
         "C": "$\\infty$",
         "D": "不存在"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "使用羅必達法則：$\\lim_{x \\to 0} \\frac{\\cos x}{1} = \\cos 0 = 1$。",
       "q_vector": []
     },
     {
@@ -104,9 +104,9 @@
         "C": "$e^x - e^{-x}$",
         "D": "$\\frac{1}{\\sin x}$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "雙曲正弦定義為 $\\frac{e^x-e^{-x}}{2}$。",
       "q_vector": []
     },
     {
@@ -119,9 +119,9 @@
         "C": "0",
         "D": "$1$"
       },
-      "answer": "",
+      "answer": "A",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\tan(\\pi/4) = 1$ 且 $\\pi/4 \\in (-\\pi/2, \\pi/2)$。",
       "q_vector": []
     },
     {
@@ -134,9 +134,9 @@
         "C": "$\\sin^{-1} x + C$",
         "D": "$x + C$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "因為 $(\\tan^{-1} x)' = \\frac{1}{1+x^2}$，故積分為 $\\tan^{-1} x + C$。",
       "q_vector": []
     },
     {
@@ -147,11 +147,11 @@
         "A": "0",
         "B": "1",
         "C": "$\\cosh 2x$",
-        "D": "$-1$\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+        "D": "$-1$"
       },
-      "answer": "",
+      "answer": "B",
       "kp": "",
-      "explanation": "",
+      "explanation": "這是雙曲函數最基本的恆等式，類比於 $\\cos^2 \\theta + \\sin^2 \\theta = 1$。",
       "q_vector": []
     },
     {
@@ -164,9 +164,9 @@
         "C": "$0 \\cdot \\infty$",
         "D": "$1^\\infty$"
       },
-      "answer": "",
+      "answer": "A,B",
       "kp": "",
-      "explanation": "",
+      "explanation": "羅必達法則直接適用於 $0/0$ 與 $\\infty/\\infty$。其他形式（如 $0 \\cdot \\infty, 1^\\infty$）需轉換後才能使用。",
       "q_vector": []
     },
     {
@@ -179,9 +179,9 @@
         "C": "是奇函數",
         "D": "導函數恆正"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A) 定義域正確；(B) 值域正確；(C) $\\sin^{-1}(-x) = -\\sin^{-1} x$；(D) 導數 $1/\\sqrt{1-x^2}$ 在 $(-1, 1)$ 恆正。",
       "q_vector": []
     },
     {
@@ -194,9 +194,9 @@
         "C": "$\\cosh x \\ge 1$ 對於所有實數 $x$",
         "D": "$\\tanh x$ 的值域為 $(-1, 1)$"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A) $\\sinh(-x) = -\\sinh x$；(B) $\\cosh(-x) = \\cosh x$；(C) 最小值為 $\\cosh 0 = 1$；(D) 漸近於 $\\pm 1$。",
       "q_vector": []
     },
     {
@@ -209,9 +209,9 @@
         "C": "$(\\sinh x)' = \\cosh x$",
         "D": "$(\\tanh x)' = \\text{sech}^2 x$"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "這些皆為本週學習的核心導函數公式。注意 $\\cos^{-1} x$ 帶負號，而 $\\sinh x$ 的微分不帶負號。",
       "q_vector": []
     },
     {
@@ -224,9 +224,9 @@
         "C": "$\\lim_{x \\to 0} (1/x - 1/\\sin x)$",
         "D": "$\\lim_{x \\to 1} \\frac{x-1}{x^2-1}$"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A) $0 \\cdot (-\\infty)$；(B) $1^\\infty$ 型（取對數）；(C) $\\infty - \\infty$ 型（通分）；(D) $0/0$ 型。",
       "q_vector": []
     },
     {
@@ -239,9 +239,9 @@
         "C": "$\\sinh(x+y) = \\sinh x \\cosh y + \\cosh x \\sinh y$",
         "D": "$\\cosh x + \\sinh x = e^x$"
       },
-      "answer": "",
+      "answer": "A,B,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "這些是雙曲函數的基本運算性質與加法公式。",
       "q_vector": []
     },
     {
@@ -254,9 +254,9 @@
         "C": "$\\arctan: (-\\pi/2, \\pi/2)$",
         "D": "$\\text{arcsec}: [0, \\pi]$"
       },
-      "answer": "",
+      "answer": "A,B,C",
       "kp": "",
-      "explanation": "",
+      "explanation": "(A, B, C) 皆正確。(D) $\\text{arcsec}$ 的限制通常依教材而定，但 Stewart 常用 $[0, \\pi/2) \\cup [\\pi, 3\\pi/2)$。",
       "q_vector": []
     },
     {
@@ -269,9 +269,9 @@
         "C": "$\\int \\frac{1}{\\sqrt{1-x^2}} dx = \\sin^{-1} x + C$",
         "D": "$\\int \\sinh x dx = -\\cosh x + C$"
       },
-      "answer": "",
+      "answer": "A,B,C",
       "kp": "",
-      "explanation": "",
+      "explanation": "(D) 錯誤，$\\int \\sinh x dx = \\cosh x + C$（無負號）。",
       "q_vector": []
     },
     {
@@ -284,9 +284,9 @@
         "C": "分母導數不為 0",
         "D": "極限點必須是 0"
       },
-      "answer": "",
+      "answer": "A,B,C",
       "kp": "",
-      "explanation": "",
+      "explanation": "(D) 錯誤，極限點可以是任何實數或 $\\pm \\infty$。",
       "q_vector": []
     },
     {
@@ -297,11 +297,11 @@
         "A": "$e^x$",
         "B": "$\\ln x$",
         "C": "$2^x$",
-        "D": "$\\sinh x$\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+        "D": "$\\sinh x$"
       },
-      "answer": "",
+      "answer": "A,C,D",
       "kp": "",
-      "explanation": "",
+      "explanation": "指數函數（包括 $e^x, 2^x, \\sinh x$）的增長速度皆高於任何多項式函數。$\\ln x$ 增長最慢。",
       "q_vector": []
     },
     {
@@ -311,7 +311,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\sin(\\pi/6) = 1/2$。",
       "q_vector": []
     },
     {
@@ -321,7 +321,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "連鎖律 $\\frac{1}{\\sqrt{1-(2x)^2}} \\cdot 2$。",
       "q_vector": []
     },
     {
@@ -331,7 +331,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "羅必達法則 $\\lim_{x \\to \\infty} \\frac{1/x}{1} = 0$。",
       "q_vector": []
     },
     {
@@ -341,7 +341,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "基本定義。",
       "q_vector": []
     },
     {
@@ -351,7 +351,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "代換 $u=3x$。",
       "q_vector": []
     },
     {
@@ -361,7 +361,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "令 $\\theta = \\sin^{-1} x \\implies \\sin \\theta = x$，則 $\\cos \\theta = \\sqrt{1-\\sin^2 \\theta} = \\sqrt{1-x^2}$。",
       "q_vector": []
     },
     {
@@ -371,7 +371,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "羅必達法則或導數定義。",
       "q_vector": []
     },
     {
@@ -381,7 +381,7 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$\\lim_{x \\to \\infty} \\frac{e^x-e^{-x}}{e^x+e^{-x}} = \\lim_{x \\to \\infty} \\frac{1-e^{-2x}}{1+e^{-2x}} = 1$。",
       "q_vector": []
     },
     {
@@ -391,17 +391,17 @@
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "連鎖律。",
       "q_vector": []
     },
     {
       "id": "Q30",
       "type": "fill",
-      "title": "若 $y = \\cos^{-1} x$，則 $dy/dx$ 在 $x=0$ 的值為 __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP2.1 | KP2.2 | KP2.3 | KP2.4 | KP2.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 1,8 | 2,9 | 3,7,10 | 4 | 5,6 |\n| Q11-Q20| 12,17 | 14,18 | 13,16 | 14,18 | 11,15,19,20 |\n| Q21-Q30| 21,26 | 22,30 | 24,28 | 25,29 | 23,27 |",
+      "title": "若 $y = \\cos^{-1} x$，則 $dy/dx$ 在 $x=0$ 的值為 __________。",
       "options": {},
       "answer": "",
       "kp": "",
-      "explanation": "",
+      "explanation": "$(\\cos^{-1} x)' = -1/\\sqrt{1-x^2}$，代入 $x=0$ 得 $-1/1 = -1$。",
       "q_vector": []
     }
   ]

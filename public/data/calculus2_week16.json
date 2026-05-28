@@ -147,7 +147,7 @@
         "A": "$dx/dy$",
         "B": "$(y dx - x dy)/y^2$",
         "C": "$dx - dy$",
-        "D": "$y dx + x dy$\n\n### 2. 多選題 (Multiple Choice)"
+        "D": "$y dx + x dy$"
       },
       "answer": "Q10",
       "kp": "",
@@ -164,7 +164,7 @@
         "C": "包含所有通過該點的切線",
         "D": "其法向量與梯度有關（後續課程詳述）"
       },
-      "answer": "Q11",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "函數在該點不連續",
         "D": "圖形在該點有尖角或褶皺"
       },
-      "answer": "Q12",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -194,7 +194,7 @@
         "C": "始終大於 $\\Delta z$",
         "D": "是微積分的基本工具之一"
       },
-      "answer": "Q13",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -209,7 +209,7 @@
         "C": "$f(x, y) = |x| + |y|$",
         "D": "$f(x, y) = e^{x-y}$"
       },
-      "answer": "Q14",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -222,9 +222,9 @@
         "A": "相對誤差是無單位的",
         "B": "$dz$ 通常是誤差的上界估計",
         "C": "百分誤差是相對誤差乘以 100",
-        "D": "誤差只能是正數\n\n### 3. 填充題 (Fill-in-the-blank)"
+        "D": "誤差只能是正數"
       },
-      "answer": "Q15",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -234,7 +234,7 @@
       "type": "multiple",
       "title": "**Q16**: $z = x^3 y^2$ 的全微分 $dz = $ __________。",
       "options": {},
-      "answer": "Q16",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -244,7 +244,7 @@
       "type": "multiple",
       "title": "**Q17**: 點 $(2, 1, 5)$ 處的切平面方程式為 $z - 5 = 2(x - 2) + 3(y - 1)$，則 $f_y(2, 1) = $ __________。",
       "options": {},
-      "answer": "Q17",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
       "type": "multiple",
       "title": "**Q18**: 函數 $f(x, y)$ 在 $(a, b)$ 連續是可微的 __________ (必要/充分) 條件。",
       "options": {},
-      "answer": "Q18",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -264,7 +264,7 @@
       "type": "multiple",
       "title": "**Q19**: 若 $z = \\sin(xy)$，則在原點的線性逼近 $L(x, y) = $ __________。",
       "options": {},
-      "answer": "Q19",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -274,7 +274,7 @@
       "type": "multiple",
       "title": "**Q20**: $1.02^3 \\times 0.99^2$ 的近似值為 __________。",
       "options": {},
-      "answer": "Q20",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -372,7 +372,7 @@
     {
       "id": "Q30",
       "type": "fill",
-      "title": "**Q30**: 學習切平面的主要目的是將非線性問題 __________ 化。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP16.1 | KP16.2 | KP16.3 | KP16.4 | KP16.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,0,0,0,0 | 0,1,0,0,0 | 0,0,0,1,0 | 0,0,1,0,0 | 0,0,0,0,1 |\n| Q6-Q10 | 0,0,0,1,0 | 1,0,0,0,0 | 0,0,1,0,0 | 0,1,0,0,0 | 0,0,1,0,1 |\n| Q11-Q30| ... | ... | ... | ... | ... |",
+      "title": "**Q30**: 學習切平面的主要目的是將非線性問題 __________ 化。",
       "options": {},
       "answer": "Q30",
       "kp": "",

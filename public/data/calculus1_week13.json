@@ -147,7 +147,7 @@
         "A": "$f(x) + g(x)$",
         "B": "$f(x)^2 + g(x)^2$",
         "C": "$f'(x) + g'(x)$",
-        "D": "$\\sqrt{f(x) + g(x)}$\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+        "D": "$\\sqrt{f(x) + g(x)}$"
       },
       "answer": "",
       "kp": "",
@@ -297,7 +297,7 @@
         "A": "$\\int x^3 dx = \\frac{1}{4}x^4 + C$",
         "B": "$\\int \\frac{1}{x} dx = \\ln|x| + C$",
         "C": "$\\int \\cos x dx = \\sin x + C$",
-        "D": "$\\int k dx = kx + C$\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+        "D": "$\\int k dx = kx + C$"
       },
       "answer": "",
       "kp": "",

@@ -147,7 +147,7 @@
         "A": "等於 $\\mathbf{0}$",
         "B": "不等於 $\\mathbf{0}$ 且連續",
         "C": "為常數",
-        "D": "不存在\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+        "D": "不存在"
       },
       "answer": "Q10",
       "kp": "",
@@ -164,7 +164,7 @@
         "C": "$\\frac{d}{dt}[f(t)\\mathbf{u}(t)] = f'(t)\\mathbf{u} + f(t)\\mathbf{u}'$\n    -",
         "D": "$\\frac{d}{dt}|\\mathbf{u}(t)| = |\\mathbf{u}'(t)|$"
       },
-      "answer": "Q11",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "$\\mathbf{N}(t)$ 與 $\\mathbf{B}(t)$",
         "D": "$\\mathbf{T}(t)$ 與 $\\mathbf{B}(t)$"
       },
-      "answer": "Q12",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -194,7 +194,7 @@
         "C": "$|\\mathbf{r}' \\times \\mathbf{r}''|/|\\mathbf{r}'|^3$",
         "D": "$1/\\rho$ ($\\rho$ 為曲率半徑)"
       },
-      "answer": "Q13",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -209,7 +209,7 @@
         "C": "起點的坐標",
         "D": "加速度的方向"
       },
-      "answer": "Q14",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -224,7 +224,7 @@
         "C": "它的法向量 $\\mathbf{N}$ 在 $z$ 方向為 0",
         "D": "曲率恆為 0"
       },
-      "answer": "Q15",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -239,7 +239,7 @@
         "C": "曲率為常數",
         "D": "它是直線"
       },
-      "answer": "Q16",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
         "C": "$s$ 與 $t$ 無關",
         "D": "使用 $s$ 參數化時，切向量即為單位切向量"
       },
-      "answer": "Q17",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -269,7 +269,7 @@
         "C": "加速度垂直於速度",
         "D": "曲率為 0"
       },
-      "answer": "Q18",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -284,7 +284,7 @@
         "C": "$\\mathbf{r}(s) = \\langle s^2, s^4, s^6 \\rangle$\n    -",
         "D": "$\\mathbf{r}(w) = \\langle \\sin w, \\sin^2 w, \\sin^3 w \\rangle$"
       },
-      "answer": "Q19",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -297,9 +297,9 @@
         "A": "令兩曲線的 $x, y, z$ 分量分別相等",
         "B": "使用不同的參數名（如 $t$ 與 $s$）",
         "C": "求解參數方程組",
-        "D": "只需考慮 $x$ 坐標相等\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+        "D": "只需考慮 $x$ 坐標相等"
       },
-      "answer": "Q20",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -397,7 +397,7 @@
     {
       "id": "Q30",
       "type": "fill",
-      "title": "**Q30**: 單位法向量 $\\mathbf{N}$ 的長度為 __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n| 題號 | KP3.1 | KP3.2 | KP3.3 | KP3.4 | KP3.5 |\n|---|---|---|---|---|---|\n| Q1-Q10 | 1, 10 | 2, 9 | 5, 6 | 3, 7 | 4, 8 |\n| Q11-Q20| 15, 19, 20 | 11, 18 | 14, 17 | 12 | 13, 16 |\n| Q21-Q30| 21 | 23, 24 | 26, 28 | 25, 30 | 22, 27, 29 |",
+      "title": "**Q30**: 單位法向量 $\\mathbf{N}$ 的長度為 __________。",
       "options": {},
       "answer": "Q30",
       "kp": "",

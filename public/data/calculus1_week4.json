@@ -252,7 +252,7 @@
         "C": "函數圖形可以與水平漸近線相交。",
         "D": "函數圖形最多只能有兩條水平漸近線 (對應 $x \\to \\infty$ 和 $x \\to -\\infty$)。"
       },
-      "answer": "ABCD",
+      "answer": "A,B,C,D",
       "kp": "KP4.1/4.2",
       "explanation": "A 對。B 對。C 對，函數可以在有限區間穿過漸近線。D 對，$x \\to \\infty$ 和 $x \\to -\\infty$ 各提供最多一條。",
       "q_vector": [
@@ -275,7 +275,7 @@
         "C": "$y = \\sin x$",
         "D": "$y = \\begin{cases} 0 & x < 0 \\\\ x & x \\ge 0 \\end{cases}$"
       },
-      "answer": "ABD",
+      "answer": "A,B,D",
       "kp": "KP4.5",
       "explanation": "A 有尖角。B 有垂直切線。D 左極限斜率為0，右極限斜率為1，不相等 (也是尖角)。C $y=\\sin x$ 處處可微。",
       "q_vector": [
@@ -298,7 +298,7 @@
         "C": "若 $P$ 次數大於 $Q$ 次數，必無水平漸近線。",
         "D": "使 $Q(x)=0$ 的 $x$ 值為垂直漸近線的位置。"
       },
-      "answer": "ABCD",
+      "answer": "A,B,C,D",
       "kp": "KP4.1/4.2",
       "explanation": "這是尋找有理函數漸近線的標準法則。",
       "q_vector": [
@@ -321,7 +321,7 @@
         "C": "$f'(x)$ 描述了 $f(x)$ 變化率的分布。",
         "D": "若 $f(x)$ 是常數，則 $f'(x) = 0$。"
       },
-      "answer": "ACD",
+      "answer": "A,C,D",
       "kp": "KP4.4",
       "explanation": "B 錯。導數的定義域是原函數定義域的子集 (例如 $f(x)=\\sqrt{x}$ 在 $x \\ge 0$ 定義，但 $f'(x)$ 在 $x>0$ 定義)。",
       "q_vector": [
@@ -344,7 +344,7 @@
         "C": "$\\lim_{x \\to \\infty} \\sin x$ 存在",
         "D": "$\\lim_{x \\to \\pi/2^-} \\tan x = \\infty$"
       },
-      "answer": "ABD",
+      "answer": "A,B,D",
       "kp": "KP4.1/4.2",
       "explanation": "C 錯，$\\sin x$ 在 $[-1, 1]$ 震盪，無極限。",
       "q_vector": [
@@ -367,7 +367,7 @@
         "C": "$\\lim_{x \\to 2} f(x) = f(2)$。",
         "D": "該極限值等於 $f(2)$。"
       },
-      "answer": "ABC",
+      "answer": "A,B,C",
       "kp": "KP4.3/4.5",
       "explanation": "D 錯。極限值為 $f'(2)$，不是 $f(2)$。",
       "q_vector": [
@@ -390,7 +390,7 @@
         "C": "$x = -1$ 是垂直漸近線。",
         "D": "$x = -1$ 處有可去不連續點。"
       },
-      "answer": "ABD",
+      "answer": "A,B,D",
       "kp": "KP4.1/4.2",
       "explanation": "$f(x) = \\frac{(x-1)(x+1)}{(x-2)(x+1)}$。當 $x \\to \\infty$ 極限為 1，A 對。當 $x \\to 2$ 分母為 0，B 對。當 $x \\to -1$ 極限為 $-2/-3 = 2/3$，是可去不連續點，D 對，C 錯。",
       "q_vector": [
@@ -413,7 +413,7 @@
         "C": "$y'$",
         "D": "$\\frac{d}{dx}[f(x)]$"
       },
-      "answer": "ABCD",
+      "answer": "A,B,C,D",
       "kp": "KP4.4",
       "explanation": "皆為常見符號。",
       "q_vector": [
@@ -436,7 +436,7 @@
         "C": "極限可以為 $\\infty$ 或 $-\\infty$。",
         "D": "若分母次數較高，極限為 0。"
       },
-      "answer": "ACD",
+      "answer": "A,C,D",
       "kp": "KP4.2",
       "explanation": "B 錯，有理函數求無窮極限常直接用最高次項比值判斷，不一定需要羅必達。",
       "q_vector": [
@@ -459,7 +459,7 @@
         "C": "$\\lim_{h \\to 0} \\frac{0}{h} = 0$",
         "D": "證明了常數的變化率為 0。\n\n**填空題 (10題)**"
       },
-      "answer": "ABCD",
+      "answer": "A,B,C,D",
       "kp": "KP4.3",
       "explanation": "完整呈現了常數函數導數為 0 的證明過程。",
       "q_vector": [

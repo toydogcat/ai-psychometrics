@@ -147,7 +147,7 @@
         "A": "$y=b$",
         "B": "$x=a$",
         "C": "$z=0$",
-        "D": "$x+y=a+b$\n\n### 2. 多選題 (Multiple Choice)"
+        "D": "$x+y=a+b$"
       },
       "answer": "Q10",
       "kp": "",
@@ -164,7 +164,7 @@
         "C": "$u = e^x \\cos y$",
         "D": "$u = \\sin x \\sin y$"
       },
-      "answer": "Q11",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "$f_{yxz}$",
         "D": "$f_{zxy}$"
       },
-      "answer": "Q12",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -194,7 +194,7 @@
         "C": "計算 $f_x$ 時必須將 $y$ 視為常數",
         "D": "偏導數記號必須用 $\\partial$"
       },
-      "answer": "Q13",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -209,7 +209,7 @@
         "C": "函數連續",
         "D": "函數不連續"
       },
-      "answer": "Q14",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -222,9 +222,9 @@
         "A": "$F$ 可微",
         "B": "$F_z \\neq 0$",
         "C": "$F = 0$",
-        "D": "$z$ 必須能寫成解析式\n\n### 3. 填充題 (Fill-in-the-blank)"
+        "D": "$z$ 必須能寫成解析式"
       },
-      "answer": "Q15",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -234,7 +234,7 @@
       "type": "multiple",
       "title": "**Q16**: $f(x, y) = x^2 y + y^3$，則 $f_{yy} = $ __________。",
       "options": {},
-      "answer": "Q16",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -244,7 +244,7 @@
       "type": "multiple",
       "title": "**Q17**: 波動方程 $\\frac{\\partial^2 u}{\\partial t^2} = a^2 \\frac{\\partial^2 u}{\\partial x^2}$ 中，$a$ 代表波的 __________。",
       "options": {},
-      "answer": "Q17",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
       "type": "multiple",
       "title": "**Q18**: 若 $f_x = 2x+y$ 且 $f_y = x+2y$，則 $f_{xy} = $ __________。",
       "options": {},
-      "answer": "Q18",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -264,7 +264,7 @@
       "type": "multiple",
       "title": "**Q19**: $f(x, y) = e^{xy}$，則 $f_{xy}(0, 1) = $ __________。",
       "options": {},
-      "answer": "Q19",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -274,7 +274,7 @@
       "type": "multiple",
       "title": "**Q20**: 調和函數在物理上常用於描述 __________ 狀態下的溫度分佈。",
       "options": {},
-      "answer": "Q20",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -372,7 +372,7 @@
     {
       "id": "Q30",
       "type": "fill",
-      "title": "**Q30**: 隱函數 $z + \\ln z = x + y$ 中，$\\frac{\\partial z}{\\partial y} = $ __________。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP15.1 | KP15.2 | KP15.3 | KP15.4 | KP15.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,0,0,0,0 | 0,1,1,0,0 | 0,1,0,0,0 | 0,0,1,1,0 | 0,0,0,1,0 |\n| Q6-Q10 | 1,1,0,0,0 | 0,0,0,0,1 | 0,1,0,0,0 | 0,0,1,0,0 | 1,0,0,0,0 |\n| Q11-Q30| ... | ... | ... | ... | ... |",
+      "title": "**Q30**: 隱函數 $z + \\ln z = x + y$ 中，$\\frac{\\partial z}{\\partial y} = $ __________。",
       "options": {},
       "answer": "Q30",
       "kp": "",

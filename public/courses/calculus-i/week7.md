@@ -174,13 +174,13 @@ print("隱函數微分 dy/dx:", dy_dx)
     (D) $\tan^{-1}(\tan x) = x$
 
 ### 填充題 (10題)
-21. $\frac{d}{dx}(\tan^{-1} x) = \underline{\frac{1}{1+x^2}}$。
-22. 若 $x y = 2$，則 $\frac{dy}{dx} = \underline{-\frac{y}{x}}$（或 $-\frac{2}{x^2}$）。
-23. $\frac{d}{dx}(\ln x) = \underline{\frac{1}{x}}$。
-24. $\frac{d}{dx}(\sin^{-1} x) = \underline{\frac{1}{\sqrt{1-x^2}}}$。
-25. 函數 $y = \ln(5x)$ 的導數為 $\underline{\frac{1}{x}}$。
+21. $\frac{d}{dx}(\tan^{-1} x) = \underline{\hspace{1cm}}$。
+22. 若 $x y = 2$，則 $\frac{dy}{dx} = \underline{\hspace{1cm}}$。
+23. $\frac{d}{dx}(\ln x) = \underline{\hspace{1cm}}$。
+24. $\frac{d}{dx}(\sin^{-1} x) = \underline{\hspace{1cm}}$。
+25. 函數 $y = \ln(5x)$ 的導數為 $\underline{\hspace{1cm}}$。
 26. 若 $y = x^{\sin x}$，取自然對數後得 $\ln y = \underline{\hspace{1cm}}$。
 27. 對 $y^3$ 關於 $x$ 微分，結果為 $\underline{\hspace{1cm}}$。
-28. $\frac{d}{dx}(\ln(x^4)) = \underline{\frac{4}{x}}$。
-29. 方程式 $x^2 + y^2 = 1$ 的 $y'$ 隱函數表示為 $\underline{-\frac{x}{y}}$。
-30. 反餘弦函數的導數 $\frac{d}{dx}(\cos^{-1} x) = \underline{-\frac{1}{\sqrt{1-x^2}}}$。
+28. $\frac{d}{dx}(\ln(x^4)) = \underline{\hspace{1cm}}$。
+29. 方程式 $x^2 + y^2 = 1$ 的 $y'$ 隱函數表示為 $\underline{\hspace{1cm}}$。
+30. 反餘弦函數的導數 $\frac{d}{dx}(\cos^{-1} x) = \underline{\hspace{1cm}}$。

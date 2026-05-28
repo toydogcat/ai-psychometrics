@@ -147,7 +147,7 @@
         "A": "發散",
         "B": "收斂",
         "C": "條件收斂",
-        "D": "震盪\n\n### 2. 多選題 (Multiple Choice)"
+        "D": "震盪"
       },
       "answer": "",
       "kp": "",
@@ -164,7 +164,7 @@
         "C": "$\\sum \\frac{n!}{10^n}$",
         "D": "$\\sum (-1)^n \\frac{1}{\\sqrt{n}}$"
       },
-      "answer": "Q11",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "調和級數是絕對收斂的",
         "D": "幾何級數 $|r|<1$ 是絕對收斂的"
       },
-      "answer": "Q12",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -222,7 +222,7 @@
         "A": "幾何級數",
         "B": "望遠鏡級數",
         "C": "調和級數",
-        "D": "任意交錯級數\n\n### 3. 填充題 (Fill-in-the-blank)"
+        "D": "任意交錯級數"
       },
       "answer": "",
       "kp": "",
@@ -234,7 +234,7 @@
       "type": "multiple",
       "title": "**Q16**: $\\sum_{n=1}^{\\infty} \\frac{1}{3^n}$ 的和為 __________。",
       "options": {},
-      "answer": "Q16",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -244,7 +244,7 @@
       "type": "multiple",
       "title": "**Q17**: 級數 $\\sum \\frac{1}{n^p}$ 在 $p \\le 1$ 時 __________。",
       "options": {},
-      "answer": "Q17",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
       "type": "multiple",
       "title": "**Q18**: 若 $\\sum a_n$ 絕對收斂，則 $\\sum a_n \\sin n$ 必定 __________。",
       "options": {},
-      "answer": "Q18",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -264,7 +264,7 @@
       "type": "multiple",
       "title": "**Q19**: 使用比值檢定法，$\\sum \\frac{2^n}{n!}$ 的極限比值 $\\rho = $ __________。",
       "options": {},
-      "answer": "Q19",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -274,7 +274,7 @@
       "type": "multiple",
       "title": "**Q20**: 交錯調和級數 $1 - 1/2 + 1/3 - \\dots$ 是 __________ 收斂的。",
       "options": {},
-      "answer": "Q20",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -372,7 +372,7 @@
     {
       "id": "Q30",
       "type": "fill",
-      "title": "**Q30**: 比值檢定法主要適用於包含 __________ 或指數函數的級數。\n\n---\n\n## 五、 Q 矩陣 (Q-matrix)\n\n| 題號 | KP11.1 | KP11.2 | KP11.3 | KP11.4 | KP11.5 |\n|---|---|---|---|---|---|\n| Q1-Q5 | 1,0,1,1,0 | 1,1,0,1,0 | 0,0,1,0,0 | 0,0,0,0,1 | 0,0,0,0,0 |\n| Q6-Q10 | 0,0,0,0,0 | 0,1,0,0,0 | 0,1,0,0,1 | 0,0,0,1,0 | 1,0,1,0,0 |\n| Q11-Q30| ... | ... | ... | ... | ... |",
+      "title": "**Q30**: 比值檢定法主要適用於包含 __________ 或指數函數的級數。",
       "options": {},
       "answer": "Q30",
       "kp": "",

@@ -42,6 +42,13 @@ def parse_week_md(filepath):
         num = int(num_match.group(1))
         text = num_match.group(2)
         
+        # Clean lines starting with # (markdown headers), --- (rules), and | (tables)
+        lines = [line for line in text.split('\n') 
+                 if not line.strip().startswith('#') 
+                 and not line.strip().startswith('---') 
+                 and not line.strip().startswith('|')]
+        text = '\n'.join(lines).strip()
+        
         # Determine type
         q_type = "single"
         if 11 <= num <= 20: q_type = "multiple"
@@ -88,38 +95,72 @@ def parse_sol_md(filepath, questions_from_md):
     table_rows = re.findall(r'\|\s*(\d+)\s*\|\s*.*?\s*\|\s*(KP\s*[\d\.\/]+)\s*\|', content)
     for q_num, kp in table_rows:
         q_matrix[int(q_num)] = kp.replace(' ', '')
+        
+    for i in range(1, 101):
+        if i not in q_matrix:
+            # Fallback to parse KP from individual question sections
+            section_match = re.search(rf'### Q{i}：.*?(?=\n### Q{i+1}：|\n---|#|$)', content, re.DOTALL)
+            if section_match:
+                kp_match = re.search(r'KP\s*([\d\.\/]+)', section_match.group(0), re.IGNORECASE)
+                if kp_match:
+                    q_matrix[i] = "KP" + kp_match.group(1).replace(' ', '')
 
     results = {}
-    # Find all "1. **B**" or similar
-    # Sometimes it's "1. B" or "1. **ABCD**"
-    for i in range(1, 101):
-        # Improved regex for answers and explanations
-        pattern = rf'(?:^|\n){i}\.\s*\*\*?([A-Z\d\/]+)\*\*?.*?(?:解析[：:]\s*(.*?))?(?=\n\d+\.|\n\n|###|---|$)'
-        match = re.search(pattern, content, re.DOTALL)
-        if match:
-            ans = match.group(1)
-            exp = match.group(2).strip() if match.group(2) else ""
-            results[i] = {
-                "answer": ans,
-                "explanation": exp
-            }
+    has_q_sections = "### Q1：" in content or "### Q1:" in content
+    
+    if has_q_sections:
+        for i in range(1, 101):
+            section_pattern = rf'### Q{i}[:：].*?(?=\n### Q{i+1}[:：]|\n###|\n---|#|$)'
+            section_match = re.search(section_pattern, content, re.DOTALL)
+            if section_match:
+                section_text = section_match.group(0)
+                ans_match = re.search(r'\*\*答案\*\*[:：]\s*(.*)', section_text)
+                ans = ""
+                if ans_match:
+                    ans_raw = ans_match.group(1).strip()
+                    ans_raw = ans_raw.replace('**', '').strip('*').strip()
+                    ans = ans_raw
+                
+                exp_match = re.search(r'\*\*(?:詳細)?解析\*\*[:：]\s*(.*)', section_text, re.DOTALL | re.IGNORECASE)
+                exp = exp_match.group(1).strip() if exp_match else ""
+                
+                results[i] = {
+                    "answer": ans,
+                    "explanation": exp
+                }
+    else:
+        for i in range(1, 101):
+            pattern = rf'(?:^|\n){i}\.\s*\*\*?([A-Z\d\/]+)\*\*?.*?(?:解析[：:]\s*(.*?))?(?=\n\d+\.|\n\n|###|---|$)'
+            match = re.search(pattern, content, re.DOTALL)
+            if match:
+                ans = match.group(1).strip()
+                exp = match.group(2).strip() if match.group(2) else ""
+                results[i] = {
+                    "answer": ans,
+                    "explanation": exp
+                }
             
     final_questions = []
     for q in questions_from_md:
         num = q['num']
         res = results.get(num, {"answer": "", "explanation": ""})
         kp = q_matrix.get(num, "")
+        ans = res['answer']
         
-        # For multiple choice, ensure answer is a list or string of chars
-        # Actually, QuizArena expects a string like "ABC" or an array. 
-        # Looking at previous code, it seems it handles string.
+        # Normalize based on question type
+        if q['type'] == "multiple":
+            letters = sorted(list(set(re.findall(r'[A-D]', ans))))
+            ans = ",".join(letters)
+        elif q['type'] == "single":
+            letter_match = re.search(r'[A-D]', ans)
+            ans = letter_match.group(0) if letter_match else ans
         
         final_questions.append({
             "id": f"Q{num}",
             "type": q['type'],
             "title": q['title'],
             "options": q['options'],
-            "answer": res['answer'],
+            "answer": ans,
             "kp": kp,
             "explanation": res['explanation']
         })
@@ -127,7 +168,7 @@ def parse_sol_md(filepath, questions_from_md):
     return final_questions
 
 def process_course(sub_dir, course_id):
-    base_path = '/home/toymsi/documents/python學習/course微積分'
+    base_path = '/home/toymsi/documents/python學習/Github/ai-psychometrics/public/courses'
     output_dir = '/home/toymsi/documents/python學習/Github/ai-psychometrics/public/data'
     
     dir_path = os.path.join(base_path, sub_dir)
@@ -137,8 +178,6 @@ def process_course(sub_dir, course_id):
         md_file = os.path.join(dir_path, f"week{i}.md")
         sol_file = os.path.join(dir_path, f"week{i}_sol.md")
         
-        if i == 1 and sub_dir == '上': continue
-
         if os.path.exists(md_file) and os.path.exists(sol_file):
             questions = parse_week_md(md_file)
             if not questions:
@@ -162,10 +201,13 @@ def process_course(sub_dir, course_id):
             for q in final_qs:
                 q['q_vector'] = [1 if k in q['kp'].split('/') else 0 for k in kp_keys]
             
+            sub_map = {'calculus-i': '上', 'calculus-ii': '中', 'calculus-iii': '下'}
+            title_sub = sub_map.get(sub_dir, sub_dir)
+            
             data = {
                 "course_id": course_id,
                 "week": i,
-                "title": f"微積分 {sub_dir} 第 {i} 週測驗",
+                "title": f"微積分 {title_sub} 第 {i} 週測驗",
                 "knowledge_points": knowledge_points,
                 "questions": final_qs
             }
@@ -175,6 +217,6 @@ def process_course(sub_dir, course_id):
                 json.dump(data, f, ensure_ascii=False, indent=2)
             print(f"Generated {output_file} with {len(final_qs)} questions")
 
-process_course('上', 'calculus1')
-process_course('中', 'calculus2')
-process_course('下', 'calculus3')
+process_course('calculus-i', 'calculus1')
+process_course('calculus-ii', 'calculus2')
+process_course('calculus-iii', 'calculus3')

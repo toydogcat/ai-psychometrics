@@ -147,7 +147,7 @@
         "A": "$\\arctan x + C$",
         "B": "$\\ln(x^2+1) + C$",
         "C": "$\\frac{1}{2}\\ln(x^2+1) + C$",
-        "D": "$x^2+1 + C$\n\n### 2. 多選題 (Multiple Choice) - 共 10 題"
+        "D": "$x^2+1 + C$"
       },
       "answer": "Q10",
       "kp": "",
@@ -164,7 +164,7 @@
         "C": "不定積分最後必須換回原變項",
         "D": "任何積分都能用代換法解決"
       },
-      "answer": "Q11",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -179,7 +179,7 @@
         "C": "$\\int \\frac{2x}{x^2+1} \\, dx$",
         "D": "$\\int e^x \\, dx$"
       },
-      "answer": "Q12",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -194,7 +194,7 @@
         "C": "$\\cos(x^3)$",
         "D": "$\\sin^2 x$"
       },
-      "answer": "Q13",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -209,7 +209,7 @@
         "C": "即使 $f$ 既非奇也非偶，此公式也適用",
         "D": "這可以用代換 $u = -x$ 證明"
       },
-      "answer": "Q14",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -224,7 +224,7 @@
         "C": "直接積分",
         "D": "先展開再積分"
       },
-      "answer": "Q15",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -239,7 +239,7 @@
         "C": "$\\int_{-2}^2 \\frac{x}{x^2+1} \\, dx$",
         "D": "$\\int_0^\\pi \\sin x \\, dx$"
       },
-      "answer": "Q16",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -254,7 +254,7 @@
         "C": "$g(a) < g(b)$",
         "D": "$f$ 必須是多項式"
       },
-      "answer": "Q17",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -269,7 +269,7 @@
         "C": "使用倍角公式 $\\frac{1}{2}\\sin 2x$",
         "D": "直接寫成 $\\frac{1}{2}\\sin^2 x + C$"
       },
-      "answer": "Q18",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -284,7 +284,7 @@
         "C": "$d(\\ln(\\cos x)) = -\\tan x dx$",
         "D": "$d(\\sqrt{u}) = \\frac{1}{2\\sqrt{u}} du$"
       },
-      "answer": "Q19",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []
@@ -297,9 +297,9 @@
         "A": "`sp.integrate(f, (x, a, b))`",
         "B": "`sp.diff(f, x)`",
         "C": "`f.subs(x, -x)` 用於檢查奇偶性",
-        "D": "`sp.Integral` 只建立積分式但不計算\n\n### 3. 填充題 (Fill-in-the-blank) - 共 10 題"
+        "D": "`sp.Integral` 只建立積分式但不計算"
       },
-      "answer": "Q20",
+      "answer": "",
       "kp": "",
       "explanation": "",
       "q_vector": []

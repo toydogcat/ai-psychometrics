@@ -168,10 +168,10 @@ print(f"化簡後: {simplified_df}")
 ### 填充題 (10題)
 21. $\frac{d}{dx}(\cos x) = \underline{\hspace{1cm}}$。
 22. 連鎖律中，若 $y = u^3$ 且 $u = x^2+1$，則 $\frac{dy}{dx} = \underline{\hspace{1cm}}$。
-23. $\frac{d}{dx}(e^{-x}) = \underline{-e^{-x}}$。
+23. $\frac{d}{dx}(e^{-x}) = \underline{\hspace{1cm}}$。
 24. $\frac{d}{dx}(x \sin x) = \underline{\hspace{1cm}}$。
 25. 函數 $y = \tan(5x)$ 的導數為 $\underline{\hspace{1cm}}$。
-26. $\frac{d}{dx}(\sqrt{x^2+1}) = \underline{\frac{x}{\sqrt{x^2+1}}}$。
+26. $\frac{d}{dx}(\sqrt{x^2+1}) = \underline{\hspace{1cm}}$。
 27. $(\cot x)' = \underline{\hspace{1cm}}$。
 28. 商法則的分母是 $\underline{\hspace{1cm}}$。
 29. $\frac{d}{dx}(\cos^3 x) = \underline{\hspace{1cm}}$。

@@ -147,7 +147,7 @@
         "A": "$-3$",
         "B": "$2$",
         "C": "$-5$",
-        "D": "$0$\n\n### 多選題 (10題)"
+        "D": "$0$"
       },
       "answer": "",
       "kp": "",
@@ -297,7 +297,7 @@
         "A": "函數在 $x=a$ 的切線斜率為 $5$",
         "B": "$x=a$ 處的瞬時變化率為 $5$",
         "C": "$\\lim_{x \\to a} \\frac{f(x)-f(a)}{x-a} = 5$",
-        "D": "函數在 $x=a$ 必定連續\n\n### 填充題 (10題)"
+        "D": "函數在 $x=a$ 必定連續"
       },
       "answer": "",
       "kp": "",
@@ -307,7 +307,7 @@
     {
       "id": "Q21",
       "type": "fill",
-      "title": "$\\frac{d}{dx} (5x^3 - 2x + 1) = _______$。",
+      "title": "$\\frac{d}{dx} (5x^3 - 2x + 1) = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -317,7 +317,7 @@
     {
       "id": "Q22",
       "type": "fill",
-      "title": "函數 $f(x) = e^x + x^e$ 的導數為 $\\underline{e^x + e x^{e-1}}$。",
+      "title": "函數 $f(x) = e^x + x^e$ 的導數為 $\\underline{\\hspace{1cm}}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -327,7 +327,7 @@
     {
       "id": "Q23",
       "type": "fill",
-      "title": "若 $y = x^{100}$，則 $y'(1) = _______$。",
+      "title": "若 $y = x^{100}$，則 $y'(1) = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -337,7 +337,7 @@
     {
       "id": "Q24",
       "type": "fill",
-      "title": "$\\lim_{h \\to 0} \\frac{e^h - 1}{h} = _______$。",
+      "title": "$\\lim_{h \\to 0} \\frac{e^h - 1}{h} = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -347,7 +347,7 @@
     {
       "id": "Q25",
       "type": "fill",
-      "title": "已知 $f(x) = x^4$，則 $f'''(x) = _______$。",
+      "title": "已知 $f(x) = x^4$，則 $f'''(x) = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -357,7 +357,7 @@
     {
       "id": "Q26",
       "type": "fill",
-      "title": "曲線 $y = x^2$ 在 $x=2$ 處的切線斜率為 $\\underline{4}$。",
+      "title": "曲線 $y = x^2$ 在 $x=2$ 處的切線斜率為 $\\underline{\\hspace{1cm}}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -367,7 +367,7 @@
     {
       "id": "Q27",
       "type": "fill",
-      "title": "若位置 $s(t) = 5t^2 + 2t$，則時間 $t=3$ 時的加速度為 $\\underline{10}$。",
+      "title": "若位置 $s(t) = 5t^2 + 2t$，則時間 $t=3$ 時的加速度為 $\\underline{\\hspace{1cm}}$。",
       "options": {},
       "answer": "",
       "kp": "",
@@ -387,7 +387,7 @@
     {
       "id": "Q29",
       "type": "fill",
-      "title": "$\\frac{d}{dx} (2\\pi^3) = _______$。",
+      "title": "$\\frac{d}{dx} (2\\pi^3) = _______}$。",
       "options": {},
       "answer": "",
       "kp": "",

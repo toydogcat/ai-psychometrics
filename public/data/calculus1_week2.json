@@ -241,7 +241,7 @@
         "C": "只有當左右極限皆存在且相等時，此極限才存在。",
         "D": "極限一定存在於所有的函數中。"
       },
-      "answer": "ABC",
+      "answer": "A,B,C",
       "kp": "KP2.2",
       "explanation": "極限探討函數在該點附近的行為，與該點是否有定義無關。左右極限相等才保證雙側極限存在。",
       "q_vector": [
@@ -263,7 +263,7 @@
         "C": "常數/0",
         "D": "$\\infty - \\infty$"
       },
-      "answer": "AB",
+      "answer": "A,B",
       "kp": "KP2.3",
       "explanation": "$0/0$ 和 $\\infty/\\infty$ 是典型的不定型，需進一步代數操作或使用後續會學到的方法。",
       "q_vector": [
@@ -285,7 +285,7 @@
         "C": "$\\lim_{x \\to c} \\frac{1}{f(x)}$",
         "D": "$\\lim_{x \\to c} \\ln(f(x))$"
       },
-      "answer": "AB",
+      "answer": "A,B",
       "kp": "KP2.3",
       "explanation": "A, B 皆存在。C 需要 $L \\neq 0$ 且在此條件 $L>0$ 下存在。D 需要 $L>0$，也存在。故全選 ABCD。\n    *(修正: 選項為 ABCD)*",
       "q_vector": [
@@ -307,7 +307,7 @@
         "C": "$|x - 4| < \\delta$ 是前提條件。",
         "D": "需要限制 $x \\neq 4$。"
       },
-      "answer": "AB",
+      "answer": "A,B",
       "kp": "KP2.4",
       "explanation": "$|5x - 20| < \\epsilon \\Rightarrow 5|x-4| < \\epsilon \\Rightarrow |x-4| < \\frac{\\epsilon}{5}$。只要 $\\delta \\le \\frac{\\epsilon}{5}$ 皆可，因此 A, B 皆對。",
       "q_vector": [
@@ -329,7 +329,7 @@
         "C": "若單側極限存在，則雙側極限必存在。",
         "D": "步階函數在斷點處有單側極限。"
       },
-      "answer": "ABD",
+      "answer": "A,B,D",
       "kp": "KP2.5",
       "explanation": "C 錯，因為單側極限存在但若不相等，雙側極限就不存在。",
       "q_vector": [
@@ -351,7 +351,7 @@
         "C": "$\\lim_{x \\to 0} \\frac{1-\\cos x}{x}$",
         "D": "$\\lim_{x \\to 0} x^2$"
       },
-      "answer": "ACD",
+      "answer": "A,C,D",
       "kp": "KP2.2/2.3",
       "explanation": "A 由夾擠定理 (Week 3) 可知極限為 0。B 為 1。C 極限為 0。D 極限為 0。",
       "q_vector": [
@@ -395,7 +395,7 @@
         "C": "所有曲線在任一點都有切線。",
         "D": "切線斜率代表瞬時變化率。"
       },
-      "answer": "ABD",
+      "answer": "A,B,D",
       "kp": "KP2.1",
       "explanation": "C 錯，有些曲線如絕對值函數在頂點處沒有切線 (不可導)。",
       "q_vector": [
@@ -417,7 +417,7 @@
         "C": "$\\lim_{x \\to 2} f(x) = 2$",
         "D": "在 $x=2.5$ 時，極限存在。"
       },
-      "answer": "AD",
+      "answer": "A,D",
       "kp": "KP2.5",
       "explanation": "A) 當 $x$ 從左逼近 2，即 $1.999...$，高斯符號值為 1。B) 當 $x$ 從右逼近 2，即 $2.001...$，值為 2。C) 左右不等，極限不存在。D) 在 $x=2.5$ 附近皆為 2，極限為 2。",
       "q_vector": [
@@ -439,7 +439,7 @@
         "C": "函數必須是連續的。",
         "D": "函數必須是多項式。\n\n**填空題 (10題)**"
       },
-      "answer": "AB",
+      "answer": "A,B",
       "kp": "KP2.3",
       "explanation": "極限定律適用於個別極限均存在的情況。",
       "q_vector": [
